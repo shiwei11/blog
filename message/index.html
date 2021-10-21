@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    
+<link rel="stylesheet" href="/css/common.css">
+
+   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@waline/client"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        :root{
+            --waline-theme-color:#00a8ff!important;
+        }
+        body{
+            width: 100vw;
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            background: #f6f8f9;
+            overflow-x: hidden;
+        }
+        .empty{
+            width: 100%;
+            height: 70px;
+        }
+        .menu{
+            position: fixed;
+            top:0px;
+            left:0px;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100vw;
+            height: 70px;
+            transition: border-bottom .5s ease 0s,top .25s ease 0s,background-color .5s ease 0s;
+            z-index: 50;
+            transform: translateZ(0);
+            -webkit-transform: translateZ(0);
+            box-sizing: border-box;
+        }
+        .menuCss2{
+             background-color: hsla(0,0%,100%,0.95);
+            -webkit-backdrop-filter: blur(10px);
+             backdrop-filter: blur(10px);
+            box-shadow: 0 0 28px -6px rgb(20 20 20 / 18%);
+            box-sizing: border-box;
+        }
+        @supports ( backdrop-filter: blur(10px)){
+            .menuCss2{
+                background-color: hsla(0,0%,100%,0.6);
+            }
+
+        }
+        .menu-left{
+            margin-left: 8px;
+            letter-spacing: 3px;
+            font-size: 18px;
+            color:#000;
+        }
+        .menu .button{
+            transition: height .3s ease-out;
+        }
+       
+        .menu .button a{
+            display: inline-block;
+            position: relative;
+            width: 5em;
+            height: 2em;
+            line-height: 2em;
+            margin: 0 6px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            color:#000;
+        }
+        .menu .button a::before{
+            content:'';
+            position:absolute;
+            bottom:-4px;
+            left:0px;
+            width: 100%;
+            height: 4px;
+        }
+        .menu .button a:nth-child(1):before{
+            background-color: #00a8ff;
+        }
+        .menu .button a:nth-child(2):before{
+            background-color: #fa089d;
+        }
+        .menu .button a:nth-child(3):before{
+            background-color: #26de81;
+        }
+        .menu .button a:nth-child(4):before{
+            background-color: #fed330;
+        }
+        
+        .billboard{
+        position:relative;
+        width: 50%; 
+        padding: 10px 0;
+         margin-top:20px;
+         text-align: center;
+         border-radius: 10px;
+         font-size: 17px;
+         line-height: 30px;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         letter-spacing: 1px;
+         background-color: #fff; 
+         z-index: -1;
+      }
+      .billboard div{
+        margin-top: 10px;
+      }
+      
+    .logo {
+            position: absolute;
+            top:5px;
+            left:5px;
+            display: inline-block;
+            color: #ffd333;
+            transition: all 1s ease-out;
+            }
+.logo svg{
+    width: 60px;
+    height: 60px;
+}
+.logo_circle{
+    fill: rgba(255,211,51,.2);
+}
+@keyframes move1{
+0%, 20%, 80%, 100% {
+    transform: translateX(0);
+}
+50% {
+    transform: translateX(4px);
+}
+}
+ .logo_rect1 {
+    -webkit-animation: move1 1.5s ease-in-out infinite;
+    animation: move1 1.5s ease-in-out infinite;
+}
+@keyframes move2{
+    0%, 20%, 80%, 100% {
+    transform: translateX(0);
+}
+50% {
+    transform: translateX(20px);
+}
+}
+.logo_rect2 {
+    -webkit-animation: move2 1.5s ease-in-out infinite;
+    animation: move2 1.5s ease-in-out infinite;
+}
+@keyframes move3{
+    0%, 20%, 80%, 100% {
+    transform: translateX(0);
+}
+50% {
+    transform: translateX(12px);
+}
+}
+.logo_rect3 {
+    -webkit-animation: move3 1.5s ease-in-out infinite;
+    animation: move3 1.5s ease-in-out infinite;
+}
+.billboard h2{
+    font-size: 22px;
+    letter-spacing:3px;
+    margin-top: 8px;
+}
+.menu-right{
+margin-right: 15px;
+width: 40px;
+height: 32px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+cursor: pointer;
+}
+.menu-right div{
+    display: inline-block;
+    width: 34px;
+    height: 4px;
+    background-color: #111;
+}
+
+#waline{
+    margin-top: 40px;
+    width: 60%;
+    box-sizing: border-box;
+}
+@media screen and (max-width:1100px){
+    .billboard{
+        width: 50%;
+    }
+    .logo svg{
+   width: 50px;
+   height: 50px;
+}
+#waline{
+width: 70%;
+}
+}
+@media screen and (max-width:800px){
+    .billboard{
+        width: 60%;
+    }
+    .logo svg{
+   width: 40px;
+   height: 40px;
+}
+#waline{
+width: 80%;
+}
+}
+
+@media screen and (max-width:600px){
+    .menu>.button{
+    position: absolute;
+    top:70px;
+    right:0px;
+    width:100%;
+    height:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(39, 37, 28, 0.884);
+    overflow: hidden;
+    }
+    .menu .button>a{
+    color:#fff;
+}
+    .menu-right{
+        display: flex;
+    }
+    .billboard{
+        width: 80%;
+        font-size: 14px;
+    }
+    #waline{
+        width: 90%;
+    }
+}
+@media screen and (min-width:600px){
+    .menu-right{
+        display: none;
+    }
+}
+@media  screen and (max-width:420px){
+    .menu{
+        height: 60px;
+    }
+    .menu>.button{
+        top:60px;
+    }
+    .billboard{
+        width: 90%;
+        font-size: 14px;
+    }
+    .logo svg{
+    width: 40px;
+    height: 40px;
+}
+    .billboard h2{
+        font-size: 18px;
+        letter-spacing: normal;
+    }
+    .billboard div{
+    margin-top:10px;
+    }
+    #waline{
+    margin-top: 40px;
+    width: 96%;
+    box-sizing: border-box;
+}
+}
+
+    </style>
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<div class="menu">
+        <div class="menu-left">
+            留言簿
+        </div>
+        <div class="menu-right">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="button">
+            <a href="/index">博客</a>
+            <a href="/life">日常</a>
+            <a href="/record">一句</a>
+            <a href="/about">关于</a>
+        </div>
+    </div>
+    <div class="empty"></div>
+
+    <div class="billboard">
+        <div class="logo">
+            <svg id="typography" width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="1" cx="36" cy="36" r="36" fill="#111" class="logo_circle"></circle>
+                <rect x="17" y="22" width="38" height="8" rx="4" fill="currentColor" class="logo_rect1"></rect>
+                <rect opacity="0.8" x="17" y="32" width="22" height="8" rx="4" fill="currentColor" class="logo_rect2"></rect>
+                <rect opacity="0.6" x="17" y="42" width="30" height="8" rx="4" fill="currentColor" class="logo_rect3"></rect>
+            </svg>
+        </div>
+        <h2>文明发言</h2>
+        <h2>发布违禁评论IP关小黑屋</h2>
+       <div> <s>打不开评论区请使用魔法工具</s></div>
+       <div>新的评论系统，现在国内的网应该也可以打开了</div>
+       <div>昵称，邮箱，网址均为选填</div>
+        <div>不便留言可以发邮件给我:njsgcn@gmail.com</div>
+       
+    </div>
+    
+    <div id="waline"></div>
+    <script>
+        Waline({
+          el: '#waline',
+          serverURL: 'https://blog-vercel-mu9hey79g-shiwei11.vercel.app/',
+          emoji: [
+         ' https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
+         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
+         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+          ]
+        });
+      </script>
+      <script>
+          let menu=document.querySelector('.menu');
+          window.onscroll=function(){
+              menu.classList.add('menuCss2');
+              let top=document.documentElement.scrollTop||document.body.scrollTop;
+              if(top==0){
+                menu.classList.remove('menuCss2');
+              }
+          }
+        let mr=document.querySelector('.menu-right');
+        let btn=document.querySelector('.button');
+        let bl=true;
+          mr.onclick=function(){
+            if(bl){
+                  btn.style.height='40vh';
+                  bl=false;
+              }
+              else{
+                btn.style.height='0px';
+                bl=true;
+              }
+          }
+          
+          window.onresize=function(){
+            if(window.innerWidth>600){
+                btn.style.height='0px';
+            }
+          }
+      </script>
+</body>
+</html>
+
+
+
+
+
+</html>

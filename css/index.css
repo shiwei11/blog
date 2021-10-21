@@ -1,0 +1,579 @@
+html{
+    font-size:14px;
+}
+ * {
+        user-select: none;
+        margin: 0;
+        padding: 0;
+ }
+ul li{
+            list-style: none;
+        }
+
+     a{
+        text-decoration: none;
+        
+        }
+html{
+    width: 100%;
+    height:100vh;
+}
+  @media screen and (min-width: 750px) {
+    html {
+      font-size: 15px;
+    }
+  }
+  @media screen and (min-width: 870px) {
+    html {
+      font-size: 15px;
+    }
+  }
+  @media screen and (min-width: 1100px) {
+    html {
+      font-size: 16px;
+    }
+  }
+ body {
+     width: 100%;
+     height:100vh;
+     background: linear-gradient(to bottom,rgb(12, 184, 252),rgb(234, 239, 240));
+     display: flex;
+    justify-content: center;    
+    overflow-x:hidden;
+        }
+        
+        @font-face {
+            font-family: 'iconfont';  /* Project id 2602916 */
+            src: url('https://at.alicdn.com/t/font_2602916_zy5x7j996xd.woff2?t=1630093660324') format('woff2'),
+                 url('https://at.alicdn.com/t/font_2602916_zy5x7j996xd.woff?t=1630093660324') format('woff'),
+                 url('https://at.alicdn.com/t/font_2602916_zy5x7j996xd.ttf?t=1630093660324') format('truetype');
+          }
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 12rem;
+    min-width: 117px;
+    height:100vh;
+    box-shadow: 6px 0px 10px rgba(253, 253, 253, 0.527);
+    transition: left .5s ease;
+    z-index: 2;
+}
+.second-main{
+    flex:1;
+   overflow-y: auto;
+   overflow-x: hidden;
+}
+.left_move{
+    position: absolute !important; 
+    left:-200% !important;
+}
+ .card{
+    position:relative;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 25vh;
+    width: 80%;
+}
+.card:hover{
+    background: url(../images/caidai.gif) ;
+    background-size: 100% 100%;
+    z-index: 50;
+}
+.head{
+    display: flex;
+    justify-content: center;
+}
+.head img{
+    height: 6rem;
+    width: 6rem;
+    border-radius:3rem;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+    z-index:100;
+}
+
+/* 导航栏 */
+.label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -2px 3px 5px rgba(256,256,256,.9),
+    0px -3px 5px rgba(256,256,256,.9);
+   
+}
+
+ .label li{
+    height: 5vh;
+    min-height: 32px;
+    width: 100%;
+    border: 1px solid rgba(256,256,256,.9);
+   transition: all .5s;
+   z-index: 100;
+}
+ .label li a{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: 1.3em;
+    letter-spacing: 1.5em;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    color:#fff; 
+   
+} 
+ .label li a::after{
+    font-family:"iconfont" !important;
+    position: absolute;
+    top:0;
+    right:0;
+    opacity: 0;
+    transition: all .5s linear;
+    font-size: 1.3em;
+    font-style: normal;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ .label li:nth-child(1) a::after{
+    content:'\e609'; 
+}
+ .label li:nth-child(2) a::after{
+    content:'\e6c9';
+}
+ .label li:nth-child(3) a::after{
+    content:'\e62e';
+}
+ .label li:nth-child(4) a::after{
+    content:'\e624';
+}
+ .label li:nth-child(5) a::after{
+    content:'\e602';
+}
+
+ .label li:hover{
+letter-spacing: 2em;
+width: 110%;
+background: #2bd2ff;
+
+}
+ .label li:hover a::after{
+opacity: 1;
+}
+/* 标签 */
+ .tag{
+    width: 90%;
+    padding: 10px 3px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+ .tag  li{
+    font-size: 12px !important;
+    margin: .1em;
+    margin-bottom: 5px;
+    padding: .1em .3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9em;  
+}
+ .tag  li:nth-child(8n+1),.second-content .update .label1{
+color:#1a98ff;
+background-color:rgba(26, 152, 255,.15) ;
+ }
+.tag  li:nth-child(8n+2),.second-content .update .label2{
+    color:#00ff22;
+    background-color:rgba(51, 213, 122,.15) ;
+}
+.tag  li:nth-child(8n+3){
+        color:#00dbff;
+        background-color:rgba(0, 219, 255,.15) ;}
+
+.tag  li:nth-child(8n+4),.second-content .update .label3{
+color:#faea04;
+background-color:rgba(252, 236, 19, 0.055) ;
+
+}
+.tag  li:nth-child(8n+5),.second-content .update .label4{
+    color:#9090ff;
+    background-color:rgba(144, 144, 255,.15) ;
+}
+ .tag  li:nth-child(8n+6),.second-content .update .label5{
+        color:#ef0bf7;
+        background-color:rgba(239, 11, 247,.15) ;
+     }
+.tag  li:nth-child(8n+7),.second-content .update .label6{
+    color:#ff4e6a;
+    background-color:rgba(255, 78, 106,.15) ;
+ }
+  .tag  li:nth-child(8n),.second-content .update .label7{
+ color:#ff761e;
+ background-color:rgba(255, 118, 30,.15) ;
+ }
+ .rose{
+     font-size: .9rem;
+    margin: 0 0 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 3px rgb(1, 199, 248);
+}
+ .rose li a{
+    color:rgba(7, 175, 250, 0.57);
+     text-shadow: none;
+}
+
+/* 控制器 */
+
+.menu-btn{
+    z-index: 100;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    left:0rem;
+    top:.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: left .5s ease;
+}
+.closed{
+    left:9rem;
+}
+.menu-line{
+    width: 2em;
+    height: .2em;
+    background-color: rgb(17, 238, 238);
+    margin:.1em auto;
+}
+.menu-btn  .menu-line:nth-child(1){
+    transition: transform .5s ease;
+ }
+ .menu-btn  .menu-line:nth-child(3){
+    transition: transform .5s ease;
+ }
+.menu-btn  .menu-line:nth-child(2){
+    transition: transform .5s ease .5s;
+ }
+.closed .menu-line:nth-child(1){
+    transform:translateY(.84rem) rotate(45deg);
+}
+.closed .menu-line:nth-child(2){
+   transform:translateX(-3rem);
+}
+.closed .menu-line:nth-child(3){
+    transform:translateY(-.84rem) rotate(-45deg);
+}
+
+
+/* 内容 */
+ .second-main .motto{
+    position: relative;
+    top:0px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height:12rem;
+    background: url(../images/snowblue.png)   repeat-x;
+   background-position: bottom;
+   overflow: hidden;
+}
+ .second-main .motto p{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1.3em;
+    letter-spacing: .1em;
+    z-index: 1;
+}
+.second-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2rem;
+}
+/* 最新 */
+.update{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 52rem; */
+    margin: 0 2px;
+    z-index: 3;
+}
+.update li{
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    height:14em ;
+    margin: 20px auto;
+    padding: 1.5rem 0px;
+    overflow: hidden;
+    border:1px solid #fff;
+    transition: all .5s;
+}
+.update li:nth-child(odd){
+flex-direction: row;
+}
+.update li:nth-child(even){
+    flex-direction: row-reverse;
+    }
+.update li:hover{
+    border: 2px solid #fff;
+    box-shadow: -3px 2px 5px rgba(19, 2, 2, 0.527);
+}
+.update li .update_pic{
+    flex:1;
+    height: 100%;
+    overflow: hidden;
+    transition: all .5s;
+}
+.update li .update_pic a img{
+    width: 100%;
+    height: 100%;
+    transform: scale(.8);
+    transition: all .5s;
+}
+.update li .update_content {
+    margin: 0 .8rem;
+    min-height: 50%;
+    flex:1;
+    color: rgb(43, 36, 36);
+} 
+.update li .update_content p{
+    font-size: 1.1rem;
+    margin-top: 9px;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow:auto;
+}
+.update li .update_content h1{
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(10, 1, 1);
+    font-size: 1.4rem;
+}
+.update li .update_content .content_line{
+    width: 10%;
+    height: 3px;
+    margin:1em 1em;
+    background-color:#fff;
+    transition: all .5s;
+}
+.update li .update_content .content_tag{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.update li .update_content .content_label{
+    padding: 0 6px;
+    /* margin-left: 3em; */
+    
+}
+.update li:hover .update_pic a img{
+    transform: scale(.9);
+    overflow: hidden;
+}
+.update li:hover .update_content .content_line{
+    width: 80%;
+}
+.left-menu{
+    position: fixed;
+    bottom:0px;
+    right:10px;
+    z-index: 5;
+    overflow: hidden;
+}
+.backTop{
+    display: block;
+    font-size: 3rem !important;
+    font-weight: 800;
+    text-align:center;
+    color:rgb(248, 248, 248);
+    text-shadow: 0 0 3px #00c9fc;
+    z-index: 5;
+}
+@keyframes husky_running{
+    0%{
+        background-position: 0 0;
+    }
+    
+    100%{
+        background-position: -708px 0;
+    }
+}
+.husky{
+   position: relative;
+    bottom:0px;
+    right:-100px; 
+    height: 5rem;
+    width: 6rem;
+    background-image: url(../images/huskysprite10.png);
+    background-repeat: no-repeat;
+     animation: husky_running .6s steps(6) infinite;
+     -webkit-animation: husky_running .6s steps(6) infinite;
+     z-index: 1;
+}
+.paginator{
+    margin-bottom: 1em;
+    width: 100%;
+    font-size: 12px;
+    text-align:center;
+}
+.page-number{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    color:#000;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 600;
+    margin:0 5px;
+    text-decoration: none;
+    border:1px solid #03d9ff;
+    border-radius: 4px;	
+}
+.current{
+     color:#fff;
+    border:1px solid #fff;
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+    /* border-bottom:4px solid #03d9ff; */
+}
+.extend{
+    font-size: 16px;
+    text-align: center;
+    color:rgb(38, 139, 221);
+    text-decoration: none;
+    margin:0 5px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+/* ::-webkit-scrollbar-thumb{
+    background:linear-gradient(#00decc,#fc00ff);
+    border-radius: 6px;
+} */
+::-webkit-scrollbar-track-piece{
+    background-color: #ededed;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #077eff;
+    background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+} 
+::-webkit-scrollbar:horizontal{
+    height: 7px;
+}
+::-webkit-scrollbar-thumb:horizontal{
+    background-color: #f014ae;
+    background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+    border-radius: 5px;
+}
+@media screen and (max-width:1100px) {
+    .update li{
+        width:75%;
+    }
+}
+@media screen and (max-width:935px) {
+    .update li{
+        width:85%;
+    }
+}
+@media screen and (max-width: 700px){
+    .update li{
+        flex-direction: column!important;
+        width: 65%;
+        height: auto !important;
+    }
+
+
+
+}
+@media screen and (max-width: 420px){
+    .navigation{
+        position: fixed;
+        left:0px;
+        width: 65%;
+        background:linear-gradient(to bottom,rgb(15, 181, 247),rgb(215, 228, 230));
+        z-index: 10;
+    }
+   .navigation::before{
+       content:'';
+       position: absolute;
+       top:0px;
+       left:100%;
+       height: 100vh;
+       width:100%;
+       background-color: rgb(11, 2, 19,.7);
+       z-index: 10;
+   }
+.closed{
+    left:52%;
+}
+.card{
+    width: 80%;
+    height: 25vh;
+}
+.head img{
+    height: 14vh;
+    width: 14vh;
+    border-radius:7vh;
+}
+.tag  li{
+    margin-bottom: 0px;
+}
+.rose{
+    font-size: 1.2rem;
+   margin: 0 0 5px 5px;
+   
+}
+.rose li a{
+   color:#00c9fc;
+}
+.update li{
+width: 80%;
+height: auto !important;
+}
+.update li .update_content h1{
+    font-size: 1.8rem;
+}
+.update li .update_content p{
+    font-size: 1.3rem;
+}
+.update li .update_content .content_label{
+    font-size: 1.4rem;
+}
+.backTop{
+    color:#7de3ff;
+    text-shadow: none;
+    margin-bottom: 10px;
+}
+}

@@ -1,0 +1,7 @@
+a{
+    text-decoration: none;
+    cursor:url(../images/link.cur),auto;
+}
+body{
+    cursor:url(../images/normal.cur),auto;
+}
