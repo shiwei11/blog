@@ -52,7 +52,7 @@ window.onresize=function(){
 }
 $(function(){
     $(".backTop").fadeOut();
-    //点击关闭
+    //点击关闭菜单栏
     let navflag=false;
     $(".menu-btn").click(function(){
         if($(".menu-btn").hasClass('closed')){
@@ -80,12 +80,13 @@ $(function(){
     $(".husky").click(function(){
         $(".husky").fadeOut(); 
     });
+    //滚动事件
    $(".second-main").scroll(function(){
+       //返回顶部部件功能
     if($(".second-main").scrollTop()>400){//滚动大于400，出现返回顶部和哈士奇
         $(".backTop").fadeIn();
         $(".husky").animate({"right":"0px"},200);
     }
-    
     if($(".second-main").scrollTop()==0&&parseInt($(".husky").css("right"))==0){//回到顶部，哈士奇向右跑并复原
         $(".husky").animate({"right":"100px"},500,function(){
             $(this).css("right","-100px")
@@ -100,7 +101,9 @@ $(function(){
    else{
     $(".menu-btn").fadeIn();
    }
-   
-});
+   //懒加载
 
+});
+ let imgs=$(".update").children('img');
+ console.log(imgs);
 });

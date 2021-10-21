@@ -6,22 +6,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     
-<link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/blog/css/common.css">
 
    
+    <style>
+    .preload{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+}
+.text{
+    margin-bottom: 10px;
+    color:rgb(0, 207, 243);
+    text-shadow: 0 0 3px rgb(0, 207, 243);
+    font-size: 20px;
+}
+.text span{
+    display: inline-block;
+    
+}
+.dance{
+    animation: dance .8s linear ;
+}
+.text span:nth-child(1){
+   animation-delay: 0s;
+}
+.text span:nth-child(2){
+   animation-delay: .1s;
+}
+.text span:nth-child(3){
+   animation-delay: .2s;
+}
+.text span:nth-child(4){
+   animation-delay: .3s;
+}
+.text span:nth-child(5){
+   animation-delay: .4s;
+}
+.text span:nth-child(6){
+   animation-delay:.5s;
+}
+.text span:nth-child(7){
+   animation-delay: .6s;
+}
+.text span:nth-child(8){
+   animation-delay: .7s;
+}
+.text span:nth-child(9){
+   animation-delay:.8s;
+}
+.text span:nth-child(10){
+   animation-delay: .9s;
+}
 
+@keyframes dance{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.loading{
+    width: 80%;
+    max-width: 260px;
+    height: 6px;
+    background-color: #e1e4e8;
+    border-radius: 6px;
+}
+.bar{
+    display: flex;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 10%, #b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation:bar 2s linear infinite;
+}
+@keyframes bar{
+    0%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+</style>
+
+
+<script src="/blog/js/jquery.min.js"></script>
+
+<script>
+    $(function(){
+           setInterval(function(){
+               $('.text').find("span").toggleClass('dance');
+           },1700)
+       })
+     $(window).on('load', function () {  
+           $(".preload").fadeOut("fast");  
+      });
+</script>
+<div class="preload">
+    <div class="text">
+        <span class="dance">L</span>
+        <span class="dance">o</span>
+        <span class="dance">a</span>
+        <span class="dance">d</span>
+        <span class="dance">i</span>
+        <span class="dance">n</span>
+        <span class="dance">g</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+    </div>
+    <div class="loading">
+        <span class="bar"></span>
+    </div>
+</div>
 <title>index</title>
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_2652945_7gmto2zqbzw.css">
     <link rel="preload" href="https://at.alicdn.com/t/font_2602916_zy5x7j996xd.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     
-<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/blog/css/index.css">
 
 <meta name="generator" content="Hexo 5.4.0"></head>
 <body>
     <div class="navigation">
     <div class="card">
         <div class="head">
-            <img src="/images/head.jpg"  alt="头不见了.." title="狗">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
         </div>
         <div class="card-text">
             <p>(ー`´ー)</p>
@@ -30,15 +152,15 @@
     </div>
     <ul class="label">
         
-        <li><a href="/index">首页</a></li>
+        <li><a href="/blog/index">首页</a></li>
         
-        <li><a href="/life">日常</a></li>
+        <li><a href="/blog/life">日常</a></li>
         
-        <li><a href="/record">一句</a></li>
+        <li><a href="/blog/record">一句</a></li>
         
-        <li><a href="/message">留言</a></li>
+        <li><a href="/blog/message">留言</a></li>
         
-        <li><a href="/about">关于</a></li>
+        <li><a href="/blog/about">关于</a></li>
           
     </ul>
     
@@ -84,9 +206,9 @@
                 
                 
                     <li>
-                        <div class='update_pic'><a href="/2021/10/15/%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%AA%E8%BF%AD%E4%BB%A3%E5%99%A8/"><img src="/images/1.png" alt=""></a></div>
+                        <div class='update_pic'><a href="/blog/2021/10/15/%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%AA%E8%BF%AD%E4%BB%A3%E5%99%A8/"><img alt="" src="/blog/images/1.png"></a></div>
                         <div class='update_content'>
-                            <a href="/2021/10/15/%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%AA%E8%BF%AD%E4%BB%A3%E5%99%A8/"><h1>手写一个迭代器</h1></a>
+                            <a href="/blog/2021/10/15/%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%AA%E8%BF%AD%E4%BB%A3%E5%99%A8/"><h1>手写一个迭代器</h1></a>
                             <p>迭代器(iterator)是一种可以为各种不同的数据结构提供统一遍历操作的接口，而对于没有内置iterator接口的数据结构，我们可以自定义一个iterator接口</p>
                             <div class="content_line"></div>
                             <div class="content_tag">
@@ -98,9 +220,7 @@
                             </div>
                         </div>
                     </li>   
-                    
                 
-
             </ul>
               <div class="paginator">
                 <span class="page-number current">1</span>
@@ -112,10 +232,12 @@
           </div>
     </div>
     
-<script src="/js/jquery.min.js"></script>
-<script src="/js/jquery.bumpytext.js"></script>
-<script src="/js/main.js"></script>
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/main.js"></script>
 
+    <script>
+        
+    </script>
 </body>
 
 

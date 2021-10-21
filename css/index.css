@@ -244,7 +244,7 @@ background-color:rgba(252, 236, 19, 0.055) ;
 /* 控制器 */
 
 .menu-btn{
-    z-index: 100;
+    
     position: absolute;
     display: flex;
     justify-content: space-around;
@@ -257,6 +257,7 @@ background-color:rgba(252, 236, 19, 0.055) ;
     border-radius: 5px;
     overflow: hidden;
     transition: left .5s ease;
+    z-index:90;
 }
 .closed{
     left:9rem;

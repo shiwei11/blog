@@ -6,10 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     
-<link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/blog/css/common.css">
 
    
+    <style>
+    .preload{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+}
+.text{
+    margin-bottom: 10px;
+    color:rgb(0, 207, 243);
+    text-shadow: 0 0 3px rgb(0, 207, 243);
+    font-size: 20px;
+}
+.text span{
+    display: inline-block;
+    
+}
+.dance{
+    animation: dance .8s linear ;
+}
+.text span:nth-child(1){
+   animation-delay: 0s;
+}
+.text span:nth-child(2){
+   animation-delay: .1s;
+}
+.text span:nth-child(3){
+   animation-delay: .2s;
+}
+.text span:nth-child(4){
+   animation-delay: .3s;
+}
+.text span:nth-child(5){
+   animation-delay: .4s;
+}
+.text span:nth-child(6){
+   animation-delay:.5s;
+}
+.text span:nth-child(7){
+   animation-delay: .6s;
+}
+.text span:nth-child(8){
+   animation-delay: .7s;
+}
+.text span:nth-child(9){
+   animation-delay:.8s;
+}
+.text span:nth-child(10){
+   animation-delay: .9s;
+}
 
+@keyframes dance{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.loading{
+    width: 80%;
+    max-width: 260px;
+    height: 6px;
+    background-color: #e1e4e8;
+    border-radius: 6px;
+}
+.bar{
+    display: flex;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 10%, #b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation:bar 2s linear infinite;
+}
+@keyframes bar{
+    0%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+</style>
+
+
+<script src="/blog/js/jquery.min.js"></script>
+
+<script>
+    $(function(){
+           setInterval(function(){
+               $('.text').find("span").toggleClass('dance');
+           },1700)
+       })
+     $(window).on('load', function () {  
+           $(".preload").fadeOut("fast");  
+      });
+</script>
+<div class="preload">
+    <div class="text">
+        <span class="dance">L</span>
+        <span class="dance">o</span>
+        <span class="dance">a</span>
+        <span class="dance">d</span>
+        <span class="dance">i</span>
+        <span class="dance">n</span>
+        <span class="dance">g</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+    </div>
+    <div class="loading">
+        <span class="bar"></span>
+    </div>
+</div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +150,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url(/images/62902102.jpg);
+            background-image: url(/blog/images/62902102.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
