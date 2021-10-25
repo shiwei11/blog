@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon">
+    
+<link rel="stylesheet" href="/blog/css/common.css">
+
+   
+    <style>
+    .preload{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+}
+.text{
+    margin-bottom: 10px;
+    color:rgb(0, 207, 243);
+    text-shadow: 0 0 3px rgb(0, 207, 243);
+    font-size: 20px;
+}
+.text span{
+    display: inline-block;
+    
+}
+.dance{
+    animation: dance .8s linear ;
+}
+.text span:nth-child(1){
+   animation-delay: 0s;
+}
+.text span:nth-child(2){
+   animation-delay: .1s;
+}
+.text span:nth-child(3){
+   animation-delay: .2s;
+}
+.text span:nth-child(4){
+   animation-delay: .3s;
+}
+.text span:nth-child(5){
+   animation-delay: .4s;
+}
+.text span:nth-child(6){
+   animation-delay:.5s;
+}
+.text span:nth-child(7){
+   animation-delay: .6s;
+}
+.text span:nth-child(8){
+   animation-delay: .7s;
+}
+.text span:nth-child(9){
+   animation-delay:.8s;
+}
+.text span:nth-child(10){
+   animation-delay: .9s;
+}
+
+@keyframes dance{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.loading{
+    width: 80%;
+    max-width: 260px;
+    height: 6px;
+    background-color: #e1e4e8;
+    border-radius: 6px;
+}
+.bar{
+    display: flex;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 10%, #b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation:bar 2s linear infinite;
+}
+@keyframes bar{
+    0%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+</style>
+
+
+<script src="/blog/js/jquery.min.js"></script>
+
+<script>
+    $(function(){
+           setInterval(function(){
+               $('.text').find("span").toggleClass('dance');
+           },1700)
+       })
+     $(window).on('load', function () {  
+           $(".preload").fadeOut("fast");  
+      });
+</script>
+<div class="preload">
+    <div class="text">
+        <span class="dance">L</span>
+        <span class="dance">o</span>
+        <span class="dance">a</span>
+        <span class="dance">d</span>
+        <span class="dance">i</span>
+        <span class="dance">n</span>
+        <span class="dance">g</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+    </div>
+    <div class="loading">
+        <span class="bar"></span>
+    </div>
+</div>
+<title>文章</title>
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
+
+<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="/blog/css/article.css">
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<div class="navigation">
+    <div class="card">
+        <div class="head">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
+        </div>
+        <div class="card-text">
+            <p>(ー`´ー)</p>
+            <p>那不是bug，是彩蛋</p>
+        </div> 
+    </div>
+    <ul class="label">
+        
+        <li><a href="/blog/index">首页</a></li>
+        
+        <li><a href="/blog/life">日常</a></li>
+        
+        <li><a href="/blog/record">一句</a></li>
+        
+        <li><a href="/blog/message">留言</a></li>
+        
+        <li><a href="/blog/about">关于</a></li>
+          
+    </ul>
+    
+        <ul class="tag">
+            <li>#Element</li>
+            <li>#Jquery</li>
+            <li>#css</li>
+            <li>#射频</li>
+            <li>#5G通讯</li>
+            <li>#PCB</li>
+            <li>#防火墙</li>
+            <li>#C</li>
+            <li>#html</li>
+            <li>#硬件</li>
+            <li>#javaScript</li>
+            <li>#服务器</li>
+            <li>#CentOS</li>
+            <li>#Linux</li>
+            <li>#python</li>
+            <li>#XPpose</li>
+        </ul>
+   
+    <ul class="rose">
+    <li>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></li>
+    <li>License  <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></li>
+    <li>Copyright2021&nbsp;by&nbsp;shiwi</li>
+</ul>
+</div>
+<div class="menu-btn closed"> 
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+</div>
+<div class="second-main">
+    <div class="motto">
+        <p> //sunny forever<br />
+            while(life&lt;end){<br />
+               love++;<br />
+               beAwesome :)} </p>
+     </div>
+     <div class="second-content">
+        <div class="article">
+        <h1 class="title">Git与Github</h1>
+        <div class="art_infor">
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：4581</span>
+            <span><span class="iconfont icon-riqi"></span>写于：2021-03-23</span></div>
+            <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2021-10-25</span>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您14分钟</span></div>
+        </div>
+        <div class="art_content">
+        <div class="broadcast color-yellow">
+<div class="iconfont icon-dengpao14hao"></div>
+记录一下git的常用命令</div>
+ <h3> 1.git与github </h3><p>git是由Linux之父Linus运用c语言开发的一款分布式版本控制工具，支持Linux命令。github是全球最大的社交编程与代码托管网站，托管了数以百万的开源项目。
+                    <ul>
+                    <li>保存所有提交过的文件历史状态</li>
+                    <li>将文件回退到任意历史版本</li>
+                    <li>多人并行修改同一文件，并推送到服务器端</li>
+                    <li>创建多条支线同时推进开发任务</li>
+                    <li>邀请团队外的人员参与开发并进行审核</li>
+                    <li>对团队成员进行权限限制</li>
+                    <li>查看团队成员的修改内容、时间、日志</li>
+                </ul>
+                    </p><h3>2.本地仓库操作</h3>
+              <h4>2.1 初始化 git init</h4>
+              <p>生成.git文件夹(默认隐藏)，文件夹中包含了配置文件等本地库相关的目录和文件，如config文件中包含用户签名等信息</p>
+               <h4>2.2 设置签名</h4> 
+               <p>用户名和Email地址可随意，仅用于区分开发者身份</p>
+               <h6>项目级别(仓库级别)：</h6>
+               <p>仅在当前本地仓库范围内有效</p>
+               <div class="code">git config user.name xxx
+git config user.email xxx@xxx.com</div>
+               <p> 配置文件保存在该项目下.git文件夹中的config里</p>
+               <h6>系统用户级别：</h6>
+               <p>登录当前操作系统的用户范围</p>
+               <div class="code">git config --global user.name xxx
+git config --global user.email xxx@xxx.com</div>
+               <p>
+                配置文件位于C:\Users\Administrator\.gitconfig
+                当二者用户签名都存在时，会优先使用项目级别的签名。
+               </p>
+               <h4>2.3 git本地操作</h4>
+               <h6>2.3.1 将文件加入暂存区\从暂存区去除</h6>
+              <ul>
+                  <li>将文件加入暂存区 <span class="strong">git add 文件名</span></li>
+                  <li>将所有文件加入暂存区<span class="strong">git add *</span></li>
+                  <li>将文件从暂存区去除<span class="strong">git rm --cached 文件名</span></li>
+                  <li>查看当前状态<span class="strong">git status</span></li>
+              </ul>
+            <h6>2.3.2 将文件提交到本地库</h6>
+            <ul>
+                <li>将文件快速提交到本地库 <span class="strong">git commit -m "提交标识语句" 文件名</span></li>
+                <li>将文件提交到本地库 <span class="strong">git commit 文件名</span> </li>
+                不使用快速提交会打开vim编辑器，要求添加提交标识语句
+            </ul>
+            <h6>2.3.3 查看提交的日志</h6>
+            <ul>
+                <li>完整查看历史记录 <span class="strong">git log</span></li>
+                <li>简洁版 <span class="strong">git log --pretty=oneline</span> </li>
+                <li>简洁版并缩短了哈希值 <span class="strong"> git log --oneline</span></li>
+                <li>在oneline基础上添加了回退版本指针需要移动的次数 <span class="strong">git reflog</span></li>
+            </ul>
+            <h6>2.3.4 版本回退</h6>
+            <ul>
+                <li>基于索引值 <span class="strong">git reset --hard 哈希值</span> </li>
+                <li>基于^符号：只能后退 <span class="strong">git reset --hard HEAD^</span> 
+                    一个^表示回退一个版本，n个^即回退n个版本</li>
+                <li>基于~符号：只能后退 <span class="strong">git reset --hard HEAD~回退数</span> </li>
+            </ul>
+            <h6>2.3.5 reset的参数</h6>
+            <ul>
+                <li><span class="strong">--soft  </span> 仅在本地库移动 HEAD 指针,不修改工作区和暂存区内容,工作区和暂存区内容仍为版本回退前的内容,因为本地库和暂存区内容不同了,此时git status会提示有新内容可提交(不常用)</li>
+                <li><span class="strong">--mixed  </span>在本地库移动 HEAD 指针,同时暂存区也会回退到历史版本(不常用)</li>
+                <li><span class="strong">--hard </span>在本地库移动 HEAD 指针，暂存区、工作区也会一同被重置回历史版本</li>
+            </ul>
+            <h6>2.3.6 文件删除与找回</h6>
+            <p>文件删除同样需要git add添加和git commit提交，将删除记录提交到本地库，以备版本回退。</p>
+<span class="strong">找回文件将版本回退到删除前的版本即可</span>
+<p>若删除文件后只添加到了缓存区，没有提交到本地库，此时本地库中是没有提交记录，但可以用<span class="strong"> git reset --hard HEAD </span>命令将暂存区、工作区一起回退到没有删除文件和添加缓存的那个版本。</p>
+
+<p>即：</p>
+<ul>
+    <li>删除操作已经提交到本地库  <span class="strong"> git reset --hard 哈希值</span></li>
+    <li>删除操作未提交到本地库<span class="strong">  &emsp;git reset --hard HEAD</span></li>
+</ul>
+<h6>2.3.7  文件比较</h6>
+<ul>
+    <li>将工作区和暂存区的文件进行比较 <span class="strong"> git diff 文件名</span></li>
+     若无文件名则将比较所有文件
+删除内容将以红色表示，新增文件绿色标识
+    <li>将工作区文件和历史版本进行比较  <span class="strong"> git diff 历史版本 文件名</span></li>
+eg：git diff HEAD new1.txt 和当前版本进行比较<br/>
+eg：git diff HEAD^^ new1.txt 和上上个版本比较<br/>
+eg：git diff 哈希值 new1.txt 和该哈希值对应的版本进行比较
+</ul>
+<h4>2.4 分支</h4>
+<h6>2.4.1 创建与切换分支</h6>
+<ul>
+    <li>创建分支 <span class="strong"> git branch 分支名</span></li>
+    <li>切换分支 <span class="strong"> git checkout 分支名</span></li>
+    <li>这两个代码可以合并，创建并切换到新建的分支 <span class="strong"> git checkout -b 分支名</span></li>
+    <li>不能创建两个同名的分支，使用 <span class="strong"> git checkout -B 分支名 </span>强制创建会重置原有的分支</li>
+    <li>查看所有分支 <span class="strong"> git branch -v</span></li>
+</ul>
+<h6>2.4.2 合并分支</h6>
+<p>1.先切换到需要待修改的分支上  <span class="strong"> git checkout 分支名</span></p>
+<p>2.执行合并 <span class="strong">  git merge 有新内容的分支名</span></p>
+<h6>2.4.3 解决冲突</h6>
+<p>当两个分支同一文件同一内容进行了不同修改，git将提示自动合并失败，打开文件会标识出冲突位置和内容</p>
+<div class="code">&lt;&lt;&lt;&lt;&lt;&lt;&lt;HEAD
+当前分支修改内容
+=========
+被合并分支修改内容
+&gt;&gt;&gt;&gt;&gt;&gt;&gt;分支名</div>
+并且状态显示为正在合并，直接打开文件修改冲突内容后保存
+然后使用
+<p> <span class="strong"> git add 文件名</span></p>
+<p> <span class="strong">git commit -m “提交说明”</span></p>
+完成合并<br/>
+注意！！git commit 命令后不跟文件名，否则会提示合并状态下无法进行提交
+<h3>3.远程仓库</h3>
+<h4>3.1 push与clone</h4>
+在github创建仓库，并复制仓库地址
+git init 在本地初始化文件夹，建立本地仓库
+<ul>
+    <li>创建远程仓库别名<span class="strong"> git remote 别名 远程仓库地址</span></li>
+    <li>查看当前所有仓库别名<span class="strong"> git remote -v</span></li>
+    <li>推到远程仓库<span class="strong"> git push 别名 分支名</span></li>
+    <li>克隆到本地<span class="strong"> git clone 远程仓库地址</span></li>
+</ul>
+<h4>3.2 拉取</h4>
+<ul>
+    <li>拉取并直接合并<span class="strong">git pull 别名 远程分支名</span></li>
+    <li>仅拉取远程库<span class="strong">git fetch 别名 远程分支名</span></li>
+    <li>合并<span class="strong">git merge 远程库地址别名 / 远程分支名</span></li>
+    <li>即 pull=fetch+merge</li>
+</ul>
+<h4>3.3 冲突解决</h4>
+<p>  当团队不同成员对同一文件进行了修改，后push 的人会被要求将本地库更新到最新版本，需先 pull 到本地，而当拉取的远程库内容和本地库有冲突时，会直接进入待合并状态，需解决冲突位置。 即如果不是基于Github 远程库最新版本进行的修改，会无法进行push操作</p>
+<h3>4. 跨团队开发与fork操作</h3>
+<p>团队外的成员,可用 Github 中的 fork 将心仪的仓库复制一份到自己的仓库中，fork的仓库会保留来源。 在自己的仓库中编辑完后，可用 Github 中的 Pull requests 将修改提交给原作者。 原作者可通过 Merge pull request 合并代码，书写合并操作日志后 Confirm merge完成合并。</p>
+<h3>5. ssh免密登录设置</h3>
+<h4>5.1 生成.ssh密钥目录</h4>
+<p>1.返回根目录<span class="strong">cd ~ </span></p>
+<p>2.使用命令<span class="strong">ssh-keygen -t rsa -C github账号</span>生成.ssh密钥目录，密钥文件夹在win10中默认路径为C:\Users\当前登录win10的用户名\.ssh</p>
+<p>3. 文件夹中默认生成 id_rsa 和 id_rsa.pub文件,使用命令<span class="strong">cat id_rsa.p </span>或直接用记事本打开id_rsa.pub文件，复制内容</p>
+<p>4. 打开github的头像→Settings→SSH and GPG keys 位置，New SSH Key 后进行粘贴</p>
+<h4>5.2 配置ssh</h4>
+<p>1.创建远程仓库别名 <span class="strong">git remote 别名 远程仓库ssh</span></p>
+<p>2.此时使用<span class="strong">git remote -v </span>查看列表中将新增ssh地址，此时即可用<span class="strong">push ssh别名 远程分支</span>使用ssh进行操作。</p>
+<h3>6. Github常见报错</h3>
+<h4>6.1 无法连接</h4>
+<p>
+    fatal: unable to access 'https://github.com/xxxxx.git/'之类的错误
+</p>
+<p>将链接中的https改为git</p>
+<h4>6.2 git push 时报错 error 10054</h4>
+最常见的问题，有时候是网络问题，还有个原因是push的文件太大，缓存默认只有1M，将缓存改为500M
+<div class="code">git config http.postBuffer 524288000 </div>
+        </div>
+    </div>
+    <div class="post-nav">
+        
+            <div class="post-prev ">
+                <a href="/blog/2021/04/01/%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%AA%E8%BF%AD%E4%BB%A3%E5%99%A8/">上一篇：手写一个迭代器</a>
+            </div>
+            
+            
+                <div class="post-next">
+                    <a href="/blog/2021/03/22/Markd%E8%AF%AD%E6%B3%95/">下一篇：Markdown语法 </a>
+                </div>
+                 
+    </div>
+    <div class="container">
+        <div class="bigHead"></div>
+        <div class="ears"></div>
+        <div class="body"></div>
+        <div class="paws-front"></div>
+        <div class="paws-back"></div>
+        <div class="details"></div>
+        <div class="tail"></div>
+        <div class="sleep">
+          <span class="s1">z</span>
+          <span class="s2">z</span>
+          <span class="s3">z</span>
+          <span class="s4">z</span>
+          <span class="s5">z</span>
+        </div>
+    </div>
+</div>
+<div class="left-menu">
+    <a class="iconfont backTop" href="javascript:">&#xe655;</a>
+    <div class="husky"></div>
+  </div>
+</div>
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/main.js"></script>
+
+
+    <script>
+        if(!viewH){
+            let viewH=document.documentElement.clientHeight;
+        }
+    let imgs=document.querySelector('.art_content').querySelectorAll('img');
+    if(imgs){
+    let lazyload=function(){
+    imgs.forEach((item,index)=>{
+        let rect=item.getBoundingClientRect();
+        if(rect.bottom>=0&&rect.top<viewH){
+            item.src=item.dataset.src;
+        }
+    })
+    }
+    document.querySelector('.second-main').addEventListener('scroll',()=>{
+        lazyload();
+    })
+}
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+</html>

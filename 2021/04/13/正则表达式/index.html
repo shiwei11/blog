@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon">
+    
+<link rel="stylesheet" href="/blog/css/common.css">
+
+   
+    <style>
+    .preload{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+}
+.text{
+    margin-bottom: 10px;
+    color:rgb(0, 207, 243);
+    text-shadow: 0 0 3px rgb(0, 207, 243);
+    font-size: 20px;
+}
+.text span{
+    display: inline-block;
+    
+}
+.dance{
+    animation: dance .8s linear ;
+}
+.text span:nth-child(1){
+   animation-delay: 0s;
+}
+.text span:nth-child(2){
+   animation-delay: .1s;
+}
+.text span:nth-child(3){
+   animation-delay: .2s;
+}
+.text span:nth-child(4){
+   animation-delay: .3s;
+}
+.text span:nth-child(5){
+   animation-delay: .4s;
+}
+.text span:nth-child(6){
+   animation-delay:.5s;
+}
+.text span:nth-child(7){
+   animation-delay: .6s;
+}
+.text span:nth-child(8){
+   animation-delay: .7s;
+}
+.text span:nth-child(9){
+   animation-delay:.8s;
+}
+.text span:nth-child(10){
+   animation-delay: .9s;
+}
+
+@keyframes dance{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.loading{
+    width: 80%;
+    max-width: 260px;
+    height: 6px;
+    background-color: #e1e4e8;
+    border-radius: 6px;
+}
+.bar{
+    display: flex;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 10%, #b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation:bar 2s linear infinite;
+}
+@keyframes bar{
+    0%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+</style>
+
+
+<script src="/blog/js/jquery.min.js"></script>
+
+<script>
+    $(function(){
+           setInterval(function(){
+               $('.text').find("span").toggleClass('dance');
+           },1700)
+       })
+     $(window).on('load', function () {  
+           $(".preload").fadeOut("fast");  
+      });
+</script>
+<div class="preload">
+    <div class="text">
+        <span class="dance">L</span>
+        <span class="dance">o</span>
+        <span class="dance">a</span>
+        <span class="dance">d</span>
+        <span class="dance">i</span>
+        <span class="dance">n</span>
+        <span class="dance">g</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+    </div>
+    <div class="loading">
+        <span class="bar"></span>
+    </div>
+</div>
+<title>文章</title>
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
+
+<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="/blog/css/article.css">
+
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/base16/atelier-cave.min.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<div class="navigation">
+    <div class="card">
+        <div class="head">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
+        </div>
+        <div class="card-text">
+            <p>(ー`´ー)</p>
+            <p>那不是bug，是彩蛋</p>
+        </div> 
+    </div>
+    <ul class="label">
+        
+        <li><a href="/blog/index">首页</a></li>
+        
+        <li><a href="/blog/life">日常</a></li>
+        
+        <li><a href="/blog/record">一句</a></li>
+        
+        <li><a href="/blog/message">留言</a></li>
+        
+        <li><a href="/blog/about">关于</a></li>
+          
+    </ul>
+    
+        <ul class="tag">
+            <li>#Element</li>
+            <li>#Jquery</li>
+            <li>#css</li>
+            <li>#射频</li>
+            <li>#5G通讯</li>
+            <li>#PCB</li>
+            <li>#防火墙</li>
+            <li>#C</li>
+            <li>#html</li>
+            <li>#硬件</li>
+            <li>#javaScript</li>
+            <li>#服务器</li>
+            <li>#CentOS</li>
+            <li>#Linux</li>
+            <li>#python</li>
+            <li>#XPpose</li>
+        </ul>
+   
+    <ul class="rose">
+    <li>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></li>
+    <li>License  <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></li>
+    <li>Copyright2021&nbsp;by&nbsp;shiwi</li>
+</ul>
+</div>
+<div class="menu-btn closed"> 
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+</div>
+<div class="second-main">
+    <div class="motto">
+        <p> //sunny forever<br />
+            while(life&lt;end){<br />
+               love++;<br />
+               beAwesome :)} </p>
+     </div>
+     <div class="second-content">
+        <div class="article">
+        <h1 class="title">正则表达式</h1>
+        <div class="art_infor">
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：8533</span>
+            <span><span class="iconfont icon-riqi"></span>写于：2021-04-13</span></div>
+            <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2021-10-25</span>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您25分钟</span></div>
+        </div>
+        <div class="art_content">
+        <div class="broadcast color-yellow">
+<div class="iconfont icon-dengpao14hao"></div>
+文中所声明对象和语法基于javaScript</div>
+
+<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><p>用于描述字符串的某种特殊规则，可以用来检测某个字符串是否满足该规则，或对符合该规则的字符串进行提取、删除、替换等操作。</p>
+<h5 id="常见的运用"><a href="#常见的运用" class="headerlink" title="常见的运用"></a>常见的运用</h5><ul>
+<li>LOL：我星号你个星号星号的瞎子&emsp;(聊天系统将脏话等敏感字眼替换成 * 号)</li>
+<li>设置密码时<br/>
+系统："请至少设置8位以上且同时包含数字、大小写字母和特殊字符"<br/>
+"我他喵记不住啊!"&emsp;(限制用户所输入字符串的复杂度以提高密码强度)</li>
+<li>每天手机号收到乱七八糟的广告短信&emsp;(从爬虫中提取有效手机号、邮箱号、身份证号等信息)</li>
+<li>.........</li>
+</ul>
+
+
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><h4 id="创建正则表达式对象"><a href="#创建正则表达式对象" class="headerlink" title="创建正则表达式对象"></a>创建正则表达式对象</h4><h6 id="1-利用构造函数"><a href="#1-利用构造函数" class="headerlink" title="1.利用构造函数"></a>1.利用构造函数</h6><p> 由引号<span class="tips">“ </span>包围，语法：<span class="strong">let 变量=new RegExp(“正则表达式”,”匹配模式”)</span><br> 匹配模式可直接省略，默认情况下匹配到一个结果就返回<br> <pre><code>let reg=new RegExp("ab","i")</code></pre></p>
+<h6 id="2-字面量"><a href="#2-字面量" class="headerlink" title="2.字面量"></a>2.字面量</h6><p> 由斜杠<span class="tips">/</span>包围，语法：<span class="strong">let 变量=/正则表达式/匹配模式</span><br> <div class="code">let reg=/ab/i</div></p>
+<h4 id="匹配模式"><a href="#匹配模式" class="headerlink" title="匹配模式"></a>匹配模式</h4><p> 匹配模式可以忽略，默认情况下正则匹配会区分大小写，并且将在匹配到第一个结果后停止匹配并返回结果。正则表达式有六个参数用于指定匹配模式，这些参数既可以单独使用也可以任意顺序一起使用。</p>
+ <ul>
+ <li><span class="strong">g &emsp;&emsp;全局搜索</span></li>
+ <li><span class="strong">i &emsp;&emsp;忽略大小写</span></li>
+ <li><span class="strong">m&emsp;&emsp;多行搜索</span></li>
+ <li><span class="strong">s &emsp;&emsp;允许<span class="tips">.</span>号匹配换行符</span></li>
+ <li><span class="strong">u &emsp;&emsp;使用unicode码的模式进行匹配。</span></li>
+ <li><span class="strong">y &emsp;&emsp;执行“粘性”搜索,匹配从目标字符串的当前位置开始。</span></li>
+ </ul>
+
+<h4 id="RegExp对象的常用方法"><a href="#RegExp对象的常用方法" class="headerlink" title="RegExp对象的常用方法"></a>RegExp对象的常用方法</h4><h5 id="test"><a href="#test" class="headerlink" title="test()"></a>test()</h5><p>在字符串中查找是否有满足正则表达式的值，有则返回<span class="tips">true</span>,无则返回<span class="tips">false</span>。</p>
+<div class="code"><code>let reg=/hello/;
+console.log(reg.test("xxhelloxx")); //true</code></div>
+
+<h5 id="exec"><a href="#exec" class="headerlink" title="exec()"></a>exec()</h5><p>搜索出字符串中与正则表达式匹配的值，如果找到了，返回一个存放了匹配结果、匹配结果的第一个字符位置等信息的数组，如果未找到返回 null 。该方法不常用，搜索字符串常用String对象的match()方法。</p>
+<div class="broadcast color-blue">
+<div class="iconfont icon-yinhao"></div>
+更多RegExp对象的属性和方法详见W3C标准或MDN的官方文档</div>
+
+<h4 id="支持正则表达式的String对象的方法"><a href="#支持正则表达式的String对象的方法" class="headerlink" title="支持正则表达式的String对象的方法"></a>支持正则表达式的String对象的方法</h4><h5 id="split-字符串拆分为数组"><a href="#split-字符串拆分为数组" class="headerlink" title="split() 字符串拆分为数组"></a>split() 字符串拆分为数组</h5><p>按所写正则表达式表达式规则将一个字符串拆分成数组，拆分处字符将丢弃,该方法即使不指定全局匹配，也会自动进行全局匹配，返回数据类型为<span class="tips">Object数组<span>。</p>
+<div class="code"><code>var str="1a2b3c4d";
+console.log(str.split(/[A-z]/));//返回['1','2','3','4']</code></div>
+
+<h5 id="search-搜索匹配值"><a href="#search-搜索匹配值" class="headerlink" title="search() 搜索匹配值"></a>search() 搜索匹配值</h5><p>搜索字符串是否含有指定内容，有则返回第一次出现的索引值(即使为全局匹配也只返回第一次出现的索引值)，没有则返回-1。返回数据类型为<span class="tips">Number<span></p>
+<div class="code"><code>var str="never forget ever";
+console.log(str.search(/ever/));//返回1
+console.log(str.search(/f/));//返回6</code></div>
+
+<h5 id="match-找到一个或多个正则表达式匹配"><a href="#match-找到一个或多个正则表达式匹配" class="headerlink" title="match() 找到一个或多个正则表达式匹配"></a>match() 找到一个或多个正则表达式匹配</h5><p>将符合正则表达式的内容提取出来,默认情况下找到第一个符合的字符就会返回，因此经常配合全局匹配模式。返回数据类型为<span class="tips">Object数组<span></p>
+<div class="code"><code>var str="1a2b3c4d";
+console.log(str.match(/[a-z]/ig));//返回['a','b','c','d']
+console.log(str.search(/[0-9]/g));//返回['1','2','3','4']</code></div>
+
+<h5 id="replace-将符合表达式的字符串替换成指定字符串"><a href="#replace-将符合表达式的字符串替换成指定字符串" class="headerlink" title="replace() 将符合表达式的字符串替换成指定字符串"></a>replace() 将符合表达式的字符串替换成指定字符串</h5><p>用于屏蔽、替换内容，接收两个参数：被替换的内容、新内容，语法为<span class="strong">replace(字符或正则表达式,”新内容”)</span>。默认只替换第一个符合表达式的内容。返回数据类型为<span class="tips">String<span></p>
+<div class="code"><code>var str="1a2b3c4d";
+console.log(str.replace(/[a-z]/ig,"*"));//返回1*2*3*4*
+console.log(str.replace(/[0-9]/g,""));//返回abcd</code></div>
+
+<h4 id="语法-1"><a href="#语法-1" class="headerlink" title="语法"></a>语法</h4><h5 id="或"><a href="#或" class="headerlink" title="或 |"></a>或 |</h5><p>使用 | 匹配多项字符串 eg: let reg=/a|b/;</p>
+<h5 id="方括号"><a href="#方括号" class="headerlink" title="方括号 [ ]"></a>方括号 [ ]</h5><p>方括号用于查找某个范围内的字符，括号内内容也是<span class="tips">或</span>的关系</p>
+<div class="code"><code>/[a-z]/   是否含有任意的小写字母
+/[A-Z]/   是否含有任意的大写字母
+/[A-z]/   是否含有任意字母
+/[0-9]     任意数字
+/a[bde]c/   检查是否含有abc或adc或aec</code>
+</div>
+在方括号中增加<span class="tips">^</span>符号表示<span class="tips">非</span>的关系
+<div class="code"><code>let reg=/[^0-9]/;
+console.log(reg.test("12a34"));  //ture，字符串"12a34"中含有除数字以外的字符</code>
+</div>
+
+<h4 id="量词"><a href="#量词" class="headerlink" title="量词"></a>量词</h4><h5 id="x-匹配出现x次的字符串"><a href="#x-匹配出现x次的字符串" class="headerlink" title="{x} 匹配出现x次的字符串"></a>{x} 匹配出现x次的字符串</h5><p>指定一个内容出现的次数,注意：它只对它之前的一个内容起作用，多个内容重复应该使用<span class="tips">( )</span>包裹</p>
+<div class="code"><code>let reg=/a&#123;3&#125;/;    //匹配aaa
+let reg2=/ab&#123;3&#125;/;  //匹配abbb
+let reg3=/(ab)&#123;3&#125;/; //匹配ababab
+</code></div>
+
+<h5 id="x-y-匹配出现x至y次的字符串"><a href="#x-y-匹配出现x至y次的字符串" class="headerlink" title="{x,y} 匹配出现x至y次的字符串"></a>{x,y} 匹配出现x至y次的字符串</h5><div class="code"><code>let reg=/ab&#123;1,3&#125;c/;    //匹配abc、abbc、abbbc</code></div>
+
+<h5 id="x-匹配出现的字符串大于等于x次的字符串"><a href="#x-匹配出现的字符串大于等于x次的字符串" class="headerlink" title="{x,} 匹配出现的字符串大于等于x次的字符串"></a>{x,} 匹配出现的字符串大于等于x次的字符串</h5><div class="code"><code>let reg=/ab&#123;3,&#125;c/;    //匹配abbbc等b出现3次及3次以上的字符串</code></div>
+
+<h5 id="n-匹配包含至少有一个字符n的字符串"><a href="#n-匹配包含至少有一个字符n的字符串" class="headerlink" title="n+ 匹配包含至少有一个字符n的字符串"></a>n+ 匹配包含至少有一个字符n的字符串</h5><p>相当于/{1,}n/</p>
+<div class="code"><code>let reg=/ab+c/;    //匹配abc等b出现1次及1次以上的字符串</code></div>
+
+<h5 id="n-匹配包含0个或多个n的字符串"><a href="#n-匹配包含0个或多个n的字符串" class="headerlink" title="n* 匹配包含0个或多个n的字符串"></a>n* 匹配包含0个或多个n的字符串</h5><p>即有无n都可，相当于/{0,}n/</p>
+<div class="code"><code>let reg=/ab*c/;    //匹配ac、abc等b可有可无，无限数量的字符串</code></div>
+
+<h5 id="n-匹配只能包含0个或1个n的字符串"><a href="#n-匹配只能包含0个或1个n的字符串" class="headerlink" title="n? 匹配只能包含0个或1个n的字符串"></a>n? 匹配只能包含0个或1个n的字符串</h5><p>字符串中要么没有n,要么只能有一个n</p>
+<div class="code"><code>let reg=/ab?c/;    //只能匹配ac、abc</code></div>
+
+<h4 id="检查字符串位置"><a href="#检查字符串位置" class="headerlink" title="检查字符串位置"></a>检查字符串位置</h4><ul>
+<li><span class="strong">^n &emsp;&emsp;匹配以 n 开头的字符串</span></li>
+<li><span class="strong">n$ &emsp;&emsp;匹配以 n 结尾的字符串</span></li>
+<li><span class="strong">^n|n$ &emsp;匹配以n开头或以n结尾的字符串</span></li>
+<li><span class="strong">^n$ &emsp;&emsp;以n开头马上以n结尾,因此只能匹配到"n"</span></li>
+<li><span class="strong">?=n &emsp;&emsp;匹配任何其后紧接指定字符串 n 的字符串。</span></li>
+<li><span class="strong">?!n &emsp;&emsp;匹配任何其后没有紧接指定字符串 n 的字符串</span></li>
+</ul>
+<div class="broadcast color-green">
+<div class="iconfont icon-qiqiu"></div>
+^n和n$可理解为开头后紧接字符n,结束前紧接字符n,因此^n$表示开头后紧接这字符n，马上紧接这结束符号，因此只能匹配字符n自己</div>
+
+<h3 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h3><p>元字符即正则表达式中一些用于特殊用途的字符</p>
+<div class="table">
+<table>
+    <thead>
+        <tr>
+            <th>元字符</th>
+            <th>描述</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="strong">.</span></td>
+            <td><span class="strong">查找单个任意字符，除了换行和行结束符</span></td>
+        </tr>
+         <tr>
+            <td><span class="strong">\w</span></td>
+            <td><span class="strong">查找单词字符</span>(任意字母、数字、下划线_)</td>
+        </tr>
+        <tr>
+            <td><span class="strong">\W</span></td>
+            <td><span class="strong">查找非单词字符</span>(除字母、数字、下划线_以外的字符)</td>
+        </tr>
+        <tr>
+            <td><span class="strong">\d</span></td>
+            <td><span class="strong">查找数字</span></td>
+        </tr>
+        <tr>
+            <td><span class="strong">\D</span></td>
+            <td><span class="strong">查找非数字字符</span></td>
+        </tr>
+        <tr>
+            <td><span class="strong">\s</span></td>
+            <td><span class="strong">查找空白字符</span></td>
+        </tr>
+        <tr>
+            <td><span class="strong">\S</span></td>
+            <td><span class="strong">查找非空白字符</span></td>
+        </tr>
+        <tr>
+            <td><span class="strong">\b</span></td>
+            <td><span class="strong">匹配单词边界</span></td>
+        </tr>
+        <tr>
+            <td><span class="strong">\B</span></td>
+            <td><span class="strong">匹配非单词边界</span></td>
+        </tr>
+        <tr>
+            <td><span class="strong">\o</span></td>
+            <td><span class="strong">查找 NUL 字符(字符串结束字符)</span></td>
+        </tr>
+        <tr>
+            <td><span class="strong">\n</span></td>
+            <td><span class="strong">查找换行符</span></td>
+        </tr>
+        <tr>
+            <td><span class="strong">\f</span></td>
+            <td><span class="strong">查找换页符</span></td>
+        </tr>
+        <tr>
+            <td><span class="strong">\r</span></td>
+            <td><span class="strong">查找回车符</span></td>
+        </tr>
+        <tr>
+            <td><span class="strong">\t</span></td>
+            <td><span class="strong">查找制表符</span></td>
+        </tr>
+        <tr>
+            <td><span class="strong">\v</span></td>
+            <td><span class="strong">查找垂直制表符</span></td>
+        </tr>
+        <tr>
+            <td><span class="strong">\xxx</span></td>
+            <td><span class="strong">查找以八进制数 xxx 规定的字符</span></td>
+        </tr>
+        <tr>
+            <td><span class="strong">\xdd</span></td>
+            <td><span class="strong">查找以十六进制数 dd 规定的字符</span></td>
+        </tr>
+        <tr>
+            <td><span class="strong">\uxxxx</span></td>
+            <td><span class="strong">查找以十六进制数 xxxx 规定的 Unicode 字符</span></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<h4 id="单词边界"><a href="#单词边界" class="headerlink" title="单词边界"></a>单词边界</h4><p>查找某个单独单词时使用单词边界，用于区分这个单词刚好是另外一个字符串一个部分的情况</p>
+<div class="code"><code>let reg=/\bchild\b/;
+console.log(reg.test("eg children")); //false </code></div>
+
+<h4 id="去除空格"><a href="#去除空格" class="headerlink" title="去除空格"></a>去除空格</h4><h5 id="去除字符串中的所有空格"><a href="#去除字符串中的所有空格" class="headerlink" title="去除字符串中的所有空格"></a>去除字符串中的所有空格</h5><p>表达式：<span class="strong">/\s/g</span></p>
+<div class="code"><code>let str=" xxx  xxx ";
+let str1=str.replace(/\s/g,""); //输出xxxxxx</code></div>
+
+<h5 id="去除字符串前后的空格，保留字符之间的空格"><a href="#去除字符串前后的空格，保留字符之间的空格" class="headerlink" title="去除字符串前后的空格，保留字符之间的空格"></a>去除字符串前后的空格，保留字符之间的空格</h5><p>表达式：<span class="strong">/^\s+|\s+$/g</span>若只去除前或后的空格，取表达式一半</p>
+<div class="code"><code>let str=" xxx  xxx ";
+let str1=str.replace(/^\s+|\s+$/g,""); //输出xxx  xxx</code></div>
+
+<h3 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h3><p>由于<span class="tips">.</span>、<span class="tips">/</span>等已作为关键字使用，因此如匹配小数点等功能需要用到转义。正则表达式中使用<span class="tips">&#92;</span>作为转义字符</p>
+<div class="code"><code>let reg=/\./;  //匹配字符串中的.号，如匹配小数</code></div>
+
+<h4 id="构造函数中的转义"><a href="#构造函数中的转义" class="headerlink" title="构造函数中的转义"></a>构造函数中的转义</h4><p>由于构造函数中接收的参数为字符串，而字符串中<span class="tips">&#92;</span>也为转义字符，因此在构造函数中使用<span class="tips">&#92;</span>符号需要进行二次转义。如</p>
+<div class="code"><code>let reg=new RegExp("\\."); //编译后的正则表达式为/\./,即用于匹配小数点</code></div>
+
+
+<h5 id="匹配字符串中是否有-92"><a href="#匹配字符串中是否有-92" class="headerlink" title="匹配字符串中是否有&#92;"></a>匹配字符串中是否有<span class="tips">&#92;</span></h5><div class="code"><code>let reg=new RegExp("\\\\"); //编译后的正则表达式为/\\/</code></div>
+<p>错误的语法</p>
+<div class="code"><code>let reg=new RegExp("\\");
+ //编译后的正则表达式为/\/，表达式将\作为转义符号,转义后面的/符号，从而导致正则表达式缺少完整//符号而报错</code></div>
+<p>测试字符串中是否有<span class="tips">&#92;</span>完整代码</p>
+<div class="code"><code>let reg=new RegExp("\\\\");
+ let str="abcd\\";
+ console.log(reg); //输出/\\/
+ console.log(str); //输出abcd\
+ console.log(reg.test(str)); //输出true</code></div>
+
+<h3 id="常用正则表达式"><a href="#常用正则表达式" class="headerlink" title="常用正则表达式"></a>常用正则表达式</h3> <div class="broadcast color-red">
+<div class="iconfont icon-gantanhao"></div>
+网课资料，老师说没一个一个验证过，可能存在错误。不知道作者没有注明来源，侵权请联系我删除</div>
+<h5>校验数字</h5>
+<p style="white-space:pre;text-indent:0;">1. 数字：^[0-9]*$
+2. n位的数字：^\d{n}$
+3. 至少n位的数字：^\d{n,}$
+4. m-n位的数字：^\d{m,n}$
+5. 零和非零开头的数字：^(0|[1-9][0-9]*)$
+6. 非零开头的最多带两位小数的数字：^([1-9][0-9]*)+(.[0-9]{1,2})?$
+7. 带1-2位小数的正数或负数：^(\-)?\d+(\.\d{1,2})?$
+8. 正数、负数、和小数：^(\-|\+)?\d+(\.\d+)?$
+9. 有两位小数的正实数：^[0-9]+(.[0-9]{2})?$
+10. 有1~3位小数的正实数：^[0-9]+(.[0-9]{1,3})?$
+11. 非零的正整数：^[1-9]\d*$ 或 ^([1-9][0-9]*){1,3}$ 或 ^\+?[1-9][0-9]*$
+12. 非零的负整数：^\-[1-9][]0-9"*$ 或 ^-[1-9]\d*$
+13. 非负整数：^\d+$ 或 ^[1-9]\d*|0$
+14. 非正整数：^-[1-9]\d*|0$ 或 ^((-\d+)|(0+))$
+15. 非负浮点数：^\d+(\.\d+)?$ 或 ^[1-9]\d*\.\d*|0\.\d*[1-9]\d*|0?\.0+|0$
+16. 非正浮点数：^((-\d+(\.\d+)?)|(0+(\.0+)?))$ 或 ^(-([1-9]\d*\.\d*|0\.\d*[1-9]\d*))|0?\.0+|0$
+17. 正浮点数：^[1-9]\d*\.\d*|0\.\d*[1-9]\d*$ 或 ^(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*))$
+18. 负浮点数：^-([1-9]\d*\.\d*|0\.\d*[1-9]\d*)$ 或 ^(-(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*)))$
+19. 浮点数：^(-?\d+)(\.\d+)?$ 或 ^-?([1-9]\d*\.\d*|0\.\d*[1-9]\d*|0?\.0+|0)$
+</p>
+<h5>校验字符</h5>
+<p style="white-space:pre;text-indent:0;">1. 汉字：^[\u4e00-\u9fa5]{0,}$
+2. 英文和数字：^[A-Za-z0-9]+$ 或 ^[A-Za-z0-9]{4,40}$
+3. 长度为3-20的所有字符：^.{3,20}$
+4. 由26个英文字母组成的字符串：^[A-Za-z]+$
+5. 由26个大写英文字母组成的字符串：^[A-Z]+$
+6. 由26个小写英文字母组成的字符串：^[a-z]+$
+7. 由数字和26个英文字母组成的字符串：^[A-Za-z0-9]+$
+8. 由数字、26个英文字母或者下划线组成的字符串：^\w+$ 或 ^\w{3,20}$
+9. 中文、英文、数字包括下划线：^[\u4E00-\u9FA5A-Za-z0-9_]+$
+10. 中文、英文、数字但不包括下划线等符号：^[\u4E00-\u9FA5A-Za-z0-9]+$ 或 ^[\u4E00-\u9FA5A-Za-z0-9]{2,20}$
+11. 可以输入含有^%&',;=?$\"等字符：[^%&',;=?$\x22]+ 12 禁止输入含有~的字符：[^~\x22]+</p>
+<h5>信息</h5>
+<p style="white-space:pre;text-indent:0;">1. Email地址：^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$
+2. 域名：[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(/.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+/.?
+3. InternetURL：[a-zA-z]+://[^\s]* 或 ^http://([\w-]+\.)+[\w-]+(/[\w-./?%&=]*)?$
+4. 手机号码：^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$
+5. 电话号码("XXX-XXXXXXX"、"XXXX-XXXXXXXX"、"XXX-XXXXXXX"、"XXX-XXXXXXXX"、"XXXXXXX"和"XXXXXXXX)：^(\(\d{3,4}-)|\d{3.4}-)?\d{7,8}$
+6. 国内电话号码(0511-4405222、021-87888822)：\d{3}-\d{8}|\d{4}-\d{7}
+7. 身份证号(15位、18位数字)：^\d{15}|\d{18}$
+8. 短身份证号码(数字、字母x结尾)：^([0-9]){7,18}(x|X)?$ 或 ^\d{8,18}|[0-9x]{8,18}|[0-9X]{8,18}?$
+9. 帐号是否合法(字母开头，允许5-16字节，允许字母数字下划线)：^[a-zA-Z][a-zA-Z0-9_]{4,15}$
+10. 密码(以字母开头，长度在6~18之间，只能包含字母、数字和下划线)：^[a-zA-Z]\w{5,17}$
+11. 强密码(必须包含大小写字母和数字的组合，不能使用特殊字符，长度在8-10之间)：^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}$
+12. 日期格式：^\d{4}-\d{1,2}-\d{1,2}
+13. 一年的12个月(01～09和1～12)：^(0?[1-9]|1[0-2])$
+14. 一个月的31天(01～09和1～31)：^((0?[1-9])|((1|2)[0-9])|30|31)$
+15. 金额的输入格式：
+    1.有四种钱的表示形式我们可以接受:"10000.00" 和 "10,000.00", 和没有 "分" 的 "10000" 和 "10,000"：^[1-9][0-9]*$
+    2.这表示任意一个不以0开头的数字,但是,这也意味着一个字符"0"不通过,所以我们采用下面的形式：^(0|[1-9][0-9]*)$
+    3.一个0或者一个不以0开头的数字.我们还可以允许开头有一个负号：^(0|-?[1-9][0-9]*)$
+    4.这表示一个0或者一个可能为负的开头不为0的数字.让用户以0开头好了.把负号的也去掉,因为钱总不能是负的吧.下面我们要加的是说明可能的小数部分：^[0-9]+(.[0-9]+)?$
+    5.必须说明的是,小数点后面至少应该有1位数,所以"10."是不通过的,但是 "10" 和 "10.2" 是通过的：^[0-9]+(.[0-9]{2})?$
+    6.这样我们规定小数点后面必须有两位,如果你认为太苛刻了,可以这样：^[0-9]+(.[0-9]{1,2})?$
+    7.这样就允许用户只写一位小数.下面我们该考虑数字中的逗号了,我们可以这样：^[0-9]{1,3}(,[0-9]{3})*(.[0-9]{1,2})?$
+    8.1到3个数字,后面跟着任意个 逗号+3个数字,逗号成为可选,而不是必须：^([0-9]+|[0-9]{1,3}(,[0-9]{3})*)(.[0-9]{1,2})?$
+16. xml文件：^([a-zA-Z]+-?)+[a-zA-Z0-9]+\\.[x|X][m|M][l|L]$
+17. 中文字符的正则表达式：[\u4e00-\u9fa5]
+18. 双字节字符：[^\x00-\xff] (包括汉字在内，可以用来计算字符串的长度(一个双字节字符长度计2，ASCII字符计1))
+19. 空白行的正则表达式：\n\s*\r (可以用来删除空白行)
+20. HTML标记的正则表达式：<(\S*?)[^>]*>.*?</\1>|<.*? /> (网上流传的版本太糟糕，上面这个也仅仅能部分，对于复杂的嵌套标记依旧无能为力)
+21. 首尾空白字符的正则表达式：^\s*|\s*$或(^\s*)|(\s*$) (可以用来删除行首行尾的空白字符(包括空格、制表符、换页符等等)，非常有用的表达式)
+22. 腾讯QQ号：[1-9][0-9]{4,} (腾讯QQ号从10000开始)
+23. 中国邮政编码：[1-9]\d{5}(?!\d) (中国邮政编码为6位数字)
+24. IP地址：\d+\.\d+\.\d+\.\d+ (提取IP地址时有用)
+25. IP地址：((?:(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d))</p>
+
+        </div>
+    </div>
+    <div class="post-nav">
+        
+            <div class="post-prev ">
+                <a href="/blog/2021/05/29/5G%E5%8A%9F%E5%88%86%E5%99%A8/">上一篇：一款运用于毫米波通讯的不等分功分器</a>
+            </div>
+            
+            
+                <div class="post-next">
+                    <a href="/blog/2021/04/01/%E6%89%8B%E5%86%99%E4%B8%80%E4%B8%AA%E8%BF%AD%E4%BB%A3%E5%99%A8/">下一篇：手写一个迭代器 </a>
+                </div>
+                 
+    </div>
+    <div class="container">
+        <div class="bigHead"></div>
+        <div class="ears"></div>
+        <div class="body"></div>
+        <div class="paws-front"></div>
+        <div class="paws-back"></div>
+        <div class="details"></div>
+        <div class="tail"></div>
+        <div class="sleep">
+          <span class="s1">z</span>
+          <span class="s2">z</span>
+          <span class="s3">z</span>
+          <span class="s4">z</span>
+          <span class="s5">z</span>
+        </div>
+    </div>
+</div>
+<div class="left-menu">
+    <a class="iconfont backTop" href="javascript:">&#xe655;</a>
+    <div class="husky"></div>
+  </div>
+</div>
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/main.js"></script>
+
+
+    <script src="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+    <script>
+        //代码高亮初始化
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+        //代码复制功能
+        let pres=document.querySelectorAll('pre');
+        for(let i=0;i<pres.length;i++){
+        var copyBtn=document.createElement('span');
+        copyBtn.innerText="copy";
+        pres[i].appendChild(copyBtn);
+        let codes=pres[i].querySelector('code').innerText;
+        copyBtn.addEventListener("click",function(){
+        let input=document.createElement('textarea');
+        pres[i].appendChild(input);
+        input.value=codes;
+        input.select(); // 选中文本
+        document.execCommand("copy"); // 执行浏览器复制命令
+        pres[i].removeChild(input);
+},false)
+}
+        </script>
+    
+    <script>
+        if(!viewH){
+            let viewH=document.documentElement.clientHeight;
+        }
+    let imgs=document.querySelector('.art_content').querySelectorAll('img');
+    if(imgs){
+    let lazyload=function(){
+    imgs.forEach((item,index)=>{
+        let rect=item.getBoundingClientRect();
+        if(rect.bottom>=0&&rect.top<viewH){
+            item.src=item.dataset.src;
+        }
+    })
+    }
+    document.querySelector('.second-main').addEventListener('scroll',()=>{
+        lazyload();
+    })
+}
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+</html>

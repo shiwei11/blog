@@ -101,7 +101,7 @@ html{
     align-items: center;
     color: #fff;
     font-size: 1rem;
-    z-index:100;
+    z-index:90;
 }
 
 /* 导航栏 */
@@ -120,7 +120,7 @@ html{
     width: 100%;
     border: 1px solid rgba(256,256,256,.9);
    transition: all .5s;
-   z-index: 100;
+   z-index: 90;
 }
  .label li a{
     position: relative;
@@ -355,6 +355,11 @@ flex-direction: row;
     overflow: hidden;
     transition: all .5s;
 }
+.update li .update_pic a{
+    text-align: center;
+    display: block;
+    width: 100%;
+}
 .update li .update_pic a img{
     width: 100%;
     height: 100%;
@@ -549,6 +554,7 @@ flex-direction: row;
     border-radius:7vh;
 }
 .tag  li{
+    margin: .3em .1em;
     margin-bottom: 0px;
 }
 .rose{
@@ -562,19 +568,24 @@ flex-direction: row;
 .update li{
 width: 80%;
 height: auto !important;
+padding:.4rem 0px 1.4rem 0px;
+}
+
+.update li .update_pic a img{
+    width: 90%; 
 }
 .update li .update_content h1{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .update li .update_content p{
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .update li .update_content .content_label{
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 .backTop{
-    color:#7de3ff;
-    text-shadow: none;
+    /* color:#7de3ff;
+    text-shadow: none; */
     margin-bottom: 10px;
 }
 }

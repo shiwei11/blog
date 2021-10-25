@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon">
+    
+<link rel="stylesheet" href="/blog/css/common.css">
+
+   
+    <style>
+    .preload{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+}
+.text{
+    margin-bottom: 10px;
+    color:rgb(0, 207, 243);
+    text-shadow: 0 0 3px rgb(0, 207, 243);
+    font-size: 20px;
+}
+.text span{
+    display: inline-block;
+    
+}
+.dance{
+    animation: dance .8s linear ;
+}
+.text span:nth-child(1){
+   animation-delay: 0s;
+}
+.text span:nth-child(2){
+   animation-delay: .1s;
+}
+.text span:nth-child(3){
+   animation-delay: .2s;
+}
+.text span:nth-child(4){
+   animation-delay: .3s;
+}
+.text span:nth-child(5){
+   animation-delay: .4s;
+}
+.text span:nth-child(6){
+   animation-delay:.5s;
+}
+.text span:nth-child(7){
+   animation-delay: .6s;
+}
+.text span:nth-child(8){
+   animation-delay: .7s;
+}
+.text span:nth-child(9){
+   animation-delay:.8s;
+}
+.text span:nth-child(10){
+   animation-delay: .9s;
+}
+
+@keyframes dance{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.loading{
+    width: 80%;
+    max-width: 260px;
+    height: 6px;
+    background-color: #e1e4e8;
+    border-radius: 6px;
+}
+.bar{
+    display: flex;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 10%, #b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation:bar 2s linear infinite;
+}
+@keyframes bar{
+    0%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+</style>
+
+
+<script src="/blog/js/jquery.min.js"></script>
+
+<script>
+    $(function(){
+           setInterval(function(){
+               $('.text').find("span").toggleClass('dance');
+           },1700)
+       })
+     $(window).on('load', function () {  
+           $(".preload").fadeOut("fast");  
+      });
+</script>
+<div class="preload">
+    <div class="text">
+        <span class="dance">L</span>
+        <span class="dance">o</span>
+        <span class="dance">a</span>
+        <span class="dance">d</span>
+        <span class="dance">i</span>
+        <span class="dance">n</span>
+        <span class="dance">g</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+    </div>
+    <div class="loading">
+        <span class="bar"></span>
+    </div>
+</div>
+<title>文章</title>
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
+
+<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="/blog/css/article.css">
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<div class="navigation">
+    <div class="card">
+        <div class="head">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
+        </div>
+        <div class="card-text">
+            <p>(ー`´ー)</p>
+            <p>那不是bug，是彩蛋</p>
+        </div> 
+    </div>
+    <ul class="label">
+        
+        <li><a href="/blog/index">首页</a></li>
+        
+        <li><a href="/blog/life">日常</a></li>
+        
+        <li><a href="/blog/record">一句</a></li>
+        
+        <li><a href="/blog/message">留言</a></li>
+        
+        <li><a href="/blog/about">关于</a></li>
+          
+    </ul>
+    
+        <ul class="tag">
+            <li>#Element</li>
+            <li>#Jquery</li>
+            <li>#css</li>
+            <li>#射频</li>
+            <li>#5G通讯</li>
+            <li>#PCB</li>
+            <li>#防火墙</li>
+            <li>#C</li>
+            <li>#html</li>
+            <li>#硬件</li>
+            <li>#javaScript</li>
+            <li>#服务器</li>
+            <li>#CentOS</li>
+            <li>#Linux</li>
+            <li>#python</li>
+            <li>#XPpose</li>
+        </ul>
+   
+    <ul class="rose">
+    <li>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></li>
+    <li>License  <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></li>
+    <li>Copyright2021&nbsp;by&nbsp;shiwi</li>
+</ul>
+</div>
+<div class="menu-btn closed"> 
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+</div>
+<div class="second-main">
+    <div class="motto">
+        <p> //sunny forever<br />
+            while(life&lt;end){<br />
+               love++;<br />
+               beAwesome :)} </p>
+     </div>
+     <div class="second-content">
+        <div class="article">
+        <h1 class="title">听歌软件推荐-Spotify</h1>
+        <div class="art_infor">
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：4556</span>
+            <span><span class="iconfont icon-riqi"></span>写于：2021-06-01</span></div>
+            <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2021-10-25</span>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您14分钟</span></div>
+        </div>
+        <div class="art_content">
+        <div class="broadcast color-yellow">
+<div class="iconfont icon-dengpao14hao"></div>
+Spotify官方发布的信息随时会变化，本文部分讯息可能过时，请以官方信息为准，但是注册、使用步骤都是大同小异的</div>
+<h3>关于Spotify</h3>
+<p>Spotify创立于瑞典，是目前全球最大的在线音乐流服务商,得到了华纳音乐集团、环球音乐集团、索尼音乐娱乐、Kakao M和腾讯音乐娱乐集团等唱片公司的合作授权，所以曲库非常齐全。Spotify暂未进入中国大陆市场，不过不妨碍软件的正常使用。</p>
+<h3>与国内音乐软件比对</h3>
+<p>先来说说Spotify的优点吧</p>
+<h5>1. 齐全的曲库</h5>
+<p>国内的歌很容易出现版权被某家平台买断的情况，想听喜欢的歌可能得好几个平台才能找齐，听歌时还得好几个APP切来切去，甚至要在好几个平台开VIP。平台自己的恶性竞争还要消费者来买单，这能惯着他们？
+另外一方面，国内的音乐也很容易出现被人恶意举报而惨遭下架的情况。比如嘻哈音乐，hiphop由于部分歌歌词会比较脏，而且嘻哈圈本身就流行diss文化，在diss某些流量idol后，会出现被其粉丝恶意举报后惨遭下架的情况。
+<div class="broadcast color-blue">
+<div class="iconfont icon-yinhao"></div>
+“DISS不过是种切磋但那些明星雇佣的水军总想方设法要把对方逼死”</div>
+<p>对于Spotify就不存在这个问题了，很多国内下架的专辑你仍然可以在Spotify上找到，拥有极为齐全的版权和曲库。如果你是嘻哈音乐，欧美音乐爱好者，Spotify绝对不会让你失望。当然，Spotify本身没有进入大陆市场，很多小众的华语音乐还是只能在国内APP上找到。</p>
+<h5>2. 开通Premium后就不用再买专辑</h5>
+<p>Premium相当于开通Spotify的VIP，国内在开通VIP后，很多专辑还需要单独付费购买才能听，在Spotify中无需再购买专辑，专辑费用不用额外出了。</p>
+<h5>3. 优秀的音乐推荐算法</h5>
+<p>Spotify的音乐推荐算法也是网上经常被人称赞的闪光点，它会定期制作made for you歌单推荐音乐，国内的音乐软件也有类似的功能，但国内的推荐老会有奇奇怪怪的歌混在里面，感觉Spotify的推荐算法更精准点。</p>
+<h5>4. 支持手机端和PC端相互操控</h5>
+<p>当使用电脑听歌时，打开手机端的Spotify会同步电脑端的状态，反过来也如此。你可以使用手机来控制电脑端进行切歌，调节音量等操作，有些鸡肋，可能我没学会正确的打开方式......在家搞家务使用电脑的音箱外放时，就不用跑到电脑面前切歌了。</p>
+<h5>5. 没有乱七八糟的直播、短视频推送</h5>
+<p>作为音乐软件，Spotify拥有的就是安安静静听歌，没有什么直播、小视频、商店等乱七八糟的功能，也不会有那些乱七八糟的主播推荐。不过不开VIP的话每隔15分钟会推送一次广告，这个后面详细说付费和免费的区别。</p>
+<h5>6. 舒适的UI界面</h5>
+<p>不得不说，歪果仁对于UI设计、无障碍设计还是很有心得的，Spotify的界面用的是真的很舒服。</p>
+<h6>其他优点自己去体验一下吧，接下来再说说用惯了国内的软件可能会觉得不习惯的点</h6>
+<h5>1. 部分地区不支持显示歌词</h5>
+<p>日区、港区可以显示歌词，但是美区账号没有歌词显示功能，只能借助Musixmatch、LyricsX等软件，Musixmatch会自动识别Spotify当前播放的音乐自动匹配歌词。Musixmatch本身是免费的，付费版支持更多花里胡哨的歌词显示方式，1美元可以永久解锁付费版。</p>
+<h5>2. 不支持评论</h5>
+<p>不能到点上号开哭了。</p>
+<h5>3. 注册、登录账号时需要魔法工具加持</h5>
+<p>Spotify没有进入大陆市场，而且注册账号时官方使用的是谷歌的人机验证，而国内的网络无法加载谷歌的服务，所以注册账号的时候会有点麻烦，但注册完以后听歌是全程可以用国内的网络环境的。</p>
+<h5>4. 官方开通Premium贵</h5>
+<p>印度、菲律宾等东南亚区的账号开通Premium比较便宜，美区账号每个月的费用是$9.99美刀，折合人民币大约64.4元每个月，情侣套餐包含两个账号12.99美元一个月，折合人民币83.7元一个月，一个账号就是42块左右，家庭组包含6个账号15.99美元每个月，折合人民币103元每个月，一个账号均摊下来17块左右，另外有学生套餐，但是天朝的学生不能用。这价格相较于国内的平台来说就有点贵了。</p>
+<p>所以很多人一般都是开通的东南亚国家的Premium，开通美区账号一般都是组队开家庭组。</p>
+<h3>注册与使用</h3>
+
+<h5>1. 注册账号</h5>
+<p>因为Spotify没有进入大陆的市场，所以注册时需要魔法工具，如果不使用魔法工具当他检测到你的IP地址是来源于中国大陆，就会提示<span class="tips"> "Spotify is currently not available in your country"</span>，所以需要魔法将我们的IP地址伪装成其他地区，国内香港、澳门、台湾都行，国外随便一个国家都行。</p>
+<p>传送过去后，登录Spotify的官网 <a href="https://www.spotify.com" target="_blank">https://www.spotify.com</a>，然后点右上角的Log in，然后点击注册一个账号，填写邮箱、密码、用户名、生日等信息(生日可以乱填但记得填18岁以上，不然有些带脏标的歌会听不了)，填完有个google的reCAPTCHA人机验证，这个服务的域名在国内是被墙的，同样需要魔法工具才能打开。网上好像也有不需要魔法工具就能打开reCAPTCHA的教程，我没自己试过，不知道在Spotify里有没有效，没有魔法工具的找身边有的人帮忙注册一下。去Spotify的贴吧、豆瓣小组好像有好心人帮人免费注册，但注意防骗，要钱的就不要理了。最省事的方法就是某宝某多买个号(基本上去他们那里买Premium就会送号)，然后改邮箱就行，注意防骗！！！！！</p>
+<p>注册后官方会发一封邮件验证邮箱,点一下<span class="tips"> CONFIRM YOUR ACCOUNT </span>完成认证即可，注册完的账号有7天体验期可以任意听歌、切歌。</p>
+<p>在使用魔法工具时，有些魔法工具会被提示Spotify检测到正在使用代理工具，要求关闭代理再进行操作。这估计是以前有哪个憨皮拿这个IP批量注册过Spotify账号，IP被官方记录了，把工具切换到全局模式再试试，或者把广播IP地址换成原生IP，如果还是不行那只能换个IP了。</p>
+<h5>2. 分区</h5>
+<p>Spotify为全球很多国家和地区提供服务，所以他的账号是分区的，国内常用的区域有美区、日区、港区、菲律宾区、俄区、马来西亚、印度的一些东南亚的区,账户区域不同，曲库内容、歌单、界面UI、付费价格也不同。</p>
+<p>注册账号时，如果挂的美国的代理，就会进美区的官网，其他同理。具体进了什么区看页面语言，或者地址栏URL路径就可以了，如美区URL为：
+<div class="code">https://www.spotify.com/us/</div>
+<p>但这个后期可以改的，所以注册时哪个区都无所谓，但是买Premium时，买完就不能改了，所以想好买哪个区的Premium，给个常用的几个区对比：</p>
+</p>
+<ul>
+<li><h6>曲库</h6>
+美区的曲库相对较全，但如果喜欢ACG音乐、日语歌那肯定去日区，其他同理。但Spotify的曲库判定有点迷，有些日语歌或者韩语歌你无法在日区找到，但是美区或其他区却有，不过这毕竟还是少数。
+</li>
+<li><h6>歌词</h6>
+美区是没有歌词的，得借助其他软件，日区、港区、俄区还有一些东南亚区有歌词。</li>
+<li><h6>订阅价格</h6>
+下面是部分区折算成人民币后的价格，一般东南亚区的比较便宜
+ <div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th>区</th>
+                <th>个人</th>
+                <th>家庭组(6个账号)</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>香港</td>
+              <td>51元</td>
+              <td>77.5元</td>
+          </tr>  
+          <tr>
+            <td>美区</td>
+            <td>65元</td>
+            <td>102.5元</td>
+        </tr>
+        <tr>
+            <td>日区</td>
+            <td>63元</td>
+            <td>95元</td>
+        </tr>
+        <tr>
+            <td>菲律宾</td>
+            <td>17元</td>
+            <td>26元</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+   <div class="broadcast color-red">
+<div class="iconfont icon-gantanhao"></div>
+仅作参考，实际价格以Spotify官网发布的价格为准</div>
+</li>
+</ul>
+<h5>2. 关于Premium</h5>
+<p>即付费版，新注册的账号有7天的付费版体验期。如果第一次开Premium则会送一个月的体验期，免费版和付费版的区别在于
+<ul>
+<li>手机端免费版只能随机播放，而且只能切6次歌，即你不能想听啥就点啥听，只能听它随机播放的，听一半不想听了想点下一曲只有6次机会，6次以后就只能等它放完(不知道那个天才想出来的设定，真想给他寄点土特产)，网页版和PC端的好一点，能切歌但只能随机播放(老式收音机)，付费版可以任意播放、切换歌</li>
+<li>免费版在听歌过程中会有广告，付费版没有</li>
+<li>音质有区别，免费版比特率在160kbit/s，付费版的比特率在320kbit/s</li>
+</ul></p>
+<h5>3. 开通Premium的小tips</h5>
+<p>直接开个人账号太贵了，常见的方法就是去贴吧、豆瓣小组找人一起开家庭组，这里常年会有车队等着拉人，注意防骗！！！因为一个家庭组里有一个管理员账号，他可以随时把家庭成员踢出去，交了钱隔天就被踢很常见。要是周围用的人多，熟人约好几个人一起开稳妥一点。</p>
+<p>还有一个方法就是去某宝续费，注册有问题的也可以直接在他们手上买号，然后把邮箱换成自己的，同样要注意防骗问题。费用大概是15、20块三个月这样，每家店都不一样。</p>
+<div class="broadcast color-red">
+<div class="iconfont icon-gantanhao"></div>
+一定要去开店年份较高，回头客多的店铺买，开店时间短、评论没几个那种很有可能是以前跑路了，开家新店铺再来割一波韭菜，指不定哪天就找不到店家了</div>
+<h5>4. 踩过的坑</h5>
+<p>某宝的方法也是拉家庭组，然后利用绑信用卡免费1个月等官方优惠赚取差价。但是经常会遇到你买完以后没几个星期就把你踢出家庭组，然后商家跑路，连店铺都找不到那种.....所以在某宝续费，要选那些开店年份长的的店铺，至少说明人家不跑路。</p>
+<p>跑路的最坏结果就是，如果你多次买了家庭组，然后被踢，又买再被踢，官方检测到你的账号短期内加入了众多不同的家庭组，可能会被封禁。并且有些店家的家庭组，是盗取了国外的账号然后拉你进家庭组，一旦国外的号主发现了，向官方反馈后可能直接会被封禁。
+我的上一个账号就是在某宝续费之后，某天登录时提示无效的账户，去某宝看店家已经跑路了，汤都没留一口.......找Spotify客服客服表示需要提供付费账单才能提供帮助......可是我的付费都付给了某个天萨的卖家，哪有什么账单.......无奈只能放弃那个账号了，可惜了收藏多年的广场舞神曲。。</p>
+
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>注册：1.自己有魔法工具自己注册；<br>2.没有魔法工具就去贴吧、豆瓣看看能不能找人帮忙注册；<br>3.或直接去某宝、某多直接买Premium让店家帮忙注册；<br>4.都不行可以写邮件给我，让我看看是谁这么笨；<br>可以先注册用一个星期体验一下，spotify有一个星期的新号体验期，觉得好用再去某宝开Premium或去贴吧、豆瓣找人合作开家庭组。</p>
+<div class="broadcast color-purple">
+<div class="iconfont icon-fengche"></div>
+觉得好用真心推荐，不是打广告。注册或者使用中有啥问题，可以去Spotify贴吧，或者去豆瓣小组找找攻略，需要帮忙可以给我写邮件</div>
+
+        </div>
+    </div>
+    <div class="post-nav">
+        
+            <div class="post-prev ">
+                <a href="/blog/2021/06/15/vim%E7%BC%96%E8%BE%91%E5%99%A8/">上一篇：vim笔记</a>
+            </div>
+            
+            
+                <div class="post-next">
+                    <a href="/blog/2021/05/29/5G%E5%8A%9F%E5%88%86%E5%99%A8/">下一篇：一款运用于毫米波通讯的不等分功分器 </a>
+                </div>
+                 
+    </div>
+    <div class="container">
+        <div class="bigHead"></div>
+        <div class="ears"></div>
+        <div class="body"></div>
+        <div class="paws-front"></div>
+        <div class="paws-back"></div>
+        <div class="details"></div>
+        <div class="tail"></div>
+        <div class="sleep">
+          <span class="s1">z</span>
+          <span class="s2">z</span>
+          <span class="s3">z</span>
+          <span class="s4">z</span>
+          <span class="s5">z</span>
+        </div>
+    </div>
+</div>
+<div class="left-menu">
+    <a class="iconfont backTop" href="javascript:">&#xe655;</a>
+    <div class="husky"></div>
+  </div>
+</div>
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/main.js"></script>
+
+
+    <script>
+        if(!viewH){
+            let viewH=document.documentElement.clientHeight;
+        }
+    let imgs=document.querySelector('.art_content').querySelectorAll('img');
+    if(imgs){
+    let lazyload=function(){
+    imgs.forEach((item,index)=>{
+        let rect=item.getBoundingClientRect();
+        if(rect.bottom>=0&&rect.top<viewH){
+            item.src=item.dataset.src;
+        }
+    })
+    }
+    document.querySelector('.second-main').addEventListener('scroll',()=>{
+        lazyload();
+    })
+}
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+</html>

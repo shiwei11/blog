@@ -1,6 +1,9 @@
-// 加载页面
 //2021/8/30 3:11 
 //下雪
+var snowfall=10;//10ms生成一次雪
+var is_mobile=navigator.userAgent.toLowerCase().match(/(phone|pad|ipod|iphone|android|mobile|MQQBrowser|JUC|coolpad|mmp|smartphone|midp|wap|xoom|symbian|j2me|blackberry|wince|windows Phone)/i);
+if(is_mobile){
+    snowfall=1;   }//移动端下大雪
 function snowing(){
     let motto=document.querySelector(".motto");
     let maxheight=motto.offsetHeight;
@@ -28,15 +31,14 @@ function snowing(){
                 snow.parentNode.removeChild(snow);
             }
         },80)
-    },10)
+    },snowfall)
 }
-if(Math.random()>.8){
+if(Math.random()>.8){//调整下雪几率
     snowing();
 }
-//侧边栏
+//屏幕小于800自动收起侧边栏
 let menu_btn=document.querySelector('.menu-btn');
 let nav=document.querySelector('.navigation');
-//加载
 let caroursel=document.querySelector('.caroursel');
 window.onresize=function(){
     if(window.innerWidth<800)
@@ -48,10 +50,28 @@ window.onresize=function(){
         menu_btn.classList.add('closed');
         nav.classList.remove('left_move');
     }
-
+}
+//图片懒加载
+let viewH=document.documentElement.clientHeight;
+    let pics=document.querySelectorAll('.update_pic');
+    if(pics){
+        let lazyload=function(){
+    pics.forEach((item,index)=>{
+        let img=item.querySelector('img');
+        let rect=img.getBoundingClientRect();
+        if(rect.bottom>=0&&rect.top<viewH){
+            img.src=img.dataset.src;
+        }
+    });
+}
+lazyload();
+    document.querySelector('.second-main').addEventListener('scroll',()=>{
+        lazyload();
+    })
 }
 $(function(){
-    $(".backTop").fadeOut();
+    // $(".backTop").fadeOut();
+    $(".left-menu").fadeOut();
     //点击关闭菜单栏
     let navflag=false;
     $(".menu-btn").click(function(){
@@ -74,36 +94,46 @@ $(function(){
             navflag=true;
         }
     }
-    $(".backTop").click(function(){
-        $(".second-main").animate({"scrollTop":0},1000);   
-    });
-    $(".husky").click(function(){
-        $(".husky").fadeOut(); 
-    });
+
+
+
+
+
     //滚动事件
    $(".second-main").scroll(function(){
-       //返回顶部部件功能
-    if($(".second-main").scrollTop()>400){//滚动大于400，出现返回顶部和哈士奇
+       //滚动大于400，出现返回顶部和哈士奇 
+    if($(this).scrollTop()>400){
+        $(".left-menu").fadeIn();
         $(".backTop").fadeIn();
-        $(".husky").animate({"right":"0px"},200);
+        $(".husky").fadeIn().animate({"right":"0px"},200);
     }
-    if($(".second-main").scrollTop()==0&&parseInt($(".husky").css("right"))==0){//回到顶部，哈士奇向右跑并复原
+    // if($(".second-main").scrollTop()==0&&parseInt($(".husky").css("right"))==0){//回到顶部，哈士奇向右跑并复原
+    //     $(".husky").animate({"right":"100px"},500,function(){
+    //         $(this).css("right","-100px")
+    //     });
+    // }
+   if($(".second-main").scrollTop()==0){//回到顶部，按钮消失
+    $(".backTop").fadeOut(500,function(){
+    })
+    if($(".husky").css('right')=='0px'){
+        console.log('true');
         $(".husky").animate({"right":"100px"},500,function(){
-            $(this).css("right","-100px")
+            $(this).css("right","-100px").fadeOut();
+            $(".left-menu").fadeOut();
         });
     }
-   if($(".second-main").scrollTop()==0){//回到顶部，按钮消失
-    $(".backTop").fadeOut();
    }
-   if(navflag==true&&$(".second-main").scrollTop()>100){
-       $(".menu-btn").fadeOut();
-   }
-   else{
-    $(".menu-btn").fadeIn();
-   }
-   //懒加载
-
+$(".husky").click(function(){//点一下哈士奇，哈士奇消失
+    $(".husky").fadeOut(); 
 });
- let imgs=$(".update").children('img');
- console.log(imgs);
+//    if(navflag==true&&$(".second-main").scrollTop()>100){
+//        $(".menu-btn").fadeOut();
+//    }
+//    else{
+//     $(".menu-btn").fadeIn();
+//    }
+});
+$(".backTop").click(function(){//点返回顶部，1000内返回
+    $(".second-main").animate({"scrollTop":0},1000)
+});
 });
