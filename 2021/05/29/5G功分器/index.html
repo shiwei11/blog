@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon">
     
-<link rel="stylesheet" href="/css/common.css">
+<link rel="stylesheet" href="/blog/css/common.css">
 
    
     <style>
@@ -103,7 +103,7 @@
 </style>
 
 
-<script src="/js/jquery.min.js"></script>
+<script src="/blog/js/jquery.min.js"></script>
 
 <script>
     $(function(){
@@ -135,8 +135,8 @@
 <title>文章</title>
 <link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
 
-<link rel="stylesheet" href="/css/index.css">
-<link rel="stylesheet" href="/css/article.css">
+<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="/blog/css/article.css">
 
 
 <link rel="stylesheet" href="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/base16/atelier-cave.min.css">
@@ -146,7 +146,7 @@
 <div class="navigation">
     <div class="card">
         <div class="head">
-            <img src="/images/head.jpg"  alt="头不见了.." title="狗">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
         </div>
         <div class="card-text">
             <p>(ー`´ー)</p>
@@ -155,15 +155,15 @@
     </div>
     <ul class="label">
         
-        <li><a href="/index">首页</a></li>
+        <li><a href="/blog/index">首页</a></li>
         
-        <li><a href="/life">日常</a></li>
+        <li><a href="/blog/life">日常</a></li>
         
-        <li><a href="/record">一句</a></li>
+        <li><a href="/blog/record">一句</a></li>
         
-        <li><a href="/message">留言</a></li>
+        <li><a href="/blog/message">留言</a></li>
         
-        <li><a href="/about">关于</a></li>
+        <li><a href="/blog/about">关于</a></li>
           
     </ul>
     
@@ -234,7 +234,7 @@
 <div class="formula">A<sub>ij</sub>=10 lg(P<sub>ini</sub>/P<sub>outj</sub>)</div>
 <p><span class="strong">驻波比：</span>电压驻波比指驻波波腹电压与波节电压幅度之比，又称为驻波系数。当驻波比等于1时，表明端口输入输出阻抗匹配，此时高频能量完全输入到了电路中，没有能量的反射损耗，一般为理想情况，实际的驻波比应尽量接近1。</p>
 
-<h3 id="威尔金森功分器"><a href="#威尔金森功分器" class="headerlink" title="威尔金森功分器"></a>威尔金森功分器</h3><p>在微波电路中，阻抗不匹配会导致信号反射，反射的信号会干扰其他正常信号的传输，比如1端口的信号会反射到2端口来，影响2端口的信号传输，衡量这一现象的参数是上面提到的隔离度，1-2端口隔离度越好，说明这个两个端口越不容易相互干扰。一般的功分器结构隔离度有可能不太理想，而威尔金森功分器就是为了解决这一问题而设计出来的，功率分配器可由不同的元件组合成不同的形式，威尔金森功分器的原始模型是同轴线形式，因具有良好的隔离度在微带和带状线结构上得到了广泛应用，如下为两路威尔金森功分器示意图：<br><img data-src="/blog/images/wilkinson.png" src="/blog/images/loading.gif" tlt="威尔金森功分器" title="威尔金森功分器"></p>
+<h3 id="威尔金森功分器"><a href="#威尔金森功分器" class="headerlink" title="威尔金森功分器"></a>威尔金森功分器</h3><p>在微波电路中，阻抗不匹配会导致信号反射，反射的信号会干扰其他正常信号的传输，比如1端口的信号会反射到2端口来，影响2端口的信号传输，衡量这一现象的参数是上面提到的隔离度，1-2端口隔离度越好，说明这个两个端口越不容易相互干扰。一般的功分器结构隔离度有可能不太理想，而威尔金森功分器就是为了解决这一问题而设计出来的，功率分配器可由不同的元件组合成不同的形式，威尔金森功分器的原始模型是同轴线形式，因具有良好的隔离度在微带和带状线结构上得到了广泛应用，如下为两路威尔金森功分器示意图：<br><img data-src="/blog/images/wilkinson.jpg" src="/blog/images/loading.gif" tlt="威尔金森功分器" title="威尔金森功分器"></p>
 <p>威尔金森功分器的设计需要借助微带线尺寸计算工具，根据功分器各部分阻抗值计算各部分的结构尺寸。多路功率分配器的设计，可以直接设计为多路输出，也可以采用两路功率分配器的级联形式，即一分二，二分四……上下两级的功分器之间一般需要加上阻抗匹配元件。</p>
 
 <h3 id="C语言计算威尔金森功分器尺寸"><a href="#C语言计算威尔金森功分器尺寸" class="headerlink" title="C语言计算威尔金森功分器尺寸"></a>C语言计算威尔金森功分器尺寸</h3><p>对于规模较大的天线阵列，往往需要使用多路威尔金森功分器。为了保证通讯系统的稳定性，阵列的带宽、增益、主瓣宽度、副瓣电平等电性能参数都要满足一定的指标，因此阵列往往需要切比雪夫等算法加持，由此设计出来的激励分布往往也是不等分的，因此相应的功分器分配比也要是不等分的，再使用两路功率分配器的级联形式，组合成功分器网络。</p>
@@ -289,9 +289,9 @@ typedef struct design &#123;
  &#125;
     </code></pre>
 <p>由代码可分别计算出每一级功分器支节的阻抗值与输出端口的输出阻抗，而由阻抗值借助微波仿真软件的微带线尺寸计算工具，可以计算出各级功分器的结构参数，但该结构参数仅作为初始数据，根据初始参数所建模型的仿真测试结果往往和预期目标相差巨大，需要利用仿真软件进行多次迭代优化。为了和阵列结构相匹配，功分器网络的结构需要进行拐角、切角等处理，整体设计完的功分器网络可能长这样</p>
-<img data-src="/blog/images/wilkin.png" src="/blog/images/loading.gif" alt="不等分功分器馈电网络">
+<img data-src="/blog/images/wilkin.jpg" src="/blog/images/loading.gif" alt="不等分功分器馈电网络">
 <p>经过上百次的迭代优化后，利用微波仿真软件查看功分器馈电网络各输出端口的相位，低频时输出端口的相位基本保持一致，高频时会产生部分频偏，但相位偏移不大，并且该部分已经超出天线的有效带宽范围，因此基本能保证功分器输出端口的同相输出。</p>
-<img data-src="/blog/images/phase.png" alt="相位差" src="/blog/images/loading.gif">
+<img data-src="/blog/images/phase.jpg" alt="相位差" src="/blog/images/loading.gif">
 <p>由于威尔金森功分器加装了隔离电阻，能很好保证各端口间的隔离度基本保持在-15dB以下，所以能确保器件工作时各端口间微波信号的反射干扰不会影响天线阵列的正常工作。</p>
 <div class="broadcast color-pink">
 <div class="iconfont icon-yinle1"></div>
@@ -303,12 +303,12 @@ typedef struct design &#123;
     <div class="post-nav">
         
             <div class="post-prev ">
-                <a href="/2021/06/01/spotify%E6%8E%A8%E8%8D%90/">上一篇：听歌软件推荐-Spotify</a>
+                <a href="/blog/2021/06/01/spotify%E6%8E%A8%E8%8D%90/">上一篇：听歌软件推荐-Spotify</a>
             </div>
             
             
                 <div class="post-next">
-                    <a href="/2021/04/13/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">下一篇：正则表达式 </a>
+                    <a href="/blog/2021/04/13/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">下一篇：正则表达式 </a>
                 </div>
                  
     </div>
@@ -335,9 +335,9 @@ typedef struct design &#123;
   </div>
 </div>
 
-<script src="/js/jquery.min.js"></script>
-<script src="/js/jquery.bumpytext.js"></script>
-<script src="/js/main.js"></script>
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/main.js"></script>
 
 
     <script src="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
