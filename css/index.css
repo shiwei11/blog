@@ -137,7 +137,8 @@ html{
  .label li a::after{
     font-family:"iconfont" !important;
     position: absolute;
-    top:0;
+    top: 50%;
+    transform: translateY(-50%);
     right:0;
     opacity: 0;
     transition: all .5s linear;
@@ -167,7 +168,6 @@ html{
 letter-spacing: 2em;
 width: 110%;
 background: #2bd2ff;
-
 }
  .label li:hover a::after{
 opacity: 1;
@@ -541,6 +541,12 @@ flex-direction: row;
        background-color: rgb(11, 2, 19,.7);
        z-index: 10;
    }
+   .label li{
+    height: 6vh;
+}
+.label li:hover{
+    width: 105%;
+}
 .closed{
     left:52%;
 }

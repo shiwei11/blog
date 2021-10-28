@@ -380,6 +380,9 @@ width: 80%;
         width: 90%;
     }
 }
+.v[data-class=v] .vcard .vmeta>span {
+    display: inline-block !important;
+}
 @media screen and (min-width:600px){
     .menu-right{
         display: none;
@@ -428,9 +431,9 @@ width: 80%;
         </div>
         <div class="button">
             <a href="/blog">博客</a>
-            <a href="/life">日常</a>
-            <a href="/record">一句</a>
-            <a href="/about">关于</a>
+            <a href="/blog/life">日常</a>
+            <a href="/blog/record">一句</a>
+            <a href="/blog/about">关于</a>
         </div>
     </div>
     <div class="empty"></div>
@@ -444,13 +447,12 @@ width: 80%;
                 <rect opacity="0.6" x="17" y="42" width="30" height="8" rx="4" fill="currentColor" class="logo_rect3"></rect>
             </svg>
         </div>
-        <h2>文明发言</h2>
-        <h2>发布违禁评论IP关小黑屋</h2>
+        <h2>你这评论保熟吗</h2>
+        <div>昵称，邮箱，网址均为选填</div>
        <div> <s>打不开评论区请使用魔法工具</s></div>
        <div>新的评论系统，现在国内的网应该也可以打开了</div>
-       <div>昵称，邮箱，网址均为选填</div>
         <div>不便留言可以发邮件给我:njsgcn@gmail.com</div>
-       
+       <div style="font-size: 10px;color:#00a8ff;">文明发言,发布违禁评论IP关小黑屋</div>
     </div>
     
     <div id="waline"></div>
@@ -466,6 +468,7 @@ width: 80%;
         });
       </script>
       <script>
+          console.log("%c ","background:url(https://cdn.jsdelivr.net/gh/shiwei11/blog/images/shivi.jpg) no-repeat center;padding-left:600px;padding-bottom:304px;background-size: 40%;");
           let menu=document.querySelector('.menu');
           window.onscroll=function(){
               menu.classList.add('menuCss2');

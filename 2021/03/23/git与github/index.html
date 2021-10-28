@@ -206,10 +206,10 @@
         <div class="article">
         <h1 class="title">Git与Github</h1>
         <div class="art_infor">
-            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：4581</span>
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：5431</span>
             <span><span class="iconfont icon-riqi"></span>写于：2021-03-23</span></div>
             <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2021-03-23</span>
-            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您14分钟</span></div>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您16分钟</span></div>
         </div>
         <div class="art_content">
         <div class="broadcast color-yellow">
@@ -322,12 +322,56 @@ eg：git diff 哈希值 new1.txt 和该哈希值对应的版本进行比较
 <p> <span class="strong">git commit -m “提交说明”</span></p>
 完成合并<br/>
 注意！！git commit 命令后不跟文件名，否则会提示合并状态下无法进行提交
+
+<h4>2.5 创建标签</h4>
+<p>可以为github的项目添加标签，方便查找不同的版本。较为规范的版本格式应该为<span class="tips">主版本号.次版本号.修订号</span>各版本号应该依次递增，版本号递增应该遵循：</p>
+<ul>
+    <li><span class="strong">主版本号</span>重大调整、大型不兼容的API修改</li>
+    <li><span class="strong">次版本号</span>新增功能、小型功能性修改</li>
+    <li><span class="strong">修订号</span>修复bug</li>
+    <li>每当次版本号递增时，修订号必须归零。每当主版本号递增时，次版本号和修订号必须归零</li>
+    <li>先行版本号可以标注在修订号之后，使用连接号再加上一连串以句点分隔的标识符来修饰，如：1.0.0-alpha.1、1.0.0-0.3.7、1.0.0-x.7.z.92</li>
+</ul>
+<div class="broadcast color-blue">
+<div class="iconfont icon-yinhao"></div>
+关于版本控制规范，github上有更详细的说明 <a href="https://semver.org/lang/zh-CN/" target="_blank"> https://semver.org/lang/zh-CN/</a></div>
+<h5>2.5.1 查看tag</h5>
+<p>查看已创建的标签</p>
+<ul>
+    <li>查看所有标签<span class="strong"> git tag </span></li>
+    <li>查看指定版本的标签 <span class="strong"> git tag -l v1.1.*</span></li>
+     <li>显示tag信息 <span class="strong"> git show v1.1.1</span></li>
+</ul>
+<h5>2.5.2 创建tag</h5>
+<ul>
+    <li>轻量级tag，无任何附带信息<span class="strong"> git tag 标签名</span></li>
+    <li>附带说明的tag<span class="strong"> git tag -a 标签名 -m "说明"</span></li>
+   <li>带有签名的tag，需要GPG私钥<span class="strong"> git tag -s 标签名 -m "说明"</span></li>
+</ul>
+<h5>2.5.3 删除tag</h5>
+<ul>
+    <li>删除本地tag<span class="strong"> git tag -d 标签名</span></li>
+    <li>删除远程tag<span class="strong"> git push origin --delete 标签名</span></li>
+   <li>删除远程tag<span class="strong"> git push origin :refs/tags/标签名</span></li>
+</ul>
+<h5>2.5.4 验证tag</h5>
+拥有GPG私钥时可以验证tag
+<ul>
+    <li>验证tag<span class="strong"> git tag -v 标签名</span></li>
+</ul>
+<h5>2.5.5 推送本地tag到远程仓库</h5>
+<ul>
+    <li>推送指定tag<span class="strong"> git push 远程仓库别名 标签名</span></li>
+    <li>推送所有tag<span class="strong"> git push 远程仓库别名 --tags</span></li>
+</ul>
+
+
 <h3>3.远程仓库</h3>
 <h4>3.1 push与clone</h4>
 在github创建仓库，并复制仓库地址
 git init 在本地初始化文件夹，建立本地仓库
 <ul>
-    <li>创建远程仓库别名<span class="strong"> git remote 别名 远程仓库地址</span></li>
+    <li>创建远程仓库别名<span class="strong"> git remote add 别名 远程仓库地址</span>(别名常用origin)</li>
     <li>查看当前所有仓库别名<span class="strong"> git remote -v</span></li>
     <li>推到远程仓库<span class="strong"> git push 别名 分支名</span></li>
     <li>克隆到本地<span class="strong"> git clone 远程仓库地址</span></li>

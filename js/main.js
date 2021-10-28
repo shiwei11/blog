@@ -34,6 +34,7 @@ function snowing(){
     },snowfall)
 }
 if(Math.random()>.8){//调整下雪几率
+    console.log('snowing\n%c我不冷\n%c是我太热了','text-shadow:0 0 3px #ff00c8;color:#ff00c8;','text-shadow:0 0 3px #008cff;color:#008cff;');
     snowing();
 }
 //屏幕小于800自动收起侧边栏
@@ -69,21 +70,24 @@ lazyload();
         lazyload();
     })
 }
+console.log([
+"    ┬┬  ┌┬┐┬  ┌─┐┬ ┬┬┬ ┬┬",
+"    ││   │││  └─┐├─┤│││││",
+"    ┴┴  ─┴┘┴  └─┘┴ ┴┴└┴┘┴",
+    "shiwivi.me"
+    ].join('\n'));
 $(function(){
-    // $(".backTop").fadeOut();
-    $(".left-menu").fadeOut();
+    $(".backTop").fadeOut();
+    // $(".left-menu").fadeOut();
     //点击关闭菜单栏
-    let navflag=false;
     $(".menu-btn").click(function(){
         if($(".menu-btn").hasClass('closed')){
             $(".menu-btn").removeClass("closed");
             $(".navigation").addClass('left_move');
-            navflag=true;
         }
         else{
             $(".menu-btn").addClass("closed");
             $(".navigation").removeClass('left_move');
-            navflag=false;
         }
     });
     //移动端自动关闭菜单栏
@@ -91,21 +95,18 @@ $(function(){
         if(!($(".navigation").hasClass("left_move"))){
             $(".navigation").addClass("left_move");
             $(".menu-btn").removeClass("closed");
-            navflag=true;
         }
     }
-
-
-
-
 
     //滚动事件
    $(".second-main").scroll(function(){
        //滚动大于400，出现返回顶部和哈士奇 
     if($(this).scrollTop()>400){
-        $(".left-menu").fadeIn();
+        // $(".left-menu").fadeIn();
         $(".backTop").fadeIn();
-        $(".husky").fadeIn().animate({"right":"0px"},200);
+        // $(".husky").fadeIn().animate({"right":"0px"},200);
+        $(".husky").animate({"right":"0px"},200);
+
     }
     // if($(".second-main").scrollTop()==0&&parseInt($(".husky").css("right"))==0){//回到顶部，哈士奇向右跑并复原
     //     $(".husky").animate({"right":"100px"},500,function(){
@@ -113,13 +114,13 @@ $(function(){
     //     });
     // }
    if($(".second-main").scrollTop()==0){//回到顶部，按钮消失
-    $(".backTop").fadeOut(500,function(){
-    })
+    // $(".backTop").fadeOut(500,function(){})
+    $(".backTop").fadeOut();
     if($(".husky").css('right')=='0px'){
-        console.log('true');
         $(".husky").animate({"right":"100px"},500,function(){
-            $(this).css("right","-100px").fadeOut();
-            $(".left-menu").fadeOut();
+            // $(this).css("right","-100px").fadeOut();
+            $(this).css("right","-100px");
+            // $(".left-menu").fadeOut();
         });
     }
    }
