@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon">
+    
+<link rel="stylesheet" href="/blog/css/common.css">
+
+   
+    <style>
+    .preload{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+}
+.text{
+    margin-bottom: 10px;
+    color:rgb(0, 207, 243);
+    text-shadow: 0 0 3px rgb(0, 207, 243);
+    font-size: 20px;
+}
+.text span{
+    display: inline-block;
+    
+}
+.dance{
+    animation: dance .8s linear ;
+}
+.text span:nth-child(1){
+   animation-delay: 0s;
+}
+.text span:nth-child(2){
+   animation-delay: .1s;
+}
+.text span:nth-child(3){
+   animation-delay: .2s;
+}
+.text span:nth-child(4){
+   animation-delay: .3s;
+}
+.text span:nth-child(5){
+   animation-delay: .4s;
+}
+.text span:nth-child(6){
+   animation-delay:.5s;
+}
+.text span:nth-child(7){
+   animation-delay: .6s;
+}
+.text span:nth-child(8){
+   animation-delay: .7s;
+}
+.text span:nth-child(9){
+   animation-delay:.8s;
+}
+.text span:nth-child(10){
+   animation-delay: .9s;
+}
+
+@keyframes dance{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.loading{
+    width: 80%;
+    max-width: 260px;
+    height: 6px;
+    background-color: #e1e4e8;
+    border-radius: 6px;
+}
+.bar{
+    display: flex;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 10%, #b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation:bar 2s linear infinite;
+}
+@keyframes bar{
+    0%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+</style>
+
+
+<script src="/blog/js/jquery.min.js"></script>
+
+<script>
+    $(function(){
+           setInterval(function(){
+               $('.text').find("span").toggleClass('dance');
+           },1700)
+       })
+     $(window).on('load', function () {  
+           $(".preload").fadeOut("fast");  
+      });
+</script>
+<div class="preload">
+    <div class="text">
+        <span class="dance">L</span>
+        <span class="dance">o</span>
+        <span class="dance">a</span>
+        <span class="dance">d</span>
+        <span class="dance">i</span>
+        <span class="dance">n</span>
+        <span class="dance">g</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+    </div>
+    <div class="loading">
+        <span class="bar"></span>
+    </div>
+</div>
+<title>文章</title>
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
+
+<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="/blog/css/article.css">
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<div class="navigation">
+    <div class="card">
+        <div class="head">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
+        </div>
+        <div class="card-text">
+            <p>(ー`´ー)</p>
+            <p>那不是bug，是彩蛋</p>
+        </div> 
+    </div>
+    <ul class="label">
+        
+        <li><a href="/blog/index">首页</a></li>
+        
+        <li><a href="/blog/life">日常</a></li>
+        
+        <li><a href="/blog/record">一句</a></li>
+        
+        <li><a href="/blog/message">留言</a></li>
+        
+        <li><a href="/blog/about">关于</a></li>
+          
+    </ul>
+        <ul class="tag">
+            <li>#Document</li>
+            <li>#Jquery</li>
+            <li>#css</li>
+            <li>#射频</li>
+            <li>#5G通讯</li>
+            <li>#PCB</li>
+            <li>#shell</li>
+            <li>#C</li>
+            <li>#html</li>
+            <li>#硬件</li>
+            <li>#javaScript</li>
+            <li>#防火墙</li>
+            <li>#CentOS</li>
+            <li>#Linux</li>
+            <li>#python</li>
+            <li>#XPpose</li>
+        </ul>
+   
+    <ul class="rose">
+    <li>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo 5.4.0</a></li>
+    <li>License  <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></li>
+    <li>© 2021-2022&nbsp;by&nbsp;shiwi</li>
+</ul>
+</div>
+<div class="menu-btn closed"> 
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+</div>
+<div class="second-main">
+    <div class="js-toc"></div>
+    <div class="motto">
+        <p> //sunny forever<br />
+            while(life&lt;end){<br />
+               love++;<br />
+               beAwesome :)} </p>
+     </div>
+     <div class="second-content">
+        <div class="article">
+        <h1 class="title">Linux 运行级别与用户管理</h1>
+        <div class="art_infor">
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：8062</span>
+            <span><span class="iconfont icon-riqi"></span>写于：2022-01-30</span></div>
+            <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2022-01-30</span>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您24分钟</span></div>
+        </div>
+        <div class="art_content">
+        <h3 id="Linux目录"><a href="#Linux目录" class="headerlink" title="Linux目录"></a>Linux目录</h3><h4 id="指令集"><a href="#指令集" class="headerlink" title="指令集"></a>指令集</h4><ul>
+<li><strong>/bin</strong> &emsp; Binaries的缩写，存放普通用户可使用的系统命令,如:ls</li>
+<li><strong>/sbin</strong>&emsp;Super user Binary的缩写，存放只有系统管理员才能使用的系统命令，如:shutdown、reboot</li>
+<li><strong>/usr/bin</strong>&emsp;存放安装软件后，普通用户可以使用的软件命令，如:c++、make、wget等</li>
+<li><strong>/usr/sbin</strong>&emsp;存放系统管理员用户安装使用的高级管理程序和系统服务程序，如:httpd、netconfig、tcpd等</li>
+</ul>
+<h4 id="系统文件"><a href="#系统文件" class="headerlink" title="系统文件"></a>系统文件</h4><ul>
+<li><strong>/etc</strong>&emsp;Etcetera(其他)的缩写，这个目录用来存放所有系统管理所需要的<strong>配置文件</strong>和子目录</li>
+<li><strong>/var</strong>存放一些经常被修改、扩充的文件，如各种日志文件</li>
+<li>/boot&emsp;存放引导启动Linux时使用的核心文件,如镜像文件等</li>
+<li>/sys&emsp; Linux2.6内核新增的文件系统sysfs，sysfs文件系统集成了3种文件系统的信息：针对进程信息的proc文件系统、针对设备的devfs文件系统以及针对伪终端的devpts文件系统</li>
+<li>/lib&emsp;存放系统所需要的动态链接库(如C++库)，相当于windows的dll文件</li>
+<li>/dev&emsp;Device的缩写, 将Linux主机的硬件以文件形式存储并提供访问，相当于Windows的设备管理器</li>
+<li>/usr/src&emsp;内核源代码、说明文档等默认放置目录</li>
+<li>/opt&emsp;默认为空，常用于安装额外软件</li>
+<li>/proc&emsp;Processes(进程)的缩写，虚拟的目录，用于管理内存空间，是系统内存的映射，我们可以直接访问这个目录来获取系统信息。这个目录的内容不在硬盘上而是在内存里</li>
+<li>/selinux&emsp;全称为security-enhanced linux，该目录是 Redhat/CentOS 所特有的目录，是Redhat/CentOS的安全子系统</li>
+<li>/srv&emsp;service缩写，存放一些服务启动后需要提取的数据</li>
+</ul>
+<h4 id="用户"><a href="#用户" class="headerlink" title="用户"></a>用户</h4><ul>
+<li><strong>/root</strong>&emsp;系统管理员的账号主目录</li>
+<li><strong>/home</strong>&emsp;存放普通用户的相关文件，Linux会在home目录下为每一个用户生成一个以用户账号命名的目录</li>
+<li><strong>/usr</strong>&emsp;Unix Software Resource(共享资源)的缩写,放置用户的应用程序和文件，类似于windows下的program files目录</li>
+<li><strong>/usr/local</strong>&emsp;软件安装目录，一般通过源码编译安装方式安装的软件都会存放于该目录下</li>
+<li>/usr/include&emsp;放置如c/c++等程序语言的头文件(header)与包含档(include)</li>
+<li>/usr/lib&emsp;放置各应用软件的函式库、目标文件等，如果使用的是X86_64的Linux系统，则可能会生成/usr/lib64文件夹</li>
+</ul>
+<h4 id="外部文件"><a href="#外部文件" class="headerlink" title="外部文件"></a>外部文件</h4><ul>
+<li><strong>/media</strong>&emsp;挂载U盘、光驱等设备的目录，类似于windows的其他设备</li>
+<li>/mnt&emsp;让用户挂载其他的文件系统，如将Windows上的某个目录挂载在/mnt下，可用于共享文件等</li>
+</ul>
+<h4 id="临时文件"><a href="#临时文件" class="headerlink" title="临时文件"></a>临时文件</h4><ul>
+<li>/lost+found&emsp;一般情况下为空目录，用于存放系统非法关机或者发生意外错误后，fsck(磁盘修复)过程修复的部分文件</li>
+<li>/tmp&emsp;用于存放临时文件</li>
+<li>/run&emsp;一个临时文件系统，存放存储系统启动以来的信息。当系统重启时，这个目录下的文件应该被删掉或清除。</li>
+</ul>
+<h3 id="系统运行级别"><a href="#系统运行级别" class="headerlink" title="系统运行级别"></a>系统运行级别</h3><p>Linux系统的开机过程流程为：加载BIOS，进入Boot Loader，加载系统内核，进行内核初始化，启动初始化进程init。</p>
+<p>可以使用<span class="tips">init 运行级别</span>在系统运行级别之间切换，使用<span class="tips">runlevel</span>查询当前运行级别。</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>运行级别(runlevel)</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>系统关机，禁止设置为系统默认运行级别</td>
+</tr>
+<tr>
+<td>1</td>
+<td>单用户状态，只启动系统核心，用于系统修复和维护</td>
+</tr>
+<tr>
+<td>2</td>
+<td>多用户状态，禁用NFS(网络文件系统)和网络服务，可用于停机维护</td>
+</tr>
+<tr>
+<td>3</td>
+<td>完全多用户状态，具有完整的功能</td>
+</tr>
+<tr>
+<td>4</td>
+<td>系统未使用，保留</td>
+</tr>
+<tr>
+<td>5</td>
+<td>GUI模式，桌面版Linux专属</td>
+</tr>
+<tr>
+<td>6</td>
+<td>系统重启，禁止设置为系统默认运行级别</td>
+</tr>
+<tr>
+<td>emergency</td>
+<td>用于系统救援</td>
+</tr>
+</tbody></table>
+</div>
+
+<p>在路径<span class="tips">/etc/rc.d</span>下存放有7个对应系统运行级别的目录<span class="tips">/rc0.d——rc6.d</span>，目录中列出了该运行级别下会启动/关闭的服务，init.d目录下存放有用户可以开机启动的脚本，对于以K(Kill)开头的文件，系统会关闭对应的服务，以S(Start)开头的文件，系统将启动对应的服务，并且启动/关闭次序为S/K之后的值。<span class="tips">rc.local</span>文件用于配置用户开机执行的命令，系统在启动后将自动执行该文件中的所有命令。</p>
+<p>在一些旧版本的Linux中，/etc/rc.d路径下还含有<span class="tips">/etc/inittab</span>文件，文件中可以设置系统默认运行级别。centos7之后的系统将不再支持该方式修改默认级别，而使用target替代了sysvinit的运行级。</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>Sys v init runlevel</th>
+<th>systemd target</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>poweroff.target</td>
+</tr>
+<tr>
+<td>1</td>
+<td>rescue.target</td>
+</tr>
+<tr>
+<td>2</td>
+<td>multi-user.target</td>
+</tr>
+<tr>
+<td>3</td>
+<td>multi-user.target</td>
+</tr>
+<tr>
+<td>4</td>
+<td>multi-user.target</td>
+</tr>
+<tr>
+<td>5</td>
+<td>graphical.target</td>
+</tr>
+<tr>
+<td>6</td>
+<td>reboot.target</td>
+</tr>
+<tr>
+<td>emergency</td>
+<td>emergency.target</td>
+</tr>
+</tbody></table>
+</div>
+<div class="show">系统默认以启动runlevel3启动
+# systemctl set-default multi-user.target
+系统默认以启动runlevel5启动
+# systemctl set-default graphical.target
+查看当前运行级别
+# systemctl get-default
+</div>
+
+
+
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><p>许多主流Linux系统默认使用的Shell(终端程序)是Bash(GNU Bourne-Again Shell)解释器，可以通过<span class="tips">上下方向键</span>来调取之前执行过的Linux命令，可以使用<span class="tips">Tab键</span>来补全命令、参数或文件名。</p>
+<p>常见的执行Linux命令的格式为</p>
+<p><span class="strong">命令  [参数] [对象]</span></p>
+
+<ul>
+<li>个别命令不遵守该格式</li>
+<li>有多个可选参数时，可以写在一起</li>
+<li>参数可以用长格式(完整的参数名称)并使用”–”作为前缀，也可以用短格式（单个字母的缩写）使用”-“作为前缀。如：<span class="tips">–help</span>和<span class="tips"> -h</span>，但有时短格式与长格式表示的不是同一个参数，如：shutdown –help会显示shutdown命令的帮助信息,shutdown -h则为系统关机命令<div class="broadcast color-red">
+<div class="iconfont icon-gantanhao"></div>
+命令、参数与命令对象字母严格区分大小写</div></li>
+</ul>
+<h4 id="Linux的关闭与重启"><a href="#Linux的关闭与重启" class="headerlink" title="Linux的关闭与重启"></a>Linux的关闭与重启</h4><h5 id="1-sync-保存数据"><a href="#1-sync-保存数据" class="headerlink" title="1. sync 保存数据"></a>1. sync 保存数据</h5><p><span class="strong">sync</span>&emsp;将内存数据存储到磁盘，<span class="tips">关机或重启Linux前应当执行该命令防止数据丢失</span></p>
+<h5 id="2-shutdown-命令-推荐使用"><a href="#2-shutdown-命令-推荐使用" class="headerlink" title="2.shutdown 命令(推荐使用)"></a>2.shutdown 命令(推荐使用)</h5><p>shutdown命令用于关闭/重启Linux，命令格式为</p>
+<p> <span class="strong">   shutdown [选项] [时间] [警告消息]</span></p>
+常用选项
+<ul>
+<li><span class="strong">-t 值</span>&emsp;设置在几秒后关机</li>
+<li><span class="strong">-h</span>&emsp;关机</li>
+<li><span class="strong">-r</span>&emsp;重启</li>
+<li><span class="strong">-c</span>&emsp;取消已经设置的关机/重启命令</li>
+<li>- m&emsp;强制杀死所有执行中的程序,然后关机(不调用init进程)</li>
+<li>-k &emsp;不关机，仅把警告讯息传送给所有登录的用户</li>
+<li>-f &emsp;强制略过fsck磁盘检测(unbuntu独有参数)</li>
+<li>-F &emsp;强制进行fsck磁盘检测(unbuntu独有参数)</li>
+<li>-w &emsp;测试使用，系统不会重启，但会把重新开机的数据写入/var/log目录下的wtmp记录文件</li>
+<li>-H 或 --halt&emsp;&emsp;&emsp;相当于halt</li>
+<li>-P 或 --poweroff&emsp;相当于poweroff</li>
+<li>--no-wall &emsp;&emsp;&emsp;&emsp;系统在重启、关闭时不发送信息给登录的用户</li>
+</ul>
+<div class="show">示例：
+# shutdown -t 30        30s后关机
+# shutdown -h now       马上关机
+# shutdown -h 12:30     12:30关机，会占用终端
+# shutdown -h 12:30 &   12:30关机，关机命令会在后台处理不占用终端
+# shutdown -h 10 "System will shutdown after 10 minutes"    10分钟后关机并发送消息给用户
+# shutdown -r +10       10分钟后重启
+# shutdown -fr now      马上重启并强制略过fsck磁盘检测
+# shutdown -c           取消已设置的关机/重启命令
+</div>
+
+<h5 id="3-halt-关机"><a href="#3-halt-关机" class="headerlink" title="3.halt 关机"></a>3.halt 关机</h5><p><span class="strong">halt [选项]</span></p>
+<p>可选选项</p>
+<ul>
+<li>-d &emsp;不把关机记录写到 /var/log/wtmp 文件里</li>
+<li>-n &emsp;关机前不保存数据到硬盘(包括不把记录写到 /var/log/wtmp 文件里)</li>
+<li>-w &emsp;不会真的关机,只是把关机记录写到 /var/log/wtmp 文件里</li>
+<li>-f &emsp;强制关机，不调用shutdown命令</li>
+<li>-i &emsp;关机前关闭所有网络接口</li>
+<li>-p &emsp;关机后关闭电源(poweroff)</li>
+</ul>
+<h5 id="4-reboot-重启"><a href="#4-reboot-重启" class="headerlink" title="4.reboot 重启"></a>4.reboot 重启</h5><p><span class="strong">reboot [选项]</span></p>
+<p>可选选项</p>
+<ul>
+<li>-d &emsp;不把重启记录写到 /var/log/wtmp 文件里</li>
+<li>-n &emsp;重启前不保存数据到硬盘(包括不把记录写到 /var/log/wtmp 文件里)</li>
+<li>-w &emsp;不会真的重启,只是把重启记录写到 /var/log/wtmp 文件里</li>
+<li>-f &emsp;强制重启，不调用shutdown命令</li>
+<li>-i &emsp;重启前关闭所有网络接口</li>
+</ul>
+<h5 id="5-poweroff-关机并切断电源"><a href="#5-poweroff-关机并切断电源" class="headerlink" title="5.poweroff 关机并切断电源"></a>5.poweroff 关机并切断电源</h5><p><span class="strong">poweroff [选项]</span></p>
+<p>可选选项</p>
+<ul>
+<li>-d &emsp;不把关机记录写到 /var/log/wtmp 文件里</li>
+<li>-n &emsp;关机前不保存数据到硬盘(包括不把记录写到 /var/log/wtmp 文件里)</li>
+<li>-w &emsp;不会真的关机,只是把关闭记录写到 /var/log/wtmp 文件里</li>
+<li>-f &emsp;强制关闭</li>
+<li>-i &emsp;关机前关闭所有网络接口</li>
+<li>-h &emsp;关机前将系统中所有的硬件设置为备用模式<div class="broadcast color-blue">
+<div class="iconfont icon-yinhao"></div>
+除了上述命令，还可以通过设置系统运行级别进行关机、重启。使用 <span class="tips">init 0 </span>关机，使用<span class="tips">init 6 </span>重启。
+</div></li>
+</ul>
+<h3 id="用户与组管理"><a href="#用户与组管理" class="headerlink" title="用户与组管理"></a>用户与组管理</h3><p>Linux系统是一个多用户多任务的分时操作系统，用户可以属于一个或多个组方便系统管理员控制用户权限，默认有一个root管理员组并且root账户属于该组。可以使用<span class="tips">logout</span>登出当前用户账户。</p>
+<h4 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h4><h5 id="1-添加用户"><a href="#1-添加用户" class="headerlink" title="1. 添加用户"></a>1. 添加用户</h5><p><span class="strong">useradd [可选参数] 用户名</span></p>
+<p>默认会在/home 目录下生成一个以用户名命名的文件夹作为用户的主文件夹，并且会生成一个与用户名同名的用户组。</p>
+可选参数：
+
+<ul>
+<li>-c 注释 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;为用户添加一段注释性描述</li>
+<li>-d /路径/目录名&emsp;&emsp;&emsp;自定义用户的主目录，即不使用与用户名同名的默认目录,如果该目录不存在，则可以同时使用-m参数来新建文件夹指定为主目录</li>
+<li>-g 用户组 &emsp;&emsp;&emsp;&emsp;&emsp;指定用户所属的初始用户组</li>
+<li>-G 用户组，用户组 &emsp;指定用户所属的附加用户组</li>
+<li>-s Shell文件 &emsp;&emsp;&emsp;&emsp;指定用户的登录Shell</li>
+<li>-u 用户号 &emsp;&emsp;&emsp;&emsp;&emsp;指定用户的用户号，可以添加-o选项来重复使用与其他用户相同的标识号<div class="show">示例：
+# useradd yg
+新增用户yg，同时会新建一个组yg
+# useradd -g gumu lmc
+新增用户lmc，并且将lmc添加到gumu组
+# useradd -d /somedir/user2dir -m user2
+新建用户user2，在 /somedir 文件夹下新建user2dir并将其主目录指定为user2dir (somedir文件夹必须存在，无法用上述命令直接新建)
+</div></li>
+</ul>
+<h5 id="2-给用户添加-修改密码"><a href="#2-给用户添加-修改密码" class="headerlink" title="2. 给用户添加/修改密码"></a>2. 给用户添加/修改密码</h5><p><span class="strong">passwd [可选参数] [用户名]</span><br>不写用户名则会修改当前账户密码，输入密码时不会显示在终端上,可选参数：</p>
+<ul>
+<li>-l &emsp;锁定口令，禁止用户自行修改(参数为小写L)</li>
+<li>-u &emsp;解锁口令，允许用户自行修改</li>
+<li>-S &emsp;显示密码信息</li>
+<li>-d &emsp;删除账户口令</li>
+<li>-f &emsp;强迫用户下次登录时必须修改口令</li>
+<li>-x &emsp;指定口令最长存活期</li>
+<li>-k &emsp;    保留即将过期的用户在期满后能仍能使用</li>
+</ul>
+<h5 id="3-删除用户"><a href="#3-删除用户" class="headerlink" title="3. 删除用户"></a>3. 删除用户</h5><p>只能在root账户下删除用户</p>
+<ul>
+<li><span class="strong">userdel 用户名</span>&emsp;删除用户但保留用户的主目录</li>
+<li> <span class="strong">userdel -r 用户名</span>&emsp;删除用户且不保留用户主目录</li>
+</ul>
+<h5 id="4-查询用户信息"><a href="#4-查询用户信息" class="headerlink" title="4. 查询用户信息"></a>4. 查询用户信息</h5><p><span class="strong">id 用户名</span><br>查询是否有该用户，有则返回用户号(uid)、组号(gid)、所属组名</p>
+<h5 id="5-切换用户"><a href="#5-切换用户" class="headerlink" title="5. 切换用户"></a>5. 切换用户</h5><p><span class="strong">su [可选参数] 用户名</span><br>从权限高的账户切换到权限低的用户不需要输入密码，反之需要。切换完用户后，可通过 <span class="tips">exit</span> 命令返回原来的用户</p>
+<ul>
+<li>-&emsp; 使用”-“在切换用户时会连带切换用户环境，如:家目录，用户邮箱等</li>
+<li>-c 命令 &emsp;仅切换到该用户执行一次-c后的命令<div class="broadcast color-red">
+<div class="iconfont icon-gantanhao"></div>
+仅使用 <span class="tips">su 用户名</span> 不会切换用户环境，在很多使用场景中会报错，推荐使用<span class="tips">su - 用户名</span>命令</div></li>
+</ul>
+<h5 id="6-修改用户信息"><a href="#6-修改用户信息" class="headerlink" title="6. 修改用户信息"></a>6. 修改用户信息</h5><p><span class="strong">usermod [可选参数] 用户名</span></p>
+<ul>
+<li>-u UID &emsp;修改用户UID</li>
+<li>-c 用户说明 &emsp;修改用户说明信息</li>
+<li>-G 组名 &emsp; 修改用户附加组</li>
+<li>-L &emsp;&emsp;临时锁定用户</li>
+<li>-U &emsp;&emsp;解锁用户</li>
+</ul>
+<h5 id="7-修改用户密码状态"><a href="#7-修改用户密码状态" class="headerlink" title="7. 修改用户密码状态"></a>7. 修改用户密码状态</h5><p><span class="strong">chage [可选参数] 用户名</span></p>
+<ul>
+<li>-l  &emsp;&emsp;列出用户详细密码状态</li>
+<li>-d 日期 &emsp;修改密码最后一次修改日期(修改shadow文件字段3)</li>
+<li>-m 天数 &emsp; 两次密码修改间隔(字段4)</li>
+<li>-M 天数 &emsp;&emsp;密码有效期(字段5)</li>
+<li>-W 天数 &emsp;&emsp;密码过期前警告天数(字段6)</li>
+<li>-I 天数 &emsp;&emsp;密码过期后宽限天数(字段7)</li>
+<li>-E 日期 &emsp;&emsp;账号失效时间(字段8)<div class="show">使用：
+# chage -d 0 user1
+强制用户user1下次登录修改密码
+</div></li>
+</ul>
+<h5 id="8-查看当前所有登录用户"><a href="#8-查看当前所有登录用户" class="headerlink" title="8. 查看当前所有登录用户"></a>8. 查看当前所有登录用户</h5><h6 id="8-1-查看当前使用的账户"><a href="#8-1-查看当前使用的账户" class="headerlink" title="8.1 查看当前使用的账户"></a>8.1 查看当前使用的账户</h6><p><span class="strong">whoami 或 who am i</span></p>
+<h6 id="8-2-查看当前登录的用户"><a href="#8-2-查看当前登录的用户" class="headerlink" title="8.2 查看当前登录的用户"></a>8.2 查看当前登录的用户</h6><p><span class="strong">who</span></p>
+<p>会返回登录用户名、登录终端、登陆时间(远程登录还有IP地址)，登录终端中tty表示本地登录终端，pts一般为远程登录。</p>
+
+<p> <span class="strong">w</span></p>
+<p>会返回更详细的登录信息。</p>
+<div class="show">w命令返回值解析：
+15:20:10 up 25 days, 15:25,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+root     pts/0    180.129.129.129  10:09    0.00s  0.04s  0.04s -bash
+第一行为登录时间，up后为linux运行时间，用户数量，服务器负载情况
+第二行IDLE为用户已经空闲时间，JCPU为用户累计CPU占用时间，PCPU为用户当前命令操作占用CPU时间，WHAT为用户操作
+</div>
+
+<h4 id="用户的相关文件"><a href="#用户的相关文件" class="headerlink" title="用户的相关文件"></a>用户的相关文件</h4><p>Linux通过用户配置文件来查看和修改用户信息</p>
+<h5 id="1-用户的信息文件"><a href="#1-用户的信息文件" class="headerlink" title="1. 用户的信息文件"></a>1. 用户的信息文件</h5><p>文件位于<span class="tips">/etc/passwd</span>，每一行代表一个用户，并且以</p>
+<div class="show"><span class="tips">用户名:密码标识:用户UID:用户初始组GID:用户说明:家目录:登录的Shell</span></div>
+格式书写用户信息
+
+<ul>
+<li><p>密码标识中，有 X 表示用户有密码，用户登录时linux会前往/etc/shadow查找密码</p>
+</li>
+<li><p>用户UID：0 为超级管理员用户，1-1000为系统用户，系统用户为ftp等由linux调用的用户，无法登录，修改可能会导致系统无法启动，1000以上为普通用户(旧版本的linux可能1-500为系统用户)</p>
+</li>
+<li><p>用户说明可以为空</p>
+</li>
+<li><p>用户登录shell一般默认为/bin/bash，系统用户为/sbin/nologin,可以将普通用户的shell更改为/sbin/nologin来禁止用户登录</p>
+<h4 id="2-用户的密码文件"><a href="#2-用户的密码文件" class="headerlink" title="2. 用户的密码文件"></a>2. 用户的密码文件</h4><p>文件位于<span class="tips">/etc/shadow</span>，保存了加密后的用户密码等信息，每一行代表一个用户，如：</p>
+<div class="show">swv:$6$hPQczrTV$urGtx/wXaOtfIKdyuD/aUO.tHogxBM7uie4ioSbyVgcpNS3Po.:19032:0:99999:7:::</div></li>
+<li><p>字段一：用户名</p>
+</li>
+<li><p>字段二：加密后的密码，如果为”!!”或”*”表示没有密码，无法登录</p>
+</li>
+<li><p>字段三：密码最后一次修改日期，以1970年1月1日作为标准时间，每天+1</p>
+</li>
+<li><p>字段四：允许的两次密码修改间隔，如：10为只允许每10天修改一次密码</p>
+</li>
+<li><p>字段五：密码有效期</p>
+</li>
+<li><p>字段六：密码到期提前警告时间</p>
+</li>
+<li><p>字段七：密码到期后仍然可使用时间，如：3为还可以使用3天，其中0代表到期立马失效，-1代表到期后仍然能永久使用</p>
+</li>
+<li><p>字段八：账号失效时间，使用时间戳(到期时间与1970-1-1的间隔天数)表示</p>
+</li>
+<li><p>字段九：保留字段(未使用)</p>
+</li>
+</ul>
+<h4 id="3-用户的邮箱文件"><a href="#3-用户的邮箱文件" class="headerlink" title="3. 用户的邮箱文件"></a>3. 用户的邮箱文件</h4><p>文件位于<span class="tips">/var/spool/mail/用户名/</span>，Linux用户可以相互发送内部邮件</p>
+<h4 id="4-用户模板目录"><a href="#4-用户模板目录" class="headerlink" title="4. 用户模板目录"></a>4. 用户模板目录</h4><p>文件位于<span class="tips">/etc/skel/</span>，用于制作一个模板文件，在新注册用户时会在用户家目录下自动生成该文件。如：给每个账户生成一个用户操作手册。</p>
+<h4 id="用户组管理"><a href="#用户组管理" class="headerlink" title="用户组管理"></a>用户组管理</h4><p>用户组方便系统对同一类型的用户进行管理，对用户组的修改实际上就是对/etc/group文件的更新。</p>
+<h5 id="1-增加组"><a href="#1-增加组" class="headerlink" title="1. 增加组"></a>1. 增加组</h5><p><span class="strong">groupadd [可选参数] 组名</span><br>可选参数：</p>
+<ul>
+<li>-g GID &emsp;指定新用户组的组标识号（GID）</li>
+<li>-o &emsp;&emsp;&emsp;一般与-g参数同时使用，表示新用户组的GID可以与系统已有用户组的GID相同。</li>
+</ul>
+<h5 id="2-修改用户组"><a href="#2-修改用户组" class="headerlink" title="2.修改用户组"></a>2.修改用户组</h5><p><span class="strong">groupmod [可选参数] 组名</sapn></p>
+<ul>
+<li>-g GID &emsp;修改组ID</li>
+<li>-n 新组名&emsp;修改组名</li>
+</ul>
+<h5 id="3-删除用户组"><a href="#3-删除用户组" class="headerlink" title="3. 删除用户组"></a>3. 删除用户组</h5><p><span class="strong">groupdel 组名</span><br>如果组中有初始用户，该组无法删除(以避免用户不属于任何一个组，想删除该组可以先删除该初始用户的账户)，若组中都为附加用户则可以删除。</p>
+<h5 id="4-把用户添加入组或从组中删除"><a href="#4-把用户添加入组或从组中删除" class="headerlink" title="4. 把用户添加入组或从组中删除"></a>4. 把用户添加入组或从组中删除</h5><p><span class="strong">gpasswd 必选参数 组名</sapn></p>
+<ul>
+<li>-a 用户名&emsp;把用户加入组中</li>
+<li>-d 用户名&emsp;把用户从组中删除</li>
+</ul>
+<h4 id="用户组的配置文件"><a href="#用户组的配置文件" class="headerlink" title="用户组的配置文件"></a>用户组的配置文件</h4><h5 id="1-用户组的信息文件"><a href="#1-用户组的信息文件" class="headerlink" title="1. 用户组的信息文件"></a>1. 用户组的信息文件</h5><p>组信息文件位于<span class="tips">/etc/group</span>，信息格式为：</p>
+<div class="show"><span class="tips">组名:组密码标识:组GID:组中的附加用户</span></div>
+字段说明同用户配置文件类似
+
+<h5 id="2-组密码文件"><a href="#2-组密码文件" class="headerlink" title="2. 组密码文件"></a>2. 组密码文件</h5><p>文件位于<span class="tips">/etc/gshadow</span>，密码文件书写格式为：</p>
+<div class="show"><span class="tips">组名:组密码:组管理员用户名:组中的附加用户</span></div>
+配置如上,该文件不常用
+
+
+
+        </div>
+    </div>
+    <div class="post-nav">
+        
+            <div class="post-prev ">
+                <a href="/blog/2022/02/20/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A42/">上一篇：Linux服务与系统资源管理</a>
+            </div>
+            
+            
+                <div class="post-next">
+                    <a href="/blog/2021/06/15/vim%E7%BC%96%E8%BE%91%E5%99%A8/">下一篇：vim笔记 </a>
+                </div>
+                 
+    </div>
+    <div class="container">
+        <!--设计来源于B站-季夏小贞-->
+        <div class="bigHead"></div>
+        <div class="ears"></div>
+        <div class="body"></div>
+        <div class="paws-front"></div>
+        <div class="paws-back"></div>
+        <div class="details"></div>
+        <div class="tail"></div>
+        <div class="sleep">
+          <span class="s1">z</span>
+          <span class="s2">z</span>
+          <span class="s3">z</span>
+          <span class="s4">z</span>
+          <span class="s5">z</span>
+        </div>
+    </div>
+</div>
+<div class="left-menu">
+    <a class="iconfont backTop" href="javascript:">&#xe655;</a>
+    <div class="husky"></div>
+  </div>
+</div>
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/main.js"></script>
+
+
+    <script>
+        if(!viewH){
+            let viewH=document.documentElement.clientHeight;
+        }
+    let imgs=document.querySelector('.art_content').querySelectorAll('img');
+    if(imgs){
+    let lazyload=function(){
+    imgs.forEach((item,index)=>{
+        let rect=item.getBoundingClientRect();
+        if(rect.bottom>=0&&rect.top<viewH){
+            item.src=item.dataset.src;
+        }
+    })
+    }
+    document.querySelector('.second-main').addEventListener('scroll',()=>{
+        lazyload();
+    })
+}
+    </script>
+</body>
+
+
+
+
+</html>

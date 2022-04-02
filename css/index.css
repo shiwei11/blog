@@ -2,10 +2,14 @@ html{
     font-size:14px;
 }
  * {
-        user-select: none;
+        /* user-select: none; */
         margin: 0;
         padding: 0;
  }
+ *::selection {
+    background-color: rgb(0 216 238);
+    color: #0247fb;
+}
 ul li{
             list-style: none;
         }
@@ -237,8 +241,7 @@ background-color:rgba(252, 236, 19, 0.055) ;
     text-shadow: 0 0 3px rgb(1, 199, 248);
 }
  .rose li a{
-    color:rgba(7, 175, 250, 0.57);
-     text-shadow: none;
+    color:rgb(255, 255, 255);
 }
 
 /* 控制器 */
@@ -269,22 +272,23 @@ background-color:rgba(252, 236, 19, 0.055) ;
     margin:.1em auto;
 }
 .menu-btn  .menu-line:nth-child(1){
-    transition: transform .5s ease;
+    transition: transform .5s ease-out;
  }
  .menu-btn  .menu-line:nth-child(3){
-    transition: transform .5s ease;
+    transition: transform .5s ease-out;
  }
 .menu-btn  .menu-line:nth-child(2){
     transition: transform .5s ease .5s;
  }
 .closed .menu-line:nth-child(1){
-    transform:translateY(.84rem) rotate(45deg);
+    transform:translateY(.84rem) rotate(765deg);
 }
 .closed .menu-line:nth-child(2){
    transform:translateX(-3rem);
+   transition-delay: 0s;
 }
 .closed .menu-line:nth-child(3){
-    transform:translateY(-.84rem) rotate(-45deg);
+    transform:translateY(-.84rem) rotate(-765deg);
 }
 
 
@@ -452,34 +456,53 @@ flex-direction: row;
 .paginator{
     margin-bottom: 1em;
     width: 100%;
-    font-size: 12px;
+    font-size: 16px;
     text-align:center;
 }
 .page-number{
     display: inline-block;
     width: 40px;
     height: 20px;
-    color:#000;
+    color: #fff;
+    text-shadow: 2px 1px 3px #7fc7e4;
     text-align: center;
     line-height: 20px;
     font-weight: 600;
     margin:0 5px;
     text-decoration: none;
-    border:1px solid #03d9ff;
     border-radius: 4px;	
+}
+.space{
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 600;
 }
 .current{
      color:#fff;
-    border:1px solid #fff;
     background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
-    /* border-bottom:4px solid #03d9ff; */
 }
 .extend{
     font-size: 16px;
     text-align: center;
-    color:rgb(38, 139, 221);
+    color: rgb(255 255 255);
+    margin-bottom: 3px;
+    text-shadow: 2px 1px 3px #068bfd;
     text-decoration: none;
     margin:0 5px;
+}
+.info{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#9b999d;
+}
+.info .timer{
+    text-align: center;
+    
 }
 ::-webkit-scrollbar{
     width: 10px;
@@ -496,7 +519,7 @@ flex-direction: row;
     background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
 } 
 ::-webkit-scrollbar:horizontal{
-    height: 7px;
+    height: 8px;
 }
 ::-webkit-scrollbar-thumb:horizontal{
     background-color: #f014ae;
@@ -568,11 +591,8 @@ flex-direction: row;
    margin: 0 0 5px 5px;
    
 }
-.rose li a{
-   color:#00c9fc;
-}
 .update li{
-width: 80%;
+width: 98%;
 height: auto !important;
 padding:.4rem 0px 1.4rem 0px;
 }
@@ -590,8 +610,6 @@ padding:.4rem 0px 1.4rem 0px;
     font-size: 1rem;
 }
 .backTop{
-    /* color:#7de3ff;
-    text-shadow: none; */
     margin-bottom: 10px;
 }
 }

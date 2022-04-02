@@ -134,6 +134,7 @@
 </div>
 <title>文章</title>
 <link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
 
 <link rel="stylesheet" href="/blog/css/index.css">
 <link rel="stylesheet" href="/blog/css/article.css">
@@ -164,20 +165,19 @@
         <li><a href="/blog/about">关于</a></li>
           
     </ul>
-    
         <ul class="tag">
-            <li>#Element</li>
+            <li>#Document</li>
             <li>#Jquery</li>
             <li>#css</li>
             <li>#射频</li>
             <li>#5G通讯</li>
             <li>#PCB</li>
-            <li>#防火墙</li>
+            <li>#shell</li>
             <li>#C</li>
             <li>#html</li>
             <li>#硬件</li>
             <li>#javaScript</li>
-            <li>#服务器</li>
+            <li>#防火墙</li>
             <li>#CentOS</li>
             <li>#Linux</li>
             <li>#python</li>
@@ -185,9 +185,9 @@
         </ul>
    
     <ul class="rose">
-    <li>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></li>
+    <li>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo 5.4.0</a></li>
     <li>License  <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></li>
-    <li>Copyright2021&nbsp;by&nbsp;shiwi</li>
+    <li>© 2021-2022&nbsp;by&nbsp;shiwi</li>
 </ul>
 </div>
 <div class="menu-btn closed"> 
@@ -196,6 +196,7 @@
     <div class="menu-line"></div>
 </div>
 <div class="second-main">
+    <div class="js-toc"></div>
     <div class="motto">
         <p> //sunny forever<br />
             while(life&lt;end){<br />
@@ -206,7 +207,7 @@
         <div class="article">
         <h1 class="title">vim笔记</h1>
         <div class="art_infor">
-            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：9769</span>
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：9767</span>
             <span><span class="iconfont icon-riqi"></span>写于：2021-06-15</span></div>
             <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2021-06-15</span>
             <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您28分钟</span></div>
@@ -214,7 +215,7 @@
         <div class="art_content">
         <div class="broadcast color-yellow">
 <div class="iconfont icon-dengpao14hao"></div>
-第一次接触到vim时发现自己连字都不会打,之后在某管乱逛的时候看到两个Google的<del> 秃头 </del>工程师用vim花式结对编程时，vim就深深折服了我，那效率真是芜湖~，谁不想有个这样的<del> jiyou </del>普通朋友来次愉快的多线程交流呢<span  style="white-space: nowrap;">๑乛◡乛๑</span>
+第一次接触到vim时连字都不会打...后来在某管乱逛的时候看到两个Google的<del> 秃头 </del>工程师用vim花式结对编程时，vim就深深折服了我，那效率真是芜湖~，谁不想有个这样的<del> jiyou </del>普通朋友来次愉快的多线程交流呢<span  style="white-space: nowrap;">๑乛◡乛๑</span>
 </div>
 
 <h3 id="vi-与-vim-简介"><a href="#vi-与-vim-简介" class="headerlink" title="vi 与 vim 简介"></a>vi 与 vim 简介</h3><p><span class="strong">vi:</span>为 visual interface 的简称，是<span class="tips">Linux</span>操作系统中最经典的文本编辑器。</p>
@@ -637,6 +638,10 @@ dd 删除光标当前所在行后
     </div>
     <div class="post-nav">
         
+            <div class="post-prev ">
+                <a href="/blog/2022/01/30/Linux%E7%94%A8%E6%88%B7%E4%B8%8E%E7%94%A8%E6%88%B7%E7%BB%84/">上一篇：Linux 运行级别与用户管理</a>
+            </div>
+            
             
                 <div class="post-next">
                     <a href="/blog/2021/06/01/spotify%E6%8E%A8%E8%8D%90/">下一篇：听歌软件推荐-Spotify </a>
@@ -644,6 +649,7 @@ dd 删除光标当前所在行后
                  
     </div>
     <div class="container">
+        <!--设计来源于B站-季夏小贞-->
         <div class="bigHead"></div>
         <div class="ears"></div>
         <div class="body"></div>
@@ -691,11 +697,6 @@ dd 删除光标当前所在行后
 }
     </script>
 </body>
-
-
-
-
-
 
 
 

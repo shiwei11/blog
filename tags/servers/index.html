@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon">
+    
+<link rel="stylesheet" href="/blog/css/common.css">
+
+   
+    <style>
+    .preload{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+}
+.text{
+    margin-bottom: 10px;
+    color:rgb(0, 207, 243);
+    text-shadow: 0 0 3px rgb(0, 207, 243);
+    font-size: 20px;
+}
+.text span{
+    display: inline-block;
+    
+}
+.dance{
+    animation: dance .8s linear ;
+}
+.text span:nth-child(1){
+   animation-delay: 0s;
+}
+.text span:nth-child(2){
+   animation-delay: .1s;
+}
+.text span:nth-child(3){
+   animation-delay: .2s;
+}
+.text span:nth-child(4){
+   animation-delay: .3s;
+}
+.text span:nth-child(5){
+   animation-delay: .4s;
+}
+.text span:nth-child(6){
+   animation-delay:.5s;
+}
+.text span:nth-child(7){
+   animation-delay: .6s;
+}
+.text span:nth-child(8){
+   animation-delay: .7s;
+}
+.text span:nth-child(9){
+   animation-delay:.8s;
+}
+.text span:nth-child(10){
+   animation-delay: .9s;
+}
+
+@keyframes dance{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.loading{
+    width: 80%;
+    max-width: 260px;
+    height: 6px;
+    background-color: #e1e4e8;
+    border-radius: 6px;
+}
+.bar{
+    display: flex;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 10%, #b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation:bar 2s linear infinite;
+}
+@keyframes bar{
+    0%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+</style>
+
+
+<script src="/blog/js/jquery.min.js"></script>
+
+<script>
+    $(function(){
+           setInterval(function(){
+               $('.text').find("span").toggleClass('dance');
+           },1700)
+       })
+     $(window).on('load', function () {  
+           $(".preload").fadeOut("fast");  
+      });
+</script>
+<div class="preload">
+    <div class="text">
+        <span class="dance">L</span>
+        <span class="dance">o</span>
+        <span class="dance">a</span>
+        <span class="dance">d</span>
+        <span class="dance">i</span>
+        <span class="dance">n</span>
+        <span class="dance">g</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+    </div>
+    <div class="loading">
+        <span class="bar"></span>
+    </div>
+</div>
+<title>SHIWIVI-博客</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2652945_7gmto2zqbzw.css">
+    
+<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="/blog/css/huli.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    <div class="navigation">
+    <div class="card">
+        <div class="head">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
+        </div>
+        <div class="card-text">
+            <p>(ー`´ー)</p>
+            <p>那不是bug，是彩蛋</p>
+        </div> 
+    </div>
+    <ul class="label">
+        
+        <li><a href="/blog/index">首页</a></li>
+        
+        <li><a href="/blog/life">日常</a></li>
+        
+        <li><a href="/blog/record">一句</a></li>
+        
+        <li><a href="/blog/message">留言</a></li>
+        
+        <li><a href="/blog/about">关于</a></li>
+          
+    </ul>
+        <ul class="tag">
+            <li>#Document</li>
+            <li>#Jquery</li>
+            <li>#css</li>
+            <li>#射频</li>
+            <li>#5G通讯</li>
+            <li>#PCB</li>
+            <li>#shell</li>
+            <li>#C</li>
+            <li>#html</li>
+            <li>#硬件</li>
+            <li>#javaScript</li>
+            <li>#防火墙</li>
+            <li>#CentOS</li>
+            <li>#Linux</li>
+            <li>#python</li>
+            <li>#XPpose</li>
+        </ul>
+   
+    <ul class="rose">
+    <li>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo 5.4.0</a></li>
+    <li>License  <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></li>
+    <li>© 2021-2022&nbsp;by&nbsp;shiwi</li>
+</ul>
+</div>
+<div class="menu-btn closed"> 
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+</div>
+    <div class="second-main">
+        <div class="motto">
+           <p>//life motto<br />
+             if(sad===true){<br />
+                sad.stop();<br />
+                beAwesome :)} </p>
+        </div>
+        <div class="second-content">
+            <ul class="update">
+                
+                
+                    <li><div class='update_pic'><a href="/blog/2022/03/28/nginx%E7%AC%94%E8%AE%B0/"><img alt="图片在来的路上迷路了" data-src="/blog/images/nginx.png" src="/blog/images/loading.gif"></a></div>
+                        <div class='update_content'>
+                            <a href="/blog/2022/03/28/nginx%E7%AC%94%E8%AE%B0/"><h1>Nginx笔记(上)</h1></a>
+                            <p>Nginx是一款高性能的Web服务器软件，也可用于配置反向代理、虚拟主机、域名解析、负载均衡、邮件代理等各类服务器</p>
+                            <div class="content_line"></div>
+                            <div class="content_tag">
+                                
+                                <span class="content_label label1">servers</span>
+                                
+                                <span class="content_label label2">http</span>
+                                
+                            </div>
+                        </div>
+                    </li>
+                
+            </ul>
+              <div class="paginator">
+                <span class="page-number current">1</span>
+              </div>
+              <div class="fox_nest">
+                <div class="fox">
+                    <div class="fox_paws">
+                        <div class="fox_leg1">
+                            <div class="fox_paw1"></div>
+                            <div class="fox_paw2"></div>
+                        </div>
+                        <div class="fox_leg2">
+                            <div class="fox_paw1"></div>
+                            <div class="fox_paw2"></div>
+                        </div>
+                    </div>
+                    <div class="fox_body"></div>
+                    <div class="fox_tail1"></div>
+                    <div class="fox_tail2"></div>
+                    <div class="fox_head">
+                        <div class="fox_face">
+                            <div class="fox_nose"></div>
+                                <div class="fox_eye1"></div>
+                                <div class="fox_eye2"></div>
+                        </div>
+                    </div>
+                    <div class="fox_head2">
+                        <div class="fox_ear1"></div>
+                        <div class="fox_ear2"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="left-menu">
+            <a class="iconfont backTop" href="javascript:">&#xe655;</a>
+            <div class="husky"></div>
+          </div>
+          <div class="info">
+             <div class="">Meet you like the wind.</div> 
+              <div class="timer">网站已经漂泊了
+                <span id="day"></span> 天
+                <span id="hour"></span> 小时
+                <span id="minute"></span> 分
+                <span id="second"></span> 秒
+              </div>
+              <div>END</div>
+          </div>
+    </div>
+    
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/main.js"></script>
+
+   
+</body>
+</html>

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon">
+    
+<link rel="stylesheet" href="/blog/css/common.css">
+
+   
+    <style>
+    .preload{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+}
+.text{
+    margin-bottom: 10px;
+    color:rgb(0, 207, 243);
+    text-shadow: 0 0 3px rgb(0, 207, 243);
+    font-size: 20px;
+}
+.text span{
+    display: inline-block;
+    
+}
+.dance{
+    animation: dance .8s linear ;
+}
+.text span:nth-child(1){
+   animation-delay: 0s;
+}
+.text span:nth-child(2){
+   animation-delay: .1s;
+}
+.text span:nth-child(3){
+   animation-delay: .2s;
+}
+.text span:nth-child(4){
+   animation-delay: .3s;
+}
+.text span:nth-child(5){
+   animation-delay: .4s;
+}
+.text span:nth-child(6){
+   animation-delay:.5s;
+}
+.text span:nth-child(7){
+   animation-delay: .6s;
+}
+.text span:nth-child(8){
+   animation-delay: .7s;
+}
+.text span:nth-child(9){
+   animation-delay:.8s;
+}
+.text span:nth-child(10){
+   animation-delay: .9s;
+}
+
+@keyframes dance{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.loading{
+    width: 80%;
+    max-width: 260px;
+    height: 6px;
+    background-color: #e1e4e8;
+    border-radius: 6px;
+}
+.bar{
+    display: flex;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 10%, #b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation:bar 2s linear infinite;
+}
+@keyframes bar{
+    0%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+</style>
+
+
+<script src="/blog/js/jquery.min.js"></script>
+
+<script>
+    $(function(){
+           setInterval(function(){
+               $('.text').find("span").toggleClass('dance');
+           },1700)
+       })
+     $(window).on('load', function () {  
+           $(".preload").fadeOut("fast");  
+      });
+</script>
+<div class="preload">
+    <div class="text">
+        <span class="dance">L</span>
+        <span class="dance">o</span>
+        <span class="dance">a</span>
+        <span class="dance">d</span>
+        <span class="dance">i</span>
+        <span class="dance">n</span>
+        <span class="dance">g</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+    </div>
+    <div class="loading">
+        <span class="bar"></span>
+    </div>
+</div>
+<title>文章</title>
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
+
+<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="/blog/css/article.css">
+
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/base16/atelier-cave.min.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<div class="navigation">
+    <div class="card">
+        <div class="head">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
+        </div>
+        <div class="card-text">
+            <p>(ー`´ー)</p>
+            <p>那不是bug，是彩蛋</p>
+        </div> 
+    </div>
+    <ul class="label">
+        
+        <li><a href="/blog/index">首页</a></li>
+        
+        <li><a href="/blog/life">日常</a></li>
+        
+        <li><a href="/blog/record">一句</a></li>
+        
+        <li><a href="/blog/message">留言</a></li>
+        
+        <li><a href="/blog/about">关于</a></li>
+          
+    </ul>
+        <ul class="tag">
+            <li>#Document</li>
+            <li>#Jquery</li>
+            <li>#css</li>
+            <li>#射频</li>
+            <li>#5G通讯</li>
+            <li>#PCB</li>
+            <li>#shell</li>
+            <li>#C</li>
+            <li>#html</li>
+            <li>#硬件</li>
+            <li>#javaScript</li>
+            <li>#防火墙</li>
+            <li>#CentOS</li>
+            <li>#Linux</li>
+            <li>#python</li>
+            <li>#XPpose</li>
+        </ul>
+   
+    <ul class="rose">
+    <li>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo 5.4.0</a></li>
+    <li>License  <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></li>
+    <li>© 2021-2022&nbsp;by&nbsp;shiwi</li>
+</ul>
+</div>
+<div class="menu-btn closed"> 
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+</div>
+<div class="second-main">
+    <div class="js-toc"></div>
+    <div class="motto">
+        <p> //sunny forever<br />
+            while(life&lt;end){<br />
+               love++;<br />
+               beAwesome :)} </p>
+     </div>
+     <div class="second-content">
+        <div class="article">
+        <h1 class="title">Nginx笔记(上)</h1>
+        <div class="art_infor">
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：11486</span>
+            <span><span class="iconfont icon-riqi"></span>写于：2022-03-28</span></div>
+            <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2022-01-28</span>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您33分钟</span></div>
+        </div>
+        <div class="art_content">
+        <div class="broadcast color-yellow">
+<div class="iconfont icon-dengpao14hao"></div>
+nginx官方文档：<a target="_blank" href="http://nginx.org/en/docs/">http://nginx.org/en/docs/</a></div>
+
+<h3 id="1-基本介绍"><a href="#1-基本介绍" class="headerlink" title="1. 基本介绍"></a>1. 基本介绍</h3><h4 id="1-1-Nginx简介"><a href="#1-1-Nginx简介" class="headerlink" title="1.1 Nginx简介"></a>1.1 Nginx简介</h4><p>Nginx是一款高性能的Web服务器软件，能在高并发环境下快速响应http/https请求，同时也提供IMAP/POP3/SMTP服务,可用于反向代理服务器、虚拟主机、域名解析、负载均衡、防盗链、URL重定向、http/https、邮件代理服务器等各类场景。</p>
+<p>根据<a target="_blank" rel="noopener" href="https://news.netcraft.com/">Netcraft</a> 发布的web服务器调查报告，截至2022年1月，nginx是全球最常用的web服务器软件，占有全球32.3%的站点，另一服务器软件Apache占有23.9%的站点，很大一部分web服务器使用Nginx作为负载均衡服务器。</p>
+<h4 id="1-2-依赖与环境"><a href="#1-2-依赖与环境" class="headerlink" title="1.2 依赖与环境"></a>1.2 依赖与环境</h4><p><strong>操作系统要求：</strong>Nginx底层使用了多进程和I/O多路复用(epoll)来提高并发能力，因此需要使用Linux2.6以上的内核以支持epoll</p>
+<p><strong>源码包依赖：</strong></p>
+<ul>
+<li>GCC编译器：编译C语言</li>
+<li>PCRE库(兼容正则表达式库)：用于支持正则表达式</li>
+<li>zlib库：为Nginx的gzip压缩提供压缩算法</li>
+<li>OpenSSL：提供安全通信</li>
+</ul>
+<h4 id="1-3进程模型"><a href="#1-3进程模型" class="headerlink" title="1.3进程模型"></a>1.3进程模型</h4><p>master进程：主进程，以root权限运行，负责读取检测配置文件，启动和管理worker进程</p>
+<p>worker进程：工作进程，权限由配置文件中的user决定，负责处理网络请求，进程数量由配置文件中的worker_processes决定</p>
+<h3 id="2-常用命令"><a href="#2-常用命令" class="headerlink" title="2.常用命令"></a>2.常用命令</h3><h4 id="2-1Nginx服务命令"><a href="#2-1Nginx服务命令" class="headerlink" title="2.1Nginx服务命令"></a>2.1Nginx服务命令</h4><p>未配置全局环境变量的情况下，nginx命令执行路径为<span class="tips">/usr/local/nginx/sbin</span>，可以通过./nginx -h查看所有命令</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>./nginx</td>
+<td>启动nginx</td>
+</tr>
+<tr>
+<td>./nginx -h</td>
+<td>-h可替换为-?,查看nginx的所有命令</td>
+</tr>
+<tr>
+<td>./nginx -v</td>
+<td>查看nginx的版本</td>
+</tr>
+<tr>
+<td>./nginx -s 信号量</td>
+<td>发送一个信号量操作nginx</td>
+</tr>
+<tr>
+<td>./nginx -s stop</td>
+<td>强制关闭nginx</td>
+</tr>
+<tr>
+<td>./nginx -s quit</td>
+<td>停止接受新请求，等待nginx处理完当前任务后关闭nginx</td>
+</tr>
+<tr>
+<td>./nginx -s reload</td>
+<td>重新加载配置文件</td>
+</tr>
+<tr>
+<td>./nginx -s reopen</td>
+<td>重新打开日志文件(可用于日志分割)</td>
+</tr>
+<tr>
+<td>./nginx -t [文件路径]</td>
+<td>检测nginx的配置文件是否书写正确</td>
+</tr>
+<tr>
+<td>./nginx -T</td>
+<td>检测nginx的配置文件是否书写正确，若正确则将内容输出到屏幕</td>
+</tr>
+<tr>
+<td>./nginx -c 文件路径</td>
+<td>手动指定nginx的配置文件后启动</td>
+</tr>
+</tbody></table>
+</div>
+
+<h4 id="2-2Linux系统命令"><a href="#2-2Linux系统命令" class="headerlink" title="2.2Linux系统命令"></a>2.2Linux系统命令</h4><p><span class="strong">kill -信号 master进程PID</span></p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>信号</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TERM/INT</td>
+<td>强制关闭nginx</td>
+</tr>
+<tr>
+<td>QUIT</td>
+<td>停止接受新请求，处理完当前任务后关闭nginx</td>
+</tr>
+<tr>
+<td>HUP</td>
+<td>重新加载配置文件</td>
+</tr>
+<tr>
+<td>USR1</td>
+<td>重新打开日志文件(可用于日志分割)</td>
+</tr>
+<tr>
+<td>USR2</td>
+<td>不停止服务，平滑升级到最新版nginx</td>
+</tr>
+<tr>
+<td>WINCH</td>
+<td>停止接受新请求，处理完当前任务后关闭所有worker进程</td>
+</tr>
+</tbody></table>
+</div>
+
+<h5 id="关于平滑升级"><a href="#关于平滑升级" class="headerlink" title="关于平滑升级"></a>关于平滑升级</h5><p>执行 <span class="tips">kill -USR2 17482</span>(假设17482为master进程PID)命令进行平滑升级时，更新完ngixn后会开启一个新版本nginx对应的master进程和work进程，此时系统中将会有两个master进程，并且新版本的master进程PID会被记录在<span class="tips">/usr/loca1/nginx/logs/nginx.pid</span>文件中，而旧版本master进程PID会被记录在<span class="tips">/usr/loca1/nginx/logs/nginx.pid.oldbin</span>文件中，之后会发送QUIT信号给旧的master进程，让其处理完请求后关闭，完成升级。</p>
+<h3 id="3-配置文件"><a href="#3-配置文件" class="headerlink" title="3.配置文件"></a>3.配置文件</h3><p>配置文件位于<span class="tips">/usr/local/nginx/conf/nginx.conf</span>路径下</p>
+<h4 id="3-1全局配置"><a href="#3-1全局配置" class="headerlink" title="3.1全局配置"></a>3.1全局配置</h4><div class="show">#user  nobody;          //指定nginx工作进程的用户身份，默认为nobody
+worker_processes  1;   //允许生成的worker process数
+
+<p>#error_log  logs/error.log;     //日志级别与存放路径<br>#error_log  logs/error.log  notice;<br>#error_log  logs/error.log  info;</p>
+<p>#pid        logs/nginx.pid; //master进程pid存放路径<br>……</div></p>
+<h5 id="3-1-1-user配置进程权限"><a href="#3-1-1-user配置进程权限" class="headerlink" title="3.1.1 user配置进程权限"></a>3.1.1 user配置进程权限</h5><p><span class="strong">user 用户名 [用户组];</span></p>
+<p>默认为nobody，配置决定了worker进程的调用用户，以及nginx对文件(一般指资源文件和目录)的读写权限，而日志文件、pid文件、配置文件等由master进程调用的文件则不受此配置影响，所有者一般为root。当配置的用户对指定文件无访问权限时，Nginx将返回403错误，此时需要授予该用户相关权限，或者更改为权限更高的用户。</p>
+<h5 id="3-1-2-worker-processes配置进程数量"><a href="#3-1-2-worker-processes配置进程数量" class="headerlink" title="3.1.2 worker_processes配置进程数量"></a>3.1.2 worker_processes配置进程数量</h5><ul>
+<li><span class="strong">master_process on/off;</span>用于指定是否生成worker进程，默认为on</li>
+<li><span class="strong">worker_processes 值/auto;</span>指定worker进程生成数量，默认为1</li>
+</ul>
+<div class="broadcast color-pink">
+<div class="iconfont icon-yinle1"></div>
+worker_processes值越大，处理并发能力越强。但需要考虑服务器的CPU核心数、内存余量等硬件资源大小</div>
+
+
+<h5 id="3-1-3-daemon配置nginx为守护进程"><a href="#3-1-3-daemon配置nginx为守护进程" class="headerlink" title="3.1.3 daemon配置nginx为守护进程"></a>3.1.3 daemon配置nginx为守护进程</h5><p><span class="strong">daemon on/off;</span></p>
+<p>配置nginx是否以守护进程方式启动，并在后台运行，默认为on</p>
+<h5 id="3-1-4-error-log配置日志"><a href="#3-1-4-error-log配置日志" class="headerlink" title="3.1.4 error_log配置日志"></a>3.1.4 error_log配置日志</h5><p><span class="strong">error_log 路径 [日志级别];</span></p>
+<p>配置日志路径和记录级别，这里指Nginx本身运行错误产生的日志，用户连接产生的日志需要在http/https块里配置，默认将notice以上级别的日志写入error.log日志文件中，日志级别有 debug、info、notice、warn、error、crit</p>
+<h5 id="3-1-5-pid配置pid文件路径"><a href="#3-1-5-pid配置pid文件路径" class="headerlink" title="3.1.5 pid配置pid文件路径"></a>3.1.5 pid配置pid文件路径</h5><p><span class="strong">pid 路径;</span></p>
+<p>自定义pid文件路径，默认在/usr/local/nginx/logs/nginx.pid路径下。pid文件用于存放master进程的pid，会在master进程产生时生成，进程关闭时删除。当使用nginx -s reload/reopen重新加载配置文件或日志时，nginx会到该文件中读取进程pid，如果该文件无法找到或者已经被删除，nginx将报错，常用的解决方法是使用<span class="tips">nginx -c 配置文件名</span>命令重新指定配置文件后启动nginx</p>
+<h4 id="3-2-events块"><a href="#3-2-events块" class="headerlink" title="3.2 events块"></a>3.2 events块</h4><div class="show">...
+events {
+    worker_connections  1024;//每个worker允许的最大连接数
+}
+</div>
+
+<h5 id="3-2-1-accept-mutex配置网络连接序列号"><a href="#3-2-1-accept-mutex配置网络连接序列号" class="headerlink" title="3.2.1 accept_mutex配置网络连接序列号"></a>3.2.1 accept_mutex配置网络连接序列号</h5><p><span class="strong">accept_mutex on/off;</span></p>
+<p>默认为on，用于解决“惊群”问题，即将连接到nginx的网络连接进行序列化，并依次分配给worker进程，防止多个worker争抢连接。</p>
+<h5 id="3-2-2-accept-mutex配置网络连接序列号"><a href="#3-2-2-accept-mutex配置网络连接序列号" class="headerlink" title="3.2.2 accept_mutex配置网络连接序列号"></a>3.2.2 accept_mutex配置网络连接序列号</h5><p><span class="strong">multi_accept on/off;</span></p>
+<p>默认为off，在off状态下，一个worker进程只能接收一个新的连接请求，否则，一个worker进程将同时接收所有新连接。</p>
+<h5 id="3-2-3-worker-connections配置单进程最大连接数"><a href="#3-2-3-worker-connections配置单进程最大连接数" class="headerlink" title="3.2.3 worker_connections配置单进程最大连接数"></a>3.2.3 worker_connections配置单进程最大连接数</h5><p><span class="strong">worker_connections 值;</span></p>
+<p>默认为1024，用于配置每个worker允许的最大连接数，值不能超过操作系统最大文件句柄数量。</p>
+<h5 id="3-2-4-use配置事件处理模型"><a href="#3-2-4-use配置事件处理模型" class="headerlink" title="3.2.4 use配置事件处理模型"></a>3.2.4 use配置事件处理模型</h5><p><span class="strong">use 参数;</span></p>
+<p>可选参数有poll/select/epoll/kqueue等，Linux2.6以上内核默认使用epoll函数以优化并发连接能力。</p>
+<h4 id="3-3-http块"><a href="#3-3-http块" class="headerlink" title="3.3 http块"></a>3.3 http块</h4><div class="shell">http {
+    include       mime.types;   //引入外部文件mime.types
+    default_type  application/octet-stream;
+    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+    #                  '$status $body_bytes_sent "$http_referer" '
+    #                  '"$http_user_agent" "$http_x_forwarded_for"';
+    #access_log  logs/access.log  main; //定义access连接日志的路径与内容
+//快速传输文件
+    sendfile        on;
+    #tcp_nopush     on;
+//服务器保持连接最大时间，单位为s
+    #keepalive_timeout  0;
+    keepalive_timeout  65;
+//传输文件前是否压缩
+    #gzip  on;
+    ....</div>
+
+<h5 id="3-3-1-include"><a href="#3-3-1-include" class="headerlink" title="3.3.1  include"></a>3.3.1  include</h5><p><span class="strong">include 文件名;</span></p>
+<ul>
+<li>用于引入外部文件，管理员可以定义一个外部文件书写配置，然后通过include将该文件内容引入到相应位置。</li>
+<li>这里引入的mime.types用于标识文档、媒体文件格式和类型，该文件标识了常用的html、css、js、jpg等文件类型，用于帮助nginx识别请求的文件类型</li>
+</ul>
+<h5 id="3-3-2-default-type"><a href="#3-3-2-default-type" class="headerlink" title="3.3.2  default_type"></a>3.3.2  default_type</h5><p><span class="strong">default_type MIME类型;</span></p>
+<p>默认值application/octet-stream指没有特定类型的二进制文件，MIME类型可参考MDN文档：<br><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Basics_of_HTTP/MIME_types" style="word-wrap: break-word;">https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Basics_of_HTTP/MIME_types</a></p>
+<h5 id="3-3-3-access-log"><a href="#3-3-3-access-log" class="headerlink" title="3.3.3 access_log"></a>3.3.3 access_log</h5><ul>
+<li><span class="strong">log_format 变量名 日志格式;</span></li>
+<li><span class="strong">access_log 路径 变量名;</span></li>
+</ul>
+<p>二者搭配使用，第一个语句用于定义一个变量名，并将配置的日志格式赋值给该变量，变量名取值需使用<span class="tips">$</span>符。第二个语句用于根据变量名对应的日志格式，将用户访问日志书写到对应路径下。日志格式中对应的变量含义：</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>变量名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>remote_addr</td>
+<td>客户端地址</td>
+</tr>
+<tr>
+<td>remote_user</td>
+<td>客户端用户名</td>
+</tr>
+<tr>
+<td>time_local</td>
+<td>访问时间和时区</td>
+</tr>
+<tr>
+<td>request</td>
+<td>请求的URL和HTTP协议</td>
+</tr>
+<tr>
+<td>http_host</td>
+<td>请求地址，即浏览器中输入的地址</td>
+</tr>
+<tr>
+<td>status</td>
+<td>http请求返回的状态码，如：301、404等</td>
+</tr>
+<tr>
+<td>upstream_status</td>
+<td>upstream状态</td>
+</tr>
+<tr>
+<td>body_bytes_sent</td>
+<td>发送给客户端的文件大小(字节)</td>
+</tr>
+<tr>
+<td>http_referer</td>
+<td>该请求是从哪个链接跳转过来</td>
+</tr>
+<tr>
+<td>http_user_agent</td>
+<td>客户端信息，如：浏览器标识等</td>
+</tr>
+<tr>
+<td>ssl_protocol</td>
+<td>SSL协议版本</td>
+</tr>
+<tr>
+<td>ssl_cipher</td>
+<td>交换数据中的算法</td>
+</tr>
+<tr>
+<td>request_time</td>
+<td>整个请求的总时间</td>
+</tr>
+<tr>
+<td>upstream_addr</td>
+<td>upstream的地址，即真正提供服务的主机地址</td>
+</tr>
+<tr>
+<td>http_x_forwarded_for</td>
+<td>记录有代理服务器时客户端地址的配置</td>
+</tr>
+<tr>
+<td>upstream_response_time</td>
+<td>请求过程中，upstream响应时间</td>
+</tr>
+</tbody></table>
+</div>
+
+<h5 id="3-3-4-sendfile"><a href="#3-3-4-sendfile" class="headerlink" title="3.3.4  sendfile"></a>3.3.4  sendfile</h5><ul>
+<li><span class="strong">sendfile on/off;</span></li>
+<li><span class="strong">tcp_nopush on/off;</span></li>
+</ul>
+<p>sendfile用于高效传输文件，在sendfile为on的状态下，开启tcp_nopush会将文件积累到一定大小后再统一发送，用于提高包传输效率</p>
+<h5 id="3-3-5-keepalive-timeout"><a href="#3-3-5-keepalive-timeout" class="headerlink" title="3.3.5  keepalive_timeout"></a>3.3.5  keepalive_timeout</h5><ul>
+<li><span class="strong">keepalive_timeout 值;</span></li>
+<li><span class="strong">tcp_nodelay on/off;</span></li>
+</ul>
+<p>keepalive_timeout用于设置保持与客户端连接的最大时间，单位默认为s，超时时nginx会关闭连接并释放服务器资源，若设置为0则禁用该设置。设置的时间过大会导致大量的无效连接未断开，从而占用服务器资源，太小会导致服务未处理完，就被强制关闭连接。</p>
+<p>在keepalive_timeout启用状态下，配置tcp_nodelay on;可以将数据即使发送。</p>
+<h5 id="3-3-6-gzip"><a href="#3-3-6-gzip" class="headerlink" title="3.3.6  gzip"></a>3.3.6  gzip</h5><p><span class="strong">gzip on/off;</span></p>
+<p>gzip 用于配置传输文件前是否进行压缩以提高传输速率，压缩会占用一定系统资源</p>
+<h4 id="3-4-server块"><a href="#3-4-server块" class="headerlink" title="3.4 server块"></a>3.4 server块</h4><div class="show">server {
+        listen      80;   //监听端口
+        server_name  localhost;//监听的域名或ip地址
+        #charset koi8-r;
+        #access_log  logs/host.access.log  main;//日志输出路径
+        location /web/ {  //路由路径
+            root   /test;
+            index  index.html index.htm;
+        }
+        location /images {
+            root /test;
+            autoindex on;//自动生成文件归档页面
+        }
+        location /.well-known/pki-validation/{
+        root /;
+        }
+        location /new/{
+        root    /;
+        add_header Content-Disposition "attachment;";
+        }
+//定义404页面
+        #error_page  404              /404.html;
+//定义50x页面
+        # redirect server error pages to the static page /50x.html
+        #
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }</div>
+
+<h5 id="3-4-1-listen"><a href="#3-4-1-listen" class="headerlink" title="3.4.1  listen"></a>3.4.1  listen</h5><p><span class="strong">listen 地址/端口 [default_server];</span></p>
+<p>配置监听地址和端口，default_server参数用于将该server设置为默认主机，无该参数则第一个server为默认主机，当没有匹配到客户端指定的端口/IP时，将连接到默认主机。地址和端口格式可以为：</p>
+<ul>
+<li>listen 127.0.0.1 监听该地址所有端口</li>
+<li>listen 127.0.0.1:8080 监听该地址的8080端口</li>
+<li>listen *:8080 监听所有地址的8080端口</li>
+</ul>
+<h5 id="3-4-2-server-name"><a href="#3-4-2-server-name" class="headerlink" title="3.4.2  server_name"></a>3.4.2  server_name</h5><p><span class="strong">server_name 域名/IP地址;</span></p>
+<p>用于配置虚拟主机的标识名称，域名或IP地址可以写多个，使用空格隔开。当listen中配置了域名或IP地址，则server_name配置的域名和IP地址将失效，配置方法可以使用以下三种，当域名被多个server匹配到，将按精确匹配&gt;通配符在开头&gt;通配符在结尾&gt;正则匹配&gt;默认主机的优先级进行分配。</p>
+<h6 id="精确匹配"><a href="#精确匹配" class="headerlink" title="精确匹配"></a>精确匹配</h6><div class="show">server {
+    listen 80;
+    server_name aaaa.com bbbbb.cn;//配置多个域名
+    .....}
+</div>
+
+<h6 id="通配符匹配"><a href="#通配符匹配" class="headerlink" title="通配符匹配"></a>通配符匹配</h6><p>通配符只能在段首和段尾使用，不能再域名中间使用！</p>
+<div class="show">server {
+    listen 80;
+    server_name *.aaaa.com www.aaaa.*;
+    .....}
+</div>
+
+<h6 id="正则匹配"><a href="#正则匹配" class="headerlink" title="正则匹配"></a>正则匹配</h6><div class="show">server {
+    listen 80;
+    server_name ~正则表达式;
+    .....}
+</div>
+
+<h5 id="3-4-3-charset"><a href="#3-4-3-charset" class="headerlink" title="3.4.3 charset"></a>3.4.3 charset</h5><p><span class="strong">charset 编码格式;</span><br>charset 用于指定字符编码格式，默认的koi8-r为俄语编码格式(nginx作者是俄罗斯人)，与utf-8类似</p>
+<h5 id="3-4-4-access-log"><a href="#3-4-4-access-log" class="headerlink" title="3.4.4 access_log"></a>3.4.4 access_log</h5><p><span class="strong">access_log 路径 日志格式;</span></p>
+<p>用于指定该server的连接日志，日志格式默认使用http模块中的main变量定义的格式，可用<span class="tips">log_format</span>命令自行定义。</p>
+<h5 id="3-4-5-location"><a href="#3-4-5-location" class="headerlink" title="3.4.5 location"></a>3.4.5 location</h5><p><span class="strong">location 请求路径;</span></p>
+<p>配置请求路径，可配置多个location块用于响应不同请求</p>
+<div class="show">location  /路径{   //在test目录下匹配该路径(默认)
+    root /test
+}
+location = /路径{   //在test目录下精准匹配该路径
+    root /test
+}
+location ~* \正则表达式  {   //在test目录下正则匹配(添加*号不区分大小写)
+    root  /test            
+}
+~用于标识正则表达式，*表示不区分大小写，^~则表示不包含正则表达式，功能和不加~一致</div>
+
+<h5 id="3-4-6-root-alias"><a href="#3-4-6-root-alias" class="headerlink" title="3.4.6 root/alias"></a>3.4.6 root/alias</h5><p><span class="strong">root/alias 路径;</span></p>
+<p>用于指定资源查找路径，使用root语句时，客户端请求location路径，Nginx查找资源会直接前往<span class="tips">root路径+location路径</span>。alias一般在需要隐藏服务器真实路径时使用，查找资源会直接前往alias路径，location路径仅作为客户端请求的虚拟路径</p>
+<h5 id="3-4-7-index"><a href="#3-4-7-index" class="headerlink" title="3.4.7 index"></a>3.4.7 index</h5><p><span class="strong">index 文件名;</span></p>
+<p>用于设置主页，文件名可以写多个，如: index index1.html index2.html;当找不到第一个文件时，会依次往后查找。</p>
+<h5 id="3-4-8-error-page"><a href="#3-4-8-error-page" class="headerlink" title="3.4.8 error_page"></a>3.4.8 error_page</h5><p><span class="strong">error_page 状态码 [=状态码] 路径;</span></p>
+<p>用于设置错误处理方法，根据不同的状态码，进行相应处理，常用于配置404，50x页面，可以通过添加[=状态码]修改返回给客户端的状态码，如：error_page 404 [=200] /404.html，浏览器收到的状态码将从404修改为200。路径可以为：</p>
+<ul>
+<li>地址：error_page 404 http://<span></span>wrong.com</li>
+<li>重定向:<div class="show">error_page   500 502 503 504  /50x.html;<br>location = /50x.html {<br>root   html;<br>}</div></li>
+<li>返回信息:<div class="show">error_page 404 @goto<br>loaction @goto{<br>  default_type text/plain;<br>  return 404 ‘not found….’<br>}</div></li>
+</ul>
+<h3 id="Web服务器配置实例"><a href="#Web服务器配置实例" class="headerlink" title="Web服务器配置实例"></a>Web服务器配置实例</h3><p><strong>需求：</strong>在服务器8081和8082端口分别配置server1、server2两个服务，每个服务下有两个页面，根据客户端请求返回不同页面，为每个服务配置单独的访问日志。</p>
+<h4 id="目录树"><a href="#目录树" class="headerlink" title="目录树"></a>目录树</h4><p>webservers目录位于服务器根目录下，conf.d目录用于存放每个服务的配置文件，web目录用于存放页面和访问日志。每个服务下的logs目录用于存放access_log日志文件，webpages目录用于存放页面。</p>
+<div class="shell">webservers
+     |____conf.d
+     |          |_____server1.conf
+     |          |_____server2.conf
+     |____web
+           |____404.html
+           |____server1
+           |          |____logs——access_log
+           |          |____webpages
+           |                |____web1.html
+           |                |____web2.html
+           |____server2
+                      |_____logs——access_log
+                      |_____webpages
+                                 |_____web3.html
+                                 |_____web4.html
+</div>
+
+<h4 id="http块配置"><a href="#http块配置" class="headerlink" title="http块配置"></a>http块配置</h4><p>定义两个变量server1和server2，用于配置日志格式，两个服务的配置文件独立存放于/webservers/conf.d路径下，使用include引入nginx.conf配置文件中。</p>
+<div class="show">http{
+    ......
+    log_format server1 'new access =>$time_local';
+    log_format server2 'new access =>$time_local';
+    include /webservers/conf.d/*.conf;//引入两个服务的配置文件
+}
+</div>
+
+<h4 id="server1配置"><a href="#server1配置" class="headerlink" title="server1配置"></a>server1配置</h4><p>访问<span class="tips"><code>http://45.77.77.10:8081</code></span>访问web1页面</p>
+<p>访问<span class="tips"><code>http://45.77.77.10:8081/pages</code></span>访问web2页面</p>
+<pre><code>server&#123;
+    listen 8081;
+    server_name 45.77.77.10;
+    access_log /webservers/web/server1/logs/access.log server1;
+    error_page 404 /404.html;
+    location /&#123;
+    alias /webservers/web/server1/webpages/;
+    index web1.html;
+    &#125;
+    location /pages&#123;
+    alias /webservers/web/server1/webpages/;
+    index web2.html;
+    &#125;
+    location =/404.html&#123;
+    root /webservers/web;
+    index 404.html;
+    &#125;
+      &#125;
+</code></pre>
+
+<h5 id="server2配置"><a href="#server2配置" class="headerlink" title="server2配置"></a>server2配置</h5><p>访问<span class="tips"><code>http://45.77.77.10:8082/web3.html</code></span>访问web3页面</p>
+<p>访问<span class="tips"><code>http://45.77.77.10:8082/webpages</code></span>访问web4页面</p>
+<pre><code>server&#123;
+    listen 8082;
+    server_name 45.77.77.10;
+    access_log /webservers/web/server2/logs/access.log server2;
+    error_page 404 /404.html;
+    location /web3.html&#123;
+    root /webservers/web/server2/webpages;
+    index web3.html;
+    &#125;
+    
+    location /webpages&#123;
+    root /webservers/web/server2;
+    index web4.html;
+    &#125;
+
+    location =/404.html&#123;
+    root /webservers/web;
+    index 404.html;
+    &#125;
+      &#125;
+</code></pre>
+
+<div class="broadcast color-blue">
+<div class="iconfont icon-yinhao"></div>
+配置https服务时，使用<span class="tips">ssl_certificatessl 路径</span>语句配置证书，使用<span class="tips">ssl_certificate_key 路径</span>配置密钥</div>
+
+
+
+<h3 id="静态资源提供服务"><a href="#静态资源提供服务" class="headerlink" title="静态资源提供服务"></a>静态资源提供服务</h3><pre><code>http &#123;
+    .......
+gzip on;
+gzip_min_length 1;  //设置最小压缩大小，小于1字节的文件不进行压缩
+gzip_comp_level 3; //压缩级别(压缩比)，取值范围为1-9，值越大，压缩越多，cpu占用率越高
+gzip_types text/css text/javascript; //配置压缩的文件类型
+    server &#123;
+        listen      80;
+        server_name  45.77.78.10;
+        #charset koi8-r;
+        #access_log  logs/host.access.log  main;
+        location /images/ &#123;  //匹配路径
+        root /test;         //资源所在路径
+        autoindex on;  //自动生成资源归档页面
+         &#125;
+        location /images &#123;  //匹配路径
+        root /test;         //资源所在路径
+         &#125;
+         location /other/ &#123;  //匹配路径
+        alias /test/images;         //资源所在路径
+         &#125;
+        #error_page  404              /404.html;
+        # redirect server error pages to the static page /50x.html
+        #
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html &#123;
+            root   html;
+        &#125;
+        .....
+    &#125;
+    ........
+&#125;</code></pre>
+<p>test目录服务器根目录下，并且在/test/images路径下存放了photo.jpg照片</p>
+<ul>
+<li>使用第一个location配置时，当访问 http:<span></span>//45.77.78.10/images/ 时，ngxin会在自动生成的归档页面上输出/test/images/目录下的所有文件。请求只能为location后面配置的参数，若请求为 http:<span></span>//45.77.78.10/test/images/则会返回404</li>
+<li>使用第二个location配置时，由于未使用 <span class="tips">autoindex on</span> 配置，nginx不会生成归档页面，当访问 http:<span></span>//45.77.78.10/images/ 时nginx将返回403，访问文件需指定具体文件路径，如：http:<span></span>//45.77.78.10/test/images/photo.jpg</li>
+<li>当需要对访问者隐藏服务器实际文件路径时，可以使用<span class="tips">alias</span>进行配置，使用第三个location配置，url应当为http:<span></span>//45.77.78.10/other/photo.jpg，此时实际访问的依旧alias指定的/test/images路径下的文件</li>
+</ul>
+
+        </div>
+    </div>
+    <div class="post-nav">
+        
+            
+                <div class="post-next">
+                    <a href="/blog/2022/03/23/Centos%E9%98%B2%E7%81%AB%E5%A2%99/">下一篇：Redhat防火墙 </a>
+                </div>
+                 
+    </div>
+    <div class="container">
+        <!--设计来源于B站-季夏小贞-->
+        <div class="bigHead"></div>
+        <div class="ears"></div>
+        <div class="body"></div>
+        <div class="paws-front"></div>
+        <div class="paws-back"></div>
+        <div class="details"></div>
+        <div class="tail"></div>
+        <div class="sleep">
+          <span class="s1">z</span>
+          <span class="s2">z</span>
+          <span class="s3">z</span>
+          <span class="s4">z</span>
+          <span class="s5">z</span>
+        </div>
+    </div>
+</div>
+<div class="left-menu">
+    <a class="iconfont backTop" href="javascript:">&#xe655;</a>
+    <div class="husky"></div>
+  </div>
+</div>
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/main.js"></script>
+
+
+    <script src="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+    <script>
+        //代码高亮初始化
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+        //代码复制功能
+        let pres=document.querySelectorAll('pre');
+        for(let i=0;i<pres.length;i++){
+        var copyBtn=document.createElement('span');
+        copyBtn.innerText="copy";
+        pres[i].appendChild(copyBtn);
+        let codes=pres[i].querySelector('code').innerText;
+        copyBtn.addEventListener("click",function(){
+        let input=document.createElement('textarea');
+        pres[i].appendChild(input);
+        input.value=codes;
+        input.select(); // 选中文本
+        document.execCommand("copy"); // 执行浏览器复制命令
+        pres[i].removeChild(input);
+},false)
+}
+        </script>
+    
+    <script>
+        if(!viewH){
+            let viewH=document.documentElement.clientHeight;
+        }
+    let imgs=document.querySelector('.art_content').querySelectorAll('img');
+    if(imgs){
+    let lazyload=function(){
+    imgs.forEach((item,index)=>{
+        let rect=item.getBoundingClientRect();
+        if(rect.bottom>=0&&rect.top<viewH){
+            item.src=item.dataset.src;
+        }
+    })
+    }
+    document.querySelector('.second-main').addEventListener('scroll',()=>{
+        lazyload();
+    })
+}
+    </script>
+</body>
+
+
+
+
+</html>

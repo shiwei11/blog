@@ -1,13 +1,14 @@
 .huksy{
     background-image: url(/images/huskysprite10.png) !important;
 }
+
 .article{
     position:relative;
     box-sizing: border-box;
     width: 80%;
     margin:0 auto;
     padding: 20px 10px;
-    font-size: 18px;
+    /* font-size: 18px; */
     line-height: 2;
     color:#000;
     background-color:#f5f6f7;
@@ -58,7 +59,7 @@ color:#fa3636;
 
 .art_content{
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 16px;
 }
 /*告示栏，有四种样式，蓝色引号引用，黄色灯泡启迪，红色感叹号警示，绿色气球，紫色风车(看着像手里剑)*/
 .art_content .broadcast{
@@ -210,7 +211,7 @@ color:#fa3636;
     margin-left: 15px;
     font-size: 15px;
 }
-.art_content p{
+.art_content>p{
        text-indent: 2em;
        word-wrap: break-word;
    }
@@ -222,7 +223,10 @@ color:#fa3636;
 .art_content ul li{
     width: 100%;
     list-style:disc;
-    font-family: sans-serif;
+    margin-bottom: 5px;
+    line-height: 31px;
+    /* font-family: sans-serif; */
+    font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 }
 .art_content ol li{
     width: 100%;
@@ -258,14 +262,28 @@ color:#fa3636;
 }
 .art_content .show{/*块级元素，用于展示代码结果*/
     width: 90%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow: hidden;
     margin: 15px 0px 15px 10px;
     padding: 0px 0px 0px 20px;
     background-color: #dcdde1;
     border: 1px solid #c8cfd6;
 }
+.art_content .shell{/*块级元素，用于展示终端数据*/
+    width: 90%;
+    white-space:pre;
+    overflow-x: scroll;
+    /* overflow: hidden; */
+    margin: 15px 0px 15px 10px;
+    padding: 0px 10px 0px 20px;
+    background-color: #0c0c0c;
+    color:#c0c7cd;
+    border: 1px solid #c8cfd6;
+}
 .table{/*表格*/
     overflow-x: scroll;
-    margin: 0 0 20px;
+    margin: 10px 0 20px;
 }
 .table table {
     display: table;

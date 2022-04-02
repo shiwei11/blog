@@ -33,9 +33,24 @@ function snowing(){
         },80)
     },snowfall)
 }
-if(Math.random()>.8){//调整下雪几率
+if(Math.random()>1){//调整下雪几率
     console.log('snowing\n%c我不冷\n%c是我太热了','text-shadow:0 0 3px #ff00c8;color:#ff00c8;','text-shadow:0 0 3px #008cff;color:#008cff;');
     snowing();
+}
+if(document.getElementById('day')){
+let start=new Date('2021/4/10 12:19:14');
+    function cutdown() {
+    let now = new Date().getTime();
+    let gap = now - start;
+    let seconds = Math.floor(gap / 1000 % 60);
+    document.getElementById('day').innerText = Math.floor(gap / 86400000);
+    document.getElementById('hour').innerText = Math.floor(gap / 3600000 % 24);
+    document.getElementById('minute').innerText = Math.floor(gap / 60000 % 60);
+    document.getElementById('second').innerText = seconds > 9 ? seconds : '0' + seconds;
+}
+setInterval(function () {
+    cutdown();
+}, 1000)
 }
 //屏幕小于800自动收起侧边栏
 let menu_btn=document.querySelector('.menu-btn');
@@ -57,11 +72,12 @@ let viewH=document.documentElement.clientHeight;
     let pics=document.querySelectorAll('.update_pic');
     if(pics){
         let lazyload=function(){
-    pics.forEach((item,index)=>{
+    pics.forEach((item)=>{
         let img=item.querySelector('img');
         let rect=img.getBoundingClientRect();
         if(rect.bottom>=0&&rect.top<viewH){
             img.src=img.dataset.src;
+        // setTimeout(function(){ img.src=img.dataset.src;},3000)
         }
     });
 }
