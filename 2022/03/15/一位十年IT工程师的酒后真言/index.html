@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon">
+    
+<link rel="stylesheet" href="/blog/css/common.css">
+
+   
+    <style>
+    .preload{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+}
+.text{
+    margin-bottom: 10px;
+    color:rgb(0, 207, 243);
+    text-shadow: 0 0 3px rgb(0, 207, 243);
+    font-size: 20px;
+}
+.text span{
+    display: inline-block;
+    
+}
+.dance{
+    animation: dance .8s linear ;
+}
+.text span:nth-child(1){
+   animation-delay: 0s;
+}
+.text span:nth-child(2){
+   animation-delay: .1s;
+}
+.text span:nth-child(3){
+   animation-delay: .2s;
+}
+.text span:nth-child(4){
+   animation-delay: .3s;
+}
+.text span:nth-child(5){
+   animation-delay: .4s;
+}
+.text span:nth-child(6){
+   animation-delay:.5s;
+}
+.text span:nth-child(7){
+   animation-delay: .6s;
+}
+.text span:nth-child(8){
+   animation-delay: .7s;
+}
+.text span:nth-child(9){
+   animation-delay:.8s;
+}
+.text span:nth-child(10){
+   animation-delay: .9s;
+}
+
+@keyframes dance{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.loading{
+    width: 80%;
+    max-width: 260px;
+    height: 6px;
+    background-color: #e1e4e8;
+    border-radius: 6px;
+}
+.bar{
+    display: flex;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 10%, #b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation:bar 2s linear infinite;
+}
+@keyframes bar{
+    0%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+</style>
+
+
+<script src="/blog/js/jquery.min.js"></script>
+
+<script>
+    $(function(){
+           setInterval(function(){
+               $('.text').find("span").toggleClass('dance');
+           },1700)
+       })
+     $(window).on('load', function () {  
+           $(".preload").fadeOut("fast");  
+      });
+</script>
+<div class="preload">
+    <div class="text">
+        <span class="dance">L</span>
+        <span class="dance">o</span>
+        <span class="dance">a</span>
+        <span class="dance">d</span>
+        <span class="dance">i</span>
+        <span class="dance">n</span>
+        <span class="dance">g</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+    </div>
+    <div class="loading">
+        <span class="bar"></span>
+    </div>
+</div>
+<title>SHIWIVI-文章</title>
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
+
+<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="/blog/css/article.css">
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<div class="navigation">
+    <div class="card">
+        <div class="head">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
+        </div>
+        <div class="card-text">
+            <p>(ー`´ー)</p>
+            <p>那不是bug，是彩蛋</p>
+        </div> 
+    </div>
+    <ul class="label">
+        
+        <li><a href="/blog/index">首页</a></li>
+        
+        <li><a href="/blog/life">日常</a></li>
+        
+        <li><a href="/blog/record">一句</a></li>
+        
+        <li><a href="/blog/message">留言</a></li>
+        
+        <li><a href="/blog/about">关于</a></li>
+          
+    </ul>
+        <ul class="tag">
+            <li>#Document</li>
+            <li>#Jquery</li>
+            <li>#css</li>
+            <li>#射频</li>
+            <li>#5G通讯</li>
+            <li>#PCB</li>
+            <li>#shell</li>
+            <li>#C</li>
+            <li>#html</li>
+            <li>#硬件</li>
+            <li>#javaScript</li>
+            <li>#防火墙</li>
+            <li>#CentOS</li>
+            <li>#Linux</li>
+            <li>#python</li>
+            <li>#XPpose</li>
+        </ul>
+   
+    <ul class="rose">
+    <li>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo 5.4.0</a></li>
+    <li>License  <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></li>
+    <li>© 2021-2022&nbsp;by&nbsp;shiwi</li>
+</ul>
+</div>
+<div class="menu-btn closed"> 
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+</div>
+<div class="second-main">
+    <div class="js-toc"></div>
+    <div class="motto">
+        <p> //sunny forever<br />
+            while(life&lt;end){<br />
+               love++;<br />
+               beAwesome :)} </p>
+     </div>
+     <div class="second-content">
+        <div class="article">
+        <h1 class="title">一位资深数据工程师酒的肺腑之言(转载)</h1>
+        <div class="art_infor">
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：3228</span>
+            <span><span class="iconfont icon-riqi"></span>写于：2022-03-15</span></div>
+            <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2022-03-15</span>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您10分钟</span></div>
+        </div>
+        <div class="art_content">
+        <div class="broadcast color-blue">
+<div class="iconfont icon-yinhao"></div>
+原帖来源于Reddit论坛：<a target="_blank" rel="noopener" href="https://www.reddit.com/r/ExperiencedDevs/comments/nmodyl/drunk_post_things_ive_learned_as_a_sr_engineer/">Drunk Post: Things I've learned as a Sr Engineer</a></div>
+
+<p>最早我是在<a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2021/06/drunk-post-of-a-programmer.html">阮一峰的网络日志</a>上看到的，后续又陆陆续续在知乎、贴吧多次看到，最后追到了Reddit上，原帖作者是flipstables，这篇帖子目前已经获得了12k的点赞，写的很有意思。</p>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><p>我喝醉了，这是我作为一名工程师在过去十年学到的一些东西，我可能会后悔说了这些话，但是….醉都醉了，管他呢。</p>
+<p>(1)    提升职业生涯的最好方法是换公司。</p>
+<p>(2)    技术栈不重要。每个技术领域有大约 10-20 条核心原则，重要的是这些原则，技术栈只是落实它们的方法。你如果不熟悉某个技术栈，不需要过度担心。</p>
+<p>(3)    人们推荐跳槽是有原因的。 如果对当前工作不满意，也许是时候离开了</p>
+<p>(4)    工作和人际关系是两回事。有一些公司，我交到了好朋友，但是工作得并不开心；在另一些公司里，我没有与任何同事建立友谊，但是工作得很开心。</p>
+<p>(5)    我学会了对经理诚实，总是对经理实话实说。怕什么？他开除我？我会在两周内找到一份新工作。</p>
+<p>(6)    如果我每个季度有一次以上在凌晨2点被人认为可以随叫随到地叫醒，那么肯定是出了严重的问题，要么我得修复这个错误，要么提桶跑路。</p>
+<p><strong>再倒一杯</strong></p>
+<p>(8)    优秀的经理和优秀的工程师有很多相似之处。</p>
+<p>(9)    刚开始的时候，我也曾痴迷技术、编程、计算机，但现在已经翻篇了。</p>
+<p>(10)    好的代码是能被初级工程师理解的代码。伟大的代码是可以被CS 专业的大一新生理解的代码。</p>
+<p>(11)    作为一名工程师，最被低估的技能是写文档。说真的，如果有人可以教我怎么写文档，我会付钱，也许是 1000 美元。</p>
+<p>(12)    网上的口水战(vim vs emacs ,mac vs linux)，几乎都无关紧要，别去参与，除了下一条。</p>
+<p>(13)    年纪越大，我就越觉得动态语言更好，我就这么说了，有谁反对？</p>
+<p>(14)    如果发现自己是公司里面最厉害的工程师，那就该离开了。</p>
+<p>(15)    我不知道为什么全栈工程师的工资这么低。 不，真的，他们应该每年得到50万的年薪，只是基本工资。 妈的，他们必须了解前端和后端以及不同的浏览器如何工作、网络、数据库、缓存以及网络和移动之间的差异，天哪，公司还想使用其他的框架？ 说真的，为什么全栈工程师工资这么少</p>
+<p>(16)    我们应该雇佣更多的实习生，他们很棒。那些精力充沛的小家伙用他们的想法乱搞。如果他们公开质疑或批评某事，那就更好了。我喜欢实习生。</p>
+<p><strong>    嗝~ </strong></p>
+<p>(18)    不要过于迷恋大牛，我花了 5000 美元参加了我所崇拜大牛的课程。 他是一个才华横溢的人，但最后我意识到，他和我们其他人一样，在瞎编。</p>
+<p>(19)    技术栈很重要。好吧，我刚刚说过不重要之类的话，但听我说完，如果你使用 Python 或 C++ 语言，就会忍不住想做一些非同寻常的事情。因为这些语言确实适合干这些工作。</p>
+<p>(20)    如果你不确定自己想做什么东西，请使用 Java。这是一门很糟糕的编程语言，但它几乎无所不能。</p>
+<p>(21)    对于初学者来说，最赚钱的编程语言是 SQL，能干翻所有其他语言。你只了解 SQL 而不会做其他事情，照样赚钱。人力资源专家的年薪？也许5万美元。懂 SQL 的人力资源专家？9万美元。</p>
+<p>(22)    测试很重要，但 TDD （测试驱动的开发）是个该死的邪教。</p>
+<p>(23)    政府单位很轻松，但并不像人们说的那样好。对于职业生涯早期到中期的工程师，12 万美元的年薪 + 各种福利 + 养老金听起来不错，但是你得出卖你的灵魂去深究这些专有技术，离开政府单位以后，这些知识就没用了。我非常尊重政府工作人员，但说真的，这些地方的工程师，年龄多数在 50 岁以上是有原因的。</p>
+<p>(24)    如果一家公司的工程师超过 100 人，它的期权可能在未来十年内变得很有价值。对于工程师人数很少的公司，期权一般都是毫无价值。</p>
+<p>(25)    我从来没有在FAANG (Facebook、亚马逊、苹果、奈飞、谷歌)工作过，所以我不知道我错过了什么。但是我招过FAANG的工程师，他们也不知道自己在做什么。</p>
+<p>(26)    自我价值不是和薪酬挂钩的函数，跟那东西没什么关系，用资本来确定自我价值很糟糕。</p>
+<p>(27)    头衔大多无关紧要，随便什么公司都可以有首席工程师。</p>
+<p>(28)    说到头衔，在职业生涯早期，头衔升级很好，因为这可以让你历练技能，学会责任。但到后期，头衔降级很好，这会让你增加薪水。</p>
+<p>(29)    善待每一个人，不是因为这会有助于你的事业，而是因为向善本身就有回报。</p>
+<p>(30)    如果上个月我没有从初级工程师或实习生那里学到点什么，那说明我没有上心。</p>
+<p><strong>    该死，没酒了</strong></p>
+<p>(32)    在课程、书籍、会议方面花点钱是值得的。</p>
+<p>(33)    手腕和背部的健康问题可不是开玩笑的，好的设备值得花钱。</p>
+<p>(34)    当一个软件工程师，最好的事情是什么？你可以结识很多想法相同的人，大家互相交流，不一定有相同的兴趣，但是对方会用跟你相同的方式思考问题，这很酷。</p>
+<p>(35)    就算我心里讨厌某种技术，但如果我觉得他好的话，我还是会把它推荐给客户，比如我恨 Jenkins，但会把它推荐给客户，我不觉得做错了。</p>
+<p>(36)    Git很糟糕，但我没有选择只能使用它，它的GUI可以见鬼去了，给我命令就行，大概只需要记住7个，其他的可以Google。</p>
+<p>(37)    我喜欢团队里的半技术分析师， 因为懂编程但不懂软件工程，他们对我成长的帮助比最杰出的工程师要大得多。</p>
+<p><strong>    糟糕，又没酒了 </strong></p>
+<p>(39)    成为一名优秀的工程师意味着了解最佳实践，成为高级工程师意味着知道何时打破最佳实践。</p>
+<p>(40)    发生事故时，如果周围的人试图将责任归咎于外部错误或底层服务中断，那么是时候离开这家公司，继续前进了。</p>
+<p>(41)    我遇到的最好的领导，同意我的一部分观点，同时耐心跟我解释，为什么不同意我的另一部分观点。我正在努力成为像他们一样的人。</p>
+<p>(42)    算法和数据结构确实重要，但不应该无限夸大，尤其是面试的时候。我没见过药剂师面试时，还要测试有机化学的细节。这个行业的面试过程有时候很糟糕。</p>
+<p>(43)    做自己喜欢的事情并不重要，不要让我做讨厌的事情更重要。</p>
+<p>(44)    越接近产品，就越接近推动收入增长。无论工作的技术性如何，只要它接近产品，我都感到越有价值。</p>
+<p>(45)    即使我平时用 Windows 工作，Linux 也很重要。为什么？因为服务器是 Linux 系统，你最终在 Linux 系统上工作。</p>
+<p>(46)    不是所有好工作都在硅谷，但那里有很多。</p>
+<p><strong>    哦，该死，我又找到啤酒了</strong></p>
+<p>(48)    结对编程很棒，只是需要花很多时间，而公司往往不想花那么多时间。</p>
+<p>(49)    和聪明的工程师一起工作让我变成更好的码农，和聪明的非技术同事一起工作让我成为更好的工程师。</p>
+<p>(50)    朝九晚五以外的时间就别花在工作上了，除非那个项目真的很棒，你状态很好。</p>
+<p>(51)    人死了以后，你想让代码成为你的遗产吗？如果是那样，就花很多时间在代码上面吧，因为那将是你的遗产。但是，如果你像我一样，更看重与家人、朋友和生活中其他人相处的时光，而不是写的代码，那就别对它太在意。</p>
+<p>(52)    好人写的代码也有烂的，聪明人写的代码也是，好的工程师也会写出糟糕的代码。不要让代码质量成为你衡量自我价值的因变量。</p>
+<p>(53)    我进入这个行业是因为我喜欢技术，但现在工作已经毁了我的爱好。</p>
+<p>(54)    我挣的钱还不错，对此我心存感激，不过还是得省着点用。</p>
+
+        </div>
+    </div>
+    <div class="post-nav">
+        
+            
+                <div class="post-next">
+                    <a href="/blog/2022/03/10/VLess-TLS%E9%AB%98%E9%98%B6%E6%90%AD%E5%BB%BA/">下一篇：VLess+TLS+WS代理服务器搭建 </a>
+                </div>
+                 
+    </div>
+    <div class="container">
+        <!--设计来源于B站-季夏小贞-->
+        <div class="bigHead"></div>
+        <div class="ears"></div>
+        <div class="body"></div>
+        <div class="paws-front"></div>
+        <div class="paws-back"></div>
+        <div class="details"></div>
+        <div class="tail"></div>
+        <div class="sleep">
+          <span class="s1">z</span>
+          <span class="s2">z</span>
+          <span class="s3">z</span>
+          <span class="s4">z</span>
+          <span class="s5">z</span>
+        </div>
+    </div>
+</div>
+<div class="left-menu">
+    <a class="iconfont backTop" href="javascript:">&#xe655;</a>
+    <div class="husky"></div>
+  </div>
+</div>
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/main.js"></script>
+
+
+    <script>
+        if(!viewH){
+            let viewH=document.documentElement.clientHeight;
+        }
+    let imgs=document.querySelector('.art_content').querySelectorAll('img');
+    if(imgs){
+    let lazyload=function(){
+    imgs.forEach((item,index)=>{
+        let rect=item.getBoundingClientRect();
+        if(rect.bottom>=0&&rect.top<viewH){
+            item.src=item.dataset.src;
+        }
+    })
+    }
+    document.querySelector('.second-main').addEventListener('scroll',()=>{
+        lazyload();
+    })
+}
+    </script>
+</body>
+
+
+
+
+</html>

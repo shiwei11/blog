@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon">
+    
+<link rel="stylesheet" href="/blog/css/common.css">
+
+   
+    <style>
+    .preload{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+}
+.text{
+    margin-bottom: 10px;
+    color:rgb(0, 207, 243);
+    text-shadow: 0 0 3px rgb(0, 207, 243);
+    font-size: 20px;
+}
+.text span{
+    display: inline-block;
+    
+}
+.dance{
+    animation: dance .8s linear ;
+}
+.text span:nth-child(1){
+   animation-delay: 0s;
+}
+.text span:nth-child(2){
+   animation-delay: .1s;
+}
+.text span:nth-child(3){
+   animation-delay: .2s;
+}
+.text span:nth-child(4){
+   animation-delay: .3s;
+}
+.text span:nth-child(5){
+   animation-delay: .4s;
+}
+.text span:nth-child(6){
+   animation-delay:.5s;
+}
+.text span:nth-child(7){
+   animation-delay: .6s;
+}
+.text span:nth-child(8){
+   animation-delay: .7s;
+}
+.text span:nth-child(9){
+   animation-delay:.8s;
+}
+.text span:nth-child(10){
+   animation-delay: .9s;
+}
+
+@keyframes dance{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.loading{
+    width: 80%;
+    max-width: 260px;
+    height: 6px;
+    background-color: #e1e4e8;
+    border-radius: 6px;
+}
+.bar{
+    display: flex;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 10%, #b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation:bar 2s linear infinite;
+}
+@keyframes bar{
+    0%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+</style>
+
+
+<script src="/blog/js/jquery.min.js"></script>
+
+<script>
+    $(function(){
+           setInterval(function(){
+               $('.text').find("span").toggleClass('dance');
+           },1700)
+       })
+     $(window).on('load', function () {  
+           $(".preload").fadeOut("fast");  
+      });
+</script>
+<div class="preload">
+    <div class="text">
+        <span class="dance">L</span>
+        <span class="dance">o</span>
+        <span class="dance">a</span>
+        <span class="dance">d</span>
+        <span class="dance">i</span>
+        <span class="dance">n</span>
+        <span class="dance">g</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+    </div>
+    <div class="loading">
+        <span class="bar"></span>
+    </div>
+</div>
+<title>SHIWIVI-文章</title>
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
+
+<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="/blog/css/article.css">
+
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/base16/atelier-cave.min.css">
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+<div class="navigation">
+    <div class="card">
+        <div class="head">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
+        </div>
+        <div class="card-text">
+            <p>(ー`´ー)</p>
+            <p>那不是bug，是彩蛋</p>
+        </div> 
+    </div>
+    <ul class="label">
+        
+        <li><a href="/blog/index">首页</a></li>
+        
+        <li><a href="/blog/life">日常</a></li>
+        
+        <li><a href="/blog/record">一句</a></li>
+        
+        <li><a href="/blog/message">留言</a></li>
+        
+        <li><a href="/blog/about">关于</a></li>
+          
+    </ul>
+        <ul class="tag">
+            <li>#Document</li>
+            <li>#Jquery</li>
+            <li>#css</li>
+            <li>#射频</li>
+            <li>#5G通讯</li>
+            <li>#PCB</li>
+            <li>#shell</li>
+            <li>#C</li>
+            <li>#html</li>
+            <li>#硬件</li>
+            <li>#javaScript</li>
+            <li>#防火墙</li>
+            <li>#CentOS</li>
+            <li>#Linux</li>
+            <li>#python</li>
+            <li>#XPpose</li>
+        </ul>
+   
+    <ul class="rose">
+    <li>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo 5.4.0</a></li>
+    <li>License  <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></li>
+    <li>© 2021-2022&nbsp;by&nbsp;shiwi</li>
+</ul>
+</div>
+<div class="menu-btn closed"> 
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+</div>
+<div class="second-main">
+    <div class="js-toc"></div>
+    <div class="motto">
+        <p> //sunny forever<br />
+            while(life&lt;end){<br />
+               love++;<br />
+               beAwesome :)} </p>
+     </div>
+     <div class="second-content">
+        <div class="article">
+        <h1 class="title">VLess+TLS+WS代理服务器搭建</h1>
+        <div class="art_infor">
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：987</span>
+            <span><span class="iconfont icon-riqi"></span>写于：2022-03-10</span></div>
+            <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2022-03-10</span>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您3分钟</span></div>
+        </div>
+        <div class="art_content">
+        <div class="broadcast color-blue">
+<div class="iconfont icon-yinhao"></div>
+本文采用 WTFPL 许可证书，转载请不要标注任何本站信息
+<div><a target="_blank" rel="noopener" href="https://wtfpl2.com/">WTFPL © Do What the Fuck You Want to Public License</a></div></div>
+
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>VLESS 是一种无状态的轻量级数据传输协议，使用 UUID 进行身份验，其协议不再依赖系统时间，配置灵活。但其本身协议不带加密，因此需要配合 TLS 等加密手段。</p>
+<h3 id="前置需要"><a href="#前置需要" class="headerlink" title="前置需要"></a>前置需要</h3><h4 id="一台可用的VPS"><a href="#一台可用的VPS" class="headerlink" title="一台可用的VPS"></a>一台可用的VPS</h4><p>国内的可以使用香港、台湾地区的服务器，如GCP在台湾的节点、softshellweb，外国的推荐vultr、搬瓦工等主流厂商，支持支付宝付款并且不容易跑路。</p>
+<p>操作系统请选择自己熟悉的发行版，并能解决防火墙策略、开放端口等问题，这里以CentOS7为例。</p>
+<p>安装完毕后需要测试是否能Ping通，可以直接使用ping命令尝试，或者去相关网站，国内可以通过<a target="_blank" rel="noopener" href="https://ping.chinaz.com/">站长Ping工具</a>检测，国外通过<a target="_blank" rel="noopener" href="https://www.yougetsignal.com/">yougetsignal</a>检测。如果国内能ping通，说明该服务器可用，可以开始搭建了。如果国外能ping通，国内无法ping通，则说明被拦截了，需要换一台服务器。如果国内外都无法ping通，则说明服务器还未部署好，需等待几分钟后再重试。</p>
+<h4 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h4><p>域名推荐去 godaddy 购买，顶级域名为<span class="tips">.com</span>的域名一般第一年只需要59元，<span class="tips">.cn</span>域名一般35元，最便宜的诸如<span class="tips">.live</span>结尾的域名第一年不到14元</p>
+<p>拿到域名后将其解析到所购买的VPS IP地址，域名一般需要24h才会生效(实际不用)。</p>
+<h4 id="SSL-TLS证书"><a href="#SSL-TLS证书" class="headerlink" title="SSL/TLS证书"></a>SSL/TLS证书</h4><p>SSL/TLS证书可以从以下平台免费获取，证书有效期一般为90天，90天后需要更换</p>
+<ul>
+<li>zerossl：<a target="_blank" rel="noopener" href="https://zerossl.com/">https://zerossl.com/</a></li>
+<li>letsencrypt：<a target="_blank" rel="noopener" href="https://letsencrypt.org/">https://letsencrypt.org/</a></li>
+<li>FreeSSL：<a target="_blank" rel="noopener" href="https://freessl.org/">https://freessl.org/</a></li>
+<li>SSL For Free：<a target="_blank" rel="noopener" href="https://www.sslforfree.com/">https://www.sslforfree.com/</a></li>
+</ul>
+<p>将获取的证书、密钥文件上传到服务器上，在配置文件时使用。如果不想手动更新SSL证书，可以使用脚本自动更新<br>脚本地址：<a target="_blank" rel="noopener" href="https://github.com/acmesh-official/acme.sh">https://github.com/acmesh-official/acme.sh</a></p>
+<h3 id="安装内核"><a href="#安装内核" class="headerlink" title="安装内核"></a>安装内核</h3><h4 id="安装V2fly"><a href="#安装V2fly" class="headerlink" title="安装V2fly"></a>安装V2fly</h4><p>Github开源地址：<a target="_blank" rel="noopener" href="https://github.com/v2fly/fhs-install-v2ray">https://github.com/v2fly/fhs-install-v2ray</a></p>
+<p>安装/更新 v2fly命令：</p>
+<pre><code>bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)</pre></code>
+
+<p>安装完成后，配置文件放在<span class="tips">/usr/local/etc/v2ray/config.json</span>路径下</p>
+<h4 id="Google-BBR加速算法"><a href="#Google-BBR加速算法" class="headerlink" title="Google BBR加速算法"></a>Google BBR加速算法</h4><p>TCP BBR(Bottleneck Bandwidth and Round-trip propagation time)是由Google于2016年发布的一种拥塞控制算法，可以显著地提高Linux服务器吞吐量并减少TCP连接的延迟</p>
+<p>安装bbrplus：</p>
+<pre><code>wget "https://github.com/cx9208/bbrplus/raw/master/ok_bbrplus_centos.sh" && chmod +x ok_bbrplus_centos.sh && ./ok_bbrplus_centos.sh</code></pre>
+
+<p>安装完毕需要重启系统，重启完毕可通过<span class="tips">uname -r</span>命令查询内核，返回bbr相关值说明升级完成，通过命令<span class="tips">lsmod | grep bbr</span>查看是否载入bbr系统模块，返回bbr相关值说明已经加载。</p>
+<p>CentOS8+系统内核自带BBR，开启方法可自行百度。</p>
+<h3 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h3><h4 id="服务端配置"><a href="#服务端配置" class="headerlink" title="服务端配置"></a>服务端配置</h4><p>使用vim在<span class="tips">/usr/local/etc/v2ray/config.json</span>配置文件中添加配置设置。</p>
+<pre><code>&#123;
+  &#123;
+    "log": &#123;
+    "loglevel": "warning",
+    "access": "/var/log/v2ray/access.log",   
+    "error": "/var/log/v2ray/error.log"  //日志输出路径
+    &#125;,
+    "inbounds": [&#123;
+    "port": 8180 ,  //监听端口
+    "protocol": "vless",//主传入协议
+    "settings": &#123;
+    "decryption": "none",
+    "clients": [
+    &#123;
+    "id": "41803377-5789-4bf5-8cb4-dd6ad659554c",//UUID
+    "level": 0
+        &#125;
+      ]
+    &#125;,
+    "streamSettings": &#123;
+    "network":"ws",  //传输协议
+    "security": "tls", //传输层安全
+    "wsSettings":&#123;
+    "path":"/",     //路径
+    "headers":&#123;&#125;
+    &#125;,
+    "tlsSettings": &#123;
+    "serverName": "newyear101.xyz", //域名
+    "certificates": [&#123;
+    "certificateFile": "/etc/ssl/certificate.crt",//SSL证书路径
+    "keyFile": "/etc/ssl/private.key" //密钥路径
+            &#125;]
+         &#125;
+      &#125;
+    &#125;],
+    "outbounds": [&#123;
+    "protocol": "freedom",//主传出协议
+    "settings": &#123;&#125;
+    &#125;,&#123;
+    "protocol": "blackhole",
+    "settings": &#123;&#125;,
+    "tag": "blocked"
+    &#125;],
+    "routing": &#123;
+    "rules": [
+    &#123;
+    "type": "field",
+    "ip": ["geoip:private"],
+    "outboundTag": "blocked"
+        &#125;
+      ]
+   &#125;
+ &#125;
+</code></pre>
+
+<ul>
+<li>UUID作为唯一身份识别码，可通过客户端生成，或通过UUID生成网站获得，不能自行编写<h5 id="检测配置文件是否正确"><a href="#检测配置文件是否正确" class="headerlink" title="检测配置文件是否正确"></a>检测配置文件是否正确</h5>v2ray官方检测命令：<pre><code>/usr/local/bin/v2ray -test -config  /usr/local/etc/v2ray/config.json</pre></code>
+文件正确会返回值：<div class="shell">V2Ray 4.44.0 (V2Fly, a community-driven edition of V2Ray.) Custom (go1.17.3 linux/amd64)
+A unified platform for anti-censorship.
+2021/02/03 21:46:12 [Info] main/jsonem: Reading config: /usr/local/etc/v2ray/config.json
+Configuration OK.</div></li>
+</ul>
+<h4 id="更新防火墙规则"><a href="#更新防火墙规则" class="headerlink" title="更新防火墙规则"></a>更新防火墙规则</h4><h5 id="Centos-7-8-firewalld-放行端口"><a href="#Centos-7-8-firewalld-放行端口" class="headerlink" title="Centos 7/8 firewalld 放行端口"></a>Centos 7/8 firewalld 放行端口</h5><div class="show">// 8180改成自己的端口号
+firewall-cmd --permanent --add-port=8180/tcp 
+//重启使之生效
+firewall-cmd --reload
+</div>
+
+<h5 id="ubuntu系统-ufw放行端口"><a href="#ubuntu系统-ufw放行端口" class="headerlink" title="ubuntu系统 ufw放行端口"></a>ubuntu系统 ufw放行端口</h5><div class="show">//8180改成自己的端口号
+sudo ufw allow 8180/tcp
+//重启
+sudo ufw reload
+</div>
+
+<h5 id="Centos-6-7-iptable放行端口"><a href="#Centos-6-7-iptable放行端口" class="headerlink" title="Centos 6/7 iptable放行端口"></a>Centos 6/7 iptable放行端口</h5><div class="show">//8180改成自己的端口号
+iptables -I INPUT -p tcp --dport 8180 -j ACCEPT
+//保存添加的规则链
+service iptables save
+</div>
+
+
+
+
+
+<h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><p>客户端需要使用4.23.2以上内核</p>
+<h4 id="客户端下载地址："><a href="#客户端下载地址：" class="headerlink" title="客户端下载地址："></a>客户端下载地址：</h4><ul>
+<li><strong>Android</strong>: <a target="_blank" rel="noopener" href="https://github.com/2dust/v2rayNG/releases">v2rayNG</a></li>
+<li><strong>windows</strong>:<a target="_blank" rel="noopener" href="https://github.com/2dust/v2rayN/releases">v2rayN</a></li>
+<li><strong>MacOS</strong>:<a target="_blank" rel="noopener" href="https://github.com/yanue/V2rayU/releases">V2rayU</a></li>
+</ul>
+<h3 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h3><div class="table">
+
+<table>
+<thead>
+<tr>
+<th>配置项</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>别名</td>
+<td>任意</td>
+</tr>
+<tr>
+<td>地址</td>
+<td>VPS的IP地址</td>
+</tr>
+<tr>
+<td>端口</td>
+<td>配置文件中的端口号</td>
+</tr>
+<tr>
+<td>用户ID</td>
+<td>UUID,需要和配置文件一致</td>
+</tr>
+<tr>
+<td>传输协议</td>
+<td>ws</td>
+</tr>
+<tr>
+<td>伪装域名</td>
+<td>解析的域名</td>
+</tr>
+<tr>
+<td>路径</td>
+<td>配置文件中的路径</td>
+</tr>
+<tr>
+<td>传输层安全</td>
+<td>tls</td>
+</tr>
+</tbody></table>
+</div>
+
+<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><h4 id="系统命令"><a href="#系统命令" class="headerlink" title="系统命令"></a>系统命令</h4><p>如果已经启动v2ray服务，修改的配置文件需要重启生效</p>
+<ul>
+<li><strong>systemctl start v2ray</strong> 运行</li>
+<li><strong>systemctl stop v2ray</strong> 停止</li>
+<li><strong>systemctl restart v2ray</strong> 重启</li>
+</ul>
+<h4 id="常用服务命令"><a href="#常用服务命令" class="headerlink" title="常用服务命令"></a>常用服务命令</h4><h5 id="生成uuid"><a href="#生成uuid" class="headerlink" title="生成uuid"></a>生成uuid</h5><p> <span class="strong">v2Ctl uuid</span> 生成一个新的uuid</p>
+<h5 id="配置相关"><a href="#配置相关" class="headerlink" title="配置相关"></a>配置相关</h5><p> <span class="strong">v2ray [参数]</span></p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-version</td>
+<td>查看当前版本</td>
+</tr>
+<tr>
+<td>-test</td>
+<td>测试配置文件有效性</td>
+</tr>
+<tr>
+<td>-config</td>
+<td>手动指定配置文件，值可以是绝对路径、相对路径、url链接、”stdin:”(从标准输入读取内容)</td>
+</tr>
+</tbody></table>
+</div>
+
+        </div>
+    </div>
+    <div class="post-nav">
+        
+            <div class="post-prev ">
+                <a href="/blog/2022/03/15/%E4%B8%80%E4%BD%8D%E5%8D%81%E5%B9%B4IT%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E9%85%92%E5%90%8E%E7%9C%9F%E8%A8%80/">上一篇：一位资深数据工程师酒的肺腑之言(转载)</a>
+            </div>
+            
+            
+                <div class="post-next">
+                    <a href="/blog/2022/03/04/nginx%E7%AC%94%E8%AE%B0/">下一篇：Nginx笔记(上) </a>
+                </div>
+                 
+    </div>
+    <div class="container">
+        <!--设计来源于B站-季夏小贞-->
+        <div class="bigHead"></div>
+        <div class="ears"></div>
+        <div class="body"></div>
+        <div class="paws-front"></div>
+        <div class="paws-back"></div>
+        <div class="details"></div>
+        <div class="tail"></div>
+        <div class="sleep">
+          <span class="s1">z</span>
+          <span class="s2">z</span>
+          <span class="s3">z</span>
+          <span class="s4">z</span>
+          <span class="s5">z</span>
+        </div>
+    </div>
+</div>
+<div class="left-menu">
+    <a class="iconfont backTop" href="javascript:">&#xe655;</a>
+    <div class="husky"></div>
+  </div>
+</div>
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/main.js"></script>
+
+
+    <script src="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+    <script>
+        //代码高亮初始化
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+        //代码复制功能
+        let pres=document.querySelectorAll('pre');
+        for(let i=0;i<pres.length;i++){
+        var copyBtn=document.createElement('span');
+        copyBtn.innerText="copy";
+        pres[i].appendChild(copyBtn);
+        let codes=pres[i].querySelector('code').innerText;
+        copyBtn.addEventListener("click",function(){
+        let input=document.createElement('textarea');
+        pres[i].appendChild(input);
+        input.value=codes;
+        input.select(); // 选中文本
+        document.execCommand("copy"); // 执行浏览器复制命令
+        pres[i].removeChild(input);
+},false)
+}
+        </script>
+    
+    <script>
+        if(!viewH){
+            let viewH=document.documentElement.clientHeight;
+        }
+    let imgs=document.querySelector('.art_content').querySelectorAll('img');
+    if(imgs){
+    let lazyload=function(){
+    imgs.forEach((item,index)=>{
+        let rect=item.getBoundingClientRect();
+        if(rect.bottom>=0&&rect.top<viewH){
+            item.src=item.dataset.src;
+        }
+    })
+    }
+    document.querySelector('.second-main').addEventListener('scroll',()=>{
+        lazyload();
+    })
+}
+    </script>
+</body>
+
+
+
+
+</html>
