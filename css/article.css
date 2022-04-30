@@ -392,7 +392,6 @@ border-radius: 90% 50% 90% 90%;
 transform: rotate(226deg);
 background-color: #594a41;
 z-index: 1;
-/* z-index: 99; */
 }
 .ears{
 height: 21px;
@@ -457,7 +456,7 @@ border-right: 5px solid transparent;
 border-radius: 100%;
 left:35px;
 top:-18px;
-z-index: 100;
+z-index: 20;
 }
 .tail{
 height: 25px;
@@ -538,14 +537,15 @@ pre{
 pre>span{
             position:absolute;
             right:5px;
-            top:0px;
+            top:-3px;
             padding:0px 6px;
-            border:1px solid #111;
+            /* border:1px solid #111; */
             box-sizing:border-box;
             border-radius: 5px;
-            color:rgb(189, 189, 189);
-            background-color: rgb(61, 53, 53);
-            cursor: pointer;
+            color: rgb(14, 231, 249);
+            text-shadow: 1px 1px 2px rgba(14,144,249), 1px 1px 2px rgba(14,144,249);
+            background-color: rgba(61, 53, 53, 0.01);
+            cursor: url(https://cdn.jsdelivr.net/gh/shiwei11/blogfile/images/link.cur),auto;;
           }
 .copyBox{
               position: absolute;

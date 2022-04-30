@@ -243,6 +243,21 @@ background-color:rgba(252, 236, 19, 0.055) ;
  .rose li a{
     color:rgb(255, 255, 255);
 }
+/*RSS*/
+.rsstag{
+    width: 100%;
+    text-align: center;
+}
+
+.rsstag .icon-rss,.rsstag a{
+    padding:0 7px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    color:#ff8181;
+}
+
+
 
 /* 控制器 */
 
@@ -290,6 +305,10 @@ background-color:rgba(252, 236, 19, 0.055) ;
 .closed .menu-line:nth-child(3){
     transform:translateY(-.84rem) rotate(-765deg);
 }
+
+
+
+
 
 
 /* 内容 */
@@ -492,18 +511,41 @@ flex-direction: row;
     margin:0 5px;
 }
 .info{
-    height: 8vh;
+    height: 10vh;
     width: 100%;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color:#9b999d;
 }
+.info a{
+    color:#9b999d;
+    text-decoration: underline;
+}
 .info .timer{
     text-align: center;
     
 }
+.info .iconfont{
+    padding: 0px 6px;
+    font-size: 16px;
+}
+.info .icon-fanchuanzhuanhuan{
+    color:rgb(250, 209, 63);
+}
+.info .icon-hexo_{
+    color:rgb(73, 217, 249);
+}
+.info .icon-banquan{
+    color:rgb(249, 73, 132);
+}
+.info .icon-xukexieyi{
+    color:rgb(73, 249, 123);
+}
+
+
 ::-webkit-scrollbar{
     width: 10px;
 }
@@ -542,9 +584,6 @@ flex-direction: row;
         width: 65%;
         height: auto !important;
     }
-
-
-
 }
 @media screen and (max-width: 420px){
     .navigation{
@@ -552,7 +591,7 @@ flex-direction: row;
         left:0px;
         width: 65%;
         background:linear-gradient(to bottom,rgb(15, 181, 247),rgb(215, 228, 230));
-        z-index: 10;
+        z-index: 50;
     }
    .navigation::before{
        content:'';
@@ -562,7 +601,7 @@ flex-direction: row;
        height: 100vh;
        width:100%;
        background-color: rgb(11, 2, 19,.7);
-       z-index: 10;
+       z-index: 50;
    }
    .label li{
     height: 6vh;
@@ -613,3 +652,4 @@ padding:.4rem 0px 1.4rem 0px;
     margin-bottom: 10px;
 }
 }
+

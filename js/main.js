@@ -33,7 +33,7 @@ function snowing(){
         },80)
     },snowfall)
 }
-if(Math.random()>.8){//调整下雪几率
+if(Math.random()>1){//调整下雪几率
     console.log('snowing\n%c我不冷\n%c是我太热了','text-shadow:0 0 3px #ff00c8;color:#ff00c8;','text-shadow:0 0 3px #008cff;color:#008cff;');
     snowing();
 }
