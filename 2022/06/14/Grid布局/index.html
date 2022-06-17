@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon">
+    
+<link rel="stylesheet" href="/blog/css/common.css">
+
+   
+    <style>
+    .preload{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+}
+.text{
+    margin-bottom: 10px;
+    color:rgb(0, 207, 243);
+    text-shadow: 0 0 3px rgb(0, 207, 243);
+    font-size: 20px;
+}
+.text span{
+    display: inline-block;
+    
+}
+.dance{
+    animation: dance .8s linear ;
+}
+.text span:nth-child(1){
+   animation-delay: 0s;
+}
+.text span:nth-child(2){
+   animation-delay: .1s;
+}
+.text span:nth-child(3){
+   animation-delay: .2s;
+}
+.text span:nth-child(4){
+   animation-delay: .3s;
+}
+.text span:nth-child(5){
+   animation-delay: .4s;
+}
+.text span:nth-child(6){
+   animation-delay:.5s;
+}
+.text span:nth-child(7){
+   animation-delay: .6s;
+}
+.text span:nth-child(8){
+   animation-delay: .7s;
+}
+.text span:nth-child(9){
+   animation-delay:.8s;
+}
+.text span:nth-child(10){
+   animation-delay: .9s;
+}
+
+@keyframes dance{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.loading{
+    width: 80%;
+    max-width: 260px;
+    height: 6px;
+    background-color: #e1e4e8;
+    border-radius: 6px;
+}
+.bar{
+    display: flex;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 10%, #b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation:bar 2s linear infinite;
+}
+@keyframes bar{
+    0%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+</style>
+
+
+<script src="/blog/js/jquery.min.js"></script>
+
+<script>
+    $(function(){
+           setInterval(function(){
+               $('.text').find("span").toggleClass('dance');
+           },1700)
+       })
+     $(window).on('load', function () {  
+           $(".preload").fadeOut("fast");  
+      });
+</script>
+<div class="preload">
+    <div class="text">
+        <span class="dance">L</span>
+        <span class="dance">o</span>
+        <span class="dance">a</span>
+        <span class="dance">d</span>
+        <span class="dance">i</span>
+        <span class="dance">n</span>
+        <span class="dance">g</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+    </div>
+    <div class="loading">
+        <span class="bar"></span>
+    </div>
+</div>
+<title>SHIWIVI-文章</title>
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
+
+<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="/blog/css/article.css">
+
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/base16/atelier-cave.min.css">
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="SHIWIVI" type="application/atom+xml">
+</head>
+<body>
+<div class="navigation">
+    <div class="card">
+        <div class="head">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
+        </div>
+        <div class="card-text">
+            <p>(ー`´ー)</p>
+            <p>那不是bug，是彩蛋</p>
+        </div> 
+    </div>
+    <ul class="label">
+        
+        <li><a href="/blog/index.html">首页</a></li>
+        
+        <li><a href="/blog/life">日常</a></li>
+        
+        <li><a href="/blog/record">一句</a></li>
+        
+        <li><a href="/blog/message">留言</a></li>
+        
+        <li><a href="/blog/about">关于</a></li>
+          
+    </ul>
+        <ul class="tag">
+            <li>#Document</li>
+            <li>#Jquery</li>
+            <li>#css</li>
+            <li>#射频</li>
+            <li>#5G通讯</li>
+            <li>#PCB</li>
+            <li>#shell</li>
+            <li>#C</li>
+            <li>#html</li>
+            <li>#硬件</li>
+            <li>#javaScript</li>
+            <li>#防火墙</li>
+            <li>#CentOS</li>
+            <li>#Linux</li>
+            <li>#python</li>
+            <li>#XPpose</li>
+        </ul>
+<div class="rsstag"><a href="./atom.xml"><span class="iconfont icon-rss"></span>RSS订阅</a></div>
+<div class="flower">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84.6px" height="70.5px" viewBox="0 0 254 212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>窗</title>
+<desc>Created with Sketch.</desc>
+<defs></defs>
+<g id="植物" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Artboard" transform="translate(-885.000000, -503.000000)">
+        <g id="植物-紫色盆" transform="translate(882.000000, 500.000000)">
+            <ellipse id="Oval-12" fill="#B3B7C7" cx="140.5" cy="137" rx="39.5" ry="6"></ellipse>
+            <g id="Group-5">
+                <path d="M131.5,149 C137.746054,149 138.400559,136.953074 140.297813,118.503702 C141.504079,106.77367 149.145158,88.1140929 147,75 C142.297813,46.2539062 153.271934,32.5660626 150.170125,19.4282488 C148.031314,10.3692495 142.862042,3 131.5,3 C123.603887,3 113.698654,6.59314895 110.722909,11.2157433 C103.206874,22.8913341 114,46.5137576 114,75 C114,90.4435309 122.495151,106.751425 123.699377,118.476362 C125.595832,136.941172 125.250862,149 131.5,149 Z" id="Oval-11" fill="#BAC4F6"></path>
+                <path d="M135.5,146.5 C132.598908,121.877878 130.965369,104.566553 130.599381,94.5660242 C130.050399,79.5652312 132.963841,77.0580598 132.164069,55.3464601 C131.630888,40.8720602 130.242865,30.4232402 128,24" id="Line-15" stroke="#FFFFFF" stroke-width="2" opacity="0.800892857" stroke-linecap="square"></path>
+                <path d="M77.0442201,163.336077 C84.2239219,163.336077 101.067658,131.237823 101.067658,92.025606 C101.067658,52.8133888 90.9057581,-2.32627732 72.6560979,17.2440872 C50.0508064,41.4852946 69.5871262,36.5862429 74.0442201,63.8595149 C75.572858,73.2133576 77.0442201,94.5993942 77.0442201,104.613421 C77.0442201,143.825638 69.8645184,163.336077 77.0442201,163.336077 Z" id="Oval-9" fill="#BAC4F6" transform="translate(81.510722, 88.251316) rotate(-43.000000) translate(-81.510722, -88.251316) "></path>
+                <path d="M42.5,50.5 C47.5132933,48.8699207 59.3816332,57.6317857 78.1050199,76.785595 C96.8284065,95.9394043 113.960067,116.844206 129.5,139.5" id="Line-17" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M155.281006,152.144255 C162.116643,152.144255 178.153197,121.584207 178.153197,84.2511084 C178.153197,72.6051871 184.354199,51.8242671 182.531201,39.8465879 C178.51025,13.4276595 163.058175,0.233079666 151.10317,13.0532528 C129.581164,36.1327785 143.297279,29.7382802 147.540781,55.7045685 C148.996164,64.6101585 153.500382,80.3852665 153.500382,89.9194035 C153.500382,127.252502 148.445368,152.144255 155.281006,152.144255 Z" id="Oval-9-Copy-2" fill="#E9EDFD" transform="translate(161.092971, 80.123972) scale(-1, 1) rotate(-20.000000) translate(-161.092971, -80.123972) "></path>
+                <path d="M180.5,34.5 C181.290102,21.4892162 175.746138,28.9223292 163.868108,56.7993391 C157.546037,71.6368512 150.532373,85.3308057 144.827114,101.881203 C141.023608,112.914801 138.581237,128.787733 137.5,149.5" id="Line-20" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M60.3426107,183.894782 C69.2498271,183.894782 90.1463498,156.072081 90.1463498,122.083011 C90.1463498,88.0939419 67.5408019,29.4364067 54.8986583,57.2625442 C45.0326912,78.978146 51.0912584,74.0282851 56.6207779,97.6687014 C58.5172227,105.776593 67.8616068,124.363423 67.8616068,133.043561 C67.8616068,167.032631 51.4353942,183.894782 60.3426107,183.894782 Z" id="Oval-9-Copy" fill="#BAC4F6" transform="translate(69.895982, 116.944107) rotate(-71.000000) translate(-69.895982, -116.944107) "></path>
+                <path d="M24.5,109.5 C22.4991751,103.669523 35.0833631,105.49608 62.2525641,114.979669 C79.4278854,120.974828 92.103247,119.378882 106.278649,126.191831 C111.777518,128.834684 120.517968,134.937407 132.5,144.5" id="Line-19" stroke="#FFFFFF" stroke-width="2" opacity="0.595424107" stroke-linecap="square"></path>
+                <path d="M169.495543,159.559977 C178.40276,159.559977 199.299282,131.737276 199.299282,97.7482062 C199.299282,85.7856682 202.004463,66.329956 197.824033,53.1018748 C190.126639,28.745108 172.2443,14.8950801 164.051591,32.9277389 C154.185624,54.6433407 160.244191,49.6934798 165.77371,73.3338961 C167.670155,81.4417878 177.014539,100.028618 177.014539,108.708756 C177.014539,142.697825 160.588327,159.559977 169.495543,159.559977 Z" id="Oval-9-Copy-3" fill="#BAC4F6" transform="translate(179.479352, 92.134636) scale(-1, 1) rotate(-43.000000) translate(-179.479352, -92.134636) "></path>
+                <path d="M213.5,60.5 C209.183273,60.8948914 201.740861,65.4428024 191.172763,74.1437328 C175.320617,87.1951284 177.797205,83.2393994 161.560337,103.262986 C150.735758,116.612043 142.715646,131.024381 137.5,146.5" id="Line-21" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M81.1425752,168.630026 C85.1025169,165.536181 98.2051544,147.96348 98.2051544,111.236918 C98.2051544,74.5103552 86.0176544,46.7369177 70.0176544,46.7369177 C54.0176544,46.7369177 59.5351666,70.3889964 66.8400325,93.0530589 C69.6371249,101.731312 78.9791535,122.814465 81.0032985,132.88325 C84.2653955,149.110029 78.6989273,170.539213 81.1425752,168.630026 Z" id="Oval-10" fill="#E9EDFD" transform="translate(78.936475, 107.743055) rotate(-52.000000) translate(-78.936475, -107.743055) "></path>
+                <path d="M39.5,84.5 C46.5402399,84.832105 55.9862242,87.7506309 67.8379528,93.2555776 C85.6155457,101.512998 79.9127462,96.6348296 100.298442,112.739947 C113.888906,123.476691 125.956092,135.063376 136.5,147.5" id="Line-18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M194.823347,177.534556 C197.785465,175.220296 209.085075,165.125173 213.530819,146.109724 C215.496552,137.701844 211.555235,124.000271 211.555235,111.853141 C211.555235,72.2337887 199.639103,43.8487815 182.378853,43.8487815 C165.118604,43.8487815 168.053621,58.2764613 175.933859,82.7256721 C183.814096,107.174883 191.693317,118.61017 193.876895,129.472028 C197.395933,146.976919 192.187224,179.594121 194.823347,177.534556 Z" id="Oval-10-Copy-2" fill="#E9EDFD" transform="translate(191.881132, 110.738214) scale(-1, 1) rotate(-52.000000) translate(-191.881132, -110.738214) "></path>
+                <path d="M237.5,84.5 C231.839918,82.6252532 222.387737,84.7837206 209.143456,90.9754021 C189.277034,100.262925 198.344222,96.9653923 174.587666,113.911421 C158.749962,125.208774 147.387407,137.071634 140.5,149.5" id="Line-22" stroke="#FFFFFF" stroke-width="2" opacity="0.785044643" stroke-linecap="square"></path>
+                <path d="M102.095097,154.049614 C106.979303,150.233654 123.140143,128.559423 123.140143,83.2607523 C123.140143,37.9620813 108.108037,3.70622602 88.3735811,3.70622602 C68.639125,3.70622602 75.4444439,32.8787829 84.4542911,60.8327171 C87.9042347,71.5365054 99.4267255,97.5405402 101.923313,109.959415 C105.946795,129.97358 99.0810936,156.404412 102.095097,154.049614 Z" id="Oval-10-Copy" fill="#E9EDFD" transform="translate(99.374086, 78.951409) rotate(-21.000000) translate(-99.374086, -78.951409) "></path>
+                <path d="M70.5,27.5 C77.9697854,36.2141564 84.664658,44.2949462 90.5846178,51.7423694 C99.4645574,62.9135043 102.309139,65.8595669 108.078018,74.773869 C113.846897,83.6881711 108.232283,69.1486166 118.500716,94.8794382 C125.346337,112.033319 129.012765,128.573507 129.5,144.5" id="Line-16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M193.001521,189.153265 C198.929205,189.153265 212.83568,162.652399 212.83568,130.278124 C212.83568,97.9038493 204.210737,49.7003434 189.378612,68.5372278 C174.540517,87.3816949 180.150684,86.5530431 183.830536,109.070321 C185.092606,116.793013 193.001521,132.403088 193.001521,140.670839 C193.001521,173.045114 187.073837,189.153265 193.001521,189.153265 Z" id="Oval-9-Copy-4" fill="#BAC4F6" transform="translate(196.248002, 126.727326) scale(-1, 1) rotate(-73.000000) translate(-196.248002, -126.727326) "></path>
+                <path d="M234.5,116.5 C229.435614,115.997419 220.043174,117.148484 206.322678,119.953197 C185.741934,124.160265 185.201799,123.9696 168.145826,131.063968 C156.775178,135.793546 148.226569,140.93889 142.5,146.5" id="Line-23" stroke="#FFFFFF" stroke-width="2" opacity="0.733426339" stroke-linecap="square"></path>
+            </g>
+            <g id="Group-4" transform="translate(101.000000, 137.000000)">
+                <path d="M0,0 C11.7955729,2 24.5052083,3 38.1289062,3 C51.7526042,3 65.3763021,2 79,0 L71.2109375,75.3409091 C61.9375,77.1136364 51.8945312,78 41.0820312,78 C30.2695313,78 19.4570312,77.1136364 8.64453125,75.3409091 L0,0 Z" id="Rectangle-9" fill="#FCDCCF"></path>
+                <path d="M59.2621996,2.19791001 C63.6483775,1.86496527 70.2276443,1.1323286 79,0 L71.2109375,75.3409091 C63.3055851,76.5844933 57.2271178,77.3450382 52.9755357,77.6225437 L59.2621996,2.19791001 Z" id="Rectangle-9" fill="#ECC6B6"></path>
+                <path d="M0,0 C10.9588352,1.33333333 23.3572727,2 37.1953125,2 C51.0333523,2 64.9682481,1.33333333 79,0 L76.7909585,21.3672948 L40.573652,23.0934676 L2.38711382,20.8047516 L0,0 Z" id="Rectangle-9" fill="#F3B096"></path>
+            </g>
+        </g>
+    </g>
+</g>
+</svg>
+</div>
+
+</div>
+<div class="menu-btn closed"> 
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+</div>
+<div class="second-main">
+    <div class="js-toc"></div>
+    <div class="motto">
+        <p> //sunny forever<br />
+            while(life&lt;end){<br />
+               love++;<br />
+               beAwesome :)} </p>
+     </div>
+     <div class="second-content">
+        <div class="article">
+        <h1 class="title">Grid栅格布局</h1>
+        <div class="art_infor">
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：10509</span>
+            <span><span class="iconfont icon-riqi"></span>写于：2022-06-14</span></div>
+            <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2022-06-14</span>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您31分钟</span></div>
+        </div>
+        <div class="art_content">
+        <h3 id="1-栅格布局"><a href="#1-栅格布局" class="headerlink" title="1. 栅格布局"></a>1. 栅格布局</h3><p>Grid 是一种强大的布局方案，允许在Web上创建二维布局，通过对父元素定义不同参数的行与列垂直线，再将子元素部署于行列网格上，由此实现各类灵活的布局，如：<br><br/></p>
+<div style="display:grid;grid-template-areas:'a a a' 'b c d' 'b e e';text-align:center;color:#fff;width:280px;height:200px;margin:0 auto;">
+<div style="background-color:#EA2027;grid-area:a;">box1</div>
+<div style="background-color:#fff200;grid-area:b;">box2</div>
+<div style="background-color:#7d5fff;grid-area:c;">box3</div>
+<div style="background-color:#32ff7e;grid-area:d;">box4</div>
+<div style="background-color:#4b4b4b;grid-area:e;">box5</div>
+</div>
+<br/>
+
+<p>通过标准流、float、flex也可以实现类似的布局，但这些方案往往需要更多的DOM元素，或者需要指定更多的参数，并且很多情况下无法做到自适应，此时，grid布局方案的优势就体现出来了。并且语法兼容性也很好，除了那位大爷…..</p>
+<div class="table">
+<table>
+<thead>
+<tr>
+<th>Chrome</th><th>Edeg</th><th>Firefox</th><th>IE</th><th>Opera</th><th>Safari</th>
+</tr>
+</thead>
+<tr><td>57</td><td>16</td><td>52</td><td style="color:red;">不支持</td><td>44</td><td>10.1</td></tr>
+</table>
+</div>
+
+<h3 id="2-栅格容器"><a href="#2-栅格容器" class="headerlink" title="2. 栅格容器"></a>2. 栅格容器</h3><p>创建栅格的第一步就是创建一个栅格容器，并将其中的内容定义为栅格布局</p>
+<h4 id="2-1-栅格属性"><a href="#2-1-栅格属性" class="headerlink" title="2.1 栅格属性"></a>2.1 栅格属性</h4><p><span class="strong">display: grid/inline-grid;</span></p>
+<p>指定容器布局方式为栅格布局，该属性和 block 与 inline-block 值相似</p>
+<h4 id="2-2-定义栅格模板"><a href="#2-2-定义栅格模板" class="headerlink" title="2.2 定义栅格模板"></a>2.2 定义栅格模板</h4><p><span class="strong">grid-template-columns: 值;</span></p>
+<p><span class="strong">grid-template-rows: 值;</span></p>
+<p>将容器划分为行列栅格,栅格线的值可以为<span class="tips">固定值</span>、<span class="tips">百分比</span>、<span class="tips">fr关键字</span>、<span class="tips">repeat()语句</span>、<span class="tips">minmax()语句</span>、<span class="tips">calc()函数</span>等，并且参数可以混用</p>
+<h5 id="2-2-1-固定值行列轨道宽度"><a href="#2-2-1-固定值行列轨道宽度" class="headerlink" title="2.2.1 固定值行列轨道宽度"></a>2.2.1 固定值行列轨道宽度</h5><p>将子元素宽高设为固定值，单位可以为px，也可以为em、rem等相对单位</p>
+<div class="show">如：给父元素指定行列轨道宽度，子元素可以不设置任何参数
+div{
+    display:grid;
+    grid-template-columns:50px 60px 100px;
+    grid-template-rows:50px 60px 100px;
+}
+</div>
+<div style="display:grid;grid-template-columns:50px 60px 100px;grid-template-rows:50px 60px 100px;text-align:center;color:#fff;width:210px;margin:0 auto;">
+<div style="background-color:#EA2027;">box1</div>
+<div style="background-color:#fff200;">box2</div>
+<div style="background-color:#7d5fff;">box3</div>
+<div style="background-color:#32ff7e;">box4</div>
+<div style="background-color:#4b4b4b;">box5</div>
+<div style="background-color:#67e6dc;">box6</div>
+<div style="background-color:#ff9f1a;">box7</div>
+<div style="background-color:#ffb8b8;">box8</div>
+<div style="background-color:#c56cf0;">box9</div>
+</div>
+
+<div class="show">类似的取值可以为
+    grid-template-columns:5em 5em 5em;
+</div>
+
+<h5 id="2-2-2-百分比配置宽高"><a href="#2-2-2-百分比配置宽高" class="headerlink" title="2.2.2 百分比配置宽高"></a>2.2.2 百分比配置宽高</h5><p>将元素的宽高按百分比配置，可以让网页元素自适应不同屏幕大小</p>
+<div class="show">如：元素宽高分别为20% 20% 50% 
+div{
+    display:grid;
+    grid-template-columns:20% 20% 50%;
+    grid-template-rows:20% 20% 50%;
+    border:1px solid black;
+    box-sizing: border-box;
+}
+</div>
+<div style="display:grid;grid-template-columns:20% 20% 50%;grid-template-rows:20% 20% 50%;text-align:center;color:#fff;width:280px;height:300px;margin:0 auto;border:1px solid black;box-sizing: border-box;">
+<div style="background-color:#EA2027;">box1</div>
+<div style="background-color:#fff200;">box2</div>
+<div style="background-color:#7d5fff;">box3</div>
+<div style="background-color:#32ff7e;">box4</div>
+<div style="background-color:#4b4b4b;">box5</div>
+<div style="background-color:#67e6dc;">box6</div>
+<div style="background-color:#ff9f1a;">box7</div>
+<div style="background-color:#ffb8b8;">box8</div>
+<div style="background-color:#c56cf0;">box9</div>
+</div>
+<div class="broadcast color-blue">
+<div class="iconfont icon-yinhao"></div>
+百分比是基于父容器的宽度和高度计算，不管子元素内容大小如何变化也不会变，因此要给与父元素宽高参数，即不能再使用子元素撑开父元素了。若子元素宽高相加不到100%，则剩余部分空置</div>
+
+<h5 id="2-2-3-fr按比例配置宽高"><a href="#2-2-3-fr按比例配置宽高" class="headerlink" title="2.2.3 fr按比例配置宽高"></a>2.2.3 fr按比例配置宽高</h5><p>grid布局提供了 <span class="tips">fr</span> 关键字(fraction)用于表示比例关系</p>
+<div class="show">如：元素宽高比为1:2:2 
+div{
+    display:grid;
+    grid-template-columns:1fr 2fr 2fr;
+    grid-template-rows:1fr 2fr 2fr;
+    border:1px solid black;
+    box-sizing: border-box;
+}
+</div>
+<div style="display:grid;grid-template-columns:1fr 2fr 2fr;grid-template-rows:1fr 2fr 2fr;text-align:center;color:#fff;width:210px;margin:0 auto;">
+<div style="background-color:#EA2027;">box1</div>
+<div style="background-color:#fff200;">box2</div>
+<div style="background-color:#7d5fff;">box3</div>
+<div style="background-color:#32ff7e;">box4</div>
+<div style="background-color:#4b4b4b;">box5</div>
+<div style="background-color:#67e6dc;">box6</div>
+<div style="background-color:#ff9f1a;">box7</div>
+<div style="background-color:#ffb8b8;">box8</div>
+<div style="background-color:#c56cf0;">box9</div>
+</div>
+
+<div class="show">配合其他值来实现弹性布局
+     grid-template-columns:150px 1fr 10%;
+     <span class="tips">第一列宽为150px，最后一列宽为10%,剩下宽度给中间一列</span>
+</div>
+
+<h5 id="2-2-4-定义栅格线名称"><a href="#2-2-4-定义栅格线名称" class="headerlink" title="2.2.4 定义栅格线名称"></a>2.2.4 定义栅格线名称</h5><p>可以使用<span class="tips">[ ]</span>为边框线起名字，并且同一条线的名称可以有无数多个，如：<span class="tips">[a1 b1]</span>为同一条线取名a1和b1</p>
+<div class="show">如：元素宽高比为1:2:2 
+div{
+    display:grid;
+    grid-template-columns: [c1] 80px [c2] 80px [c3] 80px [c4];
+    grid-template-rows: [r1] 60px [r2] 60px [r3] 60px [r4];
+    border:1px solid black;
+    box-sizing: border-box;
+}
+box1、box4、box7左边框线相连为c1，右边框线相连为c2；
+box1、box2、box3上边框线相连为r1，下边框线相连为r2
+其他以此类推
+</div>
+<div style="display:grid;grid-template-columns:[c1] 80px [c2] 80px [c3] 80px [c4];
+    grid-template-rows:[r1] 60px [r2] 60px [r3] 60px [r4];text-align:center;color:#fff;margin:0 auto;width:240px;">
+<div style="background-color:#EA2027;">box1</div>
+<div style="background-color:#fff200;">box2</div>
+<div style="background-color:#7d5fff;">box3</div>
+<div style="background-color:#32ff7e;">box4</div>
+<div style="background-color:#4b4b4b;">box5</div>
+<div style="background-color:#67e6dc;">box6</div>
+<div style="background-color:#ff9f1a;">box7</div>
+<div style="background-color:#ffb8b8;">box8</div>
+<div style="background-color:#c56cf0;">box9</div>
+</div>
+
+<h5 id="2-2-5-repeat-重复填充"><a href="#2-2-5-repeat-重复填充" class="headerlink" title="2.2.5 repeat()重复填充"></a>2.2.5 repeat()重复填充</h5><p>对于多个宽高值相同的元素，可以使用<span class="tips">repeat()</span>语句简写</p>
+<div class="show">如：
+1. 对于grid-template-columns: 5em 5em 5em;
+该语句可以简写为
+    grid-template-columns: repeat(3,5em);
+2. 类似地可以创建宽度有一定规律的子元素
+    如：创建宽度依次为20px,40px,60px,20px,40px,60px的6列元素
+    grid-template-columns: repeat(2, 20px 40px 60px);
+3. 还可以repeat()前后添加不想重复的宽高值
+    grid-template-columns: repeat(2,1em 5em) 2em;
+    这就生成了1em 5em 1em 5em 2em的网格
+4. 百分号和比例依旧适用
+    grid-template-columns: repeat(3,33.3%);
+5. 如果包含了栅格线名，名称也会被复制
+    grid-template-columns: repeat(3,[top] 5em [bottom]);
+    则会生成
+    [top] 5em [bottom top] 5em [bottom top] 5em [bottom]
+    即：中间的栅格线将会有两个名称，该语句等同于：
+    grid-template-columns: [top] 5em [bottom top] 5em [bottom top] 5em [bottom];
+</div>
+
+
+
+
+<h5 id="2-2-6-minmax-限制尺寸"><a href="#2-2-6-minmax-限制尺寸" class="headerlink" title="2.2.6 minmax()限制尺寸"></a>2.2.6 minmax()限制尺寸</h5><p>当子元素溢出父容器之外时，除了使用<span class="tips">overflow: hidden;</span>外，还可以使用<span class="tips">minmax(最小值，最大值)</span>来限制宽高尺寸</p>
+<div class="show">如：将剩余空间分配给第二列，但又要避免他被挤占得太小
+     grid-template-columns:5em minmax(10%,1fr) 2em;
+</div>
+<div class="broadcast color-red">
+<div class="iconfont icon-gantanhao"></div>
+注意！当minmax()中最大值小于最小值时，最大值将失效。如minmax(100px,2em)中，当2em计算值小于100px时，元素宽高将被解析为100px</div>
+
+<h5 id="2-2-7-calc-计算尺寸"><a href="#2-2-7-calc-计算尺寸" class="headerlink" title="2.2.7 calc()计算尺寸"></a>2.2.7 calc()计算尺寸</h5><p>grid是支持<span class="tips">calc()</span>语句的，只是有时候不太适用</p>
+<div class="show">如：第二列宽度通过计算得出
+     grid-template-columns:2em calc(100%-1.5em) 10%;
+</div>
+
+<h5 id="2-2-8-根据内容自适应"><a href="#2-2-8-根据内容自适应" class="headerlink" title="2.2.8 根据内容自适应"></a>2.2.8 根据内容自适应</h5><p>子元素宽高还可以根据子元素内容，通过<span class="tips">max-content</span>、<span class="tips">min-content</span>、<span class="tips">fit-content</span>来实现栅格自适应</p>
+<ul>
+<li><span class="strong">max-content:</span>解析为尽可能大的空间，以防换行</li>
+<li><span class="strong">min-content:</span>解析为尽可能小的空间，能够显示内容即可</li>
+<li><span class="strong">fit-content:</span>解析为空间尽可能小，但如果超过指定空间大小就换行</li>
+</ul>
+<div class="show">如：尽可能容纳内容
+div{
+    display:grid;
+    grid-template-columns:max-content max-content max-content;
+    grid-template-rows:max-content max-content max-content;
+}
+可以看到，每一列的宽度由该列有最长内容的列宽决定，行类似。当父元素指定宽度时，这可能会溢出到父容器之外
+</div>
+
+<div style="display:grid;grid-template-columns:max-content max-content max-content;grid-template-rows:max-content max-content max-content;text-align:center;color:#fff;width:180px;margin:0 auto;border:2px solid black;box-sizing: border-box;">
+<div style="background-color:#EA2027;">1</div>
+<div style="background-color:#fff200;">22</div>
+<div style="background-color:#7d5fff;">33333333</div>
+<div style="background-color:#32ff7e;">44444444444</div>
+<div style="background-color:#4b4b4b;">5</div>
+<div style="background-color:#67e6dc;">6</div>
+<div style="background-color:#ff9f1a;">77</div>
+<div style="background-color:#ffb8b8;">8888</div>
+<div style="background-color:#c56cf0;">9</div>
+</div>
+
+<div class="show">配合minmax()使用可以不破坏外部布局，但会挤压内部空间
+div{
+    display:grid;
+    grid-template-columns:minmax(0,max-content) minmax(0,max-content) minmax(0,max-content);
+    grid-template-rows:max-content max-content max-content;
+}
+</div>
+
+<div style="display:grid;grid-template-columns:minmax(0,max-content) minmax(0,max-content) minmax(0,max-content);grid-template-rows:max-content max-content max-content;text-align:center;color:#fff;width:180px;margin:0 auto;border:2px solid black;box-sizing: border-box;">
+<div style="background-color:#EA2027;">1</div>
+<div style="background-color:#fff200;">22</div>
+<div style="background-color:#7d5fff;">33333333</div>
+<div style="background-color:#32ff7e;">44444444444</div>
+<div style="background-color:#4b4b4b;">5</div>
+<div style="background-color:#67e6dc;">6</div>
+<div style="background-color:#ff9f1a;">77</div>
+<div style="background-color:#ffb8b8;">8888</div>
+<div style="background-color:#c56cf0;">9</div>
+</div>
+
+<div class="show"><span class="tips">fit-content</span>用于限制最大长度，类似于max-width
+指定三列宽均为50等宽字符，当未满50ch时按实际字符长度算，超过该值则进行换行，即最大值只能为50ch
+div{
+    display:grid;
+    grid-template-columns:fit-content(50ch) fit-content(50ch) fit-content(5.0ch);
+}
+只指定宽度，高度自适应，第一第二列未满50ch时，以各自长度为列宽，第三列超过50ch，则进行换行，以50ch为列宽
+</div>
+<div style="display:grid;grid-template-columns:fit-content(50ch) fit-content(50ch) fit-content(50ch);text-align:center;color:#fff;width:50vh;margin:0 auto;border:2px solid black;box-sizing: border-box;">
+<div style="background-color:#18dcff;">the night</div>
+<div style="background-color:#4b4b4b;">Avicii</div>
+<div style="background-color:#7d5fff;">He said one day you will leave this world behind So live a life you will remember</div>
+</div>
+<div class="broadcast color-green">
+<div class="iconfont icon-qiqiu"></div>
+当父容器较小时，第一、第二列即便未满50ch也可能会进行换行，以保证不会溢出父亲容器</div>
+
+<h5 id="2-2-9-auto-fill自动填充"><a href="#2-2-9-auto-fill自动填充" class="headerlink" title="2.2.9 auto-fill自动填充"></a>2.2.9 auto-fill自动填充</h5><p>当父容器宽度固定，可以使用<span class="tips">auto-fill</span>让子元素根据大小自动填充</p>
+<div class="show">如：
+div{
+    display:grid;
+    width:50vh;
+    grid-template-columns:repeat(auto-fill,5em);
+    grid-template-rows:max-content max-content max-content;
+    }
+在父容器中尽量排列宽3em的元素，排列到第一行排完，如果剩下空间不足3em，则剩余子元素将进行换行
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,3em);text-align:center;color:#fff;width:50vh;margin:0 auto;border:2px solid black;box-sizing: border-box;">
+<div style="background-color:#EA2027;">box1</div>
+<div style="background-color:#fff200;">box2</div>
+<div style="background-color:#7d5fff;">box3</div>
+<div style="background-color:#32ff7e;">box4</div>
+<div style="background-color:#4b4b4b;">box5</div>
+<div style="background-color:#67e6dc;">box6</div>
+<div style="background-color:#ff9f1a;">box7</div>
+<div style="background-color:#ffb8b8;">box8</div>
+<div style="background-color:#c56cf0;">box9</div>
+</div>
+
+<div class="show">1. 一个父容器的宽/高只能有一次自动排列，因此下述语句是不允许的
+grid-template-columns: repeat(auto-fill,5em) repeat(auto-fill,2em);
+2. 但可以固定尺寸的repeat与自动填充的repear共存，如：
+grid-template-columns: repeat(2,5em) repeat(auto-fill,2em);
+或者
+grid-template-columns: repeat(auto-fill,5em) repeat(3,2em);
+但无论语序如何，grid总会为固定尺寸的元素分配空间，因此auto-fill会被最后才被分配空间
+</div>
+
+<h4 id="2-3栅格间距"><a href="#2-3栅格间距" class="headerlink" title="2.3栅格间距"></a>2.3栅格间距</h4><p>通过<span class="tips">row-gap</span>、<span class="tips">column-gap</span>来设置栅格见的行、列间隔。或者将两个属性合并为一个 <span class="tips">grid-gap：行间隔 列间隔;</span></p>
+<div class="show">给父容器添加该属性
+div{
+    display:grid;
+    width:50vh;
+    height:50vh;
+    grid-template-columns:repeat(3,60px);grid-template-rows:repeat(3,60px);
+    row-gap:10px;
+    column-gap:10px;
+    }
+如图所见，添加间隔可能导致栅格溢出，这两个属性可合并为 grid-gap ，如果该语句之后的值只有一个，则解析为行列间隔都为该值。
+    grid-gap:10px 10px;
+等价于
+    grid-gap:10px;
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(3,60px);grid-template-rows:repeat(3,60px);row-gap:10px;
+    column-gap:10px;text-align:center;color:#fff;width:200px;height:200px;margin:0 auto;border:2px solid black;box-sizing: border-box;">
+<div style="background-color:#EA2027;">box1</div>
+<div style="background-color:#fff200;">box2</div>
+<div style="background-color:#7d5fff;">box3</div>
+<div style="background-color:#32ff7e;">box4</div>
+<div style="background-color:#4b4b4b;">box5</div>
+<div style="background-color:#67e6dc;">box6</div>
+<div style="background-color:#ff9f1a;">box7</div>
+<div style="background-color:#ffb8b8;">box8</div>
+<div style="background-color:#c56cf0;">box9</div>
+</div>
+
+<h3 id="3-栅格区域"><a href="#3-栅格区域" class="headerlink" title="3. 栅格区域"></a>3. 栅格区域</h3><p>此前都是给父容器添加属性，但如果同时给子元素添加相应属性可以做出更好的布局</p>
+<h4 id="3-1-调用栅格线名"><a href="#3-1-调用栅格线名" class="headerlink" title="3.1 调用栅格线名"></a>3.1 调用栅格线名</h4><p>通过<span class="tips">grid-template-columns</span>、<span class="tips">grid-template-rows</span>定义栅格宽高和栅格线名后，可以通过下列语句调用栅格线名</p>
+<ul>
+<li><span class="strong">grid-column-start：</span>列开始的栅格线名</li>
+<li><span class="strong">grid-column-end：</span>列结束的栅格线名</li>
+<li><span class="strong">grid-row-start：</span>行开始的栅格线名</li>
+<li><span class="strong">grid-row-end：</span>行结束的栅格线名</li>
+</ul>
+<div class="show">通过四条边来定义子元素的具体位置，当未定义栅格线名时，可以使用1，2，3...作为栅格线名
+.box1 {
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:2;
+    grid-row-end:4;
+    background-color: #ff3426;//红色
+}
+.box2 {
+    grid-column-start:3;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:3;
+    background-color: #39f64f;//绿色
+}
+
+<p>.parbox {<br>    display:grid;<br>    grid-template-columns: repeat(4,50px);<br>    grid-template-rows: repeat(4,50px);<br>}<br>栅格线名可以为负数，表示从该栅格线往其反方向数</p>
+</div>
+
+
+<div style="display:grid;display:grid;grid-template-columns: repeat(4,50px);grid-template-rows: repeat(4,50px);text-align:center;color:#fff;width:200px;height:200px;margin:0 auto;box-sizing: border-box;">
+<div style="border:1px solid #474747;"></div>
+<div style="border:1px solid #474747;"></div>
+<div style="border:1px solid #474747;background-color: #39f64f;"></div>
+<div style="border:1px solid #474747;background-color: #39f64f;"></div>
+<div style="border:1px solid #474747;background-color: #ff3426;"></div>
+<div style="border:1px solid #474747;"></div>
+<div style="border:1px solid #474747;background-color: #39f64f;"></div>
+<div style="border:1px solid #474747;background-color: #39f64f;"></div>
+<div style="border:1px solid #474747;background-color: #ff3426;"></div>
+<div style="border:1px solid #474747;"></div>
+<div style="border:1px solid #474747;"></div>
+<div style="border:1px solid #474747;"></div>
+<div style="border:1px solid #474747;"></div>
+<div style="border:1px solid #474747;"></div>
+<div style="border:1px solid #474747;"></div>
+<div style="border:1px solid #474747;"></div>
+</div>
+
+<div class="show">1. 栅格线的编号可以为<span class="tips">负值</span>，表示从倒数第n条线开始从后往前数
+如：不知道栅格有几列，但想从最右边的栅格线开始部署，可以使用
+        grid-column-start:-1;
+        grid-row-start:-1;(行同理)
+2. 如果为栅格线定义过名称，则可以使用该名称作为上述语句的值，如果变量对应的栅格线有多条，则使用<span class="strong">变量名 序号</span>来确定具体的栅格线，序号从1开始排列。如：有多条名为col-A的线，表示列从第4条col-A开始：
+            grid-column-start:col-A 4;
+3. 此外可以使用<span class="tips">span</span>语句指定子元素跨越的行列数，如：
+.box1 {
+    grid-column-start:1;
+    grid-column-end: span 1;
+    grid-row-start:2;
+    grid-row-end: span 2;
+}
+上述代码等同于：
+.box1 {
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end: 4;
+}
+表示该子元素从左边框号1开始，跨越1列，从上边框号2开始，跨越2行，其中<span class="strong">span 1</span>可以直接简写为<span class="strong">span</span>(默认为1)，且span后的值不能为<span class="tips">0</span>或<span class="tips">负值</span>
+4. 当使用 <span class="strong">span 栅格线名 n</span> 时，表示该元素跨越了n条该名称的栅格线
+如：栅格部署为A、B栅格线交替命名时
+A 格子 B 格子 A 格子 B 格子 A 格子 B 格子
+此时
+    grid-column-start: A 1;
+    grid-column-end: span 2 A;
+表示栅格从第1条A线开始，跨越1条名为A的栅格线，在下一个A线处结束
+
+</div>
+
+<h4 id="3-2-调用栅格线名的简写"><a href="#3-2-调用栅格线名的简写" class="headerlink" title="3.2 调用栅格线名的简写"></a>3.2 调用栅格线名的简写</h4><p>上一节中 grid-column-start，grid-column-end和grid-row-start，grid-row-end用于指定栅格起始和结束的位置，该属性可以简写为</p>
+<ul>
+<li><span class="strong">grid-column: 起始栅格线/结束栅格线</span></li>
+<li><span class="strong">grid-row: 起始栅格线/结束栅格线</span></li>
+</ul>
+<div class="show">1. 元素开始和结束的栅格线名用 / 隔开 
+.box1 {
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end: 4;
+}
+等价于
+.box1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+也可以用跨越了多少栅格表示
+.box1 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+}
+2. 如果 / 和第二个值省略，则默认起始结束的栅格线名都一致
+如：列栅格线中有两条名为header的线，则
+        grid-column: header;
+等价于
+        grid-column: header / header;
+即以第一条header开始，第二条header结束，无论中间跨越多少栅格
+</div>
+
+
+<h4 id="3-3-grid-area"><a href="#3-3-grid-area" class="headerlink" title="3.3 grid-area"></a>3.3 grid-area</h4><p>grid-area可用于调用网格线，也可用于为子元素命名</p>
+<h5 id="3-3-1-grid-area调用网格线"><a href="#3-3-1-grid-area调用网格线" class="headerlink" title="3.3.1 grid-area调用网格线"></a>3.3.1 grid-area调用网格线</h5><p> grid-column-start，grid-column-end和grid-row-start，grid-row-end可以直接用一个语句代替：<br> <span class="strong">grid-area：行开始/列开始/行结束/列结束</span></p>
+<div class="show">如：
+.box1 {
+    grid-row-start:2;
+    grid-row-end: 4;
+    grid-column-start:1;
+    grid-column-end: 2;  
+}
+等价于
+.box1 {
+    grid-area:2/1/4/2;
+}
+同样，值可以为跨越了多少个网格
+.box1 {
+  grid-area: 2 / 1 / span 2 / span 1;
+}
+</div>
+
+
+<h5 id="3-3-2-grid-area为子元素命名"><a href="#3-3-2-grid-area为子元素命名" class="headerlink" title="3.3.2 grid-area为子元素命名"></a>3.3.2 grid-area为子元素命名</h5><p>可以通过<span class="tips">grid-area</span>给每个栅格子元素定义名称，然后由父容器通过<span class="tips">grid-template-areas</span>定义它们的排列方法</p>
+<div class="show">如：
+.box1 {
+    grid-area: a;
+}
+.box2 {
+    grid-area: b;
+}
+.box3 {
+    grid-area: c;
+}
+.box4 {
+    grid-area: d;
+}
+.box5 {
+    grid-area: e;
+}
+.parbox {
+    display:grid;
+    grid-template-areas: 'a a a'
+                        &emsp;&emsp;&emsp;&emsp;'b c d'
+                        &emsp;&emsp;&emsp;&emsp;'b e e';
+}
+排列方法可以写于同一行上，但需要注意'&nbsp;'号
+grid-template-areas: 'a a a''b c d''b e e';
+</div>
+
+<div style="display:grid;grid-template-areas:'a a a' 'b c d' 'b e e';text-align:center;color:#fff;width:280px;height:200px;margin:0 auto;">
+<div style="background-color:#EA2027;grid-area:a;">box1</div>
+<div style="background-color:#fff200;grid-area:b;">box2</div>
+<div style="background-color:#7d5fff;grid-area:c;">box3</div>
+<div style="background-color:#32ff7e;grid-area:d;">box4</div>
+<div style="background-color:#4b4b4b;grid-area:e;">box5</div>
+</div>
+
+<div class="show">变量名应该尽量使用有含义的单词
+(子元素变量名应相应改变，这里只展示父容器属性)
+.parbox {
+    display:grid;
+    grid-template-areas: 'header header header''left content right''left footer footer';
+}
+也可以省略其中的部分变量，使用...代替
+.parbox {
+    display:grid;
+    grid-template-areas: 'header header header''left ... right''left footer footer';
+}
+</div>
+
+<h3 id="4-栅格的对齐方式"><a href="#4-栅格的对齐方式" class="headerlink" title="4. 栅格的对齐方式"></a>4. 栅格的对齐方式</h3><p>栅格对齐方式类似于flex弹性盒里的属性</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>目标</th>
+<th>适用于</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>justify-self</td>
+<td>行(一个栅格元素)</td>
+<td>子元素</td>
+</tr>
+<tr>
+<td>justify-items</td>
+<td>行(所有栅格元素)</td>
+<td>父容器</td>
+</tr>
+<tr>
+<td>justify-content</td>
+<td>行(整个栅格)</td>
+<td>父容器</td>
+</tr>
+<tr>
+<td>align-self</td>
+<td>列(一个栅格元素)</td>
+<td>子元素</td>
+</tr>
+<tr>
+<td>align-items</td>
+<td>列(所有栅格元素)</td>
+<td>父容器</td>
+</tr>
+<tr>
+<td>align-content</td>
+<td>列(整个栅格)</td>
+<td>父容器</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="show">以行为例
+.box1{
+    justify-self:start;
+}
+.box2{
+    justify-self:center;
+}
+.box3{
+    justify-self:end;
+}
+justify-self和justify-items用来调整单个或多个元素在它们自己栅格内的位置
+当justify-self赋值为start、center、end时，如果子元素没有指定宽度和高度，则会自动缩为仅合适内容的大小，对齐方式同单词含义。赋值为stretch时会被拉伸，完全填充box(同剩下的box)
+当需要所有元素都有该对齐方式，则可以给父容器添加justify-items和对应的值
+</div>
+
+<div style="display:grid;grid-template-columns:repeat(3,80px);grid-template-rows:repeat(3,80px);text-align:center;color:#fff;width:260px;height:260px;margin:0 auto;border:2px solid black;box-sizing: border-box;">
+<div style="background-color:#EA2027;justify-self:start;">box1</div>
+<div style="background-color:#fff200;justify-self:center;">box2</div>
+<div style="background-color:#7d5fff;justify-self:end;">box3</div>
+<div style="background-color:#32ff7e;">box4</div>
+<div style="background-color:#4b4b4b;">box5</div>
+<div style="background-color:#67e6dc;">box6</div>
+<div style="background-color:#ff9f1a;">box7</div>
+<div style="background-color:#ffb8b8;">box8</div>
+<div style="background-color:#c56cf0;">box9</div>
+</div>
+
+<div class="show">同样以行为例
+.parbox{
+    width:260px;
+    height:260px;
+    display:grid;
+    grid-template-columns:repeat(3,80px);grid-template-rows:repeat(3,80px);
+    justify-content:center;
+}
+justify-content则是用来调整整个grid网格在父容器中的位置
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,80px);grid-template-rows:repeat(3,80px);justify-content:center;text-align:center;color:#fff;width:260px;height:260px;margin:0 auto;border:2px solid black;box-sizing: border-box;">
+<div style="background-color:#EA2027;">box1</div>
+<div style="background-color:#fff200;">box2</div>
+<div style="background-color:#7d5fff;">box3</div>
+<div style="background-color:#32ff7e;">box4</div>
+<div style="background-color:#4b4b4b;">box5</div>
+<div style="background-color:#67e6dc;">box6</div>
+<div style="background-color:#ff9f1a;">box7</div>
+<div style="background-color:#ffb8b8;">box8</div>
+<div style="background-color:#c56cf0;">box9</div>
+</div>
+
+
+
+
+<h3 id="5-隐式栅格"><a href="#5-隐式栅格" class="headerlink" title="5. 隐式栅格"></a>5. 隐式栅格</h3><p>此前通过<span class="strong">grid-template-rows</span>定义的栅格为<span class="tips">显式栅格</span>，当一部分栅格超出了显式栅格，系统会将超出的那部分定义为<span class="tips">隐式栅格</span>。可以使用<span class="tips strong">grid-auto-rows</span>与<span class="tips strong">grid-auto-columns</span>定义隐式栅格的大小</p>
+<div class="show">如：
+.grid{
+    display:grid;
+    width:200px;
+    height:200px;
+        //定义2*2的显式栅格
+    grid-template-columns:100px 100px;
+    grid-template-rows:100px 100px;
+        //定义隐式栅格尺寸(以行为例)
+    grid-auto-rows: 50px;
+}
+box1、box2、box3、box4在显式栅格内，高为100px，box5，box6超出了显式栅格，高将变为隐式栅格的高50px
+</div>
+<div style="display:grid;width:200px;
+    height:200px;grid-template-columns:100px 100px;grid-template-rows:100px 100px;grid-auto-rows: 50px;text-align:center;color:#fff;width:200px;height:200px;margin:0 auto;border:5px solid black;box-sizing: border-box;">
+<div style="background-color:#EA2027;">box1</div>
+<div style="background-color:#fff200;">box2</div>
+<div style="background-color:#7d5fff;">box3</div>
+<div style="background-color:#32ff7e;">box4</div>
+<div style="background-color:#4b4b4b;">box5</div>
+<div style="background-color:#67e6dc;">box6</div>
+</div>
+<br/>
+<br/>
+<br/>
+
+<h3 id="6-栅格流"><a href="#6-栅格流" class="headerlink" title="6. 栅格流"></a>6. 栅格流</h3><p>栅格流主要分为优先行、优先列、密集流三种模式，由<span class="tips">grid-auto-flow</span>决定</p>
+<div class="show">grid-auto-flow的取值有row、column、dense(密集流)
+ .box{
+    display: grid;
+    grid-template: repeat(3,80px) / repeat(3,80px);
+    width: 240px;
+    height: 240px; 
+    grid-auto-flow: row;
+    }
+优先行与优先列的部署模型如下
+</div>
+<div style="display:grid;grid-template: repeat(3,80px) / repeat(3,80px);width: 240px;height: 240px; grid-auto-flow: row;text-align:center;color:#fff;margin:0 auto;border:1px solid black;box-sizing: border-box;">
+<div style="background-color:#EA2027;">box1</div>
+<div style="background-color:#fff200;">box2</div>
+<div style="background-color:#7d5fff;">box3</div>
+<div style="background-color:#32ff7e;">box4</div>
+<div style="background-color:#4b4b4b;">box5</div>
+</div>
+<br/>
+<div style="display:grid;grid-template: repeat(3,80px) / repeat(3,80px);width: 240px;height: 240px; grid-auto-flow: column;text-align:center;color:#fff;margin:0 auto;border:1px solid black;box-sizing: border-box;">
+<div style="background-color:#EA2027;">box1</div>
+<div style="background-color:#fff200;">box2</div>
+<div style="background-color:#7d5fff;">box3</div>
+<div style="background-color:#32ff7e;">box4</div>
+<div style="background-color:#4b4b4b;">box5</div>
+</div>
+<div class="broadcast color-pink">
+<div class="iconfont icon-yinle1"></div>
+密集流的主要作用是让元素尽量靠紧，因此有时会破坏栅格元素的顺序进行密集分布，向任何可以插入的位置安插合适的子元素</div>
+
+<h3 id="7-错误处理"><a href="#7-错误处理" class="headerlink" title="7. 错误处理"></a>7. 错误处理</h3><p>当输入错误的代码时，部分情况下grid会帮我们修正属性，但在有些情况下会抛弃部分无法解析的值，甚至不解析整个语句</p>
+<div class="show">1. 当栅格开始线放在结束线后
+    grid-row-start:5;
+    grid-row-end:2;
+grid将修正为
+    grid-row-start:2;
+    grid-row-end:5;
+2. 当栅格开始线和结束线都被声明为了跨度
+    grid-row-start: span ;
+    grid-row-end: span 3;
+结束线的值将被修改为 auto
+    grid-row-start: span ;
+    grid-row-end: auto;
+3. 如果栅格开始线被声明为跨越已命名的线，则该语句将被认为非法
+    grid-row-start: span header;
+</div>
+
+<div class="broadcast color-purple">
+<div class="iconfont icon-fengche"></div>
+当栅格元素出现重叠时，可以使用 z-index 或 order 进行排序，并且栅格元素可以使用margin、position等标准流、定位等属性。并且还有其他一些更复杂的属性简写语法，本文不再展开说明，具体可以查阅MDN的文档</div>
+        </div>
+    </div>
+    <div class="post-nav">
+        
+            
+                <div class="post-next">
+                    <a href="/blog/2022/03/15/%E4%B8%80%E4%BD%8D%E5%8D%81%E5%B9%B4IT%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E9%85%92%E5%90%8E%E7%9C%9F%E8%A8%80/">下一篇：一位资深数据工程师酒后的肺腑之言(转载) </a>
+                </div>
+                 
+    </div>
+    <div class="container">
+        <!--设计来源于B站-季夏小贞-->
+        <div class="bigHead"></div>
+        <div class="ears"></div>
+        <div class="body"></div>
+        <div class="paws-front"></div>
+        <div class="paws-back"></div>
+        <div class="details"></div>
+        <div class="tail"></div>
+        <div class="sleep">
+          <span class="s1">z</span>
+          <span class="s2">z</span>
+          <span class="s3">z</span>
+          <span class="s4">z</span>
+          <span class="s5">z</span>
+        </div>
+    </div>
+</div>
+<div class="left-menu">
+    <a class="iconfont backTop" href="javascript:">&#xe655;</a>
+    <div class="husky"></div>
+  </div>
+</div>
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/grain.min.js"></script>
+<script src="/blog/js/main.js"></script>
+
+
+    <script src="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+    <script>
+        //代码高亮初始化
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+        //代码复制功能
+        let pres=document.querySelectorAll('pre');
+        for(let i=0;i<pres.length;i++){
+        var copyBtn=document.createElement('span');
+        copyBtn.innerText="copy";
+        pres[i].appendChild(copyBtn);
+        let codes=pres[i].querySelector('code').innerText;
+        copyBtn.addEventListener("click",function(){
+        let input=document.createElement('textarea');
+        pres[i].appendChild(input);
+        input.value=codes;
+        input.select(); // 选中文本
+        document.execCommand("copy"); // 执行浏览器复制命令
+        pres[i].removeChild(input);
+},false)
+}
+        </script>
+    
+    <script>
+        if(!viewH){
+            let viewH=document.documentElement.clientHeight;
+        }
+    let imgs=document.querySelector('.art_content').querySelectorAll('img');
+    if(imgs){
+    let lazyload=function(){
+    imgs.forEach((item,index)=>{
+        let rect=item.getBoundingClientRect();
+        if(rect.bottom>=0&&rect.top<viewH){
+            item.src=item.dataset.src;
+        }
+    })
+    }
+    document.querySelector('.second-main').addEventListener('scroll',()=>{
+        lazyload();
+    })
+}
+    </script>
+</body>
+
+
+
+
+</html>

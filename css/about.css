@@ -102,7 +102,7 @@ input[type="radio"]{
     font-size: 1.5rem;
     
 }
-#r1:checked ~ #aboutWeb,
+#r1:checked ~ #aboutweb,
 #r2:checked ~ #aboutMe,
 #r3:checked ~ #wish,
 #r4:checked ~ #privacy{
@@ -137,9 +137,8 @@ border-radius: 3px;
     right: 0;
 
 }
-.glass div{
+.glass>div{
     width: 100%;
-    height: 93%;
     height: 96%;
     margin-top: 5px;
     font-size:1.2rem;
@@ -215,6 +214,79 @@ font-weight: 900;
     align-items: center;
 }
 
+#aboutweb .codedata{
+  width: 80%;
+}
+
+#aboutweb .codedata .technology{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  color:#fff;
+}
+#aboutweb .codedata .technology .technic{
+  text-align: center;
+}
+#aboutweb .codedata .technology .hp{
+  height: 8px;
+  border-radius: 5px;
+  border:1px solid #ffffff;
+}
+.html{
+text-shadow: 0 0 3px #EE5A24,
+           0 0 2px #EE5A24,
+           0 0 9px #EE5A24;
+}
+#aboutweb .codedata .html .hp{
+border-color: #EE5A24;
+box-shadow: 0 0 6px #EE5A24;
+background: linear-gradient(to right,#EE5A24 85%, transparent 86%);
+}
+
+.less{
+  text-shadow: 0 0 3px #70a1ff,
+               0 0 2px #70a1ff,
+               0 0 9px #70a1ff;
+  }
+#aboutweb .codedata .less .hp{
+    border-color: #70a1ff;
+    box-shadow: 0 0 6px #70a1ff;
+    background: linear-gradient(to right,#70a1ff 90%, transparent 81%);
+  }
+.js{
+text-shadow: 0 0 3px #e4fd03,
+           0 0 2px #e4fd03,
+           0 0 9px #e4fd03;
+}
+#aboutweb .codedata .js .hp{
+border-color: #e4fd03;
+box-shadow: 0 0 6px #e4fd03;
+background: linear-gradient(to right,#e4fd03 70%, transparent 71%);
+}
+
+.vue{
+text-shadow: 0 0 3px #20fd03,
+           0 0 2px #20fd03,
+           0 0 9px #20fd03;
+}
+#aboutweb .codedata .vue .hp{
+border-color: #20fd03;
+box-shadow: 0 0 6px #20fd03;
+background: linear-gradient(to right,#20fd03 20%, transparent 21%);
+}
+
+.jquery{
+text-shadow: 0 0 3px #FC427B,
+             0 0 2px #FC427B,
+             0 0 9px #FC427B;
+}
+#aboutweb .codedata .jquery .hp{
+border-color: #FC427B;
+box-shadow: 0 0 6px #FC427B;
+background: linear-gradient(to right,#FC427B 50%, transparent 51%);
+}
 ::-webkit-scrollbar{
     width: 6px;
 }
@@ -235,5 +307,8 @@ font-weight: 900;
     }
     label{
        font-size: 3rem;
+    }
+    #aboutweb .codedata{
+      width: 100%;
     }
 }
