@@ -140,7 +140,7 @@
 <link rel="stylesheet" href="/blog/css/article.css">
 
 
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="SHIWIVI" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="依一SHIWIVI" type="application/atom+xml">
 </head>
 <body>
 <div class="navigation">
@@ -415,6 +415,7 @@ Spotify官方信息可能随时会变化，本文部分信息可能过时，请�
         if(!viewH){
             let viewH=document.documentElement.clientHeight;
         }
+    // 懒加载
     let imgs=document.querySelector('.art_content').querySelectorAll('img');
     if(imgs){
     let lazyload=function(){
@@ -424,7 +425,7 @@ Spotify官方信息可能随时会变化，本文部分信息可能过时，请�
             item.src=item.dataset.src;
         }
     })
-    }
+    };
     document.querySelector('.second-main').addEventListener('scroll',()=>{
         lazyload();
     })

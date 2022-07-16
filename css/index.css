@@ -347,7 +347,6 @@ background-color:rgba(252, 236, 19, 0.055) ;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* width: 52rem; */
     margin: 0 2px;
     z-index: 3;
 }
@@ -359,8 +358,47 @@ background-color:rgba(252, 236, 19, 0.055) ;
     margin: 20px auto;
     padding: 1.5rem 0px;
     overflow: hidden;
-    border:1px solid #fff;
     transition: all .5s;
+}
+.update li{
+    position: relative;
+    box-sizing: border-box;
+}
+.update li::before,.update li::after{
+    content:'';
+    pointer-events: none;
+    position: absolute;
+    box-sizing: border-box;
+    border:2px solid transparent;
+    width: 0;
+    height: 0;
+}
+.update li::before{
+    top:0;
+    left:0;
+ }
+ .update li::after{
+     bottom:0;
+     right:0;
+ }
+ .update .focus::before,
+ .update .focus::after{
+    width: 100%;
+    height: 100%;
+        }
+.update .focus::before{
+    border-top-color:#fff;
+    border-right-color:#fff;
+    transition: width .5s ease-out,height .5s ease-out .5s;
+        }
+.update .focus::after{
+    border-bottom-color:#fff;
+    border-left-color:#fff;
+    transition: width ease-out .5s,height .5s ease-out .5s;
+        }
+.focus{
+    border-radius:5px;
+    background-color: rgba(245, 240, 240, 0.2);
 }
 .update li:nth-child(odd){
 flex-direction: row;
@@ -369,7 +407,6 @@ flex-direction: row;
     flex-direction: row-reverse;
     }
 .update li:hover{
-    border: 2px solid #fff;
     box-shadow: -3px 2px 5px rgba(19, 2, 2, 0.527);
 }
 .update li .update_pic{
@@ -425,8 +462,6 @@ flex-direction: row;
 }
 .update li .update_content .content_label{
     padding: 0 6px;
-    /* margin-left: 3em; */
-    
 }
 .update li:hover .update_pic a img{
     transform: scale(.9);
@@ -631,7 +666,7 @@ flex-direction: row;
    
 }
 .update li{
-width: 98%;
+width: 95%;
 height: auto !important;
 padding:.4rem 0px 1.4rem 0px;
 }

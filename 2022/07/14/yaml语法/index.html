@@ -140,8 +140,6 @@
 <link rel="stylesheet" href="/blog/css/article.css">
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/base16/atelier-cave.min.css">
-
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="依一SHIWIVI" type="application/atom+xml">
 </head>
 <body>
@@ -244,222 +242,309 @@
      </div>
      <div class="second-content">
         <div class="article">
-        <h1 class="title">VLess+TLS+WS代理服务器搭建</h1>
+        <h1 class="title">yaml语法</h1>
         <div class="art_infor">
-            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：988</span>
-            <span><span class="iconfont icon-riqi"></span>写于：2022-03-10</span></div>
-            <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2022-03-10</span>
-            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您3分钟</span></div>
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：3545</span>
+            <span><span class="iconfont icon-riqi"></span>写于：2022-07-14</span></div>
+            <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2022-07-14</span>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您11分钟</span></div>
         </div>
         <div class="art_content">
         <div class="broadcast color-blue">
 <div class="iconfont icon-yinhao"></div>
-本文采用 WTFPL 许可证书，转载请不要标注任何本站信息
-<div><a target="_blank" rel="noopener" href="https://wtfpl2.com/">WTFPL © Do What the Fuck You Want to Public License</a></div></div>
+YAML官方文档：<a target="_blank" rel="noopener" href="https://yaml.org/spec/1.2.2/">YAML 1.2.2</a></div>
 
-<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>VLESS 是一种无状态的轻量级数据传输协议，使用 UUID 进行身份验，其协议不再依赖系统时间，配置灵活。但其本身协议不带加密，因此需要配合 TLS 等加密手段。</p>
-<h3 id="前置需要"><a href="#前置需要" class="headerlink" title="前置需要"></a>前置需要</h3><h4 id="一台可用的VPS"><a href="#一台可用的VPS" class="headerlink" title="一台可用的VPS"></a>一台可用的VPS</h4><p>国内的可以使用香港、台湾地区的服务器，如GCP在台湾的节点、softshellweb，国外的推荐vultr、搬瓦工等主流厂商，支持支付宝付款并且不容易跑路。</p>
-<p>操作系统请选择自己熟悉的发行版，并能解决防火墙策略、开放端口等问题，这里以CentOS7为例。</p>
-<p>安装完毕后需要测试是否能Ping通，可以直接使用ping命令尝试，或者去相关网站，国内可以通过<a target="_blank" rel="noopener" href="https://ping.chinaz.com/">站长Ping工具</a>检测，国外通过<a target="_blank" rel="noopener" href="https://www.yougetsignal.com/">yougetsignal</a>检测。如果国内能ping通，说明该服务器可用，可以开始搭建了。如果国外能ping通，国内无法ping通，则说明被拦截了，需要换一台服务器。如果国内国外都无法ping通，则说明服务器还未部署好，需等待几分钟后再重试。</p>
-<h4 id="域名"><a href="#域名" class="headerlink" title="域名"></a>域名</h4><p>域名推荐去 godaddy 购买，顶级域名为<span class="tips">.com</span>的域名一般第一年只需要59元，<span class="tips">.cn</span>域名一般35元，最便宜的诸如<span class="tips">.live</span>结尾的域名第一年不到14元</p>
-<p>拿到域名后将其解析到所购买的VPS IP地址，域名一般需要24h才会生效(实际不用)。</p>
-<h4 id="SSL-TLS证书"><a href="#SSL-TLS证书" class="headerlink" title="SSL/TLS证书"></a>SSL/TLS证书</h4><p>SSL/TLS证书可以从以下平台免费获取，证书有效期一般为90天，90天后需要更换</p>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><h4 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h4><p>YAML是一种数据序列化语言，可用于存储和传输数据，常用于编写配置文件、数据文件、日志文件，以及跨语言进行数据共享等环境，大多数编程语言都可以使用 YAML 进行数据序列化。</p>
+<p>YAML文件后缀为<span class="tips">.yml</span>或<span class="tips">.yaml</span></p>
+<h4 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h4><p><span class="strong">1. 通常使用键值对形式</span></p>
 <ul>
-<li>zerossl：<a target="_blank" rel="noopener" href="https://zerossl.com/">https://zerossl.com/</a></li>
-<li>letsencrypt：<a target="_blank" rel="noopener" href="https://letsencrypt.org/">https://letsencrypt.org/</a></li>
-<li>FreeSSL：<a target="_blank" rel="noopener" href="https://freessl.org/">https://freessl.org/</a></li>
-<li>SSL For Free：<a target="_blank" rel="noopener" href="https://www.sslforfree.com/">https://www.sslforfree.com/</a></li>
+<li>键与值通常不需要引号包裹 (这点与json不同)</li>
+<li>值可以为：数组、对象、标量值</li>
+<li>标量值是指：整数、浮点数、字符串、布尔值、Null、时间、日期</li>
 </ul>
-<p>将获取的证书、密钥文件上传到服务器上，在配置文件时使用。如果不想手动更新SSL证书，可以使用脚本自动更新<br>脚本地址：<a target="_blank" rel="noopener" href="https://github.com/acmesh-official/acme.sh">https://github.com/acmesh-official/acme.sh</a></p>
-<h3 id="安装内核"><a href="#安装内核" class="headerlink" title="安装内核"></a>安装内核</h3><h4 id="安装V2fly"><a href="#安装V2fly" class="headerlink" title="安装V2fly"></a>安装V2fly</h4><p>Github开源地址：<a target="_blank" rel="noopener" href="https://github.com/v2fly/fhs-install-v2ray">https://github.com/v2fly/fhs-install-v2ray</a></p>
-<p>安装/更新 v2fly命令：</p>
-<pre><code>bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)</pre></code>
-
-<p>安装完成后，配置文件放在<span class="tips">/usr/local/etc/v2ray/config.json</span>路径下</p>
-<h4 id="Google-BBR加速算法"><a href="#Google-BBR加速算法" class="headerlink" title="Google BBR加速算法"></a>Google BBR加速算法</h4><p>TCP BBR(Bottleneck Bandwidth and Round-trip propagation time)是由Google于2016年发布的一种拥塞控制算法，可以显著地提高Linux服务器吞吐量并减少TCP连接的延迟</p>
-<p>安装bbrplus：</p>
-<pre><code>wget "https://github.com/cx9208/bbrplus/raw/master/ok_bbrplus_centos.sh" && chmod +x ok_bbrplus_centos.sh && ./ok_bbrplus_centos.sh</code></pre>
-
-<p>安装完毕需要重启系统，重启完毕可通过<span class="tips">uname -r</span>命令查询内核，返回bbr相关值说明升级完成，通过命令<span class="tips">lsmod | grep bbr</span>查看是否载入bbr系统模块，返回bbr相关值说明已经加载。</p>
-<p>CentOS8+系统内核自带BBR，开启方法可自行百度。</p>
-<h3 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h3><h4 id="服务端配置"><a href="#服务端配置" class="headerlink" title="服务端配置"></a>服务端配置</h4><p>使用vim在<span class="tips">/usr/local/etc/v2ray/config.json</span>配置文件中添加配置设置。</p>
-<pre><code>&#123;
-  &#123;
-    "log": &#123;
-    "loglevel": "warning",
-    "access": "/var/log/v2ray/access.log",   
-    "error": "/var/log/v2ray/error.log"  //日志输出路径
-    &#125;,
-    "inbounds": [&#123;
-    "port": 8180 ,  //监听端口
-    "protocol": "vless",//主传入协议
-    "settings": &#123;
-    "decryption": "none",
-    "clients": [
-    &#123;
-    "id": "41803377-5789-4bf5-8cb4-dd6ad659554c",//UUID
-    "level": 0
-        &#125;
-      ]
-    &#125;,
-    "streamSettings": &#123;
-    "network":"ws",  //传输协议
-    "security": "tls", //传输层安全
-    "wsSettings":&#123;
-    "path":"/",     //路径
-    "headers":&#123;&#125;
-    &#125;,
-    "tlsSettings": &#123;
-    "serverName": "newyear101.xyz", //域名
-    "certificates": [&#123;
-    "certificateFile": "/etc/ssl/certificate.crt",//SSL证书路径
-    "keyFile": "/etc/ssl/private.key" //密钥路径
-            &#125;]
-         &#125;
-      &#125;
-    &#125;],
-    "outbounds": [&#123;
-    "protocol": "freedom",//主传出协议
-    "settings": &#123;&#125;
-    &#125;,&#123;
-    "protocol": "blackhole",
-    "settings": &#123;&#125;,
-    "tag": "blocked"
-    &#125;],
-    "routing": &#123;
-    "rules": [
-    &#123;
-    "type": "field",
-    "ip": ["geoip:private"],
-    "outboundTag": "blocked"
-        &#125;
-      ]
-   &#125;
- &#125;
-</code></pre>
-
+<p><span class="strong">2. 通过缩进或者样式流表示数据结构</span></p>
 <ul>
-<li>UUID作为唯一身份识别码，可通过客户端生成，或通过UUID生成网站获得，不能自行编写<h5 id="检测配置文件是否正确"><a href="#检测配置文件是否正确" class="headerlink" title="检测配置文件是否正确"></a>检测配置文件是否正确</h5>v2ray官方检测命令：<pre><code>/usr/local/bin/v2ray -test -config  /usr/local/etc/v2ray/config.json</pre></code>
-文件正确会返回值：<div class="shell">V2Ray 4.44.0 (V2Fly, a community-driven edition of V2Ray.) Custom (go1.17.3 linux/amd64)
-A unified platform for anti-censorship.
-2021/02/03 21:46:12 [Info] main/jsonem: Reading config: /usr/local/etc/v2ray/config.json
-Configuration OK.</div></li>
+<li>数据可以通过空格缩进来表示层级关系，但不能用制表符(Tab)</li>
+<li>子结构相较父结构必须缩进至少一个空格，同一级数据须缩进相同空格数，即左端对齐</li>
+<li>也可以使用花括号{&nbsp;}，中括号[&nbsp;]等样式流表示层级关系<br><span class="strong">3. 大小写敏感</span><br><span class="strong">4. 使用#号注释</span></li>
 </ul>
-<h4 id="更新防火墙规则"><a href="#更新防火墙规则" class="headerlink" title="更新防火墙规则"></a>更新防火墙规则</h4><h5 id="Centos-7-8-firewalld-放行端口"><a href="#Centos-7-8-firewalld-放行端口" class="headerlink" title="Centos 7/8 firewalld 放行端口"></a>Centos 7/8 firewalld 放行端口</h5><div class="show">// 8180改成自己的端口号
-firewall-cmd --permanent --add-port=8180/tcp 
-//重启使之生效
-firewall-cmd --reload
+<h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><p>最为常用的数据类型，又称为字典、哈希、映射，以<span class="tips"> key: &nbsp;value </span>键值对的形式存储数据，<span class="tips">key: 后需要有空格!</span></p>
+<h4 id="对象写法"><a href="#对象写法" class="headerlink" title="对象写法"></a>对象写法</h4><div class="show">name: JayChou
+album: 十一月的萧邦
 </div>
 
-<h5 id="ubuntu系统-ufw放行端口"><a href="#ubuntu系统-ufw放行端口" class="headerlink" title="ubuntu系统 ufw放行端口"></a>ubuntu系统 ufw放行端口</h5><div class="show">//8180改成自己的端口号
-sudo ufw allow 8180/tcp
-//重启
-sudo ufw reload
+<p>或者使用样式流：</p>
+<div class="show">{
+    name: JayChou,
+    album: 十一月的萧邦
+}
+</div>
+等同于json格式下的
+<div class="show">{
+  "name": "JayChou",
+  "album": "十一月的萧邦"
+}
 </div>
 
-<h5 id="Centos-6-7-iptable放行端口"><a href="#Centos-6-7-iptable放行端口" class="headerlink" title="Centos 6/7 iptable放行端口"></a>Centos 6/7 iptable放行端口</h5><div class="show">//8180改成自己的端口号
-iptables -I INPUT -p tcp --dport 8180 -j ACCEPT
-//保存添加的规则链
-service iptables save
+<h4 id="缩进与嵌套"><a href="#缩进与嵌套" class="headerlink" title="缩进与嵌套"></a>缩进与嵌套</h4><p>可以通过缩进至少一个空格表示层级关系，从而嵌套其他对象、数组等</p>
+<div class="show">student:
+   name: aaa
+   age: 16
+   hobby:
+    - basketball
+    - swimming</div>
+<div class="broadcast color-red">
+<div class="iconfont icon-gantanhao"></div>
+多级嵌套时，每层嵌套都应当缩进，<span class="tips">且每个子元素左边应该缩进相等的空格数，即左端对齐</span></div>
+   使用样式流：
+   <div class="show">student: {
+        name: aaa,
+        age: 16,
+        hobby: [ basketball , swimming ]
+   }</div>
+
+<h4 id="复杂对象格式"><a href="#复杂对象格式" class="headerlink" title="复杂对象格式"></a>复杂对象格式</h4><p>使用<span class="tips">?加空格</span>可以指定多个key值，使用<span class="tips">:加空格</span>指定多个value</p>
+<div class="show">? 
+      - key1
+      - key2
+: 
+      - value1
+      - value2</div>
+    表示key是一个数组，值也是一个数组，样式流：
+    <div class="show">key1,key2: ["value1","value2"]</div>
+
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p>使用<span class="tips strong">-</span>开头表示数组元素</p>
+<h4 id="数组写法"><a href="#数组写法" class="headerlink" title="数组写法"></a>数组写法</h4><div class="show">- value1
+- value2
+- value3</div>
+样式流：
+<div class="show">[value1,value2,value3]</div>
+
+<h4 id="缩进与嵌套-1"><a href="#缩进与嵌套-1" class="headerlink" title="缩进与嵌套"></a>缩进与嵌套</h4><p>可以通过缩进表示层级关系，来嵌套数组、对象等</p>
+<div class="show">- name: 周杰伦,
+  age: 42,
+  songs: 
+   - 夜曲
+   - 米兰的小铁匠
+- name: 林肯公园,
+  age: 41,
+  songs:
+   - In the End
+   - Numb
+</div>
+样式流
+<div class="show">[
+  {
+    name: 周杰伦,
+    age: 42,
+    songs: [ 夜曲 , 米兰的小铁匠 ]
+  },
+  {
+    name: 林肯公园,
+    age: 41,
+    songs: [ In the End , Numb ]
+  }
+]</div>
+
+<h3 id="标量"><a href="#标量" class="headerlink" title="标量"></a>标量</h3><p>标量指最基本的，不可再分的值，这里指：整数、浮点数、字符串、布尔值、Null、时间、日期</p>
+<p>基本使用方法：</p>
+<div class="show">1. 整数可以为非十进制数
+num1: 120           #普通十进制数
+num2: 0b10_1011     #二进制以0b开头
+num3: 07100         #八进制以0开头
+num4: 0xf1ab        #十六进制以0x开头
+2. 浮点数可以使用科学计数法
+float1: 3.14
+float2: 3.1415926e+5 #科学计数法314159.26
+float3: -.inf        #负无穷大
+flota4: .nan         #不是数字
+3. 布尔值大小写均可
+bool: true
+值为：true、True、TRUE均可，但TRUe将被解析为字符串
+4. Null可用<span class="tips">~</span>表示
+data: ~
+5. 日期必须使用ISO 8601格式，即yyyy-MM-dd
+date: 2021-07-15
+6. 时间使用ISO 8601格式，时间和日期之间使用T连接，最后使用+代表时区
+time: 2021-07-15T00:42:31+08:00
+在JavaScript中解析为Thu Jul 15 2021 00:42:31 GMT+0800 (中国标准时间)
+7. 使用<span class="tips">!!数据类型 值</span>进行类型转换
+date: !!str 2021-01-15
 </div>
 
+<h3 id="字符串处理"><a href="#字符串处理" class="headerlink" title="字符串处理"></a>字符串处理</h3><p>一般情况下，字符串不需要添加引号，但如果字符串中间包含特殊字符，尤其是<span class="tips">冒号加空格</span>组合时，为了避免被yaml解析为键值对，需要添加引号</p>
+<div class="show">str: 'said: meet you like wind'</div>
 
+<p>给数值等标量添加引号将解析为字符串</p>
+<div class="show">str: '99.99'</div>
 
+<p>多行字符串，<span class="tips">第二行开始所有行需要缩进至少一个空格</span>，但解析时将被解析为一行字符串，且换行符会被替换为空格</p>
+<div class="show">str: aaaa
+ bbbb
+ cccc
+ 将被解析为
+ str: "aaaa bbbb cccc"</div>
 
-
-<h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><p>客户端需要使用4.23.2以上内核</p>
-<h4 id="客户端下载地址："><a href="#客户端下载地址：" class="headerlink" title="客户端下载地址："></a>客户端下载地址：</h4><ul>
-<li><strong>Android</strong>: <a target="_blank" rel="noopener" href="https://github.com/2dust/v2rayNG/releases">v2rayNG</a></li>
-<li><strong>windows</strong>:<a target="_blank" rel="noopener" href="https://github.com/2dust/v2rayN/releases">v2rayN</a></li>
-<li><strong>MacOS</strong>:<a target="_blank" rel="noopener" href="https://github.com/yanue/V2rayU/releases">V2rayU</a></li>
-</ul>
-<h3 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h3><div class="table">
-
-<table>
-<thead>
-<tr>
-<th>配置项</th>
-<th>值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>别名</td>
-<td>任意</td>
-</tr>
-<tr>
-<td>地址</td>
-<td>VPS的IP地址</td>
-</tr>
-<tr>
-<td>端口</td>
-<td>配置文件中的端口号</td>
-</tr>
-<tr>
-<td>用户ID</td>
-<td>UUID,需要和配置文件一致</td>
-</tr>
-<tr>
-<td>传输协议</td>
-<td>ws</td>
-</tr>
-<tr>
-<td>伪装域名</td>
-<td>解析的域名</td>
-</tr>
-<tr>
-<td>路径</td>
-<td>配置文件中的路径</td>
-</tr>
-<tr>
-<td>传输层安全</td>
-<td>tls</td>
-</tr>
-</tbody></table>
-</div>
-
-<h3 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h3><h4 id="系统命令"><a href="#系统命令" class="headerlink" title="系统命令"></a>系统命令</h4><p>如果已经启动v2ray服务，修改的配置文件需要重启生效</p>
+<h4 id="单引号与双引号"><a href="#单引号与双引号" class="headerlink" title="单引号与双引号"></a>单引号与双引号</h4><p> 单引号和双引号均可以用于包裹字符串</p>
 <ul>
-<li><strong>systemctl start v2ray</strong> 运行</li>
-<li><strong>systemctl stop v2ray</strong> 停止</li>
-<li><strong>systemctl restart v2ray</strong> 重启</li>
+<li><span class="strong">单引号会原样输出，将转义字符作为普通字符串输出</span></li>
+<li><span class="strong">双引号会转义字符串，如将 \n 转义为换行</span></li>
 </ul>
-<h4 id="常用服务命令"><a href="#常用服务命令" class="headerlink" title="常用服务命令"></a>常用服务命令</h4><h5 id="生成uuid"><a href="#生成uuid" class="headerlink" title="生成uuid"></a>生成uuid</h5><p> <span class="strong">v2Ctl uuid</span> 生成一个新的uuid</p>
-<h5 id="配置相关"><a href="#配置相关" class="headerlink" title="配置相关"></a>配置相关</h5><p> <span class="strong">v2ray [参数]</span></p>
-<div class="table">
-
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-version</td>
-<td>查看当前版本</td>
-</tr>
-<tr>
-<td>-test</td>
-<td>测试配置文件有效性</td>
-</tr>
-<tr>
-<td>-config</td>
-<td>手动指定配置文件，值可以是绝对路径、相对路径、url链接、”stdin:”(从标准输入读取内容)</td>
-</tr>
-</tbody></table>
+<div class="show">如：
+content: '不会\n换行'
+内容输出为：
+<span class="tips">不会\n换行</span>
+content: "进行\n换行"
+内容输出为：
+ <span class="tips">进行
+  换行</span>
 </div>
 
+<h4 id="区块字符串处理"><a href="#区块字符串处理" class="headerlink" title="区块字符串处理"></a>区块字符串处理</h4><ol>
+<li><p>多行字符串可以使用<span class="tips strong">|</span>保留所有换行符，内容从第二行开始需要缩进至少一个空格，且最后一行的换行符也会保留。</p>
+<div class="show">lyrics: |
+aaaa 
+bbbb
+cccc 
+dddd
+</div>
+输出为：
+<div class="show">aaaa 
+bbbb
+cccc 
+dddd
+<br/></div></li>
+<li><p>可以使用<span class="tips strong">&gt;</span>去除换行，换行符将被空格代替 (如果某一行是空行，该空行会被额外保留)</p>
+<div class="show">lyrics: >
+aaaa 
+bbbb
+cccc 
+dddd</div>
+输出为：
+<div class="show">aaaa bbbb cccc dddd</div></li>
+<li><p>可以使用<span class="tips strong">+</span>保留文字块末尾的换行</p>
+<div class="show">lyrics: |+
+aaaa 
+bbbb
+cccc 
+dddd</div>
+输出为：
+<div class="show">aaaa 
+bbbb
+cccc 
+dddd
+<br/></div></li>
+<li><p>可以使用<span class="tips strong">-</span>去除文字块末尾的换行</p>
+<div class="show">lyrics: |-
+aaaa 
+bbbb
+cccc 
+dddd</div>
+输出为：
+<div class="show">aaaa 
+bbbb
+cccc 
+dddd
+</div>
+<div class="broadcast color-blue">
+<div class="iconfont icon-yinhao"></div>
+在yml文件中配置好字符串格式后，读取到html中时往往需要添加如<span class="tips">white-space: pre-line;</span>等css属性来保留换行符和空格，否则读入的数据可能会被css默认样式去除换行符，从而无法展示原生yml指定的数据格式</div></li>
+<li><div class="tips strong">在样式流中，无法使用 | > + -</div>
+<div class="show">如：以上数据写为样式流
+          { 
+            lyrics: |-
+             aaaa 
+             bbbb
+             cccc 
+             dddd
+            }
+|- 将无法解析，抛出错误</div></li>
+</ol>
+<h3 id="添加HTML标签"><a href="#添加HTML标签" class="headerlink" title="添加HTML标签"></a>添加HTML标签</h3><p>yaml允许在值中添加HTML标签，并且标签会被正确地解析为DOM</p>
+<div class="show">- tag: web
+  content: 推荐网站&lt;a href='SHIWIVI'>SHIWIVI&lt;/a></div>
+  或
+  <div class="show">- tag: web
+  content: |-
+   推荐
+   网站&lt;a href='SHIWIVI'>SHIWIVI&lt;/a></div>
+解析为：
+<div class="show">推荐网站 <a href="#">SHIWIVI</a></div>
+   <div class="broadcast color-green">
+<div class="iconfont icon-qiqiu"></div>
+使用时需要注意，插入的HTML标签是否会被其他语言解析为字符串，但yaml本身是可以输出为DOM元素的</div>
+
+<h3 id="锚点与引用"><a href="#锚点与引用" class="headerlink" title="锚点与引用"></a>锚点与引用</h3><p>可以使用<span class="tips">&amp;</span>定义一个锚点，然后使用<span class="tips">*</span>引用锚点</p>
+<div class="show">first: &anchor  #定义锚点
+ - aaa
+ - bbb
+second:  *anchor #调用锚点</div>
+解析为
+<div class="show">first: [aaaaa,bbb]
+second: [aaaaa,bbb] </div>
+
+<p>如果将多个键值对引用到其他地方，可以使用<span class="tips">&lt;&lt;</span>合并数据</p>
+<div class="show">first: &data  #定义锚点
+   name: lol
+   age: 18
+   hobby:
+    - sing
+    - swing
+second: 
+   <<: *data    #将数据插入此处
+   address: zzz</div>
+ 解析为：
+ <div class="show">{
+  "first": {
+      "name": "lol",
+      "age": 18,
+      "hobby": "sing  swimming"
+  },
+  "second": {
+      "name": "lol",
+      "age": 18,
+      "hobby": "sing  swimming",
+      "address": "zzz"
+  }
+}</div>
+<div class="broadcast color-purple">
+<div class="iconfont icon-fengche"></div>
+如果多次定义了同名的锚点(重定义)，则先定义的锚点会被覆盖</div>
+
+<h3 id="文件格式"><a href="#文件格式" class="headerlink" title="文件格式"></a>文件格式</h3><p>一个完整的yml文档以<span class="tips">-&zwnj;-&zwnj;-</span>标识文档开始，以<span class="tips">…</span>标识文档结束，该标识非必须，无标识的称为<span class="tips">裸文档</span>，文件开头可以添加<span class="tips">%YAML</span>来识别文件的YAML版本</p>
+<div class="show">%YAML 1.2
+# 开头注释，注明文档作者等信息
+---
+ip: 45.77.77.49
+port: 443
+...</div>
+
+<p>一个yml文件中可能有多个文档</p>
+<div class="show">---
+ip: 45.77.77.10
+port: 80
+...
+---
+ip: 45.77.77.11
+port: 443
+...</div>
+但如果在一个yml文件中写入多个文档，在某些环境下读入可能报错，需要分割为多个文件
+<div class="shell">err: YAMLException: expected a single document in the stream, but found more</div>
+
+<div class="broadcast color-yellow">
+<div class="iconfont icon-dengpao14hao"></div>
+更多语法和拓展详见官方文档</div>
         </div>
     </div>
     <div class="post-nav">
         
             <div class="post-prev ">
-                <a href="/blog/2022/03/15/%E4%B8%80%E4%BD%8D%E5%8D%81%E5%B9%B4IT%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E9%85%92%E5%90%8E%E7%9C%9F%E8%A8%80/">上一篇：一位资深数据工程师酒后的肺腑之言(转载)</a>
+                <a href="/blog/2022/07/16/%E8%B7%AF%E7%94%B1%E4%B8%8E%E8%B7%AF%E7%94%B1%E5%AE%88%E5%8D%AB/">上一篇：路由与路由守卫</a>
             </div>
             
             
                 <div class="post-next">
-                    <a href="/blog/2022/03/04/nginx%E7%AC%94%E8%AE%B0/">下一篇：Nginx笔记(上) </a>
+                    <a href="/blog/2022/06/14/Grid%E5%B8%83%E5%B1%80/">下一篇：Grid栅格布局 </a>
                 </div>
                  
     </div>
@@ -493,30 +578,6 @@ service iptables save
 <script src="/blog/js/main.js"></script>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
-    <script>
-        //代码高亮初始化
-        hljs.highlightAll();
-        hljs.initLineNumbersOnLoad();
-        //代码复制功能
-        let pres=document.querySelectorAll('pre');
-        for(let i=0;i<pres.length;i++){
-        var copyBtn=document.createElement('span');
-        copyBtn.innerText="copy";
-        pres[i].appendChild(copyBtn);
-        let codes=pres[i].querySelector('code').innerText;
-        copyBtn.addEventListener("click",function(){
-        let input=document.createElement('textarea');
-        pres[i].appendChild(input);
-        input.value=codes;
-        input.select(); // 选中文本
-        document.execCommand("copy"); // 执行浏览器复制命令
-        pres[i].removeChild(input);
-},false)
-}
-        </script>
-    
     <script>
         if(!viewH){
             let viewH=document.documentElement.clientHeight;

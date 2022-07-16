@@ -67,24 +67,57 @@ window.onresize=function(){
         nav.classList.remove('left_move');
     }
 }
-//图片懒加载
-let viewH=document.documentElement.clientHeight;
-    let pics=document.querySelectorAll('.update_pic');
-    if(pics){
-        let lazyload=function(){
-    pics.forEach((item)=>{
-        let img=item.querySelector('img');
-        let rect=img.getBoundingClientRect();
-        if(rect.bottom>=0&&rect.top<viewH){
-            img.src=img.dataset.src;
-        // setTimeout(function(){ img.src=img.dataset.src;},3000)
-        }
-    });
+
+const viewH=document.documentElement.clientHeight;
+if(document.querySelector('.update')){
+ //图片懒加载
+let pics=document.querySelectorAll('.update_pic');
+if(pics){
+    var lazyload=function(){
+pics.forEach((item)=>{
+    let img=item.querySelector('img');
+    let rect=img.getBoundingClientRect();
+    if(rect.bottom>=0&&rect.top<viewH){
+        img.src=img.dataset.src;
+    // setTimeout(function(){ img.src=img.dataset.src;},3000)
+    }
+});
 }
-lazyload();
-    document.querySelector('.second-main').addEventListener('scroll',()=>{
-        lazyload();
-    })
+lazyload();}
+
+//文章突显
+let lis=document.querySelector('.update').querySelectorAll('li');
+let changmode1=function(){
+    lis.forEach(item => {
+        let rect=item.getBoundingClientRect();
+        if(rect.top<360 && rect.top>80){
+        item.classList.add('focus')
+        }
+        else{
+            item.classList.remove('focus')
+        }
+        
+    }); 
+};
+//鼠标经过时，将焦点转换到目标身上
+lis.forEach(item => {
+    item.onmouseover=function(){
+        lis.forEach(allItem=>{
+            allItem.classList.remove('focus');
+        })
+        item.classList.add('focus');
+
+    }
+    item.onmouseout=function(){
+        item.classList.remove('focus');
+    }
+    
+});
+//滚动调用
+document.querySelector('.second-main').addEventListener('scroll',()=>{
+    lazyload();
+    changmode1();
+})
 }
 console.log([
 "    ┬┬  ┌┬┐┬  ┌─┐┬ ┬┬┬ ┬┬",

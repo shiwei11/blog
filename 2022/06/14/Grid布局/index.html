@@ -142,7 +142,7 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/base16/atelier-cave.min.css">
 
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="SHIWIVI" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="依一SHIWIVI" type="application/atom+xml">
 </head>
 <body>
 <div class="navigation">
@@ -901,6 +901,10 @@ grid将修正为
     </div>
     <div class="post-nav">
         
+            <div class="post-prev ">
+                <a href="/blog/2022/07/14/yaml%E8%AF%AD%E6%B3%95/">上一篇：yaml语法</a>
+            </div>
+            
             
                 <div class="post-next">
                     <a href="/blog/2022/03/15/%E4%B8%80%E4%BD%8D%E5%8D%81%E5%B9%B4IT%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E9%85%92%E5%90%8E%E7%9C%9F%E8%A8%80/">下一篇：一位资深数据工程师酒后的肺腑之言(转载) </a>
@@ -965,6 +969,7 @@ grid将修正为
         if(!viewH){
             let viewH=document.documentElement.clientHeight;
         }
+    // 懒加载
     let imgs=document.querySelector('.art_content').querySelectorAll('img');
     if(imgs){
     let lazyload=function(){
@@ -974,7 +979,7 @@ grid将修正为
             item.src=item.dataset.src;
         }
     })
-    }
+    };
     document.querySelector('.second-main').addEventListener('scroll',()=>{
         lazyload();
     })

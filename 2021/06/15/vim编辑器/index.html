@@ -140,7 +140,7 @@
 <link rel="stylesheet" href="/blog/css/article.css">
 
 
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="SHIWIVI" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="依一SHIWIVI" type="application/atom+xml">
 </head>
 <body>
 <div class="navigation">
@@ -529,11 +529,11 @@ vim会高亮显示查找到的内容，若想取消高亮显示，使用<span cl
 10>>  让光标后的10行文本进行缩进
 10yy  复制10行内容</div>
 
-<div class="show">如：输入10个相同的字符串<br/>
-执行步骤<br/>
-1. 在命令模式下输入10<br/>
-2. 输入i进入编辑模式<br/>
-3. 输入需要重复的字符串<br/>
+<div class="show">如：输入10个相同的字符串
+执行步骤
+1. 在命令模式下输入10
+2. 输入i进入编辑模式
+3. 输入需要重复的字符串
 4. 输入完毕后esc返回命令模式，vim会把输入字符这个命令执行10次
 </div>
 <div class="broadcast color-red">
@@ -544,11 +544,11 @@ vim会高亮显示查找到的内容，若想取消高亮显示，使用<span cl
 dd 删除光标当前所在行后
 之后每使用一次 . 会删除一行</div>
 
-<h5 id="运用举例"><a href="#运用举例" class="headerlink" title="运用举例"></a>运用举例</h5><div class="show">利用可视块将多行文本改为注释(注释符号为:#)<br/>
-执行步骤<br/>
-1. 移动光标到要添加注释的第一行代码，使用^定位到行首<br/>
-2. 使用Ctrl+v进入可视块模式<br/>
-3. 使用I进入编辑模式,并输入#。注：可视块模式下使用i插入无效<br/>
+<h5 id="运用举例"><a href="#运用举例" class="headerlink" title="运用举例"></a>运用举例</h5><div class="show">利用可视块将多行文本改为注释(注释符号为:#)
+执行步骤
+1. 移动光标到要添加注释的第一行代码，使用^定位到行首
+2. 使用Ctrl+v进入可视块模式
+3. 使用I进入编辑模式,并输入#。注：可视块模式下使用i插入无效
 4. 输入完毕后esc返回命令模式，vim会把选中的每一行文本前都插入#
 </div>
 <div class="broadcast color-red">
@@ -643,8 +643,8 @@ dd 删除光标当前所在行后
 <ul>
 <li><span class="strong">:ab 短字符 长字符串&emsp;&emsp;定义一个长字符串快捷输入</span></li>
 </ul>
-<div class="show" style="word-break: break-all;"><code>如：当需要频繁输入邮箱时，可以用一个短字符串定义邮箱地址<br/>
-:ab gmail sheiyoubingbayouxiangxiezhemechang@Gmail.com<br/>
+<div class="show" style="word-break: break-all;"><code>如：当需要频繁输入邮箱时，可以用一个短字符串定义邮箱地址
+:ab gmail sheiyoubingbayouxiangxiezhemechang@Gmail.com
 之后只需输入gmail空格或者回车，vim会自动补全该长字符串</code></div>
 
 <h3 id="使用寄存器"><a href="#使用寄存器" class="headerlink" title="使用寄存器"></a>使用寄存器</h3><p>使用复制粘贴时，vim是将内容缓存在寄存器中。用户可以自定义寄存器，vim中使用<span class="tips">“字母</span>来定义一个该字母(大小写均可)命名的寄存器，寄存器后往往加上具体命令，空定义寄存器无效。</p>
@@ -662,8 +662,8 @@ dd 删除光标当前所在行后
 </ul>
 快捷键通常使用<span class="tips">Ctrl+某个不冲突的按键</span>，而定义时该组合按键时需要通过<span class="tips">Ctrl+v+该按键</span>来输入
 
-<div class="show" style="word-break: break-all;"><code>如：将某行代码注释掉<br/>
-输入的命令为 :map Ctrl+v+/ I#&lt;esc&gt;<br/>
+<div class="show" style="word-break: break-all;"><code>如：将某行代码注释掉
+输入的命令为 :map Ctrl+v+/ I#&lt;esc&gt;
 命令就会定义Ctrl+/为快捷键,执行的操作为:在行首插入(I的功能)#号,然后esc退出编辑模式,即以后只需要按下Ctrl+/就可以在当前行首插入#号把当前行注释掉(同vscode里的注释快捷键)</code></div>
 <div class="broadcast color-purple">
 <div class="iconfont icon-fengche"></div>
@@ -719,6 +719,7 @@ dd 删除光标当前所在行后
         if(!viewH){
             let viewH=document.documentElement.clientHeight;
         }
+    // 懒加载
     let imgs=document.querySelector('.art_content').querySelectorAll('img');
     if(imgs){
     let lazyload=function(){
@@ -728,7 +729,7 @@ dd 删除光标当前所在行后
             item.src=item.dataset.src;
         }
     })
-    }
+    };
     document.querySelector('.second-main').addEventListener('scroll',()=>{
         lazyload();
     })

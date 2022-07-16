@@ -140,7 +140,7 @@
 <link rel="stylesheet" href="/blog/css/article.css">
 
 
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="SHIWIVI" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="依一SHIWIVI" type="application/atom+xml">
 </head>
 <body>
 <div class="navigation">
@@ -648,6 +648,7 @@ root     pts/0    180.129.129.129  10:09    0.00s  0.04s  0.04s -bash
         if(!viewH){
             let viewH=document.documentElement.clientHeight;
         }
+    // 懒加载
     let imgs=document.querySelector('.art_content').querySelectorAll('img');
     if(imgs){
     let lazyload=function(){
@@ -657,7 +658,7 @@ root     pts/0    180.129.129.129  10:09    0.00s  0.04s  0.04s -bash
             item.src=item.dataset.src;
         }
     })
-    }
+    };
     document.querySelector('.second-main').addEventListener('scroll',()=>{
         lazyload();
     })
