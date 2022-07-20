@@ -230,25 +230,25 @@ font-weight: 900;
   border:1px solid #ffffff;
 }
 .html{
-text-shadow: 0 0 3px #EE5A24,
-           0 0 2px #EE5A24,
-           0 0 9px #EE5A24;
+text-shadow: 0 0 3px #ff0900,
+           0 0 2px #ff0900,
+           0 0 9px #ff0900;
 }
 #aboutweb .codedata .html .hp{
-border-color: #EE5A24;
-box-shadow: 0 0 6px #EE5A24;
-background: linear-gradient(to right,#EE5A24 85%, transparent 86%);
+border-color: #ff0900;
+box-shadow: 0 0 6px #ff0900;
+background: linear-gradient(to right,#ff0900 85%, transparent 86%);
 }
 
 .less{
-  text-shadow: 0 0 3px #70a1ff,
-               0 0 2px #70a1ff,
-               0 0 9px #70a1ff;
+  text-shadow: 0 0 3px #065dff,
+               0 0 2px #065dff,
+               0 0 9px #065dff;
   }
 #aboutweb .codedata .less .hp{
-    border-color: #337aff;
-    box-shadow: 0 0 6px #088dff;
-    background: linear-gradient(to right,#337aff 90%, transparent 81%);
+    border-color: #065dff;
+    box-shadow: 0 0 6px #065dff;
+    background: linear-gradient(to right,#065dff 90%, transparent 81%);
   }
 .js{
 text-shadow: 0 0 3px #e4fd03,

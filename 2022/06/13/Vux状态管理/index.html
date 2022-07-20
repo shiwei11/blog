@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon">
+    
+<link rel="stylesheet" href="/blog/css/common.css">
+
+   
+    <style>
+    .preload{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    top:0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 100;
+}
+.text{
+    margin-bottom: 10px;
+    color:rgb(0, 207, 243);
+    text-shadow: 0 0 3px rgb(0, 207, 243);
+    font-size: 20px;
+}
+.text span{
+    display: inline-block;
+    
+}
+.dance{
+    animation: dance .8s linear ;
+}
+.text span:nth-child(1){
+   animation-delay: 0s;
+}
+.text span:nth-child(2){
+   animation-delay: .1s;
+}
+.text span:nth-child(3){
+   animation-delay: .2s;
+}
+.text span:nth-child(4){
+   animation-delay: .3s;
+}
+.text span:nth-child(5){
+   animation-delay: .4s;
+}
+.text span:nth-child(6){
+   animation-delay:.5s;
+}
+.text span:nth-child(7){
+   animation-delay: .6s;
+}
+.text span:nth-child(8){
+   animation-delay: .7s;
+}
+.text span:nth-child(9){
+   animation-delay:.8s;
+}
+.text span:nth-child(10){
+   animation-delay: .9s;
+}
+
+@keyframes dance{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.loading{
+    width: 80%;
+    max-width: 260px;
+    height: 6px;
+    background-color: #e1e4e8;
+    border-radius: 6px;
+}
+.bar{
+    display: flex;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 10%, #b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation:bar 2s linear infinite;
+}
+@keyframes bar{
+    0%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0;
+    }
+}
+</style>
+
+
+<script src="/blog/js/jquery.min.js"></script>
+
+<script>
+    $(function(){
+           setInterval(function(){
+               $('.text').find("span").toggleClass('dance');
+           },1700)
+       })
+     $(window).on('load', function () {  
+           $(".preload").fadeOut("fast");  
+      });
+</script>
+<div class="preload">
+    <div class="text">
+        <span class="dance">L</span>
+        <span class="dance">o</span>
+        <span class="dance">a</span>
+        <span class="dance">d</span>
+        <span class="dance">i</span>
+        <span class="dance">n</span>
+        <span class="dance">g</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+        <span class="dance">.</span>
+    </div>
+    <div class="loading">
+        <span class="bar"></span>
+    </div>
+</div>
+<title>SHIWIVI-文章</title>
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
+
+<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="/blog/css/article.css">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/styles/base16/atelier-cave.min.css">
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="依一SHIWIVI" type="application/atom+xml">
+</head>
+<body>
+<div class="navigation">
+    <div class="card">
+        <div class="head">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
+        </div>
+        <div class="card-text">
+            <p>(ー`´ー)</p>
+            <p>那不是bug，是彩蛋</p>
+        </div> 
+    </div>
+    <ul class="label">
+        
+        <li><a href="/blog/index.html">首页</a></li>
+        
+        <li><a href="/blog/life">日常</a></li>
+        
+        <li><a href="/blog/record">一句</a></li>
+        
+        <li><a href="/blog/message">留言</a></li>
+        
+        <li><a href="/blog/about">关于</a></li>
+          
+    </ul>
+        <ul class="tag">
+            <li>#Document</li>
+            <li>#Jquery</li>
+            <li>#css</li>
+            <li>#射频</li>
+            <li>#5G通讯</li>
+            <li>#PCB</li>
+            <li>#shell</li>
+            <li>#C</li>
+            <li>#html</li>
+            <li>#硬件</li>
+            <li>#javaScript</li>
+            <li>#防火墙</li>
+            <li>#CentOS</li>
+            <li>#Linux</li>
+            <li>#python</li>
+            <li>#XPpose</li>
+        </ul>
+<div class="rsstag"><a href="./atom.xml"><span class="iconfont icon-rss"></span>RSS订阅</a></div>
+<div class="flower">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84.6px" height="70.5px" viewBox="0 0 254 212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>窗</title>
+<desc>Created with Sketch.</desc>
+<defs></defs>
+<g id="植物" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Artboard" transform="translate(-885.000000, -503.000000)">
+        <g id="植物-紫色盆" transform="translate(882.000000, 500.000000)">
+            <ellipse id="Oval-12" fill="#B3B7C7" cx="140.5" cy="137" rx="39.5" ry="6"></ellipse>
+            <g id="Group-5">
+                <path d="M131.5,149 C137.746054,149 138.400559,136.953074 140.297813,118.503702 C141.504079,106.77367 149.145158,88.1140929 147,75 C142.297813,46.2539062 153.271934,32.5660626 150.170125,19.4282488 C148.031314,10.3692495 142.862042,3 131.5,3 C123.603887,3 113.698654,6.59314895 110.722909,11.2157433 C103.206874,22.8913341 114,46.5137576 114,75 C114,90.4435309 122.495151,106.751425 123.699377,118.476362 C125.595832,136.941172 125.250862,149 131.5,149 Z" id="Oval-11" fill="#BAC4F6"></path>
+                <path d="M135.5,146.5 C132.598908,121.877878 130.965369,104.566553 130.599381,94.5660242 C130.050399,79.5652312 132.963841,77.0580598 132.164069,55.3464601 C131.630888,40.8720602 130.242865,30.4232402 128,24" id="Line-15" stroke="#FFFFFF" stroke-width="2" opacity="0.800892857" stroke-linecap="square"></path>
+                <path d="M77.0442201,163.336077 C84.2239219,163.336077 101.067658,131.237823 101.067658,92.025606 C101.067658,52.8133888 90.9057581,-2.32627732 72.6560979,17.2440872 C50.0508064,41.4852946 69.5871262,36.5862429 74.0442201,63.8595149 C75.572858,73.2133576 77.0442201,94.5993942 77.0442201,104.613421 C77.0442201,143.825638 69.8645184,163.336077 77.0442201,163.336077 Z" id="Oval-9" fill="#BAC4F6" transform="translate(81.510722, 88.251316) rotate(-43.000000) translate(-81.510722, -88.251316) "></path>
+                <path d="M42.5,50.5 C47.5132933,48.8699207 59.3816332,57.6317857 78.1050199,76.785595 C96.8284065,95.9394043 113.960067,116.844206 129.5,139.5" id="Line-17" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M155.281006,152.144255 C162.116643,152.144255 178.153197,121.584207 178.153197,84.2511084 C178.153197,72.6051871 184.354199,51.8242671 182.531201,39.8465879 C178.51025,13.4276595 163.058175,0.233079666 151.10317,13.0532528 C129.581164,36.1327785 143.297279,29.7382802 147.540781,55.7045685 C148.996164,64.6101585 153.500382,80.3852665 153.500382,89.9194035 C153.500382,127.252502 148.445368,152.144255 155.281006,152.144255 Z" id="Oval-9-Copy-2" fill="#E9EDFD" transform="translate(161.092971, 80.123972) scale(-1, 1) rotate(-20.000000) translate(-161.092971, -80.123972) "></path>
+                <path d="M180.5,34.5 C181.290102,21.4892162 175.746138,28.9223292 163.868108,56.7993391 C157.546037,71.6368512 150.532373,85.3308057 144.827114,101.881203 C141.023608,112.914801 138.581237,128.787733 137.5,149.5" id="Line-20" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M60.3426107,183.894782 C69.2498271,183.894782 90.1463498,156.072081 90.1463498,122.083011 C90.1463498,88.0939419 67.5408019,29.4364067 54.8986583,57.2625442 C45.0326912,78.978146 51.0912584,74.0282851 56.6207779,97.6687014 C58.5172227,105.776593 67.8616068,124.363423 67.8616068,133.043561 C67.8616068,167.032631 51.4353942,183.894782 60.3426107,183.894782 Z" id="Oval-9-Copy" fill="#BAC4F6" transform="translate(69.895982, 116.944107) rotate(-71.000000) translate(-69.895982, -116.944107) "></path>
+                <path d="M24.5,109.5 C22.4991751,103.669523 35.0833631,105.49608 62.2525641,114.979669 C79.4278854,120.974828 92.103247,119.378882 106.278649,126.191831 C111.777518,128.834684 120.517968,134.937407 132.5,144.5" id="Line-19" stroke="#FFFFFF" stroke-width="2" opacity="0.595424107" stroke-linecap="square"></path>
+                <path d="M169.495543,159.559977 C178.40276,159.559977 199.299282,131.737276 199.299282,97.7482062 C199.299282,85.7856682 202.004463,66.329956 197.824033,53.1018748 C190.126639,28.745108 172.2443,14.8950801 164.051591,32.9277389 C154.185624,54.6433407 160.244191,49.6934798 165.77371,73.3338961 C167.670155,81.4417878 177.014539,100.028618 177.014539,108.708756 C177.014539,142.697825 160.588327,159.559977 169.495543,159.559977 Z" id="Oval-9-Copy-3" fill="#BAC4F6" transform="translate(179.479352, 92.134636) scale(-1, 1) rotate(-43.000000) translate(-179.479352, -92.134636) "></path>
+                <path d="M213.5,60.5 C209.183273,60.8948914 201.740861,65.4428024 191.172763,74.1437328 C175.320617,87.1951284 177.797205,83.2393994 161.560337,103.262986 C150.735758,116.612043 142.715646,131.024381 137.5,146.5" id="Line-21" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M81.1425752,168.630026 C85.1025169,165.536181 98.2051544,147.96348 98.2051544,111.236918 C98.2051544,74.5103552 86.0176544,46.7369177 70.0176544,46.7369177 C54.0176544,46.7369177 59.5351666,70.3889964 66.8400325,93.0530589 C69.6371249,101.731312 78.9791535,122.814465 81.0032985,132.88325 C84.2653955,149.110029 78.6989273,170.539213 81.1425752,168.630026 Z" id="Oval-10" fill="#E9EDFD" transform="translate(78.936475, 107.743055) rotate(-52.000000) translate(-78.936475, -107.743055) "></path>
+                <path d="M39.5,84.5 C46.5402399,84.832105 55.9862242,87.7506309 67.8379528,93.2555776 C85.6155457,101.512998 79.9127462,96.6348296 100.298442,112.739947 C113.888906,123.476691 125.956092,135.063376 136.5,147.5" id="Line-18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M194.823347,177.534556 C197.785465,175.220296 209.085075,165.125173 213.530819,146.109724 C215.496552,137.701844 211.555235,124.000271 211.555235,111.853141 C211.555235,72.2337887 199.639103,43.8487815 182.378853,43.8487815 C165.118604,43.8487815 168.053621,58.2764613 175.933859,82.7256721 C183.814096,107.174883 191.693317,118.61017 193.876895,129.472028 C197.395933,146.976919 192.187224,179.594121 194.823347,177.534556 Z" id="Oval-10-Copy-2" fill="#E9EDFD" transform="translate(191.881132, 110.738214) scale(-1, 1) rotate(-52.000000) translate(-191.881132, -110.738214) "></path>
+                <path d="M237.5,84.5 C231.839918,82.6252532 222.387737,84.7837206 209.143456,90.9754021 C189.277034,100.262925 198.344222,96.9653923 174.587666,113.911421 C158.749962,125.208774 147.387407,137.071634 140.5,149.5" id="Line-22" stroke="#FFFFFF" stroke-width="2" opacity="0.785044643" stroke-linecap="square"></path>
+                <path d="M102.095097,154.049614 C106.979303,150.233654 123.140143,128.559423 123.140143,83.2607523 C123.140143,37.9620813 108.108037,3.70622602 88.3735811,3.70622602 C68.639125,3.70622602 75.4444439,32.8787829 84.4542911,60.8327171 C87.9042347,71.5365054 99.4267255,97.5405402 101.923313,109.959415 C105.946795,129.97358 99.0810936,156.404412 102.095097,154.049614 Z" id="Oval-10-Copy" fill="#E9EDFD" transform="translate(99.374086, 78.951409) rotate(-21.000000) translate(-99.374086, -78.951409) "></path>
+                <path d="M70.5,27.5 C77.9697854,36.2141564 84.664658,44.2949462 90.5846178,51.7423694 C99.4645574,62.9135043 102.309139,65.8595669 108.078018,74.773869 C113.846897,83.6881711 108.232283,69.1486166 118.500716,94.8794382 C125.346337,112.033319 129.012765,128.573507 129.5,144.5" id="Line-16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M193.001521,189.153265 C198.929205,189.153265 212.83568,162.652399 212.83568,130.278124 C212.83568,97.9038493 204.210737,49.7003434 189.378612,68.5372278 C174.540517,87.3816949 180.150684,86.5530431 183.830536,109.070321 C185.092606,116.793013 193.001521,132.403088 193.001521,140.670839 C193.001521,173.045114 187.073837,189.153265 193.001521,189.153265 Z" id="Oval-9-Copy-4" fill="#BAC4F6" transform="translate(196.248002, 126.727326) scale(-1, 1) rotate(-73.000000) translate(-196.248002, -126.727326) "></path>
+                <path d="M234.5,116.5 C229.435614,115.997419 220.043174,117.148484 206.322678,119.953197 C185.741934,124.160265 185.201799,123.9696 168.145826,131.063968 C156.775178,135.793546 148.226569,140.93889 142.5,146.5" id="Line-23" stroke="#FFFFFF" stroke-width="2" opacity="0.733426339" stroke-linecap="square"></path>
+            </g>
+            <g id="Group-4" transform="translate(101.000000, 137.000000)">
+                <path d="M0,0 C11.7955729,2 24.5052083,3 38.1289062,3 C51.7526042,3 65.3763021,2 79,0 L71.2109375,75.3409091 C61.9375,77.1136364 51.8945312,78 41.0820312,78 C30.2695313,78 19.4570312,77.1136364 8.64453125,75.3409091 L0,0 Z" id="Rectangle-9" fill="#FCDCCF"></path>
+                <path d="M59.2621996,2.19791001 C63.6483775,1.86496527 70.2276443,1.1323286 79,0 L71.2109375,75.3409091 C63.3055851,76.5844933 57.2271178,77.3450382 52.9755357,77.6225437 L59.2621996,2.19791001 Z" id="Rectangle-9" fill="#ECC6B6"></path>
+                <path d="M0,0 C10.9588352,1.33333333 23.3572727,2 37.1953125,2 C51.0333523,2 64.9682481,1.33333333 79,0 L76.7909585,21.3672948 L40.573652,23.0934676 L2.38711382,20.8047516 L0,0 Z" id="Rectangle-9" fill="#F3B096"></path>
+            </g>
+        </g>
+    </g>
+</g>
+</svg>
+</div>
+
+</div>
+<div class="menu-btn closed"> 
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+</div>
+<div class="second-main">
+    <div class="js-toc"></div>
+    <div class="motto">
+        <p> //sunny forever<br />
+            while(life&lt;end){<br />
+               love++;<br />
+               beAwesome :)} </p>
+     </div>
+     <div class="second-content">
+        <div class="article">
+        <h1 class="title">Vux状态管理</h1>
+        <div class="art_infor">
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：15003</span>
+            <span><span class="iconfont icon-riqi"></span>写于：2022-06-13</span></div>
+            <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2022-06-13</span>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您43分钟</span></div>
+        </div>
+        <div class="art_content">
+        <div class="broadcast color-blue">
+<div class="iconfont icon-yinhao"></div>
+Vux官网：<a target="_blank" rel="noopener" href="https://vuex.vuejs.org/zh/">https://vuex.vuejs.org/zh/</a></div>
+
+<h3 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p><span class="tips">Vuex</span>是专门为Vue应用程序开发的集中式状态(数据)管理插件，可以对Vue中的组件进行统一的数据管理。</p>
+<h4 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h4><p>vue2的工程使用vux3，vue3的工程需要使用vux4，版本需要对应，这里以安装vux3为例</p>
+<p>在脚手架中执行：</p>
+<pre><code>npm i vuex@3</code></pre>
+
+<h4 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h4><img data-src="/blog/images/vuex_art.jpg" src="/blog/images/vuex_art.jpg" alt="vuex工作流程">
+
+
+<ul>
+<li><span class="strong">Action</span>主要用于响应Vue Conponents的消息，或者从后端接收数据，并且可以将数据在Action中进行初步处理(主要为异步处理，如：添加定时器)</li>
+<li><span class="strong">Mutation</span>主要用于处理数据，在Mutation处理的数据才能被Devtools调试工具监测</li>
+<li><span class="strong">State</span>主要用于集中存储数据</li>
+</ul>
+<p><span class="strong">工作流程：</span>Vue Conponents发送消息<span class="tips">(dispatch)</span>给Action，或者Action通过Ajax等技术从后端异步获取数据 —&gt; Actions提交<span class="tips">(commit)</span>到Mutation —&gt; 数据在Mutation中进行处理后，修改<span class="tips">(mutate)</span>State中存储的数据 —&gt; 监测到State数据发生变化，Vue重新渲染<span class="tips">(render)</span>页面</p>
+<p>vue组件的中数据不要预处理时，也可以越过Action，直接commit到mutation中进行处理</p>
+<p><span class="strong">关于store：</span>store是Vuex的核心库，可以理解为一个容器，Action、Mutation、state由Store统一管理，在进行消息提交、数据操作时往往需要经过store，通过<span class="tips">this.$store.dispatch</span>、<span class="tips">this.$store.commit</span>等语句来调用api</p>
+<h3 id="上手"><a href="#上手" class="headerlink" title="上手"></a>上手</h3><h4 id="开发步骤"><a href="#开发步骤" class="headerlink" title="开发步骤"></a>开发步骤</h4><h5 id="1-配置store"><a href="#1-配置store" class="headerlink" title="1. 配置store"></a>1. 配置store</h5><p>在src目录下新建store目录，新建index.js文件</p>
+<pre><code>import Vue from 'vue'
+import Vue from 'vue'
+//引入并应用vux
+import Vuex from 'vuex'
+Vue.use(Vuex)
+//创建action、mutations、state
+const actions=&#123;....&#125;
+const mutations=&#123;....&#125;
+const state=&#123;.....&#125;
+//创建并暴露Store
+export default new Vuex.Store(&#123;
+    actions,
+    mutations,
+    state,
+    getters
+&#125;)</code></pre>
+
+<h5 id="2-引入store配置项"><a href="#2-引入store配置项" class="headerlink" title="2. 引入store配置项"></a>2. 引入store配置项</h5><p>在main.js中引入store配置项</p>
+<pre><code>// 全写为import store from './store/index.js'
+import store from './store'
+new Vue(&#123;
+  render: h => h(App),
+  store
+  &#125;).$mount('#app')</code></pre>
+
+<h4 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h4><p>eg：简单求和差案例，4个按钮分别实现求和、求差、判断偶数后求和、定时器延时1s求和</p>
+<ul>
+<li>直接求和、求差可以直接commit到Mutation中运算</li>
+<li>判断当前值是否为偶数，延时求和需要dispatch到Action中预处理，再commit到Mutation中运算</li>
+<li>需要多次处理的数据可以在Action中多次dispatch，处理完毕再commit</li>
+</ul>
+<h5 id="1-创建组件"><a href="#1-创建组件" class="headerlink" title="1. 创建组件"></a>1. 创建组件</h5><p>在components中创建Count.vue</p>
+<pre><code>&lt;template>
+  &lt;div>
+    &lt;h2>求和案例&lt;/h2>
+    &lt;h2>sum经过getters预处理后&#123;&#123;$store.getters.addTen&#125;&#125;&lt;/h2>
+    &lt;h3>当前值为&#123;&#123;$store.state.sum&#125;&#125;&lt;/h3>
+    &lt;select v-model.number="num">
+        &lt;option value="1">1&lt;/option>
+        &lt;option value="2">2&lt;/option>
+        &lt;option value="3">3&lt;/option>
+        &lt;option value="4">4&lt;/option>
+    &lt;/select>
+    &lt;button @click="incrace">加&lt;/button>
+    &lt;button @click="decrace">减&lt;/button>
+    &lt;button @click="addOpp">偶数才加&lt;/button>
+    &lt;button @click="addLate">延迟3s加&lt;/button>
+  &lt;/div>
+&lt;/template>
+&lt;script>
+ export default &#123;
+    name:'CountSum',
+    data()&#123;
+        return &#123;
+            num:1, //加数
+        &#125;
+    &#125;,
+    methods:&#123;
+        // 求和、求差直接commit
+    incrace()&#123;
+        this.$store.commit('JIA',this.num)
+    &#125;,
+    decrace()&#123;
+        this.$store.commit('JIAN',this.num)
+    &#125;,
+    //延时、判断奇偶dispatch到actions经过处理后再提交
+    addOpp()&#123;
+        this.$store.dispatch('addOpp',this.num)
+    &#125;,
+    addLate()&#123;
+        this.$store.dispatch('addLate',this.num)
+    &#125;
+    &#125;
+ &#125;
+&lt;/script>
+</code></pre>
+
+<h5 id="2-配置store"><a href="#2-配置store" class="headerlink" title="2. 配置store"></a>2. 配置store</h5><p>新建store目录并在该目录下新建index.js</p>
+<pre><code>import Vue from 'vue'
+import Vuex from 'vuex'
+Vue.use(Vuex)
+const actions=&#123;
+    // actions里的方法名一般小写
+    //接收参数 (context,实参)
+    // context是一个对象，拥有store的部分属性,变量名可以为其他
+    addOpp(context,value)&#123;          
+        if(!(value%2))&#123;             //判断是否为偶数，为偶数则commit到mutations
+        context.commit('JIA',value)
+        &#125;else&#123;
+            console.log('非偶数，数未提交')
+        &#125;
+    &#125;,
+    addLate(context,value)&#123;       //数据想要多道处理时，可以在actions内多次dispatch，无限套娃
+        setTimeout(()=>&#123;
+            context.dispatch('addLate2',value);
+            console.log('第一次延迟处理')
+        &#125;,500)
+    &#125;,
+    addLate2(context,value)&#123;      //数据经过第二道处理后，再提交
+        setTimeout(()=>&#123;
+            context.commit('JIA',value);
+            console.log('第二次延迟处理')
+        &#125;,500)
+    &#125;
+&#125;
+// mutations里的方法名一般大写，用于和actions里的区别
+const mutations=&#123;
+    //接收参数(state,实参)
+    JIA(state,value)&#123;           //加
+        state.sum+=value
+    &#125;,
+    JIAN(state,value)&#123;          //减
+        state.sum-=value;
+    &#125;
+&#125;
+const state=&#123; //存储数据
+    sum:0
+ &#125;
+const getters=&#123;                //读取数据前，想要预先进行处理使用getters
+    addTen(state)&#123;
+        return state.sum+10
+    &#125;
+&#125;
+// 创建并暴露store
+export default new Vuex.Store(&#123;
+    actions,
+    mutations,
+    state,
+    getters
+ &#125;)
+</code></pre>
+
+<h5 id="3-引入store配置项"><a href="#3-引入store配置项" class="headerlink" title="3. 引入store配置项"></a>3. 引入store配置项</h5><p>在main.js中引入store配置</p>
+<pre><code>import Vue from 'vue'
+import App from './App.vue'
+import store from './store'// 全写为import store from './store/index.js'
+Vue.config.productionTip = false
+ new Vue(&#123;
+  render: h => h(App),
+  store
+ &#125;).$mount('#app')
+</code></pre>
+
+<h5 id="4-引入Count组件"><a href="#4-引入Count组件" class="headerlink" title="4. 引入Count组件"></a>4. 引入Count组件</h5><p>在App中使用Count组件</p>
+<pre><code>&lt;template>
+  &lt;div id="app">
+    &lt;Count/>
+  &lt;/div>
+&lt;/template>
+&lt;script>
+import Count from'./components/Count.vue'
+export default &#123;
+  name:'App',
+  components:&#123;
+    Count
+             &#125;
+   &#125;
+&lt;/script></code></pre>
+
+<h3 id="getters"><a href="#getters" class="headerlink" title="getters"></a>getters</h3><p>组件从state读取数据前，如果需要对数据进行预处理，可以在getter中进行。如：读取state中的num前进行处理(完整代码位于上一个案例)</p>
+<h4 id="1-在store中添加getter"><a href="#1-在store中添加getter" class="headerlink" title="1. 在store中添加getter"></a>1. 在store中添加getter</h4><pre><code>
+const actions=&#123;.....&#125;
+const mutations=&#123;....&#125;
+const state=&#123;.....&#125;
+const getter=&#123; 
+    //读取state中的sum前，将值增大10
+     addTen(state)&#123;
+        return state.sum+10;
+     &#125;
+&#125;
+</code></pre>
+
+<h4 id="2-读取数据"><a href="#2-读取数据" class="headerlink" title="2. 读取数据"></a>2. 读取数据</h4><p>读取数据使用</p>
+<pre><code>$store.getters.addTen</code></pre>
+
+<h3 id="辅助函数"><a href="#辅助函数" class="headerlink" title="辅助函数"></a>辅助函数</h3><p>当一个组件需要获取多个数据(状态)时，调用数据和api需要大量使用this.$store.state.number等语句，为了减小代码书写量，可以在计算属性中借助<span class="tips">mapState</span>、<span class="tips">mapGetters</span>、<span class="tips">mapMutations</span>、<span class="tips">mapActions</span>辅助函数简化代码</p>
+<h4 id="通过对象"><a href="#通过对象" class="headerlink" title="通过对象"></a>通过对象</h4><p>当组件中的方法名、变量名与State、Mutations…中的变量名不同时，需要通过对象方式接收。并借助模板语法解析变量，以读取State中的数据为例：</p>
+<div class="show">...mapState({组件中的变量名:'state数据',.....})</div>
+
+<pre><code>&lt;template>
+  &lt;div>
+    &lt;h2>求和案例&lt;/h2>
+    &lt;h2>sum经过getters预处理后&#123;&#123;addTen&#125;&#125;&lt;/h2>
+    &lt;h3>当前值为&#123;&#123;sum1&#125;&#125;&lt;/h3>
+    &lt;h2>从state获取name为&#123;&#123;name1&#125;&#125;,从state获取song为&#123;&#123;song1&#125;&#125;&lt;/h2>
+    &lt;select v-model.number="num">
+        &lt;option value="1">1&lt;/option>
+        &lt;option value="2">2&lt;/option>
+        &lt;option value="3">3&lt;/option>
+        &lt;option value="4">4&lt;/option>
+    &lt;/select>
+    //当使用mapState等语法时，需要在写函数时传参(num)
+    &lt;button @click="incrace(num)">加&lt;/button>
+    &lt;button @click="decrace(num)">减&lt;/button>
+    &lt;button @click="addOpp(num)">偶数才加&lt;/button>
+    &lt;button @click="addLate(num)">延迟3s加&lt;/button>
+  &lt;/div>
+&lt;/template>
+&lt;script>
+//引入mapState、mapGetters、mapMutations、mapActions
+ import &#123;mapState,mapGetters, mapMutations,mapActions&#125; from 'vuex'
+ export default &#123;
+    name:'CountSum',
+    data()&#123;
+        return &#123;
+            num:1,
+        &#125;
+    &#125;,
+    computed:&#123;
+        //模板语法
+        ...mapState(&#123;sum1:'sum',name1:'name',song1:'song'&#125;),
+        ...mapGetters(&#123;addTen:'addTen'&#125;)
+        // 可以简写为数组形式...mapGetters(['addTen'])，在对象中不能简写，会解析为addTen:addTen，值也解析为变量
+    &#125;,
+    methods:&#123;
+    //原语句
+    // incrace()&#123;this.$store.commit('JIA',this.num)&#125;,
+    // decrace()&#123;this.$store.commit('JIAN',this.num)&#125;,
+    // 借助mapMutations生成对应方法，该方法会自动调用commit，数组写法在另一组件中
+     ...mapMutations(&#123;incrace:'JIA',decrace:'JIAN'&#125;),
+    //原语句
+    // addOpp()&#123;this.$store.dispatch('addOpp',this.num)&#125;,
+    // addLate()&#123;this.$store.dispatch('addLate',this.num)&#125;
+     ...mapActions(&#123;addOpp:'addOpp',addLate:'addLate'&#125;)
+     &#125;
+ &#125;
+&lt;/script></code></pre>
+
+<h4 id="通过数组"><a href="#通过数组" class="headerlink" title="通过数组"></a>通过数组</h4><p>当组件中的方法名、变量名与State、Mutations…中的变量名相同时，可以直接使用数组</p>
+<div class="show">...mapState(['变量名1','变量名2',....])</div>
+<pre><code>&lt;template>
+  &lt;div>
+    &lt;h2>不同的mapstate等写法&lt;/h2>
+    &lt;h2>sum经过getters预处理后&#123;&#123;addTen&#125;&#125;&lt;/h2>
+    &lt;h3>当前值为&#123;&#123;sum&#125;&#125;&lt;/h3>
+    &lt;h2>从state获取name为&#123;&#123;name&#125;&#125;,从state获取song为&#123;&#123;song&#125;&#125;&lt;/h2>
+    &lt;select v-model.number="num">
+        &lt;option value="1">1&lt;/option>
+        &lt;option value="2">2&lt;/option>
+        &lt;option value="3">3&lt;/option>
+        &lt;option value="4">4&lt;/option>
+    &lt;/select>
+    &lt;button @click="JIA(num)">加&lt;/button>
+    &lt;button @click="JIAN(num)">减&lt;/button>
+    &lt;button @click="addOpp(num)">偶数才加&lt;/button>
+    &lt;button @click="addLate(num)">延迟3s加&lt;/button>
+  &lt;/div>
+&lt;/template>
+&lt;script>
+import &#123;mapState,mapGetters, mapMutations,mapActions&#125; from 'vuex'
+export default &#123;
+    name:'CountSum',
+    data()&#123;
+        return &#123;
+            num:1,
+        &#125;
+    &#125;,
+    computed:&#123;
+        ...mapState(['sum','name','song']),
+        ...mapGetters(['addTen'])
+    &#125;,
+    methods:&#123;
+        //数组写法
+    ...mapMutations(['JIA','JIAN']),
+     ...mapActions(['addOpp','addLate'])
+    &#125;
+ &#125;
+&lt;/script></code></pre>
+
+<h3 id="模块化与命名空间"><a href="#模块化与命名空间" class="headerlink" title="模块化与命名空间"></a>模块化与命名空间</h3><p>当有多类数据需要vuex管理时，可以将他们的state、actions、mutation封装到多个js文件中，并为它们开启<span class="tips">命名空间</span></p>
+<h4 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h4><ol>
+<li>在store目录中创建多个store配置文件</li>
+<li>将配置文件统一引入该目录的index.js中</li>
+<li>将store配置引入main.js中</li>
+<li>创建组件，需要注意辅助函数的用法，指向命名空间的方法</li>
+<li>在app中引入组件</li>
+</ol>
+<h4 id="案例-1"><a href="#案例-1" class="headerlink" title="案例"></a>案例</h4><p>eg: 在上个案例基础上加入添加成员的功能。现在有两个功能：求和求差、添加成员，因此store目录下需要两个store配置项。在组件中调用数据时，需要用到命名空间，从不同state中引用数据。</p>
+<h5 id="1-配置store-1"><a href="#1-配置store-1" class="headerlink" title="1. 配置store"></a>1. 配置store</h5><p>在store目录新建 person.js文件</p>
+<pre><code>//添加人员模块
+import Vue from 'vue'
+import Vuex from 'vuex'
+Vue.use(Vuex)
+ const person = &#123;
+    namespaced:true, //开启命名空间
+    actions:&#123;
+        addPersonZhou(context,value)&#123;
+            if(value.name.indexOf('周')===0)&#123;
+                context.commit('ADD_PERSON',value)
+            &#125;
+            else&#123;
+                alert('只能添加姓周的名')
+            &#125;
+        &#125;,     
+    &#125;,
+    mutations:&#123;
+        ADD_PERSON(state,personObj)&#123;
+            state.personList.unshift(personObj);
+        &#125;
+    &#125;,
+    state:&#123;
+        personList:[&#123;id:'001',name:'张三'&#125;]
+    &#125;,
+    getters:&#123;
+        getFirstName(state)&#123;
+            return state.personList[0].name;
+        &#125;
+    &#125;
+ &#125;
+ export default person</code></pre>
+
+<p>在store目录新建 count.js文件</p>
+<pre><code>//求和模块
+import Vue from 'vue'
+import Vuex from 'vuex'
+Vue.use(Vuex)
+export default &#123;
+    namespaced:true, //开启命名空间
+    actions: &#123;
+        addOpp(context,value)&#123;          //判断是否为偶数
+            if(!(value%2))&#123;
+            context.commit('JIA',value)
+            &#125;else&#123;
+                console.log('非偶数，数未提交')
+            &#125;
+        &#125;,
+        addLate(context,value)&#123;        //数据想要多道处理时，可以dispatch为actions内的其他方法，无限套娃
+            setTimeout(()=>&#123;
+                context.dispatch('addLate2',value);
+                console.log('第一次延迟处理')
+            &#125;,500)
+        &#125;,
+        addLate2(context,value)&#123;      //数据经过第二道处理后，再提交
+            setTimeout(()=>&#123;
+                context.commit('JIA',value);
+                console.log('第二次延迟处理')
+            &#125;,500)
+        &#125;
+    &#125;,
+    mutations:&#123;
+        JIA(state,value)&#123;           //加
+            state.sum+=value
+        &#125;,
+        JIAN(state,value)&#123;          //减
+            state.sum-=value;
+        &#125;,
+    &#125;,
+    state:&#123;
+        sum:0,
+        name:'周杰伦',
+        song:'夜曲',
+    &#125;,
+    getters:&#123;
+        addTen(state)&#123;
+            return state.sum+10
+        &#125;
+    &#125;
+&#125;</code></pre>
+
+<h5 id="2-在index-js中引入"><a href="#2-在index-js中引入" class="headerlink" title="2. 在index.js中引入"></a>2. 在index.js中引入</h5><p> 在store目录下index.js中引入</p>
+<pre><code> import Vue from 'vue'
+ import Vuex from 'vuex'
+Vue.use(Vuex)
+//引入两个配置项
+import count from './count'
+import person from './person'
+// 创建并暴露store
+export default new Vuex.Store(&#123;
+    //引入模块
+    modules:&#123;
+        //全写count: count,
+        count,
+        person
+    &#125;
+ &#125;)</code></pre>
+
+<h4 id="3-在main-js中引入store"><a href="#3-在main-js中引入store" class="headerlink" title="3. 在main.js中引入store"></a>3. 在main.js中引入store</h4> <pre><code>import Vue from 'vue'
+import App from './App.vue'
+import store from './store'
+new Vue(&#123;
+  render: h => h(App),
+  store
+&#125;).$mount('#app')</code></pre>
+
+<h5 id="4-书写组件"><a href="#4-书写组件" class="headerlink" title="4. 书写组件"></a>4. 书写组件</h5><p>创建count.vue组件</p>
+<pre><code>
+&lt;template>
+  &lt;div>
+    &lt;h2>求和案例&lt;/h2>
+    &lt;h2>sum经过getters预处理后&#123;&#123;addTen&#125;&#125;&lt;/h2>
+    &lt;h3>当前值为&#123;&#123;sum&#125;&#125;&lt;/h3>
+    &lt;h2>从state获取name为&#123;&#123;name&#125;&#125;,从state获取song为&#123;&#123;song&#125;&#125;&lt;/h2>
+    
+    &lt;select v-model.number="num">
+        &lt;option value="1">1&lt;/option>
+        &lt;option value="2">2&lt;/option>
+        &lt;option value="3">3&lt;/option>
+        &lt;option value="4">4&lt;/option>
+    &lt;/select>
+    &lt;button @click="incrace(num)">加&lt;/button>
+    &lt;button @click="decrace(num)">减&lt;/button>
+    &lt;button @click="addOpp(num)">偶数才加&lt;/button>
+    &lt;button @click="addLate(num)">延迟3s加&lt;/button>
+    &lt;h1>组件2共享过来的人员名单&lt;/h1>
+   &lt;ol class="person-list">
+    &lt;li v-for="person in personList" :key="person.id">&#123;&#123;person.name&#125;&#125;&lt;/li>
+    &lt;/ol>
+  &lt;/div>
+&lt;/template>
+&lt;script>
+ import &#123;mapState,mapGetters, mapMutations,mapActions&#125; from 'vuex'
+ export default &#123;
+    name:'CountSum',
+    data()&#123;
+        return &#123;
+            num:1,
+        &#125;
+    &#125;,
+    //使用mapState,mapGetters, mapMutations,mapActions时更简洁
+    computed:&#123;
+        // 从count组件获取数据
+        ...mapState('count',&#123;sum:'sum',name:'name',song:'song'&#125;),
+         // 从person组件获取数据
+        ...mapState('person',['personList']),
+
+        ...mapGetters('count',&#123;addTen:'addTen'&#125;)
+    &#125;,
+    methods:&#123;
+    ...mapMutations('count',&#123;incrace:'JIA',decrace:'JIAN'&#125;),
+    ...mapActions('count',&#123;addOpp:'addOpp',addLate:'addLate'&#125;)
+    &#125;
+ &#125;
+&lt;/script></code></pre>
+<div class="broadcast color-blue">
+<div class="iconfont icon-yinhao"></div>
+辅助函数指向命名空间时，需要在数据和方法名前添加命名空间名，如：...mapState('命名空间',{参数})</div>
+
+<p>person.vue组件</p>
+<pre><code>&lt;template>
+  &lt;div>
+    &lt;h2>组件2：添加成员&lt;/h2>
+    &lt;input type="text" v-model="personName" placeholder="添加成员">
+    &lt;button @click="add">添加&lt;/button>
+    &lt;button @click="addZhou">只添加姓周的人&lt;/button>
+    &lt;ul>
+        &lt;li v-for="person in personList" :key="person.id">&#123;&#123;person.name&#125;&#125;&lt;/li>
+    &lt;/ul>
+    &lt;h2>名单第一个人为&#123;&#123;firstPersonName&#125;&#125;&lt;/h2>
+    &lt;h2>组件一共享的值&lt;/h2>
+    &lt;h3>和为：&#123;&#123;sum&#125;&#125;&lt;/h3>
+  &lt;/div>
+&lt;/template>
+&lt;script>
+import &#123; nanoid &#125; from 'nanoid'
+export default &#123;
+    name:'CountSum',
+    data()&#123;
+        return &#123;
+            personName:''
+        &#125;
+    &#125;,
+    //不使用mapState,mapGetters, mapMutations,mapActions时更新、获取数据的方法
+    computed:&#123;
+        personList()&#123;
+            return this.$store.state.person.personList
+        &#125;,
+        sum()&#123;
+            return this.$store.state.count.sum
+        &#125;,
+        //通过getters获取时，想要指定组件名与路径
+        firstPersonName()&#123;
+            return this.$store.getters['person/getFirstName']
+        &#125;
+    &#125;,
+    methods:&#123;
+     add()&#123;
+        const personObj=&#123;id:nanoid(),name:this.personName&#125;;
+        //指定为person组件下的ADD_PERSON函数
+        this.$store.commit('person/ADD_PERSON',personObj);
+        this.personName='';
+     &#125;,
+     addZhou()&#123;
+         const personObj=&#123;id:nanoid(),name:this.personName&#125;;
+         this.$store.dispatch('person/addPersonZhou',personObj);
+         this.personName='';
+     &#125;
+    &#125;
+  &#125;
+&lt;/script></code></pre>
+
+<div class="broadcast color-pink">
+<div class="iconfont icon-yinle1"></div>
+不借助mapState等辅助函数，需要使用路径来指定命名空间名称，其中读取state中的数据使用<span class="tips">this.$store.state.配置文件名.数据名</span>来指向命名空间，而<span class="tips">dispatch</span>、<span class="tips">commit</span>、<span class="tips">getter</span>等api需要使用<span class="tips">this.$store.api名['命名空间/方法名',变量名]</span>语句来指向命名空间</div>
+
+<h5 id="5-App-vue引入两个组件即可"><a href="#5-App-vue引入两个组件即可" class="headerlink" title="5. App.vue引入两个组件即可"></a>5. App.vue引入两个组件即可</h5><pre><code>&lt;template>
+  &lt;div id="app">
+    &lt;Count/>
+    &lt;Person/>
+  &lt;/div>
+&lt;/template>
+ &lt;script>
+ import Count from'./components/Count.vue'
+ import Person from'./components/Person.vue'
+ export default &#123;
+  name:'App',
+  components:&#123;
+    Count,
+    Person
+  &#125;
+ &#125;
+&lt;/script>
+</code></pre>
+        </div>
+    </div>
+    <div class="post-nav">
+        
+            <div class="post-prev ">
+                <a href="/blog/2022/06/14/Grid%E5%B8%83%E5%B1%80/">上一篇：Grid栅格布局</a>
+            </div>
+            
+            
+                <div class="post-next">
+                    <a href="/blog/2022/03/15/%E4%B8%80%E4%BD%8D%E5%8D%81%E5%B9%B4IT%E5%B7%A5%E7%A8%8B%E5%B8%88%E7%9A%84%E9%85%92%E5%90%8E%E7%9C%9F%E8%A8%80/">下一篇：一位资深数据工程师酒后的肺腑之言(转载) </a>
+                </div>
+                 
+    </div>
+    <div class="container">
+        <!--设计来源于B站-季夏小贞-->
+        <div class="bigHead"></div>
+        <div class="ears"></div>
+        <div class="body"></div>
+        <div class="paws-front"></div>
+        <div class="paws-back"></div>
+        <div class="details"></div>
+        <div class="tail"></div>
+        <div class="sleep">
+          <span class="s1">z</span>
+          <span class="s2">z</span>
+          <span class="s3">z</span>
+          <span class="s4">z</span>
+          <span class="s5">z</span>
+        </div>
+    </div>
+</div>
+<div class="left-menu">
+    <a class="iconfont backTop" href="javascript:">&#xe655;</a>
+    <div class="husky"></div>
+  </div>
+</div>
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/grain.min.js"></script>
+<script src="/blog/js/main.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.2.0/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
+    <script>
+        //代码高亮初始化
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+        //代码复制功能
+        let pres=document.querySelectorAll('pre');
+        for(let i=0;i<pres.length;i++){
+        var copyBtn=document.createElement('span');
+        copyBtn.innerText="copy";
+        pres[i].appendChild(copyBtn);
+        let codes=pres[i].querySelector('code').innerText;
+        copyBtn.addEventListener("click",function(){
+        let input=document.createElement('textarea');
+        pres[i].appendChild(input);
+        input.value=codes;
+        input.select(); // 选中文本
+        document.execCommand("copy"); // 执行浏览器复制命令
+        pres[i].removeChild(input);
+        console.log('复制完毕');
+},false)
+}
+        </script>
+    
+    <script>
+        if(!viewH){
+            let viewH=document.documentElement.clientHeight;
+        }
+    // 懒加载
+    let imgs=document.querySelector('.art_content').querySelectorAll('img');
+    if(imgs){
+    let lazyload=function(){
+    imgs.forEach((item,index)=>{
+        let rect=item.getBoundingClientRect();
+        if(rect.bottom>=0&&rect.top<viewH){
+            item.src=item.dataset.src;
+        }
+    })
+    };
+    document.querySelector('.second-main').addEventListener('scroll',()=>{
+        lazyload();
+    })
+}
+    </script>
+</body>
+
+
+
+
+</html>
