@@ -79,8 +79,11 @@ pics.forEach((item)=>{
     let rect=img.getBoundingClientRect();
     if(rect.bottom>=0&&rect.top<viewH){
         img.src=img.dataset.src;
-        item.querySelector('.pic_loading').style="display:none;";
-        item.querySelector('a').style="visibility:visible;";
+        setTimeout(()=>{
+            item.querySelector('.pic_loading').style="display:none;";
+            item.querySelector('a').style="visibility:visible;";
+        },1000)
+        
     }
 });
 }
