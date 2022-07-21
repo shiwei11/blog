@@ -410,14 +410,86 @@ flex-direction: row;
     box-shadow: -3px 2px 5px rgba(19, 2, 2, 0.527);
 }
 .update li .update_pic{
+    position: relative;
     flex:1;
     height: 100%;
+    min-height: 18vh;
     overflow: hidden;
     transition: all .5s;
 }
+.update li .update_pic .pic_loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    width:98%;
+    height: 100%;
+    color:#fff; 
+    text-shadow: 2px 2px 6px rgb(231, 34, 245);
+    z-index: 2;
+}
+.update li .update_pic .pic_loading .load_line{
+    position: absolute;
+    width: 16vh;
+    height: 16vh;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    color:#fff;
+    border-top-color:#31fd1e;
+    animation:  ringringring 2s linear infinite;
+}
+.update li .update_pic .pic_loading .load_line::before{
+    content:'';
+    position: absolute;
+    top:5px;
+    left:5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color:#eefd1e;
+    animation:  ringringring 3s linear infinite;
+}
+.update li .update_pic .pic_loading .load_line::after{
+    content:'';
+    position: absolute;
+    top:15px;
+    left:15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color:#ff00bf;
+    animation:  ringringring 1.5s linear infinite;
+}
+.update li:nth-child(2n) .update_pic .pic_loading .load_line{
+    border-top-color:rgb(149, 0, 255);
+}
+.update li:nth-child(2n) .update_pic .pic_loading .load_line::before{
+    border-top-color:rgb(255, 0, 102);
+}
+.update li:nth-child(2n) .update_pic .pic_loading .load_line::after{
+    border-top-color:rgb(255, 255, 255);
+}
+
+
+@keyframes ringringring{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+
 .update li .update_pic a{
     text-align: center;
     display: block;
+    visibility: hidden;
     width: 100%;
 }
 .update li .update_pic a img{
@@ -670,7 +742,9 @@ width: 95%;
 height: auto !important;
 padding:.4rem 0px 1.4rem 0px;
 }
-
+.update li .update_pic{
+    min-height: 18vh;
+}
 .update li .update_pic a img{
     width: 90%; 
 }

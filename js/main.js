@@ -79,7 +79,8 @@ pics.forEach((item)=>{
     let rect=img.getBoundingClientRect();
     if(rect.bottom>=0&&rect.top<viewH){
         img.src=img.dataset.src;
-    // setTimeout(function(){ img.src=img.dataset.src;},3000)
+        item.querySelector('.pic_loading').style="display:none;";
+        item.querySelector('a').style="visibility:visible;";
     }
 });
 }
