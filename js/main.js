@@ -79,11 +79,12 @@ pics.forEach((item)=>{
     let rect=img.getBoundingClientRect();
     if(rect.bottom>=0&&rect.top<viewH){
         img.src=img.dataset.src;
-        setTimeout(()=>{
-            item.querySelector('.pic_loading').style="display:none;";
-            item.querySelector('a').style="visibility:visible;";
-        },1000)
-        
+        img.onload=function(){
+            setTimeout(()=>{
+                item.querySelector('.pic_loading').style="display:none;";
+                item.querySelector('a').style="visibility:visible;";
+            },1000)
+        }
     }
 });
 }
