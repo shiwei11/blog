@@ -110,10 +110,10 @@
         <div class="article">
         <h1 class="title">Linux服务与系统资源管理</h1>
         <div class="art_infor">
-            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：17102</span>
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：19571</span>
             <span><span class="iconfont icon-riqi"></span>写于：2022-01-20</span></div>
             <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2022-01-20</span>
-            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您49分钟</span></div>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您56分钟</span></div>
         </div>
         <div class="art_content">
         <h3 id="网络命令"><a href="#网络命令" class="headerlink" title="网络命令"></a>网络命令</h3><h4 id="ping-测试网络"><a href="#ping-测试网络" class="headerlink" title="ping 测试网络"></a>ping 测试网络</h4><p><span class="strong">ping [-c 次数] IP地址</span></p>
@@ -644,6 +644,67 @@ KiB Swap:        0 total,        0 free,        0 used.   375944 avail Mem
 <div class="iconfont icon-qiqiu"></div>
 top，vi等服务于前台的命令，不能恢复到后台执行。</div>
 
+<h3 id="alternatives工具"><a href="#alternatives工具" class="headerlink" title="alternatives工具"></a>alternatives工具</h3><h4 id="alternatives简介"><a href="#alternatives简介" class="headerlink" title="alternatives简介"></a>alternatives简介</h4><p>alternatives工具常用于指定默认软件、默认配置，或者某一软件的默认版本。</p>
+<p>如：在Linux中，yum等工具一般使用python2作为命令解释器，而一些较新的软件依赖较新版的python3。因此有时我们不得不同时安装python2和python3。如果使用 python3 作为默认的python版本，使用yum会抛出错误，这是因为使用了python3解析yum中python2的语法，同理，一些较新的软件也无法使用python2解析。此时，我们就需要使用alternatives来控制软件的默认版本。</p>
+<p>alternatives的使用方法是：给定两个软件或多个软件的路径，然后将它们注册为一个组，为这个组建立一个软链接，之后调用软件将直接从这一软链接调用</p>
+<h4 id="alternatives命令"><a href="#alternatives命令" class="headerlink" title="alternatives命令"></a>alternatives命令</h4><h5 id="注册组"><a href="#注册组" class="headerlink" title="注册组"></a>注册组</h5><p><span class="strong">alternatives -&zwnj;-install &lt;link&gt; &lt;name&gt; &lt;path&gt; &lt;priority&gt;</span></p>
+<ul>
+<li>-&zwnj;-install 注册(新增)需要管理的命令/软件</li>
+<li>link：注册路径，会在该路径下生成一个软链，此后由该软链启动命令</li>
+<li>name：组名</li>
+<li>path：软件/命令的路径，将该路径下的命令加入alternatives管理组</li>
+<li>priority：权值，在自动模式下，权值越高，软件优先级越高</li>
+</ul>
+<h5 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h5><ul>
+<li><span class="strong">alternatives -&zwnj;-config &lt;name&gt;</span> 修改默认配置(将进入交互模式，并切换为手动模式)</li>
+<li><span class="strong">alternatives -&zwnj;-set &lt;name&gt; &lt;path&gt;</span> 修改默认配置(将切换为手动模式)</li>
+<li><span class="strong">alternatives -&zwnj;-auto &lt;name&gt;</span> 切换为自动模式</li>
+<li><span class="strong">alternatives -&zwnj;-display &lt;name&gt;</span> 显示对应组的配置信息(包括自动/手动模式，路径，权值)</li>
+<li><span class="strong">alternatives -&zwnj;-remove &lt;name&gt; &lt;path&gt;</span> 删除组中对应路径的软件</li>
+<li><span class="strong">alternatives -&zwnj;-list</span> 列出所有组的信息(组名、自动/手动模式、当前默认软件路径)</li>
+</ul>
+<h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><h5 id="1-注册组"><a href="#1-注册组" class="headerlink" title="1. 注册组"></a>1. 注册组</h5><p>在<span class="tips">/usr/bin</span>目录下有python2.7与python3.7的启动命令，我们可以新建python组，将python2和python3的启动路径加入到该组中，并指定python3为默认版本，此后直接执行<span class="tips">python</span>命令将唤醒python3，而不用再指定明确的版本号，且将默认唤醒python3，该默认值是可以随时更改的</p>
+<div class="shell"><code># alternatives --install /usr/bin/python python /usr/bin/python2.7 10
+# alternatives --install /usr/bin/python python /usr/bin/python3.6 20
+</code></div>
+
+<p>上述命令</p>
+<ul>
+<li>将在 <span class="tips">/usr/bin</span> 目录下新建名为 <span class="tips">python</span> 的软链接，该软链接指向<span class="tips">/etc/alternatives/python</span>，该链接又指向<span class="tips">/usr/bin/python3.6</span></li>
+</ul>
+<div class="show">即 /usr/bin/python --> /etc/alternatives/python --> /usr/bin/python3.6</div>
+
+<ul>
+<li>修改默认值，修改的是/etc/alternatives/python的指向，即默认值为python2.7时，/etc/alternatives/python链接指向将修改为/usr/bin/python2.7</li>
+<li>python3.6的权值为20，python2.7的权值为10，自动模式下，alternatives将优先调用python3.6</li>
+<li>生成链接名可以任意自定义，并且调用命令也将相应修改，如：<div class="shell"><code>alternatives --install /usr/bin/py ppyy /usr/bin/python3 10</code></div>
+调用命令将变为py:
+<div class="shell">py --version #同python3 --version命令</div></li>
+</ul>
+<h6 id="2-修改默认值"><a href="#2-修改默认值" class="headerlink" title="2. 修改默认值"></a>2. 修改默认值</h6><div class="shell"><code>alternatives --config python</code></div>
+将进入交互模式，让你输入序号选择版本
+<div class="shell">There are 2 programs which provide 'python'.
+  Selection    Command
+-----------------------------------------------
+   1           /usr/bin/python2.7
+*+ 2           /usr/bin/python3.6
+
+<p>Enter to keep the current selection[+], or type selection number: </p>
+</div>
+
+<p>+号为当前生效的版本，*为新增版本</p>
+<h6 id="3-查看python组信息"><a href="#3-查看python组信息" class="headerlink" title="3. 查看python组信息"></a>3. 查看python组信息</h6><div class="shell"><code>alternatives --display python</code></div>
+<div class="shell">python - status is manual. #python处于手动模式
+ link currently points to /usr/bin/python3.6 #当前默认使用python3.6版本
+/usr/bin/python2.7 - priority 10  #可选版本信息
+/usr/bin/python3.6 - priority 20
+Current `best' version is /usr/bin/python3.6.
+</div>
+
+<h6 id="4-从组中删除python3-6版本"><a href="#4-从组中删除python3-6版本" class="headerlink" title="4. 从组中删除python3.6版本"></a>4. 从组中删除python3.6版本</h6><div class="shell"><code>alternatives --remove python /usr/bin/python3.6</code></div>
+从python组中移除3.6版本，将只剩2.7版本可选
+
+
 <h3 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h3><h4 id="crond服务"><a href="#crond服务" class="headerlink" title="crond服务"></a>crond服务</h4><p>cron即计划任务，而crond则是一个常驻服务，在Linux中用于周期性执行某个任务，该服务的配置文件位于<span class="tips">/etc/crontab</span></p>
 <h5 id="查看crond服务运行情况"><a href="#查看crond服务运行情况" class="headerlink" title="查看crond服务运行情况"></a>查看crond服务运行情况</h5><p><span class="strong">ps aux | grep crond</span>查看crond进程是否在运行，红帽系列的操作系统可使用<span class="strong">service status crond</span>或<span class="strong">systemctl status crond</span>(centos7+)</p>
 <h5 id="查看crond服务是否开机自启动"><a href="#查看crond服务是否开机自启动" class="headerlink" title="查看crond服务是否开机自启动"></a>查看crond服务是否开机自启动</h5><p><span class="strong">chkconfig -&zwnj;-list | grep crond</span>或<span class="strong">systemctl list-unit-files | grep crond</span>(centos7+)</p>
@@ -916,7 +977,7 @@ top，vi等服务于前台的命令，不能恢复到后台执行。</div>
 <li>用户名，发送给指定用户，如:root</li>
 <li>忽略或丢弃日志，如：~ ，直接丢弃</li>
 </ul>
-<h5 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h5><p>以下示例来源于centos7系统默认配置</p>
+<h5 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h5><p>以下示例来源于centos7系统默认配置</p>
 <div class="shell">cron.*                                                  /var/log/cron
 所有等级的cron日志写于/var/log/cron文件中
 *.emerg                                                 :omusrmsg:*
@@ -956,7 +1017,7 @@ uucp,news.crit                                          /var/log/spooler
 </tr>
 <tr>
 <td>mail address</td>
-<td>日志轮替时，日志内容发送到指定邮箱，如:mail <a href="mailto:&#49;&#49;&#x40;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#x6d;">&#49;&#49;&#x40;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#x6d;</a></td>
+<td>日志轮替时，日志内容发送到指定邮箱，如:mail <a href="mailto:&#49;&#49;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#49;&#49;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></td>
 </tr>
 <tr>
 <td>missingok</td>

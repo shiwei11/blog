@@ -493,7 +493,7 @@ flex-direction: row;
     width: 100%;
 }
 .update li .update_pic a img{
-    width: 100%;
+    width: 90%;
     height: 100%;
     transform: scale(.8);
     transition: all .5s;

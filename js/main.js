@@ -31,10 +31,10 @@ function snowing(){
                 snow.parentNode.removeChild(snow);
             }
         },80)
-    },snowfall)
+    },snowfall);
+    console.log('snowing\n%c我不冷\n%c是我太热了','text-shadow:0 0 3px #ff00c8;color:#ff00c8;','text-shadow:0 0 3px #008cff;color:#008cff;');
 }
 if(Math.random()>.8){//调整下雪几率
-    console.log('snowing\n%c我不冷\n%c是我太热了','text-shadow:0 0 3px #ff00c8;color:#ff00c8;','text-shadow:0 0 3px #008cff;color:#008cff;');
     snowing();
 }
 if(document.getElementById('day')){
@@ -67,43 +67,48 @@ window.onresize=function(){
         nav.classList.remove('left_move');
     }
 }
-
+ //图片懒加载
+let lazyload=function(img,item){
+    let rect=img.getBoundingClientRect();
+        if(item.add_timer&&rect.bottom>=0&&rect.top<viewH){
+            item.add_timer=false;
+            img.src=img.dataset.src;
+            img.onload=function(){
+                    let timer=setTimeout(()=>{
+                    item.querySelector('.pic_loading').style="display:none;";
+                    item.querySelector('a').style="visibility:visible;";
+                    clearTimeout(timer);
+                },1000);
+            }}  
+}
 const viewH=document.documentElement.clientHeight;
 if(document.querySelector('.update')){
- //图片懒加载
 let pics=document.querySelectorAll('.update_pic');
 if(pics){
-    var lazyload=function(){
-pics.forEach((item)=>{
+    pics.forEach((item)=>{
+        item.add_timer=true;
     let img=item.querySelector('img');
-    let rect=img.getBoundingClientRect();
-    if(rect.bottom>=0&&rect.top<viewH){
-        img.src=img.dataset.src;
-        img.onload=function(){
-            setTimeout(()=>{
-                item.querySelector('.pic_loading').style="display:none;";
-                item.querySelector('a').style="visibility:visible;";
-            },1000)
-        }
-    }
+    lazyload(img,item);
+    document.querySelector('.second-main').addEventListener('scroll',()=>{
+    lazyload(img,item);
+    })
 });
 }
-lazyload();}
-
+}
 //文章突显
 let lis=document.querySelector('.update').querySelectorAll('li');
-let changmode1=function(){
     lis.forEach(item => {
-        let rect=item.getBoundingClientRect();
-        if(rect.top<360 && rect.top>80){
-        item.classList.add('focus')
-        }
-        else{
-            item.classList.remove('focus')
-        }
-        
+    document.querySelector('.second-main').addEventListener('scroll',()=>{
+    let rect=item.getBoundingClientRect();
+    if(rect.top<360 && rect.top>80){
+    item.classList.add('focus')
+    }
+    else{
+        item.classList.remove('focus')
+    }
+})  
     }); 
-};
+
 //鼠标经过时，将焦点转换到目标身上
 lis.forEach(item => {
     item.onmouseover=function(){
@@ -118,12 +123,7 @@ lis.forEach(item => {
     }
     
 });
-//滚动调用
-document.querySelector('.second-main').addEventListener('scroll',()=>{
-    lazyload();
-    changmode1();
-})
-}
+
 console.log([
 "    ┬┬  ┌┬┐┬  ┌─┐┬ ┬┬┬ ┬┬",
 "    ││   │││  └─┐├─┤│││││",

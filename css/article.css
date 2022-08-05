@@ -72,52 +72,57 @@ color:#fa3636;
     border-left: 4px solid #767676;
 }
 
-.art_content .color-red{
+.art_content .color-red,
+.art_content .color-red>.icon-gantanhao{
     background: #f3e3e4;
     border-color: #ff7675;
+    color:#fa3636;
 }
 .art_content .color-red>.icon-gantanhao{
     font-size: 20px;
-    color:#fa3636;
 }
 
-.art_content .color-blue{
+.art_content .color-blue,
+.art_content .broadcast>.icon-yinhao{
     background: #e8f4fd;
     border-color: #2196f3;
-}
-.art_content .broadcast>.icon-yinhao{
-    color:#2196f3;
+    color:#3c8cff;
 }
 
 .art_content .color-green{
     background: #dbf3ec;
     border-color: #2ed573;
+    color:#00da21;
 }
 .art_content .broadcast>.icon-qiqiu{
     font-size: 20px;
-    color:#2ed573;
+    color:#4dff68;
 }
 
-.art_content .color-yellow{
+.art_content .color-yellow,
+.art_content .broadcast>.icon-dengpao14hao{
     background: #fff8e9;
     border-color: #ffbd2b;
+    color:#ffbd2b;
 }
 .art_content .broadcast>.icon-dengpao14hao{
     font-size: 22px;
-    color:#ffbd2b;
 }
 
-.art_content .color-purple{
+.art_content .color-purple,
+.art_content .broadcast>.icon-fengche{
     background: #ede5f7;
     border-color: #990af8;
+    color:#990af8;
 }
 .art_content .broadcast>.icon-fengche{
     font-size: 22px;
-    color:#990af8;
+    color:#990af89b;
 }
 .art_content .color-pink{
     background: #f3b9da69;
     border-color: #FC427B;
+    color:#FC427B;
 }
 .art_content .broadcast>.icon-yinle1{
     font-size: 22px;
