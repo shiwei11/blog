@@ -94,7 +94,7 @@ if(pics){
     })
 });
 }
-}
+
 //文章突显
 let lis=document.querySelector('.update').querySelectorAll('li');
     lis.forEach(item => {
@@ -123,7 +123,7 @@ lis.forEach(item => {
     }
     
 });
-
+}
 console.log([
 "    ┬┬  ┌┬┐┬  ┌─┐┬ ┬┬┬ ┬┬",
 "    ││   │││  └─┐├─┤│││││",
