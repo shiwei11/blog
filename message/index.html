@@ -326,7 +326,7 @@ width: 80%;
        <div> <s>打不开评论区请使用魔法工具</s></div>
        <div>新的评论系统，现在国内的网应该也可以打开了</div>
         <div>不便留言可以发邮件给我:njsgcn@gmail.com</div>
-       <div style="font-size: 10px;color:#00a8ff;">文明发言,你也不想和博主一起当狱友吧</div>
+       <div style="font-size: 10px;color:#00a8ff;">文明发言,你也不想和博主一起去当狱友吧</div>
     </div>
     <div id="waline"></div>
     <script>
@@ -347,11 +347,11 @@ width: 80%;
         '扣1给博主添堵',
         '老爹古董店,有事请留言',
         '有事请留言，幼儿园还没放学',
-        '在这里提交网址进行举报(ಡωಡ)',
+        '在这里提交网址进行举报',
         '想象一下，多年以后你结婚了，小孩很烦，对象很无趣，生活的压力围绕着你，想从楼上跳下去又不敢，那个时候，你会不会后悔今天没有在下面发一句，在吗？',
         '你说，我听着呢~',
         '临表涕零，不知所言?',
-        '除了英俊其他没什么好说的',
+        '阿琴，你觉我这个人怎么样？',
         'C语言天下第一！(该语句由JavaScript负责解析)',
         '地球在转圈，小猫在午睡',
         '手在键盘敲很轻,我给的思念很小心',
@@ -370,10 +370,11 @@ width: 80%;
         wlEditor.onblur=function(){
             modifyText();
         };
-        document.querySelector('.wl-nick').setAttribute('placeholder','起个昵称吧(选填，默认匿名)');
+        if(document.querySelector('.wl-nick')){
+        document.querySelector('.wl-nick').setAttribute('placeholder','您的个性昵称(选填)');
         document.querySelector('.wl-mail').setAttribute('placeholder','您的漂流瓶扔哪？(选填)');
         document.querySelector('.wl-link').setAttribute('placeholder','您的个人网站地址(选填)');
-
+        }
         }
           let menu=document.querySelector('.menu');
           window.onscroll=function(){
