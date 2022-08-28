@@ -112,7 +112,7 @@
         <div class="article">
         <h1 class="title">基于certbot获取TLS证书</h1>
         <div class="art_infor">
-            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：8168</span>
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：8217</span>
             <span><span class="iconfont icon-riqi"></span>写于：2022-07-29</span></div>
             <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2022-07-29</span>
             <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您24分钟</span></div>
@@ -218,7 +218,7 @@ Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-2b
  - If you like Certbot, please consider supporting our work by:
 
 <p>   Donating to ISRG / Let’s Encrypt:   <a target="_blank" rel="noopener" href="https://letsencrypt.org/donate">https://letsencrypt.org/donate</a><br>   Donating to EFF:                    <a target="_blank" rel="noopener" href="https://eff.org/donate-le">https://eff.org/donate-le</a></div></p>
-<h4 id="插件未安装报错问题"><a href="#插件未安装报错问题" class="headerlink" title="插件未安装报错问题"></a>插件未安装报错问题</h4><p>以nginx为例，执行<span class="tips">sudo certbot –nginx</span>时，可能会有nginx插件未被正确安装报错</p>
+<h4 id="插件未安装报错问题"><a href="#插件未安装报错问题" class="headerlink" title="插件未安装报错问题"></a>插件未安装报错问题</h4><p>以nginx为例，执行<span class="tips">sudo certbot -&zwnj;-nginx</span>时，可能会有nginx插件未被正确安装报错</p>
 <div class="shell">The requested nginx plugin does not appear to be installed</div>
 
 <p>安装nginx插件</p>
@@ -237,7 +237,7 @@ Error: Nothing to do</div>
 <p>安装完epel，再重新尝试安装插件，安装完成就可以开始申请证书了</p>
 <pre><code>yum install python-certbot-nginx</code></pre>
 
-<h4 id="web服务无法找到报错问题"><a href="#web服务无法找到报错问题" class="headerlink" title="web服务无法找到报错问题"></a>web服务无法找到报错问题</h4><p>执行<span class="tips">sudo certbot –nginx</span>时，还可能会遇到 certbot 无法找到 web server 或配置文件报错，这是路径问题，可以建一个软链接到 /etc/nginx 目录下</p>
+<h4 id="web服务无法找到报错问题"><a href="#web服务无法找到报错问题" class="headerlink" title="web服务无法找到报错问题"></a>web服务无法找到报错问题</h4><p>执行<span class="tips">sudo certbot -&zwnj;-nginx</span>时，还可能会遇到 certbot 无法找到 web server 或配置文件报错，这是路径问题，可以建一个软链接到 /etc/nginx 目录下</p>
 <pre><code>ln -s /usr/local/nginx/conf/ /etc/nginx</code></pre>
 <p>或者在申请证书时手动指定nginx配置文件路径</p>
 <pre><code>certbot --nginx-server-root /usr/local/nginx/conf</code></pre>
@@ -279,7 +279,7 @@ Diffie-Hellman密钥用于密钥交换</div>
 
 
 <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><h4 id="测试自动续订"><a href="#测试自动续订" class="headerlink" title="测试自动续订"></a>测试自动续订</h4><ul>
-<li><span class="strong">sudo certbot renew –dry-run</span> 测试更新证书</li>
+<li><span class="strong">sudo certbot renew -&zwnj;-dry-run</span> 测试更新证书</li>
 </ul>
 <p>如果测试成功，certbot会返回成功信息</p>
 <div class="shell">- - - - -
@@ -303,7 +303,7 @@ The requested nginx plugin does not appear to be installed</div>
 
 <h4 id="续订证书"><a href="#续订证书" class="headerlink" title="续订证书"></a>续订证书</h4><ul>
 <li><span class="strong">certbot renew</span> 自动更新30天内到期的证书（推荐）</li>
-<li><span class="strong">certbot renew –force-renewal</span> 强制更新未到期的证书</li>
+<li><span class="strong">certbot renew -&zwnj;-force-renewal</span> 强制更新未到期的证书</li>
 </ul>
 <p>在初次申请证书时，certbot会记住所使用的配置和插件，并在续订时使用相同的配置和插件。如果需要更改配置（如：修改文件路径），则需要以下步骤</p>
 <ol>
@@ -318,7 +318,9 @@ CA机构会限制证书颁发速度并阻止用户在短时间内多次续订同
 
 
 
-<h4 id="查看证书列表"><a href="#查看证书列表" class="headerlink" title="查看证书列表"></a>查看证书列表</h4><pre><code>certbot certificates</code></pre>
+<h4 id="查看证书列表"><a href="#查看证书列表" class="headerlink" title="查看证书列表"></a>查看证书列表</h4><ul>
+<li><span class="strong">certbot certificates</span> 查看证书</li>
+</ul>
 <p>会返回当前所有域名的证书情况，包括证书名、 证书序列号、密钥类型、到期时间、证书路径、私钥路径信息</p>
 <div class="show">Found the following certs:
   Certificate Name: newyear110.xyz
@@ -333,8 +335,8 @@ CA机构会限制证书颁发速度并阻止用户在短时间内多次续订同
 <h4 id="吊销与删除证书"><a href="#吊销与删除证书" class="headerlink" title="吊销与删除证书"></a>吊销与删除证书</h4><p>删除与吊销证书前，应当从web服务器软件的配置文件中删除对对应证书的引用</p>
 <ul>
 <li><span class="strong">certbot revoke -&zwnj;-cert-name 域名.xxx</span> 吊销证书(根据域名)</li>
-<li><span class="strong">certbot revoke –cert-path /etc/letsencrypt/live/域名.xxx/cert.pem</span> 吊销证书(根据路径)</li>
-<li><span class="strong">certbot delete –cert-name 域名.xxx</span> 删除指定证书</li>
+<li><span class="strong">certbot revoke -&zwnj;-cert-path /etc/letsencrypt/live/域名.xxx/cert.pem</span> 吊销证书(根据路径)</li>
+<li><span class="strong">certbot delete -&zwnj;-cert-name 域名.xxx</span> 删除指定证书</li>
 <li><span class="strong">certbot delete</span> 从列表中选择删除证书</li>
 </ul>
 <div class="broadcast color-blue">

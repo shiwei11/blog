@@ -1,4 +1,7 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="shiwi"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>body{cursor:url(https://cdn.jsdelivr.net/gh/shiwei11/blogfile/images/normal.cur),auto;}a,label{text-decoration: none;cursor:url(https://cdn.jsdelivr.net/gh/shiwei11/blogfile/images/link.cur),auto;}</style><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let spans=document.querySelector('.text').querySelectorAll('span');const timer=setInterval(()=>{spans.forEach((item)=>{if(item.classList.contains('dance')){item.classList.remove('dance');}else{item.classList.add('dance');}})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script>    <script src="https://cdn.jsdelivr.net/npm/@waline/client"></script>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="shiwi"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>body{cursor:url(https://cdn.jsdelivr.net/gh/shiwei11/blogfile/images/normal.cur),auto;}a,label{text-decoration: none;cursor:url(https://cdn.jsdelivr.net/gh/shiwei11/blogfile/images/link.cur),auto;}</style><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let spans=document.querySelector('.text').querySelectorAll('span');const timer=setInterval(()=>{spans.forEach((item)=>{if(item.classList.contains('dance')){item.classList.remove('dance');}else{item.classList.add('dance');}})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script>
+    <script src='https://unpkg.com/@waline/client@v2/dist/waline.js'></script>
+    <link href='https://unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet' />
+
     <title>SHIWIVI-给我留言</title>
     <style>
         *{
@@ -243,6 +246,16 @@ width: 80%;
 .wl-card .wl-meta>span{
     display: inline-block !important;
 }
+::-webkit-scrollbar{
+    width: 10px;
+} 
+::-webkit-scrollbar-track-piece{
+    background-color: #ededed;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #077eff;
+    background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
+} 
 @media screen and (min-width:600px){
     .menu-right{
         display: none;
@@ -313,23 +326,55 @@ width: 80%;
        <div> <s>打不开评论区请使用魔法工具</s></div>
        <div>新的评论系统，现在国内的网应该也可以打开了</div>
         <div>不便留言可以发邮件给我:njsgcn@gmail.com</div>
-       <div style="font-size: 10px;color:#00a8ff;">文明发言,发布违禁评论IP关小黑屋</div>
+       <div style="font-size: 10px;color:#00a8ff;">文明发言,你也不想和博主一起当狱友吧</div>
     </div>
-    
     <div id="waline"></div>
     <script>
-        Waline({
+        Waline.init({
           el: '#waline',
-          serverURL: 'https://blog-vercel-mu9hey79g-shiwei11.vercel.app/',
+          serverURL: 'https://comment.shiwivi.me',
           emoji: [
-         ' https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba',
-         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus',
-         'https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo',
+         'https://unpkg.com/@waline/emojis@1.1.0/tieba',
+         'https://unpkg.com/@waline/emojis@1.1.0/alus',
+         'https://unpkg.com/@waline/emojis@1.1.0/weibo',
           ]
         });
-      </script>
-      <script>
-          console.log("%c ","background:url(https://cdn.jsdelivr.net/gh/shiwei11/blog/images/shivi.jpg) no-repeat center;padding-left:600px;padding-bottom:304px;background-size: 40%;");
+        console.log("%c ","background:url(https://cdn.jsdelivr.net/gh/shiwei11/blog/images/shivi.jpg) no-repeat center;padding-left:600px;padding-bottom:304px;background-size: 40%;");
+        const messages=['Yo Yo Yo, 148-3369, representing the ABQ,what up bitaaaaaaaaa?Leave it at the shiwivi.me.',
+        '在吗？在干嘛？吃饭了嘛？多喝烫水',
+        '我们已经是好友了，现在可以一起来聊天了',
+        '长的好看的先说话',
+        '扣1给博主添堵',
+        '老爹古董店,有事请留言',
+        '有事请留言，幼儿园还没放学',
+        '在这里提交网址进行举报(ಡωಡ)',
+        '想象一下，多年以后你结婚了，小孩很烦，对象很无趣，生活的压力围绕着你，想从楼上跳下去又不敢，那个时候，你会不会后悔今天没有在下面发一句，在吗？',
+        '你说，我听着呢~',
+        '临表涕零，不知所言?',
+        '除了英俊其他没什么好说的',
+        'C语言天下第一！(该语句由JavaScript负责解析)',
+        '地球在转圈，小猫在午睡',
+        '手在键盘敲很轻,我给的思念很小心',
+        '博主是靓仔(此条5毛)',
+        '不要话只说一',
+        '咱也不敢问，咱也不敢说',
+        '开黑回复1,干饭回复2,bug回复3,闲聊回复4,续火回复5,续草回复6,其他请细嗦',
+        '没有及时回复就是在码代码，一直没回复就是码傻了',
+        '如果我没有及时回复，那就是我没在电脑旁边，请你立刻猛击你的显示器直到它冒烟为止，烟飘过来了我会马上回复'];
+        let wlEditor=document.querySelector('.wl-editor');
+        if(wlEditor){
+            function modifyText(){
+            wlEditor.setAttribute('placeholder',messages[Math.floor(Math.random()*messages.length)])
+        }
+        modifyText();
+        wlEditor.onblur=function(){
+            modifyText();
+        };
+        document.querySelector('.wl-nick').setAttribute('placeholder','起个昵称吧(选填，默认匿名)');
+        document.querySelector('.wl-mail').setAttribute('placeholder','您的漂流瓶扔哪？(选填)');
+        document.querySelector('.wl-link').setAttribute('placeholder','您的个人网站地址(选填)');
+
+        }
           let menu=document.querySelector('.menu');
           window.onscroll=function(){
               menu.classList.add('menuCss2');
@@ -338,17 +383,17 @@ width: 80%;
                 menu.classList.remove('menuCss2');
               }
           }
-        let mr=document.querySelector('.menu-right');
+        let menuRight=document.querySelector('.menu-right');
         let btn=document.querySelector('.button');
-        let bl=true;
-          mr.onclick=function(){
-            if(bl){
+        let btnBool=true;
+        menuRight.onclick=function(){
+            if(btnBool){
                   btn.style.height='40vh';
-                  bl=false;
+                  btnBool=false;
               }
               else{
                 btn.style.height='0px';
-                bl=true;
+                btnBool=true;
               }
           }
           window.onresize=function(){
