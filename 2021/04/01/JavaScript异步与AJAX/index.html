@@ -1,0 +1,655 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="SHIWIVI"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let texts=document.querySelector('.text').querySelectorAll('span');let timer=setInterval(()=>{texts.forEach((item)=>{item.classList.toggle("dance")})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script><title>SHIWIVI-文章</title>
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
+
+<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="/blog/css/article.css">
+<link rel="stylesheet" href="/blog/css/atelier-cave.min.css">
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="SHWIVI's blog" type="application/atom+xml">
+</head>
+<body>
+<div class="nav">
+    <div class="card">
+        <div class="head">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
+        </div>
+        <div class="cardText">
+            <p>(ー`´ー)</p>
+            <p>那不是bug，是彩蛋</p>
+        </div> 
+    </div>
+    <ul class="label">
+        
+        <li><a href="/blog/index.html">首页</a></li>
+        
+        <li><a href="/blog/life">日常</a></li>
+        
+        <li><a href="/blog/record">一句</a></li>
+        
+        <li><a href="/blog/message">留言</a></li>
+        
+        <li><a href="/blog/about">关于</a></li>
+          
+    </ul>
+        <ul class="tag">
+            <li>#Document</li>
+            <li>#Java</li>
+            <li>#css</li>
+            <li>#Life</li>
+            <li>#Lua</li>
+            <li>#PCB</li>
+            <li>#Shell</li>
+            <li>#C</li>
+            <li>#html</li>
+            <li>#硬件</li>
+            <li>#javaScript</li>
+            <li>#Firewall</li>
+            <li>#Security</li>
+            <li><a href="/blog/tags/Linux" target="_blank">#Linux</a></li>
+            <li>#Python</li>
+            <li>#Serve</li>
+            <li>#Web</li>
+        </ul>
+    <div class="rsstag"><a href="/blog/atom.xml"><span class="iconfont icon-rss"></span>RSS订阅</a></div>
+<div class="flower">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84.6px" height="70.5px" viewBox="0 0 254 212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>窗</title>
+<desc>Created with Sketch.</desc>
+<defs></defs>
+<g id="植物" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Artboard" transform="translate(-885.000000, -503.000000)">
+        <g id="植物-紫色盆" transform="translate(882.000000, 500.000000)">
+            <ellipse id="Oval-12" fill="#B3B7C7" cx="140.5" cy="137" rx="39.5" ry="6"></ellipse>
+            <g id="Group-5">
+                <path d="M131.5,149 C137.746054,149 138.400559,136.953074 140.297813,118.503702 C141.504079,106.77367 149.145158,88.1140929 147,75 C142.297813,46.2539062 153.271934,32.5660626 150.170125,19.4282488 C148.031314,10.3692495 142.862042,3 131.5,3 C123.603887,3 113.698654,6.59314895 110.722909,11.2157433 C103.206874,22.8913341 114,46.5137576 114,75 C114,90.4435309 122.495151,106.751425 123.699377,118.476362 C125.595832,136.941172 125.250862,149 131.5,149 Z" id="Oval-11" fill="#BAC4F6"></path>
+                <path d="M135.5,146.5 C132.598908,121.877878 130.965369,104.566553 130.599381,94.5660242 C130.050399,79.5652312 132.963841,77.0580598 132.164069,55.3464601 C131.630888,40.8720602 130.242865,30.4232402 128,24" id="Line-15" stroke="#FFFFFF" stroke-width="2" opacity="0.800892857" stroke-linecap="square"></path>
+                <path d="M77.0442201,163.336077 C84.2239219,163.336077 101.067658,131.237823 101.067658,92.025606 C101.067658,52.8133888 90.9057581,-2.32627732 72.6560979,17.2440872 C50.0508064,41.4852946 69.5871262,36.5862429 74.0442201,63.8595149 C75.572858,73.2133576 77.0442201,94.5993942 77.0442201,104.613421 C77.0442201,143.825638 69.8645184,163.336077 77.0442201,163.336077 Z" id="Oval-9" fill="#BAC4F6" transform="translate(81.510722, 88.251316) rotate(-43.000000) translate(-81.510722, -88.251316) "></path>
+                <path d="M42.5,50.5 C47.5132933,48.8699207 59.3816332,57.6317857 78.1050199,76.785595 C96.8284065,95.9394043 113.960067,116.844206 129.5,139.5" id="Line-17" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M155.281006,152.144255 C162.116643,152.144255 178.153197,121.584207 178.153197,84.2511084 C178.153197,72.6051871 184.354199,51.8242671 182.531201,39.8465879 C178.51025,13.4276595 163.058175,0.233079666 151.10317,13.0532528 C129.581164,36.1327785 143.297279,29.7382802 147.540781,55.7045685 C148.996164,64.6101585 153.500382,80.3852665 153.500382,89.9194035 C153.500382,127.252502 148.445368,152.144255 155.281006,152.144255 Z" id="Oval-9-Copy-2" fill="#E9EDFD" transform="translate(161.092971, 80.123972) scale(-1, 1) rotate(-20.000000) translate(-161.092971, -80.123972) "></path>
+                <path d="M180.5,34.5 C181.290102,21.4892162 175.746138,28.9223292 163.868108,56.7993391 C157.546037,71.6368512 150.532373,85.3308057 144.827114,101.881203 C141.023608,112.914801 138.581237,128.787733 137.5,149.5" id="Line-20" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M60.3426107,183.894782 C69.2498271,183.894782 90.1463498,156.072081 90.1463498,122.083011 C90.1463498,88.0939419 67.5408019,29.4364067 54.8986583,57.2625442 C45.0326912,78.978146 51.0912584,74.0282851 56.6207779,97.6687014 C58.5172227,105.776593 67.8616068,124.363423 67.8616068,133.043561 C67.8616068,167.032631 51.4353942,183.894782 60.3426107,183.894782 Z" id="Oval-9-Copy" fill="#BAC4F6" transform="translate(69.895982, 116.944107) rotate(-71.000000) translate(-69.895982, -116.944107) "></path>
+                <path d="M24.5,109.5 C22.4991751,103.669523 35.0833631,105.49608 62.2525641,114.979669 C79.4278854,120.974828 92.103247,119.378882 106.278649,126.191831 C111.777518,128.834684 120.517968,134.937407 132.5,144.5" id="Line-19" stroke="#FFFFFF" stroke-width="2" opacity="0.595424107" stroke-linecap="square"></path>
+                <path d="M169.495543,159.559977 C178.40276,159.559977 199.299282,131.737276 199.299282,97.7482062 C199.299282,85.7856682 202.004463,66.329956 197.824033,53.1018748 C190.126639,28.745108 172.2443,14.8950801 164.051591,32.9277389 C154.185624,54.6433407 160.244191,49.6934798 165.77371,73.3338961 C167.670155,81.4417878 177.014539,100.028618 177.014539,108.708756 C177.014539,142.697825 160.588327,159.559977 169.495543,159.559977 Z" id="Oval-9-Copy-3" fill="#BAC4F6" transform="translate(179.479352, 92.134636) scale(-1, 1) rotate(-43.000000) translate(-179.479352, -92.134636) "></path>
+                <path d="M213.5,60.5 C209.183273,60.8948914 201.740861,65.4428024 191.172763,74.1437328 C175.320617,87.1951284 177.797205,83.2393994 161.560337,103.262986 C150.735758,116.612043 142.715646,131.024381 137.5,146.5" id="Line-21" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M81.1425752,168.630026 C85.1025169,165.536181 98.2051544,147.96348 98.2051544,111.236918 C98.2051544,74.5103552 86.0176544,46.7369177 70.0176544,46.7369177 C54.0176544,46.7369177 59.5351666,70.3889964 66.8400325,93.0530589 C69.6371249,101.731312 78.9791535,122.814465 81.0032985,132.88325 C84.2653955,149.110029 78.6989273,170.539213 81.1425752,168.630026 Z" id="Oval-10" fill="#E9EDFD" transform="translate(78.936475, 107.743055) rotate(-52.000000) translate(-78.936475, -107.743055) "></path>
+                <path d="M39.5,84.5 C46.5402399,84.832105 55.9862242,87.7506309 67.8379528,93.2555776 C85.6155457,101.512998 79.9127462,96.6348296 100.298442,112.739947 C113.888906,123.476691 125.956092,135.063376 136.5,147.5" id="Line-18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M194.823347,177.534556 C197.785465,175.220296 209.085075,165.125173 213.530819,146.109724 C215.496552,137.701844 211.555235,124.000271 211.555235,111.853141 C211.555235,72.2337887 199.639103,43.8487815 182.378853,43.8487815 C165.118604,43.8487815 168.053621,58.2764613 175.933859,82.7256721 C183.814096,107.174883 191.693317,118.61017 193.876895,129.472028 C197.395933,146.976919 192.187224,179.594121 194.823347,177.534556 Z" id="Oval-10-Copy-2" fill="#E9EDFD" transform="translate(191.881132, 110.738214) scale(-1, 1) rotate(-52.000000) translate(-191.881132, -110.738214) "></path>
+                <path d="M237.5,84.5 C231.839918,82.6252532 222.387737,84.7837206 209.143456,90.9754021 C189.277034,100.262925 198.344222,96.9653923 174.587666,113.911421 C158.749962,125.208774 147.387407,137.071634 140.5,149.5" id="Line-22" stroke="#FFFFFF" stroke-width="2" opacity="0.785044643" stroke-linecap="square"></path>
+                <path d="M102.095097,154.049614 C106.979303,150.233654 123.140143,128.559423 123.140143,83.2607523 C123.140143,37.9620813 108.108037,3.70622602 88.3735811,3.70622602 C68.639125,3.70622602 75.4444439,32.8787829 84.4542911,60.8327171 C87.9042347,71.5365054 99.4267255,97.5405402 101.923313,109.959415 C105.946795,129.97358 99.0810936,156.404412 102.095097,154.049614 Z" id="Oval-10-Copy" fill="#E9EDFD" transform="translate(99.374086, 78.951409) rotate(-21.000000) translate(-99.374086, -78.951409) "></path>
+                <path d="M70.5,27.5 C77.9697854,36.2141564 84.664658,44.2949462 90.5846178,51.7423694 C99.4645574,62.9135043 102.309139,65.8595669 108.078018,74.773869 C113.846897,83.6881711 108.232283,69.1486166 118.500716,94.8794382 C125.346337,112.033319 129.012765,128.573507 129.5,144.5" id="Line-16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M193.001521,189.153265 C198.929205,189.153265 212.83568,162.652399 212.83568,130.278124 C212.83568,97.9038493 204.210737,49.7003434 189.378612,68.5372278 C174.540517,87.3816949 180.150684,86.5530431 183.830536,109.070321 C185.092606,116.793013 193.001521,132.403088 193.001521,140.670839 C193.001521,173.045114 187.073837,189.153265 193.001521,189.153265 Z" id="Oval-9-Copy-4" fill="#BAC4F6" transform="translate(196.248002, 126.727326) scale(-1, 1) rotate(-73.000000) translate(-196.248002, -126.727326) "></path>
+                <path d="M234.5,116.5 C229.435614,115.997419 220.043174,117.148484 206.322678,119.953197 C185.741934,124.160265 185.201799,123.9696 168.145826,131.063968 C156.775178,135.793546 148.226569,140.93889 142.5,146.5" id="Line-23" stroke="#FFFFFF" stroke-width="2" opacity="0.733426339" stroke-linecap="square"></path>
+            </g>
+            <g id="Group-4" transform="translate(101.000000, 137.000000)">
+                <path d="M0,0 C11.7955729,2 24.5052083,3 38.1289062,3 C51.7526042,3 65.3763021,2 79,0 L71.2109375,75.3409091 C61.9375,77.1136364 51.8945312,78 41.0820312,78 C30.2695313,78 19.4570312,77.1136364 8.64453125,75.3409091 L0,0 Z" id="Rectangle-9" fill="#FCDCCF"></path>
+                <path d="M59.2621996,2.19791001 C63.6483775,1.86496527 70.2276443,1.1323286 79,0 L71.2109375,75.3409091 C63.3055851,76.5844933 57.2271178,77.3450382 52.9755357,77.6225437 L59.2621996,2.19791001 Z" id="Rectangle-9" fill="#ECC6B6"></path>
+                <path d="M0,0 C10.9588352,1.33333333 23.3572727,2 37.1953125,2 C51.0333523,2 64.9682481,1.33333333 79,0 L76.7909585,21.3672948 L40.573652,23.0934676 L2.38711382,20.8047516 L0,0 Z" id="Rectangle-9" fill="#F3B096"></path>
+            </g>
+        </g>
+    </g>
+</g>
+</svg>
+</div>
+
+</div>
+<div class="menuBtn closed"> 
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+</div>
+<div class="nightSky"><!--当关闭夜间背景模式时，子元素将在一段延时后才会被清除--></div>
+<div class="main">
+    <div class="msg">
+        <div class="msgText"></div>
+        <div class="msgBar"></div>
+    </div>
+    <div class="motto">
+        <p> //sunny forever<br />
+            while(life&lt;end){<br />
+               love++;<br />
+               beAwesome :)} </p>
+     </div>
+     <div class="mainContent">
+    <div class="canvasWrapper"></div>
+<div class="setWrapper">
+    <ul class="setMenu">
+        <div id="setBtn" class="setButton"><</div>
+        <li class="searchContainer">
+            <input id="searchInput" class="localSearch" placeholder="搜索..." type="search" >
+            <span class="searchIco"></span>
+        </li>
+        <li id="toggleItem">
+        主题：<span class="itemIco sun"></span>
+        </li>
+        <li class="setSize">
+            <span id="increaseFontSize">+</span>
+            <span class="fontSizeNum"></span>
+            <span id="reduceFontSize">-</span>
+        </li>
+        <li id="clearBack">清除背景</li>
+        <li id="disableBack">禁用背景</li>
+    </ul> 
+</div>
+    <div class="resultContainer">
+        <div id="searchResult" class="displayResult"></div>
+    </div>
+    <div class="tocWrapper"><div class="tocBtn">目 录</div><div class="tocBox"><!--tocBox用于容纳生成在toc外的目录--><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="toc-number">1.</span> <span class="toc-text">迭代器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8%E7%9A%84%E9%81%8D%E5%8E%86"><span class="toc-number">2.</span> <span class="toc-text">迭代器的遍历</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%81%8D%E5%8E%86%E5%AF%B9%E8%B1%A1"><span class="toc-number">3.</span> <span class="toc-text">自定义遍历对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E6%88%90%E5%99%A8%E5%87%BD%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">生成器函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#yield%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">4.1.</span> <span class="toc-text">yield关键字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#next-%E6%96%B9%E6%B3%95%E4%BC%A0%E5%8F%82"><span class="toc-number">4.2.</span> <span class="toc-text">next()方法传参</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%82%E6%AD%A5%E8%B0%83%E7%94%A8"><span class="toc-number">4.3.</span> <span class="toc-text">异步调用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Promise"><span class="toc-number">5.</span> <span class="toc-text">Promise</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Promise%E5%AF%B9%E8%B1%A1"><span class="toc-number">5.1.</span> <span class="toc-text">Promise对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B%E5%8C%96"><span class="toc-number">5.2.</span> <span class="toc-text">实例化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#API"><span class="toc-number">5.3.</span> <span class="toc-text">API</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B"><span class="toc-number">5.3.1.</span> <span class="toc-text">执行流程</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">5.3.2.</span> <span class="toc-text">构造函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E8%8E%B7%E5%8F%96Promise%E5%AF%B9%E8%B1%A1"><span class="toc-number">5.3.3.</span> <span class="toc-text">快速获取Promise对象</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9Promise%E7%8A%B6%E6%80%81%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">5.3.4.</span> <span class="toc-text">修改Promise状态的方法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%89%A7%E8%A1%8C%E5%A4%9A%E4%B8%AA%E5%9B%9E%E8%B0%83"><span class="toc-number">5.3.5.</span> <span class="toc-text">执行多个回调</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#then-%E6%96%B9%E6%B3%95%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="toc-number">5.3.6.</span> <span class="toc-text">then()方法返回值</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8"><span class="toc-number">5.3.7.</span> <span class="toc-text">链式调用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%BC%82%E5%B8%B8%E7%A9%BF%E9%80%8F"><span class="toc-number">5.3.8.</span> <span class="toc-text">异常穿透</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%AD%E6%96%ADPromise%E9%93%BE"><span class="toc-number">5.3.9.</span> <span class="toc-text">中断Promise链</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#async%E4%B8%8Eawait"><span class="toc-number">6.</span> <span class="toc-text">async与await</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#async%E5%87%BD%E6%95%B0"><span class="toc-number">6.1.</span> <span class="toc-text">async函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#await%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">6.2.</span> <span class="toc-text">await表达式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AJAX"><span class="toc-number">7.</span> <span class="toc-text">AJAX</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">7.1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#XMLHttpRequest%E5%AF%B9%E8%B1%A1"><span class="toc-number">7.2.</span> <span class="toc-text">XMLHttpRequest对象</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#XMLHttpRequest%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95"><span class="toc-number">7.3.</span> <span class="toc-text">XMLHttpRequest对象方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#XMLHttpRequest%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7"><span class="toc-number">7.4.</span> <span class="toc-text">XMLHttpRequest对象属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%91%E8%B5%B7%E8%AF%B7%E6%B1%82"><span class="toc-number">7.5.</span> <span class="toc-text">发起请求</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%91%E8%B5%B7get%E8%AF%B7%E6%B1%82"><span class="toc-number">7.5.1.</span> <span class="toc-text">发起get请求</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%91%E8%B5%B7post%E8%AF%B7%E6%B1%82"><span class="toc-number">7.5.2.</span> <span class="toc-text">发起post请求</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#JQuery%E4%B8%AD%E7%9A%84Ajax"><span class="toc-number">7.6.</span> <span class="toc-text">JQuery中的Ajax</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%91%E8%B5%B7get%E8%AF%B7%E6%B1%82-1"><span class="toc-number">7.6.1.</span> <span class="toc-text">发起get请求</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%91%E8%B5%B7post%E8%AF%B7%E6%B1%82-1"><span class="toc-number">7.6.2.</span> <span class="toc-text">发起post请求</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#get%E4%B8%8Epost%E9%80%9A%E7%94%A8"><span class="toc-number">7.6.3.</span> <span class="toc-text">get与post通用</span></a></li></ol></li></ol></li></ol></div></div>
+        <div class="article">
+        <h1 class="title">JavaScript异步与AJAX</h1>
+        <div class="art_infor">
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：14456</span>
+            <span><span class="iconfont icon-riqi"></span>写于：2021-04-01</span></div>
+            <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2021-04-01</span>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您42分钟</span></div>
+        </div>
+        <div class="art_content">
+        <div class="broadcast color-yellow">
+<div class="iconfont icon-dengpao14hao"></div>
+文中所声明对象和语法基于javaScript</div>
+
+
+<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><p>迭代器(iterator)是一种可以为各种不同的数据结构提供统一遍历操作的接口，JAVA、C++、Python、PHP等很多语言都有迭代器的概念，对象只要部署了iterator接口，就可以进行遍历操作(如用for语句进行遍历)。</p>
+<h3 id="迭代器的遍历"><a href="#迭代器的遍历" class="headerlink" title="迭代器的遍历"></a>迭代器的遍历</h3><p>迭代器遍历的原理是这样的：</p>
+<ol>
+<li>创建一个指针对象，指向当前数据结构的起始位置;</li>
+<li>调用指针对象的next方法，指针指向数据结构的第一个成员;</li>
+<li>重复调用next方法，指针后移动，直至指向最后一个成员;</li>
+</ol>
+<p>以最常见的遍历数组为例：我们可以用for…of等语句对其进行遍历，是因为数组中原生内置了iterator接口。</p>
+<pre><code> const songs=['夜曲','手写的从前','反方向的钟','晴天','最长的电影'];
+    console.log(songs);</code></pre>
+    <img data-src="/blog/images/iterator01.jpg" src="#" alt="iterator接口">
+<p>按照其原理，先定义一个对象来获取该Symbol.iterator属性，找到该对象中包含的next方法。调用这个next()方法，它会返回一个包含done和value属性的对象。</p>
+<pre><code>const songs=['夜曲','手写的从前','最长的电影','晴天','明明就'];
+        // console.log(songs);
+        let iterator=songs[Symbol.iterator]();
+        console.log(iterator);
+        console.log(iterator.next());</code></pre>
+        <img data-src="/blog/images/iterator02.jpg" src="#" alt="iterator中的next方法">
+<p>重复调用next()方法，该方法会依次遍历数组成员并返回多个包含done和value属性的对象，遍历完数组后，再返回一个done属性值为true,value属性值为undefined的对象，表示数组遍历结束。</p>
+<img data-src="/blog/images/iterator03.jpg" src="#" alt="遍历结束">
+<p>在JavaScript中，原生自带iterator接口的数据结构有：<br/>
+<span class="tips">Array</span>、<span class="tips">Map</span>、<span class="tips">Set</span>、<span class="tips">String</span>、<span class="tips">TypedArray</span>、<span class="tips">函数的 arguments 对象</span>、<span class="tips">NodeList 对象</span>
+</p>
+
+<h3 id="自定义遍历对象"><a href="#自定义遍历对象" class="headerlink" title="自定义遍历对象"></a>自定义遍历对象</h3><p>对于没有内置iterator接口的数据结构，可以仿照其原理，手写一个iterator接口，并且自定义需要遍历或者允许被遍历的内容。</p>
+<p>按照其原理，添加iterator接口的步骤分为:</p>
+<ol>
+<li>添加Symbol.iterator属性,它是以一个函数的形式包含；</li>
+<li>在其中添加next()方法;</li>
+<li>next()方法会依次返回一个包含done和value属性的对象；</li>
+<li>如果遍历结束，则返回一个done属性值为true,value属性值为undefined的对象;</li>
+</ol>
+完整代码：
+<pre><code> //遍历输出对象的songs属性
+        const Rapper=&#123;
+            name:'王以太',
+            shows:['Chengdu','Hangzhou','Shenzhen'],
+            songs:['三思而后行','阿司匹林','童言无忌','目不转睛','人间天堂'],
+            [Symbol.iterator]()&#123;
+                let index=0;//索引号
+                return&#123;
+                    next: ()=>&#123;
+                        if(index< this.songs.length)&#123;
+                            const result=&#123;
+                                value:this.songs[index],
+                                done:false&#125;;
+                                index++;
+                                return result;
+                            &#125;
+                            else&#123;
+                                return&#123;
+                                    value:undefined,
+                                    done:true
+                                &#125;
+                            &#125;
+                        &#125;
+                    &#125;
+                &#125;
+            &#125;;
+          //遍历输出
+        for(let m of Rapper)&#123;
+        console.log(m);
+    &#125;
+</code></pre>
+<div class="broadcast color-pink">
+<div class="iconfont icon-yinle1"></div>
+python、C++写个类似的接口也很简单，不过对复杂点的数据结构比较麻烦</div>
+
+<h3 id="生成器函数"><a href="#生成器函数" class="headerlink" title="生成器函数"></a>生成器函数</h3><p>生成器函数允许我们定义一个包含自有迭代算法的函数，返回一种称为 Generator 的迭代器，生成器函数需要使用<span class="tips">function *</span>语法声明</p>
+<div class="show"> function * gen(){
+            console.log("执行生成器");
+        }
+        const g=gen();//返回一个名为Generator的迭代器，但不执行console.log语句
+        console.log(g);
+        g.next();//需要执行迭代器的next的方法才会执行生成器，才开始执行生成器中的console.log语句
+</div>
+
+<h4 id="yield关键字"><a href="#yield关键字" class="headerlink" title="yield关键字"></a>yield关键字</h4><p>yield 关键字用于生成器函数的暂停和恢复，当执行Generator迭代器的next()方法时，开始执行生成器中的代码，一旦遇到 yield 表达式，生成器的代码将被暂停运行，直到生成器的 next() 方法再次被调用，暂停时yield 关键字后面的表达式的值返回给生成器的调用者，类似于一个基于生成器的版本的 return 关键字</p>
+<p><span class="strong">[rv] = yield [expression];</span></p>
+<ul>
+<li>rv 返回传递给生成器的 next() 方法的可选值，以恢复其执行</li>
+<li>expression:定义通过迭代器协议从生成器函数返回的值。如果省略，则返回 undefined</li>
+</ul>
+<div class="show">function * gen(){
+    console.log("第一次执行");
+    yield 111;
+    console.log("第二次执行");
+    yield 222;
+    console.log("第三次执行");
+    yield 333;
+    console.log("第四次执行");
+    yield 444;
+}
+const iterator=gen();
+console.log(iterator.next());//第一次执行next()方法，输出"第一次执行"，并返回第一个yield表达式的值111
+iterator.next();//第二次执行next()方法，执行到第二个yield表达式为止
+iterator.next();
+iterator.next();</div>
+
+<h4 id="next-方法传参"><a href="#next-方法传参" class="headerlink" title="next()方法传参"></a>next()方法传参</h4><p> next() 方法接受一个参数用于修改生成器内部状态，传递给 next() 的参数值会被 yield 接收。传递给第一个 next() 的值会被忽略，而传递给第二个 next() 的值会被第一个 yield 接收，依此类推</p>
+<div class="show">function * gen(arg){
+    console.log(arg);//生成器函数本身的实参
+    let first=yield 111;
+    console.log(first);//"BBB"
+    let second=yield 222;
+    console.log(second);//"CCC"
+    let third=yield 333;
+    console.log(third);//"DDD"
+    yield 444;
+}
+const iterator=gen("生成器实参");
+iterator.next();//第一个 next() 的实参会被忽略，不传参
+iterator.next("BBB");
+iterator.next("CCC");
+iterator.next("DDD");</div>
+
+<h4 id="异步调用"><a href="#异步调用" class="headerlink" title="异步调用"></a>异步调用</h4><p>由于生成器函数每次执行到yield语句就会暂停，利用这个特性我们可以进行对资源的异步顺序加载，</p>
+<div class="show">实现：先加载"用户数据"，等待"用户数据"加载完毕再加载"订单数据"，最后加载"商品数据"，案列使用定时器模拟异步环境
+function getUsers(){
+    setTimeout(()=>{
+        let user="用户数据";
+        iterator.next(user);//加载完的数据通过next()方法传给生成器函数，并开始加载下一项数据
+    },1000)
+}
+function getOrders(){
+    setTimeout(()=>{
+        let order="订单数据";
+        iterator.next(order);
+    },1000)
+}
+function getGoods(){
+    setTimeout(()=>{
+        let goods="商品数据";
+        iterator.next(goods);
+    },1000)
+}
+function * gen(){
+    let users=yield getUsers();
+    console.log(users);//处理数据
+    let order=yield getOrders();
+    console.log(order);
+    let goods=yield getGoods();
+    console.log(goods);
+}
+const iterator=gen();
+iterator.next();//初次执行next()方法
+</div>
+
+<h3 id="Promise"><a href="#Promise" class="headerlink" title="Promise"></a>Promise</h3><p>Promise是ES6新增的异步编程解决方案，用于封装异步任务，并且可以根据异步任务的成功/失败，对结果和数据进行灵活处理，此外，Promise支持链式调用，能很好地解决回调地狱问题</p>
+<h4 id="Promise对象"><a href="#Promise对象" class="headerlink" title="Promise对象"></a>Promise对象</h4><p>Promise本质上是一个函数返回的对象，代表了一个异步操作的成功或者失败，该对象中有两个关键属性：<span class="tips">PromiseState</span>和<span class="tips">PromiseResult</span></p>
+<p><span class="strong">PromiseState</span> 即Promise的状态，Promise有三种状态:</p>
+<ul>
+<li>pending 未决定的</li>
+<li>resolved/fulfilled 决定的,符合的(成功)</li>
+<li>rejected 拒绝的(失败)</li>
+</ul>
+<p>该属性只能被修改一次，并且修改完毕后也只有一个结果(resolved或rejected)和结果数据</p>
+<p><span class="strong">PromiseResult</span>即Promise封装的异步任务成功/失败的结果数据，只能通过<span class="tips">resolve()</span>或<span class="tips">reject()</span>函数修改，并且可以传递给<span class="tips">then()</span>方法，Promise成功时结果数据一般使用value为实参名，失败则使用reason作为实参名</p>
+<h4 id="实例化"><a href="#实例化" class="headerlink" title="实例化"></a>实例化</h4><p>使用<span class="tips">new</span>关键字进行实例化，实例化时接收一个函数类型的参数，该函数又接收两个函数类型的形参，<span class="tips">resolve()</span>用于异步任务执行成功时调用，<span class="tips">reject()</span>用于异步任务执行失败时调用</p>
+<div class="show"><span class="strong" style="white-space:pre;">const p=new Promise((resolve,reject)=>{
+                        //封装异步任务
+                         if(异步任务执行成功){
+                            resolve(data);
+                        }
+                        else{
+                            reject(data);
+                     }
+            });</span></div>
+
+
+<p>当resolve被调用后，Promise状态会被修改为成功，随后执行<span class="tips">then()</span>方法的第一个回调函数。reject则会将Promise状态会被修改为失败，随后执行<span class="tips">then()</span>方法的第二个回调函数</p>
+<div class="show"><span class="strong" style="white-space:pre;">p.then((value)=>{
+            //Promise状态为成功时执行
+    },(reason)=>{
+            //Promise状态为失败时执行
+});</span></div>
+<div class="show"><span class="strong" style="white-space:pre;">p.catch(resaon=>{
+            //只会在Promise状态为失败时执行
+});</span></div>
+此外，Promise状态为失败时也可以使用<span class="tips">catch()</span>方法，该方法被单独封装用于处理失败情况，底层依旧调用了then()方法
+
+<h4 id="API"><a href="#API" class="headerlink" title="API"></a>API</h4><h5 id="执行流程"><a href="#执行流程" class="headerlink" title="执行流程"></a>执行流程</h5><p>通过new创建Promise对象，对象初始状态为pending状态，然后执行内部的异步操作，执行成功则调用resolve()函数，将Promise对象状态修改为resolved状态，此时如果调用了then()方法，则将执行then()方法中的第一个回调函数，执行完该回调函数后返回一个新的promise()对象。如果异步任务执行失败，则调用reject()函数，将Promise对象状态修改为rejected状态，此时如果调用了then()方法，则将执行then()方法中的第二个回调函数，执行完该回调函数后返回一个新的promise()对象</p>
+<h5 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h5><p>Promise((excutor){})<br>该构造函数接收一个执行器函数，内部定义了resolve()和reject()函数，这两个函数不属于Promise对象内部，执行器函数会在对象创建后立即执行(同步调用)</p>
+<h5 id="快速获取Promise对象"><a href="#快速获取Promise对象" class="headerlink" title="快速获取Promise对象"></a>快速获取Promise对象</h5><p>以下方法属于Promise函数对象，可以直接调用</p>
+<ul>
+<li>Promise.resolve(value)<br>value可以为任意类型的数据，或者一个Promise对象<br>返回一个成功的Promise对象，但如果传入了一个Promise对象，则其状态取决于传入对象的状态，如果传入的Promise对象为成功，则返回的对象也为成功状态，反之亦然。该方法用于快速将一个数据转换为一个状态为成功的Promise对象<div class="show">
+const p1=Promise.resolve(100);//
+const p2=Promise.resolve(new Promise((resolve,reject)=>{
+  reject();//由于传入的Promise对象状态为rejected，依次p2也为rejected状态
+}))
+</div></li>
+</ul>
+<ul>
+<li><p>Promise.reject(value)<br>永远返回一个rejected状态的Promise对象，即便传入的值是成功状态的Promise</p>
+</li>
+<li><p>Promise.all(promise[])<br>参数为一个Promise数组，只有当该数组中的所有Promise对象状态都为resolved时，该方法才返回一个resolve状态的Promise对象，且该对象的PromiseResult为数组中的Promise对象成功结果组成的数组。如果该数组中有任意一个Promise对象状态为rejected，则该方法返回的Promise对象状态将修改为rejected，且该对象的PromiseResult为数组中第一个失败成员的返回的PromiseResult</p>
+<div class="show">let p1=Promise.resolve(123)
+      let p2=Promise.reject("aaa")
+      let p3=Promise.reject({test:0})
+      let p=Promise.all([p1,p2,p3]);
+      console.log(p);//p对象的PromiseResult为"aaa"
+      
+<pre><code>  p2.catch(reason=&gt;&#123;&#125;);
+  p3.catch(reason=&gt;&#123;&#125;);
+  p.catch(reason=&gt;&#123;&#125;);&lt;/div&gt;
+</code></pre>
+</li>
+</ul>
+<p>否则返回一个rejected状态的Promise</p>
+<ul>
+<li>Promise.race(promise[])<br>参数为一个Promise数组，该方法返回的Promise对象的状态取决中传入数组中第一个执行完异步任务的Promise对象状态，且值也为其PromiseResult</li>
+</ul>
+<h5 id="修改Promise状态的方法"><a href="#修改Promise状态的方法" class="headerlink" title="修改Promise状态的方法"></a>修改Promise状态的方法</h5><ul>
+<li>resolve函数</li>
+<li>reject函数</li>
+<li>throw 函数</li>
+</ul>
+<h5 id="执行多个回调"><a href="#执行多个回调" class="headerlink" title="执行多个回调"></a>执行多个回调</h5><p>Promise允许指定多个回调，即可以指定多个then()方法</p>
+<div class="show">let p=new Promise((resolve,reject)=>{
+     resolve("go");
+});
+p.then(value=>{
+    console.log("第一个回调"+value);
+});
+p.then(value=>{
+    console.log("第二个回调"+value);
+});</div>
+
+<h5 id="then-方法返回值"><a href="#then-方法返回值" class="headerlink" title="then()方法返回值"></a>then()方法返回值</h5><p>then()方法会返回一个新的Promise对象，该对象的状态和值取决于then()方法所执行的回调函数</p>
+<ul>
+<li>如果该回调函数返回一个Promise对象，则then()方法返回的Promise对象状态与其相同</li>
+<li>如果该回调函数无return语句(默认返回undefined)，或者返回一个非Promise对象的值(如：返回字符串等)，则总是返回一个fulfilled状态的Promise</li>
+<li>如果该回调函数throw异常，则返回rejected状态的Promise对象</li>
+</ul>
+<div class="show">let p=new Promise((resolve,reject)=>{
+            resolve();
+        })
+        let result1=p.then(value=>{throw '异常'});//状态为rejected
+        let result2=p.then(value=>{return 'aaa'});//状态为fulfilled
+        let result3=p.then(value=>{
+            return new Promise((resolve,reject)=>{
+            reject('error');
+        })
+        });//状态为rejected
+</div>
+
+<h5 id="链式调用"><a href="#链式调用" class="headerlink" title="链式调用"></a>链式调用</h5><p>由于then()方法返回了一个新的Promise对象，因此该对象也可以调用then()方法，而该then()方法又返回一个新的Promise对象，又能调用then()方法，因此then()方法可以链式调用</p>
+<div class="show"> let p=new Promise((resolve,reject)=>{
+            resolve('success');
+        })
+        p.then(value=>{
+            console.log(value);//success
+        }).then(value=>{
+            console.log(value);//由于上一个then()无返回值，因此其返回的Promise对象的PromiseResult为undefined，因此输出undefined
+        })</div>
+
+<h5 id="异常穿透"><a href="#异常穿透" class="headerlink" title="异常穿透"></a>异常穿透</h5><p>当then()方法进行链式调用时，只需要在最后进行异常处理，前面的链式调用出现的任何异常，都会被传到最后处理异常的回调函数中进行处理(异常穿透特性)</p>
+<div class="show"> let p=new Promise((resolve,reject)=>{
+            resolve('success');
+        })
+        p.then(value=>{
+            console.log(value);
+            throw '异常'  //抛出异常
+        }).then(value=>{
+            console.log(value);//由于上一个Promise状态为rejected，then()方法第一个回调不执行
+        }).then(value=>{
+            console.log(value);//同上，不执行
+        }).then(value=>{
+            console.log(value);//同上，不执行
+        }).catch(reason=>{
+            console.warn(reason);//在链式最后进行异常处理
+        })</div>
+
+<h5 id="中断Promise链"><a href="#中断Promise链" class="headerlink" title="中断Promise链"></a>中断Promise链</h5><p>当then()方法进行链式调用时，如果想在某个节点中断Promise链，只需要在该节点返回一个<span class="tips">pending</span>状态的Promise对象，因为处于pending状态的Promise对象不会触发then()方法的执行，而其他任何返回值、异常抛出等操作都会使链式继续进行。注意：中断以后的Promise链，最后的异常捕获会依旧执行</p>
+<div class="show">let p=new Promise((resolve,reject)=>{
+            resolve('success');
+        })
+        p.then(value=>{
+            console.log(111);//输出111
+            throw 'error'
+        }).then(value=>{
+            return new Promise(()=>{});//返回pending状态的Promise对象
+        }).then(value=>{
+            console.log(222);//上一个Promise对象为pending状态，不执行then()方法
+        }).catch(reason=>{
+            console.warn(reason);//但由于异常穿透，该语句会继续执行
+        })</div>
+
+
+<h3 id="async与await"><a href="#async与await" class="headerlink" title="async与await"></a>async与await</h3><h4 id="async函数"><a href="#async函数" class="headerlink" title="async函数"></a>async函数</h4><p>async函数可以帮助我们用更简洁的方式写出基于 Promise 的异步行为，用于包裹await表达式，该函数会返回一个Promise对象，对象的状态取决于async函数的返回值：</p>
+<ul>
+<li>如果该函数无return语句(默认返回undefined)，或者返回一个非Promise对象的值(如：返回字符串等)，则返回一个fulfilled状态的Promise对象</li>
+<li>如果该函数返回一个Promise对象，则async函数返回的Promise对象状态与其相同</li>
+<li>如果该函数throw异常，则返回rejected状态的Promise对象</li>
+</ul>
+<h4 id="await表达式"><a href="#await表达式" class="headerlink" title="await表达式"></a>await表达式</h4><p>await表达式必须用async函数包裹，其右侧一般为Promise对象，也可以为其他值</p>
+<ul>
+<li>如果为其他值，则await返回值与其相同</li>
+<li>如果为Promise对象，则返回值为该对象fulfilled状态下的PromiseResult属性值</li>
+<li>如果为Promise对象，且状态为rejected，则必须用<span class="tips">try…catch</span>进行异常捕获处理</li>
+</ul>
+<div class="show"> async function main(){
+            try{
+                let result=await new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    resolve('success')
+                },1000)
+            })
+            console.log(result);
+            }
+            catch(e){
+                console.warn(e)
+            }
+        }
+        main();</div>
+
+<h3 id="AJAX"><a href="#AJAX" class="headerlink" title="AJAX"></a>AJAX</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>AJAX为Asynchronous JavaScript And XML的缩写，即异步 JavaScript 和 XML，用于更新数据，而不需要重载(刷新)整个页面</p>
+<h4 id="XMLHttpRequest对象"><a href="#XMLHttpRequest对象" class="headerlink" title="XMLHttpRequest对象"></a>XMLHttpRequest对象</h4><p>Ajax 需要依赖于 XMLHttpRequest 对象，主流浏览器都支持 XMLHttpRequest 对象，只需要new即可<br><span class="strong">let xmlhttp=new XMLHttpRequest();</span></p>
+<p>E5和IE6等低版本IE浏览器不支持XMLHttpRequest 对象，而需要使用ActiveX 对象，因此如果需要兼顾低版本IE浏览器，则需要做兼容性检查</p>
+<div class="show">var xmlhttp;
+       if (window.XMLHttpRequest) {
+            xmlhttp = new XMLHttpRequest();//主流浏览器
+ } else {
+         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");//低版本IE浏览器
+}</div>
+
+<h4 id="XMLHttpRequest对象方法"><a href="#XMLHttpRequest对象方法" class="headerlink" title="XMLHttpRequest对象方法"></a>XMLHttpRequest对象方法</h4><ul>
+<li><span class="strong">open(请求类型,url,async,user,psw)</span> 书写一个请求<blockquote>
+<blockquote>
+<ul>
+<li>请求类型：GET 或POST</li>
+<li>url为文件位置</li>
+<li>async：是否异步，值为true(异步)或 false(同步)</li>
+<li>user：用户名称(可选)</li>
+<li>psw: 用户密码(可选)</li>
+</ul>
+</blockquote>
+</blockquote>
+</li>
+<li><span class="strong">send()</span> 发送请求，用于GET请求</li>
+<li><span class="strong">send(string)</span>发送请求，用于POST请求</li>
+<li><span class="strong">abort()</span>取消当前请求</li>
+<li>setRequestHeader()  向要发送的报头添加标签/值对</li>
+<li>getResponseHeader()    返回特定的头部信息</li>
+<li>getAllResponseHeaders()    返回头部信息</li>
+</ul>
+<h4 id="XMLHttpRequest对象属性"><a href="#XMLHttpRequest对象属性" class="headerlink" title="XMLHttpRequest对象属性"></a>XMLHttpRequest对象属性</h4><ul>
+<li><span class="strong">onreadystatechange</span> 定义当 readyState 属性发生变化时被调用的函数</li>
+<li><span class="strong">readyState</span> 表示当前 XMLHttpRequest 的状态<blockquote>
+<blockquote>
+<ul>
+<li>0：UNSET，尚未调用open方法，请求未初始化，</li>
+<li>1：OPEND，open方法被调用，服务器连接已建立</li>
+<li>2：HEADERS_RECEIVED，send()方法被调用，请求已收到</li>
+<li>3：LOADING，正在处理请求，response属性已经包含部分数据</li>
+<li>4：DONW，请求已完成且响应已就绪</li>
+</ul>
+</blockquote>
+</blockquote>
+</li>
+<li>responseText    以字符串返回响应数据</li>
+<li>responseXML    以 XML 数据返回响应数据</li>
+<li>statusText    返回状态文本（比如 “OK” 或 “Not Found”）</li>
+<li>status        返回请求的状态号</li>
+</ul>
+<h4 id="发起请求"><a href="#发起请求" class="headerlink" title="发起请求"></a>发起请求</h4><h5 id="发起get请求"><a href="#发起get请求" class="headerlink" title="发起get请求"></a>发起get请求</h5><p>如果get请求需要携带参数，可以直接在URL地址后以键值对的形式拼接<span class="tips">查询字符串</span>，多个参数使用<span class="tips">&amp;</span>拼接</p>
+<div class="show">xhr.open('GET','http://shiwivi.me')</div>
+<div class="show">xhr.open('GET','http://shiwivi.me?id=1&author=shiwivi')</div>
+
+
+<div class="show"> let xhr=new XMLHttpRequest();
+    xhr.open('GET','http://shiwivi.me')
+    xhr.send();
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState===4&&xhr.status===200){
+            console.log(xhr.responseText)
+        }
+    }</div>
+
+
+
+<h5 id="发起post请求"><a href="#发起post请求" class="headerlink" title="发起post请求"></a>发起post请求</h5><p>AJAX发起post请求主要需要如下流程：</p>
+<ol>
+<li>创建xhr对象</li>
+<li>调用open()方法初始化请求</li>
+<li>设置content-type属性，指定请求头所含数据MIME类型为application/x-www-form-urlencoded，即进行了URL编码的二进制数据</li>
+<li>调用send()方法，并指定请求所需要包含的数据</li>
+<li>监听onreadystatechange事件</li>
+</ol>
+<div class="show">var xhr=new XMLHttpRequest();
+    xhr.open('POST','http://shiwivi.me');
+    xhr.setRequestHeader('content-Type','application/x-www-form-urlencoded')
+    xhr.send('id=1&author=shiwivi');
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState===4&&xhr.status===200){
+            console.log(xhr.responseText)
+        }
+    }</div>
+<div class="broadcast color-pink">
+<div class="iconfont icon-yinle1"></div>
+URL中只允许出现英文字母、数字、标点符号，在拼接查询字符串时，如果我们在URL中拼接了中文字符，或者其他被预定义的字符，则浏览器会对其进行URL编码，其中中文字符会被编码为%xx%xx%xx形式(x为16进制数)，JavaScript中可以使用encodeURI('字符串')对该字符串进行编码，使用decodeURI('%xx%xx')对该字符串进行解码</div>
+
+<h4 id="JQuery中的Ajax"><a href="#JQuery中的Ajax" class="headerlink" title="JQuery中的Ajax"></a>JQuery中的Ajax</h4><p>JQuery对XMLHttpRequest进行了封装</p>
+<h5 id="发起get请求-1"><a href="#发起get请求-1" class="headerlink" title="发起get请求"></a>发起get请求</h5><p><span class="strong">$.get(url,[data],[function(){…}])</span> 发起get请求</p>
+<ul>
+<li>url为请求地址，必须</li>
+<li>data为请求所携带的参数，非必须，参数也可以以查询字符串的形式拼接到URL后</li>
+<li>function可以指定请求成功执行的回调，非必须</li>
+</ul>
+<div class="show">$(function(){
+                $.get('http://shiwivi.me',function(res){
+                    console.log(res)//res用于接收返回的数据
+                })
+})</div>
+
+<div class="show">$.get('http://shiwivi.me',{id:1,author:''shiwivi},function(res){...})
+//等价于
+$.get('http://shiwivi.me?id=1&author=shiwivi',function(res){...})
+</div>
+
+<h5 id="发起post请求-1"><a href="#发起post请求-1" class="headerlink" title="发起post请求"></a>发起post请求</h5><p><span class="strong">$.post(url,[data],[function(){…}])</span> 发起post请求</p>
+<ul>
+<li>url为提交数据地址，必须</li>
+<li>data为所要提交的数据，非必须</li>
+<li>function可以指定请求成功执行的回调，非必须</li>
+</ul>
+<div class="show"> $(function(){
+             $.post('http://xxxx.com',{name:'shiwivi',type:'blog'},function(res){
+                    console.log(res)
+                })
+        })</div>
+
+<h5 id="get与post通用"><a href="#get与post通用" class="headerlink" title="get与post通用"></a>get与post通用</h5><p><span class="strong" style="white-space:pre;">$.ajax({<br>            type:’get/post/put/delete’,<br>            url:’’,<br>            data:{ },<br>            dataType:’html/text/json/xml/script/jsonp’,<br>            success:function(res,textStatus,jqXHR){ },<br>            error:function(jqXHR,textStatus,error){ }<br>})</span> </p>
+<ul>
+<li>type为请求方式，可选get/post/put/delete，默认get</li>
+<li>url为请求地址</li>
+<li>data为请求携带的数据</li>
+<li>dataType为请求数据类型</li>
+<li>success为请求成功执行的回调函数，参数依次为响应内容(根据dataType作了处理)、文本形式的响应状态、jqXHR对象(里面包含状态码等信息)</li>
+<li>error为请求失败执行的回调函数，参数依次为jqXHR对象、文本形式的错误信息(eg:error、timeout、abort)、捕获的异常对象(对于http请求为http状态的文本部分eg:Not Found)</li>
+</ul>
+<div class="show">$.ajax({
+                type:'GET',
+                url:'http://shiwivi.me',
+                data:{id:1},
+                success:function(res,textStatus,jqXHR){
+                    console.log(res);//服务器返回的数据
+                    console.log(textStatus);//success
+                    console.log(jqXHR.status);//200
+                },
+                error:function(jqXHR,textStatus,error){
+                    console.error(jqXHR.status);//404
+                    console.log(textStatus);//error
+                    console.log(error);//Not Found
+                }
+             })
+        </div>
+        </div>
+    </div>
+    <div class="post-nav">
+        
+            <div class="post-prev ">
+                <a href="/blog/2021/04/13/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">上一篇：正则表达式</a>
+            </div>
+            
+            
+                <div class="post-next">
+                    <a href="/blog/2021/03/23/git%E4%B8%8Egithub/">下一篇：Git与Github </a>
+                </div>
+                 
+    </div>
+    <div class="container">
+        <!--设计来源于B站-季夏小贞-->
+        <div class="bigHead"></div>
+        <div class="ears"></div>
+        <div class="body"></div>
+        <div class="paws-front"></div>
+        <div class="paws-back"></div>
+        <div class="details"></div>
+        <div class="tail"></div>
+        <div class="sleep">
+          <span class="s1">z</span>
+          <span class="s2">z</span>
+          <span class="s3">z</span>
+          <span class="s4">z</span>
+          <span class="s5">z</span>
+        </div>
+    </div>
+</div>
+<div class="right-menu">
+    <a class="iconfont backTop" href="javascript:">&#xe655;</a>
+    <div class="husky"></div>
+  </div>
+</div>
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/index.js"></script>
+<script src="/blog/js/highlight.min.js"></script>
+<script src="/blog/js/highlightjs-line-numbers.min.js"></script>
+<script src="/blog/js/article.js"></script>
+
+</body></html>

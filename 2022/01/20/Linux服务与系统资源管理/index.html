@@ -1,20 +1,20 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="shiwi"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>body{cursor:url(https://cdn.jsdelivr.net/gh/shiwei11/blogfile/images/normal.cur),auto;}a,label{text-decoration: none;cursor:url(https://cdn.jsdelivr.net/gh/shiwei11/blogfile/images/link.cur),auto;}</style><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let spans=document.querySelector('.text').querySelectorAll('span');const timer=setInterval(()=>{spans.forEach((item)=>{if(item.classList.contains('dance')){item.classList.remove('dance');}else{item.classList.add('dance');}})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script><title>SHIWIVI-文章</title>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="SHIWIVI"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let texts=document.querySelector('.text').querySelectorAll('span');let timer=setInterval(()=>{texts.forEach((item)=>{item.classList.toggle("dance")})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script><title>SHIWIVI-文章</title>
 <link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
 
 <link rel="stylesheet" href="/blog/css/index.css">
 <link rel="stylesheet" href="/blog/css/article.css">
-
+<link rel="stylesheet" href="/blog/css/atelier-cave.min.css">
 
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="SHWIVI's blog" type="application/atom+xml">
 </head>
 <body>
-<div class="navigation">
+<div class="nav">
     <div class="card">
         <div class="head">
             <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
         </div>
-        <div class="card-text">
+        <div class="cardText">
             <p>(ー`´ー)</p>
             <p>那不是bug，是彩蛋</p>
         </div> 
@@ -34,24 +34,24 @@
     </ul>
         <ul class="tag">
             <li>#Document</li>
-            <li>#Jquery</li>
+            <li>#Java</li>
             <li>#css</li>
-            <li>#射频</li>
-            <li>#5G通讯</li>
+            <li>#Life</li>
+            <li>#Lua</li>
             <li>#PCB</li>
-            <li>#shell</li>
+            <li>#Shell</li>
             <li>#C</li>
             <li>#html</li>
             <li>#硬件</li>
             <li>#javaScript</li>
-            <li>#防火墙</li>
-            <li>#CentOS</li>
-            <a href="/blog/tags/Linux" target="_blank"><li>#Linux</li></a>
-            
-            <li>#python</li>
-            <li>#XPpose</li>
+            <li>#Firewall</li>
+            <li>#Security</li>
+            <li><a href="/blog/tags/Linux" target="_blank">#Linux</a></li>
+            <li>#Python</li>
+            <li>#Serve</li>
+            <li>#Web</li>
         </ul>
-<div class="rsstag"><a href="/blog/atom.xml"><span class="iconfont icon-rss"></span>RSS订阅</a></div>
+    <div class="rsstag"><a href="/blog/atom.xml"><span class="iconfont icon-rss"></span>RSS订阅</a></div>
 <div class="flower">
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="84.6px" height="70.5px" viewBox="0 0 254 212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -94,24 +94,52 @@
 </div>
 
 </div>
-<div class="menu-btn closed"> 
+<div class="menuBtn closed"> 
     <div class="menu-line"></div>
     <div class="menu-line"></div>
     <div class="menu-line"></div>
 </div>
-<div class="second-main">
-    <div class="js-toc"></div>
+<div class="nightSky"><!--当关闭夜间背景模式时，子元素将在一段延时后才会被清除--></div>
+<div class="main">
+    <div class="msg">
+        <div class="msgText"></div>
+        <div class="msgBar"></div>
+    </div>
     <div class="motto">
         <p> //sunny forever<br />
             while(life&lt;end){<br />
                love++;<br />
                beAwesome :)} </p>
      </div>
-     <div class="second-content">
+     <div class="mainContent">
+    <div class="canvasWrapper"></div>
+<div class="setWrapper">
+    <ul class="setMenu">
+        <div id="setBtn" class="setButton"><</div>
+        <li class="searchContainer">
+            <input id="searchInput" class="localSearch" placeholder="搜索..." type="search" >
+            <span class="searchIco"></span>
+        </li>
+        <li id="toggleItem">
+        主题：<span class="itemIco sun"></span>
+        </li>
+        <li class="setSize">
+            <span id="increaseFontSize">+</span>
+            <span class="fontSizeNum"></span>
+            <span id="reduceFontSize">-</span>
+        </li>
+        <li id="clearBack">清除背景</li>
+        <li id="disableBack">禁用背景</li>
+    </ul> 
+</div>
+    <div class="resultContainer">
+        <div id="searchResult" class="displayResult"></div>
+    </div>
+    <div class="tocWrapper"><div class="tocBtn">目 录</div><div class="tocBox"><!--tocBox用于容纳生成在toc外的目录--><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">网络命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#ping-%E6%B5%8B%E8%AF%95%E7%BD%91%E7%BB%9C"><span class="toc-number">1.1.</span> <span class="toc-text">ping 测试网络</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ifconfig-%E7%BD%91%E5%8D%A1%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text">ifconfig 网卡设置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#traceroute-%E6%9F%A5%E7%9C%8B%E4%B8%8E%E7%9B%AE%E6%A0%87%E4%B8%BB%E6%9C%BA%E9%97%B4%E7%9A%84%E7%BD%91%E8%B7%AF%E8%8A%82%E7%82%B9"><span class="toc-number">1.3.</span> <span class="toc-text">traceroute 查看与目标主机间的网路节点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81"><span class="toc-number">1.4.</span> <span class="toc-text">查看网络状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#setup-%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9C-redhat%E7%B3%BB%E5%88%97%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B8%93%E6%9C%89"><span class="toc-number">1.5.</span> <span class="toc-text">setup 配置网络(redhat系列操作系统专有)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mount-%E6%8C%82%E8%BD%BD%E8%AE%BE%E5%A4%87"><span class="toc-number">1.6.</span> <span class="toc-text">mount 挂载设备</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E6%8C%82%E8%BD%BD%E8%AE%BE%E5%A4%87"><span class="toc-number">1.6.1.</span> <span class="toc-text">1.挂载设备</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%8D%B8%E8%BD%BD%E8%AE%BE%E5%A4%87"><span class="toc-number">1.6.2.</span> <span class="toc-text">2.卸载设备</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%91%E9%80%81%E6%B6%88%E6%81%AF"><span class="toc-number">1.7.</span> <span class="toc-text">发送消息</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-write-%E7%BB%99%E6%9F%90%E4%B8%AA%E5%9C%A8%E7%BA%BF%E7%94%A8%E6%88%B7%E5%8F%91%E9%80%81%E4%BF%A1%E6%81%AF"><span class="toc-number">1.7.1.</span> <span class="toc-text">1. write 给某个在线用户发送信息</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-wall-%E7%BB%99%E6%89%80%E6%9C%89%E5%9C%A8%E7%BA%BF%E7%94%A8%E6%88%B7%E5%8F%91%E9%80%81%E4%BF%A1%E6%81%AF-write-all"><span class="toc-number">1.7.2.</span> <span class="toc-text">2. wall 给所有在线用户发送信息(write all)</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mail-%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6"><span class="toc-number">1.8.</span> <span class="toc-text">mail 发送邮件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#last-%E6%9F%A5%E7%9C%8B%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4%E4%B8%8E%E7%B3%BB%E7%BB%9F%E9%87%8D%E5%90%AF%E6%97%B6%E9%97%B4"><span class="toc-number">1.9.</span> <span class="toc-text">last 查看用户登录系统时间与系统重启时间</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="toc-number"></span> <span class="toc-text">软件安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%BA%90%E7%A0%81%E5%8C%85%E5%AE%89%E8%A3%85"><span class="toc-number">0.1.</span> <span class="toc-text">源码包安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RPM%E5%8C%85%E5%AE%89%E8%A3%85"><span class="toc-number">0.2.</span> <span class="toc-text">RPM包安装</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#RPM%E5%8C%85"><span class="toc-number">0.2.1.</span> <span class="toc-text">RPM包</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E5%8D%87%E7%BA%A7%E4%B8%8E%E5%8D%B8%E8%BD%BD"><span class="toc-number">0.2.2.</span> <span class="toc-text">安装升级与卸载</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E5%8C%85%E4%BF%A1%E6%81%AF"><span class="toc-number">0.2.3.</span> <span class="toc-text">查询包信息</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8C%85%E6%A0%A1%E9%AA%8C"><span class="toc-number">0.2.4.</span> <span class="toc-text">包校验</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8C%85%E6%96%87%E4%BB%B6%E6%8F%90%E5%8F%96"><span class="toc-number">0.2.5.</span> <span class="toc-text">包文件提取</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#yum%E6%93%8D%E4%BD%9C"><span class="toc-number">1.</span> <span class="toc-text">yum操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E7%BD%91%E7%BB%9Cyum%E6%BA%90"><span class="toc-number">1.1.</span> <span class="toc-text">配置网络yum源</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#yum%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6"><span class="toc-number">1.2.</span> <span class="toc-text">yum安装软件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E5%8C%85"><span class="toc-number">1.2.1.</span> <span class="toc-text">查询包</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E4%B8%8E%E5%8D%87%E7%BA%A7"><span class="toc-number">1.2.2.</span> <span class="toc-text">安装与升级</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8D%87%E7%BA%A7%E3%80%81%E5%8D%B8%E8%BD%BD"><span class="toc-number">1.2.3.</span> <span class="toc-text">升级、卸载</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#yum%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%BB%84"><span class="toc-number">1.3.</span> <span class="toc-text">yum安装软件包组</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">服务管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E6%9F%A5%E8%AF%A2"><span class="toc-number">2.1.</span> <span class="toc-text">服务查询</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-RPM%E5%8C%85%E5%AE%89%E8%A3%85%E7%9A%84%E5%BA%94%E7%94%A8%E6%9C%8D%E5%8A%A1"><span class="toc-number">2.1.1.</span> <span class="toc-text">1. RPM包安装的应用服务</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E6%BA%90%E7%A0%81%E5%8C%85%E5%AE%89%E8%A3%85%E7%9A%84%E6%9C%8D%E5%8A%A1"><span class="toc-number">2.1.2.</span> <span class="toc-text">2. 源码包安装的服务</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#RPM%E6%9C%8D%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-number">2.2.</span> <span class="toc-text">RPM服务管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%8B%AC%E7%AB%8B%E6%9C%8D%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-number">2.2.1.</span> <span class="toc-text">独立服务管理</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%8B%AC%E7%AB%8B%E6%9C%8D%E5%8A%A1%E5%91%BD%E4%BB%A4"><span class="toc-number">2.2.2.</span> <span class="toc-text">独立服务命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%8B%AC%E7%AB%8B%E6%9C%8D%E5%8A%A1%E8%87%AA%E5%90%AF%E5%8A%A8"><span class="toc-number">2.2.3.</span> <span class="toc-text">独立服务自启动</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8Exinetd-%E8%B6%85%E7%BA%A7%E5%AE%88%E6%8A%A4%E8%BF%9B%E7%A8%8B-%E6%9C%8D%E5%8A%A1"><span class="toc-number">2.2.4.</span> <span class="toc-text">基于xinetd(超级守护进程)服务</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%BA%90%E7%A0%81%E5%8C%85%E5%AE%89%E8%A3%85%E7%9A%84%E6%9C%8D%E5%8A%A1%E7%AE%A1%E7%90%86"><span class="toc-number">2.3.</span> <span class="toc-text">源码包安装的服务管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8"><span class="toc-number">2.3.1.</span> <span class="toc-text">服务启动</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%87%AA%E5%90%AF%E5%8A%A8"><span class="toc-number">2.3.2.</span> <span class="toc-text">自启动</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%BC%80%E6%9C%BA%E6%97%B6%E6%9C%8D%E5%8A%A1%E5%90%AF%E5%8A%A8%E9%A1%BA%E5%BA%8F"><span class="toc-number">2.4.</span> <span class="toc-text">查看开机时服务启动顺序</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="toc-number">3.</span> <span class="toc-text">进程管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E8%BF%9B%E7%A8%8B"><span class="toc-number">3.1.</span> <span class="toc-text">查看进程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E8%BF%9B%E7%A8%8B%E6%A0%91"><span class="toc-number">3.2.</span> <span class="toc-text">查看进程树</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E8%BF%9B%E7%A8%8B%E8%B0%83%E7%94%A8%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-number">3.3.</span> <span class="toc-text">查看进程调用的文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F%E8%B5%84%E6%BA%90%E5%8D%A0%E7%94%A8%E7%8A%B6%E6%80%81"><span class="toc-number">3.4.</span> <span class="toc-text">监控系统资源占用状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8C%89%E6%8C%87%E5%AE%9A%E6%AC%A1%E6%95%B0%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F%E8%B5%84%E6%BA%90"><span class="toc-number">3.5.</span> <span class="toc-text">按指定次数监控系统资源</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%BC%80%E6%9C%BA%E6%97%B6%E6%A3%80%E6%B5%8B%E7%9A%84%E7%B3%BB%E7%BB%9F%E5%86%85%E6%A0%B8%E4%BF%A1%E6%81%AF"><span class="toc-number">3.6.</span> <span class="toc-text">查看开机时检测的系统内核信息</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8BCPU%E4%BF%A1%E6%81%AF"><span class="toc-number">3.6.1.</span> <span class="toc-text">查看CPU信息</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%86%85%E5%AD%98%E4%BF%A1%E6%81%AF"><span class="toc-number">3.7.</span> <span class="toc-text">查看内存信息</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%86%85%E6%A0%B8"><span class="toc-number">3.8.</span> <span class="toc-text">查看操作系统内核</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8DLinux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC"><span class="toc-number">3.9.</span> <span class="toc-text">查看当前Linux操作系统的发行版本</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%AD%E6%AD%A2%E8%BF%9B%E7%A8%8B"><span class="toc-number">3.10.</span> <span class="toc-text">中止进程</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%B8%AD%E6%AD%A2%E4%BF%A1%E5%8F%B7"><span class="toc-number">3.10.1.</span> <span class="toc-text">系统的中止信号</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#kill%E5%91%BD%E4%BB%A4"><span class="toc-number">3.10.2.</span> <span class="toc-text">kill命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#killall%E5%91%BD%E4%BB%A4"><span class="toc-number">3.10.3.</span> <span class="toc-text">killall命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#pkill%E5%91%BD%E4%BB%A4"><span class="toc-number">3.10.4.</span> <span class="toc-text">pkill命令</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E7%AE%A1%E7%90%86"><span class="toc-number">4.</span> <span class="toc-text">工作管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B0%86%E7%A8%8B%E5%BA%8F%E8%BD%AC%E5%85%A5%E5%90%8E%E5%8F%B0%E8%BF%90%E8%A1%8C-%E6%9A%82%E5%81%9C"><span class="toc-number">4.1.</span> <span class="toc-text">将程序转入后台运行&#x2F;暂停</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%90%8E%E5%8F%B0%E7%9A%84%E5%B7%A5%E4%BD%9C"><span class="toc-number">4.2.</span> <span class="toc-text">查看后台的工作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B0%86%E5%90%8E%E5%8F%B0%E6%9A%82%E5%81%9C%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%81%A2%E5%A4%8D%E5%88%B0%E5%89%8D%E5%8F%B0%E6%89%A7%E8%A1%8C"><span class="toc-number">4.3.</span> <span class="toc-text">将后台暂停的工作恢复到前台执行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B0%86%E5%90%8E%E5%8F%B0%E6%9A%82%E5%81%9C%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%81%A2%E5%A4%8D%E5%88%B0%E5%90%8E%E5%8F%B0%E6%89%A7%E8%A1%8C"><span class="toc-number">4.4.</span> <span class="toc-text">将后台暂停的工作恢复到后台执行</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#alternatives%E5%B7%A5%E5%85%B7"><span class="toc-number">5.</span> <span class="toc-text">alternatives工具</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#alternatives%E7%AE%80%E4%BB%8B"><span class="toc-number">5.1.</span> <span class="toc-text">alternatives简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#alternatives%E5%91%BD%E4%BB%A4"><span class="toc-number">5.2.</span> <span class="toc-text">alternatives命令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E7%BB%84"><span class="toc-number">5.2.1.</span> <span class="toc-text">注册组</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4"><span class="toc-number">5.2.2.</span> <span class="toc-text">其他命令</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B"><span class="toc-number">5.3.</span> <span class="toc-text">示例</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E6%B3%A8%E5%86%8C%E7%BB%84"><span class="toc-number">5.3.1.</span> <span class="toc-text">1. 注册组</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1"><span class="toc-number">6.</span> <span class="toc-text">定时任务</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#crond%E6%9C%8D%E5%8A%A1"><span class="toc-number">6.1.</span> <span class="toc-text">crond服务</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8Bcrond%E6%9C%8D%E5%8A%A1%E8%BF%90%E8%A1%8C%E6%83%85%E5%86%B5"><span class="toc-number">6.1.1.</span> <span class="toc-text">查看crond服务运行情况</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8Bcrond%E6%9C%8D%E5%8A%A1%E6%98%AF%E5%90%A6%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8"><span class="toc-number">6.1.2.</span> <span class="toc-text">查看crond服务是否开机自启动</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AEcrond%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1"><span class="toc-number">6.2.</span> <span class="toc-text">设置crond定时任务</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#cron%E8%AF%AD%E6%B3%95"><span class="toc-number">6.2.1.</span> <span class="toc-text">cron语法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A5%E5%BF%97%E6%9C%8D%E5%8A%A1"><span class="toc-number">7.</span> <span class="toc-text">日志服务</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#rsyslog%E6%9C%8D%E5%8A%A1"><span class="toc-number">7.1.</span> <span class="toc-text">rsyslog服务</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2rsyslog%E6%9C%8D%E5%8A%A1%E6%98%AF%E5%90%A6%E5%9C%A8%E8%BF%90%E8%A1%8C"><span class="toc-number">7.1.1.</span> <span class="toc-text">查询rsyslog服务是否在运行</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8Brsyslog%E6%9C%8D%E5%8A%A1%E6%98%AF%E5%90%A6%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E5%8A%A8"><span class="toc-number">7.1.2.</span> <span class="toc-text">查看rsyslog服务是否开机自启动</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6"><span class="toc-number">7.2.</span> <span class="toc-text">日志文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rsyslog%E6%97%A5%E5%BF%97%E6%A0%BC%E5%BC%8F"><span class="toc-number">7.3.</span> <span class="toc-text">rsyslog日志格式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rsyslog%E6%97%A5%E5%BF%97%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">7.4.</span> <span class="toc-text">rsyslog日志配置文件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%90%8D"><span class="toc-number">7.4.1.</span> <span class="toc-text">服务名</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E7%AC%A6"><span class="toc-number">7.4.2.</span> <span class="toc-text">连接符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%97%A5%E5%BF%97%E7%AD%89%E7%BA%A7"><span class="toc-number">7.4.3.</span> <span class="toc-text">日志等级</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95%E4%BD%8D%E7%BD%AE"><span class="toc-number">7.4.4.</span> <span class="toc-text">日志记录位置</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B-1"><span class="toc-number">7.4.5.</span> <span class="toc-text">示例</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%A5%E5%BF%97%E8%BD%AE%E6%9B%BF"><span class="toc-number">7.5.</span> <span class="toc-text">日志轮替</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9"><span class="toc-number">7.5.1.</span> <span class="toc-text">配置文件内容</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%89%8B%E5%8A%A8%E8%BF%9B%E8%A1%8C%E6%97%A5%E5%BF%97%E8%BD%AE%E6%9B%BF"><span class="toc-number">7.5.2.</span> <span class="toc-text">手动进行日志轮替</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D"><span class="toc-number">8.</span> <span class="toc-text">备份与恢复</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%87%E4%BB%BD"><span class="toc-number">8.1.</span> <span class="toc-text">备份</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E9%9C%80%E5%A4%87%E4%BB%BD%E7%9A%84%E6%95%B0%E6%8D%AE"><span class="toc-number">8.1.1.</span> <span class="toc-text">一般需备份的数据</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#dump%E6%96%87%E4%BB%B6%E5%A4%87%E4%BB%BD%E7%B3%BB%E7%BB%9F"><span class="toc-number">8.2.</span> <span class="toc-text">dump文件备份系统</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85dump"><span class="toc-number">8.2.1.</span> <span class="toc-text">1. 安装dump</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-dump%E5%91%BD%E4%BB%A4"><span class="toc-number">8.2.2.</span> <span class="toc-text">2. dump命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E5%A4%87%E4%BB%BD%E6%93%8D%E4%BD%9C"><span class="toc-number">8.2.3.</span> <span class="toc-text">3.备份操作</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#restore%E8%BF%98%E5%8E%9Fdump%E5%A4%87%E4%BB%BD%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-number">8.3.</span> <span class="toc-text">restore还原dump备份的文件</span></a></li></ol></li></ol></div></div>
         <div class="article">
         <h1 class="title">Linux服务与系统资源管理</h1>
         <div class="art_infor">
-            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：19574</span>
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：19597</span>
             <span><span class="iconfont icon-riqi"></span>写于：2022-01-20</span></div>
             <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2022-01-20</span>
             <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您56分钟</span></div>
@@ -139,10 +167,11 @@
 <li>-r &emsp;路由</li>
 <li>-n &emsp;显示IP地址和端口号</li>
 <li>-a &emsp;所有</li>
+<li>-p &emsp;列出相关程序名</li>
 </ul>
 <p>常用</p>
 <ul>
-<li><span class="strong">netstat -tuln &emsp;查看本机监听的TCP和UDP端口</span></li>
+<li><span class="strong">netstat -tulnp &emsp;查看本机监听的TCP和UDP端口并列出相关程序</span></li>
 <li><span class="strong">netstat -an &emsp;查看本机的所有网络连接</span></li>
 <li><span class="strong">netstat -rn &emsp;查看本机所有路由表</span></li>
 </ul>
@@ -933,7 +962,7 @@ Current `best' version is /usr/bin/python3.6.
 </tr>
 <tr>
 <td>none</td>
-<td>与*相反，不记录任何等级日志</td>
+<td>与*相反，不记录任何日志</td>
 </tr>
 <tr>
 <td>debug</td>
@@ -945,11 +974,11 @@ Current `best' version is /usr/bin/python3.6.
 </tr>
 <tr>
 <td>notice</td>
-<td>公告(提醒)信息，不影响功能但有一定重要性</td>
+<td>提醒信息，程序可能存在潜在错误，但不影响运行</td>
 </tr>
 <tr>
 <td>warning</td>
-<td>警告信息，服务不影响使用但可能存在问题</td>
+<td>警告信息，程序发现错误，暂且不影响运行</td>
 </tr>
 <tr>
 <td>err</td>
@@ -1018,7 +1047,7 @@ uucp,news.crit                                          /var/log/spooler
 </tr>
 <tr>
 <td>mail address</td>
-<td>日志轮替时，日志内容发送到指定邮箱，如:mail <a href="mailto:&#x31;&#x31;&#64;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#x6d;">&#x31;&#x31;&#64;&#x67;&#109;&#x61;&#105;&#108;&#x2e;&#99;&#x6f;&#x6d;</a></td>
+<td>日志轮替时，日志内容发送到指定邮箱，如:mail <a href="mailto:&#49;&#49;&#64;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;">&#49;&#49;&#64;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</a></td>
 </tr>
 <tr>
 <td>missingok</td>
@@ -1159,7 +1188,7 @@ weekly
         </div>
     </div>
 </div>
-<div class="left-menu">
+<div class="right-menu">
     <a class="iconfont backTop" href="javascript:">&#xe655;</a>
     <div class="husky"></div>
   </div>
@@ -1167,32 +1196,9 @@ weekly
 
 <script src="/blog/js/jquery.min.js"></script>
 <script src="/blog/js/jquery.bumpytext.js"></script>
-<script src="/blog/js/grain.min.js"></script>
-<script src="/blog/js/main.js"></script>
+<script src="/blog/js/index.js"></script>
+<script src="/blog/js/highlight.min.js"></script>
+<script src="/blog/js/highlightjs-line-numbers.min.js"></script>
+<script src="/blog/js/article.js"></script>
 
-
-    <script>
-        if(!viewH){
-            let viewH=document.documentElement.clientHeight;
-        }
-    // 懒加载
-    let imgs=document.querySelector('.art_content').querySelectorAll('img');
-    if(imgs){
-    let lazyload=function(){
-    imgs.forEach((item,index)=>{
-        let rect=item.getBoundingClientRect();
-        if(rect.bottom>=0&&rect.top<viewH){
-            item.src=item.dataset.src;
-        }
-    })
-    };
-    document.querySelector('.second-main').addEventListener('scroll',()=>{
-        lazyload();
-    })
-}
-    </script>
-</body>
-
-
-
-</html>
+</body></html>

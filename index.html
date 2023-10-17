@@ -1,18 +1,19 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="shiwi"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>body{cursor:url(https://cdn.jsdelivr.net/gh/shiwei11/blogfile/images/normal.cur),auto;}a,label{text-decoration: none;cursor:url(https://cdn.jsdelivr.net/gh/shiwei11/blogfile/images/link.cur),auto;}</style><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let spans=document.querySelector('.text').querySelectorAll('span');const timer=setInterval(()=>{spans.forEach((item)=>{if(item.classList.contains('dance')){item.classList.remove('dance');}else{item.classList.add('dance');}})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script><title>SHIWIVI-博客</title>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="SHIWIVI"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let texts=document.querySelector('.text').querySelectorAll('span');let timer=setInterval(()=>{texts.forEach((item)=>{item.classList.toggle("dance")})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script><title>SHIWIVI-博客</title>
 <link rel="stylesheet" href="https://at.alicdn.com/t/font_2652945_7gmto2zqbzw.css">
 <link rel="stylesheet" href="https://at.alicdn.com/t/font_3370670_e9pxg4fwfvl.css">
 
+<link rel="stylesheet" href="/blog/css/normalize.css">
 <link rel="stylesheet" href="/blog/css/index.css">
 <link rel="stylesheet" href="/blog/css/huli.css">
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="SHWIVI's blog" type="application/atom+xml">
 </head>
 <body>
-    <div class="navigation">
+    <div class="nav">
     <div class="card">
         <div class="head">
             <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
         </div>
-        <div class="card-text">
+        <div class="cardText">
             <p>(ー`´ー)</p>
             <p>那不是bug，是彩蛋</p>
         </div> 
@@ -32,24 +33,24 @@
     </ul>
         <ul class="tag">
             <li>#Document</li>
-            <li>#Jquery</li>
+            <li>#Java</li>
             <li>#css</li>
-            <li>#射频</li>
-            <li>#5G通讯</li>
+            <li>#Life</li>
+            <li>#Lua</li>
             <li>#PCB</li>
-            <li>#shell</li>
+            <li>#Shell</li>
             <li>#C</li>
             <li>#html</li>
             <li>#硬件</li>
             <li>#javaScript</li>
-            <li>#防火墙</li>
-            <li>#CentOS</li>
-            <a href="/blog/tags/Linux" target="_blank"><li>#Linux</li></a>
-            
-            <li>#python</li>
-            <li>#XPpose</li>
+            <li>#Firewall</li>
+            <li>#Security</li>
+            <li><a href="/blog/tags/Linux" target="_blank">#Linux</a></li>
+            <li>#Python</li>
+            <li>#Serve</li>
+            <li>#Web</li>
         </ul>
-<div class="rsstag"><a href="/blog/atom.xml"><span class="iconfont icon-rss"></span>RSS订阅</a></div>
+    <div class="rsstag"><a href="/blog/atom.xml"><span class="iconfont icon-rss"></span>RSS订阅</a></div>
 <div class="flower">
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="84.6px" height="70.5px" viewBox="0 0 254 212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -92,21 +93,116 @@
 </div>
 
 </div>
-<div class="menu-btn closed"> 
+<div class="menuBtn closed"> 
     <div class="menu-line"></div>
     <div class="menu-line"></div>
     <div class="menu-line"></div>
 </div>
-    <div class="second-main">
+    <div class="main">
+        <div class="msg">
+            <div class="msgText"></div>
+            <div class="msgBar"></div>
+        </div>
         <div class="motto">
            <p>//life motto<br />
              if(sad===true){<br />
                 sad.stop();<br />
                 beAwesome :)} </p>
         </div>
-        <div class="second-content">
+        <div class="mainContent">
+            <div class="canvasWrapper"></div>
+<div class="setWrapper">
+    <ul class="setMenu">
+        <div id="setBtn" class="setButton"><</div>
+        <li class="searchContainer">
+            <input id="searchInput" class="localSearch" placeholder="搜索..." type="search" >
+            <span class="searchIco"></span>
+        </li>
+        <li id="toggleItem">
+        主题：<span class="itemIco sun"></span>
+        </li>
+        <li class="setSize">
+            <span id="increaseFontSize">+</span>
+            <span class="fontSizeNum"></span>
+            <span id="reduceFontSize">-</span>
+        </li>
+        <li id="clearBack">清除背景</li>
+        <li id="disableBack">禁用背景</li>
+    </ul> 
+</div>
+            <div class="resultContainer">
+                <div id="searchResult" class="displayResult"></div>
+            </div>
             <ul class="update">
                 
+                
+                    <li><div class='update_pic'>
+                        <div class="pic_loading"><div class="load_line"></div>加载中...</div>
+                        <a href="/blog/2023/09/07/JavaScript%E4%B8%AD%E7%9A%84%E5%90%84%E7%A7%8D%E5%B0%BA%E5%AF%B8/"><img alt="图片在来的路上迷路了" data-src="/blog/images/231015234941.jpg" src="#"></a></div>
+                        <div class='update_content'>
+                            <a href="/blog/2023/09/07/JavaScript%E4%B8%AD%E7%9A%84%E5%90%84%E7%A7%8D%E5%B0%BA%E5%AF%B8/"><h1>JavaScript中的各种尺寸</h1></a>
+                            <p>整理了javaScript中经常用到的计算各种尺寸的API，包括计算屏幕尺寸、浏览器尺寸、鼠标位置、DOM位置和DOMRect对象的常用API</p>
+                            <div class="content_line"></div>
+                            <div class="content_tag">
+                                
+                                <span class="content_label label1">javaScript</span>
+                                
+                                <span class="content_label label2">html</span>
+                                
+                            </div>
+                        </div>
+                    </li>
+                
+                    <li><div class='update_pic'>
+                        <div class="pic_loading"><div class="load_line"></div>加载中...</div>
+                        <a href="/blog/2023/05/25/xml/"><img alt="图片在来的路上迷路了" data-src="/blog/images/231015234932.jpg" src="#"></a></div>
+                        <div class='update_content'>
+                            <a href="/blog/2023/05/25/xml/"><h1>xml</h1></a>
+                            <p>XML文件的语法规则，以及对xml文件进行DTD验证的方法</p>
+                            <div class="content_line"></div>
+                            <div class="content_tag">
+                                
+                                <span class="content_label label3">Web</span>
+                                
+                                <span class="content_label label4">Serve</span>
+                                
+                            </div>
+                        </div>
+                    </li>
+                
+                    <li><div class='update_pic'>
+                        <div class="pic_loading"><div class="load_line"></div>加载中...</div>
+                        <a href="/blog/2023/05/19/SVG%E7%9F%A2%E9%87%8F%E5%9B%BE/"><img alt="图片在来的路上迷路了" data-src="/blog/images/2049153.jpg" src="#"></a></div>
+                        <div class='update_content'>
+                            <a href="/blog/2023/05/19/SVG%E7%9F%A2%E9%87%8F%E5%9B%BE/"><h1>SVG矢量图</h1></a>
+                            <p>svg标签的使用方法，包括基本图形的绘制，贝塞尔曲线的绘制，颜色样式的设置，渐变、变形、剪切、遮罩的添加，以及文字和图片的绘制</p>
+                            <div class="content_line"></div>
+                            <div class="content_tag">
+                                
+                                <span class="content_label label5">Web</span>
+                                
+                                <span class="content_label label6">html</span>
+                                
+                            </div>
+                        </div>
+                    </li>
+                
+                    <li><div class='update_pic'>
+                        <div class="pic_loading"><div class="load_line"></div>加载中...</div>
+                        <a href="/blog/2023/05/03/canvas/"><img alt="图片在来的路上迷路了" data-src="/blog/images/canvasJS.png" src="#"></a></div>
+                        <div class='update_content'>
+                            <a href="/blog/2023/05/03/canvas/"><h1>Canvas</h1></a>
+                            <p>只涉及Canvas Context2D对象提供的API，包括基本图形、弧线、贝塞尔曲线的绘制，渐变、阴影、滤镜、文字的添加，以及对图像合成模式和像素的操作</p>
+                            <div class="content_line"></div>
+                            <div class="content_tag">
+                                
+                                <span class="content_label label7">Web</span>
+                                
+                                <span class="content_label label1">javaScript</span>
+                                
+                            </div>
+                        </div>
+                    </li>
                 
                     <li><div class='update_pic'>
                         <div class="pic_loading"><div class="load_line"></div>加载中...</div>
@@ -117,9 +213,9 @@
                             <div class="content_line"></div>
                             <div class="content_tag">
                                 
-                                <span class="content_label label1">Web</span>
+                                <span class="content_label label2">Web</span>
                                 
-                                <span class="content_label label2">CS</span>
+                                <span class="content_label label3">CS</span>
                                 
                             </div>
                         </div>
@@ -134,77 +230,9 @@
                             <div class="content_line"></div>
                             <div class="content_tag">
                                 
-                                <span class="content_label label3">Server</span>
+                                <span class="content_label label4">Server</span>
                                 
-                                <span class="content_label label4">Web</span>
-                                
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li><div class='update_pic'>
-                        <div class="pic_loading"><div class="load_line"></div>加载中...</div>
-                        <a href="/blog/2022/07/16/%E8%B7%AF%E7%94%B1%E4%B8%8E%E8%B7%AF%E7%94%B1%E5%AE%88%E5%8D%AB/"><img alt="图片在来的路上迷路了" data-src="/blog/images/vuerouter.jpg" src="#"></a></div>
-                        <div class='update_content'>
-                            <a href="/blog/2022/07/16/%E8%B7%AF%E7%94%B1%E4%B8%8E%E8%B7%AF%E7%94%B1%E5%AE%88%E5%8D%AB/"><h1>路由与路由守卫</h1></a>
-                            <p>vue构建单页应用笔记，包括路由嵌套、传参、导航、生命周期、路由守卫</p>
-                            <div class="content_line"></div>
-                            <div class="content_tag">
-                                
-                                <span class="content_label label5">web</span>
-                                
-                                <span class="content_label label6">vue</span>
-                                
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li><div class='update_pic'>
-                        <div class="pic_loading"><div class="load_line"></div>加载中...</div>
-                        <a href="/blog/2022/07/14/yaml%E8%AF%AD%E6%B3%95/"><img alt="图片在来的路上迷路了" data-src="/blog/images/yaml.jpg" src="#"></a></div>
-                        <div class='update_content'>
-                            <a href="/blog/2022/07/14/yaml%E8%AF%AD%E6%B3%95/"><h1>yaml语法</h1></a>
-                            <p>YAML Ain’t Markup Language，小猫咪都会写的yaml文件</p>
-                            <div class="content_line"></div>
-                            <div class="content_tag">
-                                
-                                <span class="content_label label7">CS</span>
-                                
-                                <span class="content_label label1">File</span>
-                                
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li><div class='update_pic'>
-                        <div class="pic_loading"><div class="load_line"></div>加载中...</div>
-                        <a href="/blog/2022/06/14/Grid%E5%B8%83%E5%B1%80/"><img alt="图片在来的路上迷路了" data-src="/blog/images/grid1.png" src="#"></a></div>
-                        <div class='update_content'>
-                            <a href="/blog/2022/06/14/Grid%E5%B8%83%E5%B1%80/"><h1>Grid栅格布局</h1></a>
-                            <p>Grid 是一种强大的布局方案，通过行和列的排列能组合出各种灵活的布局方案，并且能很好满足PC端到移动端的自适应需求</p>
-                            <div class="content_line"></div>
-                            <div class="content_tag">
-                                
-                                <span class="content_label label2">css</span>
-                                
-                                <span class="content_label label3">web</span>
-                                
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li><div class='update_pic'>
-                        <div class="pic_loading"><div class="load_line"></div>加载中...</div>
-                        <a href="/blog/2022/06/13/Vux%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/"><img alt="图片在来的路上迷路了" data-src="/blog/images/vuex.jpg" src="#"></a></div>
-                        <div class='update_content'>
-                            <a href="/blog/2022/06/13/Vux%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86/"><h1>Vux状态管理</h1></a>
-                            <p>Vue中用于集中式状态(数据)管理插件</p>
-                            <div class="content_line"></div>
-                            <div class="content_tag">
-                                
-                                <span class="content_label label4">web</span>
-                                
-                                <span class="content_label label5">vue</span>
+                                <span class="content_label label5">Web</span>
                                 
                             </div>
                         </div>
@@ -212,7 +240,7 @@
                 
             </ul>
               <div class="paginator">
-                <span class="page-number current">1</span><a class="page-number" href="/blog/page/2/">2</a><a class="page-number" href="/blog/page/3/">3</a><a class="page-number" href="/blog/page/4/">4</a><a class="extend next" rel="next" href="/blog/page/2/"><span class="fa fa-angle-right">下一页</span></a>
+                <span class="page-number current">1</span><a class="page-number" href="/blog/page/2/">2</a><a class="page-number" href="/blog/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/5/">5</a><a class="extend next" rel="next" href="/blog/page/2/"><span class="fa fa-angle-right">下一页</span></a>
               </div>
               <div class="fox_nest">
                 <div class="fox">
@@ -243,13 +271,13 @@
                 </div>
             </div>
           </div>
-          <div class="left-menu">
-            <a class="iconfont backTop" href="javascript:">&#xe655;</a>
-            <div class="husky"></div>
-          </div>
+          <div class="right-menu">
+    <a class="iconfont backTop" href="javascript:">&#xe655;</a>
+    <div class="husky"></div>
+  </div>
           <div class="info">
-             <div class="">Meet you like the wind.</div>
-             <div><span class="iconfont icon-banquan"></span>Copyright 2021-2022&nbsp;by&nbsp;SHIWI</div> 
+             <div class="">Meet you like the wind</div>
+             <div><span class="iconfont icon-banquan"></span>Copyright 2021-2023&nbsp;by&nbsp;SHIWIVI</div> 
               <div class="timer"><span class="iconfont icon-fanchuanzhuanhuan"></span>网站已经漂泊了
                 <span id="day"></span> 天
                 <span id="hour"></span> 小时
@@ -263,10 +291,11 @@
               </div>
           </div>
     </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
-<script src="/blog/js/jquery.min.js"></script>
 <script src="/blog/js/jquery.bumpytext.js"></script>
-<script src="/blog/js/grain.min.js"></script>
-<script src="/blog/js/main.js"></script>
+<script src="/blog/js/noise.min.js"></script>
+<script src="/blog/js/index.js"></script>
+<script src="/blog/js/homePage.js"></script>
 
 </body></html>

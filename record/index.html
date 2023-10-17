@@ -1,698 +1,1110 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="shiwi"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>body{cursor:url(https://cdn.jsdelivr.net/gh/shiwei11/blogfile/images/normal.cur),auto;}a,label{text-decoration: none;cursor:url(https://cdn.jsdelivr.net/gh/shiwei11/blogfile/images/link.cur),auto;}</style><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let spans=document.querySelector('.text').querySelectorAll('span');const timer=setInterval(()=>{spans.forEach((item)=>{if(item.classList.contains('dance')){item.classList.remove('dance');}else{item.classList.add('dance');}})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script>  
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="SHIWIVI"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let texts=document.querySelector('.text').querySelectorAll('span');let timer=setInterval(()=>{texts.forEach((item)=>{item.classList.toggle("dance")})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script>
 <link rel="stylesheet" href="/blog/css/record.css">
 
   <title>SHIWIVI-一句</title>
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="SHWIVI's blog" type="application/atom+xml">
+  <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="SHWIVI's blog" type="application/atom+xml">
 </head>
-<body>
-  <div class="progressBar"></div>
-  <div class="emptyBox"></div>
-  <input type="radio" name="tabs" id="tab1" checked>
-  <input type="radio" name="tabs" id="tab2">
-  <input type="radio" name="tabs" id="tab3">
-  <input type="radio" name="tabs" id="tab4">
-  <label for="tab1" id="label1">一句</label>
-  <label for="tab2" id="label2">冒泡</label>
-  <label for="tab3" id="label3">网站</label>
-  <label for="tab4" id="label4">日志</label>
-  <a href="/blog" class="backHome">返回</a>
 
-  <div class="content" id="excerpt">
-    <article>
-      <h3>好玩的</h3>
-      
-      
-    <section>
-      <span class="point-time point-color8"></span>
-      <time>
-        <span class="text-color8">August</span>
-        <span class="text-color8">2021</span>
-      </time>
-      <aside>
-        <p class="things">暴风夜
+  <body>
+    <div class="progressBar"></div>
+    <div class="emptyBox"></div>
+    <input type="radio" name="tabs" id="tab1" checked>
+    <input type="radio" name="tabs" id="tab2">
+    <input type="radio" name="tabs" id="tab3">
+    <input type="radio" name="tabs" id="tab4">
+    <label for="tab1" id="label1">一句</label>
+    <label for="tab2" id="label2">冒泡</label>
+    <label for="tab3" id="label3">网站</label>
+    <label for="tab4" id="label4">日志</label>
+    <a href="/blog" class="backHome">返回</a>
+
+    <div class="content" id="excerpt">
+      <article>
+        <h3>好玩的</h3>
+        
+          
+            <section>
+              <span class="point-time point-color8"></span>
+              <time>
+                <span class="text-color8">
+                  August
+                </span>
+                <span class="text-color8">
+                  2022
+                </span>
+              </time>
+              <aside>
+                <div class="details">暴风夜
 外面电闪雷鸣
 屋内漆黑一片
 小正太抱着我的胳膊，可怜巴巴地看着我，道:"哥哥，我怕..."
 我摸出烟盒，叼了支烟出来，抖着手点上，道:“小朋友，我比你还怕。"
 “我他妈记得这房子就我一个人来着。”
-        </p>
-        <p class="brief">
-          <span class="text-color8">Smile</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color7"></span>
-      <time>
-        <span class="text-color7">February</span>
-        <span class="text-color7">2022</span>
-      </time>
-      <aside>
-        <p class="things">初从文，三年不中。后习武，校场发一矢，中鼓吏，逐之出。遂学医，有所成。自撰一良方，服之，卒。
-        </p>
-        <p class="brief">
-          <span class="text-color7">杨一笑墓志铭</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color6"></span>
-      <time>
-        <span class="text-color6">February</span>
-        <span class="text-color6">2022</span>
-      </time>
-      <aside>
-        <p class="things">一个精神病人每天都在一个空鱼缸里钓鱼，
+                </div>
+                <div class="brief">
+                  <span class="text-color8">
+                    Smile
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color7"></span>
+              <time>
+                <span class="text-color7">
+                  February
+                </span>
+                <span class="text-color7">
+                  2022
+                </span>
+              </time>
+              <aside>
+                <div class="details">初从文，三年不中。后习武，校场发一矢，中鼓吏，逐之出。遂学医，有所成。自撰一良方，服之，卒。
+                </div>
+                <div class="brief">
+                  <span class="text-color7">
+                    杨一笑墓志铭
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color6"></span>
+              <time>
+                <span class="text-color6">
+                  February
+                </span>
+                <span class="text-color6">
+                  2022
+                </span>
+              </time>
+              <aside>
+                <div class="details">一个精神病人每天都在一个空鱼缸里钓鱼，
 一个护士开玩笑地问："今天钓到几条鱼啊？"
 精神病人不屑地说道："你有病啊，没看到鱼缸是空的？"
-        </p>
-        <p class="brief">
-          <span class="text-color6">Jokes</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color5"></span>
-      <time>
-        <span class="text-color5">February</span>
-        <span class="text-color5">2022</span>
-      </time>
-      <aside>
-        <p class="things">人类：门口有只死老鼠，这一定是猫咪向人类报恩的方式
+                </div>
+                <div class="brief">
+                  <span class="text-color6">
+                    Jokes
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color5"></span>
+              <time>
+                <span class="text-color5">
+                  February
+                </span>
+                <span class="text-color5">
+                  2022
+                </span>
+              </time>
+              <aside>
+                <div class="details">人类：门口有只死老鼠，这一定是猫咪向人类报恩的方式
 猫咪："老大，他们又没把你发出的死亡威胁当回事！"
-        </p>
-        <p class="brief">
-          <span class="text-color5">Smile</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color4"></span>
-      <time>
-        <span class="text-color4">August</span>
-        <span class="text-color4">2021</span>
-      </time>
-      <aside>
-        <p class="things">看见一部小说的名字《开局老婆六十大寿》...
-        </p>
-        <p class="brief">
-          <span class="text-color4">ee fanfan</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color3"></span>
-      <time>
-        <span class="text-color3">August</span>
-        <span class="text-color3">2021</span>
-      </time>
-      <aside>
-        <p class="things">美团点评
+                </div>
+                <div class="brief">
+                  <span class="text-color5">
+                    Smile
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color4"></span>
+              <time>
+                <span class="text-color4">
+                  August
+                </span>
+                <span class="text-color4">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">看见一部小说的名字《开局老婆六十大寿》...
+                </div>
+                <div class="brief">
+                  <span class="text-color4">
+                    ee fanfan
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color3"></span>
+              <time>
+                <span class="text-color3">
+                  August
+                </span>
+                <span class="text-color3">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">美团点评
 "从肉的分量上来看，猪只受了皮外伤。"
-        </p>
-        <p class="brief">
-          <span class="text-color3">Smile</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color2"></span>
-      <time>
-        <span class="text-color2">August</span>
-        <span class="text-color2">2021</span>
-      </time>
-      <aside>
-        <p class="things">以前的家长：不要乱相信网上的东西！！！
+                </div>
+                <div class="brief">
+                  <span class="text-color3">
+                    Smile
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color2"></span>
+              <time>
+                <span class="text-color2">
+                  August
+                </span>
+                <span class="text-color2">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">以前的家长：不要乱相信网上的东西！！！
 现在的家长：这可是我在网上看到的！！！
-        </p>
-        <p class="brief">
-          <span class="text-color2">wo bu ting wo bu ting</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color1"></span>
-      <time>
-        <span class="text-color1">July</span>
-        <span class="text-color1">2021</span>
-      </time>
-      <aside>
-        <p class="things">当我以为遇到了真爱，
+                </div>
+                <div class="brief">
+                  <span class="text-color2">
+                    wo bu ting wo bu ting
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color1"></span>
+              <time>
+                <span class="text-color1">
+                  July
+                </span>
+                <span class="text-color1">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">当我以为遇到了真爱，
 你说起了你那个在山里种茶叶的爷爷。
-        </p>
-        <p class="brief">
-          <span class="text-color1">true love</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color8"></span>
-      <time>
-        <span class="text-color8">July</span>
-        <span class="text-color8">2021</span>
-      </time>
-      <aside>
-        <p class="things">心情不好去打了两把游戏，突然发现其实刚才心情挺好的。
-        </p>
-        <p class="brief">
-          <span class="text-color8">Kengbi duiyou</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color7"></span>
-      <time>
-        <span class="text-color7">June</span>
-        <span class="text-color7">2021</span>
-      </time>
-      <aside>
-        <p class="things">是金子总会发光，你说是吧？铁子
-        </p>
-        <p class="brief">
-          <span class="text-color7">Mei mao bing,</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color6"></span>
-      <time>
-        <span class="text-color6">June</span>
-        <span class="text-color6">2021</span>
-      </time>
-      <aside>
-        <p class="things">不吃饭活七八天，不喝水活五六天，不睡觉活四五天。琐事养我们，也要我们的命。家国沦丧，我们倒已经活了六七年。
+                </div>
+                <div class="brief">
+                  <span class="text-color1">
+                    true love
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color8"></span>
+              <time>
+                <span class="text-color8">
+                  July
+                </span>
+                <span class="text-color8">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">心情不好去打了两把游戏，突然发现其实刚才心情挺好的。
+                </div>
+                <div class="brief">
+                  <span class="text-color8">
+                    Kengbi duiyou
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color7"></span>
+              <time>
+                <span class="text-color7">
+                  June
+                </span>
+                <span class="text-color7">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">是金子总会发光，你说是吧？铁子
+                </div>
+                <div class="brief">
+                  <span class="text-color7">
+                    Mei mao bing,
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color6"></span>
+              <time>
+                <span class="text-color6">
+                  June
+                </span>
+                <span class="text-color6">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">不吃饭活七八天，不喝水活五六天，不睡觉活四五天。琐事养我们，也要我们的命。家国沦丧，我们倒已经活了六七年。
  我想让事情是它本来该有的那个样子。
-        </p>
-        <p class="brief">
-          <span class="text-color6">《我的团长我的团》</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color5"></span>
-      <time>
-        <span class="text-color5">June</span>
-        <span class="text-color5">2021</span>
-      </time>
-      <aside>
-        <p class="things">我喜欢这样有兄弟可以依靠，我也愿意让我的兄弟都能依靠我。
-        </p>
-        <p class="brief">
-          <span class="text-color5">《孤独的幸存者》</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color4"></span>
-      <time>
-        <span class="text-color4">June</span>
-        <span class="text-color4">2021</span>
-      </time>
-      <aside>
-        <p class="things">城市夜晚的纽带都是灯红酒绿
+                </div>
+                <div class="brief">
+                  <span class="text-color6">
+                    《我的团长我的团》
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color5"></span>
+              <time>
+                <span class="text-color5">
+                  June
+                </span>
+                <span class="text-color5">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">我喜欢这样有兄弟可以依靠，我也愿意让我的兄弟都能依靠我。
+                </div>
+                <div class="brief">
+                  <span class="text-color5">
+                    《孤独的幸存者》
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color4"></span>
+              <time>
+                <span class="text-color4">
+                  June
+                </span>
+                <span class="text-color4">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">城市夜晚的纽带都是灯红酒绿
 懒惰与欲望逼你每天走在悬崖峭壁
 你松开手 不再理会周围虚情假意
 同时许诺明天 一定加足十万马力
 要我说不如现在就迈一步
 在迷路的同时领悟
 不正的心术无法驱散前路的迷雾
-        </p>
-        <p class="brief">
-          <span class="text-color4">《三思而后行》 王以太</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color3"></span>
-      <time>
-        <span class="text-color3">June</span>
-        <span class="text-color3">2021</span>
-      </time>
-      <aside>
-        <p class="things">最好的都不信，干嘛信最坏的啊？
-        </p>
-        <p class="brief">
-          <span class="text-color3">《我的团长我的团》</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color2"></span>
-      <time>
-        <span class="text-color2">May</span>
-        <span class="text-color2">2021</span>
-      </time>
-      <aside>
-        <p class="things">毕业了，要常回母校看看，要记得自己毕业时的初衷。
-        </p>
-        <p class="brief">
-          <span class="text-color2">Graduation</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color1"></span>
-      <time>
-        <span class="text-color1">April</span>
-        <span class="text-color1">2021</span>
-      </time>
-      <aside>
-        <p class="things">He said,one day you'll leave this world behind,So live a life you will remember.
-        </p>
-        <p class="brief">
-          <span class="text-color1">《The Nights》Avicii</span>
-        </p>
-      </aside>
-    </section> 
-    
-    </article>
-  </div>
+                </div>
+                <div class="brief">
+                  <span class="text-color4">
+                    《三思而后行》 王以太
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color3"></span>
+              <time>
+                <span class="text-color3">
+                  June
+                </span>
+                <span class="text-color3">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">最好的都不信，干嘛信最坏的啊？
+                </div>
+                <div class="brief">
+                  <span class="text-color3">
+                    《我的团长我的团》
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color2"></span>
+              <time>
+                <span class="text-color2">
+                  May
+                </span>
+                <span class="text-color2">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">毕业了，要常回母校看看，要记得自己毕业时的初衷。
+                </div>
+                <div class="brief">
+                  <span class="text-color2">
+                    Graduation
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color1"></span>
+              <time>
+                <span class="text-color1">
+                  April
+                </span>
+                <span class="text-color1">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">He said,one day you'll leave this world behind,So live a life you will remember.
+                </div>
+                <div class="brief">
+                  <span class="text-color1">
+                    《The Nights》Avicii
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+      </article>
+    </div>
 
-  <!--记录-->
-  <div class="content" id="record">
-    <article>
-      <h3>心情</h3>
-      
-      
-    <section>
-      <span class="point-time point-color8"></span>
-      <time>
-        <span class="text-color8">6-16</span>
-        <span class="text-color8">2022</span>
-      </time>
-      <aside>
-        <p class="things">再见，IE
-        </p>
-        <p class="brief">
-          <span class="text-color8"># IE退役</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color7"></span>
-      <time>
-        <span class="text-color7">12-1</span>
-        <span class="text-color7">2021</span>
-      </time>
-      <aside>
-        <p class="things">移动的网上Github太难了，推代码永远都是error 10054
-        </p>
-        <p class="brief">
-          <span class="text-color7">Web</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color6"></span>
-      <time>
-        <span class="text-color6">9-14</span>
-        <span class="text-color6">2021</span>
-      </time>
-      <aside>
-        <p class="things">读了这么久的书，被关心了这么久，可是等到毕业了，关心我们的人都已经慢慢不在了，甚至连好好陪他们喝顿酒，好好敬他们支烟的机会都没有，而他们临了，还在关心着我们的未来。
-        </p>
-        <p class="brief">
-          <span class="text-color6"></span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color5"></span>
-      <time>
-        <span class="text-color5">9-4</span>
-        <span class="text-color5">2021</span>
-      </time>
-      <aside>
-        <p class="things">见证了世界上最好的温柔。
-        </p>
-        <p class="brief">
-          <span class="text-color5"></span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color4"></span>
-      <time>
-        <span class="text-color4">6-26</span>
-        <span class="text-color4">2021</span>
-      </time>
-      <aside>
-        <p class="things">推荐一个B站UP主，<span style="color:rgb(0,162,255)">@快乐治愈小分队</span>，微博同名，高质量治愈系UP主。
+    <!--记录-->
+    <div class="content" id="record">
+      <article>
+        <h3>心情</h3>
+        
+          
+            <section>
+              <span class="point-time point-color8"></span>
+              <time>
+                <span class="text-color8">
+                  6-16
+                </span>
+                <span class="text-color8">
+                  2022
+                </span>
+              </time>
+              <aside>
+                <div class="details">再见，IE
+                </div>
+                <div class="brief">
+                  <span class="text-color8">
+                    # IE退役
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color7"></span>
+              <time>
+                <span class="text-color7">
+                  12-1
+                </span>
+                <span class="text-color7">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">移动的网上Github太难了，推代码永远都是error 10054
+                </div>
+                <div class="brief">
+                  <span class="text-color7">
+                    Web
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color6"></span>
+              <time>
+                <span class="text-color6">
+                  9-14
+                </span>
+                <span class="text-color6">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">读了这么久的书，被关心了这么久，可是等到毕业了，关心我们的人都已经慢慢不在了，甚至连好好陪他们喝顿酒，好好敬他们支烟的机会都没有，而他们临了，还在关心着我们的未来。
+                </div>
+                <div class="brief">
+                  <span class="text-color6">
+                    
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color5"></span>
+              <time>
+                <span class="text-color5">
+                  9-4
+                </span>
+                <span class="text-color5">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">见证了世界上最好的温柔。
+                </div>
+                <div class="brief">
+                  <span class="text-color5">
+                    
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color4"></span>
+              <time>
+                <span class="text-color4">
+                  6-26
+                </span>
+                <span class="text-color4">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">推荐一个B站UP主，<span style="color:rgb(0,162,255)">@快乐治愈小分队</span>，微博同名，高质量治愈系UP主。
  
-        </p>
-        <p class="brief">
-          <span class="text-color4">bilibili</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color3"></span>
-      <time>
-        <span class="text-color3">6-18</span>
-        <span class="text-color3">2021</span>
-      </time>
-      <aside>
-        <p class="things">学校传统，毕业带不走的东西会摆个小摊半卖半送给学弟学妹。遇到以前的体育老师，快200块的网球拍10块卖给他了，结果他假装扫码后没付钱。。。。哇，实在是太苟了
-        </p>
-        <p class="brief">
-          <span class="text-color3">Graduation</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color2"></span>
-      <time>
-        <span class="text-color2">6-10</span>
-        <span class="text-color2">2021</span>
-      </time>
-      <aside>
-        <p class="things">现在可以在支付宝和微信里查自己名下的手机号了。查询方法：支付宝里搜“全国移动电话卡一证通查”或者关注微信公众号""工信微报"，然后选“政务服务”里的“一证通查”。查一下，说不定你也会有四五个手机号冒出来。
-        </p>
-        <p class="brief">
-          <span class="text-color2">Information safety</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color1"></span>
-      <time>
-        <span class="text-color1">6-08</span>
-        <span class="text-color1">2021</span>
-      </time>
-      <aside>
-        <p class="things">推荐一家服务器提供商<a target="_blank" rel="noopener" href="https://www.vultr.com/" title="跳转到官网" style="color:rgb(0 162 255)">@vultr</a>，用了两年了，支持支付宝付款，客服工单回复的也很快但千万不要把信用卡绑在账号上，直接用支付宝付款就好。
-        </p>
-        <p class="brief">
-          <span class="text-color1">Vultr Virtual Private Servers</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color8"></span>
-      <time>
-        <span class="text-color8">6-02</span>
-        <span class="text-color8">2021</span>
-      </time>
-      <aside>
-        <p class="things">现在的平台太多了，乱七八糟的平台注册了一堆，常用的没几个。主页上那几个平台如果我没及时回复的话，给我写电报或者邮件吧，电报、邮件是最常看的。
-        </p>
-        <p class="brief">
-          <span class="text-color8">Gmail</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color7"></span>
-      <time>
-        <span class="text-color7">6-01</span>
-        <span class="text-color7">2021</span>
-      </time>
-      <aside>
-        <p class="things">宿舍里进来好大一只鸟，跟以前那只好像，不知道是不是大二冬天救过那只小可爱回来了。
-        </p>
-        <p class="brief">
-          <span class="text-color7">life</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color6"></span>
-      <time>
-        <span class="text-color6">5-30</span>
-        <span class="text-color6">2021</span>
-      </time>
-      <aside>
-        <p class="things">不要去为了做技术而做技术。
-        </p>
-        <p class="brief">
-          <span class="text-color6">Predecessor</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color5"></span>
-      <time>
-        <span class="text-color5">5-28</span>
-        <span class="text-color5">2021</span>
-      </time>
-      <aside>
-        <p class="things">终于答辩完了，肝了小半年，毕业设计跟了我们专业的牵头教授，最后拿了91完美收官，这就算大学认真做完的最后一件事吧。
-        </p>
-        <p class="brief">
-          <span class="text-color5">Graduation</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color4"></span>
-      <time>
-        <span class="text-color4">5-17</span>
-        <span class="text-color4">2021</span>
-      </time>
-      <aside>
-        <p class="things">谷歌云Google Cloud上绑定VISA的信用卡可以获得300美刀有效期为一年，够这一年的服务器费用了。
-        </p>
-        <p class="brief">
-          <span class="text-color4">Google Cloud</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color3"></span>
-      <time>
-        <span class="text-color3">4-10</span>
-        <span class="text-color3">2021</span>
-      </time>
-      <aside>
-        <p class="things">看见一则新闻，一位大爷拜年回家，家里的哈士奇看见主人回来太兴奋，从三楼楼顶蹦下来把大爷砸得住进了医院。。。虽然很同情这位大爷，但是绷不住想笑，哈哈哈哈
-        </p>
-        <p class="brief">
-          <span class="text-color3">Husky</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color2"></span>
-      <time>
-        <span class="text-color2">3-26</span>
-        <span class="text-color2">2021</span>
-      </time>
-      <aside>
-        <p class="things">看见有几个朋友注册了Telegram，Telegram马上就给我发消息了，注册Telegram不要拿自己手机号注册啊，一注册就会通知你通讯录里的好友，注册时间、用户名一目了然，手机号都不隐藏一下。
-        </p>
-        <p class="brief">
-          <span class="text-color2">Telegram</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color1"></span>
-      <time>
-        <span class="text-color1">3-23</span>
-        <span class="text-color1">2021</span>
-      </time>
-      <aside>
-        <p class="things">前面的记录丢了
-        </p>
-        <p class="brief">
-          <span class="text-color1">new life</span>
-        </p>
-      </aside>
-    </section> 
-    
-    </article>
-  </div>
+                </div>
+                <div class="brief">
+                  <span class="text-color4">
+                    bilibili
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color3"></span>
+              <time>
+                <span class="text-color3">
+                  6-18
+                </span>
+                <span class="text-color3">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">学校传统，毕业带不走的东西会摆个小摊半卖半送给学弟学妹。遇到以前的体育老师，快200块的网球拍10块卖给他了，结果他假装扫码后没付钱。。。。哇，实在是太苟了
+                </div>
+                <div class="brief">
+                  <span class="text-color3">
+                    Graduation
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color2"></span>
+              <time>
+                <span class="text-color2">
+                  6-10
+                </span>
+                <span class="text-color2">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">现在可以在支付宝和微信里查自己名下的手机号了。查询方法：支付宝里搜“全国移动电话卡一证通查”或者关注微信公众号""工信微报"，然后选“政务服务”里的“一证通查”。查一下，说不定你也会有四五个手机号冒出来。
+                </div>
+                <div class="brief">
+                  <span class="text-color2">
+                    Information safety
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color1"></span>
+              <time>
+                <span class="text-color1">
+                  6-08
+                </span>
+                <span class="text-color1">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">推荐一家服务器提供商<a target="_blank" rel="noopener" href="https://www.vultr.com/" title="跳转到官网" style="color:rgb(0 162 255)">@vultr</a>，用了两年了，支持支付宝付款，客服工单回复的也很快但千万不要把信用卡绑在账号上，直接用支付宝付款就好。
+                </div>
+                <div class="brief">
+                  <span class="text-color1">
+                    Vultr Virtual Private Servers
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color8"></span>
+              <time>
+                <span class="text-color8">
+                  6-02
+                </span>
+                <span class="text-color8">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">现在的平台太多了，乱七八糟的平台注册了一堆，常用的没几个。主页上那几个平台如果我没及时回复的话，给我写电报或者邮件吧，电报、邮件是最常看的。
+                </div>
+                <div class="brief">
+                  <span class="text-color8">
+                    Gmail
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color7"></span>
+              <time>
+                <span class="text-color7">
+                  6-01
+                </span>
+                <span class="text-color7">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">宿舍里进来好大一只鸟，跟以前那只好像，不知道是不是大二冬天救过那只小可爱回来了。
+                </div>
+                <div class="brief">
+                  <span class="text-color7">
+                    life
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color6"></span>
+              <time>
+                <span class="text-color6">
+                  5-30
+                </span>
+                <span class="text-color6">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">不要去为了做技术而做技术。
+                </div>
+                <div class="brief">
+                  <span class="text-color6">
+                    Predecessor
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color5"></span>
+              <time>
+                <span class="text-color5">
+                  5-28
+                </span>
+                <span class="text-color5">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">终于答辩完了，肝了小半年，毕业设计跟了我们专业的牵头教授，最后拿了91完美收官，这就算大学认真做完的最后一件事吧。
+                </div>
+                <div class="brief">
+                  <span class="text-color5">
+                    Graduation
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color4"></span>
+              <time>
+                <span class="text-color4">
+                  5-17
+                </span>
+                <span class="text-color4">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">谷歌云Google Cloud上绑定VISA的信用卡可以获得300美刀有效期为一年，够这一年的服务器费用了。
+                </div>
+                <div class="brief">
+                  <span class="text-color4">
+                    Google Cloud
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color3"></span>
+              <time>
+                <span class="text-color3">
+                  4-10
+                </span>
+                <span class="text-color3">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">看见一则新闻，一位大爷拜年回家，家里的哈士奇看见主人回来太兴奋，从三楼楼顶蹦下来把大爷砸得住进了医院。。。虽然很同情这位大爷，但是绷不住想笑，哈哈哈哈
+                </div>
+                <div class="brief">
+                  <span class="text-color3">
+                    Husky
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color2"></span>
+              <time>
+                <span class="text-color2">
+                  3-26
+                </span>
+                <span class="text-color2">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">看见有几个朋友注册了Telegram，Telegram马上就给我发消息了，注册Telegram不要拿自己手机号注册啊，一注册就会通知你通讯录里的好友，注册时间、用户名一目了然，手机号都不隐藏一下。
+                </div>
+                <div class="brief">
+                  <span class="text-color2">
+                    Telegram
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color1"></span>
+              <time>
+                <span class="text-color1">
+                  3-23
+                </span>
+                <span class="text-color1">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">前面的记录丢了
+                </div>
+                <div class="brief">
+                  <span class="text-color1">
+                    new life
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+      </article>
+    </div>
 
 
-  <!--网页部分-->
-  <div class="content" id="recommendWeb">
-    <div class="explain">收录了平时经常使用的在线工具和有意思的网站设计</div>
-    <ul class="webs">
-      <h4>沙雕网站&&解压</h4>
-      <li>
-        <h5>逗比拯救世界</h5>
-        <p>
-          表情包收录网站，可按类别搜索同类表情包，支持在线制作GIF表情包
-        </p><a href="https://www.dbbqb.com/" target="_blank">https://www.dbbqb.com/</a>
-      </li>
+    <!--网页部分-->
+    <div class="content" id="recommendWeb">
+      <div class="explain">收录了平时经常使用的在线工具和有意思的网站设计</div>
+      <ul class="webs">
+        <h4>沙雕网站&&解压</h4>
+        <li>
+          <h5>逗比拯救世界</h5>
+          <p>
+            表情包收录网站，可按类别搜索同类表情包，支持在线制作GIF表情包
+          </p><a href="https://www.dbbqb.com/" target="_blank">https://www.dbbqb.com/</a>
+        </li>
+        <li>
+          <h5>图片故障效果</h5>
+          <p>将图片生成故障效果，创造赛博朋克风的图片效果</p><a href="https://photomosh.com/" target="_blank">https://photomosh.com/</a>
+        </li>
+        <li>
+          <h5>没用的网站</h5>
+          <p>随机跳转到某个页面，有很多有创意的网页设计,开盲盒式的浏览网站,打发时间</p><a href="https://theuselessweb.com/"
+            target="_blank">https://theuselessweb.com/</a>
+        </li>
+        <li>
+          <h5>网郁云段子生成器</h5>
+          <p>到点了，上号，开哭!</p><a href="http://www.yduanzi.com/?utm_source=shadiao.app"
+            target="_blank">http://www.yduanzi.com/?utm_source=shadiao.app</a>
+        </li>
 
+        <li>
+          <h5>彩虹屁生成器</h5>
+          <p>"回微信敷衍专用"</p>
+          <a href="http://chp.shadiao.app/" target="_blank">http://chp.shadiao.app/</a>
+        </li>
+        <li>
+          <h5>朋友圈文案生成器</h5>
+          <p>和上一个是同一个作者，页面里还有其他的生成器</p> <a href="https://pyq.shadiao.app/" target="_blank">https://pyq.shadiao.app/</a>
+        </li>
+        <li>
+          <h5>日本的沙雕解压网站</h5>
+          <p>拥有诸多沙雕的解压页面</p><a href="https://aidn.jp/contents/" target="_blank">https://aidn.jp/contents/</a>
+          <p>推荐这个，让你画的人物跳舞</p>
+          <a href="https://aidn.jp/wowa/" target="_blank">https://aidn.jp/wowa/</a>
+        </li>
+        <li></li>
+        <li>
+          <h4>中午吃什么</h4>
+          <p>要是能早点发现这个网站，当年宿舍出去干饭也不至于天天相互问今天吃什么了</p><a href="http://chishenme.xyz/"
+            target="_blank">http://chishenme.xyz/</a>
+        </li>
+        <li>
+          <h4>体验星际穿越</h4>
+          <p>体验一把星际穿越的感觉</p><a href="https://starrior.com/" target="_blank">https://starrior.com/</a>
+        </li>
+        <li>
+          <h4>生成艺术风格Unicode字符</h4>
+          <p>颜文字</p><a href="https://texteditor.com/" target="_blank">https://texteditor.com/</a>
+        </li>
+      </ul>
+      <hr style="border : 2px dashed rgb(0, 195, 255);">
+      <ul class="webs">
+        <h4>力荐！！！</h4>
+        <li>
+          <h5>千亿像素看中国</h5>
+          <p>包含了全国诸多城市和景点的超高像素摄影作品，随心所欲逛景点，沉浸式网上旅游</p><a href="http://www.bigpixel.cn/"
+            target="_blank">http://www.bigpixel.cn/</a>
+        </li>
+        <li>
+          <h5>世界上第一个网站</h5>
+          <p>
+            由互联网之父蒂姆·伯纳斯·李于1991年8月6日公布
+          </p><a href="http://info.cern.ch/" target="_blank">http://info.cern.ch/</a>
+        </li>
+        <li>
+          <h5>neal.fun</h5>
+          <p>包含多个页面，直观地向我们展示宇宙未来的走向、人类相对于宇宙大小、海洋深度等等，这才是网页该有的样子</p><a href="https://neal.fun/"
+            target="_blank">https://neal.fun/</a>
+        </li>
+        <li>
+          <h5>音频分离</h5>
+          <p>支持人声和伴奏分离，修改音调，拼接音频等,简易版Adobe Audition</p><a href="https://vocalremover.org/"
+            target="_blank">https://vocalremover.org/</a>
+        </li>
+        <li>
+          <h5>自己当DJ</h5>
+          <p>需要魔法工具！网站包含数百首DJ曲目，可以自己搓碟子,极致体验当DJ的感觉</p><a href="https://you.dj/" target="_blank">https://you.dj/</a>
+        </li>
+        <li>
+          <h5>计算器</h5>
+          <p>提供上千种计算器，包含数学、物理、健康、饮食等等，比如估算你的体脂占身体比重、当前身高对应的健康体重等，快看看你的体格是否达到美国陆军/空军标准。(美国人开发的网站)</p><a
+            href="https://www.omnicalculator.com/" target="_blank">https://www.omnicalculator.com/</a>
+        </li>
 
+        <li>
+          <h5>"看星星"</h5>
+          <p>查看地球上空现存的卫星和卫星碎片</p><a href="https://platform.leolabs.space/visualization"
+            target="_blank">https://platform.leolabs.space/visualization</a>
+        </li>
+      </ul>
+      <hr style="border : 2px dashed rgb(0, 195, 255);">
+      <ul class="webs developmentTools">
+        <h4>开发工具</h4>
+        <li>
+          <h5>免费的SSL证书</h5><a href="https://zerossl.com/" target="_blank">https://zerossl.com/</a></span>
+        </li>
+        <li>
+          <h5>测试网站响应速度</h5><a href=" https://tools.pingdom.com/" target="_blank"> https://tools.pingdom.com/</a></span>
+        </li>
+        <li>
+          <h5>类名生成器</h5> <a href="https://unbug.github.io/codelf/" target="_blank">https://unbug.github.io/codelf/</a>
+        </li>
+        <li>
+          <h5>查看网站用了哪些技术</h5><a href=" https://sitereport.netcraft.com/?host=www.engeldorf.com" target="_blank">
+            https://sitereport.netcraft.com/?host=www.engeldorf.com</a></span>
+        </li>
+        <li>
+          <h5>制作时间线</h5><a href="https://time.graphics/editor" target="_blank">https://time.graphics/editor</a></span>
+        </li>
+        <li>
+          <h5>CSS动画</h5> <a href="https://animista.net/play" target="_blank">https://animista.net/play</a>
+        </li>
+        <li>
+          <h5>取色网站</h5> <a href="https://flatuicolors.com/" target="_blank">https://flatuicolors.com/</a>
+        </li>
+        <li>
+          <h5>颜色渐变配色网站1</h5> <a href="http://www.gradienthunt.com/" target="_blank">http://www.gradienthunt.com/</a>
+        </li>
+        <li>
+          <h5>颜色渐变配色网站2</h5> <a href="https://webkul.github.io/coolhue/"
+            target="_blank">https://webkul.github.io/coolhue/</a>
+        </li>
+        <li>
+          <h5>外网端口扫描、IP检查</h5><a href="https://www.yougetsignal.com/" target="_blank">https://www.yougetsignal.com/</a>
+        </li>
+        <li>
+          <h5>SEO 反向链接工具</h5><a href="https://www.duplichecker.com/seo-backlink-tools"
+            target="_blank">https://www.duplichecker.com/seo-backlink-tools</a>
+        </li>
+        <li>
+          <h5>开源C3H5,JS设计</h5><a href="https://codepen.io/" target="_blank">https://codepen.io/</a>
+        </li>
 
-      <li>
-        <h5>图片故障效果</h5>
-        <p>将图片生成故障效果，创造赛博朋克风的图片效果</p><a href="https://photomosh.com/" target="_blank">https://photomosh.com/</a>
-      </li>
-      <li>
-        <h5>没用的网站</h5>
-        <p>随机跳转到某个页面，有很多有创意的网页设计,开盲盒式的浏览网站,打发时间</p><a href="https://theuselessweb.com/"
-          target="_blank">https://theuselessweb.com/</a>
-      </li>
-      <li>
-        <h5>网郁云段子生成器</h5>
-        <p>到点了，上号，开哭!</p><a href="http://www.yduanzi.com/?utm_source=shadiao.app"
-          target="_blank">http://www.yduanzi.com/?utm_source=shadiao.app</a>
-      </li>
+        <li>
+          <h5>微带线计算工具</h5><a
+            target="_blank" rel="noopener" href="http://www.mweda.com/tools/tools_107.html">http://www.mweda.com/tools/tools_107.html</a>
+        </li>
+      </ul>
+    </div>
 
-      <li>
-        <h5>彩虹屁生成器</h5><p>"回微信敷衍专用"</p>
-        <a href="http://chp.shadiao.app/" target="_blank">http://chp.shadiao.app/</a>
-      </li>
-      <li><h5>朋友圈文案生成器</h5><p>和上一个是同一个作者，页面里还有其他的生成器</p> <a href="https://pyq.shadiao.app/" target="_blank">https://pyq.shadiao.app/</a></li>
-      <li><h5>日本的沙雕解压网站</h5>
-        <p>拥有诸多沙雕的解压页面</p><a href="https://aidn.jp/contents/" target="_blank">https://aidn.jp/contents/</a>
-        <p>推荐这个，让你画的人物跳舞</p>
-        <a href="https://aidn.jp/wowa/" target="_blank">https://aidn.jp/wowa/</a>
-      </li>
-      <li></li>
-      <li><h4>中午吃什么</h4>
-        <p>要是能早点发现这个网站，当年宿舍出去干饭也不至于天天相互问今天吃什么了</p><a href="http://chishenme.xyz/" target="_blank">http://chishenme.xyz/</a></li>
-      <li><h4>体验星际穿越</h4>
-        <p>体验一把星际穿越的感觉</p><a href="https://starrior.com/" target="_blank">https://starrior.com/</a></li>
-      <li><h4>生成艺术风格Unicode字符</h4><p>颜文字</p><a href="https://texteditor.com/" target="_blank">https://texteditor.com/</a></li>
-    </ul>
-    <hr style="border : 2px dashed rgb(0, 195, 255);">
-    <ul class="webs">
-      <h4>力荐！！！</h4>
-      <li><h5>千亿像素看中国</h5><p>包含了全国诸多城市和景点的超高像素摄影作品，随心所欲逛景点，沉浸式网上旅游</p><a href="http://www.bigpixel.cn/" target="_blank">http://www.bigpixel.cn/</a></li>
-      <li><h5>世界上第一个网站</h5><p>
-        由互联网之父蒂姆·伯纳斯·李于1991年8月6日公布
-      </p><a href="http://info.cern.ch/" target="_blank">http://info.cern.ch/</a></li>
-      <li><h5>neal.fun</h5>
-        <p>包含多个页面，直观地向我们展示宇宙未来的走向、人类相对于宇宙大小、海洋深度等等，这才是网页该有的样子</p><a href="https://neal.fun/" target="_blank">https://neal.fun/</a></li>
-      <li><h5>音频分离</h5><p>支持人声和伴奏分离，修改音调，拼接音频等,简易版Adobe Audition</p><a href="https://vocalremover.org/" target="_blank">https://vocalremover.org/</a></li>
-      <li><h5>自己当DJ</h5><p>需要魔法工具！网站包含数百首DJ曲目，可以自己搓碟子,极致体验当DJ的感觉</p><a href="https://you.dj/" target="_blank">https://you.dj/</a></li>
-      <li><h5>计算器</h5><p>提供上千种计算器，包含数学、物理、健康、饮食等等，比如估算你的体脂占身体比重、当前身高对应的健康体重等，快看看你的体格是否达到美国陆军/空军标准。(美国人开发的网站)</p><a href="https://www.omnicalculator.com/" target="_blank">https://www.omnicalculator.com/</a></li>
-
-      <li><h5>"看星星"</h5><p>查看地球上空现存的卫星和卫星碎片</p><a href="https://platform.leolabs.space/visualization" target="_blank">https://platform.leolabs.space/visualization</a></li>
-    </ul>
-    <hr style="border : 2px dashed rgb(0, 195, 255);">
-    <ul class="webs developmentTools">
-      <h4>开发工具</h4>
-      <li><h5>免费的SSL证书</h5><a href="https://zerossl.com/" target="_blank">https://zerossl.com/</a></span></li>
-      <li><h5>测试网站响应速度</h5><a href=" https://tools.pingdom.com/" target="_blank"> https://tools.pingdom.com/</a></span></li>
-      <li><h5>类名生成器</h5> <a href="https://unbug.github.io/codelf/" target="_blank">https://unbug.github.io/codelf/</a></li>
-      <li><h5>查看网站用了哪些技术</h5><a href=" https://sitereport.netcraft.com/?host=www.engeldorf.com" target="_blank"> https://sitereport.netcraft.com/?host=www.engeldorf.com</a></span></li>
-      <li><h5>制作时间线</h5><a href="https://time.graphics/editor" target="_blank">https://time.graphics/editor</a></span></li>
-      <li><h5>CSS动画</h5>   <a href="https://animista.net/play" target="_blank">https://animista.net/play</a></li>
-      <li><h5>取色网站</h5>  <a href="https://flatuicolors.com/" target="_blank">https://flatuicolors.com/</a></li>
-      <li><h5>颜色渐变配色网站1</h5> <a href="http://www.gradienthunt.com/" target="_blank">http://www.gradienthunt.com/</a></li>
-      <li><h5>颜色渐变配色网站2</h5> <a href="https://webkul.github.io/coolhue/" target="_blank">https://webkul.github.io/coolhue/</a></li>
-      <li><h5>外网端口扫描、IP检查</h5><a href="https://www.yougetsignal.com/" target="_blank">https://www.yougetsignal.com/</a></li>
-      <li><h5>SEO 反向链接工具</h5><a href="https://www.duplichecker.com/seo-backlink-tools"
-          target="_blank">https://www.duplichecker.com/seo-backlink-tools</a>
-      </li>
-      <li><h5>开源C3H5,JS设计</h5><a href="https://codepen.io/" target="_blank">https://codepen.io/</a></li>
-
-      <li><h5>微带线计算工具</h5><a target="_blank" rel="noopener" href="http://www.mweda.com/tools/tools_107.html">http://www.mweda.com/tools/tools_107.html</a></li>
-    </ul>
-  </div>
-
-  <div class="content" id="log">
-    <article>
-      <h3>BUG开发日志</h3>
-      
-      
-    <section>
-      <span class="point-time point-color8"></span>
-      <time>
-        <span></span>
-        <span>规划</span>
-      </time>
-      <aside>
-        <p class="things">白天/黑夜主题切换功能
-文章字体大小调整、锚点跳转功能
+    <div class="content" id="log">
+      <article>
+        <h3>BUG开发日志</h3>
+        
+          
+            <section>
+              <span class="point-time point-color8"></span>
+              <time>
+                <span class="text-color8">
+                  
+                </span>
+                <span class="text-color8">
+                  规划
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  ✔ 白天/黑夜主题切换功能
+✔ 文章字体大小调整、锚点跳转功能
 加入一个归档页面
 设计一个关于《我的团长我的团》的页面
 有时间去备个案
-        </p>
-        <p class="brief">
-          <span class="text-color8">Expectation</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color7"></span>
-      <time>
-        <span>—</span>
-        <span>2022</span>
-      </time>
-      <aside>
-        <p class="things">重构了部分页面，现在数据都将从yml文件中拉取
+                </div>
+                <div class="brief">
+                  <span class="text-color8">
+                    Expectation
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color7"></span>
+              <time>
+                <span class="text-color7">
+                  10/16
+                </span>
+                <span class="text-color7">
+                  2023
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  <div class="append">新增基于canvas的夜间背景动画，该动画会占用一定量的GPU资源，可以通过主页右侧的菜单栏清除或禁用</div> <div class="append">新增了夜间模式下的点击特效，重写了日间模式的粒子点击特效，优化了性能</div> <div class=""></div> <div class="remove">移除了Dom夜间背景动画</div> <div class="modify">jsDelivr不太稳定，jQuery文件将使用BootCDN引用，其余文件不再使用CDN</div> <div class="repair">修复了搜索功能的bug，之前bug原因是：markdown中的html标签被错误解析为xml标签，导致xml文件无法通过DTD验证，Ajax无法获取到文件</div>
+                </div>
+                <div class="brief">
+                  <span class="text-color7">
+                    
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color6"></span>
+              <time>
+                <span class="text-color6">
+                  8/28
+                </span>
+                <span class="text-color6">
+                  2023
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  添加了夜间模式下的canvas背景动画
+重写了粒子单击特效，优化了性能
+设计了一个新的鼠标单击特效，将在夜间启用
+                </div>
+                <div class="brief">
+                  <span class="text-color6">
+                    
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color5"></span>
+              <time>
+                <span class="text-color5">
+                  8/12
+                </span>
+                <span class="text-color5">
+                  2023
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  重新设计了欢迎页
+CDN不稳地，因此该页面弃用了CDN
+修改了欢迎页的平台
+欢迎页加入了新的星空背景
+把以前设计的星芒加入了星空里
+设计这个背景花了好长时间
+时间全花在了优化性能和调CSS上了
+背景有canvas渲染和Dom渲染两种模式
+移动端下如果卡顿可以使用canvas渲染
+ 
+                </div>
+                <div class="brief">
+                  <span class="text-color5">
+                    
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color4"></span>
+              <time>
+                <span class="text-color4">
+                  3/5
+                </span>
+                <span class="text-color4">
+                  2023
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  新增本地搜索功能，搜索框位于右侧菜单里
+新增文章目录跳转功能，支持三级目录跳转
+重写了懒加载功能，减少了性能消耗，也更稳定了
+                </div>
+                <div class="brief">
+                  <span class="text-color4">
+                    
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color3"></span>
+              <time>
+                <span class="text-color3">
+                  1/11
+                </span>
+                <span class="text-color3">
+                  2023
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  新增了夜间主题，所有页面新增了全新的css样式
+新增右侧设置菜单，用于切换主题、更改字号、处理背景
+主题切换只能在首页和文章阅读页面进行，其他页面将继承主题
+字体调节范围为14-20px
+禁用背景将在本站全局禁用夜间背景，但只对本次访问生效
+新增提示框
+更新部分移动端css
+优化部分JS功能
+                </div>
+                <div class="brief">
+                  <span class="text-color3">
+                    
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color2"></span>
+              <time>
+                <span class="text-color2">
+                  —
+                </span>
+                <span class="text-color2">
+                  2022
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  重构了部分页面，现在数据都将从yml文件中拉取
 懒加载中使用css动画替代了GIF图
 以前使用GIF图发现它严重拖慢了加载速度
 懒加载时loading动画将有1s延迟
 首页添加了新的交互效果
 重写了部分功能的逻辑，并优化了JS代码
 调整了部分css
-        </p>
-        <p class="brief">
-          <span class="text-color7">component</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color6"></span>
-      <time>
-        <span>2/10</span>
-        <span>2022</span>
-      </time>
-      <aside>
-        <p class="things">欢迎页加入了流星，每5s会有20%的几率触发
+                </div>
+                <div class="brief">
+                  <span class="text-color2">
+                    component
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color1"></span>
+              <time>
+                <span class="text-color1">
+                  2/10
+                </span>
+                <span class="text-color1">
+                  2022
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  欢迎页加入了流星，每5s会有20%的几率触发
 更新了文案
 进一步压缩了一部分图片，加快加载速度
-首页加入了一只冬眠的小狐狸,写css花了好长时间
+首页加入了一只冬眠的小狐狸
 网站运行时间
 更新菜单栏控制按钮的动画
 修改首页在移动端下的css
 更新了亿点点不堪入目的细节
 部署了一个镜像站，CDN服务有时候会挂掉，这个作为备用
-        </p>
-        <p class="brief">
-          <span class="text-color6">shooting star</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color5"></span>
-      <time>
-        <span>后续</span>
-        <span>2021</span>
-      </time>
-      <aside>
-        <p class="things">加入关于页
+                </div>
+                <div class="brief">
+                  <span class="text-color1">
+                    shooting star
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color8"></span>
+              <time>
+                <span class="text-color8">
+                  后续
+                </span>
+                <span class="text-color8">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  加入关于页
 加入了日常页
 修复字符串异步显示bug
 修改部分响应式代码
@@ -700,144 +1112,199 @@
 修改了亿点点CSS
 修复了亿点bug
 又新增了亿点点bug 
-        </p>
-        <p class="brief">
-          <span class="text-color5">All in</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color4"></span>
-      <time>
-        <span>5/10</span>
-        <span>2021</span>
-      </time>
-      <aside>
-        <p class="things">写论文时间比较紧，没有用git每次提交，后面的制作进度记录没了。
-        </p>
-        <p class="brief">
-          <span class="text-color4">version control</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color3"></span>
-      <time>
-        <span>5/10</span>
-        <span>2021</span>
-      </time>
-      <aside>
-        <p class="things">为了方便维护和更新，将欢迎页和博客框架分开了
+                </div>
+                <div class="brief">
+                  <span class="text-color8">
+                    All in
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color7"></span>
+              <time>
+                <span class="text-color7">
+                  5/10
+                </span>
+                <span class="text-color7">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  写论文时间比较紧，没有用git每次提交，后面的制作进度记录没了。
+                </div>
+                <div class="brief">
+                  <span class="text-color7">
+                    version control
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color6"></span>
+              <time>
+                <span class="text-color6">
+                  5/10
+                </span>
+                <span class="text-color6">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  为了方便维护和更新，将欢迎页和博客框架分开了
 修改鼠标样式文件，适配主题
 制作星空背景图和动画
 加入了新的欢迎页。
-        </p>
-        <p class="brief">
-          <span class="text-color3">Photoshop Cursor</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color2"></span>
-      <time>
-        <span>4/28</span>
-        <span>2021</span>
-      </time>
-      <aside>
-        <p class="things">因为中期答辩搁置了很久
+                </div>
+                <div class="brief">
+                  <span class="text-color6">
+                    Photoshop Cursor
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color5"></span>
+              <time>
+                <span class="text-color5">
+                  4/28
+                </span>
+                <span class="text-color5">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  因为中期答辩搁置了很久
 设计文章详情页
 制做雪松背景图片和精灵图。
-        </p>
-        <p class="brief">
-          <span class="text-color2">Particulars Sprite</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color1"></span>
-      <time>
-        <span>4/4</span>
-        <span>2021</span>
-      </time>
-      <aside>
-        <p class="things">首页加入了轮播图(已移除)
-        </p>
-        <p class="brief">
-          <span class="text-color1">Carousel</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color8"></span>
-      <time>
-        <span>3/26</span>
-        <span>2021</span>
-      </time>
-      <aside>
-        <p class="things">欢迎页放了各平台的账号，首页加入字体动画
-        </p>
-        <p class="brief">
-          <span class="text-color8">Byte Dance</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color7"></span>
-      <time>
-        <span>3/22</span>
-        <span>2021</span>
-      </time>
-      <aside>
-        <p class="things">首页加入了新的动画(已移除)
-        </p>
-        <p class="brief">
-          <span class="text-color7">animation: card-transform 2s ease forwards;</span>
-        </p>
-      </aside>
-    </section> 
-    
-    <section>
-      <span class="point-time point-color6"></span>
-      <time>
-        <span>3/16</span>
-        <span>2021</span>
-      </time>
-      <aside>
-        <p class="things">完成首页和网站结构设计
-        </p>
-        <p class="brief">
-          <span class="text-color6">Hello World</span>
-        </p>
-      </aside>
-    </section> 
-    
-    </article>
-  </div>
-  <script>
-    console.log([
-"    ┬┬  ┌┬┐┬  ┌─┐┬ ┬┬┬ ┬┬",
-"    ││   │││  └─┐├─┤│││││",
-"    ┴┴  ─┴┘┴  └─┘┴ ┴┴└┴┘┴",
-    "shiwivi.me"
-    ].join('\n'));
-          let tabs=document.getElementsByName('tabs');
-          for(let i=0;i<tabs.length;i++){
-            tabs[0].click();
-            tabs[i].addEventListener('click',function(e){
-          const progress=document.querySelector('.progressBar');
-          let totalScrollHeight=document.body.scrollHeight-document.documentElement.clientHeight;
-          window.onscroll=function(){
-            let hasScrollHeight=document.body.scrollTop||document.documentElement.scrollTop;
-            let progressLength=(hasScrollHeight/totalScrollHeight)*100;
-            progress.style.width=`${progressLength}%`
-            }
-          e.stopPropagation()},false)
+                </div>
+                <div class="brief">
+                  <span class="text-color5">
+                    Particulars Sprite
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color4"></span>
+              <time>
+                <span class="text-color4">
+                  4/4
+                </span>
+                <span class="text-color4">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  首页加入了轮播图(已移除)
+                </div>
+                <div class="brief">
+                  <span class="text-color4">
+                    Carousel
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color3"></span>
+              <time>
+                <span class="text-color3">
+                  3/26
+                </span>
+                <span class="text-color3">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  欢迎页放了各平台的账号，首页加入字体动画
+                </div>
+                <div class="brief">
+                  <span class="text-color3">
+                    Byte Dance
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color2"></span>
+              <time>
+                <span class="text-color2">
+                  3/22
+                </span>
+                <span class="text-color2">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  首页加入了新的动画(已移除)
+                </div>
+                <div class="brief">
+                  <span class="text-color2">
+                    animation: card-transform 2s ease forwards;
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+            <section>
+              <span class="point-time point-color1"></span>
+              <time>
+                <span class="text-color1">
+                  3/16
+                </span>
+                <span class="text-color1">
+                  2021
+                </span>
+              </time>
+              <aside>
+                <div class="details">
+                  完成首页和网站结构设计
+                </div>
+                <div class="brief">
+                  <span class="text-color1">
+                    Hello World
+                  </span>
+                </div>
+              </aside>
+            </section>
+            
+      </article>
+    </div>
+    <script>
+      if (window.sessionStorage.getItem("webTheme") == "dark") {
+        document.body.classList.add("dark");
+      }
+      console.log([
+        "    ┬┬  ┌┬┐┬  ┌─┐┬ ┬┬┬ ┬┬",
+        "    ││   │││  └─┐├─┤│││││",
+        "    ┴┴  ─┴┘┴  └─┘┴ ┴┴└┴┘┴",
+        "shiwivi.me"
+      ].join('\n'));
+      let tabs = document.getElementsByName('tabs');
+      for (let i = 0; i < tabs.length; i++) {
+        tabs[0].click();
+        tabs[i].addEventListener('click', function (e) {
+          const progress = document.querySelector('.progressBar');
+          let totalScrollHeight = document.body.scrollHeight - document.documentElement.clientHeight;
+          window.onscroll = function () {
+            let hasScrollHeight = document.body.scrollTop || document.documentElement.scrollTop;
+            let progressLength = (hasScrollHeight / totalScrollHeight) * 100;
+            progress.style.width = `${progressLength}%`
           }
-        </script>
-</body></html>
+          e.stopPropagation()
+        }, false)
+      }
+    </script>
+  </body></html>

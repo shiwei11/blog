@@ -1,20 +1,20 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="shiwi"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>body{cursor:url(https://cdn.jsdelivr.net/gh/shiwei11/blogfile/images/normal.cur),auto;}a,label{text-decoration: none;cursor:url(https://cdn.jsdelivr.net/gh/shiwei11/blogfile/images/link.cur),auto;}</style><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let spans=document.querySelector('.text').querySelectorAll('span');const timer=setInterval(()=>{spans.forEach((item)=>{if(item.classList.contains('dance')){item.classList.remove('dance');}else{item.classList.add('dance');}})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script><title>SHIWIVI-文章</title>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="SHIWIVI"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let texts=document.querySelector('.text').querySelectorAll('span');let timer=setInterval(()=>{texts.forEach((item)=>{item.classList.toggle("dance")})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script><title>SHIWIVI-文章</title>
 <link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
 
 <link rel="stylesheet" href="/blog/css/index.css">
 <link rel="stylesheet" href="/blog/css/article.css">
-
+<link rel="stylesheet" href="/blog/css/atelier-cave.min.css">
 
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="SHWIVI's blog" type="application/atom+xml">
 </head>
 <body>
-<div class="navigation">
+<div class="nav">
     <div class="card">
         <div class="head">
             <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
         </div>
-        <div class="card-text">
+        <div class="cardText">
             <p>(ー`´ー)</p>
             <p>那不是bug，是彩蛋</p>
         </div> 
@@ -34,24 +34,24 @@
     </ul>
         <ul class="tag">
             <li>#Document</li>
-            <li>#Jquery</li>
+            <li>#Java</li>
             <li>#css</li>
-            <li>#射频</li>
-            <li>#5G通讯</li>
+            <li>#Life</li>
+            <li>#Lua</li>
             <li>#PCB</li>
-            <li>#shell</li>
+            <li>#Shell</li>
             <li>#C</li>
             <li>#html</li>
             <li>#硬件</li>
             <li>#javaScript</li>
-            <li>#防火墙</li>
-            <li>#CentOS</li>
-            <a href="/blog/tags/Linux" target="_blank"><li>#Linux</li></a>
-            
-            <li>#python</li>
-            <li>#XPpose</li>
+            <li>#Firewall</li>
+            <li>#Security</li>
+            <li><a href="/blog/tags/Linux" target="_blank">#Linux</a></li>
+            <li>#Python</li>
+            <li>#Serve</li>
+            <li>#Web</li>
         </ul>
-<div class="rsstag"><a href="/blog/atom.xml"><span class="iconfont icon-rss"></span>RSS订阅</a></div>
+    <div class="rsstag"><a href="/blog/atom.xml"><span class="iconfont icon-rss"></span>RSS订阅</a></div>
 <div class="flower">
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="84.6px" height="70.5px" viewBox="0 0 254 212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -94,24 +94,52 @@
 </div>
 
 </div>
-<div class="menu-btn closed"> 
+<div class="menuBtn closed"> 
     <div class="menu-line"></div>
     <div class="menu-line"></div>
     <div class="menu-line"></div>
 </div>
-<div class="second-main">
-    <div class="js-toc"></div>
+<div class="nightSky"><!--当关闭夜间背景模式时，子元素将在一段延时后才会被清除--></div>
+<div class="main">
+    <div class="msg">
+        <div class="msgText"></div>
+        <div class="msgBar"></div>
+    </div>
     <div class="motto">
         <p> //sunny forever<br />
             while(life&lt;end){<br />
                love++;<br />
                beAwesome :)} </p>
      </div>
-     <div class="second-content">
+     <div class="mainContent">
+    <div class="canvasWrapper"></div>
+<div class="setWrapper">
+    <ul class="setMenu">
+        <div id="setBtn" class="setButton"><</div>
+        <li class="searchContainer">
+            <input id="searchInput" class="localSearch" placeholder="搜索..." type="search" >
+            <span class="searchIco"></span>
+        </li>
+        <li id="toggleItem">
+        主题：<span class="itemIco sun"></span>
+        </li>
+        <li class="setSize">
+            <span id="increaseFontSize">+</span>
+            <span class="fontSizeNum"></span>
+            <span id="reduceFontSize">-</span>
+        </li>
+        <li id="clearBack">清除背景</li>
+        <li id="disableBack">禁用背景</li>
+    </ul> 
+</div>
+    <div class="resultContainer">
+        <div id="searchResult" class="displayResult"></div>
+    </div>
+    <div class="tocWrapper"><div class="tocBtn">目 录</div><div class="tocBox"><!--tocBox用于容纳生成在toc外的目录--><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%96%E7%95%8C%E7%BA%BF%E7%9A%84%E5%BC%80%E7%AB%AF"><span class="toc-number">1.</span> <span class="toc-text">世界线的开端</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B6%85%E6%96%87%E6%9C%AC-Hyper-Text"><span class="toc-number">1.1.</span> <span class="toc-text">超文本(Hyper Text )</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%87%E7%BB%B4%E7%BD%91%E7%9A%84%E8%AF%9E%E7%94%9F"><span class="toc-number">1.2.</span> <span class="toc-text">万维网的诞生</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%8F%91%E5%B1%95"><span class="toc-number">1.3.</span> <span class="toc-text">浏览器的发展</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E6%A0%B8%E7%9A%84%E5%8F%91%E5%B1%95"><span class="toc-number">2.</span> <span class="toc-text">内核的发展</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BC%80%E6%8B%93%E8%80%85-%E7%BD%91%E6%99%AF%E5%AF%BC%E8%88%AA%E8%80%85"><span class="toc-number">2.1.</span> <span class="toc-text">开拓者 网景导航者</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A5%E7%9F%B3%E6%B5%81-IE"><span class="toc-number">2.2.</span> <span class="toc-text">泥石流 IE</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E6%99%AF%E7%9A%84%E7%BB%A7%E6%89%BF-Mozilla%E7%81%AB%E7%8B%90"><span class="toc-number">2.3.</span> <span class="toc-text">网景的继承 Mozilla火狐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8B%A4%E5%8A%B3%E7%9A%84%E8%9C%9C%E8%9C%82-%E8%8B%B9%E6%9E%9Csafari"><span class="toc-number">2.4.</span> <span class="toc-text">勤劳的蜜蜂 苹果safari</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B0%E7%9A%84%E5%BC%95%E9%A2%86-%E8%B0%B7%E6%AD%8Cchrome"><span class="toc-number">2.5.</span> <span class="toc-text">新的引领 谷歌chrome</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%A2%E5%85%A2%E4%B8%9A%E4%B8%9A%E7%9A%84Opear"><span class="toc-number">2.6.</span> <span class="toc-text">兢兢业业的Opear</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%BD%E4%BA%A7%E6%B5%8F%E8%A7%88%E5%99%A8"><span class="toc-number">2.7.</span> <span class="toc-text">国产浏览器</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8UA%E6%A0%87%E8%AF%86"><span class="toc-number">3.</span> <span class="toc-text">浏览器UA标识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%85%BC%E5%AE%B9%E6%80%A7"><span class="toc-number">4.</span> <span class="toc-text">代码兼容性</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS%E6%B5%8F%E8%A7%88%E5%99%A8%E5%89%8D%E7%BC%80"><span class="toc-number">4.1.</span> <span class="toc-text">CSS浏览器前缀</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B8%B2%E6%9F%93%E5%86%85%E6%A0%B8"><span class="toc-number">4.2.</span> <span class="toc-text">渲染内核</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%8C%E6%A0%B8%E6%B5%8F%E8%A7%88%E5%99%A8"><span class="toc-number">4.2.1.</span> <span class="toc-text">双核浏览器</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#IE%E6%B5%8F%E8%A7%88%E5%99%A8"><span class="toc-number">4.2.2.</span> <span class="toc-text">IE浏览器</span></a></li></ol></li></ol></li></ol></div></div>
         <div class="article">
         <h1 class="title">Web的发展旅程</h1>
         <div class="art_infor">
-            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：9619</span>
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：9613</span>
             <span><span class="iconfont icon-riqi"></span>写于：2022-09-18</span></div>
             <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2022-09-18</span>
             <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您28分钟</span></div>
@@ -273,16 +301,14 @@ Mozilla还负责运行维护MDN开发者平台，该平台提供了大量关于H
 </div>
 
 
-
-
-
-
-
-
         </div>
     </div>
     <div class="post-nav">
         
+            <div class="post-prev ">
+                <a href="/blog/2023/05/03/canvas/">上一篇：Canvas</a>
+            </div>
+            
             
                 <div class="post-next">
                     <a href="/blog/2022/07/29/lets-encrypt/">下一篇：基于certbot获取TLS证书 </a>
@@ -307,7 +333,7 @@ Mozilla还负责运行维护MDN开发者平台，该平台提供了大量关于H
         </div>
     </div>
 </div>
-<div class="left-menu">
+<div class="right-menu">
     <a class="iconfont backTop" href="javascript:">&#xe655;</a>
     <div class="husky"></div>
   </div>
@@ -315,32 +341,9 @@ Mozilla还负责运行维护MDN开发者平台，该平台提供了大量关于H
 
 <script src="/blog/js/jquery.min.js"></script>
 <script src="/blog/js/jquery.bumpytext.js"></script>
-<script src="/blog/js/grain.min.js"></script>
-<script src="/blog/js/main.js"></script>
+<script src="/blog/js/index.js"></script>
+<script src="/blog/js/highlight.min.js"></script>
+<script src="/blog/js/highlightjs-line-numbers.min.js"></script>
+<script src="/blog/js/article.js"></script>
 
-
-    <script>
-        if(!viewH){
-            let viewH=document.documentElement.clientHeight;
-        }
-    // 懒加载
-    let imgs=document.querySelector('.art_content').querySelectorAll('img');
-    if(imgs){
-    let lazyload=function(){
-    imgs.forEach((item,index)=>{
-        let rect=item.getBoundingClientRect();
-        if(rect.bottom>=0&&rect.top<viewH){
-            item.src=item.dataset.src;
-        }
-    })
-    };
-    document.querySelector('.second-main').addEventListener('scroll',()=>{
-        lazyload();
-    })
-}
-    </script>
-</body>
-
-
-
-</html>
+</body></html>

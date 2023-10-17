@@ -1,8 +1,19 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="shiwi"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>body{cursor:url(https://cdn.jsdelivr.net/gh/shiwei11/blogfile/images/normal.cur),auto;}a,label{text-decoration: none;cursor:url(https://cdn.jsdelivr.net/gh/shiwei11/blogfile/images/link.cur),auto;}</style><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let spans=document.querySelector('.text').querySelectorAll('span');const timer=setInterval(()=>{spans.forEach((item)=>{if(item.classList.contains('dance')){item.classList.remove('dance');}else{item.classList.add('dance');}})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script>    <title>SHIWIVI-关于</title>
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="SHIWIVI"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let texts=document.querySelector('.text').querySelectorAll('span');let timer=setInterval(()=>{texts.forEach((item)=>{item.classList.toggle("dance")})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script>    <title>SHIWIVI-关于</title>
     <link rel="stylesheet" href="../css/about.css">
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="SHWIVI's blog" type="application/atom+xml">
 </head>
 <body>
+    <div class="pattern">
+        <div class="patternNode triangle"></div>
+        <div class="patternNode cross"></div>
+        <div class="patternNode reactangle"></div>
+        <div class="patternNode trapezoid">
+            <div class="trapezoidTop"></div>
+            <div class="trapezoidBottom"></div>
+        </div>
+        <div class="patternNode lighting"></div>
+        <div class="patternNode fontV">V</div>
+    </div>
     <div class="glass">
         <input type="radio" name="tabs" id="r1" checked>
         <input type="radio" name="tabs" id="r2">
@@ -47,7 +58,7 @@
                 <li>字体图标：阿里iconfont</li>
                 <li>移动端初始化：normalize</li>
                 <li>主题：自己写的主题，就叫它狗剩吧</li>
-                <hr style="border : 1px dashed rgb(0, 195, 255);" />
+                <hr style="border : 1px dashed #00c3ff;" />
                 <li>图片来源于谷歌图库，如有侵权请联系我删除</li>
                 <li>除特殊注明外，本站博客均采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>协议</li>
                 <li>网站响应式正在改进中</li>
@@ -93,50 +104,16 @@
                 <br/>
                 <li>本站由博主个人开发，博主以50年没有存款作为担保，网站不含任何恶意获取访问者信息的代码，不会与任何人或者机构共享您在本站中的标识符、设备型号、IP地址等个人信息。</li>
                 <br/>
-                <li>评论和留言请尽量不要泄露个人真实信息，昵称、邮箱、网址均可以忽略不写</li><br/>
+                <li>评论和留言请尽量不要泄露个人真实信息，昵称、邮箱、网址均可以忽略不写。</li><br/>
+                <li>网站会在本地临时存储数据，用于存储表情CDN、网站设置等内容，可在浏览器设置中清除缓存数据。</li><br/>
                 <li>服务器访问日志会保留七天，访问日志只记录访问时间和时区、IP地址、浏览器UA并且不会与他人共享，也不知道您的真实身份，请放心访问。</li>
                 <br/>
                 <li>本站含有指向其他网站的链接，该类链接仅作分享使用，网站内容可能会随时进行更改，本站不对此类链接网站所含信息完整性和准确性承担任何责任，在决定访问链接网站前，访问者有义务采取恰当措施，防止恶意软件或其它其他破坏性因素造成损害。</li>
             </ol>
         </div>
     </div>
-    <script>
-        /*这个页面JS少得可怜啊*/
-       let blux=document.querySelector('.wenzi');
-       let num=true;
-       blux.onclick=function(){
-            if(num){
-           document.querySelector('.glass').style.backdropFilter="blur(0px)";
-           num=false;
-        }
-           else{
-           document.querySelector('.glass').style.backdropFilter="blur(3px)";
-           num=true;}
-       }
-       console.log([          
-"          _____                    _____                    _____                    _____                    _____",         
-"         /\\    \\                  /\\    \\                  /\\    \\                  /\\    \\                  /\\    \\       ",  
-"        /::\\    \\                /::\\____\\                /::\\    \\                /::\\____\\                /::\\    \\        ",
-"       /::::\\    \\              /:::/    /                \\:::\\    \\              /:::/    /                \\:::\\    \\       ",
-"      /::::::\\    \\            /:::/    /                  \\:::\\    \\            /:::/   _/___               \\:::\\    \\      ",
-"     /:::/\\:::\\    \\          /:::/    /                    \\:::\\    \\          /:::/   /\\    \\               \\:::\\    \\     ",
-"    /:::/__\\:::\\    \\        /:::/____/                      \\:::\\    \\        /:::/   /::\\____\\               \\:::\\    \\    ",
-"    \\:::\\   \\:::\\    \\      /::::\\    \\                      /::::\\    \\      /:::/   /:::/    /               /::::\\    \\   ",
-"  ___\\:::\\   \\:::\\    \\    /::::::\\    \\   _____    ____    /::::::\\    \\    /:::/   /:::/   _/___    ____    /::::::\\    \\  ",
-" /\\   \\:::\\   \\:::\\    \\  /:::/\\:::\\    \\ /\\    \\  /\\   \\  /:::/\\:::\\    \\  /:::/___/:::/   /\\    \\  /\\   \\  /:::/\\:::\\    \\ ",
-"/::\\   \\:::\\   \\:::\\____\\/:::/  \\:::\\    /::\\____\\/::\\   \\/:::/  \\:::\\____\\|:::|   /:::/   /::\\____\\/::\\   \\/:::/  \\:::\\____\\ ",
-"\\:::\\   \\:::\\   \\::/    /\\::/    \\:::\\  /:::/    /\\:::\\  /:::/    \\::/    /|:::|__/:::/   /:::/    /\\:::\\  /:::/    \\::/    /",
-" \\:::\\   \\:::\\   \\/____/  \\/____/ \\:::\\/:::/    /  \\:::\\/:::/    / \\/____/  \\:::\\/:::/   /:::/    /  \\:::\\/:::/    / \\/____/ ",
-"  \\:::\\   \\:::\\    \\               \\::::::/    /    \\::::::/    /            \\::::::/   /:::/    /    \\::::::/    /          ",
-"   \\:::\\   \\:::\\____\\               \\::::/    /      \\::::/____/              \\::::/___/:::/    /      \\::::/____/           ",
-"    \\:::\\  /:::/    /               /:::/    /        \\:::\\    \\               \\:::\\__/:::/    /        \\:::\\    \\           ",
-"     \\:::\\/:::/    /               /:::/    /          \\:::\\    \\               \\::::::::/    /          \\:::\\    \\          ",
-"      \\::::::/    /               /:::/    /            \\:::\\    \\               \\::::::/    /            \\:::\\    \\         ",
-"       \\::::/    /               /:::/    /              \\:::\\____\\               \\::::/    /              \\:::\\____\\        ",
-"        \\::/    /                \\::/    /                \\::/    /                \\::/____/                \\::/    /        ",
-"         \\/____/                  \\/____/                  \\/____/                  ~~                       \\/____/         ",
-"shiwivi.me"
-    ].join('\n'));
-    </script>
+    
+<script src="/blog/js/about.js"></script>
+
 </body>
 </html>
