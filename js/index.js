@@ -2,7 +2,7 @@
  * @Author: SHIWIVI
  * @Date: 2021-08-30 03:11
  * @Last Modified by: SHIWIVI
- * @Last Modified time: 2023-10-19 16:30:37
+ * @Last Modified time: 2023-10-19 19:36:29
  */
 const { PI, cos, sin, tan, abs, sqrt, pow, min, max, ceil, floor, round, random, atan2 } = Math;
 const getRandom = (min, max) => random() * (max - min) + min;
@@ -32,6 +32,8 @@ Float32Array.prototype.get = function (i = 0, l = 0) {
   const toggleItem = document.getElementById("toggleItem");
   const itemIco = document.querySelector(".itemIco");
   const menuLi = document.querySelector(".setMenu").querySelectorAll("li");
+  const searchInput = document.getElementById("searchInput");
+  const searchResult = document.getElementById("searchResult");
   const canvasPage = document.createElement('canvas');
   const ctxPage = canvasPage.getContext('2d');
   const canvasBack = document.createElement('canvas');
@@ -304,6 +306,8 @@ setBtn.addEventListener('click',function(){
             this.innerText = "<";
         }
     }, 500);
+    searchInput.value="";
+    searchResult.innerHTML="";
 })
 clearBack.addEventListener('click',()=>{
     if(animationID){
@@ -368,15 +372,13 @@ function pageInit() {
         dataType: "json",
         success: function (xmlResponse) {
             var datas = xmlResponse;
-            var searchInput = document.getElementById("searchInput");
             if (!searchInput) return;
-            var $resultContent = document.getElementById("searchResult");
             if ($("#searchInput").length > 0) {
                 searchInput.addEventListener('input', function () {
                     var resultNum = 0;
                     var str = '<ul class=\"searchResultList\">';
                     var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
+                    searchResult.innerHTML = "";
                     if (this.value.trim().length <= 0) {
                         return;
                     }
@@ -450,12 +452,11 @@ function pageInit() {
                         str += "<div class='noResult'>\"坏了！什么都没有 (─.─||)\"</div>";
                     }
                     str = '<div class=\"resultInfo\">一共找到<span class="resultNum">' + resultNum + '</span>条数据</div>' + str + "</ul>";
-                    $resultContent.innerHTML = str;
+                    searchResult.innerHTML = str;
                 });
             }
         },
         error:function(jqxhr,textStatus,error){
-            var searchInput = document.getElementById("searchInput");
             searchInput.disabled=true;
             searchInput.classList.add('forbidden');
             document.querySelector('.searchContainer').addEventListener('click', function (){
