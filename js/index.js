@@ -2,7 +2,7 @@
  * @Author: SHIWIVI
  * @Date: 2021-08-30 03:11
  * @Last Modified by: SHIWIVI
- * @Last Modified time: 2023-10-18 01:13:09
+ * @Last Modified time: 2023-10-19 16:30:37
  */
 const { PI, cos, sin, tan, abs, sqrt, pow, min, max, ceil, floor, round, random, atan2 } = Math;
 const getRandom = (min, max) => random() * (max - min) + min;
@@ -43,7 +43,6 @@ Float32Array.prototype.get = function (i = 0, l = 0) {
   let sparkArray = [];
   let animationID=0;
   let webTheme;
-
   class Ball {
     constructor(x, y, r) {
       this.x = x;
@@ -273,7 +272,7 @@ function toggleItemfn() {
         for(let i=0;i<6;i++){
             pointerAni.push(new Ball(pageWidth/6*i,0,20));
           }
-          window.sessionStorage.setItem("webTheme", "dark");
+          window.localStorage.setItem("webTheme", "dark");
     }
     else {
         body.classList.remove("dark", "loadDark");
@@ -281,12 +280,12 @@ function toggleItemfn() {
         body.classList.add("loadLight");
         nav.classList.add("loadLight");
         itemIco.className = "itemIco sun";
-        window.sessionStorage.setItem("webTheme", "light");
+        window.localStorage.setItem("webTheme", "light");
         for(let i=0;i<6;i++){
           sparkArray.push(new Spark(pageWidth/6*i,0,5, 5, 10, 140, false));
         }
     }
-    webTheme = window.sessionStorage.getItem("webTheme");
+    webTheme = window.localStorage.getItem("webTheme");
 }
 toggleItem.addEventListener('click', toggleItemfn);
 
@@ -318,41 +317,41 @@ clearBack.addEventListener('click',()=>{
     }
   })
 disableBack.addEventListener("click", () => {
-    if(window.sessionStorage.getItem("disableBack")==="false"){
+    if(window.localStorage.getItem("disableBack")==="false"){
         window.cancelAnimationFrame(animationID);
         ctxBack.clearRect(0, 0, pageWidth, pageHeight);
         disableBack.textContent="启用背景";
         showMsg("已在全局禁用动态夜间背景");
-        window.sessionStorage.setItem("disableBack", "true");
+        window.localStorage.setItem("disableBack", "true");
     }
     else{
-        if(window.sessionStorage.getItem("webTheme")=="dark"){
+        if(window.localStorage.getItem("webTheme")=="dark"){
             backAni();
         }
         disableBack.textContent="禁用背景";
         showMsg("已启用夜间背景");
-        window.sessionStorage.setItem("disableBack", "false");
+        window.localStorage.setItem("disableBack", "false");
     }
   })
 //页面初始化
 function pageInit() {
-    if (!window.sessionStorage.getItem("webTheme")) {
+    if (window.localStorage.getItem("webTheme")==="light"||!window.localStorage.getItem("webTheme")) {
         if (new Date().getHours() >= 21 || new Date().getHours() < 7) {
-            window.sessionStorage.setItem("webTheme", "dark");
+            window.localStorage.setItem("webTheme", "dark");
             showMsg("检测到当前系统时间为夜间，已自动开启夜间主题，可在右侧设置栏切换主题");
         }
         else {
-            window.sessionStorage.setItem("webTheme", "light");
+            window.localStorage.setItem("webTheme", "light");
         }
     }
-    if(window.sessionStorage.getItem("disableBack")==null){
-      window.sessionStorage.setItem("disableBack","false");
+    if(!window.localStorage.getItem("disableBack")){
+      window.localStorage.setItem("disableBack","false");
     }
-    if(window.sessionStorage.getItem("disableBack")==="true"){
+    if(window.localStorage.getItem("disableBack")==="true"){
         disableBack.textContent="启用背景";
     }
     //其他页面继承主页的主题
-    webTheme = window.sessionStorage.getItem("webTheme");
+    webTheme = window.localStorage.getItem("webTheme");
     if (webTheme == "dark") {
         body.classList.add("dark");
         nav.classList.add("dark");

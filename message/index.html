@@ -43,7 +43,7 @@
     </div>
     <div id="waline"></div>
     <script>
-        var webTheme = window.sessionStorage.getItem("webTheme");
+        let webTheme = window.localStorage.getItem("webTheme");
         if(webTheme=="dark"){
             document.body.classList.add("dark");
         }
@@ -57,7 +57,7 @@
          'https://unpkg.com/@waline/emojis@1.1.0/weibo',
           ]
         });
-        console.log("%c ","background:url(https://cdn.jsdelivr.net/gh/shiwei11/blog/images/shivi.jpg) no-repeat center;padding-left:600px;padding-bottom:304px;background-size: 40%;");
+        console.log("%c ","background:url(/blog/images/shivi.jpg) no-repeat center;padding-left:600px;padding-bottom:304px;background-size: 40%;");
         const messages=['Yo Yo Yo, 148-3369, representing the ABQ,what up bitaaaaaaaaa?Leave it at the shiwivi.me.',
         '在吗？在干嘛？吃饭了嘛？多喝烫水',
         '我们已经是好友了，现在可以一起来聊天了',

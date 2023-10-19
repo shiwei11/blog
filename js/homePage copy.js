@@ -2,7 +2,7 @@
  * @Author: SHIWIVI 
  * @Date: 2023-09-07 00:29:00 
  * @Last Modified by: SHIWIVI
- * @Last Modified time: 2023-10-12 23:57:59
+ * @Last Modified time: 2023-10-19 15:23:51
  */
 Array.prototype.lerp = function (t = [], a = 0) {
   this.forEach((n, i) => (this[i] = lerp(n, t[i], a)));
@@ -338,7 +338,7 @@ function backRenderAnimation2() {
   flower();
 }
 toggleItem.addEventListener('click', ()=>{
-  if (webTheme==="dark"&&window.sessionStorage.getItem("disableBack")==="false") {
+  if (webTheme==="dark"&&window.localStorage.getItem("disableBack")==="false") {
     backAni();
   }
   else{
@@ -347,7 +347,7 @@ toggleItem.addEventListener('click', ()=>{
   }
 });
 function homePageInit(){
-  if(webTheme==="dark"&&window.sessionStorage.getItem("disableBack")==="false"){
+  if(webTheme==="dark"&&window.localStorage.getItem("disableBack")==="false"){
     backAni();
   }
 }

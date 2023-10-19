@@ -2,7 +2,10 @@
   --body-bg: url(../images/186892ce0d5e478eb3896eb1cb4a1208.jpg);
   --glass-color:#000;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 .dark {
   --body-bg: #000;
   --glass-color:#fff;
@@ -75,6 +78,9 @@ ol li a {
 a,label{
   cursor: url(../images/link.cur),pointer;
 }
+hr{
+  margin: .5em 0;
+}
 body {
   width: 100vw;
   height: 100vh;
@@ -100,8 +106,6 @@ body {
   padding: 2rem 1.5rem;
   border-right: 1.5px solid rgba(255, 255, 255, .8);
   border-bottom: 1.5px solid rgba(255, 255, 255, .7);
-
-
 }
 
 .wenzi {
@@ -185,7 +189,10 @@ label {
 .glass div ol li {
   margin-bottom: .3rem;
 }
-
+.glass div ol{
+  margin: 1em 0;
+  padding:0 30px;
+}
 .glass div ol li::before {
   content: '';
   display: inline-block;
@@ -195,7 +202,9 @@ label {
   margin: 0px 15px 0px 5px;
   border: 3px solid #02afffda;
 }
-
+.glass div ol h4{
+  margin: 1.3em 0;
+}
 .glass div ol li:nth-child(10n+1)::before {
   border-color: #fc040c;
   color: #fc040c;
@@ -525,11 +534,13 @@ label {
   }
 
   .glass div {
-
     font-size: 3rem;
     overflow-y: scroll;
   }
-
+  .glass div ol{
+    margin: 1em 0;
+    padding:0 15px;
+  }
   label {
     font-size: 3rem;
   }

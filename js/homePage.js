@@ -2,8 +2,10 @@
  * @Author: SHIWIVI 
  * @Date: 2023-09-07 00:29:00 
  * @Last Modified by: SHIWIVI
- * @Last Modified time: 2023-10-12 23:56:32
+ * @Last Modified time: 2023-10-19 16:27:13
  */
+//线性插值
+const lerp = (a, b, amt) => (1 - amt) * a + amt * b;
 Array.prototype.lerp = function (t = [], a = 0) {
   this.forEach((n, i) => (this[i] = lerp(n, t[i], a)));
 };
@@ -23,16 +25,14 @@ class PropsArray {
     return this.values.get(i, this.props.length);
   }
 }
-//线性插值
-const lerp = (a, b, amt) => (1 - amt) * a + amt * b;
 const angle = (x1, y1, x2, y2) => Math.atan2(y2 - y1, x2 - x1);
 const fadeInOut = (t, m) => {
   let hm = 0.5 * m;
   return Math.abs((t + hm) % m - hm) / hm;
 };
+//背景色渐变
 let baseColor = random() * 360;
 let backAni=random()<.9?backRenderAnimation1:backRenderAnimation2;
-
 //图片懒加载
 const viewH = document.documentElement.clientHeight;
 if (document.querySelector('.update')) {
@@ -60,7 +60,6 @@ if (document.querySelector('.update')) {
         }
     }
     main.addEventListener('scroll', lazyload)
-
     //文章聚焦
     let lis = document.querySelector('.update').querySelectorAll('li');
     lis.forEach(item => {
@@ -94,6 +93,7 @@ console.log([
     "    ┴┴  ─┴┘┴  └─┘┴ ┴┴└┴┘┴",
     "shiwivi.me"
 ].join('\n'));
+//网站运行时间
 if (document.getElementById('day')) {
   let timeGap = floor((new Date().getTime() - new Date('2021/4/10 12:19:14')) / 1000);
   const dayWrapper = document.getElementById('day');
@@ -109,8 +109,17 @@ if (document.getElementById('day')) {
       timeGap += 1;
   }, 1000)
 }
-
+//canvas渲染
 function backRenderAnimation1() {
+  let center = [pageWidth / 2, pageHeight / 2];
+  let tick;
+  let simplex;
+  let tentacle;
+  let tentacles;
+  const canvasRender = document.createElement('canvas');//渲染用canvas
+  const ctxRender = canvasRender.getContext('2d');
+  canvasRender.width = pageWidth;
+  canvasRender.height = pageHeight;
   const tentacleSetting_mobile = {
     tentacleCount: 20,
     segmentCountMin: 8,
@@ -127,18 +136,7 @@ function backRenderAnimation1() {
     segmentLengthMax: 40,
     colonyRadius: 200,
   }
-
   const tentacleSetting = mobile ? tentacleSetting_mobile : tentacleSetting_PC;
-  let center = [pageWidth / 2, pageHeight / 2];
-  let tick;
-  let simplex;
-  let tentacle;
-  let tentacles;
-  const canvasRender = document.createElement('canvas');
-  const ctxRender = canvasRender.getContext('2d');
-  canvasRender.width = pageWidth;
-  canvasRender.height = pageHeight;
-
   class Tentacle {
     constructor(x, y, segmentNum, baseLength, baseDirection) {
       this.base = [x, y];
@@ -173,6 +171,7 @@ function backRenderAnimation1() {
     setTarget(target) {
       this.target = target;
     }
+    //未下达click指令时的数据更新
     updateBase() {
       let t = simplex.noise3D(this.base[0] * .005, this.base[1] * 0.005, tick * .005) * 2 * PI;
       this.base.lerp([
@@ -180,6 +179,7 @@ function backRenderAnimation1() {
         this.base[1] + 20 * sin(t)],
         .025);
     }
+    //更新数据
     async update() {
       let target = this.position;
       let i = this.segments.length - this.segmentProps.length;
@@ -217,6 +217,7 @@ function backRenderAnimation1() {
       }
       await Promise.all(promises);
     }
+    //绘制
     drawSegment(x1, y1, x2, y2, h, n, i) {
       const fn = fadeInOut(1 + n, 2);
       const fa = fadeInOut(i, this.segments.length);
@@ -338,7 +339,7 @@ function backRenderAnimation2() {
   flower();
 }
 toggleItem.addEventListener('click', ()=>{
-  if (webTheme==="dark"&&window.sessionStorage.getItem("disableBack")==="false") {
+  if (webTheme==="dark"&&window.localStorage.getItem("disableBack")==="false") {
     backAni();
   }
   else{
@@ -348,7 +349,7 @@ toggleItem.addEventListener('click', ()=>{
 });
 
 function homePageInit(){
-  if(webTheme==="dark"&&window.sessionStorage.getItem("disableBack")==="false"){
+  if(webTheme==="dark"&&window.localStorage.getItem("disableBack")==="false"){
     backAni();
   }
 }

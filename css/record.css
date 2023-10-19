@@ -308,6 +308,7 @@ label::after{
     white-space: pre-line;
   }
   .content article section .brief {
+    margin-top: 10px;
     color: #9f9f9f;
   }
   .content article section .details>.append{

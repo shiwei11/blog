@@ -1,4 +1,4 @@
-let webTheme = window.sessionStorage.getItem("webTheme");
+let webTheme = window.localStorage.getItem("webTheme");
 if(webTheme==="dark"){
     document.body.classList.add("dark");
 const patterns=document.querySelector('.pattern').querySelectorAll('.patternNode');

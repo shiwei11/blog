@@ -139,10 +139,10 @@
         <div class="article">
         <h1 class="title">Canvas</h1>
         <div class="art_infor">
-            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：29356</span>
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：29495</span>
             <span><span class="iconfont icon-riqi"></span>写于：2023-05-03</span></div>
             <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2023-05-03</span>
-            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您84分钟</span></div>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您85分钟</span></div>
         </div>
         <div class="art_content">
         <h3 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h3><h4 id="关于"><a href="#关于" class="headerlink" title="关于"></a>关于</h4><p><span class="tips">canvas</span>是HTML5新增的标签，用于动画、游戏画面、数据可视化、图片编辑以及实时视频处理等方面，canvas不支持IE8及IE8以下浏览器</p>
@@ -750,7 +750,7 @@ const ctxText = canvasText.getContext('2d');
 ctxText.font=" 60px Serif";
 ctxText.fillText("hello world",50,60) //对文字进行填充
 ctxText.strokeText("hello world",50,180)//对文字进行描边</div>
-<canvas width="400" height="200" id="canvasText" style="display:block;width:400px;height:200px;margin:0 auto;border:1px dashed #000;background:#fff;"></canvas>
+<canvas width="400" height="200" id="canvasText" style="display:block;width:340px;height:160px;margin:0 auto;border:1px dashed #000;background:#fff;"></canvas>
     <script>
        const canvasText=document.getElementById("canvasText");
        const ctxText = canvasText.getContext('2d');
@@ -989,25 +989,25 @@ ctx.fillRect(50,50,100,100);//将绘制为黄色而非绿色
             },{passive:false})    
         },{passive:false})
     </script>
-<div class="show">&lt;div class="card">&lt;/div>//底层卡片，显示是否中奖
+<pre><code>&lt;div class="card">&lt;/div>//底层卡片，显示是否中奖
 &lt;canvas width="300" height="150" id="canvas1">&lt;/canvas>//刮刮乐灰色图层，监听刮开区域
 &lt;div class="tryAgain" onclick="tryAgain()">再刮一次&lt;/div>//重新开始按钮&lt;/div>
 &lt;script>
-const canvas=document.getElementById("canvas1");
+       const canvas=document.getElementById("canvas1");
        const context=canvas.getContext('2d');
        const p=context.createPattern(cover(),"repeat");//创建模板对象，设置图像重复模式
         context.fillStyle=p;
-        tryAgain();
-        function tryAgain(){
+        function tryAgain()&#123;
             document.querySelector(".card").innerText=Math.random()>.8?"恭喜中奖":"再刮一次";
             context.clearRect(0,0,300,150);
             context.globalCompositeOperation="copy";
             context.fillRect(0,0,300,150);
-        }
+        &#125;
+        tryAgain();
         /*
         *制作刮刮乐封面，返回canvas DOM
         */
-        function cover(){
+        function cover()&#123;
             const canvasCover=document.createElement('canvas');
             const coverCtx=canvasCover.getContext('2d');
             canvasCover.width=60;
@@ -1019,33 +1019,33 @@ const canvas=document.getElementById("canvas1");
             coverCtx.fillStyle="#333333"
             coverCtx.fillText("发大财",20,0)
             return canvasCover;
-        }
+        &#125;
         let allowedDraw=false;
-        canvas.addEventListener('mousedown',function(){
+        canvas.addEventListener('mousedown',function()&#123;
             allowedDraw=true;
-        }) 
-        canvas.addEventListener('mouseup',function(){
+        &#125;) 
+        canvas.addEventListener('mouseup',function()&#123;
             allowedDraw=false;
-        })
-        canvas.addEventListener('mousemove',function(event){
+        &#125;)
+        canvas.addEventListener('mousemove',function(event)&#123;
             var event = event || window.event;
-            if(allowedDraw){
-             if (event.offsetX || event.offsetY) {  //非Mozilla浏览器
+            if(allowedDraw)&#123;
+             if (event.offsetX || event.offsetY) &#123;  //非Mozilla浏览器
               var  x = event.offsetX;
               var y = event.offsetY;
-            } else if (event.layerX || event.layerY) {  //兼容Mozilla浏览器
+            &#125; else if (event.layerX || event.layerY) &#123;  //兼容Mozilla浏览器
               var x = event.layerX;
               var y = event.layerY;
-            }
+            &#125;
             context.globalCompositeOperation="destination-out";
             context.beginPath();
             context.arc(x,y,20,0,2*Math.PI);
             context.fill();
-            }})
+            &#125;&#125;)
             //移动端
-            canvas.addEventListener('touchstart',function(){
+            canvas.addEventListener('touchstart',function()&#123;
             let canvasRect=canvas.getBoundingClientRect();
-            canvas.addEventListener('touchmove',function(e){
+            canvas.addEventListener('touchmove',function(e)&#123;
                 e.preventDefault();
             var x=e.targetTouches[0].pageX-canvasRect.left;
             var y=e.targetTouches[0].pageY-canvasRect.top;
@@ -1053,9 +1053,9 @@ const canvas=document.getElementById("canvas1");
             context.beginPath();
             context.arc(x,y,20,0,2*Math.PI);
             context.fill();
-            },{passive:false})    
-        },{passive:false})
-    </script></div>
+            &#125;,&#123;passive:false&#125;)    
+        &#125;,&#123;passive:false&#125;)
+    &lt;/script></code></pre>
 
         </div>
     </div>
