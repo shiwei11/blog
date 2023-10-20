@@ -548,4 +548,7 @@ label {
   #aboutweb .codedata {
     width: 100%;
   }
+  #aboutweb .codedata .technology {
+    grid-template-columns: 35% 65%;
+  }
 }
