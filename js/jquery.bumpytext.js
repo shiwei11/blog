@@ -1,9 +1,7 @@
 // 文字跳动
-// 初始化
 $(function() {
 $('.motto').bumpyText();
 }); 
-// 函数执行
 (function($) {
 
     var findText = function(element, pattern, callback) {

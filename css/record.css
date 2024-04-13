@@ -247,14 +247,11 @@ label::after{
   .point-color8{
     background-color: #ff47a3;
   }
-  
-
-
   .content {
     box-sizing: border-box;
     width: 60%;
     margin: 4vh auto;
-    
+    overflow: hidden;
   }
   .content article {
     position: relative;
@@ -311,10 +308,14 @@ label::after{
     margin-top: 10px;
     color: #9f9f9f;
   }
-  .content article section .details>.append{
+  .content article section .details>.append,
+  .content article section .details>.remove,
+  .content article section .details>.modify,
+  .content article section .details>.repair{
     position: relative;
-    top: 0;
-    left: 20px;
+    margin-left: 20px;
+  }
+  .content article section .details>.append{
     color: #18dcff;
   }
   .details>.append::before{
@@ -326,9 +327,6 @@ label::after{
     color: #18dcff;
   }
   .content article section .details>.remove{
-    position: relative;
-    top: 0;
-    left: 20px;
     color: #fa0a0a;
   }
   .details>.remove::before{
@@ -340,9 +338,6 @@ label::after{
     color: #fa0a0a;
   }
   .content article section .details>.modify{
-    position: relative;
-    top: 0;
-    left: 20px;
     color: #02fa4d;
   }
   .details>.modify::before{
@@ -354,9 +349,6 @@ label::after{
     color: #02fa4d;
   }
   .content article section .details>.repair{
-    position: relative;
-    top: 0;
-    left: 20px;
     color: #fac002;
   }
   .details>.repair::before{

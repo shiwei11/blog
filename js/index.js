@@ -2,7 +2,7 @@
  * @Author: SHIWIVI
  * @Date: 2021-08-30 03:11
  * @Last Modified by: SHIWIVI
- * @Last Modified time: 2023-10-19 19:36:29
+ * @Last Modified time: 2024-04-13 03:52:23
  */
 const { PI, cos, sin, tan, abs, sqrt, pow, min, max, ceil, floor, round, random, atan2 } = Math;
 const getRandom = (min, max) => random() * (max - min) + min;
@@ -15,13 +15,13 @@ Float32Array.prototype.get = function (i = 0, l = 0) {
     return result;
   };
   const body = document.body;
-  const nav = document.querySelector('.nav');
+  const nav = document.querySelector(".nav");
   const motto = document.querySelector(".motto");
   const main = document.querySelector(".main");
   const msg = document.querySelector(".msg");
   const msgBar = document.querySelector(".msgBar");
   const msgText = document.querySelector(".msgText");
-  const menuBtn = document.querySelector('.menuBtn');
+  const menuBtn = document.querySelector(".menuBtn");
   const addFont = document.getElementById("increaseFontSize");
   const reduceFont = document.getElementById("reduceFontSize");
   const fontSizeNum = document.querySelector(".fontSizeNum");
@@ -34,12 +34,12 @@ Float32Array.prototype.get = function (i = 0, l = 0) {
   const menuLi = document.querySelector(".setMenu").querySelectorAll("li");
   const searchInput = document.getElementById("searchInput");
   const searchResult = document.getElementById("searchResult");
-  const canvasPage = document.createElement('canvas');
-  const ctxPage = canvasPage.getContext('2d');
-  const canvasBack = document.createElement('canvas');
-  const ctxBack = canvasBack.getContext('2d');
+  const canvasPage = document.createElement("canvas");
+  const ctxPage = canvasPage.getContext("2d");
+  const canvasBack = document.createElement("canvas");
+  const ctxBack = canvasBack.getContext("2d");
   const mobile = navigator.userAgent.toLowerCase().match(/(phone|pad|ipod|iphone|android|mobile|MQQBrowser|JUC|coolpad|mmp|smartphone|midp|wap|xoom|symbian|j2me|blackberry|wince|windows Phone)/i);
-  let colors = ['#ff0000', '#ff8800', '#fffb00', '#2bff00', '#00ffdd', '#2002ff', '#cc02ff', '#ff02bc', '#000', '#ffff'];
+  let colors = ["#f00", "#f80", "#fffb00", "#2bff00", "#0fd", "#2002ff", "#cc02ff", "#ff02bc", "#1b9cfc", "#25ccf7","#fff"];//数组最后一个颜色#fff用于夜间模式
   let pageWidth, pageHeight;
   let pointerAni = [];
   let sparkArray = [];
@@ -97,7 +97,7 @@ Float32Array.prototype.get = function (i = 0, l = 0) {
   }
   class Spark {
     constructor(x, y, width = 5, height = 5, sugarNum = 9, live = 140, spark = false) {
-      this.x = x,
+        this.x = x,
         this.y = y,
         this.height = height,
         this.width = width,
@@ -123,7 +123,6 @@ Float32Array.prototype.get = function (i = 0, l = 0) {
         sparkArray.shift();
         return;
       }
-  
       for (let i = 0; i < this.sugarNum; i++) {
         let [x, y, dx, dy, yBottom, colorIndex] = this.data.get(6 * i, 6);
         if (yBottom >= pageHeight) {
@@ -172,10 +171,10 @@ function canvasInit() {
     pageHeight = canvasPage.height = window.innerHeight;//pageCanvas用于全屏点击特效
     canvasBack.width = window.innerWidth;
     canvasBack.height = window.innerHeight;//backCanvas用于背景渲染
-    canvasPage.style = 'position:fixed;top:0;left:0;z-index:200;pointer-events:none;';
-    canvasBack.style = 'position:absolute;top:0;left:0;z-index:-1;pointer-events:none;';
+    canvasPage.style = "position:fixed;top:0;left:0;z-index:200;pointer-events:none;";
+    canvasBack.style = "position:absolute;top:0;left:0;z-index:-1;pointer-events:none;";
     document.body.append(canvasPage);
-    document.querySelector('.canvasWrapper').append(canvasBack);
+    document.querySelector(".canvasWrapper").append(canvasBack);
   }
   function canvasResize() {
     pageWidth = canvasPage.width = window.innerWidth;
@@ -184,17 +183,16 @@ function canvasInit() {
     canvasBack.height = window.innerHeight;
   }
 
-window.addEventListener('resize', canvasResize);
-window.addEventListener('click', e => {
+window.addEventListener("resize", canvasResize);
+window.addEventListener("click", e => {
     webTheme == "dark" ? pointerAni.push(new Ball(e.clientX, e.clientY, 20)) : sparkArray.push(new Spark(e.clientX, e.clientY, 5, 5, 10, 140, false))
   })
   function canvasAnimation() {
     ctxPage.clearRect(0, 0, pageWidth, pageHeight);
     pointerAni.forEach(p => p.update());
     sparkArray.forEach(s => s.update());
-    window.requestAnimationFrame(canvasAnimation)
+    window.requestAnimationFrame(canvasAnimation);
   }
-  
   canvasAnimation();
 /*
 *   下雪
@@ -204,7 +202,7 @@ let snowfall=mobile?1:10;
 function snowing() {
     let maxheight = motto.clientHeight;
     snowTimer=setInterval(() => {
-        let snowDom = document.createElement('div');
+        let snowDom = document.createElement("div");
         let size = floor(random() * 8);
         let dx = random() * 10;
         let x = random() * motto.clientWidth;
@@ -217,7 +215,7 @@ function snowing() {
         let fallTimer = setInterval(() => {
             x += dx;
             y += 5;
-            snowDom.style.left = x + 'px';
+            snowDom.style.left = x + "px";
             snowDom.style.top = y + 5 + "px";
             if (y >= maxheight) {
                 clearInterval(fallTimer);
@@ -225,42 +223,39 @@ function snowing() {
             }
         }, 80)
     }, snowfall);
-    console.log('snowing\n%c我不冷\n%c是我太热了', 'text-shadow:0 0 3px #ff00c8;color:#ff00c8;', 'text-shadow:0 0 3px #008cff;color:#008cff;');
+    console.log("snowing\n%c我不冷\n%c是我太热了", "text-shadow:0 0 3px #ff00c8;color:#ff00c8;", "text-shadow:0 0 3px #008cff;color:#008cff;");
 }
-if (webTheme === "light" && random() > .8) {
+
+if (window.localStorage.getItem("webTheme") === "light" && random() > .8) {
     //调整下雪几率
     snowing();
 }
 
-
-
 //屏幕小于800自动收起侧边栏
-window.addEventListener('resize', () => {
+window.addEventListener("resize", () => {
     if (window.innerWidth < 800) {
-        menuBtn.classList.remove('closed');
-        nav.classList.add('left_move');
+        menuBtn.classList.remove("closed");
+        nav.classList.add("left_move");
     }
     else {
-        menuBtn.classList.add('closed');
-        nav.classList.remove('left_move');
+        menuBtn.classList.add("closed");
+        nav.classList.remove("left_move");
     }
 })
 
 //修改字体大小
 let initFont = 16;
-fontSizeNum.innerText = initFont + 'px';
-addFont.addEventListener('click', () => {
+fontSizeNum.innerText = initFont + "px";
+addFont.addEventListener("click", () => {
     initFont > 20 ? 20 : initFont++;
     (document.querySelector(".art_content") || main).style = "font-size:" + initFont + "px";
-    fontSizeNum.innerText = initFont + 'px';
+    fontSizeNum.innerText = initFont + "px";
 });
-reduceFont.addEventListener('click', () => {
+reduceFont.addEventListener("click", () => {
     initFont < 14 ? 14 : initFont--;
     (document.querySelector(".art_content") || main).style = "font-size:" + initFont + "px";
-    fontSizeNum.innerText = initFont + 'px';
+    fontSizeNum.innerText = initFont + "px";
 })
-
-
 
 //切换夜间主题
 function toggleItemfn() {
@@ -289,11 +284,11 @@ function toggleItemfn() {
     }
     webTheme = window.localStorage.getItem("webTheme");
 }
-toggleItem.addEventListener('click', toggleItemfn);
+toggleItem.addEventListener("click", toggleItemfn);
 
 
 //设置菜单
-setBtn.addEventListener('click',function(){
+setBtn.addEventListener("click",function(){
     this.classList.toggle("setBtnActive");
     menuLi.forEach((item) => {
         item.classList.toggle("menuActive");
@@ -309,7 +304,7 @@ setBtn.addEventListener('click',function(){
     searchInput.value="";
     searchResult.innerHTML="";
 })
-clearBack.addEventListener('click',()=>{
+clearBack.addEventListener("click",()=>{
     if(animationID){
       window.cancelAnimationFrame(animationID);
       ctxBack.clearRect(0, 0, pageWidth, pageHeight);
@@ -330,16 +325,20 @@ disableBack.addEventListener("click", () => {
     }
     else{
         if(window.localStorage.getItem("webTheme")=="dark"){
-            backAni();
+            try{
+                backAni();
+            }catch(e){};
         }
         disableBack.textContent="禁用背景";
         showMsg("已启用夜间背景");
         window.localStorage.setItem("disableBack", "false");
     }
   })
+  
 //页面初始化
 function pageInit() {
-    if (window.localStorage.getItem("webTheme")==="light"||!window.localStorage.getItem("webTheme")) {
+    // if (window.localStorage.getItem("webTheme")==="light"||!window.localStorage.getItem("webTheme")) {
+        if(!window.localStorage.getItem("webTheme")){
         if (new Date().getHours() >= 21 || new Date().getHours() < 7) {
             window.localStorage.setItem("webTheme", "dark");
             showMsg("检测到当前系统时间为夜间，已自动开启夜间主题，可在右侧设置栏切换主题");
@@ -366,106 +365,6 @@ function pageInit() {
   canvasInit();
   pageInit();
 
-//搜索功能
-    $.ajax({
-        url: '/blog/search.json',
-        dataType: "json",
-        success: function (xmlResponse) {
-            var datas = xmlResponse;
-            if (!searchInput) return;
-            if ($("#searchInput").length > 0) {
-                searchInput.addEventListener('input', function () {
-                    var resultNum = 0;
-                    var str = '<ul class=\"searchResultList\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    searchResult.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        if (!data.title || data.title.trim() === '') {
-                            data.title = "Untitled";
-                        }
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        if (data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i == 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        } else {
-                            isMatch = false;
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + "<div class='searchResultTitle'>" + data_title + "</div>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-
-                                if (start < 0) {
-                                    start = 0;
-                                }
-
-                                if (start == 0) {
-                                    end = 100;
-                                }
-
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-
-                                var match_content = content.substring(start, end);
-
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    try {
-                                        var regS = new RegExp(keyword, "gi");
-                                    } catch (error) { }
-                                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
-                                });
-                                str += "<p class=\"search-result\">" + match_content + "...</p></a>"
-                            }
-                            str += "</li>";
-                            resultNum++;
-                        }
-                    });
-                    if (resultNum == 0) {
-                        str += "<div class='noResult'>\"坏了！什么都没有 (─.─||)\"</div>";
-                    }
-                    str = '<div class=\"resultInfo\">一共找到<span class="resultNum">' + resultNum + '</span>条数据</div>' + str + "</ul>";
-                    searchResult.innerHTML = str;
-                });
-            }
-        },
-        error:function(jqxhr,textStatus,error){
-            searchInput.disabled=true;
-            searchInput.classList.add('forbidden');
-            document.querySelector('.searchContainer').addEventListener('click', function (){
-                showMsg('出了亿点小问题，搜索功能已被禁用');
-            })
-            console.error('Ajax未能获取search.json文件');
-            showMsg("Ajax抛出了一个异常:"+jqxhr.status+error);
-        }
-    });
 //JQuery代码，主打的就是一个混用
 $(function () {
     $(".backTop").fadeOut();
@@ -496,7 +395,7 @@ $(function () {
         }
         if ($(".main").scrollTop() == 0) {//回到顶部，按钮消失
             $(".backTop").fadeOut();
-            if ($(".husky").css('right') == '0px') {
+            if ($(".husky").css("right") == "0px") {
                 $(".husky").animate({ "right": "100px" }, 500, function () {
                     $(this).css("right", "-100px");
                 });
@@ -509,4 +408,98 @@ $(function () {
     $(".backTop").click(function () {//返回顶部
         $(".main").animate({ "scrollTop": 0 }, 1000)
     });
+    $(document).ready(function(){
+        //搜索功能
+    $.ajax({
+        url: "/blog/search.json",
+        dataType: "json",
+        success: function (xmlResponse) {
+            var datas = xmlResponse;
+            if (!searchInput) return;
+            if ($("#searchInput").length > 0) {
+                searchInput.addEventListener("input", function () {
+                    var resultNum = 0;
+                    var str = "<ul class=\"searchResultList\">";
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    searchResult.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        if (!data.title || data.title.trim() === "") {
+                            data.title = "Untitled";
+                        }
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        if (data_content !== "") {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i == 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        } else {
+                            isMatch = false;
+                        }
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + "<div class='searchResultTitle'>" + data_title + "</div>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start == 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substring(start, end);
+                                keywords.forEach(function (keyword) {
+                                    try {
+                                        var regS = new RegExp(keyword, "gi");
+                                    } catch (error) { }
+                                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                                });
+                                str += "<p class=\"search-result\">" + match_content + "...</p></a>"
+                            }
+                            str += "</li>";
+                            resultNum++;
+                        }
+                    });
+                    if (resultNum == 0) {
+                        str += "<div class='noResult'>\"坏了！什么都没有 (─.─||)\"</div>";
+                    }
+                    str = '<div class=\"resultInfo\">一共找到<span class="resultNum">' + resultNum + '</span>条数据</div>' + str + "</ul>";
+                    searchResult.innerHTML = str;
+                });
+            }
+        },
+        error:function(jqxhr,textStatus,error){
+            searchInput.disabled=true;
+            searchInput.classList.add("forbidden");
+            document.querySelector(".searchContainer").addEventListener("click", function (){
+                showMsg("出了亿点小问题，搜索功能已被禁用");
+            })
+            console.error("Ajax未能获取search.json文件");
+            showMsg("Ajax抛出了一个异常: "+jqxhr.status+error);
+        }
+    });
+    })
 });

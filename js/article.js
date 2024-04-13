@@ -1,8 +1,40 @@
 const tocBtn = document.querySelector(".tocBtn");
 const tocWrapper = document.querySelector(".tocWrapper");
- //代码高亮初始化
- hljs.highlightAll();
- hljs.initLineNumbersOnLoad();
+//折叠栏
+const contentFoldedList=document.querySelectorAll(".contentFolded");
+if(contentFoldedList){
+    contentFoldedList.forEach(item=>{
+        let foldFlag=false;
+        let foldBtn = document.createElement("div");
+        foldBtn.textContent = "展开";
+        foldBtn.className = "foldBtn";
+        item.appendChild(foldBtn);
+        foldBtn.addEventListener("click",function(e){
+            e.stopPropagation();
+            if(foldFlag){
+                item.style.height="200px";
+                foldBtn.textContent="展开";
+                foldFlag=false;
+            }
+            else{
+                item.style.height=item.scrollHeight+30+"px";
+                foldBtn.textContent="收起";
+                foldFlag=true;
+            }
+            item.classList.toggle("unfolded");
+            foldBtn.classList.toggle("foldBtn_unfolded");
+        })
+        window.addEventListener("resize",function(){
+            if(foldFlag){
+                // item.style.height=item.scrollHeight+"px";
+                item.style.height="max-content";
+            }
+        })
+    })
+}
+//代码高亮初始化
+hljs.highlightAll();
+hljs.initLineNumbersOnLoad();
 tocBtn.addEventListener("click", function () {
     tocWrapper.classList.toggle("tocWrapperActive");
 })
@@ -68,8 +100,8 @@ if (pres) {
                     navigator.clipboard.writeText(codeContent);
                     showMsg("代码已粘贴至剪贴板！");
                 } catch (e) {
-                showMsg("浏览器不支持，请手动复制");
-                console.error(error);
+                    showMsg("浏览器不支持，请手动复制");
+                    console.error(error);
                 }
             }
         }, false)

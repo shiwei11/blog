@@ -2,14 +2,14 @@
  * @Author: SHIWIVI
  * @Date: 2023-10-16 03:11
  * @Last Modified by: SHIWIVI
- * @Last Modified time: 2023-10-19 18:34:52
+ * @Last Modified time: 2024-04-13 19:24:29
  */
 const { PI, cos, sin, tan, abs, sqrt, pow, min, max, ceil, floor, round, random, atan2 } = Math;
 const getRandom = (min, max) => random() * (max - min) + min;
-const canvasPage = document.createElement('canvas');
-const ctxPage = canvasPage.getContext('2d');
-let colors = ['#ff0000', '#ff8800', '#fffb00', '#2bff00', '#00ffdd', '#2002ff', '#cc02ff', '#ff02bc', '#000', '#ffff'];
-let webTheme=window.localStorage.getItem('webTheme')||'light';
+const canvasPage = document.createElement("canvas");
+const ctxPage = canvasPage.getContext("2d");
+let colors = ["#f00", "#f80", "#fffb00", "#2bff00", "#0fd", "#2002ff", "#cc02ff", "#ff02bc", "#1b9cfc", "#25ccf7","#fff"];
+let webTheme=window.localStorage.getItem("webTheme")||"light";
 let pageWidth, pageHeight;
 let pointerAni = [];
 let sparkArray = [];
@@ -128,17 +128,17 @@ class Spark {
 function canvasInit() {
     pageWidth = canvasPage.width = window.innerWidth;
     pageHeight = canvasPage.height = window.innerHeight;//pageCanvas用于全屏点击特效
-    canvasPage.style = 'position:fixed;top:0;left:0;z-index:200;pointer-events:none;';
+    canvasPage.style = "position:fixed;top:0;left:0;z-index:200;pointer-events:none;";
     document.body.append(canvasPage);
 }
 function canvasResize() {
     pageWidth = canvasPage.width = window.innerWidth;
     pageHeight = canvasPage.height = window.innerHeight;
 }
-window.addEventListener('resize', canvasResize);
+window.addEventListener("resize", canvasResize);
 let clickAnimation=webTheme === "dark" ?function(e){e.stopPropagation();pointerAni.push(new Ball(e.clientX, e.clientY, 20))}:function(e){e.stopPropagation();sparkArray.push(new Spark(e.clientX, e.clientY, 5, 5, 10, 140, false));}
 
-window.addEventListener('click',clickAnimation)
+window.addEventListener("click",clickAnimation)
 function canvasAnimation() {
     ctxPage.clearRect(0, 0, pageWidth, pageHeight);
     pointerAni.forEach(p => p.update());

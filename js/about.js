@@ -1,4 +1,3 @@
-let webTheme = window.localStorage.getItem("webTheme");
 if(webTheme==="dark"){
     document.body.classList.add("dark");
 const patterns=document.querySelector('.pattern').querySelectorAll('.patternNode');
@@ -47,5 +46,5 @@ console.log([
 "       \\::::/    /               /:::/    /              \\:::\\____\\               \\::::/    /              \\:::\\____\\        ",
 "        \\::/    /                \\::/    /                \\::/    /                \\::/____/                \\::/    /        ",
 "         \\/____/                  \\/____/                  \\/____/                  ~~                       \\/____/         ",
-"shiwivi.me"
+"shiwivi.com"
 ].join('\n'));

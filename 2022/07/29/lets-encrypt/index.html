@@ -139,7 +139,7 @@
         <div class="article">
         <h1 class="title">基于certbot获取TLS证书</h1>
         <div class="art_infor">
-            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：8217</span>
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：8222</span>
             <span><span class="iconfont icon-riqi"></span>写于：2022-07-29</span></div>
             <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2022-07-29</span>
             <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您24分钟</span></div>
@@ -200,10 +200,10 @@ Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-2b
 <h5 id="1-Nginx"><a href="#1-Nginx" class="headerlink" title="1. Nginx"></a>1. Nginx</h5><p>如果部署了Nginx，可以直接执行（但要确保安装了certbot-nginx插件）</p>
 <pre><code>sudo certbot --nginx</code></pre>
 <p>certbot将自动获取域名，并在进入证书申请流程时让你确认域名，也可以在执行上述命令时通过添加<span class="tips">-d</span>参数来指定域名，如：</p>
-<div class="show"><code>sudo certbot -&zwnj;-nginx -d  shiwivi.me -d  www.shiwivi.me</code></div>
+<div class="show"><code>sudo certbot -&zwnj;-nginx -d  shiwivi.com -d  www.shiwivi.com</code></div>
 
 <p>可以通过<span class="tips">-&zwnj;-email</span>来添加邮箱，Let’s Encrypt会在证书即将到期时发邮件通知你更新证书。</p>
-<div class="show"><code>sudo certbot -&zwnj;-nginx --email xxxx@gmail.com -d  shiwivi.me -d  www.shiwivi.me</code></div>
+<div class="show"><code>sudo certbot -&zwnj;-nginx --email xxxx@gmail.com -d  shiwivi.com -d  www.shiwivi.com</code></div>
 
 <p>如果不添加上述参数，certbot会在验证通过后要求你添加，邮箱一般只需要在首次验证证书或者更改邮箱时添加。</p>
 <h5 id="2-Apache"><a href="#2-Apache" class="headerlink" title="2. Apache"></a>2. Apache</h5><p>Apache中的验证方法与上类似</p>
@@ -213,7 +213,7 @@ Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-2b
 <p>因此，在执行命令时，我们需要添加<span class="tips">-w</span>参数来引导certbot找到web服务的根目录</p>
 <pre><code>certbot certonly --webroot -w 网站根目录 -d 域名</code></pre>
 <p>如：Nginx默认放置网页的根目录为：<span class="tips">/usr/local/nginx/html</span>，则对应命令为</p>
-<div class="show"><code>certbot certonly --webroot -w /usr/local/nginx/html -d shiwivi.me</code></div>
+<div class="show"><code>certbot certonly --webroot -w /usr/local/nginx/html -d shiwivi.com</code></div>
 
 
 <h5 id="3-Standalone模式"><a href="#3-Standalone模式" class="headerlink" title="3. Standalone模式"></a>3. Standalone模式</h5><p>如果服务器上没有部署任何web服务，或者不想使用已部署的服务，则可以使用Standalone模式，该模式下，certbot 会自动运行一个 web server 来进行验证。该服务需要占用<span class="tips">80</span>端口，如果我们自己的服务器上已经有 web server 正在运行 （如 Nginx 或 Apache ）并且占用了80端口，则使用Standalone前应该关闭相关服务或修改端口。</p>

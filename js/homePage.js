@@ -2,13 +2,14 @@
  * @Author: SHIWIVI 
  * @Date: 2023-09-07 00:29:00 
  * @Last Modified by: SHIWIVI
- * @Last Modified time: 2023-10-19 16:27:13
+ * @Last Modified time: 2024-04-13 14:27:18
  */
 //线性插值
 const lerp = (a, b, amt) => (1 - amt) * a + amt * b;
 Array.prototype.lerp = function (t = [], a = 0) {
   this.forEach((n, i) => (this[i] = lerp(n, t[i], a)));
 };
+//用于存储canvas数据
 class PropsArray {
   constructor(count = 0, props = []) {
     this.count = count;
@@ -32,81 +33,156 @@ const fadeInOut = (t, m) => {
 };
 //背景色渐变
 let baseColor = random() * 360;
-let backAni=random()<.9?backRenderAnimation1:backRenderAnimation2;
+let backAni = random() < .9 ? backRenderAnimation1 : backRenderAnimation2;
+//节流函数，未绑定this
+function throttle(func,limit){
+  let standby = true;
+  return function () {
+    if (standby) {
+      standby = false;
+      func();
+      setTimeout(() => standby = true, limit);
+    }
+  }
+}
 //图片懒加载
 const viewH = document.documentElement.clientHeight;
-if (document.querySelector('.update')) {
-    let pics = document.querySelectorAll('.update_pic');
-    let picIndex = 0;
-    //初始化开屏图片
-    for(let i=0;i<pics.length;i++){
-        lazyload();
-    }
-    function lazyload() {
+if (document.querySelector(".update")) {
+  let pics = document.querySelectorAll(".update_pic");
+  
+  function loadPic(picIndex){
+    console.log(picIndex+"初始化")
+    let img = pics[picIndex].querySelector("img");
+          img.src = img.dataset.src;
+          img.onload = function () {
+            setTimeout(() => {
+              this.parentNode.previousElementSibling.style = "display:none;";
+              this.parentNode.style = "visibility:visible;";
+            }, 1000)
+          }
+  }
+  function lazyloadThrottle(){
+    let picIndex=2;
+    let standby=true;
+    return function(){
+      if(standby){
+        console.log("节流")
+        standby=false;
         if (picIndex >= pics.length) {
-            main.removeEventListener('scroll', lazyload);
-            return;
+          main.removeEventListener("scroll", lazyloadThrottle);
+          return;
         }
         if (pics[picIndex].getBoundingClientRect().top < viewH) {
-            let img = pics[picIndex].querySelector('img');
-            img.src = img.dataset.src;
-            img.onload = function () {
-                setTimeout(() => {
-                    this.parentNode.previousElementSibling.style = "display:none;";
-                    this.parentNode.style = "visibility:visible;";
-                }, 1000)
-            }
-           picIndex++;
+          loadPic(picIndex);
+          picIndex++;
         }
+        setTimeout(()=>standby=true,100)
+      }
     }
-    main.addEventListener('scroll', lazyload)
-    //文章聚焦
-    let lis = document.querySelector('.update').querySelectorAll('li');
-    lis.forEach(item => {
-        main.addEventListener('scroll', () => {
-            let rect = item.getBoundingClientRect();
-            if (rect.top < 350 && rect.top > 80) {
-                item.classList.add('focus')
-            }
-            else {
-                item.classList.remove('focus')
-            }
-        })
-    });
+  }
+  for(let i=0;i<2;i++){
+    loadPic(i);
+  }
+  main.addEventListener("scroll", lazyloadThrottle());
 
-    //鼠标经过时，将焦点转换到目标身上
-    lis.forEach(item => {
-        item.onmouseover = function () {
-            lis.forEach(allItem => {
-                allItem.classList.remove('focus');
-            })
-            item.classList.add('focus');
-        }
-        item.onmouseout = function () {
-            item.classList.remove('focus');
-        }
-    });
+
+  // let picIndex = 0;
+  // //初始化开屏图片
+
+  // for (let i = 0; i < pics.length; i++) {
+  //   lazyload();
+  // }
+  // function lazyload() {
+  //   if (picIndex >= pics.length) {
+  //     main.removeEventListener("scroll", lazyload);
+  //     return;
+  //   }
+  //   if (pics[picIndex].getBoundingClientRect().top < viewH) {
+  //     let img = pics[picIndex].querySelector("img");
+  //     img.src = img.dataset.src;
+  //     img.onload = function () {
+  //       setTimeout(() => {
+  //         this.parentNode.previousElementSibling.style = "display:none;";
+  //         this.parentNode.style = "visibility:visible;";
+  //       }, 1000)
+  //     }
+  //     picIndex++;
+  //   }
+  // }
+
+  //文章聚焦
+
+
+
+
+  let lis = document.querySelector(".update").querySelectorAll("li");
+  function articleFocus() {
+    let standby = true;
+    return function () {
+      if (standby) {
+        standby = false;
+        lis.forEach(item => {
+          let rect = item.getBoundingClientRect();
+          if (rect.top < 350 && rect.top > 80) {
+            item.classList.add("focus")
+          }
+          else {
+            item.classList.remove("focus")
+          }
+        });
+        setTimeout(() => standby = true, 300);//节流
+      }
+    }
+  }
+
+  main.addEventListener("scroll", articleFocus());
+
+  // lis.forEach(item => {
+  //     main.addEventListener("scroll", () => {
+  //       console.log("old");
+  //         let rect = item.getBoundingClientRect();
+  //         if (rect.top < 350 && rect.top > 80) {
+  //             item.classList.add("focus")
+  //         }
+  //         else {
+  //             item.classList.remove("focus")
+  //         }
+  //     })
+  // });
+
+  //鼠标经过时，将焦点转换到目标身上
+  lis.forEach(item => {
+    item.onmouseover = function () {
+      lis.forEach(allItem => {
+        allItem.classList.remove("focus");
+      })
+      item.classList.add("focus");
+    }
+    item.onmouseout = function () {
+      item.classList.remove("focus");
+    }
+  });
 }
 console.log([
-    "    ┬┬  ┌┬┐┬  ┌─┐┬ ┬┬┬ ┬┬",
-    "    ││   │││  └─┐├─┤│││││",
-    "    ┴┴  ─┴┘┴  └─┘┴ ┴┴└┴┘┴",
-    "shiwivi.me"
-].join('\n'));
+  "    ┬┬  ┌┬┐┬  ┌─┐┬ ┬┬┬ ┬┬",
+  "    ││   │││  └─┐├─┤│││││",
+  "    ┴┴  ─┴┘┴  └─┘┴ ┴┴└┴┘┴",
+  "shiwivi.com"
+].join("\n"));
 //网站运行时间
-if (document.getElementById('day')) {
-  let timeGap = floor((new Date().getTime() - new Date('2021/4/10 12:19:14')) / 1000);
-  const dayWrapper = document.getElementById('day');
-  const hourWrapper = document.getElementById('hour');
-  const minuteWrapper = document.getElementById('minute');
-  const second = document.getElementById('second');
+if (document.getElementById("day")) {
+  let timeGap = floor((new Date().getTime() - new Date("2021/4/10 12:19:14")) / 1000);
+  const dayWrapper = document.getElementById("day");
+  const hourWrapper = document.getElementById("hour");
+  const minuteWrapper = document.getElementById("minute");
+  const second = document.getElementById("second");
   setInterval(() => {
-      let seconds = timeGap % 60;
-      dayWrapper.textContent = floor(timeGap / 86400);
-      hourWrapper.textContent = floor(timeGap / 3600 % 24);
-      minuteWrapper.textContent = floor(timeGap / 60 % 60);
-      second.textContent = seconds > 9 ? seconds : '0' + seconds;
-      timeGap += 1;
+    let seconds = timeGap % 60;
+    dayWrapper.textContent = floor(timeGap / 86400);
+    hourWrapper.textContent = floor(timeGap / 3600 % 24);
+    minuteWrapper.textContent = floor(timeGap / 60 % 60);
+    second.textContent = seconds > 9 ? seconds : "0" + seconds;
+    timeGap += 1;
   }, 1000)
 }
 //canvas渲染
@@ -116,8 +192,8 @@ function backRenderAnimation1() {
   let simplex;
   let tentacle;
   let tentacles;
-  const canvasRender = document.createElement('canvas');//渲染用canvas
-  const ctxRender = canvasRender.getContext('2d');
+  const canvasRender = document.createElement("canvas");//渲染用canvas
+  const ctxRender = canvasRender.getContext("2d");
   canvasRender.width = pageWidth;
   canvasRender.height = pageHeight;
   const tentacleSetting_mobile = {
@@ -255,9 +331,9 @@ function backRenderAnimation1() {
   }
   async function loop() {
     tick++;
-    ctxRender.clearRect(0, 0, pageWidth,pageHeight);
-    ctxBack.fillStyle = 'rgba(0,0,10,0.5)';
-    ctxBack.fillRect(0, 0, pageWidth,pageHeight);
+    ctxRender.clearRect(0, 0, pageWidth, pageHeight);
+    ctxBack.fillStyle = "rgba(0,0,10,0.5)";
+    ctxBack.fillRect(0, 0, pageWidth, pageHeight);
     await Promise.all(tentacles.map(tentacle => tentacle.update()));
     ctxBack.save();
     ctxBack.filter = "blur(8px) brightness(200%)";
@@ -298,59 +374,59 @@ function backRenderAnimation1() {
       });
     }, 3000)
   }
-  function resizeCanvasRender(){
+  function resizeCanvasRender() {
     canvasRender.width = pageWidth;
     canvasRender.height = pageHeight;
   }
-  window.addEventListener('resize',resizeCanvasRender);
+  window.addEventListener("resize", resizeCanvasRender);
   setTimeout(() => {
-    window.addEventListener('click', tentacleMove)
+    window.addEventListener("click", tentacleMove)
   }, 3000)
 }
 
 function backRenderAnimation2() {
   let x = 0, t = 0, b, _x, _y, _t = 1 / 100, u = 0, _u = u / 20;
   let xing = 0;
-  function flower(){
-    x=0;
-    _u=u/20;
-    ctxBack.clearRect(0, 0, pageWidth,pageHeight);
+  function flower() {
+    x = 0;
+    _u = u / 20;
+    ctxBack.clearRect(0, 0, pageWidth, pageHeight);
     ctxBack.fillStyle = "#000";
-    ctxBack.fillRect(0, 0, pageWidth,pageHeight);
+    ctxBack.fillRect(0, 0, pageWidth, pageHeight);
     ctxBack.beginPath();
-    for (let j =100; j > 0; j--) {
+    for (let j = 100; j > 0; j--) {
       x += 3 * Math.sin(4);
       y = x * .5;
       _x = x * Math.cos(b) + y * Math.sin(b);
       _y = x * Math.sin(b) - y * Math.cos(b);
-      b=(j*(xing+=.00002))*Math.PI/9;
-      ctxBack.lineTo(pageWidth/2-_x,pageHeight/2-_y);
+      b = (j * (xing += .00002)) * Math.PI / 9;
+      ctxBack.lineTo(pageWidth / 2 - _x, pageHeight / 2 - _y);
     }
-    var g=ctxBack.createLinearGradient(pageWidth/2+_x,pageHeight/2+_y,0,pageWidth/2+_x);
-    g.addColorStop(0,'hsla('+u+',85%,50%,1)');
-    g.addColorStop(0.5,'hsla('+_u+',85%,40%,1)');
-    g.addColorStop(1,'hsla(0,0%,5%,1)');
-    ctxBack.strokeStyle=g;
+    var g = ctxBack.createLinearGradient(pageWidth / 2 + _x, pageHeight / 2 + _y, 0, pageWidth / 2 + _x);
+    g.addColorStop(0, "hsla(" + u + ",85%,50%,1)");
+    g.addColorStop(0.5, "hsla(" + _u + ",85%,40%,1)");
+    g.addColorStop(1, "hsla(0,0%,5%,1)");
+    ctxBack.strokeStyle = g;
     ctxBack.stroke();
-    t+=_t;
-    u-=.8;    
-    animationID=window.requestAnimationFrame(flower); 
+    t += _t;
+    u -= .8;
+    animationID = window.requestAnimationFrame(flower);
   }
   flower();
 }
-toggleItem.addEventListener('click', ()=>{
-  if (webTheme==="dark"&&window.localStorage.getItem("disableBack")==="false") {
+toggleItem.addEventListener("click", () => {
+  if (webTheme === "dark" && window.localStorage.getItem("disableBack") === "false") {
     backAni();
   }
-  else{
+  else {
     ctxBack.clearRect(0, 0, pageWidth, pageHeight);
     window.cancelAnimationFrame(animationID);
   }
 });
 
-function homePageInit(){
-  if(webTheme==="dark"&&window.localStorage.getItem("disableBack")==="false"){
+function homePageInit() {
+  if (webTheme === "dark" && window.localStorage.getItem("disableBack") === "false") {
     backAni();
   }
 }
-window.addEventListener('load',homePageInit);
+window.addEventListener("load", homePageInit);

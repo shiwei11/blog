@@ -41,24 +41,27 @@
         <div>不便留言可以发邮件给我:njsgcn@gmail.com</div>
        <div style="font-size: 10px;color:#00a8ff;">文明发言,你也不想和博主一起去当狱友吧</div>
     </div>
+    <div class="messageInfo" style="color: #3abdff;margin: 100px;font-size: 20px;">留言板暂时被禁用</div>
     <div id="waline"></div>
+    
+<script src="/blog/js/commonCanvas.js"></script>
+
     <script>
-        let webTheme = window.localStorage.getItem("webTheme");
         if(webTheme=="dark"){
             document.body.classList.add("dark");
         }
-        Waline.init({
-          el: '#waline',
-          serverURL: 'https://comment.shiwivi.me',
-          dark:'body[class="dark"]',
-          emoji: [
-         'https://unpkg.com/@waline/emojis@1.1.0/tieba',
-         'https://unpkg.com/@waline/emojis@1.1.0/alus',
-         'https://unpkg.com/@waline/emojis@1.1.0/weibo',
-          ]
-        });
+        // Waline.init({
+        //   el: '#waline',
+        //   serverURL: 'https://message.shiwivi.com',
+        //   dark:'body[class="dark"]',
+        //   emoji: [
+        //  'https://unpkg.com/@waline/emojis@1.1.0/tieba',
+        //  'https://unpkg.com/@waline/emojis@1.1.0/alus',
+        //  'https://unpkg.com/@waline/emojis@1.1.0/weibo',
+        //   ]
+        // });
         console.log("%c ","background:url(/blog/images/shivi.jpg) no-repeat center;padding-left:600px;padding-bottom:304px;background-size: 40%;");
-        const messages=['Yo Yo Yo, 148-3369, representing the ABQ,what up bitaaaaaaaaa?Leave it at the shiwivi.me.',
+        const messages=['Yo Yo Yo, 148-3369, representing the ABQ,what up bitaaaaaaaaa?Leave it at the shiwivi.com.',
         '在吗？在干嘛？吃饭了嘛？多喝烫水',
         '我们已经是好友了，现在可以一起来聊天了',
         '长的好看的先说话',

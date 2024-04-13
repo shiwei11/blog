@@ -2,7 +2,7 @@
  * @Author: SHIWIVI
  * @Date: 2021-03-16 15:55:11
  * @Last Modified by: SHIWIVI
- * @Last Modified time: 2023-10-18 01:08:36
+ * @Last Modified time: 2024-04-12 12:42:35
  */
 :root {
     --cursor-a: url(../images/link.cur), pointer;
@@ -192,7 +192,7 @@ body {
     align-items: center;
     position: relative;
     top: 0;
-    z-index: 50;
+    z-index: 60;
     width: 12rem;
     min-width: 117px;
     height: 100vh;
@@ -453,12 +453,13 @@ body {
     position: absolute;
     left: 0rem;
     top: .5rem;
-    z-index: 50;
+    z-index: 60;
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 5px;
     overflow: hidden;
     transition: left .5s ease;
+    cursor: var(--cursor-a);
 }
 
 .closed {
@@ -555,7 +556,7 @@ body {
     background-color: #393d409d;
     color: #fff;
     border-radius: 5px;
-    z-index: 40;
+    z-index: 50;
     backdrop-filter: blur(5px);
     pointer-events: none;
     overflow: hidden;
@@ -608,7 +609,7 @@ body {
     position: sticky;
     right: 10px;
     top: 0;
-    z-index: 30;
+    z-index: 55;
 }
 .canvasWrapper {
     position: sticky;
@@ -642,6 +643,7 @@ body {
     background-color: var(--setBtn-bgColor);
     box-shadow: -2px 0 4px var(--setBtn-bgColor);
     transition: width .5s linear, height .5s linear .5s;
+    backdrop-filter: blur(5px);
     cursor: var(--cursor-a);
 }
 
@@ -651,7 +653,7 @@ body {
     border-radius: 5px;
     border: 2px solid #ffffff70;
     background-color: #ffffff33;
-    box-shadow: -2px 0 4px var(--setBtn-bgColor);
+    box-shadow: -2px 0 4px #fff;
     transition: width .5s linear;
 }
 
@@ -826,7 +828,7 @@ body {
     position: sticky;
     top: 10px;
     left: 0;
-    z-index: 20;
+    z-index: 40;
 }
 
 .displayResult {

@@ -139,7 +139,7 @@
         <div class="article">
         <h1 class="title">JavaScript异步与AJAX</h1>
         <div class="art_infor">
-            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：14456</span>
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：14464</span>
             <span><span class="iconfont icon-riqi"></span>写于：2021-04-01</span></div>
             <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2021-04-01</span>
             <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您42分钟</span></div>
@@ -516,12 +516,12 @@ p.then(value=>{
 <li>status        返回请求的状态号</li>
 </ul>
 <h4 id="发起请求"><a href="#发起请求" class="headerlink" title="发起请求"></a>发起请求</h4><h5 id="发起get请求"><a href="#发起get请求" class="headerlink" title="发起get请求"></a>发起get请求</h5><p>如果get请求需要携带参数，可以直接在URL地址后以键值对的形式拼接<span class="tips">查询字符串</span>，多个参数使用<span class="tips">&amp;</span>拼接</p>
-<div class="show">xhr.open('GET','http://shiwivi.me')</div>
-<div class="show">xhr.open('GET','http://shiwivi.me?id=1&author=shiwivi')</div>
+<div class="show">xhr.open('GET','http://shiwivi.com')</div>
+<div class="show">xhr.open('GET','http://shiwivi.com?id=1&author=shiwivi')</div>
 
 
 <div class="show"> let xhr=new XMLHttpRequest();
-    xhr.open('GET','http://shiwivi.me')
+    xhr.open('GET','http://shiwivi.com')
     xhr.send();
     xhr.onreadystatechange=function(){
         if(xhr.readyState===4&&xhr.status===200){
@@ -540,7 +540,7 @@ p.then(value=>{
 <li>监听onreadystatechange事件</li>
 </ol>
 <div class="show">var xhr=new XMLHttpRequest();
-    xhr.open('POST','http://shiwivi.me');
+    xhr.open('POST','http://shiwivi.com');
     xhr.setRequestHeader('content-Type','application/x-www-form-urlencoded')
     xhr.send('id=1&author=shiwivi');
     xhr.onreadystatechange=function(){
@@ -560,14 +560,14 @@ URL中只允许出现英文字母、数字、标点符号，在拼接查询字�
 <li>function可以指定请求成功执行的回调，非必须</li>
 </ul>
 <div class="show">$(function(){
-                $.get('http://shiwivi.me',function(res){
+                $.get('http://shiwivi.com',function(res){
                     console.log(res)//res用于接收返回的数据
                 })
 })</div>
 
-<div class="show">$.get('http://shiwivi.me',{id:1,author:''shiwivi},function(res){...})
+<div class="show">$.get('http://shiwivi.com',{id:1,author:''shiwivi},function(res){...})
 //等价于
-$.get('http://shiwivi.me?id=1&author=shiwivi',function(res){...})
+$.get('http://shiwivi.com?id=1&author=shiwivi',function(res){...})
 </div>
 
 <h5 id="发起post请求-1"><a href="#发起post请求-1" class="headerlink" title="发起post请求"></a>发起post请求</h5><p><span class="strong">$.post(url,[data],[function(){…}])</span> 发起post请求</p>
@@ -593,7 +593,7 @@ $.get('http://shiwivi.me?id=1&author=shiwivi',function(res){...})
 </ul>
 <div class="show">$.ajax({
                 type:'GET',
-                url:'http://shiwivi.me',
+                url:'http://shiwivi.com',
                 data:{id:1},
                 success:function(res,textStatus,jqXHR){
                     console.log(res);//服务器返回的数据
