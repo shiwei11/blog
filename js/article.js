@@ -26,7 +26,6 @@ if(contentFoldedList){
         })
         window.addEventListener("resize",function(){
             if(foldFlag){
-                // item.style.height=item.scrollHeight+"px";
                 item.style.height="max-content";
             }
         })
@@ -61,24 +60,41 @@ if (imgs) {
 }
 const viewH = document.documentElement.clientHeight;
 const imgWrappers = document.querySelectorAll('.imgWrapper');
-let imgIndex = 0;
-for (let i = 0; i < imgWrappers.length; i++) {
-    lazyload();
-}
-function lazyload() {
-    if (imgIndex >= imgWrappers.length) {
-        main.removeEventListener('scroll', lazyload);
-        return;
-    }
+
+function loadImg(imgIndex){
     if (imgWrappers[imgIndex].getBoundingClientRect().top < viewH) {
         imgs[imgIndex].src = imgs[imgIndex].dataset.src;
         imgs[imgIndex].onload = function () {
             this.parentNode.querySelector('.loadWrapper').style = "display:none;";
         }
-        imgIndex++;
+}}
+for (let i = 0; i < imgWrappers.length; i++) {
+    loadImg(i);
+}
+function throttleLazyload(){
+    let imgIndex=0;
+    let timer=null;
+    return function(){
+        if(!timer){
+            timer=setTimeout(()=>{
+                if (imgIndex >= imgWrappers.length) {
+                    main.removeEventListener('scroll', throttleLazyload);
+                    return;
+                }
+                if (imgWrappers[imgIndex].getBoundingClientRect().top < viewH) {
+                    imgs[imgIndex].src = imgs[imgIndex].dataset.src;
+                    imgs[imgIndex].onload = function () {
+                        this.parentNode.querySelector('.loadWrapper').style = "display:none;";
+                    }
+                    imgIndex++;
+            }
+            timer=null;
+            },300) 
+        }
     }
 }
-main.addEventListener('scroll', lazyload);
+
+main.addEventListener('scroll', throttleLazyload());
 const pres = document.querySelectorAll('pre');
 if (pres) {
     for (let i = 0; i < pres.length; i++) {

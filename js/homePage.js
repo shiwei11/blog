@@ -2,7 +2,7 @@
  * @Author: SHIWIVI 
  * @Date: 2023-09-07 00:29:00 
  * @Last Modified by: SHIWIVI
- * @Last Modified time: 2024-04-13 14:27:18
+ * @Last Modified time: 2024-04-14 12:17:07
  */
 //线性插值
 const lerp = (a, b, amt) => (1 - amt) * a + amt * b;
@@ -34,24 +34,11 @@ const fadeInOut = (t, m) => {
 //背景色渐变
 let baseColor = random() * 360;
 let backAni = random() < .9 ? backRenderAnimation1 : backRenderAnimation2;
-//节流函数，未绑定this
-function throttle(func,limit){
-  let standby = true;
-  return function () {
-    if (standby) {
-      standby = false;
-      func();
-      setTimeout(() => standby = true, limit);
-    }
-  }
-}
 //图片懒加载
 const viewH = document.documentElement.clientHeight;
 if (document.querySelector(".update")) {
   let pics = document.querySelectorAll(".update_pic");
-  
   function loadPic(picIndex){
-    console.log(picIndex+"初始化")
     let img = pics[picIndex].querySelector("img");
           img.src = img.dataset.src;
           img.onload = function () {
@@ -66,7 +53,6 @@ if (document.querySelector(".update")) {
     let standby=true;
     return function(){
       if(standby){
-        console.log("节流")
         standby=false;
         if (picIndex >= pics.length) {
           main.removeEventListener("scroll", lazyloadThrottle);
@@ -84,37 +70,7 @@ if (document.querySelector(".update")) {
     loadPic(i);
   }
   main.addEventListener("scroll", lazyloadThrottle());
-
-
-  // let picIndex = 0;
-  // //初始化开屏图片
-
-  // for (let i = 0; i < pics.length; i++) {
-  //   lazyload();
-  // }
-  // function lazyload() {
-  //   if (picIndex >= pics.length) {
-  //     main.removeEventListener("scroll", lazyload);
-  //     return;
-  //   }
-  //   if (pics[picIndex].getBoundingClientRect().top < viewH) {
-  //     let img = pics[picIndex].querySelector("img");
-  //     img.src = img.dataset.src;
-  //     img.onload = function () {
-  //       setTimeout(() => {
-  //         this.parentNode.previousElementSibling.style = "display:none;";
-  //         this.parentNode.style = "visibility:visible;";
-  //       }, 1000)
-  //     }
-  //     picIndex++;
-  //   }
-  // }
-
   //文章聚焦
-
-
-
-
   let lis = document.querySelector(".update").querySelectorAll("li");
   function articleFocus() {
     let standby = true;
@@ -136,20 +92,6 @@ if (document.querySelector(".update")) {
   }
 
   main.addEventListener("scroll", articleFocus());
-
-  // lis.forEach(item => {
-  //     main.addEventListener("scroll", () => {
-  //       console.log("old");
-  //         let rect = item.getBoundingClientRect();
-  //         if (rect.top < 350 && rect.top > 80) {
-  //             item.classList.add("focus")
-  //         }
-  //         else {
-  //             item.classList.remove("focus")
-  //         }
-  //     })
-  // });
-
   //鼠标经过时，将焦点转换到目标身上
   lis.forEach(item => {
     item.onmouseover = function () {
@@ -378,7 +320,8 @@ function backRenderAnimation1() {
     canvasRender.width = pageWidth;
     canvasRender.height = pageHeight;
   }
-  window.addEventListener("resize", resizeCanvasRender);
+
+  window.addEventListener("resize", throttle(resizeCanvasRender,500));
   setTimeout(() => {
     window.addEventListener("click", tentacleMove)
   }, 3000)

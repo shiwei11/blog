@@ -469,7 +469,7 @@
     font-size: 18px;
     letter-spacing: 10px;
     line-height: 66px;
-    background: linear-gradient(to bottom, transparent, #40c9d2);
+    background: linear-gradient(to bottom, transparent, #33c6eb);
     cursor: var(--cursor-a);
 }
 .art_content .contentFolded .foldBtn_unfolded{
