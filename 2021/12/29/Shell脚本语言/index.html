@@ -1,0 +1,2283 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="SHIWIVI"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let texts=document.querySelector('.text').querySelectorAll('span');let timer=setInterval(()=>{texts.forEach((item)=>{item.classList.toggle("dance")})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script><title>SHIWIVI-文章</title>
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
+
+<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="/blog/css/article.css">
+<link rel="stylesheet" href="/blog/css/atelier-cave.min.css">
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="SHWIVI's blog" type="application/atom+xml">
+</head>
+<body>
+<div class="nav">
+    <div class="card">
+        <div class="head">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
+        </div>
+        <div class="cardText">
+            <p>(ー`´ー)</p>
+            <p>那不是bug，是彩蛋</p>
+        </div> 
+    </div>
+    <ul class="label">
+        
+        <li><a href="/blog/index.html">首页</a></li>
+        
+        <li><a href="/blog/life">日常</a></li>
+        
+        <li><a href="/blog/record">一句</a></li>
+        
+        <li><a href="/blog/message">留言</a></li>
+        
+        <li><a href="/blog/about">关于</a></li>
+          
+    </ul>
+        <ul class="tag">
+            <li>#Document</li>
+            <li>#Java</li>
+            <li>#css</li>
+            <li>#Life</li>
+            <li>#Lua</li>
+            <li>#PCB</li>
+            <li>#Shell</li>
+            <li>#C</li>
+            <li>#html</li>
+            <li>#硬件</li>
+            <li>#javaScript</li>
+            <li>#Firewall</li>
+            <li>#Security</li>
+            <li><a href="/blog/tags/Linux">#Linux</a></li>
+            <li>#Python</li>
+            <li>#Serve</li>
+            <li>#Web</li>
+        </ul>
+    <div class="rsstag"><a href="/blog/atom.xml"><span class="iconfont icon-rss"></span>RSS订阅</a></div>
+<div class="flower">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84.6px" height="70.5px" viewBox="0 0 254 212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>窗</title>
+<desc>Created with Sketch.</desc>
+<defs></defs>
+<g id="植物" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Artboard" transform="translate(-885.000000, -503.000000)">
+        <g id="植物-紫色盆" transform="translate(882.000000, 500.000000)">
+            <ellipse id="Oval-12" fill="#B3B7C7" cx="140.5" cy="137" rx="39.5" ry="6"></ellipse>
+            <g id="Group-5">
+                <path d="M131.5,149 C137.746054,149 138.400559,136.953074 140.297813,118.503702 C141.504079,106.77367 149.145158,88.1140929 147,75 C142.297813,46.2539062 153.271934,32.5660626 150.170125,19.4282488 C148.031314,10.3692495 142.862042,3 131.5,3 C123.603887,3 113.698654,6.59314895 110.722909,11.2157433 C103.206874,22.8913341 114,46.5137576 114,75 C114,90.4435309 122.495151,106.751425 123.699377,118.476362 C125.595832,136.941172 125.250862,149 131.5,149 Z" id="Oval-11" fill="#BAC4F6"></path>
+                <path d="M135.5,146.5 C132.598908,121.877878 130.965369,104.566553 130.599381,94.5660242 C130.050399,79.5652312 132.963841,77.0580598 132.164069,55.3464601 C131.630888,40.8720602 130.242865,30.4232402 128,24" id="Line-15" stroke="#FFFFFF" stroke-width="2" opacity="0.800892857" stroke-linecap="square"></path>
+                <path d="M77.0442201,163.336077 C84.2239219,163.336077 101.067658,131.237823 101.067658,92.025606 C101.067658,52.8133888 90.9057581,-2.32627732 72.6560979,17.2440872 C50.0508064,41.4852946 69.5871262,36.5862429 74.0442201,63.8595149 C75.572858,73.2133576 77.0442201,94.5993942 77.0442201,104.613421 C77.0442201,143.825638 69.8645184,163.336077 77.0442201,163.336077 Z" id="Oval-9" fill="#BAC4F6" transform="translate(81.510722, 88.251316) rotate(-43.000000) translate(-81.510722, -88.251316) "></path>
+                <path d="M42.5,50.5 C47.5132933,48.8699207 59.3816332,57.6317857 78.1050199,76.785595 C96.8284065,95.9394043 113.960067,116.844206 129.5,139.5" id="Line-17" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M155.281006,152.144255 C162.116643,152.144255 178.153197,121.584207 178.153197,84.2511084 C178.153197,72.6051871 184.354199,51.8242671 182.531201,39.8465879 C178.51025,13.4276595 163.058175,0.233079666 151.10317,13.0532528 C129.581164,36.1327785 143.297279,29.7382802 147.540781,55.7045685 C148.996164,64.6101585 153.500382,80.3852665 153.500382,89.9194035 C153.500382,127.252502 148.445368,152.144255 155.281006,152.144255 Z" id="Oval-9-Copy-2" fill="#E9EDFD" transform="translate(161.092971, 80.123972) scale(-1, 1) rotate(-20.000000) translate(-161.092971, -80.123972) "></path>
+                <path d="M180.5,34.5 C181.290102,21.4892162 175.746138,28.9223292 163.868108,56.7993391 C157.546037,71.6368512 150.532373,85.3308057 144.827114,101.881203 C141.023608,112.914801 138.581237,128.787733 137.5,149.5" id="Line-20" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M60.3426107,183.894782 C69.2498271,183.894782 90.1463498,156.072081 90.1463498,122.083011 C90.1463498,88.0939419 67.5408019,29.4364067 54.8986583,57.2625442 C45.0326912,78.978146 51.0912584,74.0282851 56.6207779,97.6687014 C58.5172227,105.776593 67.8616068,124.363423 67.8616068,133.043561 C67.8616068,167.032631 51.4353942,183.894782 60.3426107,183.894782 Z" id="Oval-9-Copy" fill="#BAC4F6" transform="translate(69.895982, 116.944107) rotate(-71.000000) translate(-69.895982, -116.944107) "></path>
+                <path d="M24.5,109.5 C22.4991751,103.669523 35.0833631,105.49608 62.2525641,114.979669 C79.4278854,120.974828 92.103247,119.378882 106.278649,126.191831 C111.777518,128.834684 120.517968,134.937407 132.5,144.5" id="Line-19" stroke="#FFFFFF" stroke-width="2" opacity="0.595424107" stroke-linecap="square"></path>
+                <path d="M169.495543,159.559977 C178.40276,159.559977 199.299282,131.737276 199.299282,97.7482062 C199.299282,85.7856682 202.004463,66.329956 197.824033,53.1018748 C190.126639,28.745108 172.2443,14.8950801 164.051591,32.9277389 C154.185624,54.6433407 160.244191,49.6934798 165.77371,73.3338961 C167.670155,81.4417878 177.014539,100.028618 177.014539,108.708756 C177.014539,142.697825 160.588327,159.559977 169.495543,159.559977 Z" id="Oval-9-Copy-3" fill="#BAC4F6" transform="translate(179.479352, 92.134636) scale(-1, 1) rotate(-43.000000) translate(-179.479352, -92.134636) "></path>
+                <path d="M213.5,60.5 C209.183273,60.8948914 201.740861,65.4428024 191.172763,74.1437328 C175.320617,87.1951284 177.797205,83.2393994 161.560337,103.262986 C150.735758,116.612043 142.715646,131.024381 137.5,146.5" id="Line-21" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M81.1425752,168.630026 C85.1025169,165.536181 98.2051544,147.96348 98.2051544,111.236918 C98.2051544,74.5103552 86.0176544,46.7369177 70.0176544,46.7369177 C54.0176544,46.7369177 59.5351666,70.3889964 66.8400325,93.0530589 C69.6371249,101.731312 78.9791535,122.814465 81.0032985,132.88325 C84.2653955,149.110029 78.6989273,170.539213 81.1425752,168.630026 Z" id="Oval-10" fill="#E9EDFD" transform="translate(78.936475, 107.743055) rotate(-52.000000) translate(-78.936475, -107.743055) "></path>
+                <path d="M39.5,84.5 C46.5402399,84.832105 55.9862242,87.7506309 67.8379528,93.2555776 C85.6155457,101.512998 79.9127462,96.6348296 100.298442,112.739947 C113.888906,123.476691 125.956092,135.063376 136.5,147.5" id="Line-18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M194.823347,177.534556 C197.785465,175.220296 209.085075,165.125173 213.530819,146.109724 C215.496552,137.701844 211.555235,124.000271 211.555235,111.853141 C211.555235,72.2337887 199.639103,43.8487815 182.378853,43.8487815 C165.118604,43.8487815 168.053621,58.2764613 175.933859,82.7256721 C183.814096,107.174883 191.693317,118.61017 193.876895,129.472028 C197.395933,146.976919 192.187224,179.594121 194.823347,177.534556 Z" id="Oval-10-Copy-2" fill="#E9EDFD" transform="translate(191.881132, 110.738214) scale(-1, 1) rotate(-52.000000) translate(-191.881132, -110.738214) "></path>
+                <path d="M237.5,84.5 C231.839918,82.6252532 222.387737,84.7837206 209.143456,90.9754021 C189.277034,100.262925 198.344222,96.9653923 174.587666,113.911421 C158.749962,125.208774 147.387407,137.071634 140.5,149.5" id="Line-22" stroke="#FFFFFF" stroke-width="2" opacity="0.785044643" stroke-linecap="square"></path>
+                <path d="M102.095097,154.049614 C106.979303,150.233654 123.140143,128.559423 123.140143,83.2607523 C123.140143,37.9620813 108.108037,3.70622602 88.3735811,3.70622602 C68.639125,3.70622602 75.4444439,32.8787829 84.4542911,60.8327171 C87.9042347,71.5365054 99.4267255,97.5405402 101.923313,109.959415 C105.946795,129.97358 99.0810936,156.404412 102.095097,154.049614 Z" id="Oval-10-Copy" fill="#E9EDFD" transform="translate(99.374086, 78.951409) rotate(-21.000000) translate(-99.374086, -78.951409) "></path>
+                <path d="M70.5,27.5 C77.9697854,36.2141564 84.664658,44.2949462 90.5846178,51.7423694 C99.4645574,62.9135043 102.309139,65.8595669 108.078018,74.773869 C113.846897,83.6881711 108.232283,69.1486166 118.500716,94.8794382 C125.346337,112.033319 129.012765,128.573507 129.5,144.5" id="Line-16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M193.001521,189.153265 C198.929205,189.153265 212.83568,162.652399 212.83568,130.278124 C212.83568,97.9038493 204.210737,49.7003434 189.378612,68.5372278 C174.540517,87.3816949 180.150684,86.5530431 183.830536,109.070321 C185.092606,116.793013 193.001521,132.403088 193.001521,140.670839 C193.001521,173.045114 187.073837,189.153265 193.001521,189.153265 Z" id="Oval-9-Copy-4" fill="#BAC4F6" transform="translate(196.248002, 126.727326) scale(-1, 1) rotate(-73.000000) translate(-196.248002, -126.727326) "></path>
+                <path d="M234.5,116.5 C229.435614,115.997419 220.043174,117.148484 206.322678,119.953197 C185.741934,124.160265 185.201799,123.9696 168.145826,131.063968 C156.775178,135.793546 148.226569,140.93889 142.5,146.5" id="Line-23" stroke="#FFFFFF" stroke-width="2" opacity="0.733426339" stroke-linecap="square"></path>
+            </g>
+            <g id="Group-4" transform="translate(101.000000, 137.000000)">
+                <path d="M0,0 C11.7955729,2 24.5052083,3 38.1289062,3 C51.7526042,3 65.3763021,2 79,0 L71.2109375,75.3409091 C61.9375,77.1136364 51.8945312,78 41.0820312,78 C30.2695313,78 19.4570312,77.1136364 8.64453125,75.3409091 L0,0 Z" id="Rectangle-9" fill="#FCDCCF"></path>
+                <path d="M59.2621996,2.19791001 C63.6483775,1.86496527 70.2276443,1.1323286 79,0 L71.2109375,75.3409091 C63.3055851,76.5844933 57.2271178,77.3450382 52.9755357,77.6225437 L59.2621996,2.19791001 Z" id="Rectangle-9" fill="#ECC6B6"></path>
+                <path d="M0,0 C10.9588352,1.33333333 23.3572727,2 37.1953125,2 C51.0333523,2 64.9682481,1.33333333 79,0 L76.7909585,21.3672948 L40.573652,23.0934676 L2.38711382,20.8047516 L0,0 Z" id="Rectangle-9" fill="#F3B096"></path>
+            </g>
+        </g>
+    </g>
+</g>
+</svg>
+</div>
+
+</div>
+<div class="menuBtn closed"> 
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+</div>
+<div class="nightSky"><!--当关闭夜间背景模式时，子元素将在一段延时后才会被清除--></div>
+<div class="main">
+    <div class="msg">
+        <div class="msgText"></div>
+        <div class="msgBar"></div>
+    </div>
+    <div class="motto">
+        <p> //sunny forever<br />
+            while(life&lt;end){<br />
+               love++;<br />
+               beAwesome :)} </p>
+     </div>
+     <div class="mainContent">
+    <div class="canvasWrapper"></div>
+<div class="setWrapper">
+    <ul class="setMenu">
+        <div id="setBtn" class="setButton"><</div>
+        <li class="searchContainer">
+            <input id="searchInput" class="localSearch" placeholder="搜索..." type="search" >
+            <span class="searchIco"></span>
+        </li>
+        <li id="toggleItem">
+        主题：<span class="itemIco sun"></span>
+        </li>
+        <li class="setSize">
+            <span id="increaseFontSize">+</span>
+            <span class="fontSizeNum"></span>
+            <span id="reduceFontSize">-</span>
+        </li>
+        <li id="clearBack">清除背景</li>
+        <li id="disableBack">禁用背景</li>
+    </ul> 
+</div>
+    <div class="resultContainer">
+        <div id="searchResult" class="displayResult"></div>
+    </div>
+    <div class="tocWrapper"><div class="tocBtn">目 录</div><div class="tocBox"><!--tocBox用于容纳生成在toc外的目录--><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#shell%E8%84%9A%E6%9C%AC%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text">shell脚本基础</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E5%A3%B0%E6%98%8E"><span class="toc-number">1.1.</span> <span class="toc-text">脚本声明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#shell%E8%84%9A%E6%9C%AC%E7%9A%84%E6%89%A7%E8%A1%8C%E6%96%B9%E5%BC%8F"><span class="toc-number">1.2.</span> <span class="toc-text">shell脚本的执行方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC%E6%96%B9%E5%BC%8F"><span class="toc-number">1.3.</span> <span class="toc-text">全局执行脚本方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E9%87%8A"><span class="toc-number">1.4.</span> <span class="toc-text">注释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2"><span class="toc-number">1.5.</span> <span class="toc-text">脚本格式转换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E9%80%80%E5%87%BA%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">1.6.</span> <span class="toc-text">脚本退出状态码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#shell%E4%B8%AD%E7%9A%84%E8%BF%90%E7%AE%97"><span class="toc-number">2.</span> <span class="toc-text">shell中的运算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%84%E7%A7%8D%E6%8B%AC%E5%8F%B7%E4%BD%BF%E7%94%A8%E9%A2%84%E8%A7%88"><span class="toc-number">2.1.</span> <span class="toc-text">各种括号使用预览</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8E-%E5%91%BD%E4%BB%A4%E8%B0%83%E7%94%A8"><span class="toc-number">2.2.</span> <span class="toc-text">$()与&#96;&#96;命令调用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%8E-%E6%95%B4%E6%95%B0%E8%BF%90%E7%AE%97"><span class="toc-number">2.3.</span> <span class="toc-text">$(())与$[]整数运算</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#expr%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">2.4.</span> <span class="toc-text">expr表达式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E9%87%8F"><span class="toc-number">3.</span> <span class="toc-text">变量</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#shell%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.1.</span> <span class="toc-text">shell中的变量类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F"><span class="toc-number">3.2.</span> <span class="toc-text">自定义变量</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E5%AE%9A%E4%B9%89%E3%80%81%E8%B5%8B%E5%80%BC%E3%80%81%E8%B0%83%E7%94%A8"><span class="toc-number">3.2.1.</span> <span class="toc-text">变量定义、赋值、调用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%AA%E8%AF%BB%E5%8F%98%E9%87%8F"><span class="toc-number">3.2.2.</span> <span class="toc-text">只读变量</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E5%8F%98%E9%87%8F"><span class="toc-number">3.2.3.</span> <span class="toc-text">删除变量</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E5%80%BC%E6%A3%80%E6%B5%8B%E4%B8%8E%E6%9B%BF%E6%8D%A2"><span class="toc-number">3.3.</span> <span class="toc-text">变量值检测与替换</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">4.</span> <span class="toc-text">字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%8B%BC%E6%8E%A5"><span class="toc-number">4.1.</span> <span class="toc-text">字符串拼接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%95%BF%E5%BA%A6"><span class="toc-number">4.2.</span> <span class="toc-text">获取字符串长度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%88%AA%E5%8F%96%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">4.3.</span> <span class="toc-text">截取字符串</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">4.4.</span> <span class="toc-text">查找子字符串</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-number">5.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E5%AE%9A%E4%B9%89"><span class="toc-number">5.1.</span> <span class="toc-text">数组定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0"><span class="toc-number">5.2.</span> <span class="toc-text">数组元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E9%95%BF%E5%BA%A6"><span class="toc-number">5.3.</span> <span class="toc-text">数组长度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E8%81%94%E6%95%B0%E7%BB%84"><span class="toc-number">5.4.</span> <span class="toc-text">关联数组</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%8D%E7%BD%AE%E5%8F%98%E9%87%8F%E4%B8%8E%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92"><span class="toc-number">6.</span> <span class="toc-text">位置变量与参数传递</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%99%E8%84%9A%E6%9C%AC%E4%BC%A0%E9%80%92%E5%8F%82%E6%95%B0"><span class="toc-number">6.1.</span> <span class="toc-text">给脚本传递参数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#0%E5%8F%82%E6%95%B0%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">6.1.1.</span> <span class="toc-text">$0参数的使用</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E5%8F%82%E6%95%B0shift"><span class="toc-number">6.2.</span> <span class="toc-text">移动参数shift</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E9%80%89%E9%A1%B9"><span class="toc-number">7.</span> <span class="toc-text">脚本选项</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%89%E9%A1%B9%E4%B8%8E%E5%8F%82%E6%95%B0%E5%88%86%E5%89%B2%E7%AC%A6"><span class="toc-number">7.1.</span> <span class="toc-text">选项与参数分割符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E9%80%89%E9%A1%B9%E5%A4%84%E7%90%86"><span class="toc-number">7.2.</span> <span class="toc-text">简单选项处理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#getopt%E4%B8%8Egetopts%E5%91%BD%E4%BB%A4"><span class="toc-number">7.3.</span> <span class="toc-text">getopt与getopts命令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#getopt%E5%91%BD%E4%BB%A4"><span class="toc-number">7.3.1.</span> <span class="toc-text">getopt命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#getopts%E5%91%BD%E4%BB%A4"><span class="toc-number">7.3.2.</span> <span class="toc-text">getopts命令</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%89%E9%A1%B9%E6%A0%87%E5%87%86%E5%8C%96"><span class="toc-number">7.4.</span> <span class="toc-text">选项标准化</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%80%BC%E5%A3%B0%E6%98%8E%E4%B8%8E%E6%95%B0%E5%80%BC%E8%BF%90%E7%AE%97"><span class="toc-number">8.</span> <span class="toc-text">数值声明与数值运算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E5%80%BC%E5%A3%B0%E6%98%8E"><span class="toc-number">8.1.</span> <span class="toc-text">数值声明</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E5%80%BC%E8%BF%90%E7%AE%97"><span class="toc-number">8.2.</span> <span class="toc-text">数值运算</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E9%80%9A%E8%BF%87%E2%80%9D-%E2%80%9D%E6%88%96%E2%80%9D-%E2%80%9D%E8%BF%90%E7%AE%97%E5%BC%8F"><span class="toc-number">8.2.1.</span> <span class="toc-text">1.通过”$(())”或”$[]”运算式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E9%80%9A%E8%BF%87declare-i%E5%A3%B0%E6%98%8E"><span class="toc-number">8.2.2.</span> <span class="toc-text">2.通过declare -i声明</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E8%BF%90%E7%AE%97%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">8.3.</span> <span class="toc-text">浮点数运算的解决方案</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA"><span class="toc-number">9.</span> <span class="toc-text">输入输出</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5read"><span class="toc-number">9.1.</span> <span class="toc-text">用户输入read</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%88%E7%AB%AF%E8%BE%93%E5%87%BA"><span class="toc-number">9.2.</span> <span class="toc-text">终端输出</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-number">10.</span> <span class="toc-text">输入输出重定向</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6%E4%B8%8E%E6%A0%87%E5%87%86%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E8%AE%BE%E5%A4%87"><span class="toc-number">10.1.</span> <span class="toc-text">文件描述符与标准输入输出设备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BE%93%E5%87%BA%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-number">10.2.</span> <span class="toc-text">输出重定向</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E6%A0%87%E5%87%86%E8%BE%93%E5%87%BA%E4%B8%8E%E6%A0%87%E5%87%86%E9%94%99%E8%AF%AF%E8%BE%93%E5%87%BA%E7%9A%84%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-number">10.2.1.</span> <span class="toc-text">1.标准输出与标准错误输出的重定向</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E8%BE%93%E5%87%BA%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF"><span class="toc-number">10.2.2.</span> <span class="toc-text">2.输出错误信息</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E9%87%8D%E5%AE%9A%E5%90%91-%E4%B8%8D%E5%B8%B8%E7%94%A8"><span class="toc-number">10.3.</span> <span class="toc-text">输入重定向(不常用)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%B9%E9%87%8F%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-number">10.4.</span> <span class="toc-text">批量重定向</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%8C%E6%97%B6%E8%BE%93%E5%87%BA%E5%88%B0%E6%98%BE%E7%A4%BA%E5%99%A8%E5%92%8C%E6%96%87%E4%BB%B6"><span class="toc-number">10.5.</span> <span class="toc-text">同时输出到显示器和文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%A2%E5%BC%83%E5%91%BD%E4%BB%A4%E8%BE%93%E5%87%BA"><span class="toc-number">10.6.</span> <span class="toc-text">丢弃命令输出</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-number">10.7.</span> <span class="toc-text">自定义重定向</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6"><span class="toc-number">10.7.1.</span> <span class="toc-text">创建文件描述符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%81%A2%E5%A4%8D%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6%E7%9A%84%E6%8C%87%E5%90%91"><span class="toc-number">10.7.2.</span> <span class="toc-text">恢复文件描述符的指向</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%90%8C%E6%97%B6%E8%AF%BB%E5%86%99%E7%9A%84%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6-%E4%BA%86%E8%A7%A3"><span class="toc-number">10.7.3.</span> <span class="toc-text">同时读写的文件描述符(了解)</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%B3%E9%97%AD%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6"><span class="toc-number">10.7.4.</span> <span class="toc-text">关闭文件描述符</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%97%E5%87%BA%E6%89%93%E5%BC%80%E7%9A%84%E6%96%87%E4%BB%B6%E6%8F%8F%E8%BF%B0%E7%AC%A6"><span class="toc-number">10.8.</span> <span class="toc-text">列出打开的文件描述符</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD"><span class="toc-number">11.</span> <span class="toc-text">条件判断</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#test%E5%91%BD%E4%BB%A4%E4%B8%8E"><span class="toc-number">11.1.</span> <span class="toc-text">test命令与[ ]</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%9B%B8%E5%85%B3"><span class="toc-number">11.2.</span> <span class="toc-text">文件相关</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B"><span class="toc-number">11.2.1.</span> <span class="toc-text">文件类型</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="toc-number">11.2.2.</span> <span class="toc-text">文件权限</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%A4%E4%B8%AA%E6%96%87%E4%BB%B6%E6%AF%94%E8%BE%83"><span class="toc-number">11.2.3.</span> <span class="toc-text">两个文件比较</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B4%E6%95%B0%E6%AF%94%E8%BE%83"><span class="toc-number">11.3.</span> <span class="toc-text">整数比较</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%88%A4%E6%96%AD"><span class="toc-number">11.4.</span> <span class="toc-text">字符串判断</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E9%87%8D%E5%88%A4%E6%96%AD"><span class="toc-number">11.5.</span> <span class="toc-text">多重判断</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E8%AF%AD%E5%8F%A5"><span class="toc-number">12.</span> <span class="toc-text">判断语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#if%E8%AF%AD%E5%8F%A5"><span class="toc-number">12.1.</span> <span class="toc-text">if语句</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#case%E5%91%BD%E4%BB%A4"><span class="toc-number">12.2.</span> <span class="toc-text">case命令</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5"><span class="toc-number">13.</span> <span class="toc-text">循环语句</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#for%E5%91%BD%E4%BB%A4"><span class="toc-number">13.1.</span> <span class="toc-text">for命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#while%E5%91%BD%E4%BB%A4"><span class="toc-number">13.2.</span> <span class="toc-text">while命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#until%E5%91%BD%E4%BB%A4"><span class="toc-number">13.3.</span> <span class="toc-text">until命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#break%E7%BB%88%E6%AD%A2%E5%BE%AA%E7%8E%AF"><span class="toc-number">13.4.</span> <span class="toc-text">break终止循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#continue%E8%B7%B3%E8%BF%87%E5%BE%AA%E7%8E%AF"><span class="toc-number">13.5.</span> <span class="toc-text">continue跳过循环</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E5%BE%AA%E7%8E%AF%E7%9A%84%E8%BE%93%E5%87%BA"><span class="toc-number">13.6.</span> <span class="toc-text">处理循环的输出</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E6%AE%B5%E5%88%86%E9%9A%94%E7%AC%A6"><span class="toc-number">14.</span> <span class="toc-text">字段分隔符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8C%E6%8B%AC%E5%8F%B7%E5%91%BD%E4%BB%A4"><span class="toc-number">15.</span> <span class="toc-text">(())双括号命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E8%BF%90%E7%AE%97"><span class="toc-number">15.1.</span> <span class="toc-text">数学运算</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E5%88%A4%E6%96%AD"><span class="toc-number">15.2.</span> <span class="toc-text">逻辑判断</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8C%E6%96%B9%E6%8B%AC%E5%8F%B7%E5%91%BD%E4%BB%A4"><span class="toc-number">16.</span> <span class="toc-text">[[]]双方括号命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E6%8E%A7%E5%88%B6"><span class="toc-number">17.</span> <span class="toc-text">脚本控制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8D%95%E8%8E%B7%E4%BF%A1%E5%8F%B7"><span class="toc-number">17.1.</span> <span class="toc-text">捕获信号</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E4%BF%A1%E5%8F%B7%E6%8D%95%E8%8E%B7"><span class="toc-number">17.2.</span> <span class="toc-text">修改信号捕获</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E4%BF%A1%E5%8F%B7%E6%8D%95%E8%8E%B7"><span class="toc-number">17.3.</span> <span class="toc-text">删除信号捕获</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0"><span class="toc-number">18.</span> <span class="toc-text">函数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%B8%8E%E8%B0%83%E7%94%A8%E5%87%BD%E6%95%B0"><span class="toc-number">18.1.</span> <span class="toc-text">创建与调用函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="toc-number">18.2.</span> <span class="toc-text">变量的作用域</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F"><span class="toc-number">18.2.1.</span> <span class="toc-text">全局变量</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F"><span class="toc-number">18.2.2.</span> <span class="toc-text">局部变量</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E8%BF%94%E5%9B%9E%E5%80%BC%E4%B8%8E%E8%BE%93%E5%87%BA"><span class="toc-number">18.3.</span> <span class="toc-text">函数返回值与输出</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%BB%98%E8%AE%A4%E9%80%80%E5%87%BA%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">18.3.1.</span> <span class="toc-text">默认退出状态码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#return%E5%91%BD%E4%BB%A4%E4%BF%AE%E6%94%B9%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">18.3.2.</span> <span class="toc-text">return命令修改状态码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E8%BE%93%E5%87%BA"><span class="toc-number">18.3.3.</span> <span class="toc-text">函数输出</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E4%BC%A0%E5%8F%82"><span class="toc-number">18.4.</span> <span class="toc-text">函数传参</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%A0%E9%80%92%E6%95%B0%E7%BB%84%E5%8F%82%E6%95%B0"><span class="toc-number">18.5.</span> <span class="toc-text">传递数组参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%94%E5%9B%9E%E6%95%B0%E7%BB%84"><span class="toc-number">18.6.</span> <span class="toc-text">返回数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%BA%93"><span class="toc-number">18.7.</span> <span class="toc-text">创建库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%87%BD%E6%95%B0"><span class="toc-number">18.8.</span> <span class="toc-text">在命令行中使用函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8-bashrc%E6%96%87%E4%BB%B6%E4%B8%AD%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0"><span class="toc-number">18.9.</span> <span class="toc-text">在.bashrc文件中定义函数</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E5%90%88%E9%9B%86"><span class="toc-number">19.</span> <span class="toc-text">脚本合集</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E5%8F%91%E8%A1%8C%E7%89%88"><span class="toc-number">19.1.</span> <span class="toc-text">判断发行版</span></a></li></ol></li></ol></div></div>
+        <div class="article">
+        <h1 class="title">Shell脚本语言</h1>
+        <div class="art-info">
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：17380</span>
+            <span><span class="iconfont icon-riqi"></span>写于：2021-12-29</span></div>
+            <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2024-05-08</span>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您50分钟</span></div>
+        </div>
+        <div class="art-content">
+        <h3 id="shell脚本基础"><a href="#shell脚本基础" class="headerlink" title="shell脚本基础"></a>shell脚本基础</h3><h4 id="脚本声明"><a href="#脚本声明" class="headerlink" title="脚本声明"></a>脚本声明</h4><p>shell脚本文件通常以<span class="tips">.sh</span>作为文件扩展名，扩展名仅作为文件标识，并不影响脚本执行。shell程序的第一行，往往需要一个<span class="tips">#!</span>约定标记符，用于告诉系统这个脚本需要调用哪一种Shell解释器来执行</p>
+<div class="show">#!bin/bash  #申明shell脚本的解释器</div>
+
+<h4 id="shell脚本的执行方式"><a href="#shell脚本的执行方式" class="headerlink" title="shell脚本的执行方式"></a>shell脚本的执行方式</h4><h6 id="1-通过文件名直接执行"><a href="#1-通过文件名直接执行" class="headerlink" title="1.通过文件名直接执行"></a>1.通过文件名直接执行</h6><p>首先需要为该脚本添加可执行权限，然后通过文件路径和文件名直接运行，操作系统会调用脚本文件第一行所指定的解释器来执行该脚本，如对于名为HelloWorld.sh脚本，执行方式为:</p>
+<div class="show"><span class="strong">chmod 755 HelloWorld.sh</span> #或chmod +x HelloWorld.sh赋予可执行权限
+<span class="strong">./HelloWorld.sh</span> #在当前路径中执行HelloWorld.sh，如果直接写为HelloWorld.sh，则系统会前往PATH路径中查找该命令</div> 
+
+<h6 id="2-通过shell解释器调用"><a href="#2-通过shell解释器调用" class="headerlink" title="2.通过shell解释器调用"></a>2.通过shell解释器调用</h6><p>第二种执行方式为在调用shell解释器时，将脚本作为shell程序参数传入，该方法会忽略脚本第一行所指定解释器信息，直接使用用户唤起的shell程序作为脚本解释器</p>
+<div class="show"><span class="strong">bash HelloWorld.sh  #通过bash执行</span>
+或
+<span class="strong">/bin/sh HelloWorld.sh #通过sh执行</span></div>
+
+<h4 id="全局执行脚本方式"><a href="#全局执行脚本方式" class="headerlink" title="全局执行脚本方式"></a>全局执行脚本方式</h4><p>执行脚本一般需要在赋予脚本执行权限后，使用绝对路径调用，或者进入脚本所在目录，使用相对路径调用。那些全局可用的脚本和命令，Linux是根据PATH环境变量中所存储的脚本路径自动寻找执行实现的，可通过<span class="strong">echo $PATH</span>查看当前所配置的全局路径，手动安装的服务想实现全局执行脚本，有两种实现方法：</p>
+<ul>
+<li><span class="strong">将脚本通过cp命令复制到PATH中的某个路径下，如:/usr/bin下</span></li>
+<li><span class="strong">通过变量叠加的方式，将脚本路径添加到PATH变量中，格式为PATH=”$PATH”:路径</span></li>
+</ul>
+<p>通过变量叠加的方式添加的全局变量，在系统重启后将失效，永久生效方法是将路径添加到<span class="tips">/etc/profile</span>文件的PATH变量后</p>
+<div class="show">如Nginx的启动脚本在/usr/local/nginx/sbin路径下，非全局启动方法为：
+1.相对路径： 在 /usr/local/nginx/sbin 目录下执行./nginx 
+2. 绝对路径：执行 /usr/local/nginx/sbin/nginx
+添加到全局的方法为：
+执行PATH="$PATH":/usr/local/nginx/sbin
+使调用命令永久生效的方法：在 /etc/profile 中最后一行添加
+PATH=$PATH:/usr/local/nginx/sbin
+</div>
+
+<h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4><p>shell程序使用<span class="tips">#</span>开头作为注释，多行注释需要在每一行开头都添加#号，注意程序第一行的脚本声明并不是注释符</p>
+<div class="show">#!/bin/bash
+#author: shiwivi
+#version: v0.1.0
+#data: 2023-09-01</div>
+
+<p>对于需要多行注释的内容，可以将其写入花括号中定义成一个函数，然后不调用即可</p>
+<h4 id="脚本格式转换"><a href="#脚本格式转换" class="headerlink" title="脚本格式转换"></a>脚本格式转换</h4><p>在Linux中，回车符识别为<span class="tips"><strong><code>$</code></strong></span>，而在windows中回车符为^M$，因此在windows中编写的sh脚本需要经过转换，才能在Linux中运行，转换命令为：<br><span class="strong">dos2unix 文件名</span><br>相反，将文件从Linux格式转为Windows格式为<br><span class="strong">unix2dos 文件名</span></p>
+<div class="broadcast color-blue">
+<div class="iconfont icon-yinhao"></div>
+该功能需要自行安装dos2unix软件，red hat系列操作系统安装命令为：yum -y install dos2unix</div>
+
+<h4 id="脚本退出状态码"><a href="#脚本退出状态码" class="headerlink" title="脚本退出状态码"></a>脚本退出状态码</h4><p>shell中运行的每个命令都使用退出状态码(exit status)告诉shell它已经运行完毕，这个状态码可以使用<span class="strong">$?</span>查看。同样，我们的脚本也可以使用退出状态码优雅地结束脚本执行，并返回脚本执行的状态。</p>
+<p>退出状态码是一个0～255的整数值，默认情况下，命令成功执行时退出状态码是0，如果命令执行错误，则退出状态码就是一个正整数值。在脚本中，可通过<span class="strong">exit 状态码</span>命令指定脚本结束时的退出状态码，<span class="tips">注意！exit命令会退出脚本，exit命令之后的任何代码都将不再执行</span>。状态码应当设置在0-255区间内，否则会对其进行求模运算，如：指定状态码为300，则进行300%256运算，最后取值44，设置状态码时也可以使用变量</p>
+<div class="show">#!/bin/bash 
+echo "Hello world"
+<span class="text-blue">exit 0</span>
+</div>
+
+<p>Linux中命令执行错误时的退出状态码无标准可循，但有一些可用参考：</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>状态码</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>命令成功执行</td>
+</tr>
+<tr>
+<td>1</td>
+<td>一般性未知错误</td>
+</tr>
+<tr>
+<td>2</td>
+<td>不适合的shell命令</td>
+</tr>
+<tr>
+<td>126</td>
+<td>命令不可执行</td>
+</tr>
+<tr>
+<td>127</td>
+<td>没找到命令</td>
+</tr>
+<tr>
+<td>128</td>
+<td>无效的退出参数</td>
+</tr>
+<tr>
+<td>128+x</td>
+<td>与Linux信号相关的严重错误</td>
+</tr>
+<tr>
+<td>130</td>
+<td>通过Ctrl C终止的命令</td>
+</tr>
+<tr>
+<td>255</td>
+<td>正常范围之外的退出状态码</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="show">上述的状态码有一些常见的情况：
+状态码126表明用户没有权限执行该命令，即Permission denied
+状态码1表明命令发生了未知错误，如：为命令提供了无效参数
+</div>
+
+<h3 id="shell中的运算"><a href="#shell中的运算" class="headerlink" title="shell中的运算"></a>shell中的运算</h3><h4 id="各种括号使用预览"><a href="#各种括号使用预览" class="headerlink" title="各种括号使用预览"></a>各种括号使用预览</h4><ul>
+<li>()用来创建子shell执行命令组，而$()则可以用来获取命令的输出，并将其赋值给变量，其作用和 ``命令调用一致，如：today=$(date “+%D”)。如果( )中指定了多个命令，则变量获取的是最后一个命令的输出</li>
+<li>[ ]用来进行条件判断，它是test命令的替代，可以结合if-then等条件判断语句进行数值比较、字符串比较、文件比较</li>
+<li>$(())和$[]用来进行整形数值运算，如：num=$[11+22]</li>
+<li>(())可以用来运算高级数学表达式，如：++、&gt;&gt;(右移位)、&amp;&amp;(逻辑与)等运算，也可以搭配if-then语句进行条件判断</li>
+<li>双方括号[[]]命令用来进行高级字符串比较，允许使用*和?通配符，支持模式匹配，但部分shell可能不支持</li>
+<li>大括号{ }用来进行变量引用，支持字符串拼接</li>
+</ul>
+<h4 id="与-命令调用"><a href="#与-命令调用" class="headerlink" title="$()与``命令调用"></a>$()与``命令调用</h4><p>shell中最有用的特性之一是可以将命令的输出赋值给变量，然后通过变量来任意调用，有两种方法可以将命令输出赋值给变量：</p>
+<ul>
+<li>通过<span class="strong">反引号``</span></li>
+<li>通过<span class="strong">$( )</span></li>
+</ul>
+<div class="show">e.g.每天使用当前日期为文件名创建一个文件，并将bin目录信息写入其中
+today=`date`
+或
+today=$(date "+%D")
+ls /usr/bin -al &gt; log.$today
+</div>
+
+<h4 id="与-整数运算"><a href="#与-整数运算" class="headerlink" title="$(())与$[]整数运算"></a>$(())与$[]整数运算</h4><ul>
+<li><span class="strong">变量名=$((运算式))</span></li>
+<li><span class="strong">变量名=$[运算式]</span></li>
+</ul>
+<p>$[]是一种旧的Bash算术扩展方式，现代Shell更推荐使用$(())进行算术运算</p>
+<div class="shell">示例：
+[root@localhost ~]# num1=$((11+22))
+[root@localhost ~]# num2=$[11+22]
+</div>
+
+<h4 id="expr表达式"><a href="#expr表达式" class="headerlink" title="expr表达式"></a>expr表达式</h4><p>expr是由Bourne shell提供的数学工具，bash shell为了保持跟Bourne shell的兼容而包含了expr命令。尽管现代脚本中大部分功能被更强大的 $(()) 算术求值或 ${} 字符串操作所取代，但 expr 在经典UNIX和早期shell脚本中仍然非常重要，expr表达式支持以下功能：</p>
+<ul>
+<li>整数运算：加减乘除、取模运算等</li>
+<li>字符串操作：获取字符串长度、子串提取、模式匹配等</li>
+<li>条件判断：执行条件判断并返回 0 或 1 表示真假</li>
+</ul>
+<p>expr通常搭配<span class="tips">``</span>和<span class="tips">$()</span>来获取expr表达式最后的计算值：</p>
+<div class="show"> num=<span class="strong">`expr 2 + 2`</span>
+注意表达式和运算符之间要有空格，即+号前后都要有一个空格，正确形式为2 + 2，省略空格2+2会被解析为一个字符串，而不是数值运算</div>
+
+<div class="shell">示例:
+[root@localhost ~]# a=11
+[root@localhost ~]# b=22
+[root@localhost ~]# num1=$a+$b  //字符串运算
+[root@localhost ~]# echo $num1  //输出11+22
+[root@localhost ~]# num2=$(expr $a + $b)  //数值运算
+[root@localhost ~]# echo $num2  //输出33
+</div>
+
+<p>expr命令能够识别以下数学和字符串操作符，特殊字符的转义 expr 中的某些字符，如 *, &amp;, &lt;, &gt;, | 等，在 shell 中具有特殊含义，需要用反斜杠 \ 进行转义处理</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>操作符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ARG1 + ARG2</td>
+<td>返回ARG1和ARG2的算术运算和</td>
+</tr>
+<tr>
+<td>ARG1 - ARG2</td>
+<td>返回ARG1和ARG2的算术运算差</td>
+</tr>
+<tr>
+<td>ARG1 \* ARG2</td>
+<td>返回ARG1和ARG2的算术乘积，需要将*号转义</td>
+</tr>
+<tr>
+<td>ARG1 / ARG2</td>
+<td>返回ARG1被ARG2除的算术商</td>
+</tr>
+<tr>
+<td>ARG1 % ARG2</td>
+<td>返回ARG1被ARG2除的算术余数</td>
+</tr>
+<tr>
+<td>ARG1 \&lt; ARG2</td>
+<td>如果ARG1小于ARG2，返回1；否则返回0</td>
+</tr>
+<tr>
+<td>ARG1 &lt;= ARG2</td>
+<td>如果ARG1小于或等于ARG2，返回1；否则返回0</td>
+</tr>
+<tr>
+<td>ARG1 = ARG2</td>
+<td>如果ARG1等于ARG2，返回1；否则返回0</td>
+</tr>
+<tr>
+<td>ARG1 != ARG2</td>
+<td>如果ARG1不等于ARG2，返回1；否则返回0</td>
+</tr>
+<tr>
+<td>ARG1 &gt;= ARG2</td>
+<td>如果ARG1大于或等于ARG2，返回1；否则返回0</td>
+</tr>
+<tr>
+<td>ARG1 \&gt; ARG2</td>
+<td>如果ARG1大于ARG2，返回1；否则返回0</td>
+</tr>
+<tr>
+<td>A</td>
+<td></td>
+</tr>
+<tr>
+<td>ARG1 \&#124; ARG2</td>
+<td>如果ARG1既不是null也不是零值，返回ARG1；否则返回ARG2</td>
+</tr>
+<tr>
+<td>ARG1 \&amp; ARG2</td>
+<td>如果没有参数是null或零值，返回ARG1；否则返回0</td>
+</tr>
+<tr>
+<td>STRING : REGEXP</td>
+<td>如果REGEXP匹配到了STRING中的某个模式，返回匹配的子字符串或长度</td>
+</tr>
+<tr>
+<td>match STRING REGEXP</td>
+<td>如果REGEXP匹配到了STRING中的某个模式，返回该模式匹配</td>
+</tr>
+<tr>
+<td>substr STRING POS LENGTH</td>
+<td>返回起始位置为POS（从1开始计数）、长度为LENGTH个字符的子字符串</td>
+</tr>
+<tr>
+<td>index STRING CHARS</td>
+<td>返回在STRING中找到CHARS字符串的位置；否则，返回0</td>
+</tr>
+<tr>
+<td>length STRING</td>
+<td>返回字符串STRING的数值长度</td>
+</tr>
+<tr>
+<td><code>+</code> TOKEN</td>
+<td>将TOKEN解释成字符串，即使是个关键字</td>
+</tr>
+<tr>
+<td>(EXPRESSION)</td>
+<td>返回EXPRESSION的值</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="show">1. 数值运算
+expr 3 \* 4  #输出12
+2. 获取字符串长度
+expr length "hello"  # 输出：5
+3. 截取子字符串(substr)
+expr substr "hello world" 1 5  # 输出：hello
+4. 查找字符位置(index)
+expr index "hello world" "o"  # 输出：5
+5. 字符串模式匹配(返回匹配的子字符串或长度)
+expr "abc123" : 'abc[0-9]*'  # 输出：6
+6. 大于、小于判断
+expr 4 \> 3  # 输出：1 （表示 true）
+expr 4 \< 5  # 输出：1 （表示 true）
+7. 逻辑与和或运算
+expr 0 \| 1 # 输出：1
+expr 0 \& 1 # 输出：0
+</div>
+
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><h4 id="shell中的变量类型"><a href="#shell中的变量类型" class="headerlink" title="shell中的变量类型"></a>shell中的变量类型</h4><p>shell程序的变量可以分为以下几种：</p>
+<ul>
+<li>自定义变量，即程序员自定义的变量</li>
+<li>预定义变量：bash预定义的变量</li>
+<li>环境变量：由操作系统或用户设置的特殊变量，用于保存操作系统环境相关的数据，以及配置 Shell 的行为和执行环境</li>
+<li>位置参数变量：用于向脚本中传递参数和数据，变量名不能自定义</li>
+</ul>
+<div class="broadcast color-blue">
+<div class="iconfont icon-yinhao"></div>
+可以通过 <strong>set</strong> 命令查看所有变量，包括系统预定义的变量</div>
+
+<h4 id="自定义变量"><a href="#自定义变量" class="headerlink" title="自定义变量"></a>自定义变量</h4><ul>
+<li>变量名规则同C语言，允许由字母、数字、下划线组成，但不能以数字开头</li>
+<li>bash中变量默认类型都为字符串类型</li>
+<li>变量赋值时，若值包含空格，则需要使用单引号或双引号包裹</li>
+<li>变量值中可以使用\进行转义</li>
+<li>变量名通常使用下划线分隔单词，如：user_name,server_ip</li>
+<li>自定义的环境变量名、常量的变量名一般使用大写，如：readonly MAX_VLAUE=10</li>
+</ul>
+<h5 id="变量定义、赋值、调用"><a href="#变量定义、赋值、调用" class="headerlink" title="变量定义、赋值、调用"></a>变量定义、赋值、调用</h5><p>定义自定义变量不需要int、var等关键字，可以直接使用<span class="tips">变量名=值</span>形式定义并赋值，默认情况下，变量通常被视为字符串。对于定义过的变量，可以使用<span class="tips">${变量名}</span>调用，花括号用于识别变量边界，可以不加，但加上花括号是个好的编程习惯</p>
+<div class="show">1. 赋值时等号两侧避免使用空格
+name="Ken"
+2. 除了显式地直接赋值，还可以用语句给变量赋值
+for file in `ls /etc`
+3. 可以用$调用变量，使用花括号可以识别变量边界，如果有花括号，则以下变量会被识别为$nameChou
+echo "my name is ${name}Chou"
+4. 变量可以重新定义，即重新赋值，重新赋值不需要使用$
+name="new"
+</div>
+
+<h5 id="只读变量"><a href="#只读变量" class="headerlink" title="只读变量"></a>只读变量</h5><p>使用<span class="tips">readonly</span> 命令可以将变量定义为只读变量，只读变量的值不能被改变，且只读变量不能使用unset删除</p>
+<div class="show">myName="Ken"
+readonly myName
+myName="New" #执行脚本会报错myName：This variable is read only
+</div>
+
+<h5 id="删除变量"><a href="#删除变量" class="headerlink" title="删除变量"></a>删除变量</h5><p>可以通过<span class="strong">unset 变量名</span>命令删除变量，但无法删除只读变量</p>
+<div class="show">myName="Ken"
+unset myName
+echo $myName  #无任何输出</div>
+
+<h4 id="变量值检测与替换"><a href="#变量值检测与替换" class="headerlink" title="变量值检测与替换"></a>变量值检测与替换</h4><p>类似于C语言三元表达式的一种功能，即检测变量y是否存在，或者其值是否为空/非空，然后根据y的状态赋予变量x不同值</p>
+<div class="table">
+<table>
+<thead><tr>
+   <th>语句</th>
+   <th>未定义变量y</th>
+   <th>变量y为空</th>
+   <th>变量y非空</th>
+   <th>说明</th>
+</tr></thead>
+<tbody>
+<tr>
+   <td>x=${y:-默认值}</td>
+   <td>x=默认值</td>
+   <td>x=默认值</td>
+   <td>x=$y</td>
+   <td>如果变量y未定义或为空，则x使用指定的默认值</td>
+</tr>
+<tr>
+   <td>x=${y:=默认值}</td>
+   <td>x=y=默认值</td>
+   <td>x=y=默认值</td>
+   <td>x=$y,y值不变</td>
+   <td>如果变量y未定义或为空，则赋予y默认值，且x也使用默认值</td>
+</tr>
+<tr>
+   <td>x=${y:+替代值}</td>
+   <td>x为空</td>
+   <td>x为空</td>
+   <td>x=替代值</td>
+   <td>如果变量y已定义且非空，则x使用替代值</td>
+</tr>
+<tr>
+   <td>x=${y:?错误消息}</td>
+   <td>输出消息到标准错误输出</td>
+   <td>输出消息到标准错误输出</td>
+   <td>x=$y</td>
+   <td>如果变量y未定义或为空，输出错误信息并退出</td>
+</tr>
+<tr><td colspan="5"><span class="text-red">不带<span class="text-blue">:</span>的语法不检查变量是否为空值，只检查变量是否未定义(即使y为空也视为有效)</span></td></tr>
+<tr>
+   <td>x=${y-默认值} </td>
+   <td>x=默认值 </td>
+   <td>x=$y(空)</td>
+   <td>x=$y</td>
+   <td>如果y未定义，则x使用默认值</td>
+</tr>
+<tr>
+   <td>x=${y=默认值} </td>
+   <td>x=y=默认值</td>
+   <td>x=$y(空)</td>
+   <td>x=$y,y值不变</td>
+   <td>如果变量y未定义，则x和y都赋值为默认值</td>
+</tr>
+<tr>
+   <td>x=${y+替代值}</td>
+   <td>x为空</td>
+   <td>x=替代值</td>
+   <td>x=替代值</td>
+   <td>如果变量y已定义(即使为空)，则x使用替代值</td>
+</tr>
+<tr>
+   <td>x=${y?错误消息}</td>
+   <td>输出消息到标准错误输出</td>
+   <td>x=$y(空)</td>
+   <td>x=$y</td>
+   <td>如果变量y未定义，则输出错误消息并退出</td>
+</tr></tbody>
+</table>
+</div>
+
+<div class="show">1. 如果变量filePath未定义或路径为空，则使用默认的路径
+filePath=${filePath:-/usr/local/etc/myfile}
+2. 当变量port未定义或为空时，为newPort赋值为2000，且port也赋值为2000(虽然2000依旧会被解析为字符串而不是数值)
+newPort=${port:=2000}
+</div>
+
+
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>shell中的字符串可以使用单引号声明，也可以使用双引号声明，二者的特性：</p>
+<ul>
+<li>单引号里的字符会原样输出，无法使用转义字符和变量，双引号里字符串的可以使用转义字符、引用变量</li>
+<li>二者都可以用于字符串拼接</li>
+</ul>
+<h4 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h4><p>可以直接在字符串前后使用<span class="tips">${变量名}</span>拼接字符串，不需要像其他语言一样添加+号等字符串拼接符</p>
+<div class="show">text="1234"
+str1="aaa"${text}"bbb"  #可以直接将多个字符串拼接在一起，并拼接变量，输出aaa1234bbb
+str2="aaa${text}bbb"    #可以直接在字符串中引用变量，输出aaa1234bbb
+str3='aaa'${text}'bbb'  #单引号也可以拼接字符串，输出aaa1234bbb
+str4='aaa${text}bbb'    #但不能在单引号声明的字符串中引用变量，会原样输出aaa${text}bbb
+echo str1 str2 str3 str4</div>
+
+<h4 id="获取字符串长度"><a href="#获取字符串长度" class="headerlink" title="获取字符串长度"></a>获取字符串长度</h4><p>可以使用<span class="tips">${#字符串变量名}</span>来获取字符串长度</p>
+<div class="show">str="abcd
+echo ${#str}  #当变量为字符串时，${#str} 等价于 ${#str[0]}</div>
+
+<h4 id="截取字符串"><a href="#截取字符串" class="headerlink" title="截取字符串"></a>截取字符串</h4><p>使用<span class="tips">${字符串变量名:索引1:索引2}</span>来截取从索引1到索引2的字符串，字符串索引从0开始</p>
+<div class="show">str="He said, one day you will leave this world behind."
+echo ${str:1:5} #输出e sai
+</div>
+
+<h4 id="查找子字符串"><a href="#查找子字符串" class="headerlink" title="查找子字符串"></a>查找子字符串</h4><div class="show">查找字符 i 或 o 的位置(哪个字母先出现就计算哪个)
+str="He said, one day you will leave this world behind."
+echo `expr index "${str}" io`</div>
+
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><h4 id="数组定义"><a href="#数组定义" class="headerlink" title="数组定义"></a>数组定义</h4><p>bash只支持一维数组，不支持多维数组，bash中的一维数组不限制数组大小，使用括号囊括数组元素，数组元素之间使用空格分隔：<span class="strong">数组名=(值1 值2 值3)</span></p>
+<div class="show">1. 数组支持整体赋值
+array1=(10 20 30)
+2.数组元素间可以使用空格，也可以用换行符
+array1=(10
+20
+30)
+3.也支持数组元素单独赋值
+array1[0]=10
+array1[1]=20
+array1[2]=30
+4. 数组元素默认都被声明为字符串类型，因此以下语句也正确
+array1=(100 "Hello" abc)</div>
+
+<h4 id="数组元素"><a href="#数组元素" class="headerlink" title="数组元素"></a>数组元素</h4><p>bash中数组使用<span class="tips">${数组名[下标]}</span>表示数组元素，与绝大多数语言一样，数组下标从0开始，可以用<span class="tips">${数组名[@]}</span>或<span class="tips">${数组名[*]}</span>表示数组中的所有元素</p>
+<div class="show">echo ${array1[1]} #输出20
+echo ${array1[@]} #输出10 20 30
+echo ${array1[*]} #输出10 20 30</div>
+
+<h4 id="数组长度"><a href="#数组长度" class="headerlink" title="数组长度"></a>数组长度</h4><p>获取数组长度的方法与获取字符串长度的方法类似，即在需要获取的对象前加上<span class="tips">#</span>号，该方法可以获得整个数组的长度，也可以用于获取单个数组元素的长度</p>
+<div class="show">1. 获取数组长度
+echo ${#array1[@]}
+或
+echo ${#array1[*]}
+2. 获取单个数组元素的长度
+echo ${#array1[1]}
+3. 注意${#array1}返回的是数组第一个元素的长度(数组名代表数组首元素的起始地址)
+array1=(12345 "Hello" abcd)
+echo ${#array1} #输出字符串12345的长度5
+</div>
+
+<h4 id="关联数组"><a href="#关联数组" class="headerlink" title="关联数组"></a>关联数组</h4><p>Bash 支持关联数组，可以使用任意的字符串、或者整数作为下标来访问数组元素，关联数组的键是唯一的<br>关联数组使用 declare 命令来声明，语法格式为：<br><span class="strong">declare -A 数组名</span><br>数组元素访问方式为：<span class="tips">${数组名[“键名”]}</span>，通过<span class="tips">${数组名[@]}</span>或<span class="tips">${数组名[*]}</span>可以获取所有元素，在此基础上，在数组名前加上<span class="tips">!</span>可以获取数组所有键，在数组名前加上<span class="tips">#</span>可以获取数组长度</p>
+<div class="show">1.关联数组可以在定义同时赋值
+declare -A singer=(["周杰伦"]="手写的从前" ["陈奕迅"]="十年" ["林俊杰"]="江南")
+也可以先声明，再赋值
+declare -A singer
+singer["周杰伦"]="手写的从前"
+singer["陈奕迅"]="十年" 
+singer["林俊杰"]="江南"
+2. 数组元素、键访问方式
+echo ${singer["周杰伦"]}         #访问单个元素
+echo "数组的元素有" ${singer[*]}#访问所有元素
+echo "数组的键有" ${!singer[*]}  #访问所有键
+echo "数组的元素有" ${#singer[*]}#访问数组长度
+</div>
+
+<h3 id="位置变量与参数传递"><a href="#位置变量与参数传递" class="headerlink" title="位置变量与参数传递"></a>位置变量与参数传递</h3><h4 id="给脚本传递参数"><a href="#给脚本传递参数" class="headerlink" title="给脚本传递参数"></a>给脚本传递参数</h4><p>在使用命令执行脚本时，可以向脚本中传递参数，在脚本中可以使用一些预定义变量获取到这些参数</p>
+<div class="table">
+   
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$n</td>
+<td>n为数字，$0代表命令本身(包含文件路径)，$1-$9代表命令第1-9个参数，10以上用{}包裹，如:${10}</td>
+</tr>
+<tr>
+<td>$*</td>
+<td>代表命令行所有参数，$*将命令行所有参数作为一个整体进行处理，在遍历时循环只执行一次</td>
+</tr>
+<tr>
+<td>$@</td>
+<td>代表命令行所有参数，$@会将参数依次拆开</td>
+</tr>
+<tr>
+<td>$#</td>
+<td>代表传递到脚本的参数总个数</td>
+</tr>
+<tr>
+<td>$?</td>
+<td>返回上一个命令的执行状态，如果返回0则说明执行正确，返回值非0则说明上一个命令执行不正确，用于检测上一个命令是否正确执行，方便后续处理</td>
+</tr>
+<tr>
+<td>$$</td>
+<td>脚本运行当前进程的进程号(PID)</td>
+</tr>
+<tr>
+<td>$!</td>
+<td>后台运行最后一个进程的进程号(PID)</td>
+</tr>
+<tr>
+<td>$-</td>
+<td>显示shell所使用的当前设置(如：是否使用监视模式，是否只读取指令，而不实际执行)，与set命令功能相同</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="show">定义一个test.sh脚本
+<code>#! /bin/bash
+echo $1   #输出10
+echo $*   #将参数 10 20作为一个整体输出
+echo $@   #将参数依次处理为10和20两个参数输出
+echo $#   #输出参数个数</code>
+执行该脚本并传参
+chmod 755 test.sh
+./test.sh 10 20
+</div>
+
+<div class="broadcast color-blue">
+<div class="iconfont icon-yinhao"></div>
+在使用$1、$2..调用参数之前，应当使用-n等命令测试用户是否传递了参数，如果直接调用了参数，而用户忘记传参，则脚本可能出现严重错误，示例：<div class="apiBox">if [ -n "$1" ]
+then
+   #正常执行功能
+else
+   echo "请输入参数"
+fi</div></div>
+
+
+<div class="show">$*和$@的区别
+<code>for i in "$*";do
+   echo $i
+done
+for i in "$@";do
+   echo $i
+done</code>
+执行 ./test.sh 1 2 3
+第一个语句相当于传递了1个参数，输出1 2 3
+第二个语句相当于传递了3个参数，输出
+1
+2
+3
+</div>
+
+<h5 id="0参数的使用"><a href="#0参数的使用" class="headerlink" title="$0参数的使用"></a>$0参数的使用</h5><p>$0参数用于获取shell在命令行启动的脚本名，如果调用脚本时包含了路径，该参数会获取完整的脚本路径</p>
+<div class="show">执行命令./test.sh
+则 $0=./test.sh
+执行命令 bash /home/myshell/test.sh
+则 $0=/home/myshell/test.sh
+</div>
+
+<p>如果不想获取文件路径，而只需要脚本名，则可以结合<span class="tips">basename</span>命令来剥离脚本名</p>
+<div class="show">name=$(basename $0)
+echo $name
+# 执行命令 /home/myshell/test.sh
+输出值为test.sh
+</div>
+
+<p>基于该方法，可以写一个脚本，当用户输入不同的命令(不同脚本名)，实现不同功能，但它们本质上是同一个脚本</p>
+<div class="show">e.g.执行addem 10 20命令返回10+20，执行multem 10 20返回10*20
+#!/bin/bash 
+name=$(basename $0) 
+if [ $name = "addem" ] 
+then 
+ total=$[ $1 + $2 ] 
+elif [ $name = "multem" ] 
+then 
+ total=$[ $1 * $2 ] 
+fi 
+echo 
+echo 最后计算结果为： $total
+# 将该文件命名为addem，然后执行ln -s addem multem为该文件创建一个软链接，执行任何一个脚本名都会执行同一个脚本，脚本随后根据$0参数识别对应的命令
+</div>
+
+<h4 id="移动参数shift"><a href="#移动参数shift" class="headerlink" title="移动参数shift"></a>移动参数shift</h4><p>bash shell的<span class="strong">shift</span>命令能够用来操作命令行参数，在使用shift命令时，默认情况下它会将每个参数变量向左移动一个位置。所以，变量$3的值会移到$2中，变量$2的值会移到$1中，而变量$1的值则会被删除（注意，变量$0的值，也就是程序名，不会改变）</p>
+<p>在不知道到底有多少参数时，可以先处理$1参数，然后用该命令依次移动参数，然后继续操作第一个参数，由此实现了对参数的遍历。但注意，如果某个参数被移出，它的值就被丢弃了，无法再恢复。shift也支持一次移动多个数据，只需要指定一个参数即可：<span class="strong">shift 参数</span>，因此，shift也常用来跳过不需要的参数</p>
+<div class="show">#!/bin/bash 
+echo "The original parameters: $*" 
+shift 2 
+echo "Here's the new first parameter: $1"
+</div>
+
+<h3 id="脚本选项"><a href="#脚本选项" class="headerlink" title="脚本选项"></a>脚本选项</h3><p>除了参数，绝大部分命令还会带有选项，如：ls -alh中的alh，同样，编写的shell脚本如果需要选项来加持命令的功能，则需要在脚本中对选项进行处理</p>
+<h4 id="选项与参数分割符"><a href="#选项与参数分割符" class="headerlink" title="选项与参数分割符"></a>选项与参数分割符</h4><p>在Linux中，有些命令同时包含了参数和选项，为了方便将二者区分开来，Linux使用一个特殊标记符：双短线<span class="tips strong">-&zwnj;-</span>表示选项列表结束，参数列表开始。该符号可以用于提醒命令和脚本，-&zwnj;-符号后的都为命令(脚本)参数，该符号主要有两个使用场景：</p>
+<ul>
+<li>选项输入结束，参数输入开始。如：test -a -b -c -&zwnj;- value1 data2;使用-&zwnj;-可以很清晰的划分出命令选项和参数的界限</li>
+<li>如果参数中包含-号，可能会被解析为选项，此时使用-&zwnj;-分割可以防止参数被解析错误。如：创建名为-rTest的文件，如果使用touch -rTest会将-r解析为选项，因而返回错误，而执行 touch -&zwnj;- -rTest可成功创建该文件</li>
+</ul>
+<h4 id="简单选项处理"><a href="#简单选项处理" class="headerlink" title="简单选项处理"></a>简单选项处理</h4><p>表面上看，命令行选项紧跟在脚本名之后，就跟命令行参数一样。因此对于简单的选项，可以像处理命令行参数一样处理命令行选项</p>
+<div class="show">#!/bin/bash 
+while [ -n "$1" ] 
+do 
+ case "$1" in 
+ -a) echo #添加-a的脚本功能 ;; 
+ -b) echo #添加-b的脚本功能 ;; 
+ -c) echo #添加-c的脚本功能;; 
+ *) echo "无 ${1} 该选项" ;; 
+ esac 
+ shift #移动参数，依次处理
+done</div>
+
+<p>如果选项中同时含有选项和参数，可以使用-&zwnj;-符号分隔</p>
+<div class="show">该方法适合类似./test.sh -c -a -b -- data1 data2 选项和参数分开的情况
+#!/bin/bash 
+# extracting options and parameters 
+echo 
+while [ -n "$1" ] 
+do 
+ case "$1" in 
+ -a) echo 这是一个选项;; 
+ -b) echo 这是一个选项;; 
+ -c) echo 这是一个选项;; 
+ --) shift 
+ break ;; #选项结束，退出循环
+ *) echo "$1 is not an option";; 
+ esac 
+ shift 
+done 
+# 
+count=1 
+for param in $@ 
+do 
+ echo "Parameter #$count: $param" 
+ count=$[ $count + 1 ] 
+done
+</div>
+
+<p>当选项和参数混合时，需要对选项做进一步处理</p>
+<div class="show"> 处理./testing.sh -a data1 -b -c -d data2此类参数和选项混合的情况
+while [ -n "$1" ] 
+do 
+ case "$1" in 
+ -a) echo "Found the -a option";; 
+ -b) param="$2" 
+ echo "Found the -b option, with parameter value $param" 
+ shift ;; 
+ -c) echo "Found the -c option";; 
+ --) shift 
+ break ;; 
+ *) echo "$1 is not an option";; 
+ esac 
+ shift 
+done 
+# 
+count=1 
+for param in "$@" 
+do 
+ echo "Parameter #$count: $param" 
+ count=$[ $count + 1 ] 
+done
+</div>
+
+<h4 id="getopt与getopts命令"><a href="#getopt与getopts命令" class="headerlink" title="getopt与getopts命令"></a>getopt与getopts命令</h4><p>上述方法不太方便处理选项合并输入等情况(如：-alh)，事实上Linux提供了专门用于处理选项输入的命令——getopt，而bash也提供了更高级的内建命令——getopts</p>
+<h5 id="getopt命令"><a href="#getopt命令" class="headerlink" title="getopt命令"></a>getopt命令</h5><p>getopt命令用于解析命令行参数和选项，其命令格式为</p>
+<p><span class="strong">getopt [选项] 解析的选项 需要解析的参数表列</span></p>
+<p>getopt命令的选项有：</p>
+<ul>
+<li>-o 单个字符：指定命令短选项的字符串(如：-v)，表示脚本支持的短选项(单个字符选项)</li>
+<li>-&zwnj;-long 字符串1,字符串2…：指定命令长选项的字符串(如：-&zwnj;-version)，表示脚本支持的长选项(多字符选项)</li>
+<li>-n 替代字符串：指定一个名字来代替默认命令名称”getopt”</li>
+<li>-q：不生成错误信息(用户输入了指定选项之外的字符时)</li>
+<li>-s chars：指定分隔选项参数的字符集，通常用于指定选项和其参数之间的分隔符，默认是空格。</li>
+<li>-l：输出选项的字符串表示形式。</li>
+<li>-options：将选项和非选项分开，选项在参数列表的前面，非选项在参数列表的后面</li>
+</ul>
+<p>指定命令解析的选项指该命令有效的选项字母，并指定选项需不需要参数值，如果需要则在选项后加上<span class="tips">:</span>号，随后getopt命令会根据指定的选项，解析getopt命令最后跟随的参数</p>
+<div class="show">e.g.该命令的用法解析
+<code>getopt ab:cd  -a -b test1 -cde test2 test3</code>
+该命令中，getopt命令定义了四个有效选项字母：a、b、c和d。字母b后有一个冒号(:)，表示b选项需要一个参数值。当getopt命令运行时，它会检查提供的参数列表（-a -b test1 -cde test2 test3），并基于提供的optstring进行解析。注意，它会自动将-cde选项分成三个单独的选项，并插入双破折线(--)来分隔行中的选项和参数，因此，输入的参数会被解析为以下形式：
+ -a -b 'test1' -c -d -e -- 'test2' 'test3'
+但由于getopt命令只指定了abcd四个有效选项，而用户输入了选项e，因此默认情况下，getopt命令会产生一条错误消息：
+getopt: invalid option -- e
+此时，可以添加为getopt命令添加-q选项来忽略错误消息：
+ getopt -q ab:cd -a -b test1 -cde test2 test3
+</div>
+
+
+<p>shell脚本中使用getopt命令，可以搭配set命令使用，set命令可以将其接收的参数按空格分割，并赋值给位置参数，可以将getopt解析出来的值作为set命令的输入参数，此后就可以使用$位置值的方式调用getopt命令解析出来的值</p>
+<div class="show">e.g.写一个名为testGetopt.sh脚本，脚本需要支持输入选项：-a选项和-b选项(完整选项名为-aaa和-bbb)，这两个选项需要提供一个参数，选项-c、-ccc、-d不需要提供参数，可以提供任意数量的参数在脚本中调用
+分析：
+ a:b:cd -&zwnj;-long aaa:,bbb:,ccc为解析的选项
+ $@为用户输入到该脚本中的参数，也是getopt命令需要解析的参数表列
+ 通过-&zwnj;-分隔getopt命令的选项和参数部分，更为清晰
+ 如果用户执行: bash getoptPra.sh -a 100 -b 200 -cd --ccc lua ajax
+ 则该命令被getopt命令解析后，$args的值为：
+ -a '100' -b '200' -c -d --ccc -- 'lua' 'ajax'
+ getopt命令帮我们分割好了选项和参数，此时将该串字符串作为set命令的参数输入，set命令会以空格为分隔符，将该串字符串分割并依次存储在$1、$2、$3等位置变量中，方便后续依次判断和调用
+通过case命令和shift命令依次为各选项写功能，选项处理完毕，最后的剩余的参数另作处理
+执行
+</div>
+<pre><code>#! /bin/bash
+# 对用户输入的选项和参数进行处理
+  args=$(getopt -o a:b:cd --long aaa:,bbb:,ccc -- $@)
+  if [ $? -ne 0 ] 
+     then
+         echo"解析错误"
+        exit 1 
+  fi
+# 查看getopt命令解析出来的选项和参数
+ echo "---------"
+ echo $args
+ echo "---------"
+ set -- $args
+# 遍历所有选项，给与不同的功能
+ while true
+   do
+    case $1 in
+      -a|--aaa) echo "输入了-a或-aaa选项,参数值为$2" ; shift 2 ;;
+      -b|--bbb) echo "输入了-b或-bbb选项,参数值为$2" ; shift 2 ;;
+      -c)       echo "输入了-c选项" ; shift ;;
+      -d)      echo "输入了-d选项" ; shift ;;
+      --ccc)    echo "输入了--ccc长选项" ; shift; break ;;
+      --)       shift; break ;;
+    esac
+   done
+# 选项外的参数另作处理
+ echo "额外的输入参数有：$@"
+</code></pre>
+
+<h5 id="getopts命令"><a href="#getopts命令" class="headerlink" title="getopts命令"></a>getopts命令</h5><p>getopts命令是bash shell的内建命令，为了弥补getopt命令的不足(如：不好处理带空格和引号的参数)，它提供了一些高级功能。</p>
+<p>getopts命令与getopt命令不同，每次调用getopts命令，它只处理命令行上检测到的一个参数，因此往往需要循环调用，处理完所有的参数后，它会退出并返回一个大于0的退出状态码。getopts命令的格式与getopt命令相似：</p>
+<div class="apiBox">getopts 解析的选项 变量</div>
+
+<p>同样，解析选项中可以指定命令需要识别的有效字母选项，如果该选项需要参数，就加一个冒号。如果需要getopts命令忽略错误信息，可以在整个解析选项字符串前加个冒号，相当于getopt命令的-q选项。getopts命令会将输入的参数表列保存在指定的变量中，方便遍历。</p>
+<div class="show">e.g.脚本支持选项abc，其中-b选项需要跟随一个参数。
+getopts :ab:c opt
+# ab:c前的:表示让getopts命令忽略错误(如：用户输入abc以外的选项)
+</div>
+
+<p>getopts命令还预定义了两个环境变量：如果选项需要跟随一个参数值，<span class="tips">OPTARG</span>环境变量会保存该值，而变量<span class="tips">OPTIND</span>变量保存了参数列表中getopts正在处理的参数位置。</p>
+<p>getopts命令有以下特点：</p>
+<ul>
+<li>该命令不直接支持长选项，但处理单字母选项很方便</li>
+<li>解析命令行选项时该命令会移除开头的单破折线，所以在case定义中不用单破折线</li>
+<li>该命令支持在参数值中包含空格，只需要将带空格的参数值用双引号包裹即可</li>
+<li>可以将选项字母和参数值放在一起使用，而不用加空格，如：-abvalue，命令可以根据case定义的字符正确解析出-a和-b选项，以及value参数值</li>
+</ul>
+<div class="show">e.g.脚本需要支持-a、-b、-c命令，选项ab需要输入参数
+#!/bin/bash
+while getopts ":a:b:c" opt; do
+    case $opt in
+        a) echo "输入了选项-a，其参数值为$OPTARG" ;;
+        b) echo "输入了选项-b" ;;
+        c) echo "输入了选项-c" ;;
+        *) echo "未定义的选项" ;;
+    esac
+done
+#使用shift命令和OPTIND变量处理剩余的参数
+shift $[ $OPTIND - 1 ]
+echo "剩余的参数："
+for param in $@
+ do
+    echo $param
+done
+</div>
+
+<h4 id="选项标准化"><a href="#选项标准化" class="headerlink" title="选项标准化"></a>选项标准化</h4><p>部分选项在Linux中有一些墨守成规的用途，遵守这些规定会让脚本看起来更友好一些</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-a</td>
+<td>显示所有对象</td>
+<td>-n</td>
+<td>使用非交互模式（批处理）</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>生成一个计数</td>
+<td>-o</td>
+<td>将所有输出重定向到的指定的输出文件</td>
+</tr>
+<tr>
+<td>-d</td>
+<td>指定一个目录</td>
+<td>-q</td>
+<td>以安静模式运行</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>扩展一个对象</td>
+<td>-r</td>
+<td>递归地处理目录和文件</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>指定读入数据的文件</td>
+<td>-s</td>
+<td>以安静模式运行</td>
+</tr>
+<tr>
+<td>-h</td>
+<td>显示命令的帮助信息</td>
+<td>-v</td>
+<td>生成详细输出</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>忽略文本大小写</td>
+<td>-x</td>
+<td>排除某个对象</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>产生输出的长格式版本</td>
+<td>-y</td>
+<td>对所有问题回答yes</td>
+</tr>
+</tbody></table>
+</div>
+
+<h3 id="数值声明与数值运算"><a href="#数值声明与数值运算" class="headerlink" title="数值声明与数值运算"></a>数值声明与数值运算</h3><p>默认情况下，Bash中的变量会被声明为字符串类型，如：num=22，Bash会将22作为字符串处理，诸如11+22的式子也会被识别为字符串，想要进行数值运算，需要使用特殊声明语句和运算方式</p>
+<h4 id="数值声明"><a href="#数值声明" class="headerlink" title="数值声明"></a>数值声明</h4><p>该语句用于特殊声明变量类型，使变量不再只限于字符串类型<br><span class="strong">declare [+或-] [选项] 变量名</span></p>
+<ul>
+<li>-&emsp;给变量设置类型属性</li>
+<li>+&emsp;取消变量的类型属性</li>
+<li>-i&emsp;将变量声明为整形(integer)</li>
+<li>-x&emsp;将变量声明为环境变量</li>
+<li>-p&emsp;查看变量的类型</li>
+</ul>
+<div class="show">declare -i num1=11+22</div>
+
+<h4 id="数值运算"><a href="#数值运算" class="headerlink" title="数值运算"></a>数值运算</h4><p>进行数值运算可以使用以下几种方式：</p>
+<h5 id="1-通过”-”或”-”运算式"><a href="#1-通过”-”或”-”运算式" class="headerlink" title="1.通过”$(())”或”$[]”运算式"></a>1.通过”$(())”或”$[]”运算式</h5><ul>
+<li><span class="strong">变量名=$((运算式))</span></li>
+<li><span class="strong">变量名=$[运算式]</span></li>
+</ul>
+<div class="shell">示例：
+[root@localhost ~]# num1=$((11+22))
+[root@localhost ~]# num2=$[11+22]
+</div>
+
+<h5 id="2-通过declare-i声明"><a href="#2-通过declare-i声明" class="headerlink" title="2.通过declare -i声明"></a>2.通过declare -i声明</h5><p><span class="strong">declare -i 变量名</span></p>
+<div class="shell">示例：
+[root@localhost ~]# declare -i num1=11+22
+</div>
+
+<h4 id="浮点数运算的解决方案"><a href="#浮点数运算的解决方案" class="headerlink" title="浮点数运算的解决方案"></a>浮点数运算的解决方案</h4><p>z shell提供了完整的浮点数运算操作，但在bash shell中，需要借助内建的bash运算器——<span class="strong">bc</span></p>
+<h3 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h3><h4 id="用户输入read"><a href="#用户输入read" class="headerlink" title="用户输入read"></a>用户输入read</h4><p><span class="strong">read [选项] [变量名]</span> 从键盘(默认)读取一行数据，然后将输入的数据分解成字段，并将字段分别赋值给这些变量</p>
+<ul>
+<li>-p “提示信息” &emsp;输出提示信息(prompt 提示)</li>
+<li>-t 秒数 &emsp;read命令只等待指定时间(timeout 超时)，如果超时未输入，read命令会以非零状态码退出</li>
+<li>-n 字符数&emsp;read命令只接收指定数量字符</li>
+<li>-s &emsp;隐藏输入的内容(silent 沉默)</li>
+<li>-i 文本&emsp;将指定文本作为默认输入值</li>
+<li>-a 数组名&emsp;将输入的数据赋值给数组变量</li>
+<li>-d 字符&emsp;指定一个定界符，当入户输入该字符时，read命令将停止读取输入(delimit 划定界限)</li>
+<li>-e&emsp;允许用户使用Readline功能，该功能允许用户使用快捷键进行快速操作(如快速跳转到本行开头)</li>
+<li>-r&emsp;禁用转义，\不再会被解析为转义字符</li>
+<li>-u 文件描述符&emsp;从指定的文件描述符中读取，如标准输入设备的文件描述符为0</li>
+<li>-c&emsp;在读取输入时不需要按回车确认，即实时输入</li>
+<li>如果在命令中不指定变量，则read读入的数据会保存在环境变量<span class="tips">REPLY</span>中</li>
+</ul>
+<div class="shell">示例：
+#!/bin/bash
+read -t 30 -p "input name:" name    #30s内输入姓名并赋值给name
+read -s -t 30 -p "input password:" passwd    #30s内隐藏输入密码并赋值给passwd
+</div>
+
+<p>read也支持一次输入多个数据，数据之间用空格隔开，然后赋值给多个变量。如果输入的数据个数多于变量个数，则多出来的数据连同空格会被赋值给最后一个变量。read命令也支持将多个数据直接存入数组中，如果数据间的分隔符是,或者其他符号，也可以通过<span class="tips">IFS</span>变量修改分隔符(Linux中分隔符默认为空格、制表符、换行符)，方便从文件中读入数据并作处理</p>
+<div class="show">1. 可以一次读取多个数据
+read data1 data2 
+输入10 20 30，则data1=001，data2=20 30，空格会视为第一个数据输入完毕,多余数据赋值给最后一个变量
+2. 对于使用其他符号分隔的数据，可以重新定义分隔符
+read -p "输入数据，以逗号隔开" data
+echo "当前数据" $data
+IFS=','  #修改IFS变量的值，将分隔符改为,号
+read -a data_array <<< $data
+echo "处理完的数组为：" ${data_array[@]}
+3. read命令可以从文件中读取数据，每次调用read命令，都将从文件中读取一行文本，当文件中没有内容时，read命令会退出并返回非零状态码。读取文件时，可以借助cat命令和管道符
+cat test.txt | while read content
+ do
+   echo $content #内容被保存到content变量中
+done
+</div>
+
+<h4 id="终端输出"><a href="#终端输出" class="headerlink" title="终端输出"></a>终端输出</h4><p><span class="strong">echo [选项] [输出内容]</span> 用于向终端输出文本信息</p>
+<ul>
+<li>-e&emsp;启用转义字符\，可以输出如换行符(\n)、制表符(\t)等，也可以修改输出文字的样式</li>
+<li>-E&emsp;禁用转义字符，原样输出文本</li>
+<li>-n&emsp;不换行输出文本，输出完毕后光标停留在同一行</li>
+</ul>
+<div class="show">1. echo输出字符串文本时默认情况下可以不需要引号
+echo Hello World
+2. 但如果字符串中有单引号/双引号，则字符串需要使用另外一种引号包裹(字符里有单引号，就用双引号包裹，反之亦然)
+echo 'he said:"One day you will leave.."' #单引号用于划定字符串，不会输出显示
+3. echo也可以一次性输出多个变量，变量间用空格分隔
+echo "当前值为：" $num1 $num2 #输出文本后输出变量num1和num2
+</div>
+
+
+
+<h3 id="输入输出重定向"><a href="#输入输出重定向" class="headerlink" title="输入输出重定向"></a>输入输出重定向</h3><h4 id="文件描述符与标准输入输出设备"><a href="#文件描述符与标准输入输出设备" class="headerlink" title="文件描述符与标准输入输出设备"></a>文件描述符与标准输入输出设备</h4><p>Linux系统将每个对象当作文件处理，并使用文件描述符（file descriptor）来标识每个文件对象。文件描述符是一个非负整数，可以唯一标识会话中打开的文件，bash shell保留了前三个文件描述符(0、1和2)作为标准输入、标准输出、标准错误输出的文件描述符，每个进程一次最多可以有九个文件描述符。</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>设备</th>
+<th>Linux文件名</th>
+<th>文件描述符</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>键盘</td>
+<td>/dev/stdin</td>
+<td>0</td>
+<td>标准输入</td>
+</tr>
+<tr>
+<td>显示器</td>
+<td>/dev/stdout</td>
+<td>1</td>
+<td>标准输出</td>
+</tr>
+<tr>
+<td>显示器</td>
+<td>/dev/stderr</td>
+<td>2</td>
+<td>标准错误输出</td>
+</tr>
+</tbody></table>
+</div>
+
+<h4 id="输出重定向"><a href="#输出重定向" class="headerlink" title="输出重定向"></a>输出重定向</h4><p>一般情况下，Linux输出信息时默认的输出位置为屏幕，可以用重定向符将命令的输出重定向到文件等地方，而不再显示到屏幕上。如果重定向位置为文件而该文件不存在，则会新建文件</p>
+<div class="table">
+<table>
+<thead>
+<tr>
+<th>类型</th><th>符号</th><th>作用</th></tr>
+</thead>
+<tbody>
+<tr><td rowspan="2">标准输出重定向</td>
+<td>&gt;</td><td>以覆盖方式将正确命令返回内容输出到指定文件或设备中</td></tr>
+<tr><td>&gt;&gt;</td><td>以追加方式将正确命令返回内容输出到指定文件或设备中</td></tr>
+<tr><td rowspan="2">标准错误输出重定向</td><td>2&gt;</td><td>以覆盖方式将错误命令返回内容输出到指定文件或设备中</td></tr>
+<tr><td>2&gt;&gt;</td><td>以追加方式将错误命令返回内容输出到指定文件或设备中</td></tr>
+      <tr>
+      <td rowspan="5">同时输出正确和错误命令返回信息</td>
+      <td>&&gt;</td>
+      <td>以覆盖方式，把正确和错误返回信息保存到同一文件中</td>
+      </tr>
+      <tr>
+         <td>&&gt;&gt;</td>
+         <td>以追加方式，把正确和错误返回信息保存到同一文件中</td>
+      </tr>
+      <tr>
+         <td>命令&&gt;文件 2&gt;&1</td>
+         <td>以覆盖方式，把正确和错误返回信息保存到同一文件中</td>
+      </tr>
+      <tr>
+         <td>命令&&gt;&gt;文件 2&gt;&1</td>
+         <td>以追加方式，把正确和错误返回信息保存到同一文件中</td>
+      </tr>
+      <tr>
+         <td>命令&gt;&gt;文件1 2&gt;&gt;文件2</td>
+         <td>把正确命令返回信息追加到文件1中，错误命令返回信息追加到文件2中</td>
+      </tr>
+      <tr><td>在脚本中输出错误消息(输出到stderr)</td>
+      <td>&gt;&2</td>
+      <td>在脚本中自定义一个消息作为错误输出</td></tr>
+      <tr><td>批量重定向</td>
+      <td></td>
+      <td></td></tr>
+   </tbody>
+</table>
+</div>
+
+<h5 id="1-标准输出与标准错误输出的重定向"><a href="#1-标准输出与标准错误输出的重定向" class="headerlink" title="1.标准输出与标准错误输出的重定向"></a>1.标准输出与标准错误输出的重定向</h5><p>标准输出是指程序执行正确时，会向用户输出普通信息流(如：程序的执行结果、信息或数据等)。标准错误输出则用来显示错误信息，当程序遇到错误或异常时，它会将错误信息发送到标准错误输出流。默认情况下，标准输出和标准错误输出的输出位置都为屏幕，但可以使用重定向命令将程序的正确执行结果或错误执行结果输出到屏幕以外的地方。</p>
+<p>单独输出正确信息时，可以在重定向符中省略文件描述符1，但如果同时重定向了标准输出和标准错误输出，则需要加上文件描述符</p>
+<div class="show">1. 输出命令正确执行信息到文件中
+eg:将/usr/bin目录文件信息保存到以log.日期为文件名的日志文件中，%y%m%d表示提取日期中两位数的年月日，如：log.240522
+today=$(date +%y%m%d)
+ls /usr/bin -al <span class="text-red">&gt; log.$today </span>
+2. 输出命令错误执行信息到文件中
+e.g.文件test不存在时
+ls -al test.txt <span class="text-red">2&gt; fail.log</span>
+3. 将正确信息和错误信息输出到不同文件时，需要明确添加文件描述符
+ls -a test1 test2 <span class="text-red"> 1&gt;success.log 2&gt;fail.log</span>
+4. 将正确信息和错误信息输出到同一文件
+ls -a test1 test2 <span class="text-red">&&gt; message.log </span>
+</div>
+
+<h5 id="2-输出错误信息"><a href="#2-输出错误信息" class="headerlink" title="2.输出错误信息"></a>2.输出错误信息</h5><p>如果需要在脚本中输出错误信息，则可以将输出信息重定向到STDERR文件描述符，语法为：<span class="tips">输出信息 &gt;&amp;2</span>。在终端中输出语句时看起来和正常echo语句无区别，但对系统而言明确了这是一个错误输出信息</p>
+<div class="show">e.g.在脚本中输出一个错误消息
+echo "程序抛出一个异常" <span class="text-red"> &gt;&2</span>
+</div>
+
+<h4 id="输入重定向-不常用"><a href="#输入重定向-不常用" class="headerlink" title="输入重定向(不常用)"></a>输入重定向(不常用)</h4><p>将文件等内容重定向到命令，下列命令省略了文件描述符0</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>符号</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>输入重定向</td>
+<td>&lt;</td>
+<td>将文件或设备内容重定向到命令</td>
+</tr>
+<tr>
+<td>内联输入重定向</td>
+<td>&lt;&lt;</td>
+<td>在命令行中指定多个文本输入内容</td>
+</tr>
+</tbody></table>
+</div>
+
+<p>如：使用wc命令统计文件中的字符</p>
+<div class="show"># wc < test
+统计输出test文件内容的行数、单词数、字节数</div>
+
+<p>内联输入重定向(inline input redirection)用于从命令行输入多行数据。在使用时，必须指定一个文本用于标记输入数据的开始和结尾，因此准确的使用语法为：</p>
+<div class="apiBox">命令 &lt;&lt; 标记文本
+输入的数据
+...
+标记文本
+</div>
+<div class="show">$ wc &lt;&lt; EOF  #指定标记文本，开始输入
+&gt; data1
+&gt; data2
+&gt; data3
+&gt; EOF #遇到标记文本，终止输入
+</div>
+
+<h4 id="批量重定向"><a href="#批量重定向" class="headerlink" title="批量重定向"></a>批量重定向</h4><p>当脚本中有大量信息需要重定向，如果为每个命令都进行一次重定向过于繁琐，此时可以搭配<span class="tips">exec</span>命令指定shell将脚本执行期间的信息都重定向到某个位置。exec会替换当前shell的执行上下文环境，将标准输出输入和错误输出重定向到指定位置</p>
+<div class="show"><span class="strong">重定向输出</span>
+1. 将所有的标准输出重定向后，依旧可以指定将某个语句输出到指定位置
+e.g.将所有命令执行正确的信息输出到文件out.txt，而将部分指定的错误消息输出到屏幕
+exec 1&gt;out.txt
+echo "正常输出到out.txt文件"
+echo "将该错误输出显示到屏幕" &gt;&2
+2. 也可以将标准输出、标准错误输出都完全重定向
+exec 1&gt;out.txt
+exec 2&gt;error.txt
+echo "输出到out.txt"
+echo "输出到error.txt" &gt;&2
+ls -a test.txt  #若test文件存在，输出信息到out，若不存在，输出到error
+<span class="strong">输入重定向</span>
+1. 将标准输入重定向到文件后，read等命令将从文件中读取数据
+exec 0&gt; test.txt
+while read data
+do
+  echo $data
+done
+</div>
+
+<h4 id="同时输出到显示器和文件"><a href="#同时输出到显示器和文件" class="headerlink" title="同时输出到显示器和文件"></a>同时输出到显示器和文件</h4><p>Linux提供了一个特殊命令<span class="tips">tee</span>，用于将输出同时发送到标准输出(显示器)和文件，而不用重定向多次：</p>
+<div class="apiBox">tee [选项] 文件1 文件2...</div>
+
+<ul>
+<li>默认情况下，如果指定的文件不存在，则会新建该文件，如果文件存在，tee命令会覆盖原文件内容</li>
+<li>-a 将数据追加到文件中</li>
+<li>-i 忽略中断信号，例如通过 Ctrl+C 触发的信号</li>
+</ul>
+<p>tee命令会重定向STDIN输入的数据，并同时发往两处：STDOUT和tee命令指定的文件，因此可以搭配管道符使用。</p>
+<div class="show">e.g.将某个数据同时发送到屏幕和test文件
+echo "数据" | tee test</div>
+
+<h4 id="丢弃命令输出"><a href="#丢弃命令输出" class="headerlink" title="丢弃命令输出"></a>丢弃命令输出</h4><p>如果需要某个输出既不显示到屏幕上，也不保存到文件中，可以将其重定向到一个名为<span class="tips">null</span>的特殊文件中。Linux中该文件的位于<span class="tips">/dev/null</span>路径下，所有重定向到该文件中的数据都会被丢弃，该文件中无任何内容。因此也可以在输入重定向中将其作为输入文件，可以用来快速清空文件内容，将该文件变为空白文件，常用于日志文件中清除内容(也可以删除再创建)</p>
+<div class="show">1. 丢弃信息
+ls -al test.txt &gt; /dev/null
+ls -al test.txt 2&gt; /dev/null
+2.快速清空文件
+cat /dev/null &gt; test.txt
+</div>
+
+<h4 id="自定义重定向"><a href="#自定义重定向" class="headerlink" title="自定义重定向"></a>自定义重定向</h4><p>在shell中最多可以有9个打开的文件描述符。除了标准输入0，标准输出1和标准错误输出2，其他6个从3~8的文件描述符均可用作输入或输出重定向。可以将这些文件描述符中的任意一个分配给文件，然后在脚本中使用它们</p>
+<h5 id="创建文件描述符"><a href="#创建文件描述符" class="headerlink" title="创建文件描述符"></a>创建文件描述符</h5><p>可以直接使用<span class="tips">exec</span>命令直接给输入、输出分配文件描述符。和标准的文件描述符一样，一旦将另一个文件<br>描述符分配给一个文件，这个重定向就会一直有效，直到其被重新分配。</p>
+<div class="show">e.g.分配一个文件描述符3，并重定向到test3文件
+#!/bin/bash
+exec 3&gt;&gt;test3 
+echo "正常输出到屏幕" 
+echo "将被追加到文件test3" &gt;&3 
+</div>
+
+<h5 id="恢复文件描述符的指向"><a href="#恢复文件描述符的指向" class="headerlink" title="恢复文件描述符的指向"></a>恢复文件描述符的指向</h5><p>通过exec命令重定向的文件描述符会在整个脚本运行期间指向指定的位置，如果需要将其恢复到原来的指向位置，可以创建一个文件描述符作为一个缓存变量，并在代码功能执行完后将需要恢复的文件描述符重定向到新建的文件描述符</p>
+<div class="show">e.g.恢复标准输出的指向
+#!/bin/bash
+<span class="text-blue">exec 3&gt;&1</span>
+<span class="text-blue">exec 1&gt;out.txt</span>
+echo "输出内容到out.txt"
+<span class="text-blue">exec 1&gt;&3</span></div>
+
+<div class="show">e.g.标准输入也类似
+#!/bin/bash 
+<span class="text-red">exec 6<&0 </span>
+<span class="text-red">exec 0< testfile</span>
+count=1 
+while read line 
+do 
+ echo "Line #$count: $line" 
+ count=$[ $count + 1 ] 
+done 
+<span class="text-red">exec 0<&6</span></div>
+
+<h5 id="同时读写的文件描述符-了解"><a href="#同时读写的文件描述符-了解" class="headerlink" title="同时读写的文件描述符(了解)"></a>同时读写的文件描述符(了解)</h5><p>shell也支持打开单个文件描述符来作为输入和输出，即可以用同<br>一个文件描述符对同一个文件进行读写。shell会维护一个内部指针，指明在文件中的当前位置，任何读或写都会从文件指针上次的位置开始，因此可能出现内容被错误读写的问题，不太好用</p>
+<div class="show">#!/bin/bash 
+exec 3&lt;&gt; testfile 
+read line &lt;&3 
+echo "Read: $line" 
+echo "This is a test line" &gt;&3</div>
+
+<h5 id="关闭文件描述符"><a href="#关闭文件描述符" class="headerlink" title="关闭文件描述符"></a>关闭文件描述符</h5><p>shell会在脚本退出时自动关闭文件描述符，若要手动关闭文件描述符，则需要将该文件描述符重定向到特殊符号<span class="tips">&amp;-</span>，文件描述符关闭后，如果输出数据shell将抛出错误</p>
+<div class="show">e.g.关闭文件描述符3
+#!/bin/bash 
+exec 3&gt; test.txt
+echo "输出数据到test文件" &gt;&3 
+<span class="text-red">exec 3&gt;&-</span>
+</div>
+
+<h4 id="列出打开的文件描述符"><a href="#列出打开的文件描述符" class="headerlink" title="列出打开的文件描述符"></a>列出打开的文件描述符</h4><p>lsof命令会列出整个Linux系统打开的所有文件描述符。由于该命令会向非系统管理员用户提供Linux系统的信息，因此在很多Linux发行版中隐藏了该命令。普通用户要想运行该命令，必须使用全路径来引用该命令：<span class="strong">/usr/sbin/lsof</span></p>
+<p>管理员用户可以直接使用：</p>
+<div class="apiBox">lsof [选项]</div>
+
+<ul>
+<li>-p PID：指定对应进程PID所打开的文件描述符</li>
+<li>-d 值：指定需要显示的文件描述符编号</li>
+<li>-a 对上述两个选项结果进行布尔AND运算</li>
+</ul>
+<div class="show">可以结合环境变量$$(当前shell的PID)来查看当前shell进程打开的文件描述符
+/usr/sbin/lsof -a -p $$ -d 0,1,2
+</div>
+
+<p>该命令返回信息包括：</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>COMMAND</td>
+<td>正在运行的命令名的前9个字符</td>
+</tr>
+<tr>
+<td>PID</td>
+<td>进程的PID</td>
+</tr>
+<tr>
+<td>USER</td>
+<td>进程属主的登录名</td>
+</tr>
+<tr>
+<td>FD</td>
+<td>文件描述符号以及访问类型（r代表读，w代表写，u代表读写）</td>
+</tr>
+<tr>
+<td>TYPE</td>
+<td>文件的类型（CHR代表字符型，BLK代表块型，DIR代表目录，REG代表常规文件）</td>
+</tr>
+<tr>
+<td>DEVICE</td>
+<td>设备的设备号（主设备号和从设备号）</td>
+</tr>
+<tr>
+<td>SIZE</td>
+<td>如果有的话，表示文件的大小</td>
+</tr>
+<tr>
+<td>NODE</td>
+<td>本地文件的节点号</td>
+</tr>
+<tr>
+<td>NAME</td>
+<td>文件名</td>
+</tr>
+</tbody></table>
+</div>
+
+
+<p>返回值结果举例</p>
+<div class="shell">COMMAND PID USER FD TYPE DEVICE SIZE NODE NAME 
+bash 3344 rich 0u CHR 136,0 2 /dev/pts/0 
+bash 3344 rich 1u CHR 136,0 2 /dev/pts/0 
+bash 3344 rich 2u CHR 136,0 2 /dev/pts/0</div>
+
+<p>由于STDIN、STDOUT和STDERR文件描述符都指向终端，因此其文件类型是字符型，输出文件的名称就是终端的设备名，且所有3种标准文件都支持读和写。</p>
+<h3 id="条件判断"><a href="#条件判断" class="headerlink" title="条件判断"></a>条件判断</h3><p>在bash shell中，if 语句的判断依据为命令的退出状态码，不能像其他语言一样直接用 if 语句判断条件语句，但bash shell提供了两个用于条件判断的方法：</p>
+<ul>
+<li>test 命令</li>
+<li>[  ] 使用中括号测试条件</li>
+</ul>
+<h4 id="test命令与"><a href="#test命令与" class="headerlink" title="test命令与[ ]"></a>test命令与[ ]</h4><p>test命令可用于做数值比较、字符串比较和文件比较，当test命令中列出的条件成立，test命令就会正常退出并返回退出状态码0，这样if等语句就可以正常工作了。此外，test命令有一种替代形式，可以直接将条件语句写于中括号[ ]中，注意，<span class="text-red">第一个中括号后和第二个中括号前都必须加上一个空格</span>，否则将报错。如果test命令后或者中括号中不写条件语句，则它们都将视为条件不成立，二者的语法类似：</p>
+<ul>
+<li><span class="strong">test 条件语句</span></li>
+<li><span class="strong">[ 条件语句 ]</span></li>
+</ul>
+<div class="show">e.g.检测某个变量是否存在且不为空，提示：返回值在终端上可以用$?查看
+<code>str=""
+if test $str
+ then 
+   echo "该变量存在"
+ else
+   echo "该变量不存在"
+fi</code>
+或
+<code>if [ $str ] #取变量值$str前后均有空格
+ then 
+   echo "该变量存在"
+ else
+   echo "该变量不存在"
+fi</code></div>
+
+<h4 id="文件相关"><a href="#文件相关" class="headerlink" title="文件相关"></a>文件相关</h4><p>上述两个方法用于测试文件或目录是否满足相关要求时的语法为：</p>
+<ul>
+<li><span class="strong">test 选项 文件/目录名</span></li>
+<li><span class="strong">[ 选项 文件/目录名 ]</span></li>
+</ul>
+<h5 id="文件类型"><a href="#文件类型" class="headerlink" title="文件类型"></a>文件类型</h5><div class="table">
+
+<table>
+<thead>
+<tr>
+<th>测试选项</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-e file</td>
+<td>判断file是否存在</td>
+</tr>
+<tr>
+<td>-d file</td>
+<td>判断file是否存在，且是否为目录</td>
+</tr>
+<tr>
+<td>-f file</td>
+<td>判断file是否存在，且是否为为文件</td>
+</tr>
+<tr>
+<td>-b file</td>
+<td>判断file是否存在，且是否为块设备文件(如：硬盘设备文件)</td>
+</tr>
+<tr>
+<td>-c file</td>
+<td>判断file是否存在，且是否为字符设备文件(如：鼠标、键盘设备文件)</td>
+</tr>
+<tr>
+<td>-O file</td>
+<td>判断file是否存在并属于当前用户所有</td>
+</tr>
+<tr>
+<td>-G file</td>
+<td>判断file是否存在并默认组与当前用户相同</td>
+</tr>
+<tr>
+<td>-L file</td>
+<td>判断file是否存在，且是否为链接文件</td>
+</tr>
+<tr>
+<td>-p file</td>
+<td>判断file是否存在，且是否为管道文件</td>
+</tr>
+<tr>
+<td>-s file</td>
+<td>判断file是否存在，且文件大小是否大于0(非空)，非空为true</td>
+</tr>
+<tr>
+<td>-S file</td>
+<td>判断是否为套接字文件</td>
+</tr>
+<tr>
+<td>-N file</td>
+<td>判断file是否存在，且文件在上一次读取之后被修改过(mtime比atime新)，则为true</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="show">e.g.在使用某个文件或目录之前，先检查其是否存在是一个好的编程习惯
+<code>location=$HOME
+file_name="myFile"
+if [ -e $location ]
+then
+  if [ -e $location/$file_name ]
+  then
+      echo "文件存在"
+      echo "写入数据"
+      date &gt;&gt; $location/$file_name
+   else
+      echo "文件不存在"
+   fi
+else
+   echo "目录不存在"
+fi
+</code></div>
+
+<h5 id="文件权限"><a href="#文件权限" class="headerlink" title="文件权限"></a>文件权限</h5><p>检测读(写/执行)权限时，文件所有者、所属组、其他任意拥有读(写/执行)权限都将返回true</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>测试选项</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-r file</td>
+<td>判断file是否存在，且是否拥有读权限</td>
+</tr>
+<tr>
+<td>-w file</td>
+<td>判断file是否存在，且是否拥有写权限</td>
+</tr>
+<tr>
+<td>-x file</td>
+<td>判断file是否存在，且是否拥有执行权限</td>
+</tr>
+<tr>
+<td>-u file</td>
+<td>判断file是否存在，且是否拥有SUID权限</td>
+</tr>
+<tr>
+<td>-g file</td>
+<td>判断file是否存在，且是否拥有SGID权限</td>
+</tr>
+<tr>
+<td>-k file</td>
+<td>判断file是否存在，且是否拥有SBit权限</td>
+</tr>
+</tbody></table>
+</div>
+
+<h5 id="两个文件比较"><a href="#两个文件比较" class="headerlink" title="两个文件比较"></a>两个文件比较</h5><p>在比较文件之前，应该确认两个文件确实存在，或用脚本验证文件是否存在并作错误处理，否则比较操作可能会返回错误的结果。</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>测试选项</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>文件1 -nt 文件2</td>
+<td>判断文件1的修改时间是否比文件2新</td>
+</tr>
+<tr>
+<td>文件1 -ot 文件2</td>
+<td>判断文件1的修改时间是否比文件2旧</td>
+</tr>
+<tr>
+<td>文件1 -ef 文件2</td>
+<td>判断文件1和文件2的i节点(Inode)是否一致，即判断是否为同一文件，常用于判断是否为硬链接</td>
+</tr>
+</tbody></table>
+</div>
+
+<h4 id="整数比较"><a href="#整数比较" class="headerlink" title="整数比较"></a>整数比较</h4><p>bash shell只支持整数进行比较，这里的整数可以是变量，也可以是正值或负值常量</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>测试选项</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>整数1 -eq 整数2</td>
+<td>判断整数1与整数2是否相等</td>
+</tr>
+<tr>
+<td>整数1 -ne 整数2</td>
+<td>判断整数1与整数2是否不相等</td>
+</tr>
+<tr>
+<td>整数1 -gt 整数2</td>
+<td>判断整数1是否大于整数2</td>
+</tr>
+<tr>
+<td>整数1 -lt 整数2</td>
+<td>判断整数1是否小于整数2</td>
+</tr>
+<tr>
+<td>整数1 -ge 整数2</td>
+<td>判断整数1是否大于等于整数2</td>
+</tr>
+<tr>
+<td>整数1 -le 整数2</td>
+<td>判断整数1是否小于等于整数2</td>
+</tr>
+</tbody></table>
+</div>
+
+<h4 id="字符串判断"><a href="#字符串判断" class="headerlink" title="字符串判断"></a>字符串判断</h4><p><span class="text-red">注意！以下比较符号=、!=、\&lt;、\&gt; 前后都需要有一个空格</span></p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>测试选项</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-z str</td>
+<td>字符串str长度为0，则为true(字符串为空字符串，未定义的变量也视为空)</td>
+</tr>
+<tr>
+<td>-n str</td>
+<td>判断字符串str长度是否为非0(非空)</td>
+</tr>
+<tr>
+<td>str1 = str2</td>
+<td>判断str1和str2是否相等</td>
+</tr>
+<tr>
+<td>str1 !=s tr2</td>
+<td>判断str1和str2是否不相等</td>
+</tr>
+<tr>
+<td>str1 \&lt; str2</td>
+<td>判断str1是否比str2小(根据ASCII码)</td>
+</tr>
+<tr>
+<td>str1 \&gt; str2</td>
+<td>判断str1是否比str2大(根据ASCII码)</td>
+</tr>
+</tbody></table>
+</div>
+
+<p>在比较字符串是否比另外一个字符串小/大时，大于号和小于号需要进行转义，否则会当做重定向符号处理。在比较时，会依次判断字母在ASCII中的出现位置，因此大写字母会小于小写字母(sort命令使用的是系统的本地化语言设置中定义的排序顺序，小写字母出现顺序位于大写字母前，与之相反)</p>
+<div class="show">e.g. 比较字符Test和test
+<code>str1="Test"
+str2="test"
+if [ str1 \\&lt; str2 ]
+  then
+    echo "Test小于test"  #由于ASCII中T小于t，所以输出该语句
+  else
+    echo "Test大于test"
+fi
+</code></div>
+
+<h4 id="多重判断"><a href="#多重判断" class="headerlink" title="多重判断"></a>多重判断</h4><div class="table">
+<table>
+<thead><th>测试选项 </th><th>作用</th></thead>
+<tbody>
+<tr><td>判断1 -a 判断2</td><td>逻辑与，判断1和判断2都成立，结果为真</td></tr>
+<tr><td>判断1 -o 判断2</td><td>逻辑或，判断1和判断2任意一个成立，结果为真</td></tr>
+<tr><td>! 判断 </td><td>结果取反</td></tr>
+<tr><td>[ 判断1 ] && [ 判断2 ]</td><td>判断1和判断2都成立，结果为真</td></tr>
+<tr><td>[ 判断1 ] || [ 判断2 ]</td><td>判断1和判断2任意一个成立，结果为真</td></tr>
+</tbody></table></div>
+
+<div class="show">e.g.判断a是否有值，并且判断a是否大于20，都成立输出 true，否则输出 false
+<code>a=10
+[ -n "$a" -a "$a" -gt 20] && echo "true" || echo "false"</code></div>
+
+<h3 id="判断语句"><a href="#判断语句" class="headerlink" title="判断语句"></a>判断语句</h3><h4 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h4><p>其他语言中的if语句，会判断if语句后式子的求值结果，并根据结果的true或false值进行对应处理。但bash shell中的if语句有所不同，bash会执行if语句后的命令，如果该命令的退出状态码是0，则会执行then部分的代码体，如果该命令的退出状态码是其他值，则执行else语句(没有else则不执行)，if语句的语法为：</p>
+<div class="show"><div class="apiBox"> if 命令行
+   then
+     程序体
+   fi
+</div></div>
+<div class="show">e.g. 查询是否存在某个用户，如果存在则输出该用户的HOME目录
+<code>userName=shiwivi
+if grep $userName /etc/passwd
+then
+   echo "找到该用户："
+   ls -a /home/$userName/.b*
+fi</code></div>
+
+<div class="broadcast color-yellow">
+<div class="iconfont icon-dengpao14hao"></div>
+在部分脚本中，该语句会被写成
+<div class="apiBox">if 命令;then
+   程序体
+fi</div>
+形式，即如果then和if写于同一行，需要加上;号，这样它会与其他一些语言的语法类似，如果if和then不写在同一行上，则;号可要可不要
+</div>
+
+<p>此外，bash shell也支持if-then-else语句和if嵌套语句，但注意，嵌套的if语句中的else-if被简化为了elif</p>
+<div class="show"><span class="text-red">if-then-else语句：</span>
+<div class="apiBox">if 命令 
+      then
+            条件成立执行
+      else
+            条件不成立时执行
+   fi
+</div><span class="text-red">多分支if语句：</span>
+<div class="apiBox">if 命令1 
+      then
+            条件成立执行
+   elif 命令2
+      then
+            条件成立时执行
+   (.....)
+   else
+         上述所有条件不成立时执行
+   fi
+</div></div>
+
+<h4 id="case命令"><a href="#case命令" class="headerlink" title="case命令"></a>case命令</h4><p>case语句类似于其他语言中的switch…case语句，用于匹配多个同类型的条件，其语法为：</p>
+<div class="show"><div class="apiBox">case 变量 in
+   值1 | 值2)
+         程序1 ;;
+   值3)
+         程序2 ;;
+   .....
+   *)
+         上述条件都不满足，执行该程序;;
+esac
+</div></div>
+
+<p>case中的条件可以使用或符号同时设置多个条件，最后的星号会捕获所有与已有条件不匹配的值，相当于switch语句中的default</p>
+<div class="show">e.g.查询多个用户
+<code>case $USER in
+JayChou | EasonChan)
+      echo "歌手";;
+KenThompson)
+      echo "程序员";;
+*)
+      echo "未知用户";;
+esac
+</code></div>
+
+<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><h4 id="for命令"><a href="#for命令" class="headerlink" title="for命令"></a>for命令</h4><p>for语句遍历时，默认使用空格分割需要遍历的值，如果值本身包含空格，则需要使用双引号将值包裹，此时for语句不会将双引号作为值的一部分</p>
+<div class="show"><div class="apiBox">for 变量 in 值1 值2 值3.....
+   do 
+      程序
+   done</div></div>
+do可以和for语句放在同一行，只需要在值列表之后加上一个分号即可。
+<div class="show">1. for需要遍历的数据使用空格隔开
+for value in data1 data2 data3
+do
+   echo "数据依次为$value"
+done
+2. 如果数据中包含单引号等特殊字符，可以使用双引号包括数据，或使用转义符
+#使用转义符表示\'，或使用双引号包裹"this'll"
+for test in I don\'t know if "this'll" work 
+do 
+ echo "word:$test" 
+done
+3. 数据中包含空格，也需要使用双引号包裹数据
+for test in Nevada "New Hampshire" "New Mexico" "New York" 
+do 
+ echo "Now going to $test" 
+done
+4. for遍历的数据，可以是一个变量，也可以是一个命令的输出
+file="/myData/map" 
+for state in $(cat $file) 
+do 
+ echo "Visit beautiful $state" 
+done
+5. for也可以用来读取目录
+for file in /home/user1/test/*
+do
+   if [ -d "$file"]    #将file用双引号包裹，避免文件名中含有空格时产生错误
+   then
+      echo "这是一个目录"
+   elif [ -f "$file" ]
+   then
+      echo "这是一个文件"
+   fi
+done
+</div>
+
+<p>此外，bash shell还支持一种C语言风格的for语句，但需要注意：</p>
+<ul>
+<li>使用双括号</li>
+<li>变量不以美元符$</li>
+<li>迭代过程的算式不需要用expr命令格式<div class="show"><div class="apiBox">for((初始值;条件;变量变化))
+ do
+   程序
+ done</div></div></li>
+</ul>
+<div class="show">e.g.这种形式的for语句也支持遍历多个变量
+for (( a=1, b=10; a <= 10; a++, b-- )) 
+do 
+ echo "$a 与 $b" 
+done
+</div>
+
+<h4 id="while命令"><a href="#while命令" class="headerlink" title="while命令"></a>while命令</h4><div class="show"><div class="apiBox"> whlie 命令
+      do
+         程序
+      done</div></div>
+注意：while命令允许在while语句行定义多个测试命令，只有最后一个测试命令的退出状态码会被用来决定什么时候结束循环。
+<div class="show">e.g.只有最后一个命令[ $num2 -ge 0 ]的退出状态码决定while语句何时结束
+num1=5
+num2=10
+while echo "-------"
+    [ $num1 -ge 0 ]
+    [ $num2 -ge 0 ]
+do
+    echo 这是第${num2}次循环
+    echo num1为${num1}，num2为${num2}
+    num1=$[ $num1 - 1 ]
+    num2=$[ $num2 - 1 ]
+done
+</div>
+
+<h4 id="until命令"><a href="#until命令" class="headerlink" title="until命令"></a>until命令</h4><p>until命令和while命令工作的方式相反，until命令要求你指定一个通常返回非零退出状态码的测试命令。只有测试命令的退出状态码不为0，bash shell才会执行循环中列出的命令。一旦测试命令返回了退出状态码0，循环就结束了。即：while命令在条件满足时执行，until命令在条件满足时退出。同样，until也像while一样允许多个测试命令，但只有最后一个命令有效</p>
+<div class="apiBox">until 命令
+   do
+     程序
+   done
+
+</div>
+
+<h4 id="break终止循环"><a href="#break终止循环" class="headerlink" title="break终止循环"></a>break终止循环</h4><p>break的用法与其他语言类似，即可以终止当前的循环，但bash shell提供了一个更高级功能，可以通过<span class="strong">break 值</span>的方式跳出多重循环(如果不指定值，默认为1)，如：在两层for语句嵌套中，break 2 可以直接停止外层for语句的循环</p>
+<div class="show">e.g.当b为4时，终止2个for语句的循环
+for (( a = 1; a < 4; a++ )) 
+do 
+   echo "Outer loop: $a" 
+    (( b = 1; b < 100; b++ )) 
+   do 
+   if [ $b -gt 4 ] 
+   then 
+   break 2 #终止外部for语句的循环，如果命令为break则只能终止内部循环
+   fi 
+   echo " Inner loop: $b" 
+ done 
+done
+</div>
+
+<h4 id="continue跳过循环"><a href="#continue跳过循环" class="headerlink" title="continue跳过循环"></a>continue跳过循环</h4><p>continue可以跳过本次循环，continue之后的命令将不再执行而开始下一次循环，与break类似，在多层循环中，bash shell中的continue提供跳过多层循环的功能，其语法为<span class="strong">continue 值</span>，值默认为1</p>
+<div class="show">for (( var1 = 1; var1 < 15; var1++ )) 
+do 
+ if [ $var1 -gt 5 ] && [ $var1 -lt 10 ] 
+ then 
+ continue #如果有多层for，可以指定一个值跳过外层的循环
+ fi 
+ echo "Iteration number: $var1" 
+done
+</div>
+
+<h4 id="处理循环的输出"><a href="#处理循环的输出" class="headerlink" title="处理循环的输出"></a>处理循环的输出</h4><p>在shell脚本中，可以在done命令后添加管道符或重定向符来处理循环的输出</p>
+<div class="show">e.g.将循环的语句"值为xx"写入到文件test.txt中而不显示到终端上，等循环语句写入完毕在终端上显示"数据写入完毕"提示语句
+for (( a = 1; a < 10; a++ )) 
+do 
+ echo "值为 $a" 
+done > test.txt 
+echo "数据写入完毕"
+</div>
+
+<h3 id="字段分隔符"><a href="#字段分隔符" class="headerlink" title="字段分隔符"></a>字段分隔符</h3><p>环境变量IFS，叫作内部字段分隔符（internal field separator）。<br>IFS环境变量定义了bash shell用作字段分隔符的一系列字符。默认情况下，bash shell会将下列字<br>符当作字段分隔符：</p>
+<ul>
+<li>空格</li>
+<li>制表符</li>
+<li>换行符<br>如果bash shell在数据中看到了这些字符中的任意一个，它就会假定这表明了列表中一个新数据字段的开始。在处理可能含有空格的数据（比如文件名）时，这会非常麻烦<br>要解决这个问题，可以在shell脚本中临时更改IFS环境变量的值来限制被bash shell当作字段分隔符的字符。一般会在修改IFS值前保存原来的默认值，使用完后再恢复它</li>
+</ul>
+<div class="show">e.g.文件file每一行保存了一个数据，且数据中可能包含空格和制表符，要使用for循环遍历这些数据，则需要先将IFS修改为换行符，使bash shell忽略空格和制表符，将每一行当作一个整体处理
+file="data"
+ IFS.OLD=$IFS  #保存旧的IFS值
+ IFS=$'\n' 
+for data in $(cat $file) 
+do 
+ echo "数据：$data" 
+done
+ IFS=$IFS.OLD  #恢复IFS值
+</div>
+如果要指定多个IFS字符，只要将它们在赋值行串起来就行。
+IFS=$'\n':;" 
+这个赋值会将换行符、冒号、分号和双引号作为字段分隔符。如何使用IFS字符解析数据没有任何限制。
+
+<pre><code>#!/bin/bash 
+# 提取/etc/passwd文件每个字段的内容
+IFS.OLD=$IFS 
+IFS=$'\n' 
+for entry in $(cat /etc/passwd) 
+do 
+ echo "当前用户整体信息：$entry" 
+ IFS=: 
+ for value in $entry 
+ do 
+ echo " $value" 
+ done 
+done
+</code></pre>
+
+<h3 id="双括号命令"><a href="#双括号命令" class="headerlink" title="(())双括号命令"></a>(())双括号命令</h3><p>双括号命令(( ))在shell中用于进行数学运算和条件判断，并提供了更灵活和方便的方式来处理数值计算和逻辑操作</p>
+<h4 id="数学运算"><a href="#数学运算" class="headerlink" title="数学运算"></a>数学运算</h4><p>双括号命令除了基本的数学运算外，还支持以下运算，且双括号中还支持使用变量</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>num++、++num</td>
+<td>前置/后置的自增</td>
+</tr>
+<tr>
+<td>num–、–num</td>
+<td>前置/后置的自减</td>
+</tr>
+<tr>
+<td>!</td>
+<td>逻辑取反</td>
+</tr>
+<tr>
+<td>~</td>
+<td>按位取反</td>
+</tr>
+<tr>
+<td>**</td>
+<td>冥运算</td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+<td>左位移</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>右位移</td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>位布尔和</td>
+</tr>
+<tr>
+<td>&#124;</td>
+<td>位布尔或</td>
+</tr>
+<tr>
+<td>&amp;&amp;</td>
+<td>逻辑和</td>
+</tr>
+<tr>
+<td>&#124;&#124;</td>
+<td>逻辑或</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="show">(( result = 5 * (3 + 2) ))
+echo "Result of arithmetic operation: $result"</div>
+
+<h4 id="逻辑判断"><a href="#逻辑判断" class="headerlink" title="逻辑判断"></a>逻辑判断</h4><p>双括号命令也常用于if-then等语句的逻辑判断，双括号命令支持<span class="tips">&lt;</span>、<span class="tips">&gt;</span>、<span class="tips">&lt;=</span>、<span class="tips">&gt;=</span>、<span class="tips">==</span>、<span class="tips">!=</span>运算符</p>
+<div class="show">if (( result > 10 )); then
+    echo "The result is greater than 10"
+else
+    echo "The result is not greater than 10"
+fi
+</div>
+
+<h3 id="双方括号命令"><a href="#双方括号命令" class="headerlink" title="[[]]双方括号命令"></a>[[]]双方括号命令</h3><p>双方括号命令提供了针对字符串比较的高级特性，双方括号命令里的表达式支持模式匹配，可以定义正则表达式来匹配字符串，因此该命令在比较字符串时功能很强大：</p>
+<ul>
+<li>支持<span class="tips">&lt;</span>、<span class="tips">&gt;</span>、<span class="tips">==</span>、<span class="tips">!=</span>、<span class="tips">-gt</span>等比较符</li>
+<li>支持<span class="tips">!</span>、<span class="tips">&amp;&amp;</span>、<span class="tips">||</span>等逻辑组合</li>
+<li>支持<span class="tips">-f</span>等文件测试，如：检测文件是否存在，是否为目录等</li>
+<li>支持使用<span class="tips">*</span>、<span class="tips">?</span>等通配符，并使用<span class="tips">=~</span>结合正则表达式进行匹配</li>
+</ul>
+<div class="show">#!/bin/bash 
+if [[ $USER == r* ]] #r*使用模式匹配规则
+then 
+ echo "Hello $USER" 
+else 
+ echo "未知用户" 
+fi
+</div>
+
+<div class="broadcast color-red">
+<div class="iconfont icon-gantanhao"></div>
+bash shell支持双方括号命令，但部分shell可能不支持该命令</div>
+
+<h3 id="脚本控制"><a href="#脚本控制" class="headerlink" title="脚本控制"></a>脚本控制</h3><p>脚本在执行时，终端可以通过kill命令或Ctrl+C等方式发起信号进行进程的暂停、终止操作，这些信号中有一些是可以通过脚本捕获并作相应处理的(如：在被终止时将数据写入文件做好保存，或者无视终止命令继续执行脚本)</p>
+<h4 id="捕获信号"><a href="#捕获信号" class="headerlink" title="捕获信号"></a>捕获信号</h4><div class="apiBox">trap 捕获时执行的命令 信号1 信号2 ...</div>
+
+<ul>
+<li>信号可以是信号值或信号名，但需要是可被捕获的Linux信号</li>
+<li>trap命令也会捕获以下特殊的伪信号</li>
+</ul>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>信号名(信号值)</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>EXIT(0)</td>
+<td>会在脚本退出时执行</td>
+</tr>
+<tr>
+<td>DEBUG</td>
+<td>会在每个命令后都执行一次</td>
+</tr>
+<tr>
+<td>ERR</td>
+<td>当某个命令以非零状态退出时，执行一次(非零状态来自if,while,until语句时不会执行)</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="show">e.g.用户执行Ctrl+C发起SIGINT信号中断脚本执行时，输出信息并继续脚本执行，下下述代码中，echo语句包含空格，所以需要使用双引号引用整个echo语句，其他命令同理。如果命令中包含空格(如：rm -f)则也需要双引号
+#!/bin/bash
+trap "echo '无法通过Ctrl+C停止脚本执行'" SIGINT
+count=1 
+while [ $count -le 10 ] 
+do 
+ echo "循环次数： $count" 
+ sleep 1 
+ count=$[ $count + 1 ] 
+done
+</div>
+
+<h4 id="修改信号捕获"><a href="#修改信号捕获" class="headerlink" title="修改信号捕获"></a>修改信号捕获</h4><p>如果需要在脚本某个阶段修改前面设置的信号捕获语句，只需要重新使用一次trap命令即可</p>
+<div class="show">#!/bin/bash 
+trap "echo '捕获到SIGINT信号执行功能1'" SIGINT 
+count=1 
+while [ $count -le 5 ] 
+do 
+ echo "Loop #$count" 
+ sleep 1 
+ count=$[ $count + 1 ] 
+done 
+trap "echo '此时捕获到SIGINT信号修改为执行功能2'" SIGINT</div>
+
+<h4 id="删除信号捕获"><a href="#删除信号捕获" class="headerlink" title="删除信号捕获"></a>删除信号捕获</h4><p>如果脚本在某个阶段不再需要进行信号捕获了，则可以移除信号捕获，语法为<span class="tips">trap -&zwnj;- 信号</span></p>
+<div class="show">#!/bin/bash
+trap "echo '捕获信号SIGINT'" SIGINT
+.
+. #脚本功能
+.
+trap -&zwnj;- SIGINT #移除信号捕获
+</div>
+
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="创建与调用函数"><a href="#创建与调用函数" class="headerlink" title="创建与调用函数"></a>创建与调用函数</h4><p>shell脚本中创建函数的方法有两种：</p>
+<div class="apiBox">function 函数名 {
+   #函数体
+}</div>
+或
+<div class="apiBox">函数名( ) {
+   #函数体
+}</div>
+
+<p>注意，使用第一种方式定义函数时，函数名和{之间必须有一个空格，否则{可能会被当作函数名的一部分从而报错。调用函数与其他语言类似，只是不需要括号，直接执行函数名即可，同样，shell中的函数需要在调用前的代码中创建，否则抛出command not found错误。函数可以同名，后面的函数会覆盖前面的函数，函数调用方法为：<br><span class="strong">函数名 参数1 参数2 …</span></p>
+<h4 id="变量的作用域"><a href="#变量的作用域" class="headerlink" title="变量的作用域"></a>变量的作用域</h4><p>在shell中，变量也分为全局变量和局部变量</p>
+<h5 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h5><p>与其他语言有所不同，shell中的全局变量作用域为定义之后的整个脚本代码，即使是函数内部定义的变量，在函数外依旧有效。若无特殊声明，脚本中定义的变量默认为全局变量。</p>
+<div class="show">e.g.函数内定义的变量，函数外也可以访问
+#! /bin/bash
+function test {
+   string="手写的从前"
+}
+test
+echo "函数外也可以获取全局变量：$string"
+</div>
+
+<h5 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h5><p>shell中的局部变量需要使用<span class="tips">local</span>关键字声明。局部变量如果在函数内部声明，则其作用域只在函数中，如果函数外部存在一个同名变量，二者互不干扰</p>
+<div class="show">e.g.想要变量作用域为局部，需要使用local关键字声明
+#! /bin/bash
+function test {
+   local string="手写的从前"
+   echo "函数内可以获取到变量值：$string"
+}
+test
+echo "函数外无法获取该变量：$string" #为空值
+</div>
+
+
+<h4 id="函数返回值与输出"><a href="#函数返回值与输出" class="headerlink" title="函数返回值与输出"></a>函数返回值与输出</h4><h5 id="默认退出状态码"><a href="#默认退出状态码" class="headerlink" title="默认退出状态码"></a>默认退出状态码</h5><p>bash shell会把函数当作一个小型脚本，运行结束时会返回一个退出状态码。与其他命令一样，在函数执行结束后，可以用shell中的预定义变量<span class="tips">$?</span>来确定函数的退出状态码。默认情况下，函数的退出状态码是函数中<span class="tips">最后一条命令</span>返回的退出状态码。注意，函数的默认退出状态码只看最后一条命令的退出状态，其他命令执行正确与否无法获悉，因此该方法应用场景有限。此外，就像脚本的返回值可以使用exit修改一样，函数的返回值可以使用return语句修改</p>
+<div class="show">e.g.函数func的退出状态码为最后一条命令ls的退出状态码，如果none.txt文件不存在，则函数的退出状态码为1，该状态码可以用$?调用
+#!/bin/bash
+func() { 
+ echo "执行函数" 
+ ls -l none.txt 
+}
+func
+echo "该函数的退出状态码为 $?" #none.txt文件不存在，输出值为1
+2. 可以使用return修改该返回值，即便ls命令未正确执行
+#!/bin/bash
+func() { 
+ echo "执行函数" 
+ ls -l none.txt 
+ return 0
+}
+func
+echo "该函数的退出状态码为 $?" #此时return语句才是脚本最后一条命令，$?将输出为0
+</div>
+
+<h5 id="return命令修改状态码"><a href="#return命令修改状态码" class="headerlink" title="return命令修改状态码"></a>return命令修改状态码</h5><p>shell支持使用<span class="tips">return</span>命令来返回指定的退出状态码，状态码支持<span class="tips">0-255</span>之间的整数值，该状态码同样可以使用<span class="tips">$?</span>获得。与exit命令指定的脚本退出状态码类似，如果return命令指定的退出状态码大于255，会输出该值被256取模后的结果</p>
+<div class="show">e.g.如果函数返回值大于255，则会返回一个错误的值
+#!/bin/bash
+function getDouble {
+   read -p "输入一个值：" value #输入200
+   return $[ $value * 2]
+}
+getDouble
+echo "函数的返回值为 $?" #输出值为144：400%256=144
+</div>
+
+<h5 id="函数输出"><a href="#函数输出" class="headerlink" title="函数输出"></a>函数输出</h5><p>shell支持将命令的输出赋值给变量，同样也支持将函数的输出值赋值给变量，通过该方法我们可以将任何类型的数据作为函数输出，然后通过反引号<span class="tips">``</span>或<span class="tips">$( )</span>调用函数，并将获取的函数输出值保存到变量中，该方法相比于return语句功能更加强大。但注意，通过该方法从函数中输出的值并不会作为函数的退出状态码，也无法被<span class="tips">$?</span>捕获</p>
+<div class="show">e.g.函数中read等命令的提示语句并不会作为函数输出一部分
+#!/bin/bash
+function getDouble { 
+ read -p "输入值：" value #不输出提示语句给result变量
+ echo $[ $value * 2 ] #输入10
+}
+result=$(getDouble)
+echo "函数输出值为 $result" #输出result为20
+echo "函数的退出状态码为$?" #输出状态码为0
+</div>
+
+<h4 id="函数传参"><a href="#函数传参" class="headerlink" title="函数传参"></a>函数传参</h4><p>由于bash shell会将函数当作小型脚本来对待，因此可以像命令传参一样给函数传入参数，并使用<span class="tips">$1、$2</span>等位置变量来读取传入函数的参数。</p>
+<p>由于函数内部也使用$1、$2等变量来引用函数的参数，因此脚本中的$1、$2等位置变量无法在函数内部使用，即函数中无法直接通过位置变量来读取脚本传入的参数。要在函数中使用脚本传入的参数，则需要在调用函数时手动将它们传过去</p>
+<div class="show">e.g.为脚本test传入两个参数，并在函数中进行求和
+#!/bin/bash
+function add { 
+   if [ $# -ne 2 ] #判断函数参数数量
+   then 
+   echo -1 
+   else
+   echo $[ $1 + $2 ] #这是函数的位置变量$1 $2
+   fi
+}
+value=$(<span class="text-red">add $1 $2</span>) #这是脚本的位置变量$1 $2
+echo "函数计算结果为：$result"
+执行该脚本时
+./test 10 20
+</div>
+
+<h4 id="传递数组参数"><a href="#传递数组参数" class="headerlink" title="传递数组参数"></a>传递数组参数</h4><p>shell中，给函数传递数组，不能像C语言一样直接传递数组名(数组首地址)，这样只会传递第一个值。需要使用<span class="tips">${数组名[@]}</span>将所有数组元素传递过去，然后在函数中使用<span class="tips">$@</span>获取所有的数组元素</p>
+<p>理论上通过<span class="tips">${数组名[*]}</span>也可以传递数组元素，或用<span class="tips">$*</span>接收，但<span class="tips">$*</span>会将所有数组元素视为一个整体，在使用for-in等语句遍历时可能出现问题</p>
+<div class="show">e.g.传递数组
+#! /bin/bash
+function test {
+ echo '$@的值为'$@
+ for value in $@
+ do
+   echo "当前值为：$value"
+ done
+}
+array=(10 20 30 40)
+test ${array[@]}
+e.g.如果使用$*，所有数组元素会被视为一个整体
+function test {
+<span class="text-red">#使用该语句，依旧会把元素一个一个遍历出来，这是因为即便$*使用空格作为元素分隔符，for语句会自动识别空格分隔的数据并遍历
+ for value in $*</span>
+<span class="text-blue">#使用双引号包裹$*，for语句就只执行一次了
+for value in "$*"</span>
+<span class="text-green">#而对于$@，无论加不加双引号，for语句都会依次遍历出数组里的元素
+for value in "$@"</span>
+ do
+   echo "当前值为：$value"
+ done
+}
+array=(10 20 30 40)
+test ${array[*]}
+</div>
+
+<h4 id="返回数组"><a href="#返回数组" class="headerlink" title="返回数组"></a>返回数组</h4><p>从函数返回数组时，也不能直接返回数组地址，而是需要通过<span class="tips">echo</span>语句输出<span class="tips">${数组名[@]}</span>(数组元素)，然后通过<span class="tips">命令替换</span>等方式在脚本中调用函数，并在命令替换时在外层加上<span class="tips">( )</span>将其转换为一个数组</p>
+<div class="show">e.g.传入一个数组，反序输出
+<code>#! /bin/bash
+function test &#123;
+#echo "函数开始执行----------" 
+ local newArray
+  local index=$[$#-1] #获取函数接收的参数个数并-1
+  for value in $@
+   do
+    newArray[$index]=$value
+    index=$[$&#123;index&#125;-1]
+   done
+echo $&#123;newArray[@]&#125;
+&#125;
+array=(10 20 30 40 50)
+<span class="text-red">result=($(test $&#123;array[@]&#125;))</span>
+echo "返回值result $result"</code>
+注意：
+1.bash在使用命令替换时，会将捕获的结果作为一个字符串返回。上述代码中，命令替换外层加了个小括号()，在没有括号的情况下，result存储的是一个字符串，添加小括号后，result存储的结果将被转换为数组
+2. bash在使用命令替换时会捕获所有命令的标准输出，如果在test函数中有除了输出数组元素以外的语句，也会被捕获，并被赋值给result。由于shell支持不同类型的数据都作为同一数组的元素，因此所有输出信息都将作为数组元素，这可能会对之后使用该数组造成影响，因此，返回数组的函数，尽量不要输出多余的信息。如：如果test函数第一行被注释的echo语句正常输出，则该语句信息将作为result的数组元素
+3. 命令替换会捕获所有标准输出语句，且不显示到屏幕上，因此执行result=($(test ${array[@]}))语句时，虽然函数被执行了，但不会有任何屏幕输出，这些输出信息会在使用echo输出result的结果时，才会被输出到屏幕上
+</div>
+
+<h4 id="创建库"><a href="#创建库" class="headerlink" title="创建库"></a>创建库</h4><p>如果需要在多个脚本中频繁使用同一段代码，可以将这段代码封装为函数库，然后在多个脚本中调用该库文件。但在shell中，如果直接调用或执行该文件，shell会创建一个新的shell并在其中执行该库文件中的代码，而函数的作用域仅限于定义它的shell会话，因此在其他脚本中将无法调用这些函数。</p>
+<p>shell提供了<span class="tips">source</span>命令用于解决该问题，source命令会在当前shell上下文中执行命令，这样脚本就可以使用库中的函数了。source命令有个快捷别名，称为<span class="tips">点操作符</span>，命令也可以用<span class="tips">.</span>号代替，语法格式为：<br><span class="strong">. 库文件路径</span></p>
+<div class="show">e.g.在myfunc.sh定义了两个函数，在test.sh中调用这两个函数
+<span class="strong">文件路径：/myShell/myfunc.sh</span>
+<code>#!/bin/bash
+function add &#123;
+ if [ $# -ne 2 ]
+  then
+  echo "参数输入错误"
+ else
+  echo $[$1+$2]
+ fi
+&#125;
+function sub &#123;
+ if [ $# -ne 2 ]
+  then
+  echo "参数输入错误"
+ else
+  echo $[$1-$2]
+ fi
+&#125;</code>
+<span class="strong">文件路径：/myShell/test.sh</span>
+<code>#!/bin/bash
+<span class="text-red">#注意：无论使用.号还是source，命令后都需要添加一个空格，路径用相对路径或绝对路径均可</span>
+<span class="text-blue">. ./myfunc.sh</span>
+<span class="text-green">source /myShell/myfunc.sh</span>
+echo "求和运算：$(add 10 20)"
+echo "求差运算：$(sub 20 10)"</code>
+</div>
+
+<h4 id="在命令行中使用函数"><a href="#在命令行中使用函数" class="headerlink" title="在命令行中使用函数"></a>在命令行中使用函数</h4><p>函数也可以在命令行中创建和调用，命令行中创建的函数可以在整个系统中被调用，直到当前shell退出。<span class="tips">注意，如果命名时函数名和shell的内建命令同名，则内建命令的功能会被函数功能覆盖！</span></p>
+<p>在命令行中定义函数的方法有两种：</p>
+<ol>
+<li><p>以单行方式定义，需要在每个命令后都加上分号<span class="tips">;</span>，以便shell区分命令的起止</p>
+<div class="show">定义：
+function test { pwd; ls; echo $[ $1 / $2 ]; }
+调用：
+test 100 50
+</div></li>
+<li><p>以多行方式定义，定义时，bash会使用次提示符提示输入更多命令，该方式不需要在命令后添加分号，直接回车即可，最后输入花括号<span class="tips">}</span>告知shell函数输入完毕</p>
+<div class="show">定义：
+function add { 
+&gt; echo $[ $1 + $2 ] 
+&gt; } 
+调用：
+add 2 5
+</div></li>
+</ol>
+<h4 id="在-bashrc文件中定义函数"><a href="#在-bashrc文件中定义函数" class="headerlink" title="在.bashrc文件中定义函数"></a>在.bashrc文件中定义函数</h4><p>在命令行中定义的函数，在shell退出时函数也会随之失效，如果希望某个函数在shell启动时也随之被加载进内存，方便在全局调用，则可以将该函数写入<span class="tips">$HOME/.bashrc</span>文件，一般情况下，bash以登录交互式shell启动，或以非登录交互式shell启动都会载入该文件。绝大部分Linux发行版都已经在.bashrc文件中定义了一些函数，注意小心修改，将新添加的函数写于文件末尾即可。也可以将新写的函数写于一个单独的文件中，然后在.bashrc文件中使用source命令载入。</p>
+<p>通过该方式从.bashrc文件载入的函数，可以在命令行中全局调用，但无法在脚本中使用，这是由于脚本执行时启动的非交互式shell不会读取.bashrc文件，函数也不会从父shell中继承。如果需要某个函数在脚本中也可以被直接调用，可以用以下方法：</p>
+<ul>
+<li>在脚本中使用source命令引入.bashrc文件</li>
+<li>如果不想引入.bashrc文件，则在.bashrc文件中定义完函数后，可以用<span class="tips">export -f</span>命令将函数导出为环境变量，这样执行脚本时创建的非交互式shell将能从父shell继承该函数，然后在脚本中直接调用</li>
+</ul>
+<div class="show">e.g.为了避免修改$HOME/.bashrc，因此将某个常用的函数定义于$HOME/myfunc文件中，然后在$HOME/.bashrc引入，然后尝试在某个脚本中直接调用。这里直接以root账户举例
+<span class="strong">创建文件/root/myfunc用于存放自定义函数</span>
+<code>function myTest1 &#123;
+ echo "函数myTest1被调用"
+ &#125;
+ function myTest2 &#123;
+ echo "函数test2被调用"
+ &#125;
+export -f myTest1 #导出其中一个函数</code>
+<span class="strong">在文件/root/.bashrc末尾引入myfunc文件</span>
+<code>if [ -f /root/myfunc ];then
+        . /root/myfunc
+fi</code>
+<span class="strong">/myShell/test.sh</span>
+<code>#!/bin/bash
+echo "脚本开始执行"
+myTest1 #被导出的函数可以在非交互式shell执行的脚本中直接使用
+myTest2 #未被导出为环境变量的函数则提示command not found</code>
+</div>
+
+<h3 id="脚本合集"><a href="#脚本合集" class="headerlink" title="脚本合集"></a>脚本合集</h3><h4 id="判断发行版"><a href="#判断发行版" class="headerlink" title="判断发行版"></a>判断发行版</h4><pre><code>#!/bin/bash  
+
+os_name="undefined"
+os_version="0.0"
+
+# 检查 /etc/os-release 文件是否存在  
+if [ -f /etc/os-release ]; then  
+    . /etc/os-release  
+    os_name=$NAME
+    os_version=$VERSION
+    echo "发行版: $NAME"  
+    echo "版本: $VERSION"  
+else  
+    # 作为替代，检查其他可能的文件  
+    if [ -f /etc/lsb-release ]; then  
+        . /etc/lsb-release  
+    os_name=$DISTRIB_ID
+    os_version=$DISTRIB_RELEASE
+        echo "发行版: $DISTRIB_ID"  
+        echo "版本: $DISTRIB_RELEASE"  
+    elif [ -f /etc/debian_version ]; then  
+        os_name="Debian"
+    echo "发行版：Debian"
+        echo "版本未知，以下为/etc/debian_version文件内容:"
+        cat /etc/debian_version    
+    elif [ -f /etc/centos-release ]; then  
+    os_name="CentOS"
+        echo "发行版：CentOS"  
+        cat /etc/centos-release  
+    elif [ -f /etc/redhat-release ]; then
+    os_name="redhat"
+        echo "发行版：redhat或centOS"
+    else        
+        echo "未知发行版"  
+    fi  
+fi</code></pre>
+
+        </div>
+    </div>
+    <div class="post-nav">
+        
+            <div class="post-prev ">
+                <a href="/blog/2022/02/23/Centos%E9%98%B2%E7%81%AB%E5%A2%99/">上一篇：Redhat防火墙</a>
+            </div>
+            
+            
+                <div class="post-next">
+                    <a href="/blog/2021/12/29/LinuxShell%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8/">下一篇：Shell介绍与使用 </a>
+                </div>
+                 
+    </div>
+    <div class="container">
+        <!--设计来源于B站-季夏小贞-->
+        <div class="bigHead"></div>
+        <div class="ears"></div>
+        <div class="body"></div>
+        <div class="paws-front"></div>
+        <div class="paws-back"></div>
+        <div class="details"></div>
+        <div class="tail"></div>
+        <div class="sleep">
+          <span class="s1">z</span>
+          <span class="s2">z</span>
+          <span class="s3">z</span>
+          <span class="s4">z</span>
+          <span class="s5">z</span>
+        </div>
+    </div>
+</div>
+<div class="right-menu">
+    <a class="iconfont backTop" href="javascript:">&#xe655;</a>
+    <div class="husky"></div>
+  </div>
+</div>
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/index.js"></script>
+<script src="/blog/js/highlight.min.js"></script>
+<script src="/blog/js/highlightjs-line-numbers.min.js"></script>
+<script src="/blog/js/article.js"></script>
+
+</body></html>

@@ -1456,18 +1456,19 @@ CDN不稳地，因此该页面弃用了CDN
         "    ┴┴  ─┴┘┴  └─┘┴ ┴┴└┴┘┴",
         "shiwivi.com"
       ].join('\n'));
-      let tabs = document.getElementsByName('tabs');
-      for (let i = 0; i < tabs.length; i++) {
-        tabs[i].addEventListener('click', function (e) {
-          const progress = document.querySelector('.progressBar');
+      const tabs = document.getElementsByName('tabs');
+      const progress = document.querySelector('.progressBar');
+      function setProgressBar(){
           let totalScrollHeight = document.body.scrollHeight - document.documentElement.clientHeight;
           window.onscroll = function () {
             let hasScrollHeight = document.body.scrollTop || document.documentElement.scrollTop;
             let progressLength = (hasScrollHeight / totalScrollHeight) * 100;
             progress.style.width = `${progressLength}%`
           }
-          e.stopPropagation()
-        }, false)
+      }
+      setProgressBar();
+      for (let i = 0; i < tabs.length; i++) {
+        tabs[i].addEventListener('click', setProgressBar)
       }
     </script>
   </body></html>

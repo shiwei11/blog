@@ -2,7 +2,7 @@
  * @Author: SHIWIVI
  * @Date: 2021-08-30 03:11
  * @Last Modified by: SHIWIVI
- * @Last Modified time: 2024-04-17 11:36:54
+ * @Last Modified time: 2024-07-20 09:57:37
  */
 const { PI, cos, sin, tan, abs, sqrt, pow, min, max, ceil, floor, round, random, atan2 } = Math;
 const getRandom = (min, max) => random() * (max - min) + min;
@@ -243,11 +243,11 @@ if (window.localStorage.getItem("webTheme") === "light" && random() > .9) {
 window.addEventListener("resize", () => {
     if (window.innerWidth < 800) {
         menuBtn.classList.remove("closed");
-        nav.classList.add("left_move");
+        nav.classList.add("left-move");
     }
     else {
         menuBtn.classList.add("closed");
-        nav.classList.remove("left_move");
+        nav.classList.remove("left-move");
     }
 })
 
@@ -256,12 +256,12 @@ let initFont = 16;
 fontSizeNum.innerText = initFont + "px";
 addFont.addEventListener("click", () => {
     initFont > 20 ? 20 : initFont++;
-    (document.querySelector(".art_content") || main).style = "font-size:" + initFont + "px";
+    (document.querySelector(".art-content") || main).style = "font-size:" + initFont + "px";
     fontSizeNum.innerText = initFont + "px";
 });
 reduceFont.addEventListener("click", () => {
     initFont < 14 ? 14 : initFont--;
-    (document.querySelector(".art_content") || main).style = "font-size:" + initFont + "px";
+    (document.querySelector(".art-content") || main).style = "font-size:" + initFont + "px";
     fontSizeNum.innerText = initFont + "px";
 })
 
@@ -379,17 +379,17 @@ $(function () {
     $(".menuBtn").click(function () {
         if ($(".menuBtn").hasClass("closed")) {
             $(".menuBtn").removeClass("closed");
-            $(".nav").addClass("left_move");
+            $(".nav").addClass("left-move");
         }
         else {
             $(".menuBtn").addClass("closed");
-            $(".nav").removeClass("left_move");
+            $(".nav").removeClass("left-move");
         }
     });
     //移动端自动关闭菜单栏
     if (($(document).innerWidth()) < 420) {
-        if (!($(".nav").hasClass("left_move"))) {
-            $(".nav").addClass("left_move");
+        if (!($(".nav").hasClass("left-move"))) {
+            $(".nav").addClass("left-move");
             $(".menuBtn").removeClass("closed");
         }
     }

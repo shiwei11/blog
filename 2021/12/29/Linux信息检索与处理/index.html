@@ -1,0 +1,2355 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="SHIWIVI"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let texts=document.querySelector('.text').querySelectorAll('span');let timer=setInterval(()=>{texts.forEach((item)=>{item.classList.toggle("dance")})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script><title>SHIWIVI-文章</title>
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
+
+<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="/blog/css/article.css">
+<link rel="stylesheet" href="/blog/css/atelier-cave.min.css">
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="SHWIVI's blog" type="application/atom+xml">
+</head>
+<body>
+<div class="nav">
+    <div class="card">
+        <div class="head">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
+        </div>
+        <div class="cardText">
+            <p>(ー`´ー)</p>
+            <p>那不是bug，是彩蛋</p>
+        </div> 
+    </div>
+    <ul class="label">
+        
+        <li><a href="/blog/index.html">首页</a></li>
+        
+        <li><a href="/blog/life">日常</a></li>
+        
+        <li><a href="/blog/record">一句</a></li>
+        
+        <li><a href="/blog/message">留言</a></li>
+        
+        <li><a href="/blog/about">关于</a></li>
+          
+    </ul>
+        <ul class="tag">
+            <li>#Document</li>
+            <li>#Java</li>
+            <li>#css</li>
+            <li>#Life</li>
+            <li>#Lua</li>
+            <li>#PCB</li>
+            <li>#Shell</li>
+            <li>#C</li>
+            <li>#html</li>
+            <li>#硬件</li>
+            <li>#javaScript</li>
+            <li>#Firewall</li>
+            <li>#Security</li>
+            <li><a href="/blog/tags/Linux">#Linux</a></li>
+            <li>#Python</li>
+            <li>#Serve</li>
+            <li>#Web</li>
+        </ul>
+    <div class="rsstag"><a href="/blog/atom.xml"><span class="iconfont icon-rss"></span>RSS订阅</a></div>
+<div class="flower">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84.6px" height="70.5px" viewBox="0 0 254 212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>窗</title>
+<desc>Created with Sketch.</desc>
+<defs></defs>
+<g id="植物" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Artboard" transform="translate(-885.000000, -503.000000)">
+        <g id="植物-紫色盆" transform="translate(882.000000, 500.000000)">
+            <ellipse id="Oval-12" fill="#B3B7C7" cx="140.5" cy="137" rx="39.5" ry="6"></ellipse>
+            <g id="Group-5">
+                <path d="M131.5,149 C137.746054,149 138.400559,136.953074 140.297813,118.503702 C141.504079,106.77367 149.145158,88.1140929 147,75 C142.297813,46.2539062 153.271934,32.5660626 150.170125,19.4282488 C148.031314,10.3692495 142.862042,3 131.5,3 C123.603887,3 113.698654,6.59314895 110.722909,11.2157433 C103.206874,22.8913341 114,46.5137576 114,75 C114,90.4435309 122.495151,106.751425 123.699377,118.476362 C125.595832,136.941172 125.250862,149 131.5,149 Z" id="Oval-11" fill="#BAC4F6"></path>
+                <path d="M135.5,146.5 C132.598908,121.877878 130.965369,104.566553 130.599381,94.5660242 C130.050399,79.5652312 132.963841,77.0580598 132.164069,55.3464601 C131.630888,40.8720602 130.242865,30.4232402 128,24" id="Line-15" stroke="#FFFFFF" stroke-width="2" opacity="0.800892857" stroke-linecap="square"></path>
+                <path d="M77.0442201,163.336077 C84.2239219,163.336077 101.067658,131.237823 101.067658,92.025606 C101.067658,52.8133888 90.9057581,-2.32627732 72.6560979,17.2440872 C50.0508064,41.4852946 69.5871262,36.5862429 74.0442201,63.8595149 C75.572858,73.2133576 77.0442201,94.5993942 77.0442201,104.613421 C77.0442201,143.825638 69.8645184,163.336077 77.0442201,163.336077 Z" id="Oval-9" fill="#BAC4F6" transform="translate(81.510722, 88.251316) rotate(-43.000000) translate(-81.510722, -88.251316) "></path>
+                <path d="M42.5,50.5 C47.5132933,48.8699207 59.3816332,57.6317857 78.1050199,76.785595 C96.8284065,95.9394043 113.960067,116.844206 129.5,139.5" id="Line-17" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M155.281006,152.144255 C162.116643,152.144255 178.153197,121.584207 178.153197,84.2511084 C178.153197,72.6051871 184.354199,51.8242671 182.531201,39.8465879 C178.51025,13.4276595 163.058175,0.233079666 151.10317,13.0532528 C129.581164,36.1327785 143.297279,29.7382802 147.540781,55.7045685 C148.996164,64.6101585 153.500382,80.3852665 153.500382,89.9194035 C153.500382,127.252502 148.445368,152.144255 155.281006,152.144255 Z" id="Oval-9-Copy-2" fill="#E9EDFD" transform="translate(161.092971, 80.123972) scale(-1, 1) rotate(-20.000000) translate(-161.092971, -80.123972) "></path>
+                <path d="M180.5,34.5 C181.290102,21.4892162 175.746138,28.9223292 163.868108,56.7993391 C157.546037,71.6368512 150.532373,85.3308057 144.827114,101.881203 C141.023608,112.914801 138.581237,128.787733 137.5,149.5" id="Line-20" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M60.3426107,183.894782 C69.2498271,183.894782 90.1463498,156.072081 90.1463498,122.083011 C90.1463498,88.0939419 67.5408019,29.4364067 54.8986583,57.2625442 C45.0326912,78.978146 51.0912584,74.0282851 56.6207779,97.6687014 C58.5172227,105.776593 67.8616068,124.363423 67.8616068,133.043561 C67.8616068,167.032631 51.4353942,183.894782 60.3426107,183.894782 Z" id="Oval-9-Copy" fill="#BAC4F6" transform="translate(69.895982, 116.944107) rotate(-71.000000) translate(-69.895982, -116.944107) "></path>
+                <path d="M24.5,109.5 C22.4991751,103.669523 35.0833631,105.49608 62.2525641,114.979669 C79.4278854,120.974828 92.103247,119.378882 106.278649,126.191831 C111.777518,128.834684 120.517968,134.937407 132.5,144.5" id="Line-19" stroke="#FFFFFF" stroke-width="2" opacity="0.595424107" stroke-linecap="square"></path>
+                <path d="M169.495543,159.559977 C178.40276,159.559977 199.299282,131.737276 199.299282,97.7482062 C199.299282,85.7856682 202.004463,66.329956 197.824033,53.1018748 C190.126639,28.745108 172.2443,14.8950801 164.051591,32.9277389 C154.185624,54.6433407 160.244191,49.6934798 165.77371,73.3338961 C167.670155,81.4417878 177.014539,100.028618 177.014539,108.708756 C177.014539,142.697825 160.588327,159.559977 169.495543,159.559977 Z" id="Oval-9-Copy-3" fill="#BAC4F6" transform="translate(179.479352, 92.134636) scale(-1, 1) rotate(-43.000000) translate(-179.479352, -92.134636) "></path>
+                <path d="M213.5,60.5 C209.183273,60.8948914 201.740861,65.4428024 191.172763,74.1437328 C175.320617,87.1951284 177.797205,83.2393994 161.560337,103.262986 C150.735758,116.612043 142.715646,131.024381 137.5,146.5" id="Line-21" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M81.1425752,168.630026 C85.1025169,165.536181 98.2051544,147.96348 98.2051544,111.236918 C98.2051544,74.5103552 86.0176544,46.7369177 70.0176544,46.7369177 C54.0176544,46.7369177 59.5351666,70.3889964 66.8400325,93.0530589 C69.6371249,101.731312 78.9791535,122.814465 81.0032985,132.88325 C84.2653955,149.110029 78.6989273,170.539213 81.1425752,168.630026 Z" id="Oval-10" fill="#E9EDFD" transform="translate(78.936475, 107.743055) rotate(-52.000000) translate(-78.936475, -107.743055) "></path>
+                <path d="M39.5,84.5 C46.5402399,84.832105 55.9862242,87.7506309 67.8379528,93.2555776 C85.6155457,101.512998 79.9127462,96.6348296 100.298442,112.739947 C113.888906,123.476691 125.956092,135.063376 136.5,147.5" id="Line-18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M194.823347,177.534556 C197.785465,175.220296 209.085075,165.125173 213.530819,146.109724 C215.496552,137.701844 211.555235,124.000271 211.555235,111.853141 C211.555235,72.2337887 199.639103,43.8487815 182.378853,43.8487815 C165.118604,43.8487815 168.053621,58.2764613 175.933859,82.7256721 C183.814096,107.174883 191.693317,118.61017 193.876895,129.472028 C197.395933,146.976919 192.187224,179.594121 194.823347,177.534556 Z" id="Oval-10-Copy-2" fill="#E9EDFD" transform="translate(191.881132, 110.738214) scale(-1, 1) rotate(-52.000000) translate(-191.881132, -110.738214) "></path>
+                <path d="M237.5,84.5 C231.839918,82.6252532 222.387737,84.7837206 209.143456,90.9754021 C189.277034,100.262925 198.344222,96.9653923 174.587666,113.911421 C158.749962,125.208774 147.387407,137.071634 140.5,149.5" id="Line-22" stroke="#FFFFFF" stroke-width="2" opacity="0.785044643" stroke-linecap="square"></path>
+                <path d="M102.095097,154.049614 C106.979303,150.233654 123.140143,128.559423 123.140143,83.2607523 C123.140143,37.9620813 108.108037,3.70622602 88.3735811,3.70622602 C68.639125,3.70622602 75.4444439,32.8787829 84.4542911,60.8327171 C87.9042347,71.5365054 99.4267255,97.5405402 101.923313,109.959415 C105.946795,129.97358 99.0810936,156.404412 102.095097,154.049614 Z" id="Oval-10-Copy" fill="#E9EDFD" transform="translate(99.374086, 78.951409) rotate(-21.000000) translate(-99.374086, -78.951409) "></path>
+                <path d="M70.5,27.5 C77.9697854,36.2141564 84.664658,44.2949462 90.5846178,51.7423694 C99.4645574,62.9135043 102.309139,65.8595669 108.078018,74.773869 C113.846897,83.6881711 108.232283,69.1486166 118.500716,94.8794382 C125.346337,112.033319 129.012765,128.573507 129.5,144.5" id="Line-16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M193.001521,189.153265 C198.929205,189.153265 212.83568,162.652399 212.83568,130.278124 C212.83568,97.9038493 204.210737,49.7003434 189.378612,68.5372278 C174.540517,87.3816949 180.150684,86.5530431 183.830536,109.070321 C185.092606,116.793013 193.001521,132.403088 193.001521,140.670839 C193.001521,173.045114 187.073837,189.153265 193.001521,189.153265 Z" id="Oval-9-Copy-4" fill="#BAC4F6" transform="translate(196.248002, 126.727326) scale(-1, 1) rotate(-73.000000) translate(-196.248002, -126.727326) "></path>
+                <path d="M234.5,116.5 C229.435614,115.997419 220.043174,117.148484 206.322678,119.953197 C185.741934,124.160265 185.201799,123.9696 168.145826,131.063968 C156.775178,135.793546 148.226569,140.93889 142.5,146.5" id="Line-23" stroke="#FFFFFF" stroke-width="2" opacity="0.733426339" stroke-linecap="square"></path>
+            </g>
+            <g id="Group-4" transform="translate(101.000000, 137.000000)">
+                <path d="M0,0 C11.7955729,2 24.5052083,3 38.1289062,3 C51.7526042,3 65.3763021,2 79,0 L71.2109375,75.3409091 C61.9375,77.1136364 51.8945312,78 41.0820312,78 C30.2695313,78 19.4570312,77.1136364 8.64453125,75.3409091 L0,0 Z" id="Rectangle-9" fill="#FCDCCF"></path>
+                <path d="M59.2621996,2.19791001 C63.6483775,1.86496527 70.2276443,1.1323286 79,0 L71.2109375,75.3409091 C63.3055851,76.5844933 57.2271178,77.3450382 52.9755357,77.6225437 L59.2621996,2.19791001 Z" id="Rectangle-9" fill="#ECC6B6"></path>
+                <path d="M0,0 C10.9588352,1.33333333 23.3572727,2 37.1953125,2 C51.0333523,2 64.9682481,1.33333333 79,0 L76.7909585,21.3672948 L40.573652,23.0934676 L2.38711382,20.8047516 L0,0 Z" id="Rectangle-9" fill="#F3B096"></path>
+            </g>
+        </g>
+    </g>
+</g>
+</svg>
+</div>
+
+</div>
+<div class="menuBtn closed"> 
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+</div>
+<div class="nightSky"><!--当关闭夜间背景模式时，子元素将在一段延时后才会被清除--></div>
+<div class="main">
+    <div class="msg">
+        <div class="msgText"></div>
+        <div class="msgBar"></div>
+    </div>
+    <div class="motto">
+        <p> //sunny forever<br />
+            while(life&lt;end){<br />
+               love++;<br />
+               beAwesome :)} </p>
+     </div>
+     <div class="mainContent">
+    <div class="canvasWrapper"></div>
+<div class="setWrapper">
+    <ul class="setMenu">
+        <div id="setBtn" class="setButton"><</div>
+        <li class="searchContainer">
+            <input id="searchInput" class="localSearch" placeholder="搜索..." type="search" >
+            <span class="searchIco"></span>
+        </li>
+        <li id="toggleItem">
+        主题：<span class="itemIco sun"></span>
+        </li>
+        <li class="setSize">
+            <span id="increaseFontSize">+</span>
+            <span class="fontSizeNum"></span>
+            <span id="reduceFontSize">-</span>
+        </li>
+        <li id="clearBack">清除背景</li>
+        <li id="disableBack">禁用背景</li>
+    </ul> 
+</div>
+    <div class="resultContainer">
+        <div id="searchResult" class="displayResult"></div>
+    </div>
+    <div class="tocWrapper"><div class="tocBtn">目 录</div><div class="tocBox"><!--tocBox用于容纳生成在toc外的目录--><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">数据处理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#grep%E6%95%B0%E6%8D%AE%E6%9F%A5%E6%89%BE"><span class="toc-number">1.1.</span> <span class="toc-text">grep数据查找</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sort%E6%8E%92%E5%BA%8F%E5%A4%84%E7%90%86"><span class="toc-number">1.2.</span> <span class="toc-text">sort排序处理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#shuf%E9%9A%8F%E6%9C%BA%E6%8E%92%E5%88%97-shuffles"><span class="toc-number">1.3.</span> <span class="toc-text">shuf随机排列(shuffles)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#uniq%E5%88%A0%E9%99%A4%E9%82%BB%E8%BF%91%E9%87%8D%E5%A4%8D%E8%A1%8C-uniquify"><span class="toc-number">1.4.</span> <span class="toc-text">uniq删除邻近重复行(uniquify)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#comm%E9%80%90%E8%A1%8C%E6%AF%94%E8%BE%83%E4%B8%A4%E4%B8%AA%E6%8E%92%E5%BA%8F%E5%A5%BD%E7%9A%84%E6%96%87%E4%BB%B6"><span class="toc-number">1.5.</span> <span class="toc-text">comm逐行比较两个排序好的文件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%BA%E5%9F%9F%E6%93%8D%E4%BD%9C"><span class="toc-number">2.</span> <span class="toc-text">区域操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#cut%E6%89%93%E5%8D%B0%E6%96%87%E6%9C%AC%E8%A1%8C%E7%9A%84%E6%8C%87%E5%AE%9A%E9%83%A8%E5%88%86"><span class="toc-number">2.1.</span> <span class="toc-text">cut打印文本行的指定部分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#paste%E5%90%88%E5%B9%B6%E6%96%87%E4%BB%B6%E8%A1%8C"><span class="toc-number">2.2.</span> <span class="toc-text">paste合并文件行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#join-%E6%8C%89%E5%AD%97%E6%AE%B5%E5%90%88%E5%B9%B6%E6%96%87%E4%BB%B6"><span class="toc-number">2.3.</span> <span class="toc-text">join 按字段合并文件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sed%E6%B5%81%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">3.</span> <span class="toc-text">sed流编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">3.1.</span> <span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#sed%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="toc-number">3.1.1.</span> <span class="toc-text">sed的工作流程</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#sed%E5%91%BD%E4%BB%A4"><span class="toc-number">3.2.</span> <span class="toc-text">sed命令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4"><span class="toc-number">3.2.1.</span> <span class="toc-text">文本处理命令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E8%BE%93%E5%85%A5%E6%96%B9%E5%BC%8F"><span class="toc-number">3.2.2.</span> <span class="toc-text">文本输入方式</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E8%BD%AC%E4%B9%89"><span class="toc-number">3.3.</span> <span class="toc-text">字符转义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8sed%E4%B8%AD%E8%B0%83%E7%94%A8%E5%A4%96%E9%83%A8%E5%8F%98%E9%87%8F"><span class="toc-number">3.4.</span> <span class="toc-text">在sed中调用外部变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%9A%E8%BF%87-i%E9%80%89%E9%A1%B9%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6"><span class="toc-number">3.5.</span> <span class="toc-text">通过-i选项修改文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A1%8C%E5%AF%BB%E5%9D%80"><span class="toc-number">3.6.</span> <span class="toc-text">行寻址</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%95%B0%E5%AD%97%E6%8C%87%E5%AE%9A%E8%A1%8C%E5%8F%B7"><span class="toc-number">3.6.1.</span> <span class="toc-text">使用数字指定行号</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D%E8%A1%8C"><span class="toc-number">3.6.2.</span> <span class="toc-text">使用正则表达式匹配行</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%93%E5%8D%B0%E5%91%BD%E4%BB%A4p%E3%80%81-%E3%80%81l"><span class="toc-number">3.7.</span> <span class="toc-text">打印命令p、&#x3D;、l</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%89%93%E5%8D%B0%E6%96%87%E6%9C%AC"><span class="toc-number">3.7.1.</span> <span class="toc-text">打印文本</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%89%93%E5%8D%B0%E8%A1%8C%E5%8F%B7"><span class="toc-number">3.7.2.</span> <span class="toc-text">打印行号</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%89%93%E5%8D%B0%E9%9D%9E%E6%89%93%E5%8D%B0%E5%AD%97%E7%AC%A6"><span class="toc-number">3.7.3.</span> <span class="toc-text">打印非打印字符</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9B%BF%E6%8D%A2%E5%91%BD%E4%BB%A4s"><span class="toc-number">3.8.</span> <span class="toc-text">替换命令s</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8C%B9%E9%85%8D%E6%95%B0%E9%87%8F"><span class="toc-number">3.8.1.</span> <span class="toc-text">匹配数量</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E8%A1%8Cd"><span class="toc-number">3.9.</span> <span class="toc-text">删除行d</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E5%92%8C%E9%99%84%E5%8A%A0%E8%A1%8Ci-amp-amp-a"><span class="toc-number">3.10.</span> <span class="toc-text">插入和附加行i&amp;&amp;a</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E8%A1%8Cc"><span class="toc-number">3.11.</span> <span class="toc-text">修改行c</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BD%AC%E6%8D%A2%E5%91%BD%E4%BB%A4y"><span class="toc-number">3.12.</span> <span class="toc-text">转换命令y</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6w"><span class="toc-number">3.13.</span> <span class="toc-text">写入文件w</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6r"><span class="toc-number">3.14.</span> <span class="toc-text">读取文件r</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E7%9A%84%E5%A4%84%E7%90%86"><span class="toc-number">3.15.</span> <span class="toc-text">多行文本的处理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#next%E5%91%BD%E4%BB%A4"><span class="toc-number">3.15.1.</span> <span class="toc-text">next命令</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E7%9A%84%E5%88%A0%E9%99%A4D"><span class="toc-number">3.16.</span> <span class="toc-text">多行文本的删除D</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E8%A1%8C%E6%89%93%E5%8D%B0P"><span class="toc-number">3.17.</span> <span class="toc-text">多行打印P</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8E%92%E9%99%A4%E5%91%BD%E4%BB%A4"><span class="toc-number">3.18.</span> <span class="toc-text">排除命令!</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E8%B7%B3%E8%BD%ACb"><span class="toc-number">3.19.</span> <span class="toc-text">命令跳转b</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E5%91%BD%E4%BB%A4t"><span class="toc-number">3.20.</span> <span class="toc-text">测试命令t</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%80%E5%87%BA%E5%91%BD%E4%BB%A4q"><span class="toc-number">3.21.</span> <span class="toc-text">退出命令q</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%9D%E6%8C%81%E7%A9%BA%E9%97%B4"><span class="toc-number">3.22.</span> <span class="toc-text">保持空间</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A8%A1%E5%BC%8F%E5%BC%95%E7%94%A8-amp"><span class="toc-number">3.23.</span> <span class="toc-text">模式引用&amp;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%83%A8%E5%88%86%E5%BC%95%E7%94%A8"><span class="toc-number">3.24.</span> <span class="toc-text">部分引用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8shell%E8%84%9A%E6%9C%AC%E4%B8%AD%E4%BD%BF%E7%94%A8sed"><span class="toc-number">3.25.</span> <span class="toc-text">在shell脚本中使用sed</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%95%B0%E5%80%BC"><span class="toc-number">3.25.1.</span> <span class="toc-text">格式化数值</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A0%E5%80%8D%E8%A1%8C%E8%B7%9D"><span class="toc-number">3.25.2.</span> <span class="toc-text">加倍行距</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%99%E6%96%87%E6%9C%AC%E6%B7%BB%E5%8A%A0%E8%A1%8C%E5%8F%B7"><span class="toc-number">3.25.3.</span> <span class="toc-text">给文本添加行号</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E6%9C%AB%E5%B0%BE10%E8%A1%8C"><span class="toc-number">3.25.4.</span> <span class="toc-text">查看文件末尾10行</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E7%A9%BA%E7%99%BD%E8%A1%8C"><span class="toc-number">3.25.5.</span> <span class="toc-text">删除空白行</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%A0%E9%99%A4HTML%E6%A0%87%E7%AD%BE"><span class="toc-number">3.25.6.</span> <span class="toc-text">删除HTML标签</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#awk"><span class="toc-number">4.</span> <span class="toc-text">awk</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B-1"><span class="toc-number">4.1.</span> <span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#awk%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B"><span class="toc-number">4.1.1.</span> <span class="toc-text">awk的工作流程</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E6%A0%BC%E5%BC%8F"><span class="toc-number">4.2.</span> <span class="toc-text">命令格式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E5%AE%9A%E4%B9%89%E6%96%B9%E5%BC%8F"><span class="toc-number">4.2.1.</span> <span class="toc-text">程序定义方式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E8%BE%93%E5%85%A5%E6%96%B9%E5%BC%8F-1"><span class="toc-number">4.2.2.</span> <span class="toc-text">文本输入方式</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9C%A8%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE%E5%89%8D-%E5%90%8E%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%ACBEGIN%E4%B8%8EEND"><span class="toc-number">4.3.</span> <span class="toc-text">在处理数据前&#x2F;后执行脚本BEGIN与END</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%A8%A1%E5%BC%8F"><span class="toc-number">4.4.</span> <span class="toc-text">使用模式</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">4.4.1.</span> <span class="toc-text">使用正则表达式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8C%B9%E9%85%8D%E6%93%8D%E4%BD%9C%E7%AC%A6"><span class="toc-number">4.4.2.</span> <span class="toc-text">匹配操作符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8E%92%E9%99%A4%E6%93%8D%E4%BD%9C%E7%AC%A6"><span class="toc-number">4.4.3.</span> <span class="toc-text">排除操作符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%95%B0%E5%AD%A6%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">4.4.4.</span> <span class="toc-text">使用数学表达式</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%85%E5%BB%BA%E5%8F%98%E9%87%8F"><span class="toc-number">4.5.</span> <span class="toc-text">内建变量</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AD%97%E6%AE%B5%E7%9B%B8%E5%85%B3%E5%86%85%E5%BB%BA%E5%8F%98%E9%87%8F"><span class="toc-number">4.5.1.</span> <span class="toc-text">字段相关内建变量</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AD%97%E6%AE%B5%E6%95%B0%E6%8D%AE%E5%8F%98%E9%87%8F"><span class="toc-number">4.5.2.</span> <span class="toc-text">字段数据变量</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E5%AD%97%E6%AE%B5%E5%88%86%E9%9A%94%E7%AC%A6FS%E4%B8%8E%E8%BE%93%E5%87%BA%E5%AD%97%E6%AE%B5%E5%88%86%E9%9A%94%E7%AC%A6OFS"><span class="toc-number">4.5.3.</span> <span class="toc-text">输入字段分隔符FS与输出字段分隔符OFS</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%A0%B9%E6%8D%AE%E6%95%B0%E6%8D%AE%E5%AE%BD%E5%BA%A6%E5%88%86%E9%9A%94%E5%AD%97%E6%AE%B5FIELDWIDTHS"><span class="toc-number">4.5.4.</span> <span class="toc-text">根据数据宽度分隔字段FIELDWIDTHS</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AE%B0%E5%BD%95%E5%88%86%E9%9A%94%E7%AC%A6RS%E4%B8%8EORS"><span class="toc-number">4.5.5.</span> <span class="toc-text">记录分隔符RS与ORS</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AE%B0%E5%BD%95%E8%AE%A1%E6%95%B0FNR%E5%92%8CNR"><span class="toc-number">4.5.6.</span> <span class="toc-text">记录计数FNR和NR</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%86%85%E5%BB%BA%E5%8F%98%E9%87%8F"><span class="toc-number">4.6.</span> <span class="toc-text">其他内建变量</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8F%90%E5%8F%96%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0"><span class="toc-number">4.6.1.</span> <span class="toc-text">提取命令行参数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96shell%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">4.6.2.</span> <span class="toc-text">获取shell环境变量</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F"><span class="toc-number">4.7.</span> <span class="toc-text">自定义变量</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9C%A8%E7%A8%8B%E5%BA%8F%E4%B8%AD%E5%A3%B0%E6%98%8E%E5%8F%98%E9%87%8F"><span class="toc-number">4.7.1.</span> <span class="toc-text">在程序中声明变量</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E5%A3%B0%E6%98%8E%E5%8F%98%E9%87%8F"><span class="toc-number">4.7.2.</span> <span class="toc-text">在命令行中声明变量</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E7%BB%84"><span class="toc-number">4.8.</span> <span class="toc-text">数组</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E6%95%B0%E7%BB%84"><span class="toc-number">4.8.1.</span> <span class="toc-text">定义数组</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%81%8D%E5%8E%86%E6%95%B0%E7%BB%84"><span class="toc-number">4.8.2.</span> <span class="toc-text">遍历数组</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0"><span class="toc-number">4.8.3.</span> <span class="toc-text">删除数组元素</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%8C%96%E5%91%BD%E4%BB%A4"><span class="toc-number">4.9.</span> <span class="toc-text">结构化命令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#if-else%E8%AF%AD%E5%8F%A5"><span class="toc-number">4.9.1.</span> <span class="toc-text">if-else语句</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#while%E8%AF%AD%E5%8F%A5"><span class="toc-number">4.9.2.</span> <span class="toc-text">while语句</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#do-while%E8%AF%AD%E5%8F%A5"><span class="toc-number">4.9.3.</span> <span class="toc-text">do-while语句</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#for%E8%AF%AD%E5%8F%A5"><span class="toc-number">4.9.4.</span> <span class="toc-text">for语句</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%89%93%E5%8D%B0printf"><span class="toc-number">4.10.</span> <span class="toc-text">格式化打印printf</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0"><span class="toc-number">4.11.</span> <span class="toc-text">内置函数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0"><span class="toc-number">4.11.1.</span> <span class="toc-text">数学函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0"><span class="toc-number">4.11.2.</span> <span class="toc-text">字符串函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97"><span class="toc-number">4.11.3.</span> <span class="toc-text">位运算</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0"><span class="toc-number">4.11.4.</span> <span class="toc-text">时间函数</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0"><span class="toc-number">4.12.</span> <span class="toc-text">自定义函数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%AE%9A%E4%B9%89%E4%B8%8E%E8%B0%83%E7%94%A8"><span class="toc-number">4.12.1.</span> <span class="toc-text">函数定义与调用</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA%E4%B8%8E%E4%BD%BF%E7%94%A8"><span class="toc-number">4.12.2.</span> <span class="toc-text">函数库的创建与使用</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B0%83%E7%94%A8%E5%A4%96%E9%83%A8%E5%8F%98%E9%87%8F"><span class="toc-number">4.13.</span> <span class="toc-text">调用外部变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6"><span class="toc-number">4.14.</span> <span class="toc-text">修改文件</span></a></li></ol></li></ol></div></div>
+        <div class="article">
+        <h1 class="title">Linux信息检索与处理</h1>
+        <div class="art-info">
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：45715</span>
+            <span><span class="iconfont icon-riqi"></span>写于：2021-12-29</span></div>
+            <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2024-06-02</span>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您131分钟</span></div>
+        </div>
+        <div class="art-content">
+        <h3 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h3><h4 id="grep数据查找"><a href="#grep数据查找" class="headerlink" title="grep数据查找"></a>grep数据查找</h4><p>grep命令用于在指定内容或文件中查找满足匹配模式的字符的行，其输出是满足匹配模式的字符串行。该命令功能强大，支持Unix风格的正则表达式，是最常用的命令之一。</p>
+<p><span class="strong">grep [参数] 匹配模式 [文件]</span> 找到或排除字符串所在行，然后输出内容</p>
+<ul>
+<li>-i &emsp;不区分大小写</li>
+<li>-v &emsp;排除指定字符串</li>
+<li>-n &emsp;显示匹配内容的行号</li>
+<li>-c &emsp;显示有多少行满足匹配</li>
+<li>-e &emsp;指定多个匹配条件</li>
+</ul>
+<div class="show">示例:
+# grep man /etc/file
+找到/etc/file文件中含有man的行并输出
+# grep -v ^# /etc/inittab
+显示/etc/inittab中除了#开头的所有行内容(#开头的内容为被注释了的内容，不想看注释)
+</div>
+
+
+<h4 id="sort排序处理"><a href="#sort排序处理" class="headerlink" title="sort排序处理"></a>sort排序处理</h4><p>默认情况下，sort命令按照会话指定的默认语言的排序规则对文本数据行排序，且数字也会被当作字符处理(如果要按数值排序，使用-n选项)<br><span class="strong">sort [选项] [文件名]</span><br>将文件或命令结果进行排序，默认以每行第一个字母为依据，按字母顺序排序</p>
+<ul>
+<li>-f&emsp;忽略大小写</li>
+<li>-n&emsp;将数字作为值处理，按数值大小进行排序</li>
+<li>-r&emsp;反向排序</li>
+<li>-t&emsp;指定分隔符为分段依据</li>
+<li>-M&emsp;按月份排序，常用于日志文件排序</li>
+<li>-k n,m&emsp;指定字段为排序依据，若不指定m则判断依据为以n字段开始到本行末</li>
+</ul>
+<div class="show">示例：
+sort /etc/passwd
+按passwd文件每行首字母进行排序显示
+sort -n -t ":" -k 3,3 etc/passwd
+指定字段以:分隔，按第3字段(UID)值大小进行排序显示
+</div>
+
+<p>以下为可能用到的完整命令选项及其缩写</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>命令缩写</th>
+<th>完整命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-b</td>
+<td>-&zwnj;-ignore-leading-blanks</td>
+<td>排序时忽略起始的空白</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>-&zwnj;-check</td>
+<td>检查输入的数据或文件是否已排序，如果未全部排序，则打印第一个未排序的行，并以状态码1退出</td>
+</tr>
+<tr>
+<td>-C</td>
+<td>-&zwnj;-check=quiet</td>
+<td>检查输入的数据或文件是否已排序，如果未全部排序，以状态码1退出，但不打印未排序的行内容</td>
+</tr>
+<tr>
+<td>-d</td>
+<td>-&zwnj;-dictionary-order</td>
+<td>以通讯录方式排序，只考虑空白字符、字母、数字进行排序，忽略其他所有字符</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>-&zwnj;-ignore-case</td>
+<td>默认情况下，大写字母排于小写字母前，这个选项会忽略大小写</td>
+</tr>
+<tr>
+<td>-g</td>
+<td>-&zwnj;-general-number-sort</td>
+<td>按数字排序(GNU建议只有别无选择时再使用该选项)，该选项会将每行数字前缀部分转换为双精度浮点数，按照：非数字开头的行、NaNs(Not a Number)、负数、正数的顺序排序(该选项处理速度比-n选项慢得多，且可能在转换浮点数时丢失信息)</td>
+</tr>
+<tr>
+<td>-h</td>
+<td>-&zwnj;-human-numeric-sort</td>
+<td>按照人类可读的数字格式排序，即该选项会识别KMGTPEZYRQ等数值单位，如:1023M将排序于1G之前</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>-&zwnj;-ignore-nonprinting</td>
+<td>在排序时忽略非打印字符</td>
+</tr>
+<tr>
+<td>-k pos1,pos2</td>
+<td>-&zwnj;-key=POS1[,POS2]</td>
+<td>排序从POS1位置开始；如果指定了POS2的话，到POS2位置结束</td>
+</tr>
+<tr>
+<td>-M</td>
+<td>-&zwnj;-month-sort</td>
+<td>用三字符月份名按月份排序，如：Jan,Feb,Mar</td>
+</tr>
+<tr>
+<td>-m</td>
+<td>-&zwnj;-merge</td>
+<td>合并多个多个已排序的文件，合并后的文件也是按顺序排序的，该选项会视为原文件已经排序好，只负责两个文合并时的归并排序，而不会会文件重排，速度更快</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>-&zwnj;-numeric-sort</td>
+<td>按字符串数值来排序（并不转换为浮点数）</td>
+</tr>
+<tr>
+<td>-o</td>
+<td>-&zwnj;-output=file</td>
+<td>将排序结果写出到指定的文件中</td>
+</tr>
+<tr>
+<td>-R</td>
+<td>-&zwnj;-random-sort</td>
+<td>对输入的值进行哈希处理，按生成的哈希值排序</td>
+</tr>
+<tr>
+<td>无</td>
+<td>-&zwnj;-random-source=FILE</td>
+<td>指定-R参数用到的随机字节的源文件</td>
+</tr>
+<tr>
+<td>-V</td>
+<td>-&zwnj;-version-sort</td>
+<td>按版本号排序，字母加数字组合将识别为版本号，且排序方法将与小数排序有所不同，如：v1,v1.4,v1.12,v1.40,v2</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>-&zwnj;-reverse</td>
+<td>反序排序（升序变成降序）</td>
+</tr>
+<tr>
+<td>-S</td>
+<td>-&zwnj;-buffer-size=SIZE</td>
+<td>指定使用的内存大小</td>
+</tr>
+<tr>
+<td>-s</td>
+<td>-&zwnj;-stable</td>
+<td>禁用最后重排序比较</td>
+</tr>
+<tr>
+<td>-T</td>
+<td>-&zwnj;-temporary-directory=DIR</td>
+<td>指定一个位置来存储临时工作文件</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>-&zwnj;-field-separator=SEP</td>
+<td>指定一个用来区分键位置的字符</td>
+</tr>
+<tr>
+<td>-u</td>
+<td>-&zwnj;-unique</td>
+<td>和-c参数一起使用时，检查严格排序；不和-c参数一起用时，仅输出第一例相似的两行</td>
+</tr>
+<tr>
+<td>-z</td>
+<td>-&zwnj;-zero-terminated</td>
+<td>用NULL字符作为行尾，而不是用换行符</td>
+</tr>
+</tbody></table>
+</div>
+
+<h4 id="shuf随机排列-shuffles"><a href="#shuf随机排列-shuffles" class="headerlink" title="shuf随机排列(shuffles)"></a>shuf随机排列(shuffles)</h4><p>该命令可以用来随机输出指定的文本，也可以用来生成随机值</p>
+<p><span class="strong">shuf [选项] [文件]</span></p>
+<ul>
+<li>-e 将每个输入的参数都视为一个本文行</li>
+<li>-i 最小值-最大值：随机生成该区间之间的值(无符号整数)</li>
+<li>-n 值：指定输出次数，默认为输入多少个文本，就输出多少次</li>
+<li>-o 文件名：将输出结果写入到文件中，而不打印到屏幕</li>
+<li>-r 生成的随机行可以重复</li>
+<li>-z 行结束符为NUL，而非默认的换行符</li>
+</ul>
+<div class="show">1.抽奖系统(根据名单)
+shuf &gt;&gt;EOF
+name1
+name2
+name3
+EOF
+该命令等价于
+shuf -e name1 name2 name3
+以上命令会将输入的字符串按随机顺序输出，如果限制为只输出1个，则命令修改为：
+shuf -n 1 -e name1 name2 name3
+2. 随机抛5次硬币
+shuf -r -n 5 -e "正面" "反面"
+3.随机2-10之间的值
+shuf -i 2-10
+</div>
+
+<h4 id="uniq删除邻近重复行-uniquify"><a href="#uniq删除邻近重复行-uniquify" class="headerlink" title="uniq删除邻近重复行(uniquify)"></a>uniq删除邻近重复行(uniquify)</h4><p>该命令用来用于从输入中删除相邻的重复行，只保留一个副本</p>
+<p><span class="strong">uniq [选项] [输入文件] [输出文件]</span></p>
+<ul>
+<li>默认情况下，命令会打印输入的行，如果有相邻的重复行，则只输出一次，如果未指定输出文件，默认打印到屏幕</li>
+<li>-c 在每行开头打印该行重复次数</li>
+<li>-d 只打印邻近重复的行，但每行只打印一次</li>
+<li>-D 只打印邻近重复的行，该行重复几次就打印几次</li>
+<li>-f 值n：跳过对每行前n个字段的比较，忽略每行前n个字段的重复</li>
+<li>-i 忽略大小写</li>
+<li>-s 值n：跳过对每行前n个字符的比较</li>
+<li>-u 只打印非重复的行，包括两个重复，但不相邻的行</li>
+<li>-z 将行结束符替换为NUL，而非默认的换行符</li>
+<li>-w 值n：只对每行前n个字符进行比较</li>
+</ul>
+<h4 id="comm逐行比较两个排序好的文件"><a href="#comm逐行比较两个排序好的文件" class="headerlink" title="comm逐行比较两个排序好的文件"></a>comm逐行比较两个排序好的文件</h4><p><span class="strong">comm [选项] 文件1 文件2</span></p>
+<ul>
+<li>默认情况下，命令会生成三列输出，第一列为文件1独有的行，第二列为文件2独有的行，第三列为文件1和文件2共有的行</li>
+<li>-1或-2或-3选项，可以禁止打印对应的列</li>
+<li>-&zwnj;-check-order 检查输入的文本行是否是已经排序过的，如果任一文件排序错误则报错并退出</li>
+<li>-&zwnj;-nocheck-order 不检查文件是否排序</li>
+<li>-&zwnj;-output-delimiter=”字符串”:替换所输出三列信息之间的分隔字符串，默认为Tab</li>
+</ul>
+<h3 id="区域操作"><a href="#区域操作" class="headerlink" title="区域操作"></a>区域操作</h3><h4 id="cut打印文本行的指定部分"><a href="#cut打印文本行的指定部分" class="headerlink" title="cut打印文本行的指定部分"></a>cut打印文本行的指定部分</h4><p><span class="strong">cut [选项] [文件名]</span></p>
+<ul>
+<li>以下选项的值可以为单个数字，也可以为范围(如：2-5)，也可以为不完整的范围，如：-m表示1-m，n-表示该行第n个到该行结束</li>
+<li>-b 值：仅打印行中指定字节的内容</li>
+<li>-c 值：仅打印行中指定个数的字符内容</li>
+<li>-f 值：仅打印行中指定字段的内容</li>
+<li>-d 字符：指定输入内容的字段分隔符，默认为Tab</li>
+<li>-s 搭配-f使用，不打印不包含字段分隔符的行，默认情况下会打印</li>
+<li>-&zwnj;-output-delimiter=”字符”：搭配-f使用，指定输出内容的字段分隔符</li>
+<li>-n 不要拆分多字节字符</li>
+<li>-&zwnj;-complement 搭配-b、-c、-f选项使用，不打印这些区间之间的内容</li>
+</ul>
+<div class="show">1. 打印第2-5个字符
+cut -c2-5 test.txt
+2. 打印前3个字符
+cut -c-3 test.txt
+</div>
+
+<h4 id="paste合并文件行"><a href="#paste合并文件行" class="headerlink" title="paste合并文件行"></a>paste合并文件行</h4><p><span class="strong">paste [选项] [文件名1] [文件名2]…</span></p>
+<ul>
+<li>默认情况下，该命令会将多个文件的第一行都粘贴到第一行，第二行都粘贴到第二行，以此类推，同一行内容之间使用tab分隔</li>
+<li>-s 将文件1的内容都粘贴到第一行，文件2内容粘贴到第二行，以此类推</li>
+<li>-d “字符1字符2..”：使用指定的字符作为内容分隔符，可以指定多个字符，文件合并后的内容将写为：文件1字符1文件2字符2</li>
+</ul>
+<div class="show">e.g.文件num.txt内容为
+1111
+2222
+3333
+文件test.txt内容为
+AAAA
+BBBB
+1. 合并文件num.txt与test.txt
+paste test.txt num.txt
+合并后为：
+AAAAA    1111
+BBBBB    2222
+        &emsp;&emsp;3333
+2. -s选项
+AAAAA    BBBBB
+1111&emsp;    2222    3333
+3. -d选项
+paste -d "%-" test num test
+合并后为：
+AAAAA%1111_AAAAA
+BBBBB%2222_BBBBB
+%3333_
+</div>
+
+<h4 id="join-按字段合并文件"><a href="#join-按字段合并文件" class="headerlink" title="join 按字段合并文件"></a>join 按字段合并文件</h4><p>以某个字段作为合并依据，合并两个文件的内容，默认是按第一个字段进行匹配，通常会先使用 sort 对文件进行排序再进行合并</p>
+<p><span class="strong">join [选项] 文件1 文件2</span></p>
+<ul>
+<li>默认情况下，命令会比较两个文件中的第一个字段的内容，如果两个文件第一个字段内容相同，则合并输出该行的剩余部分，输出默认使用空格分隔</li>
+<li>-1 字段号：修改文件1作为匹配依据的字段，默认是第一个字段</li>
+<li>-2 字段号：修改文件2作为匹配依据的字段，默认是第一个字段</li>
+<li>-j 字段号N：等价于-1 N -2 N</li>
+<li>-o 字段号：指定输出哪些字段，0代表整行</li>
+<li>-t 分隔符：指定字段分隔符，默认为空格</li>
+<li>-i 比较时忽略大小写</li>
+<li>-a 1或-a 2：输出文件1或文件2中未匹配到的行</li>
+<li>-e “字符串”：指定在某个字段缺失时，用哪个字符串代替</li>
+<li>-v 1或-v 2：仅显示文件1或文件2中未匹配的行</li>
+<li>-&zwnj;-check-order：如果任一输入文件排序错误，则失败并显示错误消息</li>
+<li>-&zwnj;-nocheck-order：不检查两个输入文件是否按排序顺序排列(默认)</li>
+<li>-&zwnj;-header：将输入文件的第一行视为标题行，并合并打印到第一行</li>
+</ul>
+<div class="show">e.g.文件file1：
+a 1
+b 2
+e 5
+文件file2：
+a X
+e Y
+f Z
+1. 输出第一个字段相同的行
+join file1 file2
+输出值：
+a 1 X
+e 5 Y
+2. 指定哪些字段需要输出，0表示整行都输出
+join -o 1.2 2.2 file1 file2
+3. 输出没有匹配到的行。如果使用 -a 1，将输出文件1中所有未匹配到的行
+join -a 1 file1 file2
+</div>
+
+<h3 id="sed流编辑器"><a href="#sed流编辑器" class="headerlink" title="sed流编辑器"></a>sed流编辑器</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>sed被称为流编辑器（stream editor），是Linux和Unix系统中一个强大的文本处理工具。它被设计用于大批量的文本处理，可以逐行读入文本，并根据命令进行字符串的查找、筛选、移动、替换、添加和删除等操作。sed非常适合对大量文本进行批处理，也适合在脚本中进行自动化文本处理。</p>
+<p>与交互式编辑器(如vim)不同，vim等编辑器适合用来进行交互式编辑和细粒度的文本修改，而流编辑器适合用来进行大批量的非交互式文本处理，适合执行自动化文本处理任务，如进行批量文件修改、数据清洗、日志文件分析等。</p>
+<h5 id="sed的工作流程"><a href="#sed的工作流程" class="headerlink" title="sed的工作流程"></a>sed的工作流程</h5><p>sed强调逐行处理文本，默认情况下，sed编辑器会基于换行符的位置将文本流分成行，以一行文本作为一个处理单位，sed编辑器对文本的处理会在一个名为<span class="tips">模式空间</span>(pattern space)的临时缓冲区中进行，sed编辑器在工作时会依次执行以下流程：</p>
+<ul>
+<li><span class="strong">读取</span>：sed首先会从文件、管道、标准输入等输入流中读取一行内容并存储到模式空间</li>
+<li><span class="strong">执行</span>：根据用户提供的命令在行中匹配数据，并按照命令增删改查，默认情况下，所有sed操作命令会在模式空间中按顺序执行</li>
+<li><span class="strong">打印</span>：字符串行在模式空间中被处理完后，默认会将结果输出到屏幕，然后清空模式空间，然后读取下一行文本</li>
+</ul>
+<p>具体执行过程为：sed首先会从输入流中(可以是来自文件、管道、标准输入设备的文本流)读取一行内容并存储到模式空间，然后按照命令顺序对满足要求的文本进行处理，不满足要求的文本也会被读入模式空间，但sed不做任何处理，随后这些文本会被发送到输出流显示给用户，sed编辑器会随之清空模式空间中的内容，然后读取下一行文本重复执行上述操作，直到文本流中的所有行被处理完毕。默认情况下，sed命令会对所有行都生效，但可以通过指定行号、模式匹配等方式指定命令只对某些行生效，sed编辑器默认会将所有文本行输出到屏幕，即便编辑器没有修改任何原文本的内容(如：指定某个命令只对第2行文本生效，但其他行的内容依旧会被sed编辑器打印到屏幕上)，且sed命令的文本处理操作都是在缓冲区中进行的，默认不会对原文件内容进行修改。sed编辑器还支持将操作命令存储于一个单独的文件(通常拓展名为<span class="tips">.sed</span>)中，然后从文件中批量加载命令。</p>
+<h4 id="sed命令"><a href="#sed命令" class="headerlink" title="sed命令"></a>sed命令</h4><p><span class="strong">sed [选项] ‘文本处理命令’ [处理的文件]</span></p>
+<ul>
+<li>-e 命令：指定多个命令</li>
+<li>-f 文件名：从该文件中载入处理命令</li>
+<li>-n 不打印命令的默认输出</li>
+<li>-i 直接修改原文件，不输出到终端</li>
+<li>-r 支持拓展的正则表达式，某些版本中为-E，具体可以man sed查看支持哪一个选项</li>
+<li>如果不指定处理文件，sed会从标准输入STDIN读取数据</li>
+<li>文本处理命令如果直接在命令行中指定，则需要加上一对单引号<span class="strong tips">‘ ‘</span>，这样shell就不会将其解析为shell的特殊字符或命令，并且shell会将其视为sed命令的单个参数，允许文本处理命令的长度超过一行，如果写于文件中则不需要使用单引号。如果sed文本处理命令中需要调用外部变量，也可以使用双引号<span class="tips">“”</span></li>
+</ul>
+<h5 id="文本处理命令"><a href="#文本处理命令" class="headerlink" title="文本处理命令"></a>文本处理命令</h5><p>文本处理命令是sed命令的关键部分，告诉sed编辑器要处理哪些文本，以及如何处理文本。sed可以输入单个命令，也支持一次性指定多个命令，它会依次执行这些命令。</p>
+<p><span class="strong">单行模式</span>下，多个命令之间使用分号<span class="tips strong">;</span>分隔即可</p>
+<div class="show">e.g.文件test.txt包含以下内容，使用字符串"周杰伦"替换"Jay Chou"，使用"陈奕迅"替换"Eason Chan"
+These are my favorite singers Jay Chou and Eason Chan
+These are my favorite singers Jay Chou and Eason Chan
+These are my favorite singers Jay Chou and Eason Chan
+单行模式下指定多个命令，命令之间使用分号分隔
+<span class="text-red">sed 's/Jay Chou/周杰伦/; s/Eason Chan/陈奕迅/' test.txt</span>
+也可以使用<span class="tips">-e</span>选项，分开指定命令，使命令更具可读性和清晰度
+<span class="text-green">sed -e 's/Jay Chou/周杰伦/' -e 's/Eason Chan/陈奕迅/' test.txt</span>
+</div>
+
+<p><span class="strong">多行模式</span>下，命令之间的分号可以省略</p>
+<div class="show">多行模式下指定多个命令，可以不使用分号，但单引号必须保留
+<span class="text-blue">sed '
+&gt;s/Jay Chou/周杰伦/
+&gt;s/Eason Chan/陈奕迅/' test.txt</span>
+</div>
+
+<p><span class="strong">从文件调用：</span>如果处理命令较多或需要反复调用，可以将这些命令写于一个命令文件中，每条命令写一行，sed编辑器会将每行都识别为一个单独的命令。存放sed命令的文件通常使用<span class="tips">.sed</span>作为文件扩展名，然后通过<span class="tips">-f</span>选项输入sed编辑器，命令之间的分号可以省略，且命令不使用单引号包裹</p>
+<div class="show"><span class="text-red">sed -f script.sed test.txt</span>
+<span class="strong">script.sed文件内容：</span>
+s/Jay Chou/周杰伦/
+s/Eason Chan/陈奕迅/
+</div>
+
+
+<h5 id="文本输入方式"><a href="#文本输入方式" class="headerlink" title="文本输入方式"></a>文本输入方式</h5><p>不指定处理文件时，sed会从标准输入STDIN读取数据，在输入完sed命令后按下回车，sed编辑器会开始等待文本输入，每输入一行文本sed编辑器就处理一行，并实时打印处理结果，直到使用Ctrl+D结束输入，或使用Ctrl+C终止任务。</p>
+<div class="show">e.g.将所输入字符串中的A替换为a
+sed 's/A/a/' <span class="text-red">(回车)</span>
+Ajax   <span class="text-blue">#用户输入</span>
+ajax   <span class="text-green">#sed编辑器输出结果</span>
+APACHE <span class="text-blue">#用户输入</span>
+aPACHE <span class="text-green">#sed编辑器输出结果</span>
+<span class="text-red">(Ctrl+D结束输入，退出sed编辑器)</span>
+</div>
+
+<p>也可以通过管道符<span class="tips">|</span>将文本输入sed编辑器</p>
+<div class="show">如果直接在sed命令行输入文本，sed编辑器会将其识别为文件名，然后返回错误：No such file or directory
+因此，通过以下语句输入文本到sed编辑器中的方法都是错误的：
+sed 's/A/a/' Ajax
+sed 's/A/a/' "Ajax"
+如果需要直接用sed编辑器处理单行或多行文本，可以考虑使用管道符：
+e.g.使用s命令将输出中的old替换为not old，s命令的功能是使用斜线后的第二个字符串替换第一个字符串
+echo "This is old song" | sed 's/old/not old/'
+</div>
+
+<p>当需要处理大量文本时，可以将文本写入文件中，sed命令会以每行作为一个单位，依次读取文件内容并处理，<span class="tips">但注意：默认情况下，Sed编辑器只会将模式空间中处理完毕的数据发送到屏幕STDOUT，而不会修改原文件中的数据</span></p>
+<div class="show">e.g.从文件test.txt读取内容并进行文本操作
+sed 's/A/a/' test.txt
+</div>
+
+<h4 id="字符转义"><a href="#字符转义" class="headerlink" title="字符转义"></a>字符转义</h4><p>由于在sed命令中，斜线<span class="tips">/</span>被用作命令字符串的分隔符，因此如果在命令中包含了诸如文件路径等需要用到斜线的参数，需要使用转义字符<span class="tips">\</span>对其进行转义。此外，sed编辑器也支持使用其他字符作为替换命令中的字符串分隔符，如使用<span class="tips">?</span>、<span class="tips">!</span>等</p>
+<div class="show">e.g.用C shell替换/etc/passwd文件中的bash shell
+sed -n 's?/bin/bash?/bin/csh?p' /etc/passwd
+或
+sed -n 's!/bin/bash!/bin/csh!p' /etc/passwd
+也可以使用转义字符
+sed -n 's/\/bin\/bash/\/bin\/csh/p' /etc/passwd
+</div>
+
+<h4 id="在sed中调用外部变量"><a href="#在sed中调用外部变量" class="headerlink" title="在sed中调用外部变量"></a>在sed中调用外部变量</h4><p>如果在使用sed时需要调用环境变量，或者在shell脚本中，sed要调用脚本中定义的变量，需要注意以下：</p>
+<ul>
+<li>由于单引号中无法调用变量，因此sed的命令部分需要使用双引号<span class="tips">“”</span>来包裹，这样才能使用<span class="tips">$变量名</span>来调用变量</li>
+<li>如果变量中包含<span class="tips">/</span>等字符，需要将sed命令的分隔符修改为其他字符</li>
+</ul>
+<div class="show">e.g.需要在sed命令中调用PATH变量
+由于PATH环境变量的值包含/，如：
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin"
+如果直接执行命令：
+sed "s/aaa/${PATH}/" config.json
+sed会将PATH值中的/解析为命令字符串分隔符，从而出错，需要将sed命令修改为：
+sed "s|aaa|${PATH}|" config.json
+</div>
+
+<h4 id="通过-i选项修改文件"><a href="#通过-i选项修改文件" class="headerlink" title="通过-i选项修改文件"></a>通过-i选项修改文件</h4><p>相较于awk，sed编辑器提供了<span class="tips">-i</span>(in-place)选项可以直接修改原文件内容，完整的语法格式为：<br><span class="strong">sed -i[备份文件名] ‘文本处理命令’ 原文件</span></p>
+<ul>
+<li>指定-i选项后，所有sed处理完的文本流将被重定向到文件中，而不再打印到屏幕。此时即便再添加p等打印命令，也不会输出任何内容到屏幕，反而会多输出一行相同内容到文件，因此修改文件时不要使用p等打印命令，除非明确需要打印行号等信息到文件</li>
+<li>-i选项可以接收一个字符串参数，此时sed会将原文件以<span class="tips">原文件名备份文件名</span>作为文件名，进行一次备份，然后再修改原文件</li>
+</ul>
+<div class="show">e.g.将原文件data.txt备份一份为data.txt.bak，然后修改data.txt文件中的aaa为bbb，
+sed -i.bak 's/aaa/bbb/g' data.txt
+e.g.修改配置文件中的端口号
+<span class="strong">config.json文件：</span>
+{
+        "ip": "88.77.99.88"
+        "port": 2100,
+}
+<span class="strong">modifyPort.sh文件：</span>
+#!/bin/bash
+configFile="/usr/local/myServer/config.json"
+newPort=2200
+if [ -f "${configFile}" ];then
+sed -i[.bak] "/port/s/\([^0-9]*\)[0-9]*\(.*\)/\1${newPort}\2/" ${configFile}
+fi
+</div>
+
+<h4 id="行寻址"><a href="#行寻址" class="headerlink" title="行寻址"></a>行寻址</h4><p>默认情况下，sed编辑器的命令会作用于文本数据的所有行。如果只想将命令作用于某些特定行，则可以用行寻址，行寻址的方式有两种：</p>
+<ul>
+<li>用数字指定行号</li>
+<li>使用正则表达式进行模式匹配</li>
+</ul>
+<p>两种方式的语法都相同，直接将行地址加于命令前即可：<br><span class="strong">sed ‘<span class="text-blue" style="margin:0;">行地址</span><span class="text-green" style="margin:0;">命令</span>‘ [文件名]</span><br>如果需要为某个地址指定多个命令，可以使用大括号进行分组：<br><span class="strong">sed ‘<span class="text-blue" style="margin:0;">行地址</span>{<span class="text-green" style="margin:0;">命令1</span>;<span class="text-green" style="margin:0;">命令2</span>;…..}’ [文件名]</span></p>
+<h5 id="使用数字指定行号"><a href="#使用数字指定行号" class="headerlink" title="使用数字指定行号"></a>使用数字指定行号</h5><p>sed编辑器会将文本的第一行的行号设定为1，随后依次递增，可以直接使用行号指定命令在哪些行生效。可以直接使用单个行号，也可以通过<span class="tips">起始行,终止行</span>的方式选定一个区间，如果不清楚某个文件到底有多少行，可以使用<span class="tips">起始行,$</span>方式选定从某行开始的所有行。</p>
+<div class="show">e.g.替换data.txt文件中第二行的指定字符串
+sed '2s/AAA/替换内容/' data.txt
+替换2到4行的匹配字符串
+sed '2,4s/AAAA/替换内容/' data.txt
+替换第2开始的所有行中的匹配的字符串
+sed '2,$s/AAAA/替换内容/' data.txt
+</div>
+
+<h5 id="使用正则表达式匹配行"><a href="#使用正则表达式匹配行" class="headerlink" title="使用正则表达式匹配行"></a>使用正则表达式匹配行</h5><p>使用行号只能选取特定位置的行，如果需要根据内容筛选出对应行，如查找包含指定内容的行，并对该行进行处理，则需要使用正则表达式筛选出指定行，其语法为：<br><span class="strong">sed ‘<span class="text-blue" style="margin:0;">/正则表达式/</span><span class="text-green" style="margin:0;">命令</span>‘</span></p>
+<p>也可以指定一个区间：<br><span class="strong">sed ‘<span class="text-blue" style="margin:0;">/正则表达式1/,/正则表达式2/</span><span class="text-green" style="margin:0;">命令</span>‘</span></p>
+<p>命令会在正则表达式1匹配到内容时，从该行开始执行(开启命令执行)，直到正则表达式2匹配到内容的行为止(关闭命令执行)，如果只匹配到正则表达式1(开启)，而正则表达式2无匹配的行，那么文件该行以后的所有行都将执行该命令(无关闭)</p>
+<div class="show">e.g.选取data.txt文件中包含2222字符串的行，并替换该行中AAAA字符串为替换内容
+sed -n '/2222/s/AAAA/替换内容/p' data.txt</div>
+
+<div class="show">e.g.文件data.txt含以下内容
+1111AA
+2222AA
+3333AA
+4444AA
+5555AA
+6666AA
+替换含字符串22行开始，到含字符串44行为止，中间所有行中的AA字符串为aa
+sed '/22/,/44/s/AA/aa/' data.txt
+输出为：
+1111AA
+2222aa
+3333aa
+4444aa
+5555AA
+6666AA
+如果将开始行和末尾行替换，命令将从第4行开始，一直执行到文件末
+sed '/44/,/22/s/AA/aa/' data.txt
+输出为：
+1111AA
+2222AA
+3333AA
+4444aa
+5555aa
+6666aa
+</div>
+
+<p><span class="strong tips">命令分组：</span>如果为指定的行要执行多个命令，则可以使用大括号<span class="tips">{ }</span>将命令分组</p>
+<div class="show">e.g.替换data.txt文件中的多个不同内容
+sed '2,${
+&gt; s/AAAA/替换内容/
+&gt; s/BBBB/OvO/
+}' data.txt
+</div>
+
+<h4 id="打印命令p、-、l"><a href="#打印命令p、-、l" class="headerlink" title="打印命令p、=、l"></a>打印命令p、=、l</h4><p>sed提供了3个打印命令用于打印不同的信息：</p>
+<ul>
+<li><span class="strong">p</span>：打印文本行</li>
+<li><span class="strong">=</span>：打印行号</li>
+<li><span class="strong">l</span>：(小写L)打印文本和非打印字符(如制表符等)</li>
+</ul>
+<h5 id="打印文本"><a href="#打印文本" class="headerlink" title="打印文本"></a>打印文本</h5><p>打印命令p用于打印匹配到的字符串行。默认情况下，sed命令也会将模式空间中的内容打印到屏幕，因此通常将p命令与sed命令的-n选项搭配使用。先使用-n选项禁止sed命令的默认输出，再执行p命令打印匹配的字符串，这样终端上就只会显示我们需要的信息。</p>
+<div class="show">e.g.打印包含指定字符串的行
+<span class="strong">data.txt文件内容：</span>
+1111AAA111
+2222AAA222
+3333333333
+如果直接执行命令
+sed '/AAA/p' data.txt
+则会输出显示以下内容：
+1111AAA111 #p命令打印
+1111AAA111 #sed编辑器默认打印
+2222AAA222 #p命令打印
+2222AAA222 #sed编辑器默认打印
+3333333333 #sed编辑器默认打印
+内容会被重复打印，即便文件第3行不包含字符串AAA，不满足命令执行要求，该行内容依旧会被sed编辑器读入模式空间，然后被默认打印出来，而满足执行要求的第一第二行文本则会打印两遍(p命令打印+sed默认打印)，因此，p命令通常会和-n选项搭配使用，使用-n取消sed编辑器的默认打印行为，然后使用p命令打印满足要求的字符串行：
+sed -n '/AAA/p' data.txt
+这样，sed编辑器输出值就是满足命令处理要求被筛选过的字符串行：
+1111AAA111 
+2222AAA222
+</div>
+
+
+
+<div class="show">e.g.打印文件的某几行
+sed -n '2,3p' data.txt
+打印文件中包含某字符串的行
+sed -n '/AAA/p' data.txt
+通过p命令可以先打印字符串行被修改前的样子，再打印一次被修改后的养样子，方便比较
+sed -n '/AAA/{
+&gt;p
+&gt;s/AAA/aaa/p
+&gt;}' data.txt
+</div>
+
+<h5 id="打印行号"><a href="#打印行号" class="headerlink" title="打印行号"></a>打印行号</h5><p>等号命令<span class="tips">=</span>会打印行在数据流中的当前行号。行号由数据流中的换行符决定。每次数据流中出现一个换行符，sed编辑器会认为一行文本结束了，行号默认从1开始。</p>
+<div class="show">e.g.打印包含某字符串的行号，及其该行的完整内容
+sed -n '/AAA/{
+&gt;=
+&gt;p
+}' data.txt
+</div>
+
+<h5 id="打印非打印字符"><a href="#打印非打印字符" class="headerlink" title="打印非打印字符"></a>打印非打印字符</h5><p>列出命令<span class="tips">l</span>(list)会打印数据流中的所有文本和不可打印的ASCII字符，这些非打印字符会以C语言转义字符的形式显示(如：\t水平制表符)，或显示其八进制ASCII码值，并会在前面添加反斜线。</p>
+<div class="show">e.g.打印文件data.txt，文件内容包含\
+<span class="strong">data.txt文件内容：</span>
+1111    1111
+2222 \  2222
+命令l会将制表符、\等需要转义的字符在文本中输出为转义字符形式，并使用$表示末尾换行
+sed 'l' data.txt
+输出形式为：
+1111\t1111$
+2222\\2222$
+</div>
+
+<h4 id="替换命令s"><a href="#替换命令s" class="headerlink" title="替换命令s"></a>替换命令s</h4><p>替换命令<span class="tips">s</span>可以将文本行中的指定字符串替换为其他字符串，语法格式为：<br><span class="strong">sed ‘[行地址]s/替换前的字符串/替换后的字符串/标记符’ </span></p>
+<h5 id="匹配数量"><a href="#匹配数量" class="headerlink" title="匹配数量"></a>匹配数量</h5><p>默认情况下，s命令只会替换每行中出现的第一个匹配字符串。要想让编辑器处理当前行中其他位置的字符串，需要使用标记符：</p>
+<p><spa class="tips">命令/匹配字符串/替换字符串/标记符</spa></p>
+<p>标记符可以为以下字符：</p>
+<ul>
+<li>数字：表示替换该行中的第几处匹配的字符串</li>
+<li>g：表示替换该行中所有字符串</li>
+<li>p：打印替换过的内容到屏幕</li>
+<li>w 文件名：将修改完的字符串行另存到文件中，只会保存匹配到的行</li>
+</ul>
+<div class="show">e.g.假设文件data.txt中有以下内容
+<span class="strong">data.txt</span>
+111AAA111BBB111AAA
+222AAA222BBB222AAA
+333AAA333BBB333AAA
+so live a life you will remember
+1. 替换文件中每行第2个字符串AAA为替换内容
+sed 's/AAA/替换内容/2' data.txt
+2. 默认情况下，上述命令会将替换完的完整文件内容输出到屏幕，包括第4行没有AAA内容的文本，如果只想输出匹配到行，则需要搭配-n选项和p标记符
+sed -n 's/AAA/替换内容/2p' data.txt
+p标记符用于输出匹配到的字符串行，如果没有-n选项，由于sed命令本身默认就会输出完整文件内容，加上p选项输出的匹配内容，因此会输出完整文件内容+匹配内容，匹配到的部分会输出两遍，因此需要使用-n取消掉sed命令的默认输出，只输出内容被修改的部分
+3. 如果要先输出一行原文件内容，再输出一行被替换的内容，二者一上一下以作比较，可以使用以下命令
+sed -n -e 's/AAA/&/p' -e 's/AAA/替换内容/p' data.txt
+4. 将替换的内容另存到另外一个文件
+sed 's/AAA/替换内容/w result.txt' data.txt
+上述命令依旧会输出默认的完整文件到屏幕，但w标记符只会将替换过到的第1，2，3行保存到文件，没有AAA字符串的第4行将不被另存
+</div>
+
+<h4 id="删除行d"><a href="#删除行d" class="headerlink" title="删除行d"></a>删除行d</h4><p>sed编辑器中的<span class="tips">d</span>(delete)命令用于删除特定的行，它会根据匹配到的信息删除对应行，并且支持寻址。注意，如果d命令没有指定任何匹配内容，则默认会删除所有行。同样，d命令不会修改原文件，只是将经过删除处理后的文本内容打印到屏幕。d命令的语法为：<br><span class="strong">sed ‘地址d’ [文件名]</span></p>
+<div class="show">e.g.文件data.txt中包含以下内容
+<span class="strong">Line 1 AAAAAA</span>
+Line 1 AAAA
+Line 2 BBBB
+Line 3 CCCC
+line 4 AAAA
+line 5 DDDD
+more line
+1. 可以通过行号删除指定行
+sed '2,4d' data.txt
+2. 也可以根据正则表达式匹配内容删除指定行
+sed '/AAAA/d' data.txt
+3. d命令可以通过两个正则表达式来指定一个区间，然后删除区间之间的行。这是d命令的特殊用法，注意，使用该功能时，指定的第一个模式会“打开”行删除功能，第二个模式会“关闭”行删除功能
+sed '/Line 1/,/Line 3/d' data.txt #删除第1，2，3行
+如果d命令再次匹配到满足要求的行，删除功能会再次打开，<span class="text-red">如果没有匹配到关闭删除的字符串，d命令有可能会删除后续整个文件内容！</span>
+sed '/AAAA/,/CCCC/d' data.txt
+# sed会首先删除匹配到的包含AAAA到CCCC之间的行，即第1，2，3行，而后第4行再次匹配到了AAAA，于是删除功能再次打开，由于后续再无匹配到CCCC，删除功能一直继续，直到将文件内容删除完
+</div>
+
+<h4 id="插入和附加行i-amp-amp-a"><a href="#插入和附加行i-amp-amp-a" class="headerlink" title="插入和附加行i&amp;&amp;a"></a>插入和附加行i&amp;&amp;a</h4><p>sed编辑器也支持加入新的行，两个操作分别为：</p>
+<ul>
+<li><span class="tips">i</span>(insert)命令会在指定行前插入一个新行</li>
+<li><span class="tips">a</span>(append)命令会在指定行后增加一个新行<br>两个命令的语法都为：<div class="apiBox">sed '[地址] 命令\新增行的内容' [文件名]</div>
+也可以同时插入多行，每行内容使用反斜线分隔：
+<div class="apiBox">sed '[地址] 命令\
+&gt;新增的第一行\
+&gt;新增的第二行' [文件名]</div></li>
+</ul>
+<p>对诸如echo语句等单行命令前插入内容时，可以不指定地址。而在文件中插入新行，需要使用行号或正则表达式为其指定一个插入位置，但不支持地址区间，即只能将新增的行插入和附加到单个行前或行后，而不支持插入某个区间前后</p>
+<div class="show">e.g.如果在单行命令中插入文本，可以不指定地址
+echo "这是一段文本" | sed 'i\插入的新行'
+在文件第一行前插入内容
+sed '1i\新增行内容' data.txt
+在文件最后一行后附加内容
+sed '$a\新增行内容' data.txt
+也可以使用正则表达式匹配包含指定内容的行，这会将内容插入所有满足要求行的前后
+sed '/AAAA/i\新增的行' data.txt
+也可以同时插入多行内容
+sed '3a\
+&gt;第一行\
+&gt;第二行\
+&gt;第三行' data.txt
+</div>
+
+<h4 id="修改行c"><a href="#修改行c" class="headerlink" title="修改行c"></a>修改行c</h4><p>命令<span class="tips">c</span>(change)命令用来修改整行文本的内容，其语法和插入、附加命令类似：</p>
+<div class="apiBox">sed '地址c\
+&gt; 修改后的第一行内容\
+&gt; 修改后的第二行内容' [文件名]</div>
+
+<p>c命令支持使用地址区间，将该区间的行修改为指定的内容，但它只会将所有行修改为一个(单行或多行)指定内容，而不会每行修改一次，地址可以使用行号，也可以使用正则表达式匹配</p>
+<div class="show">e.g.根据行号修改指定行内容
+sed '1,2c\
+&gt;修改的内容1\
+&gt;修改的内容2' data.txt
+根据正则表达式匹配行并修改内容
+sed '/AAAA/c\修改的内容' data.txt
+</div>
+
+<h4 id="转换命令y"><a href="#转换命令y" class="headerlink" title="转换命令y"></a>转换命令y</h4><p>sed编辑器中，转换命令<span class="tips">y</span>(yank v.急速抽取,猛拉)是唯一一个可以处理单个字符的命令，其语法格式为：<br><sapn class="strong">[地址]y/转换前的字符串str1/转换后的字符串str2/</sapn></p>
+<p>转换命令会将两个字符串一一对应，str1中的第一个字符会被转换为str2中的第一个字符，依此类推，如果两个字符长度不同，sed编辑器会抛出一条错误消息。</p>
+<div class="show">e.g.文件data.txt包含以下内容
+111ABC111
+ABC222ABC
+333AAA333
+444BBB444
+555DDD555
+转换命令会单独解析每个字符，只要包含任意字符就会被转换并且作用于所有行，且同一行有多个匹配的字符也会被转换，而不会像s命令一样只替换第一个
+<span class="text-blue">sed 'y/ABC/abc/' data.txt</span>
+111abc111
+abc222abc
+333aaa333
+444bbb444
+555DDD555
+也可以用地址限定只在某行生效，以下命令只修改第一行中的ABC
+<span class="text-blue">sed '1y/ABC/abc/' data.txt</span>
+也支持使用正则表达式定位某行
+<span class="text-blue">sed '/22/y/ABC/abc/' data.txt</span>
+</div>
+
+<h4 id="写入文件w"><a href="#写入文件w" class="headerlink" title="写入文件w"></a>写入文件w</h4><p><span class="tips">w</span>命令会将匹配的行写入文件(另存)，如果文件不存在，则会自行创建，如果文件存在且文件中已有内容，则该内容会被覆盖，w命令语法格式为：</p>
+<div class="apiBox">[地址]w 文件名</div>
+
+<p>文件名可以包含文件的绝对路径或相对路径，但执行该命令的用户需要拥有对该文件的写权限</p>
+<div class="show">e.g.将data文件的第1，2行写入test文件
+sed '1,2w test.txt' data.txt
+将文件包含字符串AAAA的行写入文件
+sed '/AAAA/w test.txt' data.txt
+</div>
+
+<h4 id="读取文件r"><a href="#读取文件r" class="headerlink" title="读取文件r"></a>读取文件r</h4><p><span class="tips">r</span>(read)读取命令会从指定文件读取所有文本内容，并插入到指定的地址，该命令的语法格式为：</p>
+<div class="apiBox">[地址]r 文件名</div>
+
+<p>文件名可以包含文件的绝对路径或相对路径，指定地址时，只能指定一个单独的行号，而不能是一个区间，也可以是通过正则表达式匹配的行</p>
+<div class="show">e.g.将文件test中的所有内容插入到文件data末
+sed '$r test.txt' data.txt
+该功能常用于一些模板文件，这些模板文件(如信件模板)会在文件中用一个占位符预留空间，然后从另外一份文件导入字符串替换占位符，这样模板文件可以方法使用。如：文件customer写有顾客名单，文件Invitation为顾客姓名预留了位置
+<span class="strong">customer.txt文件内容：</span>
+丹尼斯里奇,       肯汤普森
+詹姆斯高斯林,     林纳斯
+<span class="strong">Invitation.letter文件内容：</span>
+邀请的嘉宾：
+    NAME
+....#邀请说明内容....
+可以将占位符NAME删除，并在该位置填入邀请名单
+<span class="text-red">sed '/NAME/{
+&gt;r customer.txt
+&gt;d
+&gt;}' Invitation.letter</span>
+</div>
+
+<h4 id="多行文本的处理"><a href="#多行文本的处理" class="headerlink" title="多行文本的处理"></a>多行文本的处理</h4><p>默认情况下，sed编辑器会基于换行符的位置将数据分成行，以一行文本作为一个处理单位，如果处理的数据分布在两行或多行上，则sed编辑器可能返回错误的结果。</p>
+<p>sed编辑器为了解决该问题，提供了三个命令用于处理多行文本：</p>
+<ul>
+<li><span class="strong">n</span>(next)：读取数据流中的下一行内容并覆盖当前模式空间中的内容</li>
+<li><span class="strong">N</span>(next)：将数据流中的下一行追加到当前模式空间中</li>
+<li><span class="strong">D</span>：删除多行组中的一行</li>
+<li><span class="strong">p</span>：打印多行组中的一行</li>
+</ul>
+<h5 id="next命令"><a href="#next命令" class="headerlink" title="next命令"></a>next命令</h5><p>next命令分为两个，命令<span class="tips">n</span>会读入数据流中的下一行内容并覆盖当前模式空间中的内容，而命令<span class="tips">N</span>会将下一行内容追加到当前模式空间中一起处理，二者有不同的用途。</p>
+<p>命令n可用来通过字符串定位某行后，基于此行处理之后的每一行的内容。这些字符串在文件中出现的位置(行号)可能是随机的，因此只能通过字符串来定位，然后通过命令n读入下一行的内容并做处理。</p>
+<div class="show">e.g.找出文件data中的uuid
+<span class="strong">data文件内容</span>
+AAAAAA
+BBBBBB
+uuid:
+a3d187a8-3b92-11ef-89d3-610452174e68
+CCCCCC
+uuid:
+a3d187a9-3b92-11ef-89d3-610452445a10
+DDDDDD
+输出uuid
+<span class="text-blue">sed -n '/uuid/{n;p}' data</span>
+e.g.删除文件data.txt中第一行后的空白行
+<span class="strong">data.txt文件内容：</span>
+this is first line.</br>
+this is second line.</br>
+this is last line.
+如果使用命令 sed '/^$/d' data.txt，文件中的所有空白行都会被删除，如果只想删除第一行后的空白行，则可以先定位到第一行，然后通过 n 命令读入下一行并覆盖第一行内容，然后通过删除命令删除该行即可，命令为：
+<span class="text-blue">sed '/first/{n; d}' data.txt</span>
+#通过first字符串定位第一行，然后通过命令n读入第一行后的空白行，再通过命令d删除该空白行
+</div>
+
+<p>命令N会将数据流中的两个文本行合并到同一个模式空间中，文本行仍然用换行符分隔，但sed编辑器现在会将两行文本当成一行来处理。当文本信息(如一个短语)被分隔到了不同的行，需要统一处理时，则可以使用该命令。</p>
+<div class="show">如果对一个文件执行N命令，N命令的工作方式为：
+先读入第一行文本，执行N命令，sed编辑器会立即读入第二行文本，并将二者作为一行文本处理，文本中的换行符\n会保留
+随后读入第三行文本，继续执行N命令，读入第四行文本进行合并，以此循环
+因此如果文件是偶数行，则所有文本都会两两作为一行进行处理
+如果文件是奇数行，则执行到最后一行文本时，N命令会被sed编辑器叫停，最后一行文本单独作处理
+e.g.文件data.txt中有以下内容：
+AA AAAA
+BB BBBB
+执行命令<span class="text-blue">sed 'N;l' data.txt</span>，命令会打印出：
+AA AAAA\nBB BBBB$
+即模式空间中，两行内容会被当作一行保留了\n字符的单行字符串进行处理，因此，对被分割到了两行的字符串进行处理时，可以使用以下方法：
+e.g.替换文件data.txt中的"周杰伦"为"陈奕迅"
+<span class="strong">data.txt文件内容</span>
+1111 11 11周
+杰伦 22 2222
+3333 33 周杰
+伦44 44 4444
+5555 55 周杰伦
+考虑到字符串有不同的换行可能，需要考虑所有换行情况，但如果直接执行：
+<span class="text-blue">sed 'N
+&gt;s/周杰伦/陈奕迅/
+&gt;s/周\n杰伦/陈\n奕迅/
+&gt;s/周杰\n伦/陈奕\n迅/
+&gt;' data.txt</span>
+文件最后一行中的"周杰伦"将没有被替换，这是因为先执行了N命令，而对文件最后一行，由于没有下一行可读，编辑器会叫停N命令，导致最后一行中的字符串无法被匹配到，因此，正确的命令应该为：
+<span class="text-blue">sed '
+&gt;s/周杰伦/陈奕迅/
+&gt;N
+&gt;s/周\n杰伦/陈\n奕迅/
+&gt;s/周杰\n伦/陈奕\n迅/
+&gt;' data.txt</span>
+即先查找字符串都在同一行上的情况，然后执行N命令，开始查找字符串不在同一行的情况
+</div>
+
+<div class="show">N命令可以多次调用，来实现三行、四行等多行的合并处理，但需要注意最后一行是否会被合并到之前的行中，如果最后一行被孤立，其中的内容可能会无法被正确处理
+<span class="strong">data.txt文件包含以下内容</span>
+AA AA AAAA
+BB BB BBBB
+CC CC CCCC
+DD DD DDDD
+只调用一次N命令时：
+sed -n 'N;l' data.txt
+返回值为
+AA AA AAA\nBB BB BBB$
+CC CC CCC\nDD DD DDD$
+调用两次N命令时：
+sed -n 'N;N;l' data.txt
+sed编辑器读入第一行后，执行第一个N命令读入第二行，执行第二个N命令读入第三行，执行l命令输出，然后清空模式空间。并读入第四行，开始重新执行指定的命令，但执行到第一个N命令后，由于文件已经读取到最后一行，于是sed编辑器会叫停命令执行，于是第四行由于没有执行到l命令，所以输出中将缺少第四行：
+AA AA AAA\nBB BB BBB\nCC CC CCC$
+类似的，调用3次N命令，将使整个文件作为同一个行进行处理，输出值为：
+AA AA AAA\nBB BB BBB\nCC CC CCC\nDD DD DDD$
+</div>
+
+<h4 id="多行文本的删除D"><a href="#多行文本的删除D" class="headerlink" title="多行文本的删除D"></a>多行文本的删除D</h4><p>在使用N命令时，数据流中的两行或多行文本会被当作同一行来处理，因此如果在N命令后使用d命令，将会同时删除多行文本。如果只需要删除第一行，可以使用<span class="tips">D</span>命令。它只会删除模式空间中的第一行，删除内容包括从第一行开头到换行符（含换行符）为止的所有字符，这个命令常用来删除目标数据字符串所在行的前一文本行。</p>
+<div class="show">e.g.需要搜索的关键词被分割于两行上，需要使用N命令合并搜索，但只删除其中的第一行内容
+<span class="strong">data.txt文件内容：</span>
+1111 11 11周
+杰伦 22 2222
+3333 33 周杰伦
+如果使用d命令，则包含字符串的两行都会被删除
+sed 'N;/周\n杰伦/d' data.txt
+输出值为：
+3333 33 周杰伦
+只删除第一行，需要使用D命令
+sed 'N;/周\n杰伦/D' data.txt
+输出值为：
+杰伦 22 2222
+3333 33 周杰伦
+</div>
+
+<h4 id="多行打印P"><a href="#多行打印P" class="headerlink" title="多行打印P"></a>多行打印P</h4><p>与多行删除类似，如果将打印命令p(小写)与N命令一起使用，则p命令会同时输出所有匹配到的多行的内容。如果只想输出多行中的第一行内容，则需要使用<span class="tips">P</span>(大写)命令。同样，该命令只会输出模式空间中第一行开始到换行符之间的内容</p>
+<div class="show">e.g.打印上个例子中文件data.txt的指定字符串
+小写的命令p会输出包含该字符串的多个行
+sed -n 'N;/周\n杰伦/p' data.txt
+输出：
+1111 11 11周
+杰伦 22 2222
+大写的命令P只输出模式空间中的第一行
+sed -n 'N;/周\n杰伦/P' data.txt
+输出：
+1111 11 11周
+</div>
+
+<h4 id="排除命令"><a href="#排除命令" class="headerlink" title="排除命令!"></a>排除命令!</h4><p>在命令前加上行地址可以指定命令只在这些行生效，而如果想命令在这些行中不生效，直接在行地址后加上<span class="tips">!</span>即可。排除命令<span class="tips">!</span>可以用来指定命令在某些行中不生效，而对文本剩下的其他行均生效。</p>
+<div class="show">e.g.文件data.txt含以下内容
+1111 AA
+2222 AA
+3333 AA
+4444 AA
+输出文本内容，包含字符串2222的行除外
+sed -n '/2222/!p' data.txt
+输出值为：
+1111 AA
+3333 AA
+4444 AA
+将文本行中的AA替换为BB，2,3行除外
+sed '2,3!s/AA/BB/' data.txt
+输出值为：
+1111 BB
+2222 AA
+3333 AA
+4444 BB
+</div>
+
+<h4 id="命令跳转b"><a href="#命令跳转b" class="headerlink" title="命令跳转b"></a>命令跳转b</h4><p>排除命令可以用来指定某个命令对哪些行不生效，当有大量的命令都要求对这些行不生效时，如果需要为每个命令都加上<span class="tips">!</span>过于繁琐。为此，sed提供了分支命令<span class="tips">b</span>(branch)，用来帮助这些匹配的行跳过一整组命令，branch命令的格式为:</p>
+<p><span class="strong">[行地址]b [跳转位置]</span></p>
+<p>在文本处理命令中可以使用<span class="tips">: 位置标识符</span>(位置标识符最长可以为7个字符)来指定一个branch命令跳转的位置。注意：这里的跳转位置是指在命令行中的跳转位置，而不是跳转到文本流的哪个位置。行地址参数决定了branch命令触发的条件以及branch在哪些行生效，当在匹配的行执行到branch命令时，sed编辑器会跳转到位置标识符所在命令位置，并略过branch命令与位置标识符之间的所有命令。如果没有为branch命令指定跳转位置，则branch命令会跳过所有在它之后的命令，直接结束本行文本的处理。</p>
+<div class="show">命令的常见用法：
+处理某文本流时，对于包含内容AA的行只执行命令3，命令4，其他行命令1，2，3，4均执行，就可以使用branch命令
+<span class="text-blue">sed '<span class="text-red">/AA/b jump;</span>命令1;命令2;<span class="text-red"> :jump; </span>命令3;命令4' data.txt</span>
+</div>
+
+<div class="show">e.g.文件data.txt含以下内容
+1111 AA BB CC
+2222 AA BB CC
+3333 AA BB CC
+4444 AA BB CC
+1. 不指定跳转位置，文本处理命令会跳转到命令末尾
+<sapn class="text-red">sed '2,3b;s/AA/aa/;s/BB/bb/;s/CC/cc/' data.txt</sapn>
+由于没有指定命令跳转位置，对于第二，第三行，b命令会跳过后面的两个s命令，但对于其他行，b命令不生效，所有命令不跳过，输出值为：
+1111 aa bb cc
+2222 AA BB CC
+3333 AA BB CC
+4444 aa bb cc
+2. 指定跳转位置，文本处理命令会跳转到位置标识符开始的地方
+<span class="text-blue">sed '2,3b jump1
+&gt;s/AA/aa/
+&gt;s/BB/bb/
+&gt; :jump1
+&gt;s/CC/cc/' data.txt</span>
+定义了一个位置跳转符 jump1，文本执行到第二，第三行时，s/AA/aa;s/BB/bb/命令会被跳过，跳转到jump1开始执行，因而s/CC/cc会正常执行
+1111 aa bb cc
+2222 AA BB cc
+3333 AA BB cc
+4444 aa bb cc
+该命令等价于：
+<span class="text-blue">sed '2,3!{s/AA/aa/;s/BB/bb/};s/CC/cc/' data.txt</span>
+</div>
+
+<p>注意，命令在进行跳转时有可能形成循环，如果branch命令触发条件没写好，可能形成死循环</p>
+<div class="show">e.g.删除文本中的所有感叹号
+echo "乌！蒙！山！外！连！着！山！"| sed ':jump;s/!//1p;/!/b jump';
+sed会依次删除感叹号，直到所有感叹号删除完毕退出循环：
+乌蒙！山！外！连！着！山！
+乌蒙山！外！连！着！山！
+乌蒙山外！连！着！山！
+乌蒙山外连！着！山！
+乌蒙山外连着！山！
+乌蒙山外连着山！
+乌蒙山外连着山
+乌蒙山外连着山
+</div>
+
+<h4 id="测试命令t"><a href="#测试命令t" class="headerlink" title="测试命令t"></a>测试命令t</h4><p>测试命令<span class="tips">t</span>(test)也可以实现命令的跳转，其跳转的条件是t命令前的替换命令如果成功匹配并替换了一个字符串，测试命令就会跳转到指定的位置标识符，如果替换命令没有匹配到指定的模式，测试命令就不会跳转。注意，t 命令只能基于替换命令的成功与否触发跳转，而不能直接基于其他命令的结果。测试命令的语法格式与分支命令相同：</p>
+<p><span class="strong">[行地址]t [跳转位置]</span></p>
+<p>与分支命令类似，如果跳转条件满足而没有为t命令指定跳转位置，则sed会跳到命令结束的位置。</p>
+<div class="show">测试命令的工作模式类似于if-then语句
+e.g.如果匹配到AA就替换为aa，此时由于没有指定跳转位置，t命令会跳转到命令末尾，第二个替换命令将不会执行。相反，如果第一个替换命令没有执行，则t命令不跳转，会尝试执行第二个替换命令
+sed 's/AA/aa/;t;s/BB/bb/' data.txt
+e.g.去除文本中的所有感叹号
+echo "乌！蒙！山！外！连！着！山！"| sed '
+&gt;:jump
+&gt;s/!//1p
+&gt;t jump '
+</div>
+
+<h4 id="退出命令q"><a href="#退出命令q" class="headerlink" title="退出命令q"></a>退出命令q</h4><p>退出命令<span class="tips">q</span>可以用来退出sed编辑器，注意，执行该命令后sed编辑器将直接退出而不再读取后续文本行，当然也不再执行后续命令，该命令也常用来退出由<span class="tips">b</span>命令和<span class="tips">t</span>命令形成的循环</p>
+<div class="show">e.g.文件data.txt包含以下内容
+1111AA1111
+2222AA2222
+3333AA3333
+4444AA4444
+5555AA55BB
+6666AA6666
+替换文本行中的AA，直到第四行
+sed '4q;s/AA/aa/' data.txt
+执行到第四行后，命令停止执行，后续文本也不再读入
+1111aa1111
+2222aa2222
+3333aa3333
+4444AA4444
+e.g.一直读入文本行，直到遇到BB字符串，并将包括带有BB字符串的行及其之前的文本行合并为一行，q命令用于终止循环
+sed ':start;/BB/q;N;s/\n/ /;b start' data.txt
+返回值为
+1111AA1111 2222AA2222 3333AA3333 4444AA4444 55AA55BB55
+</div>
+
+
+
+<h4 id="保持空间"><a href="#保持空间" class="headerlink" title="保持空间"></a>保持空间</h4><p>sed对文本的操作都是在名为模式空间的缓冲区进行的，除了模式空间外，sed还有一个名为<span class="tips">保持空间</span>(hold space)的缓冲区，用来辅助模式空间工作。当模式空间中在处理文本行时，保持空间可用来临时存储一些行，有5条命令可以用来操作保持空间：</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>命令来源</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>h</td>
+<td>hold space</td>
+<td>将模式空间中的内容复制到保持空间</td>
+</tr>
+<tr>
+<td>H</td>
+<td>hold space</td>
+<td>将模式空间中的内容追加到保持空间</td>
+</tr>
+<tr>
+<td>g</td>
+<td>get from get space</td>
+<td>将保持空间中的内容复制到模式空间</td>
+</tr>
+<tr>
+<td>G</td>
+<td>get from get space</td>
+<td>将保持空间中的内容追加到模式空间</td>
+</tr>
+<tr>
+<td>x</td>
+<td>exchange</td>
+<td>交换模式空间和保持空间的中内容</td>
+</tr>
+</tbody></table>
+</div>
+
+<p><strong>保持空间的运用</strong><br>巧妙使用保持空间可以实现一些有趣的功能，如实现文件的反序处理。默认情况下，sed编辑器会从文本流的第一行开始读取，第一行处理完毕才会载入第二行文本并作处理，但通过保持空间，我们可以将文本第一行暂存到保持空间，让sed编辑器先处理第二行，然后再从保持空间读出第一行文本进行处理，实现文本的反序处理，修改sed编辑器的默认处理流程。</p>
+<div class="show">e.g.实现文件的反序输出，即最先输出最后一行，然后依次从后到前输出文件内容
+实现思路为：
+1. 等sed编辑器读入第一行内容到模式空间后，使用h命令将内容复制到保持空间
+2. 等sed编辑器读入第二行内容后，使用G命令将保持空间中的内容追加到模式空间中，此时第一行文本将排于第二行文本之后，然后再使用h命令将此时模式空间中的内容都存储到保持空间
+3. sed编辑器读入第三行，继续使用G命令将保持空间中的内容追加到模式空间，此时文本行顺序为：第三行、第二行、第一行。再次使用h命令将其保持到保持空间
+4. 重复上述步骤，直到文本行都被读取完毕，此时所有行都会反序存储于保持空间中
+5. 读取并打印文本行
+<span class="strong">文件data.txt内容：</span>
+1111
+2222
+3333
+4444
+sed编辑器会在每次执行完一次命令，都会自行读入下一行，因此只需要使用G命令将保持空间中的内容追加到模式空间即可。但刚开始模式空间读入文本流第一行时，保持空间为空，因此对于第一行，不需要将保持空间追加到其之后，可以用排除命令!解决：
+1!G
+将文本行反序后，需要将此时模式空间的内容存储到保持空间：
+h
+等到sed编辑器读取到文本最后一行，并执行完G命令，说明文本流的反序已经完成，此时打印模式空间中的内容即可：
+$p
+完整的命令为：
+<span class="text-red">sed -n '1!G;h;$p' data.txt</span>
+</div>
+
+<h4 id="模式引用-amp"><a href="#模式引用-amp" class="headerlink" title="模式引用&amp;"></a>模式引用&amp;</h4><p>当sed匹配到了字符串时，可以在后续的命令中使用<span class="tips">&amp;</span>引用匹配到的字符串</p>
+<div class="show">e.g.查找文本中以at结尾的单词，并在该单词外加上双引号""
+ echo "The cat sleeps in his hat." | sed 's/*at/"<span class="text-red">&</span>"/g'
+ 文本会替换为：
+ The "cat" sleeps in his "hat".
+sed替换命令中，替换后的字符串不能使用*等通配符，因此上述语句改为以下命令将不会正常完成替换工作：
+echo "The cat sleeps in his hat." | sed 's/*at/"*at"/g'
+文本会被替换为：
+The "*at" sleeps in his "*at".
+</div>
+
+<h4 id="部分引用"><a href="#部分引用" class="headerlink" title="部分引用"></a>部分引用</h4><p>&amp;符号会引用匹配到的整个字符串，如果只想引用字符串的一部分，需要使用一些特殊的方法：</p>
+<p>sed编辑器可以使用<span class="tips">圆括号( )</span>在替换模式中定义子模式，然后在替换后的字符串中使用<span class="tips"> \数字 </span>的形式来引用每个子模式，数字表示子模式的位置。sed编辑器会将第一个子模式分配为\1，第二个子模式分配为\2，依此类推。注意！在使用圆括号定义子模式时，<span class="tips">需要使用转义字符将圆括号标识为分组字符</span>，否则sed编辑器会将其识别为普通的圆括号。</p>
+<div class="show">在使用部分引用时，将字符串中需要保留的部分使用<span class="tips">\(字符串\)</span>的形式定义为子模式，然后在替换后的字符串中使用<span class="tips">\数字</span>的形式引用需要保留的部分
+e.g.文件data.txt含以下内容：
+<code>最常用的是Java语言和SpringBoot框架</code>
+替换Java但保留后缀"语言"，替换SpringBoot但保留后缀"框架"
+sed -n 's/Java\(语言\)和SpringBoot\(框架\)/JavaScript\1和Vue\2/p'
+输出值为：
+最常用的是JavaScript语言和Vue框架
+</div>
+
+<div class="show">在使用替换命令时，由于在指定替换后的字符串时不能使用通配符，而又需要在替换后的字符串中引用部分匹配到的字符串时，就可以很方便地以子模式的形式引用
+e.g.文件data.txt含以下内容
+furry cat
+furry hat
+furry dog
+在替换后的字符串中不能使用通配符时，可以用该方法引用所匹配到字符串中的一部分，相当于替换后的字符串中也使用了通配符
+sed 's/furry \(.at\)/pretty \1/'
+输出值：
+pretty cat
+pretty hat
+furry dog
+</div>
+
+<h4 id="在shell脚本中使用sed"><a href="#在shell脚本中使用sed" class="headerlink" title="在shell脚本中使用sed"></a>在shell脚本中使用sed</h4><p>默认情况下，sed编辑器会将命令结果打印到屏幕上，因此在脚本中使用sed命令时，需要对其输出结果进行重定向，常用的方法是使用$()将其结果重定向到一个变量中，方便后续处理。以外是一些可能用到的sed脚本示例：</p>
+<h5 id="格式化数值"><a href="#格式化数值" class="headerlink" title="格式化数值"></a>格式化数值</h5><div class="show">e.g.输入一个值计算其阶乘，然后将计算结果以1,000,000格式输出
+计算部分很简单，重点在于使用sed处理计算结果时，需要从个位开始每3位添加一个逗号，处理命令为：
+sed '
+&gt;:start
+&gt;s/\(.*[0-9]\)\([0-9]\{3\}\)/\1,\2/
+&gt;t start'
+关键在于正则表达式部分，它定义了两个子模式：
+.*[0-9]
+[0-9]{3}
+第一个子模式中的 .* 组合会匹配任意长度的除回车和换行符外的任意字符，[0-9]代表该子模式匹配的字符串必须以数字结尾，二者结合，该子模式会匹配任意长度以数字结尾的字符串
+第二个子模式会匹配三位数字
+此外，该sed命令每一次只会在字符串中插入一个逗号，因此使用了跳转命令t形成了一个循环，它会一直循环直到t命令前的s命令语句无法插入逗号为止
+当为该sed命令输入字符串12345678时
+<span class="strong">第一次循环：</span>
+正则表达式.*[0-9][0-9]{3}中的.*[0-9]需要为[0-9]{3}预留3位数字，然后*[0-9]本身匹配任意多数字结尾的字符串，所以：
+.*[0-9]匹配字符串：12345
+[0-9]{3}匹配字符串：678
+然后s命令会在两个子模式间插入逗号，因此第一次循环执行结果为：
+12345,678
+<span class="strong">第二次循环：</span>
+输入值为：12345,678
+如果[0-9]{3}匹配了"678"，.*[0-9]会匹配到"12345,"，不满足以数字结尾的要求。因此在字符串"12345,678"只有"12345"部分满足正则表达式要求。后面的",678"在s替换命令中作为不匹配的字符串原样保留，替换作用对其不生效
+因此，第二次循环，"12345"被替换为了"12,345"，再加上原字符串保留的",678"，最后的输出结果为12,345,678，这样数值会以方便阅读值的格式输出，整个脚本完整的代码如下：
+</div>
+
+<pre><code>#!/bin/bash
+result=1
+counter=$1
+while [ $counter -gt 1 ]
+ do
+  result=$[ $result * counter ]
+  counter=$[ $counter - 1]
+ done
+outputValue=$(echo $result | sed '
+:start
+s/\(.*[0-9]\)\([0-9]\&#123;3\&#125;\)/\1,\2/
+t start')
+echo "计算结果为：$outputValue"</code></pre>
+
+<div class="show">将上述代码保存于test.sh文件，然后执行
+bash test.sh 20
+计算20的阶乘，最后输出结果为：
+计算结果为：2,432,902,008,176,640,000
+</div>
+
+<h5 id="加倍行距"><a href="#加倍行距" class="headerlink" title="加倍行距"></a>加倍行距</h5><div class="show">我们可以向文本文件的行间插入空白行，使得文本行看起来没那么密集
+This is the header line. </br>
+This is the first data line.</br>
+This is the second data line.</br>
+This is the last line.
+插入空白行可以从以下几点出发考虑：
+1.如果文件本身已经有一些空白行，如果再加入空白行每两行文本之间可能会有多个空白行，因此应该先删除原文件的空白行(除非文本本身需要刻意保留这些空白行)
+2.最后一行文本之后不需要空白行
+3.默认情况下，sed编辑器保持空间就是一个空白行，可以使用G命令将其追加到模式空间内容之后
+由此，加倍文件行距的命令为：
+<span class="text-blue">sed '/^$/d;$!G' data.txt</span>
+通过^$匹配文件原有空白行然后删除，通过$!G命令给除最后一行以外的行添加空白行
+</div>
+
+<h5 id="给文本添加行号"><a href="#给文本添加行号" class="headerlink" title="给文本添加行号"></a>给文本添加行号</h5><div class="show">通过 = 命令可以打印行号，但行号会打印在文本内容上方，因此需要使用N命令合并，然后删除其中的换行符
+<span class="text-blue">sed '=' data.txt | sed 'N;s/\n/ /'</span>
+预览效果为：
+1 This is the header line. 
+2 This is the first data line. 
+3 This is the second data line. 
+4 This is the last line.
+</div>
+
+<h5 id="查看文件末尾10行"><a href="#查看文件末尾10行" class="headerlink" title="查看文件末尾10行"></a>查看文件末尾10行</h5><p>用sed实现一个类似于tail命令的效果，读取文件最后10行，由此脚本可以任意魔改实现查看文件末尾n行</p>
+<div class="show">由于sed会从第一行开始读取文本，而我们需要文件最后的10行，因此在使用N命令读入下一行的同时，需要不断删除模式空间最顶部的那一行，直到模式空间中保留文件的末尾10行
+<span class="text-blue">sed '{
+&gt;:start
+&gt;$q
+&gt;N
+&gt;11,$D
+b start}' data.txt</span>
+命令中，$q只会在读取文件最后一行时执行，q命令会退出sed编辑器，这里用来退出循环，而11,$D命令只会在读取文件第11行到最后一行之间的行时执行
+执行流程为：
+sed读入第一行，不执行$q，读入第二行，不执行11,$D
+读入第二行后依旧不执行$q和11,$D
+直到读入第11行，此时sed保持空间中已经有了11行内容，由于读入第11行内容，11,$D命令生效删除保持空间的第一行(也是文件第一行)，让保持空间中只保留10行文本
+之后的行类似，新加入保持空间中的行会替换掉保持空间顶部的行，保障保持空间中保留的是位于文件底部的行
+直到读入文件最后一行，$q生效退出sed编辑器，退出前sed会默认打印此时保持空间中的内容，即文件的最后10行
+可以在此基础上修改命令，任意指定查看行数，如：查看文件末尾3行：
+sed ':start;$q;N;4,$D;n start' data.txt
+</div>
+
+<h5 id="删除空白行"><a href="#删除空白行" class="headerlink" title="删除空白行"></a>删除空白行</h5><h6 id="1-删除文件开头的空白行"><a href="#1-删除文件开头的空白行" class="headerlink" title="1.删除文件开头的空白行"></a>1.删除文件开头的空白行</h6><div class="show"><span class="strong">删除文件开头的空白行</span>
+<span class="text-blue">sed '/./,$!d' 文件名</span>
+地址区间 /./,$ 表示从有任意字符的行开始到文件末，而/./,$!d表示地址区间的行不执行删除命令，即删除文件开头无字符的空白行
+</div>
+
+<h6 id="2-删除文件末尾的空白行"><a href="#2-删除文件末尾的空白行" class="headerlink" title="2.删除文件末尾的空白行"></a>2.删除文件末尾的空白行</h6><div class="show"><span class="strong">删除文件末尾的空白行</span>
+<span class="text-blue">sed ':start ; /^\n*$/{$d ; N ; b start}' data.txt</span>
+与打印文件末的文本行类似，删除文件末的空白行会有点麻烦，需要使用循环来判断空白行位于文本之间还是文件末。正则表达式^\n*$会匹配空行和只包含换行符的行，然后执行大括号中的命令组，$d表示如果该行位于文件最后一行则删除，此时由于文件处于最后一行，N命令不执行。如果不是最后一行，则$d不执行，N命令会读入下一行附加到模式空间中，然后命令跳转回开头重新执行。
+假设文件data.txt包含以下内容(为方便分析，文件末尾有两个空行)：
+1111
+2222<br>
+4444<br><br>
+7777<br><br>
+根据命令，sed编辑器首先读入第一行，不满足/^\n*$/，编辑器不做任何操作，输出第一行
+然后sed载入第二行，同样不满足/^\n*$/，第二行原样输出
+sed载入第三行，该行为空行，满足正则表达式/^\n*$/中*为0的情况，执行{ }中的命令组，由于该行不为文件最后一行，$d不执行，N命令会读入下一行，此时保持空间中的内容为"\n4444"，然后命令跳转回开头，此时保持空间中的字符串不再满足/^\n*$/，sed输出该内容然后读取下一行
+sed读取的第五行也为空行，满足/^\n*$/，执行命令时同样不执行$d命令，但执行N命令，读入的第六行也为空行，此时模式空间内容为"\n\n"，命令跳转到回开头重新执行，此时模式空间中的内容依旧满足/^\n*$/，再次执行命令N，读入第七行，此时模式空间内容为"\n\n7777"，跳转命令后，不满足/^\n*$/，sed将输出该字符串
+sed读入第八行，该行为空白行，sed执行命令组，随后sed通过N命令读入第九行，也为空白行，此时保持空间中的字符串"\n",然后命令进行跳转，再次进行正则匹配，由于"\n"满足/^\n*$/，开始执行命令组，此时sed已经读取到文件末，所以$d执行，删除最后一行(且由于此时两个空白行被N命令合并为了一行，两个空白行会被一起删除)，执行到N命令时由于无下一行，sed会退出，此时文件末尾的所有空白行被删除完毕
+执行命令sed -n ':start;/^\n*$/{$d;N;l;b start}' data.txt，可以清晰看到保持空间中合并过的内容：
+\n4444$
+\n\n7777$
+\n$
+该命令只会删除文件末的空白行，不会去删除文本之间的空白行，只删除文件末的空白行时可以使用此命令
+</div>
+<div class="broadcast color-yellow">
+<div class="iconfont icon-dengpao14hao"></div>
+在多行文本中，文本行末尾虽然隐式地在带有\n，但是是无法用正则表达式/\n/匹配的，但如果sed中使用了命令N来读入下一行文本，则当前文本和下一行文本之间会显式地写入\n，此时则可以使用/\n/来匹配。空白行同理，多个空白行虽然隐式地在末尾带有\n，但无法用正则表达式/^\n$/匹配空白行，而要使用/^$/来匹配，当使用命令N读入两个空白行时，sed编辑器保持空间中的内容将变成"\n"，此时可以使用/\n/匹配到。该例子中，/^\n*$/刚好能完美匹配空白行未被读入时/^$/的形式，也能匹配保持空间中存在多个空白行时/\n*/的形式。
+</div>
+
+<div class="show">e.g.文件data.txt包含以下内容
+1111
+2222
+3333<br>
+5555<br><br>
+8888
+9999
+未使用N命令时，无法匹配到\n
+sed -n '/\n/l' data.txt
+当使用了N命令时，\n会被显式写入文本中，因此可以被正则表达式匹配到
+sed -n 'N;/\n/p' data.txt
+会返回文件带\n的行(但由于文件是奇数行，最后一行无法执行N而导致sed退出，也就不会执行后续的p命令，无输出)
+1111
+2222
+3333<br>
+5555<br><br>
+8888
+通过输出命令l更能清晰看出文本行在保持空间中的具体存储方式
+1111\n2222$
+3333\n$
+5555\n$
+\n8888$
+</div>
+
+<h6 id="3-删除文件中连续的空白行"><a href="#3-删除文件中连续的空白行" class="headerlink" title="3.删除文件中连续的空白行"></a>3.删除文件中连续的空白行</h6><div class="show"><span class="strong">删除文件中连续的空白行</span>
+<span class="text-blue">sed '/./,/^$/!d' 文件名</span>
+文件中数据行之间的多个空白行会被删除，只保留一个空白行。该命令的关键在于，创建包含一个非空白行和一个空白行的地址区间，如果sed编辑器匹配到了这个区间，它不会删除行。但对于不匹配这个区间的行（两个或更多的空白行），它会删除这些行。
+</div>
+
+<h5 id="删除HTML标签"><a href="#删除HTML标签" class="headerlink" title="删除HTML标签"></a>删除HTML标签</h5><div class="show">如果需要删除html文件或xml文件中的标签，只留下标签之间的内容，通过sed也可以轻松实现
+如果使用命令：
+sed 's/<.*>//g' index.html
+/&lt;.*&gt;/首先会匹配该行中最开始遇到的&lt;，此后由于.*会进行贪婪匹配，*会匹配尽可能多的字符，&gt;将匹配闭合标签中最末尾的&gt;，这会导致标签中的文本也被替换掉，如：
+&lt;div&gt; test &lt;/div&gt;
+该正则表达式会匹配高亮的两个尖括号：
+<span class="text-red">&lt;</span>div&gt; test &lt;/div <span class="text-red">&gt;</span>
+这会导致整个标签，包括标签中的内容也会被替换掉，因此，正确的删除标签的命令是：
+<span class="text-blue">sed 's/<[^>]*>//g' 文件名</span>
+正则表达式<[^>]*>表示匹配以 '&lt;' 开头，后面跟任意数量的非 '&gt;' 字符，并以 '&gt;' 结束的字符串，这正是一个HTML标签的形式。这样它会单独匹配双标签中的前半部分，由于使用了全局匹配g，标签的后半部分也会被匹配到，且对单标签也生效
+<span class="text-red">&lt;</span>div<span class="text-red">&gt;</span> test &lt;/div&gt;
+这样，标签会被依次替换删除，只留下标签中的字符串部分
+</div>
+
+<h3 id="awk"><a href="#awk" class="headerlink" title="awk"></a>awk</h3><h4 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h4><p>awk 是一种强大的文本处理工具，广泛用于 Linux 和 Unix 系统中。它的名字来源于其三位创建者 Alfred V. Aho、Peter J. Weinberger 和 Brian W. Kernighan的首字母。相较与sed，awk提供的是一种类编程语言而不仅仅只是编辑器命令，它支持算术运算、数组运算、自定义变量、自定义函数、结构化编程语句(如：循环,判断)、模式匹配等，且awk本身提供了大量的内部函数和内部变量用于进行字符串处理、数值计算、时间处理等。与sed编辑器一样,awk会为每一行文本都执行一次指定的awk程序，不同的是，sed编辑器更注重以行为处理单位，处理列数据的能力较弱，而awk支持将行中的数据提取为字段，并提供了许多内建变量和函数用于调用和处理这些字段，处理列数据的能力远要比sed强，因此，awk被广泛用于格式化文本、运算和过滤数据，快速生成报告等领域。</p>
+<p>Linux中主要使用的是awk的GNU版本——gawk，它是 awk 的扩展实现，由 GNU 项目开发，提供了许多扩展功能和增强特性，同时保持了与传统 awk 的兼容性。在大多数 Linux 发行版中，预装的都是gawk，awk命令通常是gawk的一个符号链接，通过awk命令和gawk命令启动的都是gawk编辑器。</p>
+<h5 id="awk的工作流程"><a href="#awk的工作流程" class="headerlink" title="awk的工作流程"></a>awk的工作流程</h5><p>awk会依次执行以下流程：</p>
+<ul>
+<li>awk首先会执行BEGIN代码块中的内容，因此该代码块通常用来初始化变量、设置环境或打印初始信息</li>
+<li>随后awk会逐行读取数据，并根据普通代码块中的模式-动作对进行匹配和处理，如果代码块中没有指定任何命令，awk会默认执行{ print $0 }，即打印当前文本行</li>
+<li>在处理完所有数据后，awk会执行END代码块中的命令，该代码块可用于打印最终结果、清理资源</li>
+</ul>
+<h4 id="命令格式"><a href="#命令格式" class="headerlink" title="命令格式"></a>命令格式</h4><p>awk程序的基本格式如下：</p>
+<div class="apiBox">awk 选项 '{程序体}' 文件1 文件2 ...</div>
+
+<ul>
+<li>-F 字符：将字段分隔符修改为指定字符</li>
+<li>-f 文件名：从指定的文件中读取程序</li>
+<li>-v 变量名=值：定义一个awk变量并赋值，一个-v选项只能定义一个变量，但可以多次使用-v选项，通过-v选项定义的变量可以在BEGIN程序块中读取到</li>
+<li>-mf 值：指定要处理的数据文件中的最大字段数</li>
+<li>-mr 值：指定数据文件中的最大数据行数</li>
+<li>-w 关键字：指定awk的兼容模式或警告等级</li>
+<li>awk默认支持拓展正则表达式，不需要像sed一样使用额外选项</li>
+<li>awk的程序体用一对大括号<span class="tips">{ }</span>定义，并且当程序是在命令行中指定时需要放到单引号<span class="tips">‘ ‘</span>中，这样shell会将其视为字符串，而不会去尝试解析awk程序，如果从文件中调用awk程序，则不需要单引号</li>
+</ul>
+</br>
+
+<p>通常情况下，awk程序包含模式和命令两个部分，命令部分使用大括号包裹，模式或命令部分可以省略其中一个，但不能两个都省略。如果省略模式，则会对所有输入的行都执行命令。如果省略命令(包括大括号在内的命令部分)，则会默认打印所有与模式匹配的行。</p>
+<div class="show">e.g.打印data.txt文件中所有包含"li"字符串的行
+awk '/li/{print $0}' data.txt
+如果省略命令，则根据awk的默认行为，同样会打印匹配的行
+awk '/li/' data.txt
+如果保留大括号，但不写命令，则awk会进行空操作，不执行任何动作(也不打印任何内容)
+awk '/li/{}' data.txt
+</div>
+
+
+<h5 id="程序定义方式"><a href="#程序定义方式" class="headerlink" title="程序定义方式"></a>程序定义方式</h5><p>awk程序通常分为多个<span class="tips">语句块</span>，语句块使用大括号<span class="tips">{ }</span>包裹，同一个语句块允许定义多条命令，<span class="strong">单行模式</span>下，命令之间使用分号<span class="tips">;</span>分隔即可</p>
+<div class="show">echo "java c python go" | awk '{print $1<span class="tips strong">;</span>print $2}'
+输出值为：
+java
+c
+</div>
+
+<p><span class="strong">多行模式</span>下，可以不使用分号</p>
+<div class="show">echo "java c python go" | awk '{ 
+&gt; print $1 
+&gt; print $2 }' 
+</div>
+
+<p><span class="strong">从文件中调用：</span>awk也支持将程序存储于文件中，然后在命令行中通过<span class="tips">-f</span>选项调用，跟sed编辑器一样，awk程序会对文件中的每行文本都执行脚本</p>
+<div class="show"><span class="strong">script.awk</span>
+{print $1; print $2}
+在命令行中使用<span class="tips">-f</span>选项调用
+echo "java c python go" | awk -f script.awk 
+</div>
+
+<p><span class="strong">awk可执行程序：</span>awk程序写于文件中也可以像shell脚本一样通过’#!’来指定文件的执行器，在赋予相应执行权限后直接通过文件路径直接执行。注意，与shell不同的是在指定awk解释器的时候，需要将选项<span class="tips">-f</span>作为参数传入awk</p>
+<div class="show"><span class="strong">script.awk</span>
+#!/bin/awk -f
+BEGIN {print "Hello World"}
+然后赋给文件权限：
+chmod +x script.awk
+之后通过文件路径可以直接执行：
+./script.awk
+或
+/myAwk/script.awk
+</div>
+
+
+<h5 id="文本输入方式-1"><a href="#文本输入方式-1" class="headerlink" title="文本输入方式"></a>文本输入方式</h5><p>与sed编辑器相同，当命令行未指定输入的文本文件时，awk默认会从STDIN读取输入，每输入一行，awk会处理一行并即时打印处理结果，直到使用<span class="tips">Ctrl+D</span>结束输入，或使用<span class="tips">Ctrl+C</span>终止程序</p>
+<div class="show">awk '{print "输入为："$0}'
+10                 #用户输入
+输入为：10          #awk输出
+GNU/Linux          #用户输入
+输入为：GNU/Linux   #awk输出
+</div>
+
+<p>也可以使用管道符<span class="tips">|</span>将文本输入awk程序</p>
+<div class="show">echo "java c python go" <span class="tips">|</span> awk '{print $1;print $2}'</div>
+
+<p>文本也可以从文件中大量读取</p>
+<div class="show">文本较多时，可以写于文件中，awk可以从文件读取文本
+awk '{print $1;print $2}' data.txt</div>
+
+<h4 id="在处理数据前-后执行脚本BEGIN与END"><a href="#在处理数据前-后执行脚本BEGIN与END" class="headerlink" title="在处理数据前/后执行脚本BEGIN与END"></a>在处理数据前/后执行脚本BEGIN与END</h4><p>awk允许数据处理前，或数据处理后执行某些特定的功能。默认情况下，awk会先从输入读入一行文本，然后对该文本执行对应脚本。如果需要在数据处理前执行某个功能(如：脚本执行前打印提示)，则可以使用<span class="tips">BEGIN</span>关键字来定义脚本，同样，awk还提供了<span class="tips">END</span>关键字用于在数据处理完毕后执行脚本，BEGIN和END是用来在读取数据流之前或之后执行命令的特殊模式。</p>
+<div class="show">awk 'BEGIN { print "程序启动" }
+&gt; {print "执行程序体"}
+&gt; END { print "程序执行完毕"}' data.txt
+</div>
+
+<p>使用该功能可以生成漂亮且清晰的信息报告</p>
+<div class="show">e.g.文件script.awk中的程序
+BEGIN {
+print "当前Linux的用户列表和默认登录shell"
+print "用户名\t\t默认登录shell"
+print "--------------------"
+FS=":"
+}
+{
+print $1 "\t\t" $7
+}
+END {
+print "----------------"
+print "信息来自/etc/passwd文件"
+}
+执行命令
+<span class="text-red">awk -f script.awk /etc/passwd</span>
+生成的信息报告(只展示一部分用户信息)：
+<code>当前Linux的用户列表和默认登录shell
+用户名         默认登录shell
+------------------------
+root        &emsp; /bin/bash
+bin            /sbin/nologin
+daemon         /sbin/nologin
+adm            /sbin/nologin
+lp             /sbin/nologin
+-----------------------
+信息来自/etc/passwd文件</code>
+</div>
+
+<h4 id="使用模式"><a href="#使用模式" class="headerlink" title="使用模式"></a>使用模式</h4><p>与sed相似，awk支持使用模式来过滤数据，使awk程序只作用于某些满足要求的行，BEGIN与END是两个awk预定义的特殊模式</p>
+<h5 id="使用正则表达式"><a href="#使用正则表达式" class="headerlink" title="使用正则表达式"></a>使用正则表达式</h5><p>awk支持基础正则表达式（BRE）和扩展正则表达式（ERE），通过正则表达式可以筛选出满足匹配的行，正则表达式之后语句块中的awk程序将只对这部分行生效</p>
+<div class="show">e.g.找出包含字符串"AA"的行，并打印这些行的第一个字段
+awk '/AA/{print $1}' data.txt
+</div>
+
+<h5 id="匹配操作符"><a href="#匹配操作符" class="headerlink" title="匹配操作符"></a>匹配操作符</h5><p>正则表达式会在每一行的所有内容中进行匹配，如果需要限定正则表达式只能在某个字段内进行匹配，可以使用匹配操作符<span class="tips">~</span>，语法为：</p>
+<div class="apiBox">字段~正则表达式{ 程序体 }</div>
+
+<div class="show">e.g.文件data.txt包含以下内容
+11AA 11AA
+22BB 22AA
+33CC 33AA
+44DD 44AA
+列出字段1中包含"AA"的行
+awk '$1~/^AA/{print $0}' data.txt
+输出值：
+11AA 11AA
+</div>
+
+<h5 id="排除操作符"><a href="#排除操作符" class="headerlink" title="排除操作符"></a>排除操作符</h5><p>正则表达式的匹配结果可以使用<span class="tips">!</span>来进行排除，该排除操作符可以扩展为<span class="tips">!~</span>来根据字段匹配来进行排除，awk会选定除满足正则表达式外的其他所有行</p>
+<div class="show">e.g.打印不包含"22"的行
+awk '!/22/{print $0}' data.txt 
+输出值为：
+11AA 11AA
+33CC 33AA
+44DD 44AA
+打印第一个字段不包含"AA"的行
+awk '$1!~/AA/{print $0}' data.txt 
+输出值为：
+22BB 22AA
+33CC 33AA
+44DD 44AA
+</div>
+
+<h5 id="使用数学表达式"><a href="#使用数学表达式" class="headerlink" title="使用数学表达式"></a>使用数学表达式</h5><p>在进行模式匹配时支持使用数学表达式进行比较，比较类型可以是数值，也可以是字符串，awk支持以下常用的比较符：</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>表达式</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>==</td>
+<td>$1==”root”</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>$3!=0</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>$1&lt;10</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>$1&lt;=10</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>$1&gt;=10</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>$1&gt;=10</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="show">e.g.列出所有超级管理员(UID为0)的用户名
+awk -F: '$3==0{print $1}' /etc/passwd
+</div>
+
+<h4 id="内建变量"><a href="#内建变量" class="headerlink" title="内建变量"></a>内建变量</h4><h5 id="字段相关内建变量"><a href="#字段相关内建变量" class="headerlink" title="字段相关内建变量"></a>字段相关内建变量</h5><div class="table">
+
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$n</td>
+<td>$0代表整行文本，$n代表第n个字段</td>
+</tr>
+<tr>
+<td>$NF</td>
+<td>表示最后一个字段(可以在不知道总共有几个字段，无法使用$n表示时使用)</td>
+</tr>
+<tr>
+<td>FS</td>
+<td>输入字段分隔符</td>
+</tr>
+<tr>
+<td>OFS</td>
+<td>输出字段分隔符</td>
+</tr>
+<tr>
+<td>RS</td>
+<td>输入记录分隔符</td>
+</tr>
+<tr>
+<td>ORS</td>
+<td>输出记录分隔符</td>
+</tr>
+<tr>
+<td>FIELDWIDTHS</td>
+<td>由空格分隔的一列数字，定义了每个数据字段确切宽度</td>
+</tr>
+</tbody></table>
+</div>
+
+<h5 id="字段数据变量"><a href="#字段数据变量" class="headerlink" title="字段数据变量"></a>字段数据变量</h5><p>默认情况下，awk会将每一行文本使用字段分隔符划分为多个数据字段，并自动给每个字段分配一个变量，awk默认使用空白字符(如：空格、制表符)作为字段分隔符，数据字段可以使用相应的变量来引用，也可以通过修改变量来修改字段：</p>
+<ul>
+<li><span class="strong">$0</span>代表整个文本行</li>
+<li><span class="strong">$n</span>代表第n个数据字段</li>
+<li><span class="strong">$NF</span>代表最后一个字段，其中NF表示最后一个字段的索引值(也代表了该记录一共有几个字段)</li>
+</ul>
+<div class="show">1.可以通过字段数据变量引用和修改字段
+echo "java c python go " | awk '{$2="c++" ; print $0}'
+修改后的文本变为：
+java c++ python go
+2. 有时无法确切得知该行一共有多少个字段，$NF可以在不知道字段数量的情况下获取最后一个字段的数据，同时NF也表示该行一共有多少个字段
+echo "AA　BB　CC DD EE" | awk '{print NF,$NF}'
+输出为：
+5 EE
+</div>
+
+<h5 id="输入字段分隔符FS与输出字段分隔符OFS"><a href="#输入字段分隔符FS与输出字段分隔符OFS" class="headerlink" title="输入字段分隔符FS与输出字段分隔符OFS"></a>输入字段分隔符FS与输出字段分隔符OFS</h5><p>变量FS和OFS决定了awk如何处理数据流中的数据字段。其中变量FS决定了awk根据什么字符来分割输入的数据流，默认情况下，FS的值是空白字符，因此awk默认会根据空格、制表符等字符的位置来分割数据流。而某些文件有它独特的字段分割符，如：/etc/passwd 文件默认使用<span class="tips">:</span>为字段分割符，在处理这些文件时，我们可以在将awk程序中FS的值修改为<span class="tips">：</span>，方便awk程序正确分割passwd文件的字段信息。</p>
+<p>变量OFS决定了输出字段时，这些字段间的分隔符，在输出字段值时，print命令会自动将OFS变量的值放置在输出中的每个字段间。</p>
+<div class="show">e.g.文件data含以下内容
+10,20,30,40
+AA,BB,CC,DD
+java,c,python,go
+文件内容由<span class="tips">,</span>隔开，因此FS值为<span class="tips">,</span>，将字段使用----分隔后输出，注意print语句中字段变量之间的逗号只是用来指定多个变量，并不会输出到字段之间
+<span class="text-red">awk 'BEGIN{FS=",";OFS="----"}{print $1,$2,$3,$4}' data</span>
+输出信息：
+10----20----30----40
+AA----BB----CC----DD
+java----c----python----go
+</div>
+
+<h5 id="根据数据宽度分隔字段FIELDWIDTHS"><a href="#根据数据宽度分隔字段FIELDWIDTHS" class="headerlink" title="根据数据宽度分隔字段FIELDWIDTHS"></a>根据数据宽度分隔字段FIELDWIDTHS</h5><p>有时文件中的数据并没有很规律地使用某个字符分隔，甚至部分信息是粘合在一起的，此时可以使用FIELDWIDTHS变量来定义一串值，以决定每个字段的字符长度，awk程序会根据这串值将文本分割为字段。FIELDWIDTHS变量能更精确地处理每个字段的宽度，很适合用来处理那些已经严格按照固定宽度格式化的数据。FIELDWIDTHS定义字段宽度的语法为：<span class="tips">FIELDWIDTHS=”值1 值2 值3….”</span></p>
+<div class="show">e.g.命令ls -lh列出的文件信息，文件所有者、所属组、其他用户权限是合并在一起写的，可以按字符长度将其分割出来
+(1)ls -lh命令输出信息为：
+total 24K
+-rw-r--r-- 1 root root  258 Jul 19 12:58 data.txt
+-rw-r--r-- 1 root root  185 Jul 19 13:40 script.awk
+drwxr-xr-x 2 root root 4.0K Jul 16 05:40 test
+即首行会输出目录的总大小，可以通过sed命令'1d'删除第一行，然后将剩下信息用awk来处理，这里只分析文件的权限部分
+ ls -lh | sed '1d' | awk '
+&gt; BEGIN {
+&gt; print "文件类型\t用户权限\t用户组权限\t其他用户权限"
+&gt; print"---------\t--------\t----------\t------------"
+&gt; FIELDWIDTHS="1 3 3 3"
+&gt; }
+&gt; {
+&gt; print $1"\t\t"$2"\t\t"$3"\t\t"$4
+&gt; }'
+输出值为：
+<div class="table-show" style="letter-spacing:normal">
+
+<table>
+<thead>
+<tr>
+<th>文件类型</th>
+<th>用户权限</th>
+<th>用户组权限</th>
+<th>其他用户权限</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>----</td>
+<td>----</td>
+<td>-----</td>
+<td>-------</td>
+</tr>
+<tr>
+<td>-</td>
+<td>rw-</td>
+<td>r–</td>
+<td>r–</td>
+</tr>
+<tr>
+<td>-</td>
+<td>rw-</td>
+<td>r–</td>
+<td>r–</td>
+</tr>
+<tr>
+<td>d</td>
+<td>rwx</td>
+<td>r–</td>
+<td>r-x</td>
+</tr>
+</tbody></table>
+</div></div>
+
+<h5 id="记录分隔符RS与ORS"><a href="#记录分隔符RS与ORS" class="headerlink" title="记录分隔符RS与ORS"></a>记录分隔符RS与ORS</h5><p>默认情况下，awk以一行为一个处理单位，awk会对所有行都执行一次程序，因此awk会将一行视为一个独立的数据记录。但有时，一个对象的不同数据可能会分布于多行，如一个用户的用户名，账号，Email地址等数据各占一行，这些多行数据共同构成一个用户的数据记录。我们不希望awk为每一行都执行一次程序，而是需要将这些多行视为一个处理单位(一个记录)，此时就需要用RS和ORS变量来指定awk程序的记录分隔符，以便字段变量能正确分配到数据值，其中，RS为输入记录分割符，ORS为输出记录分割符，默认情况下，它们的值都是换行符</p>
+<div class="show">e.g.文件data.txt含以下内容
+Riley Mullen 
+123 Main Street 
+Chicago, IL 60601 
+(312)555-1234 <br />
+Frank Williams 
+456 Oak Street 
+Indianapolis, IN 46201 
+(317)555-9876 <br />
+Haley Snell 
+4231 Elm Street 
+Detroit, MI 48201 
+(313)555-4938
+数据中的每一组包含了一个用户的用户名，地址，电话信息，如果使用默认的FS和RS变量，awk会通过空格来分割字段，通过换行符来分割记录，导致数据被错误解析，对于该文件，一行是一个字段，数据记录通过空白行分割，因此FS变量应当是换行符，RS变量为空字符串：
+<span class="text-red">awk 'BEGIN{FS="\n";RS=""}{print $1,$4}' data.txt </span>
+输出值为：
+Riley Mullen  (312)555-1234 
+Frank Williams  (317)555-9876 
+Haley Snell  (313)555-4938
+通过ORS可以修改输出记录分隔符
+awk 'BEGIN{FS="\n";RS="";ORS="======"}{print $1,$4}' data.txt 
+输出值：
+Riley Mullen  (312)555-1234 ======Frank Williams  (317)555-9876 ======Haley Snell  (313)555-4938======
+</div>
+
+<h5 id="记录计数FNR和NR"><a href="#记录计数FNR和NR" class="headerlink" title="记录计数FNR和NR"></a>记录计数FNR和NR</h5><p>awk命令允许一次输入多个文件进行处理，在处理多文件时，<span class="tips">FNR</span>变量表示当前数据文件中已处理过的记录数，<span class="tips">NR</span>变量则含有已处理过的记录总数，FNR变量每处理完一个文件就会重置一次，而NR变量则会基于上一个文件的统计值继续增加。</p>
+<div class="show">e.g.处理两个文件,统计处理的记录数
+awk ' 
+&gt; BEGIN {FS=","} 
+&gt; {"FNR="FNR,"NR="NR}' data1.txt data2.txt 
+FNR=1 NR=1 #开始处理data1.txt
+FNR=2 NR=2 
+FNR=3 NR=3 
+FNR=1 NR=4 #开始处理data2.txt
+FNR=2 NR=5 
+FNR=3 NR=6
+FNR=4 NR=7
+</div>
+
+<h4 id="其他内建变量"><a href="#其他内建变量" class="headerlink" title="其他内建变量"></a>其他内建变量</h4><p>awk还提供了一些用于提取shell环境变量，命令执行参数等信息的内建变量</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>变量名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ARGC</td>
+<td>命令行参数个数(Argument Count的缩写)</td>
+</tr>
+<tr>
+<td>ARGV</td>
+<td>命令行参数的值，以数组形式存储(Argument Vector的缩写)</td>
+</tr>
+<tr>
+<td>ARGIND</td>
+<td>awk处理的当前文件在ARGV中的位置</td>
+</tr>
+<tr>
+<td>CONVFMT</td>
+<td>数字的转换格式（参见printf语句），默认值为%.6 g</td>
+</tr>
+<tr>
+<td>ENVIRON</td>
+<td>当前shell环境变量及其值组成的关联数组</td>
+</tr>
+<tr>
+<td>ERRNO</td>
+<td>当读取或关闭输入文件发生错误时的系统错误号</td>
+</tr>
+<tr>
+<td>FILENAME</td>
+<td>用作gawk输入数据的数据文件的文件名</td>
+</tr>
+<tr>
+<td>FNR</td>
+<td>当前数据文件中的数据行数</td>
+</tr>
+<tr>
+<td>IGNORECASE</td>
+<td>设成非零值时，忽略gawk命令中出现的字符串的字符大小写</td>
+</tr>
+<tr>
+<td>NF</td>
+<td>数据文件中的字段总数</td>
+</tr>
+<tr>
+<td>NR</td>
+<td>已处理的输入记录数</td>
+</tr>
+<tr>
+<td>OFMT</td>
+<td>数字的输出格式，默认值为%.6 g</td>
+</tr>
+<tr>
+<td>RLENGTH</td>
+<td>由match函数所匹配的子字符串的长度</td>
+</tr>
+<tr>
+<td>RSTART</td>
+<td>由match函数所匹配的子字符串的起始位置</td>
+</tr>
+</tbody></table>
+</div>
+
+<h5 id="提取命令行参数"><a href="#提取命令行参数" class="headerlink" title="提取命令行参数"></a>提取命令行参数</h5><p><span class="tips">ARGC</span>和<span class="tips">ARGV</span>变量用来从shell中获得命令行参数的个数以及参数的值，其中，ARGV是一个数组，存储了命令行中所有参数的值，其索引从0开始。注意，awk不会将awk程序当作命令行参数的一部分。awk命令也可以指定多个输入文件，awk会依次处理这些文件中的内容，而<span class="tips">ARGIND</span>变量就用来获取当前awk程序处理的文件在ARGV数组中的索引</p>
+<div class="show">1.awk不会将程序部分视为命令行的参数  
+awk 'BEGIN{print ARGC,ARGV[0]}' data.txt config.json 
+该命令行有3个参数，ARGV数组会存储这些参数，它们的值分别是：awk，data.txt，config.json。因此该命令输出值为：
+3 awk
+2.提取的参数只包含awk命令部分，如果shell命令包含其他部分，这些变量不会获取它们，如：
+ls -lh | sed '1d' | awk 'BEGIN{print ARGC,ARGV[0]}'
+ARGC和ARGV只会提取awk命令部分的参数个数和参数值
+1 awk
+3.ARGIND变量用来获取awk程序当前处理的文件在ARGV数组中的索引
+awk 'BEGIN{print ARGC,ARGV[2]}{print ARGIND}' data.txt config.json 
+每读取一行文件内容，awk程序会执行一遍(BEGIN和END指定的除外)，因此文件data.txt和config.json有多少行，print ARGIND语句就会执行多少次，输出值为：
+3 config.json 
+1
+1
+2
+2
+2
+</div>
+
+<h5 id="获取shell环境变量"><a href="#获取shell环境变量" class="headerlink" title="获取shell环境变量"></a>获取shell环境变量</h5><p>awk程序中也可以获取shell的环境变量，awk提供了一个关联数组<span class="tips">ENVIRON</span>用于存储shell环境变量，我们可以通过<span class="tips">ENVIRON[“环境变量名”]</span>的方式来提取环境变量的值</p>
+<div class="show">e.g.在awk程序中获取环境变量HOME和PATH的值
+awk 'BEGIN{
+&gt;print ENVIRON["HOME"]
+&gt;print ENVIRON["PATH"]}'
+输出为：
+/root
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
+</div>
+
+<h4 id="自定义变量"><a href="#自定义变量" class="headerlink" title="自定义变量"></a>自定义变量</h4><p>awk允许像shell一样自定义变量，且声明变量的方法与shell类似，直接声明<span class="tips">变量名=值</span>即可，不需要var，int等关键字，变量名可以由字母、数字、下划线组成，且不能以数字开头，严格区别大小写。在awk中调用变量值时，<span class="tips">不需要$</span></p>
+<h5 id="在程序中声明变量"><a href="#在程序中声明变量" class="headerlink" title="在程序中声明变量"></a>在程序中声明变量</h5><p>awk在程序中声明变量时，直接像shell变量一样声明使用即可</p>
+<div class="show">1.变量值可以是字符串，调用变量时不需要$符号
+awk 'BEGIN{ name="Linux"; print name }'
+2.变量值也可以是数值，并且支持包括加减乘除、取余(%)、冥运算(^或**)在内的数学运算
+awk 'BEGIN{ x=10; x=x*10+20; print x }
+</div>
+
+<h6 id="变量的作用域"><a href="#变量的作用域" class="headerlink" title="变量的作用域"></a>变量的作用域</h6><p>awk程序是按顺序执行的，因此变量也将按语句生效生效，且awk程序中的大括号语句块并不会限制变量的作用域，如果在变量生效前调用该变量不会有任何输出值。</p>
+<div class="show">1.由于BEGIN语句块是最先执行的，因此剩下的语句块都可以调用BEGIN语句块中定义的变量
+awk 'awk 'BEGIN{ x=2 }{ print "普通语句块："x }END{ print "END语句块:"x }' data.txt
+输出值为：
+普通语句块：2 #data文件有多少行，普通语句块就执行多少次
+普通语句块：2
+普通语句块：2
+END语句块:2
+2.END语句块是最后执行的，因此END语句块中定义的变量无法在其他语句块中调用
+awk 'BEGIN{print "BEGIN语句块："x}{print "普通语句块："x}END{x=2}' data.txt
+输出值为：
+BEGIN语句块：
+普通语句块：
+普通语句块：
+普通语句块：
+3. 普通语句块中定义的变量，可以在END和位于该语句块之后的普通语句块中调用
+awk 'BEGIN{print "BEGIN语句块："x}{x=2}{print "第二个普通语句块："x}END{print "END语句块:"x}' data.txt 
+输出值为：
+BEGIN语句块：
+第二个普通语句块：2
+第二个普通语句块：2
+第二个普通语句块：2
+END语句库:2
+4.如果后面的普通语句块中定义了变量，前面的普通语句块在第一次执行程序时无法调用变量，但从第二次开始，由于该变量在第一次执行时会被存入，因此此后该变量就可以在前面的语句块中也读取到
+awk 'BEGIN{print "BEGIN语句块："x}{print "第一个普通语句块："x}{x=2}END{print "END语 句块："x}' data.txt 
+输出值为：
+BEGIN语句块：
+第一个普通语句块：   #第一次执行x并不存在
+第一个普通语句块：2  #awk读入文件第二行，程序再次执行，此时x存在
+第一个普通语句块：2
+第一个普通语句块：2
+END语句块：2
+</div>
+
+
+<h5 id="在命令行中声明变量"><a href="#在命令行中声明变量" class="headerlink" title="在命令行中声明变量"></a>在命令行中声明变量</h5><p>变量也可以在命令行中赋值，尤其是当awk程序被写于文件中时，程序变量在文件中不方便修改，此时可以在命令行中定义或修改变量，能十分方便地在每次执行命令时指定不同的值。awk使用第一个非选项参数作为awk的程序，因此定义变量时，变量要写于awk程序之后，否则将报错</p>
+<div class="show">1.awk变量可以直接在命令行上定义，下述语句会输出data文件每行的第一个字段
+awk '{print $x}' x=1 data.txt
+2. 但通过该方式定义的变量无法在BEGIN代码块中访问到
+awk 'BEGIN{print "begin代码块："x};{print "普通代码块："x}' x=10 data.txt
+输出值为
+begin代码块：    #输出的x值为空
+普通代码块：10
+普通代码块：10
+3. 通过-v选项定义的变量，则可以在BEGIN代码块访问到
+awk -v x=10 'BEGIN{print "begin代码块："x};{print "普通代码块："x}' data.txt
+输出值为：
+begin代码块：10    #此时x的值可以访问到
+普通代码块：10
+普通代码块：10
+4. 不使用选项定义变量时，变量不能写于awk程序前
+awk x=10 'BEGIN{print x}' data.txt
+该语句将报错
+</div>
+
+<h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4><p>awk中使用的数组是关联数组，在定义和使用时需要加上数组的索引值</p>
+<h5 id="定义数组"><a href="#定义数组" class="headerlink" title="定义数组"></a>定义数组</h5><p>数组变量赋值语法格式为：</p>
+<div class="apiBox">数组名[索引值]=变量值</div>
+
+<div class="show">数组索引可以为数值，也可以是字符串
+awk 'BEGIN{
+&gt;myArray[0]=10
+&gt;myArray[1]=20
+&gt;myArray["name"]="awk"
+&gt;}{
+&gt;print myArray[0]+myArray[1]
+&gt;print myArray["name"]
+&gt;}' data.txt
+输出值为：
+30
+awk
+</div>
+
+<h5 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h5><p>由于用户无法提前得知数组的索引值是什么，因此awk提供了一个for语句可以用来获取awk的索引，用户可以在for语句中定义一个变量，for语句会将数组的索引赋值给该变量，然后就可以使用该变量作为索引获取到数组元素值，for语句语法格式为：</p>
+<div class="apiBox">for (变量名 in 数组名)
+{
+    循环体
+}</div>
+
+<div class="show">awk 'BEGIN {
+&gt;array["name"]="awk";
+&gt;array["age"]=18;
+&gt;array["system"]="GNU/Linux";
+&gt;for(something in array){
+&gt;print something     #数组索引
+&gt;print array[something] #数组值}
+&gt;}'
+</div>
+
+<h5 id="删除数组元素"><a href="#删除数组元素" class="headerlink" title="删除数组元素"></a>删除数组元素</h5><p>删除数组元素的命令为：</p>
+<div class="apiBox">delete 数组名[索引值]</div>
+
+<div class="show">数组元素删除后无法再调用
+delete array["name"]
+</div>
+
+
+<h4 id="结构化命令"><a href="#结构化命令" class="headerlink" title="结构化命令"></a>结构化命令</h4><p>awk中的条件和循环语句与shell语法差别很多，更像是C语言的语法，循环语句支持使用<span class="tips">break</span>和<span class="tips">continue</span>语句跳出或跳过循环</p>
+<h5 id="if-else语句"><a href="#if-else语句" class="headerlink" title="if-else语句"></a>if-else语句</h5><p>awk中的if-else语句不需要then：</p>
+<div class="apiBox">if(条件语句){
+    #程序体
+}else{
+   #程序体
+    }</div>
+
+<div class="show">e.g.文件data包含以下内容
+11 11AA 11AA
+22 22BB 22AA
+33 33CC 33AA
+44 44DD 44AA
+如果字段1大于30，则输出字段2，否则输出字段3
+awk '{if($1>30){ print "大于30";print $2}else {print "小于30"; print $3}}' data.txt
+使用多行模式代码更为清晰
+ awk '{
+&gt; if($1>30)
+&gt; {
+&gt; print "大于30"
+&gt; print $2
+&gt; }else
+&gt; {
+&gt; print "小于30"
+&gt; print $3
+&gt; }}' data.txt
+</div>
+
+<h5 id="while语句"><a href="#while语句" class="headerlink" title="while语句"></a>while语句</h5><div class="apiBox">while(条件语句)
+{
+    # 循环体
+   }</div>
+
+<div class="show">
+awk 'BEGIN{
+&gt;i=1
+&gt;total=0
+&gt;while(i&lt;5)
+&gt;{
+&gt;total+=$i  #求字段1,2,3,4的和
+&gt;i++
+&gt;}
+&gt;print total}'
+</div>
+
+<h5 id="do-while语句"><a href="#do-while语句" class="headerlink" title="do-while语句"></a>do-while语句</h5><div class="apiBox">do
+{
+    # 循环体
+   }while(条件语句)</div>
+
+<h5 id="for语句"><a href="#for语句" class="headerlink" title="for语句"></a>for语句</h5><p>awk支持的for语句有两种，一种是C语言风格的for循环：</p>
+<div class="apiBox">for(变量定义; 循环条件; 迭代语句)
+{
+    # 循环体
+}
+</div>
+
+<p>一种是用于数组迭代的for-in循环(详见数组部分)：</p>
+<div class="apiBox">for (变量名 in 数组名)
+{
+    # 循环体
+}</div>
+
+<div class="show">e.g.计算0-9的和
+&gt; awk 'BEGIN{
+&gt; total=0
+&gt; for(i=0;i&lt;10;i++)
+&gt; {
+&gt;  total+=i;
+&gt; }
+&gt; print total }' 
+</div>
+
+<h4 id="格式化打印printf"><a href="#格式化打印printf" class="headerlink" title="格式化打印printf"></a>格式化打印printf</h4><p><span class="tips">print</span>语句只能进行基本的打印工作，如果要进行格式化打印需要使用<span class="tips">printf</span>语句，awk支持像C语言一样使用格式化打印命令，只是语法有略微不同：</p>
+<div class="apiBox">printf "格式控制语句",变量1,变量2...</div>
+
+<p>与C语言一样，printf语句支持以下控制字符：</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>控制字符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>%c</td>
+<td>输出一个字符，支持将0~255内的整数输出为ASCII码对应字符</td>
+</tr>
+<tr>
+<td>%s</td>
+<td>输出字符串</td>
+</tr>
+<tr>
+<td>%d或%i</td>
+<td>输出整数</td>
+</tr>
+<tr>
+<td>%f</td>
+<td>输出浮点数</td>
+</tr>
+<tr>
+<td>%e</td>
+<td>用科学计数法(规格化指数形式)输出数值</td>
+</tr>
+<tr>
+<td>%g</td>
+<td>根据数值大小自动选择使用%f或%e形式，保证输出宽度最小，不输出无意义的0</td>
+</tr>
+<tr>
+<td>%o</td>
+<td>以八进制形式输出整型</td>
+</tr>
+<tr>
+<td>%x</td>
+<td>以十六进制(字母小写)形式输出整型</td>
+</tr>
+<tr>
+<td>%X</td>
+<td>以十六进制(字母大写)形式输出整型</td>
+</tr>
+</tbody></table>
+</div>
+
+<p>另外，printf也支持：</p>
+<ul>
+<li>指定字宽，如：”%5d”，输出宽度为5的整数</li>
+<li>指定小数位数，如：”%6.2”，输出包括小数点在内的6位数据，只保留2位小数(如果原数据小数部分超过两位，则四舍五入)</li>
+<li>使用<span class="tips">-</span>来指定数据左对齐(默认情况下，数据会进行右对齐)</li>
+<li>使用\t(制表符)、\n(换行符)等转义字符</li>
+</ul>
+<p>awk中printf语句的用法完全可以参考C语言printf()函数用法，这里只写简单示例</p>
+<div class="show">1.整齐输出每个字段的数据
+awk '{printf "数据：%s\t%s\t%s\n",$1,$2,$3}' data.txt
+输出值：
+数据：11    11AA    11AA
+数据：22    22BB    22AA
+数据：33    33CC    33AA
+数据：44    44DD    44AA
+<br />2.输出浮点数，保留两位小数
+awk 'BEGIN{printf "%6.2f",10.175}
+输出6位，因此左边会补两个空格
+  10.18
+</div>
+
+<h4 id="内置函数"><a href="#内置函数" class="headerlink" title="内置函数"></a>内置函数</h4><p>awk提供了一些内建函数，用于处理字符串、时间等信息，以及进行数学运算</p>
+<h5 id="数学函数"><a href="#数学函数" class="headerlink" title="数学函数"></a>数学函数</h5><p>在进行数学运算时，值不能太大，awk无法处理一些过大的数据</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sin(x)</td>
+<td>正弦函数，x为弧度值</td>
+</tr>
+<tr>
+<td>cos(x)</td>
+<td>余弦函数，x为弧度值</td>
+</tr>
+<tr>
+<td>atan2(x,y)</td>
+<td>x/y的反正切，x和y为弧度值</td>
+</tr>
+<tr>
+<td>exp(x)</td>
+<td>e<sup>x</sup></td>
+</tr>
+<tr>
+<td>log(x)</td>
+<td>以e为底的对数，即log<sub>e</sub>x或ln x</td>
+</tr>
+<tr>
+<td>sqrt(x)</td>
+<td>x的平方根，即 x<sup>1/2</sup></td>
+</tr>
+<tr>
+<td>int(x)</td>
+<td>取x的整数部分，抛弃小数，不进行四舍五入</td>
+</tr>
+<tr>
+<td>rand()</td>
+<td>生成0-1(不包括0和1)之间的随机浮点数</td>
+</tr>
+<tr>
+<td>srand(x)</td>
+<td>以x为种子值，生成随机数</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="show">e.g.生成0-9之间(包括0和9)的随机整数
+x= int (10 * rand())
+</div>
+
+<h5 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h5><p>awk提供了一些用于处理字符串的函数，以下函数方括号中的参数是可选项，如果直接给函数输入字符串时，注意添加双引号</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>index(s,t)</td>
+<td>返回字符串t在字符串s中的索引值，如果没找到的话返回0</td>
+</tr>
+<tr>
+<td>length([s])</td>
+<td>返回字符串s的长度；如果没有指定的话，返回$0的长度</td>
+</tr>
+<tr>
+<td>tolower(s)</td>
+<td>将s中的所有大写字符转换成小写</td>
+</tr>
+<tr>
+<td>toupper(s)</td>
+<td>将s中的所有小写字符转换成大写</td>
+</tr>
+<tr>
+<td>asort(s [,d])</td>
+<td>将数组s按元素值排序，索引值会被替换成从1开始的连续数字，原索引被覆盖。如果指定数组d，则排序后的数组会被存储在数组d中，原数组s保持不变</td>
+</tr>
+<tr>
+<td>asorti(s [,d])</td>
+<td>将数组s按索引值排序，并使用索引值作为元素值，原数组元素值被覆盖，而数组的索引值会使用从1开始的连续数字替换。如果指定d，则排序后的数字存储于数组d中，原数组s保持不变</td>
+</tr>
+<tr>
+<td>gsub(r, s [,t])</td>
+<td>从$0或目标字符串t（如果提供了的话）来匹配正则表达式r。如果找到了，就全部替换成字符串s</td>
+</tr>
+<tr>
+<td>gensub(regexp, replacement, how [, target])</td>
+<td>使用正则表达式regexp匹配字符串，然后使用replacement替换匹配到的文本，replacement中可以使用”\1”,”\2”等形式引用匹配的到的字符串，how用来指定替换方式，如果为”g”表示替换所有匹配项，如果为数字表示匹配第几个，target(可选)用来指定要应用替换的字符串，如果省略，则默认为$0</td>
+</tr>
+<tr>
+<td>match(s, r [,a])</td>
+<td>返回字符串s中正则表达式r出现位置的索引。如果指定了数组a，它会存储s中匹配正则表达式的那部分</td>
+</tr>
+<tr>
+<td>split(s, a [,r])</td>
+<td>将s用FS字符或正则表达式r（如果指定了的话）分开放到数组a中，返回字段的总数</td>
+</tr>
+<tr>
+<td>sprintf(format, variables)</td>
+<td>用提供的format和variables返回一个类似于printf输出的字符串</td>
+</tr>
+<tr>
+<td>sub(r, s [,t])</td>
+<td>在变量$0或目标字符串t中查找正则表达式r的匹配。如果找到了，就用字符串s替换掉第一处匹配</td>
+</tr>
+<tr>
+<td>substr(s, i [,n])</td>
+<td>返回s中从索引值i开始的n个字符组成的子字符串。如果未提供n，则返回s剩下的部分</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="show">1. index(s,t)函数返回字符串t从另一字符串s的哪个位置开始，它会将字符串s的每个字符(包括空格)都视为一个占位的字符，然后返回的是子字符串t是从字符串s的第几个字符位置开始
+awk 'BEGIN{print index("aa bb cc dd","cc")}'
+输出值为：7
+</div>
+<div class="show">2. length([s])函数如果不指定字符串s，则会返回$0的长度
+如：输出data文件每行内容的文本长度(包含字段间的空格)
+awk '{print length()}' data.txt
+</div>
+<div class="show">3. asort(s [,d])函数会按照数组元素在ASCII中的顺序对数组元素进行排序，大致排序类型为：数值(从小到大)->首字母大写的数组元素->首字母小写的数组元素，使用该函数进行排序时注意两点：
+(1)如果数组元素有数值，也有字符串，数值会按其大小正常排序，而不会将其转换为字符串进行处理
+(2)排序完的数组使用for-in遍历会乱序输出，无法正确看到被排序后的数组结果
+(3)关联数组的索引会被替换为从1开始的连续数字，索引从1开始而非0
+如：将下述代码写于文件script.awk中
+#!/bin/awk -f
+BEGIN {
+arr["shell"] = "bash"
+arr["number1"] = 2
+arr["number2"]=10
+arr["name1"] = "Awk"
+arr["name2"] = "awk"
+arr["char"] = "2"
+for(some in arr){
+ print some"-------"arr[some]
+}
+asort(arr);
+print "---------------\n"
+#使用for-in遍历关联数组输出顺序是随机的，想要数组按顺序输出则想要从索引1开始遍历，而不能用for-in
+for(i=1;i&gt;6;i++){   
+print i"-------"arr[i]
+}}
+给与script.awk文件执行权限后，执行./script.awk命令后输出值为：
+char-------2     #for-in语句输出顺序随机
+name1-------Awk
+shell-------bash
+name2-------awk
+number1-------2
+number2-------10
+---------------
+1-------2    #数值按其大小正常排序，而不会将其作为字符按其ASCII码排序(否则10的首字母为1应该排于2前)
+2-------10   
+3-------2    #字符串类型的2排序于数值后
+4-------Awk  #首字母大写排于小写前
+5-------awk
+</div>
+
+<h5 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h5><p>awk支持以下位运算</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>and(x,y)</td>
+<td>将x与y按位进行<span class="text-red">与</span>运算</td>
+</tr>
+<tr>
+<td>or(x,y)</td>
+<td>将x与y按位进行<span class="text-red">或</span>运算</td>
+</tr>
+<tr>
+<td>xor(x,y)</td>
+<td>将x与y按位进行<span class="text-red">异或</span>运算</td>
+</tr>
+<tr>
+<td>compl(x)</td>
+<td>对x进行补运算(按位取反)</td>
+</tr>
+<tr>
+<td>lshift(x,count)</td>
+<td>将x左移count位</td>
+</tr>
+<tr>
+<td>rshift(x,count)</td>
+<td>将x右移count位</td>
+</tr>
+</tbody></table>
+</div>
+
+<h5 id="时间函数"><a href="#时间函数" class="headerlink" title="时间函数"></a>时间函数</h5><p>awk包含一些用来处理时间的函数</p>
+<div class="table">
+
+<table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>systime( )</td>
+<td>返回当前时间的UNIX时间戳</td>
+</tr>
+<tr>
+<td>mktime(“YYYY MM DD HH MM SS”)</td>
+<td>将一个按YYYY MM DD HH MM SS格式指定的日期转换成UNIX时间戳，如果输入的日期时间无效，则返回 -1</td>
+</tr>
+<tr>
+<td>strftime(“时间格式” [,time])</td>
+<td>将时间time(如果未指定time则使用系统当前时间)以指定格式输出(格式需要为系统函数date允许的格式)</td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="show">1.systime( )会输出系统当前时间的UNIX时间戳，即返回系统当前时间到1970年1月1日以来的秒数，
+awk 'BEGIN { print systime() }'
+输出值：1580788800
+2.mktime()函数会将指定的时间转换为UNIX 时间戳，该函数常用来计算时间间隔
+awk '
+&gt;BEGIN {
+&gt;    t1 = mktime("2000 01 01 12 00 00")
+&gt;    t2 = mktime("2020 07 31 12 00 00")
+&gt;    diff = t2 - t1
+&gt;    print "秒数差:", diff
+&gt;}'
+3.strftime()函数用来格式化时间，常用来将时间输出为指定格式
+awk 'BEGIN { print strftime("%Y-%m-%d %H:%M:%S") }'
+输出格式为：2020-11-02 16:30:05
+也可以指定一个时间戳
+awk 'BEGIN{time=systime();print strftime("%Y/%m/%d %H:%M:%S",time)}'
+输出值：2020/07/31/24 20:33:20
+</div>
+
+<h4 id="自定义函数"><a href="#自定义函数" class="headerlink" title="自定义函数"></a>自定义函数</h4><h5 id="函数定义与调用"><a href="#函数定义与调用" class="headerlink" title="函数定义与调用"></a>函数定义与调用</h5><p>在awk中定义、调用函数与C语言类似，但注意，在awk中需要将函数定义于代码块外，且必须出现在所有代码块之前(包括BEGIN代码块)，且awk中的自定义函数也支持传参与返回值：</p>
+<div class="apiBox">function 函数名(形参)
+{
+    #函数体
+  return 值   
+}</div>
+
+<div class="show">e.g.对文件data.txt中的字段1和字段2求和
+awk '
+&gt;function add(num1,num2){
+&gt;return num1+num2
+&gt;}
+&gt;BEGIN{ print "程序启动" }
+&gt;{
+&gt;    result=add($1,$2)
+&gt;    print result
+&gt;}' data.txt 
+</div>
+
+<h5 id="函数库的创建与使用"><a href="#函数库的创建与使用" class="headerlink" title="函数库的创建与使用"></a>函数库的创建与使用</h5><p>可以将多个函数写于一个库文件中，然后在awk命令中使用-f选项调用，如果awk程序也要从文件中加载，可以使用多个-f选项</p>
+<div class="show">e.g.库文件funclib定义了多个函数
+function myfunc1()
+{
+    ....
+}
+function myfunc2()
+{
+    ....
+}
+使用时在加载程序之前加载库文件即可：
+awk -f funclib -f script.awk data.txt
+</div>
+
+<h4 id="调用外部变量"><a href="#调用外部变量" class="headerlink" title="调用外部变量"></a>调用外部变量</h4><p>在shell脚本中使用awk时，可能需要在awk中调用变量，有以下两种方法</p>
+<div class="show">通过-v选项定义一个awk变量，然后将shell变量值赋值给该awk变量，如：
+newPort=8080
+awk -v port="$newPort" '{gsub(8000, port); print}' config.json
+</div>
+
+<div class="show">通过双引号与单引号的巧妙使用来获取变量
+<span class="text-red">awk 'BEGIN{print "'"$变量名"'"}'</span>
+如：
+awk 'BEGIN{print "'"$LANG"'"}'
+输出值：en_US.UTF-8
+<span class="strong">解析：</span>
+awk程序由单引号来包裹，因此需要通过一对单引号来关闭awk程序，即初始的命令形式为：
+awk 'BEGIN{print ' $LANG '}'
+该命令中，'BEGIN{print '为一部分，'}'为另一部分，$LANG左侧的'号关闭了awk程序，将控制权重新交给shell，shell解析$LANG获取到变量值en_US.UTF-8，然后$LANG右侧的'号重新开启了awk程序，
+此时命令相当于awk 'BEGIN{print en_US.UTF-8 }'，awk会将en_US.UTF-8视为变量，从而报错
+因此需要在外层加上一对双引号，将shell程序解析结果作为字符串交给awk程序，即命令修改为：
+awk 'BEGIN{print "' $LANG '"}'
+为什么不加在里面写出：awk 'BEGIN{print '"$LANG"'}'
+这是因为''中的为shell需要解析的部分，对于shell来说，$LANG和"$LANG"是相同的，都会获取变量，这就相当于执行echo $LANG和echo "$LANG"都一样。如果写出这种形式，shell处理完变量，awk解析的命令依旧为：awk 'BEGIN{print en_US.UTF-8 }'，依旧会由于变量en_US.UTF-8不存在而报错
+而双引号加在外面相当于awk执行：awk 'BEGIN{print "en_US.UTF-8"}'，它会直接输出字符串
+通常情况下，awk 'BEGIN{print "' $LANG '"}'也可以获取到变量值
+但如果变量值本身包含空格或引号，这依旧可能造成awk工作错误，因此通常会在$LANG两边再加上一对双引号，将LANG变量的值完全作为一个整体值获取，命令优化为：
+awk 'BEGIN{print "'"$LANG"'"}'
+"'"$LANG"'"中最外层的双引号用来保证awk会将值作为字符串处理，最内层的双引号保证变量值会被作为整体处理
+</div>
+
+<h4 id="修改文件"><a href="#修改文件" class="headerlink" title="修改文件"></a>修改文件</h4><p>awk 没有直接提供类似sed的 -i 的选项来修改原文件内容，通常是先备份原文件，然后将awk的处理结果重定向到临时文件或原文件的方式来实现这一功能</p>
+<div class="show">e.g.修改文件data.txt中的字符串old_text为
+new_text，然后将awk处理结果重定向到临时文件temp中，处理完毕后修改其文件名为data.txt进行覆盖(在此之前应该先备份好data.txt)
+awk '{gsub(/old_text/, "new_text"); print}' data.txt > temp && mv temp data.txt
+</div>
+        </div>
+    </div>
+    <div class="post-nav">
+        
+            <div class="post-prev ">
+                <a href="/blog/2021/12/29/Linux%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4/">上一篇：Linux常用工具命令</a>
+            </div>
+            
+            
+                <div class="post-next">
+                    <a href="/blog/2021/12/29/Linux%E6%96%87%E6%9C%AC%E6%93%8D%E4%BD%9C/">下一篇：Linux文本处理 </a>
+                </div>
+                 
+    </div>
+    <div class="container">
+        <!--设计来源于B站-季夏小贞-->
+        <div class="bigHead"></div>
+        <div class="ears"></div>
+        <div class="body"></div>
+        <div class="paws-front"></div>
+        <div class="paws-back"></div>
+        <div class="details"></div>
+        <div class="tail"></div>
+        <div class="sleep">
+          <span class="s1">z</span>
+          <span class="s2">z</span>
+          <span class="s3">z</span>
+          <span class="s4">z</span>
+          <span class="s5">z</span>
+        </div>
+    </div>
+</div>
+<div class="right-menu">
+    <a class="iconfont backTop" href="javascript:">&#xe655;</a>
+    <div class="husky"></div>
+  </div>
+</div>
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/index.js"></script>
+<script src="/blog/js/highlight.min.js"></script>
+<script src="/blog/js/highlightjs-line-numbers.min.js"></script>
+<script src="/blog/js/article.js"></script>
+
+</body></html>

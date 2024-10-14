@@ -2,7 +2,7 @@
  * @Author: SHIWIVI
  * @Date: 2023-10-16 03:11
  * @Last Modified by: SHIWIVI
- * @Last Modified time: 2024-04-13 19:24:29
+ * @Last Modified time: 2024-06-07 15:58:35
  */
 const { PI, cos, sin, tan, abs, sqrt, pow, min, max, ceil, floor, round, random, atan2 } = Math;
 const getRandom = (min, max) => random() * (max - min) + min;
@@ -80,7 +80,7 @@ class Spark {
             this.sugarNum = sugarNum,
             this.live = live,
             this.data = new Float32Array(6 * sugarNum); //存储的参数有x,y,dx,dy,yBottom,colorIndex
-        spark ? this.setSpark() : this.setSugar();
+            spark ? this.setSpark() : this.setSugar();
     }
     setSpark() {
         for (let i = 0; i < this.sugarNum; i++) {
@@ -135,7 +135,17 @@ function canvasResize() {
     pageWidth = canvasPage.width = window.innerWidth;
     pageHeight = canvasPage.height = window.innerHeight;
 }
-window.addEventListener("resize", canvasResize);
+function canvasThrottle(func,time){
+    let timer;
+    return function(){
+            clearTimeout(timer);
+            timer=setTimeout(()=>{
+                func();
+        },time)
+        }
+}
+
+window.addEventListener("resize", canvasThrottle(canvasResize,500));
 let clickAnimation=webTheme === "dark" ?function(e){e.stopPropagation();pointerAni.push(new Ball(e.clientX, e.clientY, 20))}:function(e){e.stopPropagation();sparkArray.push(new Spark(e.clientX, e.clientY, 5, 5, 10, 140, false));}
 
 window.addEventListener("click",clickAnimation)

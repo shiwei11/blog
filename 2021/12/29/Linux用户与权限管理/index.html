@@ -1,0 +1,813 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="shiwi"><meta name="copyright" content="SHIWIVI"><link rel="preconnect" href="https://cdn.jsdelivr.net/"><link rel="shortcut icon" href="/blog/images/favicon.ico" type="image/x-icon"><style>.preload{position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;left:0;top:0;width:100%;height:100%;background-color:#000;z-index:100}.text{margin-bottom:10px;color:#00cff3;text-shadow:0 0 3px #00cff3;font-size:20px}.text span{display:inline-block}.dance{animation:dance .8s linear}.text span:nth-child(1){animation-delay:0s}.text span:nth-child(2){animation-delay:.1s}.text span:nth-child(3){animation-delay:.2s}.text span:nth-child(4){animation-delay:.3s}.text span:nth-child(5){animation-delay:.4s}.text span:nth-child(6){animation-delay:.5s}.text span:nth-child(7){animation-delay:.6s}.text span:nth-child(8){animation-delay:.7s}.text span:nth-child(9){animation-delay:.8s}.text span:nth-child(10){animation-delay:.9s}@keyframes dance{0%{transform:translateY(0)}50%{transform:translateY(-20px)}100%{transform:translateY(0)}}.loading{width:80%;max-width:260px;height:6px;background-color:#e1e4e8;border-radius:6px}.bar{display:flex;height:100%;background:linear-gradient(90deg,#ffd33d,#ea4aaa 10%,#b34bff 30%,#01feff 51%,#ffb33d 68%,#ea4aaa 85%,#b34bff);background-size:300% 100%;animation:bar 2s linear infinite}@keyframes bar{0%{background-position:100%}100%{background-position:0}}</style><body><div class="preload"><div class="text"><span>L</span> <span>o</span> <span>a</span> <span>d</span> <span>i</span> <span>n</span> <span>g</span> <span>.</span> <span>.</span> <span>.</span></div><div class="loading"><span class="bar"></span></div></div><script>let texts=document.querySelector('.text').querySelectorAll('span');let timer=setInterval(()=>{texts.forEach((item)=>{item.classList.toggle("dance")})},1700);window.onload=function(){clearInterval(timer);document.querySelector('.preload').style="display:none;"}</script><title>SHIWIVI-文章</title>
+<link rel="stylesheet" href="https://at.alicdn.com/t/font_2856826_bu73u0ahu7a.css">
+
+<link rel="stylesheet" href="/blog/css/index.css">
+<link rel="stylesheet" href="/blog/css/article.css">
+<link rel="stylesheet" href="/blog/css/atelier-cave.min.css">
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/blog/atom.xml" title="SHWIVI's blog" type="application/atom+xml">
+</head>
+<body>
+<div class="nav">
+    <div class="card">
+        <div class="head">
+            <img src="/blog/images/head.jpg"  alt="头不见了.." title="狗">
+        </div>
+        <div class="cardText">
+            <p>(ー`´ー)</p>
+            <p>那不是bug，是彩蛋</p>
+        </div> 
+    </div>
+    <ul class="label">
+        
+        <li><a href="/blog/index.html">首页</a></li>
+        
+        <li><a href="/blog/life">日常</a></li>
+        
+        <li><a href="/blog/record">一句</a></li>
+        
+        <li><a href="/blog/message">留言</a></li>
+        
+        <li><a href="/blog/about">关于</a></li>
+          
+    </ul>
+        <ul class="tag">
+            <li>#Document</li>
+            <li>#Java</li>
+            <li>#css</li>
+            <li>#Life</li>
+            <li>#Lua</li>
+            <li>#PCB</li>
+            <li>#Shell</li>
+            <li>#C</li>
+            <li>#html</li>
+            <li>#硬件</li>
+            <li>#javaScript</li>
+            <li>#Firewall</li>
+            <li>#Security</li>
+            <li><a href="/blog/tags/Linux">#Linux</a></li>
+            <li>#Python</li>
+            <li>#Serve</li>
+            <li>#Web</li>
+        </ul>
+    <div class="rsstag"><a href="/blog/atom.xml"><span class="iconfont icon-rss"></span>RSS订阅</a></div>
+<div class="flower">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84.6px" height="70.5px" viewBox="0 0 254 212" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>窗</title>
+<desc>Created with Sketch.</desc>
+<defs></defs>
+<g id="植物" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Artboard" transform="translate(-885.000000, -503.000000)">
+        <g id="植物-紫色盆" transform="translate(882.000000, 500.000000)">
+            <ellipse id="Oval-12" fill="#B3B7C7" cx="140.5" cy="137" rx="39.5" ry="6"></ellipse>
+            <g id="Group-5">
+                <path d="M131.5,149 C137.746054,149 138.400559,136.953074 140.297813,118.503702 C141.504079,106.77367 149.145158,88.1140929 147,75 C142.297813,46.2539062 153.271934,32.5660626 150.170125,19.4282488 C148.031314,10.3692495 142.862042,3 131.5,3 C123.603887,3 113.698654,6.59314895 110.722909,11.2157433 C103.206874,22.8913341 114,46.5137576 114,75 C114,90.4435309 122.495151,106.751425 123.699377,118.476362 C125.595832,136.941172 125.250862,149 131.5,149 Z" id="Oval-11" fill="#BAC4F6"></path>
+                <path d="M135.5,146.5 C132.598908,121.877878 130.965369,104.566553 130.599381,94.5660242 C130.050399,79.5652312 132.963841,77.0580598 132.164069,55.3464601 C131.630888,40.8720602 130.242865,30.4232402 128,24" id="Line-15" stroke="#FFFFFF" stroke-width="2" opacity="0.800892857" stroke-linecap="square"></path>
+                <path d="M77.0442201,163.336077 C84.2239219,163.336077 101.067658,131.237823 101.067658,92.025606 C101.067658,52.8133888 90.9057581,-2.32627732 72.6560979,17.2440872 C50.0508064,41.4852946 69.5871262,36.5862429 74.0442201,63.8595149 C75.572858,73.2133576 77.0442201,94.5993942 77.0442201,104.613421 C77.0442201,143.825638 69.8645184,163.336077 77.0442201,163.336077 Z" id="Oval-9" fill="#BAC4F6" transform="translate(81.510722, 88.251316) rotate(-43.000000) translate(-81.510722, -88.251316) "></path>
+                <path d="M42.5,50.5 C47.5132933,48.8699207 59.3816332,57.6317857 78.1050199,76.785595 C96.8284065,95.9394043 113.960067,116.844206 129.5,139.5" id="Line-17" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M155.281006,152.144255 C162.116643,152.144255 178.153197,121.584207 178.153197,84.2511084 C178.153197,72.6051871 184.354199,51.8242671 182.531201,39.8465879 C178.51025,13.4276595 163.058175,0.233079666 151.10317,13.0532528 C129.581164,36.1327785 143.297279,29.7382802 147.540781,55.7045685 C148.996164,64.6101585 153.500382,80.3852665 153.500382,89.9194035 C153.500382,127.252502 148.445368,152.144255 155.281006,152.144255 Z" id="Oval-9-Copy-2" fill="#E9EDFD" transform="translate(161.092971, 80.123972) scale(-1, 1) rotate(-20.000000) translate(-161.092971, -80.123972) "></path>
+                <path d="M180.5,34.5 C181.290102,21.4892162 175.746138,28.9223292 163.868108,56.7993391 C157.546037,71.6368512 150.532373,85.3308057 144.827114,101.881203 C141.023608,112.914801 138.581237,128.787733 137.5,149.5" id="Line-20" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M60.3426107,183.894782 C69.2498271,183.894782 90.1463498,156.072081 90.1463498,122.083011 C90.1463498,88.0939419 67.5408019,29.4364067 54.8986583,57.2625442 C45.0326912,78.978146 51.0912584,74.0282851 56.6207779,97.6687014 C58.5172227,105.776593 67.8616068,124.363423 67.8616068,133.043561 C67.8616068,167.032631 51.4353942,183.894782 60.3426107,183.894782 Z" id="Oval-9-Copy" fill="#BAC4F6" transform="translate(69.895982, 116.944107) rotate(-71.000000) translate(-69.895982, -116.944107) "></path>
+                <path d="M24.5,109.5 C22.4991751,103.669523 35.0833631,105.49608 62.2525641,114.979669 C79.4278854,120.974828 92.103247,119.378882 106.278649,126.191831 C111.777518,128.834684 120.517968,134.937407 132.5,144.5" id="Line-19" stroke="#FFFFFF" stroke-width="2" opacity="0.595424107" stroke-linecap="square"></path>
+                <path d="M169.495543,159.559977 C178.40276,159.559977 199.299282,131.737276 199.299282,97.7482062 C199.299282,85.7856682 202.004463,66.329956 197.824033,53.1018748 C190.126639,28.745108 172.2443,14.8950801 164.051591,32.9277389 C154.185624,54.6433407 160.244191,49.6934798 165.77371,73.3338961 C167.670155,81.4417878 177.014539,100.028618 177.014539,108.708756 C177.014539,142.697825 160.588327,159.559977 169.495543,159.559977 Z" id="Oval-9-Copy-3" fill="#BAC4F6" transform="translate(179.479352, 92.134636) scale(-1, 1) rotate(-43.000000) translate(-179.479352, -92.134636) "></path>
+                <path d="M213.5,60.5 C209.183273,60.8948914 201.740861,65.4428024 191.172763,74.1437328 C175.320617,87.1951284 177.797205,83.2393994 161.560337,103.262986 C150.735758,116.612043 142.715646,131.024381 137.5,146.5" id="Line-21" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M81.1425752,168.630026 C85.1025169,165.536181 98.2051544,147.96348 98.2051544,111.236918 C98.2051544,74.5103552 86.0176544,46.7369177 70.0176544,46.7369177 C54.0176544,46.7369177 59.5351666,70.3889964 66.8400325,93.0530589 C69.6371249,101.731312 78.9791535,122.814465 81.0032985,132.88325 C84.2653955,149.110029 78.6989273,170.539213 81.1425752,168.630026 Z" id="Oval-10" fill="#E9EDFD" transform="translate(78.936475, 107.743055) rotate(-52.000000) translate(-78.936475, -107.743055) "></path>
+                <path d="M39.5,84.5 C46.5402399,84.832105 55.9862242,87.7506309 67.8379528,93.2555776 C85.6155457,101.512998 79.9127462,96.6348296 100.298442,112.739947 C113.888906,123.476691 125.956092,135.063376 136.5,147.5" id="Line-18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M194.823347,177.534556 C197.785465,175.220296 209.085075,165.125173 213.530819,146.109724 C215.496552,137.701844 211.555235,124.000271 211.555235,111.853141 C211.555235,72.2337887 199.639103,43.8487815 182.378853,43.8487815 C165.118604,43.8487815 168.053621,58.2764613 175.933859,82.7256721 C183.814096,107.174883 191.693317,118.61017 193.876895,129.472028 C197.395933,146.976919 192.187224,179.594121 194.823347,177.534556 Z" id="Oval-10-Copy-2" fill="#E9EDFD" transform="translate(191.881132, 110.738214) scale(-1, 1) rotate(-52.000000) translate(-191.881132, -110.738214) "></path>
+                <path d="M237.5,84.5 C231.839918,82.6252532 222.387737,84.7837206 209.143456,90.9754021 C189.277034,100.262925 198.344222,96.9653923 174.587666,113.911421 C158.749962,125.208774 147.387407,137.071634 140.5,149.5" id="Line-22" stroke="#FFFFFF" stroke-width="2" opacity="0.785044643" stroke-linecap="square"></path>
+                <path d="M102.095097,154.049614 C106.979303,150.233654 123.140143,128.559423 123.140143,83.2607523 C123.140143,37.9620813 108.108037,3.70622602 88.3735811,3.70622602 C68.639125,3.70622602 75.4444439,32.8787829 84.4542911,60.8327171 C87.9042347,71.5365054 99.4267255,97.5405402 101.923313,109.959415 C105.946795,129.97358 99.0810936,156.404412 102.095097,154.049614 Z" id="Oval-10-Copy" fill="#E9EDFD" transform="translate(99.374086, 78.951409) rotate(-21.000000) translate(-99.374086, -78.951409) "></path>
+                <path d="M70.5,27.5 C77.9697854,36.2141564 84.664658,44.2949462 90.5846178,51.7423694 C99.4645574,62.9135043 102.309139,65.8595669 108.078018,74.773869 C113.846897,83.6881711 108.232283,69.1486166 118.500716,94.8794382 C125.346337,112.033319 129.012765,128.573507 129.5,144.5" id="Line-16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M193.001521,189.153265 C198.929205,189.153265 212.83568,162.652399 212.83568,130.278124 C212.83568,97.9038493 204.210737,49.7003434 189.378612,68.5372278 C174.540517,87.3816949 180.150684,86.5530431 183.830536,109.070321 C185.092606,116.793013 193.001521,132.403088 193.001521,140.670839 C193.001521,173.045114 187.073837,189.153265 193.001521,189.153265 Z" id="Oval-9-Copy-4" fill="#BAC4F6" transform="translate(196.248002, 126.727326) scale(-1, 1) rotate(-73.000000) translate(-196.248002, -126.727326) "></path>
+                <path d="M234.5,116.5 C229.435614,115.997419 220.043174,117.148484 206.322678,119.953197 C185.741934,124.160265 185.201799,123.9696 168.145826,131.063968 C156.775178,135.793546 148.226569,140.93889 142.5,146.5" id="Line-23" stroke="#FFFFFF" stroke-width="2" opacity="0.733426339" stroke-linecap="square"></path>
+            </g>
+            <g id="Group-4" transform="translate(101.000000, 137.000000)">
+                <path d="M0,0 C11.7955729,2 24.5052083,3 38.1289062,3 C51.7526042,3 65.3763021,2 79,0 L71.2109375,75.3409091 C61.9375,77.1136364 51.8945312,78 41.0820312,78 C30.2695313,78 19.4570312,77.1136364 8.64453125,75.3409091 L0,0 Z" id="Rectangle-9" fill="#FCDCCF"></path>
+                <path d="M59.2621996,2.19791001 C63.6483775,1.86496527 70.2276443,1.1323286 79,0 L71.2109375,75.3409091 C63.3055851,76.5844933 57.2271178,77.3450382 52.9755357,77.6225437 L59.2621996,2.19791001 Z" id="Rectangle-9" fill="#ECC6B6"></path>
+                <path d="M0,0 C10.9588352,1.33333333 23.3572727,2 37.1953125,2 C51.0333523,2 64.9682481,1.33333333 79,0 L76.7909585,21.3672948 L40.573652,23.0934676 L2.38711382,20.8047516 L0,0 Z" id="Rectangle-9" fill="#F3B096"></path>
+            </g>
+        </g>
+    </g>
+</g>
+</svg>
+</div>
+
+</div>
+<div class="menuBtn closed"> 
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+</div>
+<div class="nightSky"><!--当关闭夜间背景模式时，子元素将在一段延时后才会被清除--></div>
+<div class="main">
+    <div class="msg">
+        <div class="msgText"></div>
+        <div class="msgBar"></div>
+    </div>
+    <div class="motto">
+        <p> //sunny forever<br />
+            while(life&lt;end){<br />
+               love++;<br />
+               beAwesome :)} </p>
+     </div>
+     <div class="mainContent">
+    <div class="canvasWrapper"></div>
+<div class="setWrapper">
+    <ul class="setMenu">
+        <div id="setBtn" class="setButton"><</div>
+        <li class="searchContainer">
+            <input id="searchInput" class="localSearch" placeholder="搜索..." type="search" >
+            <span class="searchIco"></span>
+        </li>
+        <li id="toggleItem">
+        主题：<span class="itemIco sun"></span>
+        </li>
+        <li class="setSize">
+            <span id="increaseFontSize">+</span>
+            <span class="fontSizeNum"></span>
+            <span id="reduceFontSize">-</span>
+        </li>
+        <li id="clearBack">清除背景</li>
+        <li id="disableBack">禁用背景</li>
+    </ul> 
+</div>
+    <div class="resultContainer">
+        <div id="searchResult" class="displayResult"></div>
+    </div>
+    <div class="tocWrapper"><div class="tocBtn">目 录</div><div class="tocBox"><!--tocBox用于容纳生成在toc外的目录--><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7"><span class="toc-number">1.</span> <span class="toc-text">用户</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF"><span class="toc-number">1.1.</span> <span class="toc-text">查看用户信息</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-id%E6%9F%A5%E7%9C%8B%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. id查看用户信息</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#1-logname%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E7%99%BB%E5%BD%95%E7%94%A8%E6%88%B7%E5%90%8D"><span class="toc-number">1.1.2.</span> <span class="toc-text">1. logname查看当前登录用户名</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-whoami%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E6%9C%89%E6%95%88%E7%94%A8%E6%88%B7%E5%90%8D"><span class="toc-number">1.1.3.</span> <span class="toc-text">2. whoami查看当前有效用户名</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-who%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E5%B7%B2%E7%99%BB%E5%BD%95%E7%94%A8%E6%88%B7%E7%9A%84%E5%85%B7%E4%BD%93%E4%BF%A1%E6%81%AF"><span class="toc-number">1.1.4.</span> <span class="toc-text">3. who查看当前已登录用户的具体信息</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-w%E6%9F%A5%E7%9C%8B%E7%94%A8%E6%88%B7%E8%AF%A6%E7%BB%86%E7%99%BB%E5%BD%95%E4%BF%A1%E6%81%AF"><span class="toc-number">1.1.5.</span> <span class="toc-text">4. w查看用户详细登录信息</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-users%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E5%B7%B2%E7%99%BB%E5%BD%95%E7%9A%84%E6%89%80%E6%9C%89%E7%94%A8%E6%88%B7"><span class="toc-number">1.1.6.</span> <span class="toc-text">5. users查看当前已登录的所有用户</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-pinky%E6%89%93%E5%8D%B0%E6%9C%89%E5%85%B3%E7%94%A8%E6%88%B7%E7%9A%84%E4%BF%A1%E6%81%AF"><span class="toc-number">1.1.7.</span> <span class="toc-text">6. pinky打印有关用户的信息</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86"><span class="toc-number">1.2.</span> <span class="toc-text">用户管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-useradd%E6%B7%BB%E5%8A%A0%E7%94%A8%E6%88%B7"><span class="toc-number">1.2.1.</span> <span class="toc-text">1. useradd添加用户</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-userdel%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7"><span class="toc-number">1.2.2.</span> <span class="toc-text">2. userdel删除用户</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-usermod%E4%BF%AE%E6%94%B9%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF"><span class="toc-number">1.2.3.</span> <span class="toc-text">3.usermod修改用户信息</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86"><span class="toc-number">1.3.</span> <span class="toc-text">用户密码管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-passwd%E6%B7%BB%E5%8A%A0-%E4%BF%AE%E6%94%B9%E5%AF%86%E7%A0%81"><span class="toc-number">1.3.1.</span> <span class="toc-text">1.passwd添加&#x2F;修改密码</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-chage%E4%BF%AE%E6%94%B9%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81%E7%8A%B6%E6%80%81"><span class="toc-number">1.3.2.</span> <span class="toc-text">2.chage修改用户密码状态</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#su%E5%88%87%E6%8D%A2%E7%94%A8%E6%88%B7"><span class="toc-number">1.4.</span> <span class="toc-text">su切换用户</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%9A%84%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6"><span class="toc-number">1.5.</span> <span class="toc-text">用户的相关文件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E7%94%A8%E6%88%B7%E7%9A%84%E4%BF%A1%E6%81%AF%E6%96%87%E4%BB%B6"><span class="toc-number">1.5.1.</span> <span class="toc-text">1. 用户的信息文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E7%94%A8%E6%88%B7%E7%9A%84%E5%AF%86%E7%A0%81%E6%96%87%E4%BB%B6"><span class="toc-number">1.5.2.</span> <span class="toc-text">2. 用户的密码文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E7%94%A8%E6%88%B7%E7%9A%84%E9%82%AE%E7%AE%B1%E6%96%87%E4%BB%B6"><span class="toc-number">1.5.3.</span> <span class="toc-text">3. 用户的邮箱文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E7%94%A8%E6%88%B7%E6%A8%A1%E6%9D%BF%E7%9B%AE%E5%BD%95"><span class="toc-number">1.5.4.</span> <span class="toc-text">4. 用户模板目录</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">2.</span> <span class="toc-text">用户组</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%86"><span class="toc-number">2.1.</span> <span class="toc-text">用户组管理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%A2%9E%E5%8A%A0%E7%BB%84"><span class="toc-number">2.1.1.</span> <span class="toc-text">1. 增加组</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E4%BF%AE%E6%94%B9%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">2.1.2.</span> <span class="toc-text">2.修改用户组</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7%E7%BB%84"><span class="toc-number">2.1.3.</span> <span class="toc-text">3. 删除用户组</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E6%8A%8A%E7%94%A8%E6%88%B7%E6%B7%BB%E5%8A%A0%E5%85%A5%E7%BB%84%E6%88%96%E4%BB%8E%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4"><span class="toc-number">2.1.4.</span> <span class="toc-text">4. 把用户添加入组或从组中删除</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-%E6%9F%A5%E7%9C%8B%E6%8C%87%E5%AE%9A%E7%94%A8%E6%88%B7%E6%89%80%E5%9C%A8%E7%BB%84"><span class="toc-number">2.1.5.</span> <span class="toc-text">5.查看指定用户所在组</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%BB%84%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">2.2.</span> <span class="toc-text">用户组的配置文件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E7%94%A8%E6%88%B7%E7%BB%84%E7%9A%84%E4%BF%A1%E6%81%AF%E6%96%87%E4%BB%B6"><span class="toc-number">2.2.1.</span> <span class="toc-text">1. 用户组的信息文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E7%BB%84%E5%AF%86%E7%A0%81%E6%96%87%E4%BB%B6"><span class="toc-number">2.2.2.</span> <span class="toc-text">2. 组密码文件</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%B8%8E%E7%9B%AE%E5%BD%95%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86"><span class="toc-number">3.</span> <span class="toc-text">文件与目录权限管理</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86%E4%B8%AD%E7%9A%84%E5%8F%82%E6%95%B0"><span class="toc-number">3.1.</span> <span class="toc-text">权限管理中的参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%92%E5%BD%92%E9%80%89%E9%A1%B9-R%E4%B8%8E%E5%8F%82%E6%95%B0"><span class="toc-number">3.2.</span> <span class="toc-text">递归选项-R与参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#chown%E6%9B%B4%E6%94%B9%E6%96%87%E4%BB%B6%E6%89%80%E6%9C%89%E8%80%85-change-file-ownership"><span class="toc-number">3.3.</span> <span class="toc-text">chown更改文件所有者(change file ownership)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#chgrp%E6%9B%B4%E6%94%B9%E6%96%87%E4%BB%B6%E6%89%80%E5%B1%9E%E7%BB%84-change-file-group-ownership"><span class="toc-number">3.4.</span> <span class="toc-text">chgrp更改文件所属组(change file group ownership)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#chmod%E6%9B%B4%E6%94%B9%E6%9D%83%E9%99%90-change-the-permissions-mode-of-a-file"><span class="toc-number">3.5.</span> <span class="toc-text">chmod更改权限(change the permissions mode of a file)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%A5%E7%AC%A6%E5%8F%B7%E6%96%B9%E5%BC%8F%E6%8C%87%E5%AE%9A%E6%9D%83%E9%99%90%E4%B8%8E%E7%94%A8%E6%88%B7"><span class="toc-number">3.5.1.</span> <span class="toc-text">以符号方式指定权限与用户</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%A5%E6%9D%83%E9%99%90%E5%80%BC%E6%96%B9%E5%BC%8F%E4%B8%BA%E7%94%A8%E6%88%B7%E6%8C%87%E5%AE%9A%E6%9D%83%E9%99%90"><span class="toc-number">3.5.2.</span> <span class="toc-text">以权限值方式为用户指定权限</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#umask%E6%9B%B4%E6%94%B9%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E6%97%B6%E7%9A%84%E9%BB%98%E8%AE%A4%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE-the-user-file-creation-mask"><span class="toc-number">3.6.</span> <span class="toc-text">umask更改新建文件时的默认权限设置(the user file-creation mask)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%9D%83%E9%99%90"><span class="toc-number">4.</span> <span class="toc-text">特殊权限</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-SetUID%E6%9D%83%E9%99%90"><span class="toc-number">4.1.</span> <span class="toc-text">1. SetUID权限</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AESUID%E6%9D%83%E9%99%90"><span class="toc-number">4.1.1.</span> <span class="toc-text">设置SUID权限</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%96%E6%B6%88SUID%E6%9D%83%E9%99%90"><span class="toc-number">4.1.2.</span> <span class="toc-text">取消SUID权限</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-SetGID%E6%9D%83%E9%99%90"><span class="toc-number">4.2.</span> <span class="toc-text">2. SetGID权限</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AESGID%E6%9D%83%E9%99%90"><span class="toc-number">4.2.1.</span> <span class="toc-text">设置SGID权限</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%96%E6%B6%88SGID%E6%9D%83%E9%99%90"><span class="toc-number">4.2.2.</span> <span class="toc-text">取消SGID权限</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-Sticky-BIT-%E7%B2%98%E7%9D%80%E4%BD%8D%E6%9D%83%E9%99%90"><span class="toc-number">4.3.</span> <span class="toc-text">3. Sticky BIT(粘着位权限)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AESBIT%E6%9D%83%E9%99%90"><span class="toc-number">4.3.1.</span> <span class="toc-text">设置SBIT权限</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%96%E6%B6%88SBIT%E6%9D%83%E9%99%90"><span class="toc-number">4.3.2.</span> <span class="toc-text">取消SBIT权限</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ACL%E6%9D%83%E9%99%90"><span class="toc-number">5.</span> <span class="toc-text">ACL权限</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8BACL%E6%9D%83%E9%99%90"><span class="toc-number">5.1.</span> <span class="toc-text">查看ACL权限</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AEmask%E6%9D%83%E9%99%90"><span class="toc-number">5.2.</span> <span class="toc-text">设置mask权限</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AEACL%E6%9D%83%E9%99%90"><span class="toc-number">5.3.</span> <span class="toc-text">设置ACL权限</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E8%AE%BE%E7%BD%AEACL%E6%9D%83%E9%99%90"><span class="toc-number">5.3.1.</span> <span class="toc-text">1. 设置ACL权限</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%88%A0%E9%99%A4ACL%E6%9D%83%E9%99%90"><span class="toc-number">5.3.2.</span> <span class="toc-text">2. 删除ACL权限</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E8%AE%BE%E7%BD%AE%E9%BB%98%E8%AE%A4ACL%E6%9D%83%E9%99%90"><span class="toc-number">5.3.3.</span> <span class="toc-text">3. 设置默认ACL权限</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%B1%9E%E6%80%A7%E6%9D%83%E9%99%90chattr%E6%9D%83%E9%99%90"><span class="toc-number">6.</span> <span class="toc-text">文件系统属性权限chattr权限</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8Bchattr%E6%9D%83%E9%99%90%E6%96%B9%E6%B3%95"><span class="toc-number">6.0.1.</span> <span class="toc-text">查看chattr权限方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sudo"><span class="toc-number">7.</span> <span class="toc-text">sudo</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#sudo%E5%91%BD%E4%BB%A4"><span class="toc-number">7.1.</span> <span class="toc-text">sudo命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#visudo%E5%91%BD%E4%BB%A4%E4%B8%8Esudoers%E6%96%87%E4%BB%B6"><span class="toc-number">7.2.</span> <span class="toc-text">visudo命令与sudoers文件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%99%E7%94%A8%E6%88%B7%E5%8F%91%E9%80%81%E6%B6%88%E6%81%AF"><span class="toc-number">8.</span> <span class="toc-text">给用户发送消息</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-write-%E7%BB%99%E6%9F%90%E4%B8%AA%E5%9C%A8%E7%BA%BF%E7%94%A8%E6%88%B7%E5%8F%91%E9%80%81%E4%BF%A1%E6%81%AF"><span class="toc-number">8.0.1.</span> <span class="toc-text">1. write 给某个在线用户发送信息</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-wall-%E7%BB%99%E6%89%80%E6%9C%89%E5%9C%A8%E7%BA%BF%E7%94%A8%E6%88%B7%E5%8F%91%E9%80%81%E4%BF%A1%E6%81%AF-write-all"><span class="toc-number">8.0.2.</span> <span class="toc-text">2. wall 给所有在线用户发送信息(write all)</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mail-%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6"><span class="toc-number">8.1.</span> <span class="toc-text">mail 发送邮件</span></a></li></ol></li></ol></div></div>
+        <div class="article">
+        <h1 class="title">Linux用户与权限管理</h1>
+        <div class="art-info">
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：16804</span>
+            <span><span class="iconfont icon-riqi"></span>写于：2021-12-29</span></div>
+            <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2021-12-29</span>
+            <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您49分钟</span></div>
+        </div>
+        <div class="art-content">
+        <h3 id="用户"><a href="#用户" class="headerlink" title="用户"></a>用户</h3><p>Linux系统是一个多用户多任务的分时操作系统，用户可以属于一个或多个组方便系统管理员控制用户权限，默认有一个root管理员组并且root账户属于该组。可以使用<span class="tips">logout</span>登出当前用户账户。</p>
+<h4 id="查看用户信息"><a href="#查看用户信息" class="headerlink" title="查看用户信息"></a>查看用户信息</h4><h5 id="1-id查看用户信息"><a href="#1-id查看用户信息" class="headerlink" title="1. id查看用户信息"></a>1. id查看用户信息</h5><p><span class="strong">id [选项] [用户]</span></p>
+<ul>
+<li>默认打印当前用户信息，返回用户号(uid)、组号(gid)、所属组名</li>
+<li>用户可以通过ID或用户名指定，优先会查找用户名，可以使用<span class="tips">+ UID</span>形式让命令直接查找ID</li>
+<li>-u 仅打印用户ID</li>
+<li>-g 仅打印组ID</li>
+<li>-G 打印组ID和附加组ID</li>
+<li>-n 在指定了u、g、G选项时，打印对应的用户名或组名，而不是ID号</li>
+<li>-r 在指定了u、g、G选项时，打印有效ID号，而不是实际ID</li>
+</ul>
+<div class="broadcast color-pink">
+<div class="iconfont icon-yinle1"></div>
+
+<ul>
+<li>有效ID：当用户使用su命令切换身份，或使用sudo执行命令时，用户的当前有效ID会修改为对应用户的ID，以便于临时获得其他用户的权限</li>
+<li>实际ID：用户在创建账户时分配的真实ID</div></li>
+</ul>
+<h5 id="1-logname查看当前登录用户名"><a href="#1-logname查看当前登录用户名" class="headerlink" title="1. logname查看当前登录用户名"></a>1. logname查看当前登录用户名</h5><p><span class="strong">logname</span> 查看用户的原始登录用户名，如果用户使用su命令等切换用户身份，也不会修改该命令的输出，该命令的输出值通常来自/var/run/utmp或/etc/utmp文件</p>
+<h5 id="2-whoami查看当前有效用户名"><a href="#2-whoami查看当前有效用户名" class="headerlink" title="2. whoami查看当前有效用户名"></a>2. whoami查看当前有效用户名</h5><p><span class="strong">whoami</span>查看当前的有效用户名，使用su、sudo等命令切换了用户身份时，该命令的输出会随着修改</p>
+<h5 id="3-who查看当前已登录用户的具体信息"><a href="#3-who查看当前已登录用户的具体信息" class="headerlink" title="3. who查看当前已登录用户的具体信息"></a>3. who查看当前已登录用户的具体信息</h5><p>主要用来查看哪些用户正在使用系统，以及他们登录时使用的终端设备、IP 地址和登录时间等</p>
+<p><span class="strong">who [选项] [文件名] [am i]</span></p>
+<ul>
+<li>默认打印所有已登录用户的信息，包括登录用户名、登录终端(tty表示本地登录终端，pts一般为远程登录)、登陆时间(如果是远程登录显示IP地址，如果是本地登录显示为(:0))</li>
+<li>如果添加了<span class="tips">am i</span>参数，则只打印当前会话的用户信息</li>
+<li>该命令的输出值默认来自/var/run/utmp或/etc/utmp文件，用户可以手动指定其他文件，如 /var/log/wtmp</li>
+<li>-a 显示所有信息，包括包括运行级别、系统启动时间等</li>
+<li>-b 显示上次系统启动(引导)的日期和时间</li>
+<li>-d 显示已终止的记录(登录结束的会话)，即状态为 DEAD_PROCESS 的记录</li>
+<li>-H 显示输出结果时，首行添加该列的标题，解释该列是什么信息</li>
+<li>-l 只显示等待登录的进程记录，即 LOGIN_PROCESS 类型的记录</li>
+<li>-m 只打印当前会话的用户信息，等价于who am i</li>
+<li>-q 只显示已登录的用户名和总用户数，不显示其他详细信息</li>
+<li>-r 显示当前系统的运行级别（runlevel）</li>
+<li>-s 简单模式，只显示用户名、终端和登录时间(默认)</li>
+<li>-T 显示每个用户终端是否允许接收消息的状态（+表示允许接收消息，-表示不允许接收消息，?表示未知）</li>
+<li>-t 显示最后一次系统时间变化(通常是更改系统时间或重新启动时)</li>
+<li>-u 显示已登录用户的详细信息，包括空闲时间、登录进程 ID 以及会话进程的启动时间，<span class="tips">.</span>表示用户在最后一分钟处于活动状态，<span class="tips">old</span>表示用户已空闲超过 24 小时</li>
+<li>-&zwnj;-lookup 显示远程登录用户的IP地址</li>
+</ul>
+<div class="shell"># 默认情况下，who命令的输出如下
+root     pts/0        2022-10-08 16:54 (192.168.1.10)
+</div>
+
+<h5 id="4-w查看用户详细登录信息"><a href="#4-w查看用户详细登录信息" class="headerlink" title="4. w查看用户详细登录信息"></a>4. w查看用户详细登录信息</h5><p>该命令来源于<span class="tips">procps-ng</span>包，它会返回更详细的登录信息，包括当前系统上所有用户及其活动的进程</p>
+<p> <span class="strong">w</span></p>
+<div class="show">w命令返回值解析：
+15:20:10 up 25 days, 15:25,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+root     pts/0    180.129.129.129  10:09    0.00s  0.04s  0.04s -bash
+第一行为登录时间，up后为linux运行时间，用户数量，服务器负载情况
+第二行IDLE为用户已经空闲时间，JCPU为用户累计CPU占用时间，PCPU为用户当前命令操作占用CPU时间，WHAT为用户操作
+</div>
+
+<h5 id="5-users查看当前已登录的所有用户"><a href="#5-users查看当前已登录的所有用户" class="headerlink" title="5. users查看当前已登录的所有用户"></a>5. users查看当前已登录的所有用户</h5><p><span class="strong">users [文件名]</span></p>
+<ul>
+<li>命令会列出当前登录了系统的所有用户的用户名</li>
+<li>该命令的输出值通常来自/var/run/utmp或/etc/utmp文件，用户可以手动指定其他文件，如 /var/log/wtmp</li>
+</ul>
+<h5 id="6-pinky打印有关用户的信息"><a href="#6-pinky打印有关用户的信息" class="headerlink" title="6. pinky打印有关用户的信息"></a>6. pinky打印有关用户的信息</h5><p>该命令的输出信息比上述命令详细，输出包括主目录、默认shell、</p>
+<p><span class="strong">pinky [选项] [用户名]</span></p>
+<ul>
+<li>-s 以短格式输出信息，显示用户名、终端、登录时间和远程主机名(默认)<blockquote>
+<blockquote>
+<ul>
+<li>-w 以短格式打印时省略用户的真实姓名</li>
+<li>-i 以短格式打印时，不显示用户真实姓名和远程主机</li>
+<li>-q 以短格式打印时，省略用户的全名、远程主机和空闲时间</li>
+<li>-f 以短格式打印时，不显示首行的标题</li>
+</ul>
+</blockquote>
+</blockquote>
+</li>
+<li>-l 生成长格式信息，必须指定至少一个用户名，输出信息包括用户名、用户真实姓名、用户主目录、shell，如果用户指定了，通常还可能包含远程主机、登录时间、空闲时间、邮件状态和计划<blockquote>
+<blockquote>
+<ul>
+<li>-b 以长格式输出信息时，省略用户主目录和shell</li>
+<li>-h 以长格式打印时省略用户的工程文件</li>
+<li>-p 以长格式打印时省略用户的计划文件</li>
+</ul>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<div class="broadcast color-green">
+<div class="iconfont icon-qiqiu"></div>
+pinky输出的用户真实姓名来自<span class="tips">/etc/passwd</span>文件中的用户说明字段，某些用户可能会以<span class="tips">用户姓名,办公室地址,办公室号码,个人号码</span>形式在用户说明中标注个人信息，pinky命令会获取这些信息并输出
+</div>
+
+<h4 id="用户管理"><a href="#用户管理" class="headerlink" title="用户管理"></a>用户管理</h4><h5 id="1-useradd添加用户"><a href="#1-useradd添加用户" class="headerlink" title="1. useradd添加用户"></a>1. useradd添加用户</h5><p><span class="strong">useradd [选项] 用户名</span> </p>
+<p>会在/home 目录下默认生成一个以用户名命名的文件夹作为用户的主文件夹，并且会生成一个与用户名同名的用户组</p>
+<ul>
+<li>-c 注释 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;为用户添加一段注释性描述</li>
+<li>-d /路径/目录名&emsp;&emsp;&emsp;自定义用户的主目录，即不使用与用户名同名的默认目录,如果该目录不存在，则可以同时使用-m参数来新建文件夹指定为主目录</li>
+<li>-g 用户组 &emsp;&emsp;&emsp;&emsp;&emsp;指定用户所属的初始用户组</li>
+<li>-G 用户组，用户组 &emsp;指定用户所属的附加用户组</li>
+<li>-s Shell文件 &emsp;&emsp;&emsp;&emsp;指定用户的登录Shell</li>
+<li>-u 用户号 &emsp;&emsp;&emsp;&emsp;&emsp;指定用户的用户号，可以添加-o选项来重复使用与其他用户相同的标识号</li>
+<li>-D 查看添加用户时的默认设置值(如默认shell，用户密码过期是否禁用账户等)</li>
+<li>-e YYYY-MM-DD 指定账户过期日期</li>
+<li>-f 值 指定该账户密码过期多少天后禁用账户，0表示一过期就禁用，1表示禁用该功能<div class="show">示例：
+# useradd yg
+新增用户yg，同时会新建一个组yg
+# useradd -g gumu lmc
+新增用户lmc，并且将lmc添加到gumu组
+# useradd -d /somedir/user2dir -m user2
+新建用户user2，在 /somedir 文件夹下新建user2dir并将其主目录指定为user2dir (somedir文件夹必须存在，无法用上述命令直接新建)
+</div></li>
+</ul>
+<h5 id="2-userdel删除用户"><a href="#2-userdel删除用户" class="headerlink" title="2. userdel删除用户"></a>2. userdel删除用户</h5><p>只能在root账户下删除用户</p>
+<ul>
+<li><span class="strong">userdel 用户名</span>&emsp;删除用户但保留用户的主目录(避免用户主目录有其他程序调用的重要数据)</li>
+<li> <span class="strong">userdel -r 用户名</span>&emsp;删除用户且不保留用户主目录</li>
+</ul>
+<h5 id="3-usermod修改用户信息"><a href="#3-usermod修改用户信息" class="headerlink" title="3.usermod修改用户信息"></a>3.usermod修改用户信息</h5><p><span class="strong">usermod [选项] 用户名</span></p>
+<ul>
+<li>-l&emsp;修改用户登录名</li>
+<li>-u UID &emsp;修改用户UID</li>
+<li>-c 用户说明 &emsp;修改用户说明信息</li>
+<li>-G 组名 &emsp; 修改用户附加组</li>
+<li>-L &emsp;&emsp;临时锁定用户</li>
+<li>-U &emsp;&emsp;解锁用户</li>
+</ul>
+<h4 id="用户密码管理"><a href="#用户密码管理" class="headerlink" title="用户密码管理"></a>用户密码管理</h4><h5 id="1-passwd添加-修改密码"><a href="#1-passwd添加-修改密码" class="headerlink" title="1.passwd添加/修改密码"></a>1.passwd添加/修改密码</h5><p><span class="strong">passwd [选项] [用户名]</span><br>不写用户名则会修改当前账户密码，输入密码时不会显示在终端上,选项：</p>
+<ul>
+<li>-l &emsp;锁定口令，禁止用户自行修改(参数为小写L)</li>
+<li>-u &emsp;解锁口令，允许用户自行修改</li>
+<li>-S &emsp;显示密码信息</li>
+<li>-d &emsp;删除账户口令</li>
+<li>-f &emsp;强迫用户下次登录时必须修改口令</li>
+<li>-x &emsp;指定口令最长存活期</li>
+<li>-k &emsp;    保留即将过期的用户在期满后能仍能使用</li>
+<li>-&zwnj;-stdin &nbsp;允许从管道中输入口令</li>
+</ul>
+<h5 id="2-chage修改用户密码状态"><a href="#2-chage修改用户密码状态" class="headerlink" title="2.chage修改用户密码状态"></a>2.chage修改用户密码状态</h5><p><span class="strong">chage [选项] 用户名</span></p>
+<ul>
+<li>-l  &emsp;&emsp;列出用户详细密码状态</li>
+<li>-d 日期 &emsp;修改密码最后一次修改日期(修改shadow文件字段3)</li>
+<li>-m 天数 &emsp; 两次密码修改间隔(字段4)</li>
+<li>-M 天数 &emsp;&emsp;密码有效期(字段5)</li>
+<li>-W 天数 &emsp;&emsp;密码过期前警告天数(字段6)</li>
+<li>-I 天数 &emsp;&emsp;密码过期后宽限天数(字段7)</li>
+<li>-E 日期 &emsp;&emsp;账号失效时间(字段8)<div class="show">使用：
+# chage -d 0 user1
+强制用户user1下次登录修改密码
+</div></li>
+</ul>
+<h4 id="su切换用户"><a href="#su切换用户" class="headerlink" title="su切换用户"></a>su切换用户</h4><p><span class="strong">su [选项] 用户名</span><br>从权限高的账户切换到权限低的用户不需要输入密码，反之需要。切换完用户后，可通过 <span class="tips">exit</span> 命令返回原来的用户</p>
+<ul>
+<li>如果不指定用户，默认切换到root</li>
+<li><span class="strong">-或-l或-&zwnj;-login</span>切换用户时会以该用户登录shell方式启动新shell，这会加载.bash_profile、.bashrc等配置文件，并且加载新用户的环境变量，连带切换用户环境，如:家目录，用户邮箱等</li>
+<li>-c 命令：仅使用指定用户身份执行一次-c后的命令，执行完毕后切换回原用户身份</li>
+<li>-s shell路径：切换用户后使用指定的shell，而不使用passwd文件指定的用户默认shell</li>
+<li>-m或-p： 保留当前用户的环境变量，而不是使用目标用户的环境变量</li>
+<li>-w 变量1 变量2…：切换用户时，保留这些变量</li>
+<li>-g 用户组ID：切换用户并加入到指定的用户组</li>
+<li>-G 用户组ID1,用户组ID2…：切换用户并加入到多个指定的用户组</li>
+</ul>
+<div class="broadcast color-red">
+<div class="iconfont icon-gantanhao"></div>
+su命令由util-linux 软件包提供，使用时仅执行<span class="text-green">su 用户名</span> 不会切换用户环境，在很多使用场景中会报错，推荐使用<span class="text-blue">su - 用户名</span>命令</div>
+
+
+<h4 id="用户的相关文件"><a href="#用户的相关文件" class="headerlink" title="用户的相关文件"></a>用户的相关文件</h4><h5 id="1-用户的信息文件"><a href="#1-用户的信息文件" class="headerlink" title="1. 用户的信息文件"></a>1. 用户的信息文件</h5><p>文件位于<span class="tips">/etc/passwd</span>，每一行代表一个用户，并且以</p>
+<div class="show"><span class="tips">用户名:密码标识:用户UID:用户初始组GID:用户说明:用户HOME目录:登录默认Shell</span></div>
+格式书写用户信息
+
+<ul>
+<li>密码标识中，有 X 表示用户有密码，用户登录时linux会前往/etc/shadow查找密码</li>
+<li>用户UID：0 为超级管理员用户，1-999为系统用户，系统用户为ftp等由linux调用的用户，无法登录，修改可能会导致系统无法启动，1000及1000以上为普通用户(旧版本的linux可能1-500为系统用户)</li>
+<li>用户说明可以为空</li>
+<li>用户登录shell一般默认为/bin/bash，系统用户为/sbin/nologin,可以将普通用户的shell更改为/sbin/nologin来禁止用户登录</li>
+</ul>
+<h5 id="2-用户的密码文件"><a href="#2-用户的密码文件" class="headerlink" title="2. 用户的密码文件"></a>2. 用户的密码文件</h5><p>文件位于<span class="tips">/etc/shadow</span>，保存了加密后的用户密码等信息，每一行代表一个用户，如：</p>
+<div class="show">swv:$6$hPQczrTV$urGtx/wXaOtfIKdyuD/aUO.tHogxBM7uie4ioSbyVgcpNS3Po.:19032:0:99999:7:::</div>
+
+<ul>
+<li>字段一：用户名</li>
+<li>字段二：加密后的密码，如果为”!!”或”*”表示没有密码，无法登录</li>
+<li>字段三：密码最后一次修改日期，以1970年1月1日作为标准时间，每天+1</li>
+<li>字段四：允许的两次密码修改间隔，如：10为只允许每10天修改一次密码</li>
+<li>字段五：密码有效期，多少天后必须修改密码</li>
+<li>字段六：密码到期提前警告时间</li>
+<li>字段七：密码到期后仍然可使用时间，如：3为还可以使用3天，其中0代表到期立马失效，禁用账户，-1代表到期后仍然能永久使用</li>
+<li>字段八：账号失效时间，使用时间戳(到期时间与1970-1-1的间隔天数)表示</li>
+<li>字段九：保留字段(未使用)</li>
+</ul>
+<h5 id="3-用户的邮箱文件"><a href="#3-用户的邮箱文件" class="headerlink" title="3. 用户的邮箱文件"></a>3. 用户的邮箱文件</h5><p>文件位于<span class="tips">/var/spool/mail/用户名/</span>，Linux用户可以相互发送内部邮件</p>
+<h5 id="4-用户模板目录"><a href="#4-用户模板目录" class="headerlink" title="4. 用户模板目录"></a>4. 用户模板目录</h5><p>文件位于<span class="tips">/etc/skel/</span>，用于制作一个模板文件，在新注册用户时会在用户家目录下自动生成该文件。如：给每个账户生成一个用户操作手册。</p>
+<h3 id="用户组"><a href="#用户组" class="headerlink" title="用户组"></a>用户组</h3><h4 id="用户组管理"><a href="#用户组管理" class="headerlink" title="用户组管理"></a>用户组管理</h4><p>用户组方便系统对同一类型的用户进行管理，对用户组的修改实际上就是对/etc/group文件的更新。</p>
+<h5 id="1-增加组"><a href="#1-增加组" class="headerlink" title="1. 增加组"></a>1. 增加组</h5><p><span class="strong">groupadd [选项] 组名</span><br>选项：</p>
+<ul>
+<li>-g GID &emsp;指定新用户组的组标识号（GID）</li>
+<li>-o &emsp;&emsp;&emsp;一般与-g参数同时使用，表示新用户组的GID可以与系统已有用户组的GID相同。</li>
+</ul>
+<h5 id="2-修改用户组"><a href="#2-修改用户组" class="headerlink" title="2.修改用户组"></a>2.修改用户组</h5><p><span class="strong">groupmod [选项] 组名</sapn></p>
+<ul>
+<li>-g GID &emsp;修改组ID</li>
+<li>-n 新组名&emsp;修改组名</li>
+</ul>
+<h5 id="3-删除用户组"><a href="#3-删除用户组" class="headerlink" title="3. 删除用户组"></a>3. 删除用户组</h5><p><span class="strong">groupdel 组名</span><br>如果组中有初始用户，该组无法删除(以避免用户不属于任何一个组，想删除该组可以先删除该初始用户的账户)，若组中都为附加用户则可以删除。</p>
+<h5 id="4-把用户添加入组或从组中删除"><a href="#4-把用户添加入组或从组中删除" class="headerlink" title="4. 把用户添加入组或从组中删除"></a>4. 把用户添加入组或从组中删除</h5><p><span class="strong">gpasswd 必选参数 组名</sapn></p>
+<ul>
+<li>-a 用户名&emsp;把用户加入组中</li>
+<li>-d 用户名&emsp;把用户从组中删除</li>
+</ul>
+<h5 id="5-查看指定用户所在组"><a href="#5-查看指定用户所在组" class="headerlink" title="5.查看指定用户所在组"></a>5.查看指定用户所在组</h5><p><span class="strong">groups [用户名]</span></p>
+<ul>
+<li>默认查看当前用户，等价于id -Gn命令</li>
+</ul>
+<h4 id="用户组的配置文件"><a href="#用户组的配置文件" class="headerlink" title="用户组的配置文件"></a>用户组的配置文件</h4><h5 id="1-用户组的信息文件"><a href="#1-用户组的信息文件" class="headerlink" title="1. 用户组的信息文件"></a>1. 用户组的信息文件</h5><p>组信息文件位于<span class="tips">/etc/group</span>，信息格式为：</p>
+<div class="show"><span class="tips">组名:组密码标识:组GID:组中的附加用户</span></div>
+字段说明同用户配置文件类似
+
+<h5 id="2-组密码文件"><a href="#2-组密码文件" class="headerlink" title="2. 组密码文件"></a>2. 组密码文件</h5><p>文件位于<span class="tips">/etc/gshadow</span>，密码文件书写格式为：</p>
+<div class="show"><span class="tips">组名:组密码:组管理员用户名:组中的附加用户</span></div>
+配置如上,该文件不常用
+
+<h3 id="文件与目录权限管理"><a href="#文件与目录权限管理" class="headerlink" title="文件与目录权限管理"></a>文件与目录权限管理</h3><p>以下命令在指定用户、用户组时，可以使用用户名(组名)，也可以使用用户ID(组GID)</p>
+<h4 id="权限管理中的参数"><a href="#权限管理中的参数" class="headerlink" title="权限管理中的参数"></a>权限管理中的参数</h4><div class="table">
+
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+<th>对文件</th>
+<th>对目录</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>r</td>
+<td>读权限</td>
+<td>可以查看文件内容</td>
+<td>可以列出目录中的文件，查看目录中文件的详细信息</td>
+</tr>
+<tr>
+<td>w</td>
+<td>写权限</td>
+<td>可以修改文件内容</td>
+<td>可以在目录中创建、删除、重命名文件</td>
+</tr>
+<tr>
+<td>x</td>
+<td>执行权限</td>
+<td>可以执行文件</td>
+<td>可以进入目录(包括使用cd命令进入目录，或通过路径/path/dir1/file造访目录)，允许通过路径操作目录中的文件</td>
+</tr>
+<tr>
+<td>-</td>
+<td>无权限</td>
+<td>无权限</td>
+<td>无权限</td>
+</tr>
+</tbody></table>
+</div>
+
+<ul>
+<li><span class="tips">删除某个文件需要对包含该文件的父目录拥有w权限，对文件拥有w权限只能修改文件内容而不能进行删除</span></li>
+<li><span class="tips">许多命令需要通过路径来操作目录中的文件，因此往往需要同时拥有对目录的w和x权限才能完成操作</span></li>
+</ul>
+<h4 id="递归选项-R与参数"><a href="#递归选项-R与参数" class="headerlink" title="递归选项-R与参数"></a>递归选项-R与参数</h4><p>以下命令都可以添加-R选项进行递归操作，该选项会对目录下的所有文件都进行递归处理，如果递归时遇到了软链接，而该软链接又指向了另外一个目录，是否对软链接指向的目录也进行遍历取决于以下选项：</p>
+<ul>
+<li>-p 不遍历任何软链接指向的目录(默认)</li>
+<li>-H 只遍历在命令行中显式指定的链接文件所指向的目录</li>
+<li>-L 遍历所有链接文件指向的目录，无论是否在命令行中指定</li>
+</ul>
+<div class="show">e.g.以chown命令为例
+目录dir1下有软链接link1和link2，它们都指向不同目录
+dir1/
+  ├── link1 -> /path/to/dirA/
+  ├── link2 -> /path/to/dirB/
+  └── file
+默认情况下，-R选项不会前往软链接所指向的源目录进行递归操作，以下命令只会修改dir1目录中文件的所有者
+chown -R user1 dir1
+如果要遍历link1指向的dirA目录，并修改该目录中的文件属性，需要添加-H选项，并将link1显式指定在命令行中
+chown -R -H user1 dir1/link1 dir1
+该命令将遍历link1所指向的目录，并修改dirA目录下所有文件的所有者
+</div>
+
+<h4 id="chown更改文件所有者-change-file-ownership"><a href="#chown更改文件所有者-change-file-ownership" class="headerlink" title="chown更改文件所有者(change file ownership)"></a>chown更改文件所有者(change file ownership)</h4><p><span class="strong">chown[选项] [用户] 文件或目录1 文件或目录2…</span></p>
+<ul>
+<li>用户值可以写为<span class="tips">用户:组</span>形式，其中用户、冒号、组都可以只指定其中某一部分：<blockquote>
+<blockquote>
+<ul>
+<li>如果只指定了用户(如user1)，则将修改这些文件的所有者为指定用户</li>
+<li>如果同时指定了用户与组(如user1:group1)，则将同时修改文件的所有者和所属组</li>
+<li>如果指定了用户并添加了冒号(如user1:)，则文件所有者修改为该用户，所属组修改为该用户的默认登录组</li>
+<li>如果指定了组并且有冒号(如:group1)，则只修改文件所属组，功能和chgrp命令相同</li>
+<li>如果只指定了冒号(:)，则不进行任何修改</li>
+</ul>
+</blockquote>
+</blockquote>
+</li>
+<li>-R 以递归方式修改目录和目录下所有文件的所有者</li>
+<li>-c 仅打印修改的部分，在指定了多个文件时，部分文件修改前后所有者一样，则不会打印这部分消息</li>
+<li>-f 静默模式，通常用于指定多个文件时，不打印某个文件无法修改所有权时的错误信息</li>
+<li>-v 详细输出每个信息</li>
+<li>-&zwnj;-dereference 如果文件为软链接文件，则修改其指向的源文件或目录的所有者，而不是软链接文件本身(默认)</li>
+<li>-h 如果文件为软链接文件，则修改软链接文件本身的所有者，而不是链接指向的源文件或目录</li>
+<li>-&zwnj;-reference=文件名R：将文件的所有者和组修改为与文件R相同的用户和组，如果文件R是软链接，则引用其源文件的用户和组，而不是链接文件本身</li>
+<li>-&zwnj;-from=owner1：如果文件当前属于owner1，执行修改操作，如果文件当前属于其他用户，则不修改</li>
+<li>-H、-L、-p选项参考通用选项</li>
+</ul>
+<p><span class="tips">只有文件所有者用户和root用户才能更改文件的所有者属性</span></p>
+
+<h4 id="chgrp更改文件所属组-change-file-group-ownership"><a href="#chgrp更改文件所属组-change-file-group-ownership" class="headerlink" title="chgrp更改文件所属组(change file group ownership)"></a>chgrp更改文件所属组(change file group ownership)</h4><p>默认情况下，文件的所属组是文件所在目录，该目录的所属组，文件创建时，所属组将设置为和父目录相同的组</p>
+<p><span class="strong">chgrp [选项] [用户组] 文件或目录1 文件或目录2…</span></p>
+<ul>
+<li>-R 以递归方式修改目录和目录下所有文件的所属组</li>
+<li>-c 仅打印修改的部分，在指定了多个文件时，部分文件修改前后所属组一样，则不会打印这部分消息</li>
+<li>-f 静默模式，通常用于指定多个文件时，不打印某个文件无法修改所属组时的错误信息</li>
+<li>-v 详细输出每个信息</li>
+<li>-&zwnj;-dereference 如果文件为软链接文件，则修改其指向的源文件或目录的属性，而不是软链接文件本身(默认)</li>
+<li>-h 如果文件为软链接文件，则修改软链接文件本身的所属组，而不是链接指向的源文件或目录</li>
+<li>-&zwnj;-from=owner1：如果文件当前属于owner1，执行修改操作，如果文件当前属于其他用户，则不修改</li>
+<li>-H、-L、-p选项参考通用选项</li>
+</ul>
+<p><span class="tips">只有文件所有者、root用户以及拥有sudo权限、ACL权限的用户才能更改文件所属组</span></p>
+<h4 id="chmod更改权限-change-the-permissions-mode-of-a-file"><a href="#chmod更改权限-change-the-permissions-mode-of-a-file" class="headerlink" title="chmod更改权限(change the permissions mode of a file)"></a>chmod更改权限(change the permissions mode of a file)</h4><p><span class="strong">chmod [选项] <span class="text-red" style="margin:0;">用户</span><span class="text-blue" style="margin:0;">操作</span><span class="text-green" style="margin:0;">权限</span> 文件名或目录名</span></p>
+<p><span class="strong">chmod [选项] <span class="text-red">权限值</span> 文件名或目录名</span></p>
+<ul>
+<li>只有root用户与文件所有者才能修改文件的权限</li>
+<li>-R 递归修改，修改目录及其所有子文件的权限</li>
+<li>-c 仅打印修改的部分，在指定了多个文件时，部分文件修改前权限一样，则不会打印这部分消息</li>
+<li>-&zwnj;-dereference 如果文件为软链接文件，则修改其指向的源文件或目录的权限，而不是软链接文件本身的权限(默认)</li>
+<li>-h 如果文件为软链接文件，则修改软链接文件本身的权限，而不是链接指向的源文件或目录</li>
+<li>-f 静默模式，通常用于指定多个文件时，不打印某个文件无法修改其权限时的错误信息</li>
+<li>-v 详细输出每个信息</li>
+<li>-&zwnj;-reference=文件名R：将文件权限修改为与文件R相同，如果文件R是软链接，则引用其源文件的权限，而不是链接文件本身</li>
+<li>-H、-L、-p选项参考通用选项</li>
+</ul>
+<h5 id="以符号方式指定权限与用户"><a href="#以符号方式指定权限与用户" class="headerlink" title="以符号方式指定权限与用户"></a>以符号方式指定权限与用户</h5><p>chmod命令接受通过符号来指定用户和权限，该符号参数的组成为：<span class="text-red" style="margin:0;">用户</span><span class="text-blue" style="margin:0;">操作</span><span class="text-green" style="margin:0;">权限</span></p>
+<ul>
+<li><span class="text-red">u</span>为文件所有者，<span class="text-red">g</span>为文件所属组，<span class="text-red">o</span>为其他用户，<span class="text-red">a</span>为所有用户(等价于ugo组合)</li>
+<li><span class="text-blue">+</span>为添加权限，<span class="text-blue">-</span>为取消权限，<span class="text-blue">=</span>为修改权限为等号所指(如果等号右边为空则表示删除其所有rwx权限，如：og=等价于og-rwx)</li>
+<li><span class="text-green">r</span>为读权限，<span class="text-green">w</span>为写权限，<span class="text-green">x</span>为执行权限，<span class="text-green">s</span>为SetUID或setGID权限(为u用户添加s权限即添加SetUID权限，为g用户组添加s权限即添加SetGID权限)，<span class="text-green">t</span>为粘着位(Sticky BIT)权限</li>
+<li><span class="text-green">X</span>为条件性执行权限，X权限符只会为目录或已有执行权限的文件设置执行权限。该符号用于在批量或递归赋予x权限时，如果为所有文件都添加x权限会导致系统会将这些文件都视为可执行文件，即便他们无法执行，这些文件后续也可能会被恶意或误改为实际可执行文件(比如注入恶意代码)，从而带来安全风险。X权限符只会为目录或原本就拥有x权限的文件添加可执行权限，对于原本就拥有x权限的文件而言，使用X再次添加可执行权限无任何意义，只是用来避免为普通文件也添加可执行权限，对于目录，该权限符可以用来批量为目录添加x权限，方便用户获得进入目录以及使用路径的权限。</li>
+<li>同时修改ugoa中的多个可以使用<span class="tips">,</span>号分隔</li>
+</ul>
+<div class="show">e.g.1.添加文件所属组写权限，取消文件其他用户的读权限
+chmod g+w,o-r file
+2.将所有人权限都修改为 rwx
+chmod a=rwx file
+</div>
+
+<h5 id="以权限值方式为用户指定权限"><a href="#以权限值方式为用户指定权限" class="headerlink" title="以权限值方式为用户指定权限"></a>以权限值方式为用户指定权限</h5><p>chmod命令也接受权限值作为指定用户权限的参数，权限值通常为3位或4位八进制的权限值：<span class="tips">[特殊权限][所有者权限][所属组权限][其他用户权限]</span>，特殊权限不需要时可以省略，只写3位权限值</p>
+<p>文件所有者、所属组、其他用户的权限值组成为：</p>
+<ul>
+<li>r 值为4</li>
+<li>w 值为2</li>
+<li>x 值为1</li>
+<li>rwx值为7，rw-值为6(4+2)，r-x值为5(4+1)，依此类推</li>
+</ul>
+<p>特殊权限的权限值组成为：</p>
+<ul>
+<li>setUID 值为4</li>
+<li>setGID 值为2</li>
+<li>Sticky Bit值为1</li>
+<li>SetUID+SetGID+StickyBit 值为7，SetUID+SetGID值为6，依此类推</li>
+</ul>
+<div class="show">e.g.1.修改权限为rw-r-----
+chmod 640 index.html
+2.添加setUID权限，用户拥有读写执行权限，用户组和其他用户只拥有读和执行权限
+chmod 4755 modifyPort.sh
+</div>
+
+<h4 id="umask更改新建文件时的默认权限设置-the-user-file-creation-mask"><a href="#umask更改新建文件时的默认权限设置-the-user-file-creation-mask" class="headerlink" title="umask更改新建文件时的默认权限设置(the user file-creation mask)"></a>umask更改新建文件时的默认权限设置(the user file-creation mask)</h4><ul>
+<li><span class="strong">umask -S</span>&emsp;显示新建目录时权限的默认设置</li>
+<li><span class="strong">umask</span>&emsp;显示默认权限值</li>
+<li><span class="strong">umask  权限值</span>&emsp;修改默认权限</li>
+</ul>
+<p>文件的umask值代表了给与该文件的默认权限，但它只是个掩码，它会屏蔽掉不想授予该安全级别的权限，实际赋给权限时需要进行一定的异或运算(对于值来说可视为减法运算)</p>
+<div class="show">root执行umask显示默认权限值一般为0022(普通用户为0002)，第一位0代表特殊权限，022为默认的权限与777权限异或后的权限值
+    777 rwx rwx rwx
+    022 --- -w- -w-
+  ===============
+    755 rwx r-x r-x(默认权限)
+因此需要修改默认权限时，需要先异或操作计算出权限值，如想把默认权限改为rwx --- ---，则先计算权限值
+    777 rwx rwx rwx
+    700 rwx --- ---
+  =================
+    077 --- rwx rwx
+然后执行
+umask 077
+即可，同样，如果创建的是一个文件，Linux会在默认权限基础上取消所有用户的x权限
+</div>
+<div class="broadcast color-green">
+<div class="iconfont icon-qiqiu"></div>
+新建的文件相较于新建的目录所有用户会少一个x权限，这是因为Linux会取消新建文件的可执行权限以防止危害系统的可执行程序运行</div>
+
+<h3 id="特殊权限"><a href="#特殊权限" class="headerlink" title="特殊权限"></a>特殊权限</h3><p>这里的特殊权限指除了读、写、执行外，为了方便文件共享设计的一些额外特殊控制权限，包括三种：<span class="tips">SUID</span>、<span class="tips">SGID</span>、<span class="tips">粘着位</span>权限，与读写执行类似，它们的八进制权限值分别为4、2、1，即1代表仅增加/减少粘着位权限，3代表同时增加/减少粘着位权限和SGID权限，依此类推。</p>
+<h4 id="1-SetUID权限"><a href="#1-SetUID权限" class="headerlink" title="1. SetUID权限"></a>1. SetUID权限</h4><p>SUID权限只用于可执行的脚本文件、命令文件等，它指定用户在执行该文件时，是以文件所有者的身份执行而非当前用户来执行。这意味着用户可以执行特定程序并且具有该程序所有者的权限，而不是当前用户的权限，程序运行完毕后会收回所有者身份。进程的用户ID也将设置为该文件所有者的ID，而非启动该进程的用户ID。</p>
+<p>对于目录，在该目录中创建文件时，文件的所有者将被设置为与目录所有者相同的用户，无论该文件是谁创建的。</p>
+<p>该权限通常用于需要以特定用户的权限来执行的程序，例如系统管理工具或安全敏感的程序，如：普通用户对 /etc/shadow 文件的权限为 0 ，即无法查看无法修改，但通过执行passwd命令，普通用户会获得临时的所有者即root权限，可以修改密码。</p>
+<ul>
+<li><span class="tips">只有可执行的二进制程序才能设置SUID权限</span></li>
+<li><span class="tips">要求命令执行者要对该程序拥有x(执行)权限</span></li>
+<li>命令执行者在运行该程序时会临时获得文件所有者身份</li>
+<li>SUID权限只在该程序执行时有效，程序执行完毕权限失效</li>
+</ul>
+<h5 id="设置SUID权限"><a href="#设置SUID权限" class="headerlink" title="设置SUID权限"></a>设置SUID权限</h5><p>4代表SUID</p>
+<ul>
+<li><span class="strong">chmod 4755 文件名</span>&emsp;755为权限值可任意，但要保证用户有x权限</li>
+<li><span class="strong">chmod u+s 文件名</span></li>
+</ul>
+<h5 id="取消SUID权限"><a href="#取消SUID权限" class="headerlink" title="取消SUID权限"></a>取消SUID权限</h5><p><span class="strong">chmod 755 文件名</span></p>
+<p><span class="strong">chmod u-s 文件名</span></p>
+<div class="show">说明：
+当设置SUID权限后，该文件权限标识中所有者的可执行权限x会被修改为s
+-rwsr--r--  1 root root 174 Jan 23 18:56 file
+如果该标识为大写S，则说明文件设置了SUID权限，但用户没有x权限，SUID权限无法生效，权限报错
+</div>
+
+
+<div class="broadcast color-red">
+<div class="iconfont icon-gantanhao"></div>
+SUID权限可能会导致安全风险，容易造成权限滥用，Linux中默认只有/usr/bin/passwd 等少数文件有SUID权限，禁止为 vi 等命令设置该权限，否则所有用户在使用 vi 命令时都将获得 root 权限。应定时检查系统中是否有除默认以外的文件设置了SUID权限</div>
+
+<h4 id="2-SetGID权限"><a href="#2-SetGID权限" class="headerlink" title="2. SetGID权限"></a>2. SetGID权限</h4><p>SGID权限常用于目录，一般用于在大范围环境中与人共享文档。当一个目录被设置了SGID权限后，该目录内所有新建的文件和子目录将继承该目录的所属组，而不再是创建者的所属组。因此SGID权限通常用于需要多个用户共享访问的目录，以确保目录内的文件和子目录都属于同一个特定组，让所有用户共享相同的所属组，确保文件和目录的一致性和权限的控制</p>
+<p>对文件</p>
+<ul>
+<li>只有可执行的二进制程序才能设置SGID权限</li>
+<li>要求命令执行者要对该程序拥有x(执行)权限</li>
+<li>命令执行者在运行该程序时，组身份会临时升为文件所属组身份</li>
+<li>进程的组ID将设置为文件所属组的组ID，而不是启动该进程用户的组ID</li>
+<li>SGID权限只在该程序执行时有效，程序执行完毕权限失效</li>
+</ul>
+<div class="show">说明：
+当设置SGID权限后，该文件权限标识中所属组的可执行权限x会被修改为s，如 locate 命令的权限为
+-rwx--s--x  1 root root 174 Jan 23 18:56 usr/bin/locate
+</div>
+
+<p>对目录</p>
+<ul>
+<li>要求用户必须拥有此目录的 r 和 x 权限</li>
+<li>普通用户进入该目录时，用户的组会升为此目录的所属组</li>
+<li>如果用户对目录有w权限，新建文件的默认组 将变为目录的所属组，而非创建者的所属组</li>
+</ul>
+<h5 id="设置SGID权限"><a href="#设置SGID权限" class="headerlink" title="设置SGID权限"></a>设置SGID权限</h5><p>2代表SGID</p>
+<ul>
+<li><span class="strong">chmod 2755 文件名</span>&emsp;755为权限值可任意，若为文件要保证拥有x权限，为目录则拥有r和x权限</li>
+<li><span class="strong">chmod g+s 文件名</span></li>
+</ul>
+<h5 id="取消SGID权限"><a href="#取消SGID权限" class="headerlink" title="取消SGID权限"></a>取消SGID权限</h5><p><span class="strong">chmod 755 文件名</span></p>
+<p><span class="strong">chmod g-s 文件名</span></p>
+<h4 id="3-Sticky-BIT-粘着位权限"><a href="#3-Sticky-BIT-粘着位权限" class="headerlink" title="3. Sticky BIT(粘着位权限)"></a>3. Sticky BIT(粘着位权限)</h4><ul>
+<li>只对目录有效</li>
+<li><span class="tips">要求用户对目录拥有w和x权限</span></li>
+<li>没有设置粘着位权限时，用户拥有w权限后可以删除目录下的所有文件，包括其他用户创建的文件。设置粘着位后，用户只能删除自己创建的文件，root用户不受此规则影响</li>
+</ul>
+<div class="show">说明：
+当设置SBIT权限后，文件权限标识中其他用户的可执行权限x会被修改为t，如
+drwxrwxrwt  1 root root 174 Jan 23 18:56 /dir/
+</div>
+
+<h5 id="设置SBIT权限"><a href="#设置SBIT权限" class="headerlink" title="设置SBIT权限"></a>设置SBIT权限</h5><p>1代表SBID</p>
+<ul>
+<li><span class="strong">chmod 1755 目录名</span>&emsp;755为权限值可任意，要保证用户拥有w和x权限</li>
+<li><span class="strong">chmod o+t 目录名</span></li>
+</ul>
+<h5 id="取消SBIT权限"><a href="#取消SBIT权限" class="headerlink" title="取消SBIT权限"></a>取消SBIT权限</h5><p><span class="strong">chmod 755 目录名</span></p>
+<p><span class="strong">chmod o-t 目录名</span></p>
+<h3 id="ACL权限"><a href="#ACL权限" class="headerlink" title="ACL权限"></a>ACL权限</h3><p>ACL权限用于给文件所有者(u)、所属组(g)、其他用户(o)以外的用户提供权限</p>
+<h4 id="查看ACL权限"><a href="#查看ACL权限" class="headerlink" title="查看ACL权限"></a>查看ACL权限</h4><p><span class="strong">getfacl 文件名</span></p>
+<div class="show">设置了ACL权限的文件，使用 ls -l 命令查看文件时权限标识后带有+号，如：
+-rw-r-xr--+ 1 root root  174 Jan 23 18:55 index.html
+使用 getfacl 命令查看具体ACL权限，会多一组拥有ACL权限的 user或group 并标明用户名或组名，如：
+# file: index.html
+# owner: root
+# group: root
+user::rw-
+user:sw:r-x     //sw用户拥有ACL权限r-x
+group::r--
+mask::r-x
+other::r--
+</div>
+
+<h4 id="设置mask权限"><a href="#设置mask权限" class="headerlink" title="设置mask权限"></a>设置mask权限</h4><p>mask权限用于指定最大的权限，防止给与用户ACL权限时权限过大。用户最终得到的权限是ACL权限于mask权限相与以后得到的权限。<br><span class="strong">setfacl -m m:组名:权限 文件名</span></p>
+<h4 id="设置ACL权限"><a href="#设置ACL权限" class="headerlink" title="设置ACL权限"></a>设置ACL权限</h4><p><span class="strong">setfacl 参数 文件名</span></p>
+<ul>
+<li>-m &emsp;设定ACL权限</li>
+<li>-x &emsp;删除指定ACL权限</li>
+<li>-b &emsp;删除文件所有ACL权限</li>
+<li>-d &emsp;设定默认ACL权限</li>
+<li>-k &emsp;删除默认ACL权限</li>
+<li>-R &emsp;递归设置ACL权限</li>
+</ul>
+<h5 id="1-设置ACL权限"><a href="#1-设置ACL权限" class="headerlink" title="1. 设置ACL权限"></a>1. 设置ACL权限</h5><ul>
+<li><span class="strong">setfacl -m u:用户名:权限 文件名</span>给用户设置ACL权限</li>
+<li><span class="strong">setfacl -m u:用户名:权限 -R 文件名</span>递归设置，给用户设置目录下所有子文件的ACL权限</li>
+<li><span class="strong">setfacl -m g:组名:权限 文件名</span>给组设置ACL权限</li>
+<li><span class="strong">setfacl -m g:组名:权限 -R 文件名</span>递归设置，给组设置目录下所有子文件的ACL权限<div class="show">示例：
+setfacl -m u:lm:r-x index.html
+给与用户lm对index.html的读和执行权限
+</div></li>
+</ul>
+<h5 id="2-删除ACL权限"><a href="#2-删除ACL权限" class="headerlink" title="2. 删除ACL权限"></a>2. 删除ACL权限</h5><p><span class="strong">setfacl -x [u或g]:[用户名或组名] 文件名</span></p>
+<p>删除对应用户或组的ACL权限</p>
+<p><span class="strong">setfacl -b 文件名</span></p>
+<p>删除对应文件所有ACL权限</p>
+<h5 id="3-设置默认ACL权限"><a href="#3-设置默认ACL权限" class="headerlink" title="3. 设置默认ACL权限"></a>3. 设置默认ACL权限</h5><p>设置默认ACL权限的作用是给父目录设置ACL权限后，父目录中创建的所有子文件都会继承父目录的ACL权限，但执行命令前的文件不会拥有权限。与递归设置的区别是，递归设置的ACL权限只会给当前已经存在的子目录给与ACL权限，新建的后来文件不会拥有权限。</p>
+<ul>
+<li><span class="strong">setfacl -m d:u:用户名:权限 文件名</span>设置默认ACL权限</li>
+<li><span class="strong">setfacl -m k:u:用户名:权限 文件名</span> 删除默认ACL权限设置</li>
+</ul>
+<p>可以添加-R参数递归给子目录的子文件也设置默认ACL权限，但执行命令前创建的文件依旧不会有ACL权限。</p>
+<p><span class="strong">setfacl -m d:u:用户名:权限 -R 文件名</span></p>
+<h3 id="文件系统属性权限chattr权限"><a href="#文件系统属性权限chattr权限" class="headerlink" title="文件系统属性权限chattr权限"></a>文件系统属性权限chattr权限</h3><p><span class="strong">chattr&emsp;[+-=][i或a]&emsp;文件或目录名</span></p>
+<ul>
+<li><p>+为增加权限，-为删除权限，=为设置为指定权限</p>
+</li>
+<li><p>i &emsp;对文件：不允许删除、改名、添加内容或修改文件内容操作<br>&emsp;对目录：只能修改目录下文件的内容，不允许新建和删除文件<br><span class="tips">对root用户生效！</span></p>
+</li>
+<li><p>a &emsp;对文件：只能添加新内容，不能删除、修改已有内容(并且只允许使用echo添加，不能使用vi等编辑器添加)<br>&emsp;对目录：只能新建和修改文件，不能删除文件<br><span class="tips">对root用户生效！</span></p>
+</li>
+</ul>
+<div class="show">示例：
+chattr +i test
+给文件test添加i属性，锁定文件，防止误操作</div>
+
+<h5 id="查看chattr权限方法"><a href="#查看chattr权限方法" class="headerlink" title="查看chattr权限方法"></a>查看chattr权限方法</h5><p>该权限无法使用 ls 命令查看，而需要使用：</p>
+<p><span class="strong">lsattr [参数] 文件名</span></p>
+<ul>
+<li>-a 显示所有文件和目录</li>
+<li>-d 若为目录，则显示目录属性，而非子文件属性</li>
+</ul>
+<h3 id="sudo"><a href="#sudo" class="headerlink" title="sudo"></a>sudo</h3><p>sudo命令允许系统管理员root临时提高普通用户的权限，让用户可以以其他身份(包括root)执行某些命令，最常见的用法是授权普通用户使用原本只有root用户才能使用的系统命令。sudo 是通过软件包提供支持的，因此它并非在所有的 Linux 发行版中默认安装(如：Arch Linux默认不安装)，但在大多数现代的 Linux 发行版中，特别是面向桌面和服务器用途的发行版，sudo 通常会默认安装并配置好</p>
+<div class="broadcast color-pink">
+<div class="iconfont icon-yinle1"></div>
+sudo官方说明文档：<a target="_blank" rel="noopener" href="https://www.sudo.ws/docs/man/sudo.man">https://www.sudo.ws/docs/man/sudo.man</a></div>
+
+<h4 id="sudo命令"><a href="#sudo命令" class="headerlink" title="sudo命令"></a>sudo命令</h4><p><span class="strong">sudo [选项] [命令]</span></p>
+<ul>
+<li>默认情况下，sudo命令会以root用户身份执行命令，且默认会在当前环境下执行命令，不会加载新的环境</li>
+<li><span class="strong">-u 用户名</span> 指定以哪个用户的身份执行命令，如果不指定，默认以root用户执行，也可以使用<span class="strong">-u #用户ID</span>来指定用户，在某些Linux发行版中#号需要使用\#转义</li>
+<li>-s 以指定用户的交互式非登录shell身份执行命令，载入shell环境(如：shell中定义的变量、环境变量)但不加载登录shell配置文件</li>
+<li>-i 以指定用户的交互式登录shell身份执行命令，这会加载新的shell环境以及登录shell需要加载的.profile、.bash_profile等配置文件</li>
+<li>默认情况下，首次执行sudo命令需要输入当前用户密码(不是-u选项指定用户的密码)，该密码认证有效期默认为5分钟，5分钟后需要重新认证，如果是高权限用户身份(如root)向低权限用户身份切换，则不要输入密码</li>
+<li>-v 延长5分钟(默认)密码认证的有效时间</li>
+<li>-k 重置sudo的授权时间戳，强制下次执行sudo时必须重新输入当前账户密码</li>
+<li>-l 列出(list)当前用户可以使用sudo权限执行的命令，执行命令后Linux系统会要求输入当前账户密码</li>
+<li>-b 在后台执行命令，用户可以继续使用终端</li>
+<li>-e 文件：以指定身份使用默认编辑器编辑文件</li>
+<li>-D 目录：前往指定目录下运行命令但不切换当前工作目录，如果用户没有该目录的权限，则返回错误(仅高版本sudo支持)</li>
+<li>-R 目录：切换当前工作目录到指定目录，再执行命令，如果用户没有该目录权限则返回错误(仅高版本sudo支持)</li>
+<li>-H 将HOME环境变量设置为指定用户的主目录</li>
+<li>-E 保留当前环境变量，避免被清除</li>
+</ul>
+<div class="show">1. 以root身份安装nginx
+sudo apt install nginx
+2. 以user1身份编辑该用户home目录下的index.html文件
+sudo -u user1 vim /home/user1/index.html
+3. 以user1登录shell方式执行命令ls，由于直接指定了一个命令，ls命令执行完毕后sudo会自动退出，并返回到原始的用户会话中
+sudo -u user1 -i ls
+如果不指定命令，sudo会启动一个新的shell会话后等待用户输入，后续终端所有输入的命令都将以user1的身份执行，直到通过exit命令退出该shell，相当于创建了一个user1的登录shell
+sudo -u user1 -i
+4. 列出当前用户可以用sudo执行的命令
+sudo -l
+5. 延长当前授权的有效期
+sudo -v
+6. 重置sudo的授权时间戳，下次执行sudo时需要重新输入密码
+sudo -k
+</div>
+
+
+<h4 id="visudo命令与sudoers文件"><a href="#visudo命令与sudoers文件" class="headerlink" title="visudo命令与sudoers文件"></a>visudo命令与sudoers文件</h4><p><span class="strong">visudo</span>命令用来指定用户可以使用sudo提权执行哪些命令，visudo命令会打开<span class="tips"> /etc/sudoers </span>文件让管理员进行编辑，文件配置格式为：</p>
+<p><span class="tips">用户名  主机地址=(赋予的身份) 授权命令1的绝对路径, 命令2的绝对路径…..</span> </p>
+<p>给组添加相关权限格式类似，组名前加上%号即可。通过vi /etc/sudoers命令虽然也可以编辑该文件，但通过该修改方法容易出现语法错误从而导致配置出错，使用visudo命令虽然也会打开编辑软件，但该命令会阻止多个用户并发编辑等操作，可以在安全环境下编辑文件，并且该命令在退出时会对文件进行语法检查，避免配置出错</p>
+<div class="show">e.g.文件自带了root用户的配置，即root用户在所有主机上，允许执行所有命令。类似地，wheel组也可以在所有主机上执行所有命令
+root    ALL=(ALL)       ALL  
+%wheel  ALL=(ALL)       ALL 
+添加允许user1用户使用sudo进行关机操作的配置项
+user1      ALL=/sbin/shutdown -r now
+</div>
+
+<div class="show">sudoers文件的常用配置语法：
+1. sudoers提供了4种类型的别名
++ User_Alias用来创建用户别名
++ Host_Alias用来创建主机别名
++ Cmnd_Alias用来创建命令别名
++ Runas_Alias用来创建身份别名
+用上述类型可以分别创建用户、主机、命令、运行环境的别名，方便批量管理，这些别名相当于一个变量名，别名由大写字母、数字和下划线字符组成，必须以大写字母开头，如：
+User_Alias     ADMINS = alice, bob, carol
+Host_Alias     FILE_SERVERS = fs1, fs2, fs3
+Cmnd_Alias     REBOOT_CMDS = /sbin/reboot, /sbin/shutdown
+Runas_Alias    OP = root, admin
+如果添加
+ADMINS ALL=(root) REBOOT_CMDS
+表示alice, bob, carol用户可以以root身份执行/sbin/reboot和/sbin/shutdown命令
+2. NOPASSWD 选项可以让用户运行特定命令时不需要输入密码
+user1     ALL = (root) NOPASSWD: /bin/kill, /usr/bin/killall
+表示用户user1可以以root身份执行/bin/kill和/usr/bin/killall命令，且不需要输入密码
+3. 可以使用!来禁止特定的命令
+user1 ALL=(ALL) ALL, !/usr/bin/passwd
+允许用户user1执行所有命令，除了/usr/bin/passwd命令
+</div>
+
+<div class="broadcast color-yellow">
+<div class="iconfont icon-dengpao14hao"></div>
+授予命令越简单，权限越大，因此命令应该尽量详细</div>
+
+<h3 id="给用户发送消息"><a href="#给用户发送消息" class="headerlink" title="给用户发送消息"></a>给用户发送消息</h3><h5 id="1-write-给某个在线用户发送信息"><a href="#1-write-给某个在线用户发送信息" class="headerlink" title="1. write 给某个在线用户发送信息"></a>1. write 给某个在线用户发送信息</h5><p><span class="strong">write 用户名 信息</span></p>
+<p>给已经登录Linux的用户发送消息，<span class="tips">Ctrl+D</span>结束输入并发送，需要用户在线，可以使用<span class="tips">w</span>查询在线的账户。
+</p>
+
+<h5 id="2-wall-给所有在线用户发送信息-write-all"><a href="#2-wall-给所有在线用户发送信息-write-all" class="headerlink" title="2. wall 给所有在线用户发送信息(write all)"></a>2. wall 给所有在线用户发送信息(write all)</h5><p><span class="strong">wall 信息</span></p>
+给所有在线用户发送广播信息
+
+
+<h4 id="mail-发送邮件"><a href="#mail-发送邮件" class="headerlink" title="mail 发送邮件"></a>mail 发送邮件</h4><p><span class="strong">mail 用户名</span></p>
+<p>当用户未登录无法使用上述命令发送消息时，可以发送邮件给Linux用户。</p>
+<div class="show">邮件发送:
+# mail 用户名 
+Subject : 邮件标题  //输入邮件
+邮件内容           //输入邮件内容，输入完毕<span class="tips">Ctrl+D</span>发送
+
+<p>邮件接收：<br>~ mail          //查看邮件箱<br>收到的邮件将以New标识(是否已读)、序号、发送用户、发送时间、邮件标题的格式列出<br>-&gt; N 1 root                  Sun Feb 20 12:38  18/532   “test”<br>~ 1             //直接输入序号查看对应邮件<br>~ h             //列出所有邮件<br>~ d1            //d+序号删除对应邮件<br>~ q             //退出邮件查看系统</div></p>
+<div class="broadcast color-red">
+<div class="iconfont icon-gantanhao"></div>
+Linux会通过mail给root用户发送一些邮件反映服务器错误信息等</div>
+        </div>
+    </div>
+    <div class="post-nav">
+        
+            <div class="post-prev ">
+                <a href="/blog/2021/12/29/Linux%E6%9C%8D%E5%8A%A1%E4%B8%8E%E7%B3%BB%E7%BB%9F%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/">上一篇：Linux服务与系统资源管理</a>
+            </div>
+            
+            
+                <div class="post-next">
+                    <a href="/blog/2021/12/29/Linux%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/">下一篇：Linux文件操作 </a>
+                </div>
+                 
+    </div>
+    <div class="container">
+        <!--设计来源于B站-季夏小贞-->
+        <div class="bigHead"></div>
+        <div class="ears"></div>
+        <div class="body"></div>
+        <div class="paws-front"></div>
+        <div class="paws-back"></div>
+        <div class="details"></div>
+        <div class="tail"></div>
+        <div class="sleep">
+          <span class="s1">z</span>
+          <span class="s2">z</span>
+          <span class="s3">z</span>
+          <span class="s4">z</span>
+          <span class="s5">z</span>
+        </div>
+    </div>
+</div>
+<div class="right-menu">
+    <a class="iconfont backTop" href="javascript:">&#xe655;</a>
+    <div class="husky"></div>
+  </div>
+</div>
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/jquery.bumpytext.js"></script>
+<script src="/blog/js/index.js"></script>
+<script src="/blog/js/highlight.min.js"></script>
+<script src="/blog/js/highlightjs-line-numbers.min.js"></script>
+<script src="/blog/js/article.js"></script>
+
+</body></html>

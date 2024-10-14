@@ -2,7 +2,7 @@
  * @Author: SHIWIVI 
  * @Date: 2023-09-07 00:29:00 
  * @Last Modified by: SHIWIVI
- * @Last Modified time: 2024-04-14 12:17:07
+ * @Last Modified time: 2024-07-20 10:06:09
  */
 //线性插值
 const lerp = (a, b, amt) => (1 - amt) * a + amt * b;
@@ -37,7 +37,7 @@ let backAni = random() < .9 ? backRenderAnimation1 : backRenderAnimation2;
 //图片懒加载
 const viewH = document.documentElement.clientHeight;
 if (document.querySelector(".update")) {
-  let pics = document.querySelectorAll(".update_pic");
+  let pics = document.querySelectorAll(".update-pic");
   function loadPic(picIndex){
     let img = pics[picIndex].querySelector("img");
           img.src = img.dataset.src;

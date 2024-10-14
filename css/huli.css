@@ -1,4 +1,4 @@
-.fox_nest {
+.fox-nest {
   width: 100%;
   height: 20vh;
   display: flex;
@@ -41,7 +41,7 @@
   animation: shadow 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
 }
 
-.fox_leg1 {
+.fox-leg1 {
   position: absolute;
   bottom: 0;
   left: 42px;
@@ -50,7 +50,7 @@
   z-index: 100;
 }
 
-.fox_paw1 {
+.fox-paw1 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -62,7 +62,7 @@
   z-index: 100;
 }
 
-.fox_paw2 {
+.fox-paw2 {
   position: absolute;
   bottom: 0;
   left: 4px;
@@ -76,7 +76,7 @@
   z-index: -20;
 }
 
-.fox_leg2 {
+.fox-leg2 {
   position: absolute;
   bottom: 0;
   left: 10px;
@@ -85,11 +85,11 @@
   z-index: 0;
 }
 
-.fox_leg2>.fox_paw1 {
+.fox-leg2>.fox-paw1 {
   background-color: #bec4b6;
 }
 
-.fox_head {
+.fox-head {
   position: absolute;
   left: 8px;
   bottom: 0;
@@ -114,7 +114,7 @@
   }
 }
 
-.fox_face {
+.fox-face {
   position: absolute;
   left: -11px;
   bottom: 0;
@@ -137,7 +137,7 @@
   }
 }
 
-.fox_face::before {
+.fox-face::before {
   content: "";
   position: absolute;
   right: 34px;
@@ -150,7 +150,7 @@
 }
 
 /* 鼻沟 */
-.fox_nose {
+.fox-nose {
   position: absolute;
   top: -13px;
   left: 22px;
@@ -181,8 +181,8 @@
   }
 }
 
-.fox_eye1,
-.fox_eye2 {
+.fox-eye1,
+.fox-eye2 {
   position: absolute;
   top: -8px;
   width: 5px;
@@ -192,15 +192,15 @@
   animation: eye 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
 }
 
-.fox_eye1 {
+.fox-eye1 {
   left: 17px;
 }
 
-.fox_eye2 {
+.fox-eye2 {
   left: 31px;
 }
 
-.fox_head2 {
+.fox-head2 {
   position: absolute;
   left: 8px;
   bottom: 0px;
@@ -236,8 +236,8 @@
   }
 }
 
-.fox_ear1,
-.fox_ear2 {
+.fox-ear1,
+.fox-ear2 {
   box-sizing: border-box;
   position: absolute;
   width: 0;
@@ -245,7 +245,7 @@
   z-index: 0;
 }
 
-.fox_ear1 {
+.fox-ear1 {
   top: -28px;
   left: 9px;
   border-top: 32px solid transparent;
@@ -254,7 +254,7 @@
   animation: ear1 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
 }
 
-.fox_ear1::after {
+.fox-ear1::after {
   content: '';
   position: absolute;
   top: -20px;
@@ -265,7 +265,7 @@
   z-index: 10;
 }
 
-.fox_ear2 {
+.fox-ear2 {
   top: -28px;
   left: 35px;
   border-top: 32px solid transparent;
@@ -275,7 +275,7 @@
   animation: ear2 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
 }
 
-.fox_ear2::after {
+.fox-ear2::after {
   content: '';
   position: absolute;
   top: -19px;
@@ -287,7 +287,7 @@
 }
 
 /* 身体 */
-.fox_body {
+.fox-body {
   /* position: absolute; */
   display: flex;
   justify-content: center;
@@ -306,7 +306,7 @@
   animation: body 10s cubic-bezier(0.3, 0.41, 0.18, 1.01) infinite;
 }
 
-.fox_tail1 {
+.fox-tail1 {
   position: absolute;
   top: 31px;
   left: 116px;
@@ -317,7 +317,7 @@
   z-index: -20;
 }
 
-.fox_tail2 {
+.fox-tail2 {
   position: absolute;
   left: 67px;
   top: 32px;

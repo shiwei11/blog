@@ -22,7 +22,7 @@ if(contentFoldedList){
                 foldFlag=true;
             }
             item.classList.toggle("unfolded");
-            foldBtn.classList.toggle("foldBtn_unfolded");
+            foldBtn.classList.toggle("foldBtn-unfolded");
         })
         window.addEventListener("resize",function(){
             if(foldFlag){
@@ -37,7 +37,7 @@ hljs.initLineNumbersOnLoad();
 tocBtn.addEventListener("click", function () {
     tocWrapper.classList.toggle("tocWrapperActive");
 })
-let imgs = document.querySelector('.art_content').querySelectorAll('img');
+let imgs = document.querySelector('.art-content').querySelectorAll('img');
 if (imgs) {
     imgs.forEach(img => {
         let imgWrapper = document.createElement('div');
