@@ -9,7 +9,9 @@
     --icon-bgColor-yellow: #fff8e9;
     --icon-bgColor-purple: #ede5f7;
     --icon-bgColor-pink: #f3b9da69;
-    --artcontent-h2-bgColor: #03d7fd94;
+    --artcontent-h1-bgColor1: #03d7fd94;
+    --artcontent-h1-bgColor2: #f5f6f7;
+    --artcontent-h2-shadowColor: transparent;
     --artcontent-h3: #282c34;
     --artcontent-h4: #000;
     --h4-before1: #fff;
@@ -37,7 +39,9 @@
     --icon-bgColor-yellow: #000;
     --icon-bgColor-purple: #000;
     --icon-bgColor-pink: #000;
-    --artcontent-h2-bgColor: #a1a2b394;
+    --artcontent-h1-bgColor1: #ffffffc2;
+    --artcontent-h1-bgColor2: #2d2c2c;
+    --artcontent-h2-shadowColor: #00c9fc;
     --artcontent-h3: #f0f0f0;
     --artcontent-h4: #e1dede;
     --h4-before1: #ff4757;
@@ -108,10 +112,11 @@
     background-color: #00000085;
 }
 
-.toc{
+.toc {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
 .tocBox::-webkit-scrollbar {
     width: 5px;
 }
@@ -124,6 +129,7 @@
 .tocBox::-webkit-scrollbar-track-piece {
     background-color: #626262;
 }
+
 .toc-link {
     display: inline-block;
     width: 170px;
@@ -133,6 +139,7 @@
     white-space: nowrap;
     overflow: hidden;
 }
+
 .toc-child {
     margin-left: 20px;
 }
@@ -221,6 +228,10 @@
     border-left: 4px solid #767676;
 }
 
+.art-content .broadcast a {
+    word-break: break-word;
+}
+
 .art-content .color-red,
 .art-content .color-red>.icon-gantanhao {
     background-color: var(--icon-bgColor-red);
@@ -285,54 +296,117 @@
 }
 
 /*文章小标题*/
-.art-content h1 {
-    font-size: 22px;
-    width: 100%;
-    text-align: center;
-}
 
-.art-content h2 {
+.art-content h1 {
     position: relative;
     margin-top: 20px;
     padding: 2px 15px;
     width: 80%;
-    font-size: 18px;
+    font-size: 21px;
+    letter-spacing: 4px;
     transform: translateX(-11px);
-    background: linear-gradient(to right, var(--artcontent-h2-bgColor), #f5f6f7);
+    background: linear-gradient(to right, var(--artcontent-h1-bgColor1), var(--artcontent-h1-bgColor2));
     color: rgb(0, 0, 0);
     transition: all .5s ease;
 }
 
-.art-content h2:hover {
+.art-content h1:hover {
     transform: translateX(-4px);
 }
 
-.art-content h2::before,
-.article h2::after {
+.art-content h1::before,
+.article h1::after {
     content: '';
     position: absolute;
     top: 14%;
     left: -8px;
     width: 8px;
     height: 7px;
-    background-color: var(--artcontent-h2-bgColor);
+    background-color: var(--artcontent-h1-bgColor1);
 }
 
-.art-content h2::after {
+.art-content h1::after {
     top: 62%;
+}
+@keyframes H2-rotate{
+    0%{
+        transform: rotate(0);
+    }
+    10%,100%{
+        transform: rotate(360deg);
+    }
+}
+.art-content h2{
+    position: relative;
+    margin: 20px 0 -10px 27px;
+    font-size: 24px;
+}
+
+.H2-iconContainer{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 27px;
+    left: -20px;
+}
+.art-content h2:hover>.H2-iconContainer{
+    animation:  H2-rotate 5s linear infinite;
+}
+.H2-iconContainer .H2-iconBox{
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background-color: #00c9fc;
+    box-shadow: 0 0 4px var(--artcontent-h2-shadowColor),
+    0 0 6px var(--artcontent-h2-shadowColor);
+}
+.H2-iconBox::before,
+.H2-iconBox::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 13px;
+    background:linear-gradient(to bottom,#52cbfc,#fff0);
+}
+.H2-iconBox::before{
+    top: -1px;
+    left: -3px;
+    transform: rotateZ(30deg);
+}
+.H2-iconBox::after{
+    top: -1px;
+    left: 3px;
+    transform: rotateZ(-30deg);
+}
+.H2-iconContainer .H2-iconBox1{
+    top: -14px;
+    left: 0;
+}
+.H2-iconContainer .H2-iconBox2{
+    top: -3px;
+    left: -7px;
+    transform: rotateZ(-120deg); 
+}
+.H2-iconContainer .H2-iconBox3{
+    top:-3px;
+    left: 7px;
+    transform: rotateZ(120deg); 
 }
 
 .art-content h3 {
-    margin-top: 20px;
-    margin-bottom: 8px;
     position: relative;
+    margin: 20px 0 8px 30px;
     font-size: 22px;
+    font-weight: 600;
     color: var(--artcontent-h3);
     transition: all .5s ease;
 }
 
 .art-content h3::before {
     content: '#';
+    position: absolute;
+    top: -10px;
+    left: -30px;
     font-size: 30px;
     color: #00c9fc;
     margin-right: 10px;
@@ -389,11 +463,32 @@
 }
 
 .art-content h5 {
-    margin-top: 14px;
-    margin-left: 11px;
+    position: relative;
+    margin: 14px 0 0 13px;
     font-size: 17px;
     color: var(--artcontent-h5);
 }
+
+/* .art-content h5::before,
+.art-content h5::after {
+    content: '';
+    position: absolute;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transform: rotateZ(15deg);
+}
+
+.art-content h5::before {
+    top: 3px;
+    left: -13px;
+    border-bottom: 15px solid #00c9fc;
+}
+
+.art-content h5::after {
+    top: 17px;
+    left: -12px;
+    border-top: 15px solid #00c9fc;
+} */
 
 .art-content h6 {
     margin-top: 10px;
