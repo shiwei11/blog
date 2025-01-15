@@ -32,7 +32,7 @@
           
     </ul>
         <ul class="tag">
-            <li>#Document</li>
+            <li><a href="/blog/tags/Command">#Command</a></li>
             <li>#Java</li>
             <li>#css</li>
             <li>#Life</li>
@@ -42,7 +42,7 @@
             <li>#C</li>
             <li>#html</li>
             <li>#硬件</li>
-            <li>#javaScript</li>
+            <li>#JavaScript</li>
             <li>#Firewall</li>
             <li>#Security</li>
             <li><a href="/blog/tags/Linux">#Linux</a></li>
@@ -138,7 +138,7 @@
         <div class="article">
         <h1 class="title">Linux文件操作</h1>
         <div class="art-info">
-            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：36151</span>
+            <div><span><span class="iconfont icon-zishu-jzl"></span>字数：36127</span>
             <span><span class="iconfont icon-riqi"></span>写于：2021-12-29</span></div>
             <div><span><span class="iconfont icon-zuixinnew3"></span>最新更新：2021-12-29</span>
             <span><span class="iconfont icon-shijian"></span>阅读本文预计花费您104分钟</span></div>
@@ -221,7 +221,7 @@ drwxr-xr-x   2 root root 4.0K Aug 18 14:15 data/
 <li>M为已离线迁移的文件，表示文件已经被迁移到离线存储(如磁盘)，如果需要访问需要恢复到在线存储，该文件类型常见于超级计算机</li>
 <li>n为特殊的网络文件</li>
 <li>s为套接字文件，一般用于数据连接，常见于 /var/run目录</li>
-<li>p为管道文件(FIFO)，用于解决多个程序同时存取一个文件所造成的错误（Named Pipe, FIFO）</li>
+<li>p为管道文件(FIFO)，用于进程间通讯</li>
 <li>s为套接字文件（Socket）</li>
 <li>?其他类型的文件</li>
 </ul>
@@ -356,7 +356,7 @@ Type:文件系统类型的名称，可能为 ext2/ext3等值
 Block size:文件系统块的大小（以字节为单位）
 Fundamental block size:基础块大小，通常与文件系统块大小相同
 Blocks:Total为文件系统中的总块数，Free为文件系统中未分配的块数，Available为当前用户可用的块数（可能会比 Free 少，因为一些块可能被保留给超级用户）
-Inodes:Total为文件系统中的总inod 数，每个inode表示一个文件或目录。Free为未使用的 inode 数，意味着还可以创建的文件或目录数量
+Inodes:Total为文件系统中的总inode 数，每个inode表示一个文件或目录。Free为未使用的 inode 数，意味着还可以创建的文件或目录数量
 </div>
 
 <h4 id="dir与vdir列出目录信息"><a href="#dir与vdir列出目录信息" class="headerlink" title="dir与vdir列出目录信息"></a>dir与vdir列出目录信息</h4><p>这两个命令的功能囊括在了ls命令中，选项和ls命令相似，但ls命令功能更为强大，因此这两个命令极少使用</p>
@@ -1228,7 +1228,7 @@ index.css
 <li>-size &emsp;根据文件大小查找</li>
 <li>文件大小中，可以使用+表示大于，-表示小于，直接写数值表示等于<div class="show">示例:
 # find / -size +100M
-查找服务器中大于100MB的文件
+查找服务器中大于100MiB的文件
 </div></li>
 </ul>
 <h5 id="3-根据文件所有者、所属组查找"><a href="#3-根据文件所有者、所属组查找" class="headerlink" title="3. 根据文件所有者、所属组查找"></a>3. 根据文件所有者、所属组查找</h5><p><span class="strong">find [查找路径] [参数] [用户名或组名]</span></p>
@@ -1249,7 +1249,7 @@ index.css
 查找/etc目录下5分钟内被访问过的所有文件
 </div></li>
 </ul>
-<h5 id="5-根据文件类型查找"><a href="#5-根据文件类型查找" class="headerlink" title="5. 根据文件类型查找"></a>5. 根据文件类型查找</h5><p><span class="strong">find -type [文件类型]</span></p>
+<h5 id="5-根据文件类型查找"><a href="#5-根据文件类型查找" class="headerlink" title="5. 根据文件类型查找"></a>5. 根据文件类型查找</h5><p><span class="strong">find [查找路径] -type [文件类型]</span></p>
 <ul>
 <li>f &emsp;文件</li>
 <li>d &emsp;目录</li>
@@ -1382,7 +1382,7 @@ $ mktemp -t testing.XXXXXX
 </ul>
 <p>大多数现代Linux发行版使用systemd-tmpfiles来管理临时文件，部分系统可能使用cron定时任务来进行清理。systemd-tmpfiles的配置文件通常位于<span class="tips">/usr/lib/tmpfiles.d/tmp.conf</span>或<span class="tips">/etc/tmpfiles.d/</span>路径下。如：配置文件 /usr/lib/tmpfiles.d/tmp.conf 中的内容可能如下：</p>
 <div class="shell"># Clear tmp directories separately, to make them easier to override
-D /tmp 1777 root root 30d
+D /tmp 1777 root root 10d
 D /var/tmp 1777 root root 30d
 </div>
 
@@ -1560,7 +1560,7 @@ trap "rm -rf $tempdir" EXIT
             
             
                 <div class="post-next">
-                    <a href="/blog/2021/12/29/Linux%E7%B3%BB%E7%BB%9F%E4%B8%8E%E8%AE%BE%E7%BD%AE/">下一篇：Linux 系统与设置 </a>
+                    <a href="/blog/2021/12/29/Linux%E7%B3%BB%E7%BB%9F%E4%B8%8E%E4%BF%A1%E6%81%AF/">下一篇：Linux 系统与信息 </a>
                 </div>
                  
     </div>
